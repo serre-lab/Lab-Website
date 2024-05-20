@@ -12,10 +12,12 @@ import { BlogArticles } from './collections/BlogArticles'
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
+
 export default buildConfig({
   admin: {
     user: Users.slug,
   },
+  //@ts-ignore
   collections: [Users, BlogArticles],
   editor: lexicalEditor({}),
   // plugins: [payloadCloud()], // TODO: Re-enable when cloud supports 3.0
