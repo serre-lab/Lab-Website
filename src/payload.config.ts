@@ -8,6 +8,8 @@ import { fileURLToPath } from 'url'
 
 import { Users } from './collections/Users'
 import { BlogArticles } from './collections/BlogArticles' 
+import { Publications } from './collections/Publications'
+import { Research } from './collections/Research'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
