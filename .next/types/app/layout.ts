@@ -1,4 +1,4 @@
-// File: /Users/jesus/Documents/brown_code/serre-lab-site/src/app/layout.jsx
+// File: /Users/jesus/Documents/brown_code/serre-lab-site/src/app/layout.tsx
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
