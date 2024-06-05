@@ -37,7 +37,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "src/components/ResearchCard.jsx", "src/app/people/page.jsx"  ],
   "exclude": [
     "node_modules"
   ]

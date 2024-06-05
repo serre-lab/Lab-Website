@@ -1,0 +1,45 @@
+.card-container {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    border-color: #black;
+    border-style: solid;
+ 
+}
+
+.research-img {
+    min-width: 100px;
+    max-width: 100px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px ;
+
+    /* flex-basis: 25% */
+}
+
+.research-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #f5f5f5;
+    border-color: #black;
+    border-style: solid;
+    width: 300px;
+    height: 300px;
+}
+
+.image-description-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

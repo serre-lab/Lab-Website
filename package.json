@@ -14,7 +14,8 @@
     "start": "cross-env NODE_OPTIONS=--no-deprecation next start"
   },
   "dependencies": {
-    "@mantine/core": "^7.9.2",
+    "@mantine/carousel": "^7.10.1",
+    "@mantine/core": "^7.10.1",
     "@mantine/hooks": "^7.9.2",
     "@mantinex/mantine-logo": "^1.0.1",
     "@payloadcms/db-mongodb": "beta",
@@ -23,6 +24,7 @@
     "@payloadcms/richtext-lexical": "beta",
     "autoprefixer": "^10.4.19",
     "cross-env": "^7.0.3",
+    "embla-carousel-react": "^7.1.0",
     "graphql": "^16.8.1",
     "jquery": "^3.7.1",
     "next": "14.3.0-canary.68",

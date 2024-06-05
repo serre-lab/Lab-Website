@@ -2,6 +2,8 @@
 // Import styles of packages that you've installed.
 // All packages except `@mantine/hooks` require styles imports
 import '@mantine/core/styles.css';
+import '@mantine/carousel/styles.css';
+
 
 import { ColorSchemeScript, MantineProvider } from '@mantine/core';
 import { HeaderSimple } from '@/components/Header/HeaderSimple';
@@ -22,8 +24,14 @@ export default function RootLayout({
   const pathname = usePathname();
   console.log(pathname);
   if (pathname.includes('/admin')) {
+    console.log('IT HAS ADMIN IN IT')
     // Render payload page without layout
-    return <>{children}</>;
+    return (
+      <>
+      {children}
+      </>
+    );
+    // return <div>{children}</div>;
   }
   return (
     <html lang="en">

@@ -1,22 +1,14 @@
-// import {Media} from './Media'
 
-export const Research = {
-    slug: 'research',
-    // upload: true,
+export const Featured = {
+    slug: 'featured',
+    labels: {
+        singular: 'Featured',
+        plural: 'Featured',
+    },
     fields: [
         {
-            name: 'title', 
+            name: 'title',
             label: 'Title',
-            type: 'text',
-        },
-        {
-            name: 'date',
-            label: 'Date',
-            type: 'text'
-        },
-        {
-            name: 'funding',
-            label: 'Funding',
             type: 'text',
         },
         {
@@ -30,5 +22,11 @@ export const Research = {
             type: 'upload',
             relationTo: 'media',
         },
+        {
+            name: 'link',
+            label: 'Link',
+            type: 'text',
+        }
     ]
+
 }
