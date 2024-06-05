@@ -22,6 +22,7 @@
     "@payloadcms/next": "beta",
     "@payloadcms/plugin-cloud": "beta",
     "@payloadcms/richtext-lexical": "beta",
+    "@tabler/icons-react": "^3.5.0",
     "autoprefixer": "^10.4.19",
     "cross-env": "^7.0.3",
     "embla-carousel-react": "^7.1.0",
