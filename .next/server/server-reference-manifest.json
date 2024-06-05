@@ -1,14 +1,5 @@
 {
-  "node": {
-    "c60a799c50fe9d31ec32bda5f63378cc93be04bd": {
-      "workers": {
-        "app/(payload)/admin/[[...segments]]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fjesus%2FDocuments%2Fbrown_code%2Fserre-lab-site%2Fnode_modules%2F%40payloadcms%2Fnext%2Fdist%2Flayouts%2FRoot%2Findex.js%22%2C%5B%22%24%24ACTION_0%22%5D%5D%5D&__client_imported__=!"
-      },
-      "layer": {
-        "app/(payload)/admin/[[...segments]]/page": "rsc"
-      }
-    }
-  },
+  "node": {},
   "edge": {},
-  "encryptionKey": "9H3aQNbwYs00qiKLOOc+c/1FF+GGBT3VEAPSwuFLumc="
+  "encryptionKey": "fB8NFpXEAgwjBnfCXtG/houBljZL/rNdKQXpMZqxYVo="
 }

@@ -1360,6 +1360,26 @@ html[data-theme=light] .inline-toolbar-popup {
       line-height: 1.15
   }
     }
+
+  .HeroImageRight_serre_title__agaQ8 {
+    color: var(--mantine-color-white);
+    font-family:
+      Greycliff CF,
+      var(--mantine-font-family);
+    font-weight: 900;
+    line-height: 1.05;
+    max-width: calc(31.25rem * var(--mantine-scale));
+    font-size: calc(3rem * var(--mantine-scale));
+  }
+
+  @media (max-width: 62em) {
+
+  .HeroImageRight_serre_title__agaQ8 {
+      max-width: 100%;
+      font-size: calc(2.125rem * var(--mantine-scale));
+      line-height: 1.15
+  }
+    }
   
   .HeroImageRight_description__6vbeN {
     color: var(--mantine-color-white);

@@ -1,6 +1,8 @@
+// import {Media} from './Media'
+
 export const Research = {
     slug: 'research',
-
+    // upload: true,
     fields: [
         {
             name: 'title', 
@@ -21,6 +23,12 @@ export const Research = {
             name: 'description',
             label: 'Description',
             type: 'textarea',
+        },
+        {
+            name: 'image',
+            label: 'Image',
+            type: 'upload',
+            relationTo: 'media',
         },
     ]
 }

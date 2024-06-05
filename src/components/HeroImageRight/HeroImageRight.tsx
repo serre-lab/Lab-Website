@@ -8,6 +8,15 @@ export function HeroImageRight() {
       <Container size="lg">
         <div className={classes.inner}>
           <div className={classes.content}>
+            {/* <div style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}>
+            <Title className={classes.serre_title}>
+                Serre Lab
+              </Title>
+              </div> */}
             <Title className={classes.title}>
               Understanding the{' '}
               <Text
@@ -21,12 +30,14 @@ export function HeroImageRight() {
               supporting visual perception
             </Title>
 
+            
+
             <Text className={classes.description} mt={30}>
             There is little doubt that even a partial solution to the question of which computations are carried out by the visual cortex would be a major breakthrough: It would begin to explain one of our most amazing abilities, vision; and it would open doors to other aspects of intelligence such as language, planning or reasoning. It would also help connect neurobiology and mathematics, making it possible to develop computer algorithms that follow the information processing principles used by biological organisms and honed by natural evolution.
 
             </Text>
 
-            <Button
+            {/* <Button
               variant="gradient"
               gradient={{ from: 'pink', to: 'yellow' }}
               size="xl"
@@ -34,7 +45,10 @@ export function HeroImageRight() {
               mt={40}
             >
               Get started
-            </Button>
+            </Button> */}
+            {/* 1. Comp Neuro @ Brown
+            2. Prospective Students
+            3. Funding */}
           </div>
         </div>
       </Container>

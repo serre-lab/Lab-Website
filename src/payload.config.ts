@@ -10,6 +10,10 @@ import { Users } from './collections/Users'
 import { BlogArticles } from './collections/BlogArticles' 
 import { Publications } from './collections/Publications'
 import { Research } from './collections/Research'
+// import { Test } from './collections/Test'
+import { Media } from './collections/Media'
+import { Featured } from './collections/Featured'
+import { People } from './collections/People'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -20,7 +24,7 @@ export default buildConfig({
     user: Users.slug,
   },
   //@ts-ignore
-  collections: [Users, BlogArticles],
+  collections: [Users, BlogArticles, Publications, Research, Media, Featured, People],
   editor: lexicalEditor({}),
   // plugins: [payloadCloud()], // TODO: Re-enable when cloud supports 3.0
   secret: process.env.PAYLOAD_SECRET || '',
