@@ -5,6 +5,11 @@ import { IconGitBranch, IconGitPullRequest, IconGitCommit, IconMessageDots } fro
 export default function page() {
   return (
     <div>
+      {/* <Timeline bulletSize={40}>
+        <Timeline.Item>
+          <Text size="xl">Work in Progress</Text>
+        </Timeline.Item>
+      </Timeline> */}
       <Timeline active={1} bulletSize={24} lineWidth={2}>
         <Timeline.Item bullet={<IconGitBranch size={12} />} title="Monkeys engage in visual simulation to solve complex problems">
           <Text c="dimmed" size="sm">bioRxiv</Text>
