@@ -5,6 +5,10 @@ import { useDisclosure } from '@mantine/hooks';
 import { MantineLogo } from '@mantinex/mantine-logo';
 import classes from './HeaderSimple.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
+import logo from './serre-logo.jpeg'
+import { Text } from '@mantine/core';
+console.log(logo)
 
 const links = [
     { link: '/', label: 'Home'},
@@ -38,7 +42,16 @@ export function HeaderSimple() {
   return (
     <header className={classes.header}>
       <Container size="md" className={classes.inner}>
-        <MantineLogo size={28} />
+        {/* <MantineLogo size={28} /> */}
+          <div style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            gap: 10
+          }}>
+            <Image src={logo.src} height={40} width={40} alt={'serre lab logo'}/>
+            <Text fw={700}>Serre Lab</Text>
+          </div>
         {/* Serre Lab */}
         <Group gap={5} visibleFrom="xs">
           {items}

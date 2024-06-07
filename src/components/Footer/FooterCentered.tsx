@@ -42,7 +42,7 @@ export function FooterCentered() {
 
         <Group className={classes.links}>{items}</Group>
         <Group gap="xs" justify="flex-end" wrap="nowrap">
-          <Link href="https://twitter.com/serre_lab" passHref>
+          <Link href="https://twitter.com/serre_lab" target="_blank" passHref>
           <ActionIcon size="lg" variant="default" radius="xl">
             <IconBrandTwitter style={{ width: rem(18), height: rem(18) }} stroke={1.5} 
               />
@@ -53,7 +53,7 @@ export function FooterCentered() {
             <IconBrandYoutube style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
           </ActionIcon>
 
-          <Link href="https://www.instagram.com/serrelab/" passHref>
+          <Link href="https://www.instagram.com/serrelab/" target="_blank" passHref>
             <ActionIcon size="lg" variant="default" radius="xl">
               <IconBrandInstagram style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
             </ActionIcon>

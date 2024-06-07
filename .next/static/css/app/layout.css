@@ -7529,7 +7529,7 @@ fieldset:disabled .m_c9ade57f:where([data-inverted]),
   \*****************************************************************************************************************************************************************************************************************************************************************************************/
 .HeaderSimple_header__xUo0Q {
     height: calc(3.5rem * var(--mantine-scale));
-    margin-bottom: calc(7.5rem * var(--mantine-scale));
+    /* margin-bottom: rem(120px); */
     background-color: var(--mantine-color-body);
     border-bottom: calc(0.0625rem * var(--mantine-scale)) solid var(--mantine-color-gray-3);
   }

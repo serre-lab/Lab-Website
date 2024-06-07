@@ -1,9 +1,10 @@
 {
   "pages": {
-    "/publications/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/publications/page.js"
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -11,11 +12,23 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/page": [
+    "/(payload)/admin/[[...segments]]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
+      "static/css/app/(payload)/admin/[[...segments]]/page.css",
+      "static/chunks/app/(payload)/admin/[[...segments]]/page.js"
+    ],
+    "/(payload)/admin/[[...segments]]/not-found": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(payload)/admin/[[...segments]]/not-found.css",
+      "static/chunks/app/(payload)/admin/[[...segments]]/not-found.js"
+    ],
+    "/(payload)/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(payload)/layout.css",
+      "static/chunks/app/(payload)/layout.js"
     ],
     "/research/page": [
       "static/chunks/webpack.js",
@@ -29,15 +42,10 @@
       "static/css/app/people/page.css",
       "static/chunks/app/people/page.js"
     ],
-    "/resources/page": [
+    "/_not-found/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/resources/page.js"
-    ],
-    "/news/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/news/page.js"
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }
