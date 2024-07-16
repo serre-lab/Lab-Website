@@ -4,6 +4,7 @@ A blank template for [Payload](https://github.com/payloadcms/payload) to help yo
 
 See the official [Examples Directory](https://github.com/payloadcms/payload/tree/main/examples) for details on how to use Payload in a variety of different ways.
 
+
 ## Development
 
 To spin up the project locally, follow these steps:
