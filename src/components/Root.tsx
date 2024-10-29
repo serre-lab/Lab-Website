@@ -1,6 +1,5 @@
-import { Outlet } from 'react-router-dom';
-import Header from './Header/Header';
-
+import { Outlet } from "react-router-dom";
+import Header from "./Header/Header";
 
 export function Root() {
     return (
@@ -8,5 +7,5 @@ export function Root() {
             <Header />
             <Outlet />
         </div>
-    )
+    );
 }
