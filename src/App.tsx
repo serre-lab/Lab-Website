@@ -10,9 +10,8 @@ import {
   // createTheme,
    MantineProvider } from '@mantine/core';
 
-import Home from './pages/Home/Home';
+import {Home} from './pages/Home/Home';
 import About from './pages/About/About';
-import Header from './components/Header/Header';
 import { Research } from './pages/Research/Research';
 import { Resources } from './pages/Resources/Resources';
 import { SciComm } from './pages/SciComm/SciComm';

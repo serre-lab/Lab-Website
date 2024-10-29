@@ -1,11 +1,18 @@
+import './Home.css';
+import { Image, Title } from '@mantine/core';
 
-
-const Home = () => {
+export function Home() {
     return (
-        <div>
-            <h1>Home</h1>
+        <div className="home-container">
+            <div className="image-wrapper">
+                <Image 
+                    h={`55vh`}
+                    fit={'cover'}
+                    src="metcalf.png" 
+                    alt="Serre Lab Logo" 
+                />
+                <Title className="home-title">Serre Lab</Title>
+            </div>
         </div>
-    )
+    );
 }
-
-export default Home;
