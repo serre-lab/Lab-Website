@@ -1,4 +1,5 @@
 import { Image } from '@mantine/core';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -10,11 +11,11 @@ const Header = () => {
                 <b>Serre Lab</b>
             </div>
             <div className="links">
-                <a>Home</a>
-                <a>Research</a>
-                <a>About</a>
-                <a>Resources</a>
-                <a>Sci-Comm</a>
+                <Link to="">Home</Link>
+                <Link to="research">Research</Link>
+                <Link to="about">About</Link>
+                <Link to="resources">Resources</Link>
+                <Link to="scicomm">Sci-Comm</Link>
             </div>
 
         </header>

@@ -13,6 +13,10 @@ import {
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Header from './components/Header/Header';
+import { Research } from './pages/Research/Research';
+import { Resources } from './pages/Resources/Resources';
+import { SciComm } from './pages/SciComm/SciComm';
+import {Root} from './components/Root'; // Adjust the path as necessary
 
 //add theme to provider if you want to customize
 
@@ -20,18 +24,24 @@ const theme = createTheme({
   fontFamily: 'futura-pt',
 })
 
-const router = createBrowserRouter(
-  [
-    { path: "/", element: <Home />},
-    { path: "/about", element: <About />}
-  ]
-)
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root />,
+    children: [
+      { path: "/", element: <Home /> },
+      { path: "/about", element: <About /> },
+      { path: "/research", element: <Research /> },
+      { path: "/resources", element: <Resources /> },
+      { path: "/scicomm", element: <SciComm /> },
+    ],
+  },
+]);
 
 function App() {
   
   return (
     <MantineProvider theme={theme} >
-      <Header />
       <RouterProvider router={router} />
     </MantineProvider>
   )
