@@ -1,5 +1,6 @@
-import './Home.css';
-import { Title, Text } from '@mantine/core';
+import Learn from "../../components/LearnMoreAbout/Learn";
+import "./Home.css";
+import { Title, Text } from "@mantine/core";
 
 export function Home() {
     return (
@@ -7,13 +8,15 @@ export function Home() {
             {/* Image + Title */}
             <div className="image-wrapper">
                 <Title aria-label="lab title">Serre Lab</Title>
-                <Text aria-label="lab one-liner"size="xl">Understanding the neural computations supporting visual perception</Text>
+                <Text aria-label="lab one-liner" size="xl">
+                    Understanding the neural computations supporting visual
+                    perception
+                </Text>
             </div>
 
             {/* Content */}
-            <div>
-                
-            </div>
+            <Learn />
+            <div></div>
         </div>
     );
 }
