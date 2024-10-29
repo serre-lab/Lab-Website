@@ -1,5 +1,6 @@
 import { Image } from '@mantine/core';
 import { Link } from 'react-router-dom';
+import './Header.css'
 
 const Header = () => {
     return (
@@ -7,7 +8,6 @@ const Header = () => {
             <div className="left">
                 <Image radius="sm
                 " src='serre-logo.webp'/>
-                {/* TODO: increase size of Serre Lab Text, then work on home page */}
                 <b>Serre Lab</b>
             </div>
             <div className="links">

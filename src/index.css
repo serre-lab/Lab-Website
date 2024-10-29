@@ -74,21 +74,4 @@ button:focus-visible {
 }
 
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5em 2em;
-  border-bottom: 0.01em solid black;
 
-  .left {
-    display: flex;
-    align-items: center;
-    gap: 1em;
-  }
-
-  .links {
-    display: flex;
-    gap: 1em;
-  }
-}
