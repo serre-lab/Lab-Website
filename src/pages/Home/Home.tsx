@@ -1,17 +1,18 @@
 import './Home.css';
-import { Image, Title } from '@mantine/core';
+import { Title, Text } from '@mantine/core';
 
 export function Home() {
     return (
         <div className="home-container">
+            {/* Image + Title */}
             <div className="image-wrapper">
-                <Image 
-                    h={`55vh`}
-                    fit={'cover'}
-                    src="metcalf.png" 
-                    alt="Serre Lab Logo" 
-                />
-                <Title className="home-title">Serre Lab</Title>
+                <Title aria-label="lab title">Serre Lab</Title>
+                <Text aria-label="lab one-liner"size="xl">Understanding the neural computations supporting visual perception</Text>
+            </div>
+
+            {/* Content */}
+            <div>
+                
             </div>
         </div>
     );
