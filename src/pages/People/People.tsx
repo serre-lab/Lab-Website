@@ -1,3 +1,4 @@
+import { Title } from "@mantine/core";
 import Person from "../../components/Person/Person";
 import peopleData from "../../data/people.json";
 import "./People.css";
@@ -27,12 +28,13 @@ export default function People() {
     const groupedPeople = groupPeopleByTitle(peopleData.people);
 
     return (
-        <div>
-            <h1>People</h1>
-            <p>Meet the people who make up the Serre Lab.</p>
+        <div className="people-container">
+            <Title>Meet the Team</Title>
             {Object.keys(groupedPeople).map((normalizedTitle) => (
                 <div key={normalizedTitle} className="groupedPeople-container">
-                    <h2>{groupedPeople[normalizedTitle].originalTitle}</h2>
+                    <Title order={2}>
+                        {groupedPeople[normalizedTitle].originalTitle}
+                    </Title>
                     <div
                         className={
                             groupedPeople[normalizedTitle].people.length < 4
