@@ -1,13 +1,12 @@
-import { Image } from '@mantine/core';
-import { Link } from 'react-router-dom';
-import './Header.css'
+import { Image } from "@mantine/core";
+import { Link } from "react-router-dom";
+import "./Header.css";
 
 const Header = () => {
     return (
         <header>
             <div className="left">
-                <Image radius="sm
-                " src='serre-logo.webp'/>
+                <img src="/serre-logo.webp" alt="Serre Lab Logo" />
                 <b>Serre Lab</b>
             </div>
             <div className="links">
@@ -17,8 +16,7 @@ const Header = () => {
                 <Link to="resources">Resources</Link>
                 <Link to="scicomm">Sci-Comm</Link>
             </div>
-
         </header>
-    )
-}
+    );
+};
 export default Header;
