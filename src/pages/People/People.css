@@ -1,0 +1,17 @@
+/* src/pages/People/People.css */
+.groupedPeople-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.people-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.people-flex {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}

@@ -1,0 +1,76 @@
+{
+    "people": [
+        {
+            "fullName": "Thomas Serre",
+            "title": "Principal Investigator",
+            "imagePath": "people/thomas-serre.jpg",
+            "description": "Dr. Serre is a Professor in Cognitive Linguistic & Psychological Sciences and in Computer Science, and an affiliate of the Carney Institute for Brain Science at Brown University. He received a Ph.D. in Neuroscience from MIT in 2006 and an MSc in EECS from Télécom Bretagne (France) in 2000. His research seeks to understand the neural computations supporting visual perception and has been featured in the BBC series “Visions from the Future” and other news articles (The Economist, New Scientist, Scientific American, IEEE Computing in Science and Technology, Technology Review and Slashdot). Dr. Serre is Faculty Director of the Center for Computation and Visualization and Associate Director of the Center for Computational Brain Science at Brown University. He also holds an International Chair in AI within the ANR-3IA Artificial and Natural Intelligence Toulouse Institute (France). Dr. Serre is routinely serving as an area chair for top-tier machine learning and computer vision conferences including AAAI, CVPR, ICLR, ICML and NeurIPS. He was the recipient of an NSF Early Career Award as well as DARPA’s Young Faculty Award and Director’s Award."
+        },
+        {
+            "fullName": "Drew Linsley",
+            "title": "Assistant Professor of Research",
+            "imagePath": "people/drew-linsley.jpg",
+            "description": "Drew Linsley is an Assistant Professor of Research in the CLPS department. He builds computational models of the visual system that serve the dual purpose of (1) explaining biological function and (2) extending artificial vision."
+        },
+        {
+            "fullName": "Ivan Rodriguez",
+            "title": "Graduate Student",
+            "imagePath": "people/ivan-rodriguez.jpg",
+            "description": ""
+        },
+        {
+            "fullName": "Abdullah Rashed Ahmed",
+            "title": "Graduate Student",
+            "imagePath": "people/abdullah-rashed-ahmed.jpg",
+            "description": ""
+        },
+        {
+            "fullName": "Alekh Ashok",
+            "title": "Graduate Student",
+            "imagePath": "people/alekh-ashok.jpg",
+            "description": ""
+        },
+        {
+            "fullName": "Michael Lepori",
+            "title": "Graduate Student",
+            "imagePath": "people/michael-lepori.jpg",
+            "description": ""
+        },
+        {
+            "fullName": "Sixuan Chen",
+            "title": "Graduate Student",
+            "imagePath": "people/sixuan-chen.jpg",
+            "description": ""
+        },
+        {
+            "fullName": "Yu-Ang Cheng",
+            "title": "Graduate Student",
+            "imagePath": "people/yu-ang-cheng.jpg",
+            "description": ""
+        },
+        {
+            "fullName": "Akash Nagaraj",
+            "title": "Research Assistant",
+            "imagePath": "people/akash-nagaraj.jpg",
+            "description": ""
+        },
+        {
+            "fullName": "Sabine Muzellec",
+            "title": "Graduate Student (ANITI)",
+            "imagePath": "people/sabine-muzellec.jpg",
+            "description": ""
+        },
+        {
+            "fullName": "Julien Colin",
+            "title": "Graduate Student (Ellis Alicante)",
+            "imagePath": "people/julien-colin.jpg",
+            "description": ""
+        },
+        {
+            "fullName": "Jay Gopal",
+            "title": "Undergraduate Student",
+            "imagePath": "people/jay-gopal.jpg",
+            "description": "Jay Gopal is an undergraduate student in Brown University’s Program in Liberal Medical Education (PLME). He is passionate about leveraging artificial intelligence to accelerate progress in healthcare, and has been conducting research into machine learning since 2019. Jay’s research interests include improving the explainability of deep learning models, building brain-inspired computational tools for visual reasoning, and applying machine learning & computer vision directly to the medical setting to make long-term advancements in patient care."
+        }
+    ]
+}
