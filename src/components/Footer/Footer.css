@@ -1,0 +1,35 @@
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    padding: 20px;
+    height: 100%;
+}
+
+.footer-left img {
+    width: 50px;
+}
+
+.footer-right {
+    display: flex;
+    gap: 1em;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+}
+
+.footer-container a {
+    color: #212529;
+    text-decoration: underline;
+}
+
+.footer-container a:hover {
+    color: #f1356d;
+    text-decoration: none;
+}

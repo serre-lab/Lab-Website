@@ -5,16 +5,16 @@ header {
     padding: 1.5em 2em;
     border-bottom: 0.01em solid black;
     overflow-x: auto;
-  
+
     .left {
-      display: flex;
-      align-items: center;
-      gap: 1em;
+        display: flex;
+        align-items: center;
+        gap: 1em;
     }
-  
+
     .links {
-      display: flex;
-      gap: 1em;
+        display: flex;
+        gap: 1em;
     }
 
     .links a {
@@ -26,4 +26,8 @@ header {
         color: #f1356d;
         text-decoration: underline;
     }
-  }
+
+    .left img {
+        width: 50px;
+    }
+}
