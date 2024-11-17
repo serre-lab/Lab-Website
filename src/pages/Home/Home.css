@@ -22,3 +22,13 @@
     font-size: 2rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+.home-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
