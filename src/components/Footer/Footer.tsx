@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="footer-container">
             <div className="footer-left">
                 <img src="/serre-logo.webp" alt="Serre Lab Logo" />
-                <p>© 2021 Serre Lab</p>
+                <p>Serre Lab</p>
             </div>
             <div className="footer-right">
                 <div className="footer-list">
