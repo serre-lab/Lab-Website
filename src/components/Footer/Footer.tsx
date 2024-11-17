@@ -21,6 +21,7 @@ export default function Footer() {
                     <Title order={3}>Links</Title>
                     <Link to="/">Home</Link>
                     <Link to="/research">Research</Link>
+                    <Link to="/people">People</Link>
                     <Link to="/about">About</Link>
                     <Link to="/resources">Resources</Link>
                     <Link to="/scicomm">Sci-Comm</Link>
