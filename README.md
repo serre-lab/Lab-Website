@@ -6,7 +6,7 @@ Github Repository for Local Development. For developers contributing to the proj
 3. cd into the repo
 4. run `npm install` to install dependencies on your local machine
 5. run `npm run dev` to create a local host site. Visit `https://localhost:5173` to view the site
-6. To push changes, `git add -A`, `git commit -m"meaningful commit"`, `git push`
+6. To push changes, `git add -A`, `git commit -m "meaningful commit"`, `git push`
 7. To redeploy site with changes run `npm run deploy`
 
 This is the development process for the meantime while the site is being created. In the future, aim to use issues, branches, and pull requests to minimize the bugs pushed into production
