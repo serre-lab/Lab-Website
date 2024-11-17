@@ -9,10 +9,10 @@ import {
 } from "@mantine/core";
 
 import { Home } from "./pages/Home/Home";
-import About from "./pages/About/About";
+// import About from "./pages/About/About";
 import { Research } from "./pages/Research/Research";
-import { Resources } from "./pages/Resources/Resources";
-import { SciComm } from "./pages/SciComm/SciComm";
+// import { Resources } from "./pages/Resources/Resources";
+// import { SciComm } from "./pages/SciComm/SciComm";
 import People from "./pages/People/People";
 
 import { Root } from "./components/Root"; // Adjust the path as necessary
