@@ -29,11 +29,11 @@ const router = createBrowserRouter([
         element: <Root />,
         children: [
             { path: "/", element: <Home /> },
-            { path: "/about", element: <About /> },
             { path: "/research", element: <Research /> },
-            { path: "/resources", element: <Resources /> },
-            { path: "/scicomm", element: <SciComm /> },
             { path: "/people", element: <People /> },
+            // { path: "/about", element: <About /> },
+            // { path: "/resources", element: <Resources /> },
+            // { path: "/scicomm", element: <SciComm /> },
         ],
     },
 ]);
