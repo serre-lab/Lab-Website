@@ -1,4 +1,5 @@
 import { Title, Text } from "@mantine/core";
+import "./ResearchProject.css";
 
 interface ResearchProjectProps {
     title: string;
@@ -9,7 +10,7 @@ interface ResearchProjectProps {
 
 export default function ResearchProject(props: ResearchProjectProps) {
     return (
-        <div>
+        <div className="research-project-container">
             <Title order={3}>{props.title}</Title>
             <Text>{props.years}</Text>
             <Text>{props.fundingSource}</Text>

@@ -1,49 +1,49 @@
 // import './App.css'
-import '@mantine/core/styles.css';
+import "@mantine/core/styles.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom"
+    createTheme,
+    // createTheme,
+    MantineProvider,
+} from "@mantine/core";
 
-import { 
-  createTheme,
-  // createTheme,
-   MantineProvider } from '@mantine/core';
+import { Home } from "./pages/Home/Home";
+import About from "./pages/About/About";
+import { Research } from "./pages/Research/Research";
+import { Resources } from "./pages/Resources/Resources";
+import { SciComm } from "./pages/SciComm/SciComm";
+import People from "./pages/People/People";
 
-import {Home} from './pages/Home/Home';
-import About from './pages/About/About';
-import { Research } from './pages/Research/Research';
-import { Resources } from './pages/Resources/Resources';
-import { SciComm } from './pages/SciComm/SciComm';
-import {Root} from './components/Root'; // Adjust the path as necessary
+import { Root } from "./components/Root"; // Adjust the path as necessary
 
 //add theme to provider if you want to customize
 
 const theme = createTheme({
-  fontFamily: 'futura-pt',
-})
+    fontFamily: "futura-pt",
+});
 
 const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Root />,
-    children: [
-      { path: "/", element: <Home /> },
-      { path: "/about", element: <About /> },
-      { path: "/research", element: <Research /> },
-      { path: "/resources", element: <Resources /> },
-      { path: "/scicomm", element: <SciComm /> },
-    ],
-  },
+    {
+        path: "/",
+        element: <Root />,
+        children: [
+            { path: "/", element: <Home /> },
+            { path: "/about", element: <About /> },
+            { path: "/research", element: <Research /> },
+            { path: "/resources", element: <Resources /> },
+            { path: "/scicomm", element: <SciComm /> },
+            { path: "/people", element: <People /> },
+        ],
+    },
 ]);
 
 function App() {
-  
-  return (
-    <MantineProvider theme={theme} >
-      <RouterProvider router={router} />
-    </MantineProvider>
-  )
+    return (
+        <MantineProvider theme={theme}>
+            <RouterProvider router={router} />
+        </MantineProvider>
+    );
 }
 
-export default App
+export default App;
