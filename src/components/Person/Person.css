@@ -19,10 +19,11 @@
 
 .person-title {
     color: gray;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 
 .person-description {
-    text-align: left;
-    margin-top: 1rem;
+    height: 100px; /* Set a fixed height for the description container */
+    overflow-y: auto; /* Make the description scrollable if it exceeds the height */
+    /* margin-top: 10px; */
 }

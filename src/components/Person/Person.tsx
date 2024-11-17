@@ -18,12 +18,7 @@ export default function Person(props: PersonProps) {
     };
 
     return (
-        <Card
-            shadow="sm"
-            padding="lg"
-            className="person-card"
-            onClick={toggleDescription}
-        >
+        <Card shadow="sm" padding="lg" className="person-card">
             {props.imagePath && (
                 <Card.Section>
                     <Image
@@ -39,7 +34,7 @@ export default function Person(props: PersonProps) {
             <Text className="person-title">{props.title}</Text>
             {showDescription && (
                 <div className="person-description">
-                    <Text>{props.description} </Text>
+                    <Text>{props.description}</Text>
                 </div>
             )}
             <Button
