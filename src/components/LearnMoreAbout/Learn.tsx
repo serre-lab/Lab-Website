@@ -22,12 +22,12 @@ export default function Learn() {
                         <Text size="lg">People</Text>
                     </Link>
                 </div>
-                <div>
+                {/* <div>
                     <Link to="resources">
                         <FaBookOpen size={56} />
                         <Text size="lg">Resources</Text>
                     </Link>
-                </div>
+                </div> */}
                 <div>
                     <Link to="scicomm">
                         <FaMicrophone size={56} />
