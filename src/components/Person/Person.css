@@ -5,6 +5,10 @@
     flex-direction: column;
     justify-content: center;
     margin: 16px;
+
+    :hover {
+        cursor: pointer;
+    }
 }
 
 .person-image {
