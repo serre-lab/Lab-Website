@@ -1,7 +1,7 @@
-import { Card, Image, Text, Title, Button } from "@mantine/core";
+import { Card, Image, Text, Title, Button, Modal } from "@mantine/core";
 import { useState } from "react";
 import "./Person.css";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+// import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 interface PersonProps {
     fullName: string;
@@ -11,41 +11,63 @@ interface PersonProps {
 }
 
 export default function Person(props: PersonProps) {
-    const [showDescription, setShowDescription] = useState(false);
-
-    const toggleDescription = () => {
-        setShowDescription(!showDescription);
-    };
+    const [opened, setOpened] = useState(false);
 
     return (
-        <Card shadow="sm" padding="lg" className="person-card">
-            {props.imagePath && (
-                <Card.Section>
-                    <Image
-                        src={props.imagePath}
-                        alt={props.fullName}
-                        className="person-image"
-                    />
-                </Card.Section>
-            )}
-            <Title order={3} className="person-name">
-                {props.fullName}
-            </Title>
-            <Text className="person-title">{props.title}</Text>
-            {showDescription && (
-                <div className="person-description">
-                    <Text>{props.description}</Text>
-                </div>
-            )}
-            <Button
-                variant="white"
-                onClick={toggleDescription}
-                className="toggle-button"
-                color="gray"
+        <>
+            <Card
+                shadow="sm"
+                padding="lg"
+                className="person-card"
+                onClick={() => setOpened(true)}
             >
-                {showDescription ? "Show Less" : "Learn More"}{" "}
-                {showDescription ? <FaChevronUp /> : <FaChevronDown />}
-            </Button>
-        </Card>
+                {props.imagePath && (
+                    <Card.Section>
+                        <Image
+                            src={props.imagePath}
+                            alt={props.fullName}
+                            className="person-image"
+                        />
+                    </Card.Section>
+                )}
+                <Title order={3} className="person-name">
+                    {props.fullName}
+                </Title>
+            </Card>
+
+            <Modal
+                opened={opened}
+                onClose={() => setOpened(false)}
+                // title={props.fullName}
+                overlayProps={{
+                    backgroundOpacity: 0.55,
+                    blur: 3,
+                }}
+                withCloseButton={false}
+                size="auto"
+            >
+                <Card
+                    shadow="sm"
+                    padding="lg"
+                    // className="person-card"
+                    className="person-modal"
+                    onClick={() => setOpened(true)}
+                >
+                    {props.imagePath && (
+                        <Card.Section>
+                            <Image
+                                src={props.imagePath}
+                                alt={props.fullName}
+                                className="person-image"
+                            />
+                        </Card.Section>
+                    )}
+                    <Title order={3} className="person-name">
+                        {props.fullName}
+                    </Title>
+                    <Text>{props.description}</Text>
+                </Card>
+            </Modal>
+        </>
     );
 }
