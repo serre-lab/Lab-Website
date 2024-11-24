@@ -30,32 +30,45 @@ export default function People() {
     return (
         <div className="people-container">
             <Title>Meet the Team</Title>
-            {Object.keys(groupedPeople).map((normalizedTitle) => (
-                <div key={normalizedTitle} className="groupedPeople-container">
-                    <Title order={2}>
-                        {groupedPeople[normalizedTitle].originalTitle}
-                    </Title>
-                    <div
-                        className={
-                            groupedPeople[normalizedTitle].people.length < 4
-                                ? "people-flex"
-                                : "people-grid"
-                        }
-                    >
-                        {groupedPeople[normalizedTitle].people.map(
-                            (person: any, index: number) => (
-                                <Person
-                                    key={index}
-                                    fullName={person.fullName}
-                                    title={person.title}
-                                    description={person.description}
-                                    imagePath={person.imagePath}
-                                />
-                            )
-                        )}
-                    </div>
-                </div>
-            ))}
+            <div className="people-grid">
+                {peopleData.people.map((person: any, index: number) => (
+                    <Person
+                        key={index}
+                        fullName={person.fullName}
+                        title={person.title}
+                        description={person.description}
+                        imagePath={person.imagePath}
+                    />
+                ))}
+            </div>
         </div>
     );
 }
+
+//code for by group
+// {Object.keys(groupedPeople).map((normalizedTitle) => (
+//     <div key={normalizedTitle} className="groupedPeople-container">
+//         <Title order={2}>
+//             {groupedPeople[normalizedTitle].originalTitle}
+//         </Title>
+//         <div
+//             className={
+//                 groupedPeople[normalizedTitle].people.length < 4
+//                     ? "people-flex"
+//                     : "people-grid"
+//             }
+//         >
+//             {groupedPeople[normalizedTitle].people.map(
+//                 (person: any, index: number) => (
+//                     <Person
+//                         key={index}
+//                         fullName={person.fullName}
+//                         title={person.title}
+//                         description={person.description}
+//                         imagePath={person.imagePath}
+//                     />
+//                 )
+//             )}
+//         </div>
+//     </div>
+// ))}
