@@ -19,22 +19,17 @@
             "description": ""
         },
         {
-            "fullName": "Abdullah Rashed Ahmed",
-            "title": "Graduate Student",
-            "imagePath": "people/abdullah-rashed-ahmed.jpg",
-            "description": ""
-        },
-        {
             "fullName": "Alekh Ashok",
             "title": "Graduate Student",
             "imagePath": "people/alekh-ashok.jpg",
             "description": "https://alekhka.github.io/"
         },
+
         {
-            "fullName": "Michael Lepori",
-            "title": "Graduate Student",
-            "imagePath": "people/michael-lepori.jpg",
-            "description": "Michael Lepori is a Ph.D. student in Computer Science at Brown University. He received his BS in Physics and Computer Science from Johns Hopkins University. He is broadly interested in the intersection of cognitive science and machine learning, and his current research seeks to characterize the kinds of algorithms neural networks implement when solving compositional tasks."
+            "fullName": "Jay Gopal",
+            "title": "Undergraduate Student",
+            "imagePath": "people/jay-gopal.jpg",
+            "description": "Jay Gopal is an undergraduate student in Brown University’s Program in Liberal Medical Education (PLME). He is passionate about leveraging artificial intelligence to accelerate progress in healthcare, and has been conducting research into machine learning since 2019. Jay’s research interests include improving the explainability of deep learning models, building brain-inspired computational tools for visual reasoning, and applying machine learning & computer vision directly to the medical setting to make long-term advancements in patient care."
         },
         {
             "fullName": "Sixuan Chen",
@@ -54,11 +49,37 @@
             "imagePath": "people/akash-nagaraj.jpg",
             "description": "Akash's research focuses on (i) data-driven AI models that learn generalizable representations, (ii) computer vision models with decisions and objectives grounded in human semantics, and (iii) deploying AI models in real-world environments. www.akashnagaraj.me"
         },
+
+        {
+            "fullName": "Peisen Zhou",
+            "title:": "Lab Member",
+            "imagePath": "people/peisen-zhou.jpg",
+            "description": ""
+        },
+        {
+            "fullName": "Abdullah Rashed Ahmed",
+            "title": "Graduate Student",
+            "imagePath": "people/abdullah-rashed-ahmed.jpg",
+            "description": ""
+        },
         {
             "fullName": "Sabine Muzellec",
             "title": "Graduate Student (ANITI)",
             "imagePath": "people/sabine-muzellec.jpg",
             "description": "Sabine is a Ph.D. student at the University of Toulouse. She obtained her Master's Degree in Computer Vision and Robotics from the University of Toulouse (France). Her research interests include topics related to Computer Vision, Neural Networks and Machine Learning, biologically inspired. She is currently working on developing deep learning networks using complex-valued activations to mimic oscillatory processes and binding in artificial models. "
+        },
+        {
+            "fullName": "Thomas Fel",
+            "title": "Lab Person",
+            "imagePath": "people/thomas-fel.jpg",
+            "description": ""
+        },
+
+        {
+            "fullName": "Michael Lepori",
+            "title": "Graduate Student",
+            "imagePath": "people/michael-lepori.jpg",
+            "description": "Michael Lepori is a Ph.D. student in Computer Science at Brown University. He received his BS in Physics and Computer Science from Johns Hopkins University. He is broadly interested in the intersection of cognitive science and machine learning, and his current research seeks to characterize the kinds of algorithms neural networks implement when solving compositional tasks."
         },
         {
             "fullName": "Julien Colin",
@@ -67,10 +88,41 @@
             "description": "Julien Colin is a first-year Ph.D. at ELLIS Alicante, co-supervised by Nuria Oliver and Thomas Serre. He received his Master's Degree in Cognitive Sciences: Natural and Artificial Cognition from Grenoble Institute of Technology (France). His research interests include topics related to Computer Vision, Machine Learning, and Computational Cognitive Science. His current research focuses on modeling the interpretability of deep learning models using human-centered approaches."
         },
         {
-            "fullName": "Jay Gopal",
-            "title": "Undergraduate Student",
-            "imagePath": "people/jay-gopal.jpg",
-            "description": "Jay Gopal is an undergraduate student in Brown University’s Program in Liberal Medical Education (PLME). He is passionate about leveraging artificial intelligence to accelerate progress in healthcare, and has been conducting research into machine learning since 2019. Jay’s research interests include improving the explainability of deep learning models, building brain-inspired computational tools for visual reasoning, and applying machine learning & computer vision directly to the medical setting to make long-term advancements in patient care."
+            "fullName": "Ella Mohanram",
+            "title": "Principal Investigator",
+            "imagePath": "people/ella-mohanram.jpg",
+            "description": "Dr. Serre is a Professor in Cognitive Linguistic & Psychological Sciences and in Computer Science, and an affiliate of the Carney Institute for Brain Science at Brown University. He received a Ph.D. in Neuroscience from MIT in 2006 and an MSc in EECS from Télécom Bretagne (France) in 2000. His research seeks to understand the neural computations supporting visual perception and has been featured in the BBC series “Visions from the Future” and other news articles (The Economist, New Scientist, Scientific American, IEEE Computing in Science and Technology, Technology Review and Slashdot). Dr. Serre is Faculty Director of the Center for Computation and Visualization and Associate Director of the Center for Computational Brain Science at Brown University. He also holds an International Chair in AI within the ANR-3IA Artificial and Natural Intelligence Toulouse Institute (France). Dr. Serre is routinely serving as an area chair for top-tier machine learning and computer vision conferences including AAAI, CVPR, ICLR, ICML and NeurIPS. He was the recipient of an NSF Early Career Award as well as DARPA’s Young Faculty Award and Director’s Award."
+        },
+        {
+            "fullName": "Jesus",
+            "title": "Principal Investigator",
+            "imagePath": "people/thomas-serre.jpg",
+            "description": "Dr. Serre is a Professor in Cognitive Linguistic & Psychological Sciences and in Computer Science, and an affiliate of the Carney Institute for Brain Science at Brown University. He received a Ph.D. in Neuroscience from MIT in 2006 and an MSc in EECS from Télécom Bretagne (France) in 2000. His research seeks to understand the neural computations supporting visual perception and has been featured in the BBC series “Visions from the Future” and other news articles (The Economist, New Scientist, Scientific American, IEEE Computing in Science and Technology, Technology Review and Slashdot). Dr. Serre is Faculty Director of the Center for Computation and Visualization and Associate Director of the Center for Computational Brain Science at Brown University. He also holds an International Chair in AI within the ANR-3IA Artificial and Natural Intelligence Toulouse Institute (France). Dr. Serre is routinely serving as an area chair for top-tier machine learning and computer vision conferences including AAAI, CVPR, ICLR, ICML and NeurIPS. He was the recipient of an NSF Early Career Award as well as DARPA’s Young Faculty Award and Director’s Award."
+        },
+
+        {
+            "fullName": "Manna Patiparnprechavut",
+            "title": "Principal Investigator",
+            "imagePath": "people/manna-patiparnprechavut.jpg",
+            "description": "Dr. Serre is a Professor in Cognitive Linguistic & Psychological Sciences and in Computer Science, and an affiliate of the Carney Institute for Brain Science at Brown University. He received a Ph.D. in Neuroscience from MIT in 2006 and an MSc in EECS from Télécom Bretagne (France) in 2000. His research seeks to understand the neural computations supporting visual perception and has been featured in the BBC series “Visions from the Future” and other news articles (The Economist, New Scientist, Scientific American, IEEE Computing in Science and Technology, Technology Review and Slashdot). Dr. Serre is Faculty Director of the Center for Computation and Visualization and Associate Director of the Center for Computational Brain Science at Brown University. He also holds an International Chair in AI within the ANR-3IA Artificial and Natural Intelligence Toulouse Institute (France). Dr. Serre is routinely serving as an area chair for top-tier machine learning and computer vision conferences including AAAI, CVPR, ICLR, ICML and NeurIPS. He was the recipient of an NSF Early Career Award as well as DARPA’s Young Faculty Award and Director’s Award."
+        },
+        {
+            "fullName": "Xizheng",
+            "title": "Principal Investigator",
+            "imagePath": "people/thomas-serre.jpg",
+            "description": "Dr. Serre is a Professor in Cognitive Linguistic & Psychological Sciences and in Computer Science, and an affiliate of the Carney Institute for Brain Science at Brown University. He received a Ph.D. in Neuroscience from MIT in 2006 and an MSc in EECS from Télécom Bretagne (France) in 2000. His research seeks to understand the neural computations supporting visual perception and has been featured in the BBC series “Visions from the Future” and other news articles (The Economist, New Scientist, Scientific American, IEEE Computing in Science and Technology, Technology Review and Slashdot). Dr. Serre is Faculty Director of the Center for Computation and Visualization and Associate Director of the Center for Computational Brain Science at Brown University. He also holds an International Chair in AI within the ANR-3IA Artificial and Natural Intelligence Toulouse Institute (France). Dr. Serre is routinely serving as an area chair for top-tier machine learning and computer vision conferences including AAAI, CVPR, ICLR, ICML and NeurIPS. He was the recipient of an NSF Early Career Award as well as DARPA’s Young Faculty Award and Director’s Award."
+        },
+        {
+            "fullName": "Vatsala Nema",
+            "title": "Principal Investigator",
+            "imagePath": "people/vatsala-nema.jpg",
+            "description": "Dr. Serre is a Professor in Cognitive Linguistic & Psychological Sciences and in Computer Science, and an affiliate of the Carney Institute for Brain Science at Brown University. He received a Ph.D. in Neuroscience from MIT in 2006 and an MSc in EECS from Télécom Bretagne (France) in 2000. His research seeks to understand the neural computations supporting visual perception and has been featured in the BBC series “Visions from the Future” and other news articles (The Economist, New Scientist, Scientific American, IEEE Computing in Science and Technology, Technology Review and Slashdot). Dr. Serre is Faculty Director of the Center for Computation and Visualization and Associate Director of the Center for Computational Brain Science at Brown University. He also holds an International Chair in AI within the ANR-3IA Artificial and Natural Intelligence Toulouse Institute (France). Dr. Serre is routinely serving as an area chair for top-tier machine learning and computer vision conferences including AAAI, CVPR, ICLR, ICML and NeurIPS. He was the recipient of an NSF Early Career Award as well as DARPA’s Young Faculty Award and Director’s Award."
+        },
+        {
+            "fullName": "Diksha Krishnan",
+            "title": "Principal Investigator",
+            "imagePath": "people/diksha-krishnan.jpg",
+            "description": "Dr. Serre is a Professor in Cognitive Linguistic & Psychological Sciences and in Computer Science, and an affiliate of the Carney Institute for Brain Science at Brown University. He received a Ph.D. in Neuroscience from MIT in 2006 and an MSc in EECS from Télécom Bretagne (France) in 2000. His research seeks to understand the neural computations supporting visual perception and has been featured in the BBC series “Visions from the Future” and other news articles (The Economist, New Scientist, Scientific American, IEEE Computing in Science and Technology, Technology Review and Slashdot). Dr. Serre is Faculty Director of the Center for Computation and Visualization and Associate Director of the Center for Computational Brain Science at Brown University. He also holds an International Chair in AI within the ANR-3IA Artificial and Natural Intelligence Toulouse Institute (France). Dr. Serre is routinely serving as an area chair for top-tier machine learning and computer vision conferences including AAAI, CVPR, ICLR, ICML and NeurIPS. He was the recipient of an NSF Early Career Award as well as DARPA’s Young Faculty Award and Director’s Award."
         }
     ]
 }

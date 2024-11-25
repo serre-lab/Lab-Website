@@ -9,23 +9,23 @@ interface Person {
     description: string;
     imagePath: string;
 }
-function normalizeTitle(title: string): string {
-    return title.replace(/\s+/g, "").replace(/\(.*?\)/g, "");
-}
+// function normalizeTitle(title: string): string {
+//     return title.replace(/\s+/g, "").replace(/\(.*?\)/g, "");
+// }
 
-function groupPeopleByTitle(people: any) {
-    return people.reduce((acc: any, person: Person) => {
-        const normalizedTitle = normalizeTitle(person.title);
-        if (!acc[normalizedTitle]) {
-            acc[normalizedTitle] = { originalTitle: person.title, people: [] };
-        }
-        acc[normalizedTitle].people.push(person);
-        return acc;
-    }, {});
-}
+// function groupPeopleByTitle(people: any) {
+//     return people.reduce((acc: any, person: Person) => {
+//         const normalizedTitle = normalizeTitle(person.title);
+//         if (!acc[normalizedTitle]) {
+//             acc[normalizedTitle] = { originalTitle: person.title, people: [] };
+//         }
+//         acc[normalizedTitle].people.push(person);
+//         return acc;
+//     }, {});
+// }
 
 export default function People() {
-    const groupedPeople = groupPeopleByTitle(peopleData.people);
+    // const groupedPeople = groupPeopleByTitle(peopleData.people);
 
     return (
         <div className="people-container">
