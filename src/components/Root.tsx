@@ -1,13 +1,18 @@
 import { Outlet } from "react-router-dom";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
+import { Link, Links } from "../types";
 
-export function Root() {
+interface RootProps {
+    links: Links;
+}
+
+export function Root(props: RootProps) {
     return (
         <div>
-            <Header />
+            <Header links={props.links.internal} />
             <Outlet />
-            <Footer />
+            <Footer links={props.links} />
         </div>
     );
 }

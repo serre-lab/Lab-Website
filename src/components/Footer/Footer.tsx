@@ -2,7 +2,13 @@ import { Title } from "@mantine/core";
 import "./Footer.css";
 import { Link } from "react-router-dom";
 
-export default function Footer() {
+interface FooterProps {
+    links: {
+        social: { to: string; label: string }[];
+        internal: { to: string; label: string }[];
+    };
+}
+export default function Footer(props: FooterProps) {
     return (
         <div className="footer-container">
             <div className="footer-left">
@@ -12,19 +18,19 @@ export default function Footer() {
             <div className="footer-right">
                 <div className="footer-list">
                     <Title order={3}>Social</Title>
-                    <Link to="https://twitter.com/serre_lab">Twitter</Link>
-                    <Link to="https://www.linkedin.com/company/serre-lab">
-                        LinkedIn
-                    </Link>
+                    {props.links.social.map((link, index) => (
+                        <Link key={index} to={link.to}>
+                            {link.label}
+                        </Link>
+                    ))}
                 </div>
                 <div className="footer-list">
                     <Title order={3}>Links</Title>
-                    <Link to="/">Home</Link>
-                    <Link to="/research">Research</Link>
-                    <Link to="/people">People</Link>
-                    {/* <Link to="/about">About</Link>
-                    <Link to="/resources">Resources</Link>
-                    <Link to="/scicomm">Sci-Comm</Link> */}
+                    {props.links.internal.map((link, index) => (
+                        <Link key={index} to={link.to}>
+                            {link.label}
+                        </Link>
+                    ))}
                 </div>
             </div>
         </div>

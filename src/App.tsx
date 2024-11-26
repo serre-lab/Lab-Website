@@ -11,39 +11,51 @@ import {
 import { Home } from "./pages/Home/Home";
 // import About from "./pages/About/About";
 import { Research } from "./pages/Research/Research";
-// import { Resources } from "./pages/Resources/Resources";
+import { Resources } from "./pages/Resources/Resources";
 // import { SciComm } from "./pages/SciComm/SciComm";
 import People from "./pages/People/People";
 
 import { Root } from "./components/Root"; // Adjust the path as necessary
+import { Links } from "./types";
 
 //add theme to provider if you want to customize
-
 const theme = createTheme({
     fontFamily: "futura-pt",
 });
 
+// for future devs: header and footer links can be updated here
+const links: Links = {
+    internal: [
+        { to: "/", label: "Home" },
+        { to: "/research", label: "Research" },
+        { to: "/people", label: "People" },
+        // { to: "/about", label: "About" },
+        { to: "/resources", label: "Resources" },
+        // { to: "/scicomm", label: "Sci-Comm" },
+    ],
+    social: [
+        { to: "https://twitter.com/serre_lab", label: "Twitter" },
+        { to: "https://www.linkedin.com/company/serre-lab", label: "LinkedIn" },
+    ],
+};
+
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <Root />,
+        element: <Root links={links} />,
         children: [
             { path: "/", element: <Home /> },
             { path: "/research", element: <Research /> },
             { path: "/people", element: <People /> },
-            // { path: "/about", element: <About /> },
-            // { path: "/resources", element: <Resources /> },
-            // { path: "/scicomm", element: <SciComm /> },
+            { path: "/resources", element: <Resources /> },
         ],
     },
 ]);
 
-function App() {
-    return (
-        <MantineProvider theme={theme}>
-            <RouterProvider router={router} />
-        </MantineProvider>
-    );
-}
+const App = () => (
+    <MantineProvider theme={theme}>
+        <RouterProvider router={router} />
+    </MantineProvider>
+);
 
 export default App;
