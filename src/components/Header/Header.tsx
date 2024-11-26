@@ -1,7 +1,16 @@
 import { Link } from "react-router-dom";
 import "./Header.css";
 
-const Header = () => {
+interface LinkType {
+    to: string;
+    label: string;
+}
+
+interface HeaderProps {
+    links: LinkType[];
+}
+
+const Header = (props: HeaderProps) => {
     return (
         <header>
             <div className="left">
@@ -9,14 +18,14 @@ const Header = () => {
                 <b>Serre Lab</b>
             </div>
             <div className="links">
-                <Link to="">Home</Link>
-                <Link to="/research">Research</Link>
-                <Link to="/people">People</Link>
-                {/* <Link to="/about">About</Link>
-                <Link to="/resources">Resources</Link>
-                <Link to="/scicomm">Sci-Comm</Link> */}
+                {props.links.map((link, index) => (
+                    <Link key={index} to={link.to}>
+                        {link.label}
+                    </Link>
+                ))}
             </div>
         </header>
     );
 };
+
 export default Header;
