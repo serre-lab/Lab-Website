@@ -1,0 +1,39 @@
+.publications-container {
+    display: flex;
+}
+
+.filter-section {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.results-section {
+    flex: 3;
+    padding: 20px;
+}
+
+.filter-section input {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px;
+}
+
+.year-filter {
+    display: flex;
+    flex-direction: column;
+}
+
+.year-filter button {
+    margin-bottom: 5px;
+    padding: 8px;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+}
+
+.year-filter button.active {
+    background-color: #007bff;
+    color: white;
+}
