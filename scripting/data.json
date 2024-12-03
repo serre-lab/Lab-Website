@@ -1,0 +1,122 @@
+[
+  {
+    "user": "microsoft",
+    "repo": "playwright",
+    "url": "https://github.com/microsoft/playwright",
+    "detail": "Playwright is a framework for Web Testing and Automation. It allows testing Chromium, Firefox and WebKit with a single API."
+  },
+  {
+    "user": "apify",
+    "repo": "crawlee",
+    "url": "https://github.com/apify/crawlee",
+    "detail": "Crawlee—A web scraping and browser automation library for Node.js to build reliable crawlers. In JavaScript and TypeScript. Extract data for AI, LLMs, RAG, or GPTs. Download HTML, PDF, JPG, PNG, and other files from websites. Works with Puppeteer, Playwright, Cheerio, JSDOM, and raw HTTP. Both headful and headless mode. With proxy rotation."
+  },
+  {
+    "user": "checkly",
+    "repo": "headless-recorder",
+    "url": "https://github.com/checkly/headless-recorder",
+    "detail": "Chrome extension that records your browser interactions and generates a Playwright or Puppeteer script."
+  },
+  {
+    "user": "microsoft",
+    "repo": "playwright-python",
+    "url": "https://github.com/microsoft/playwright-python",
+    "detail": "Python version of the Playwright testing and automation library."
+  },
+  {
+    "user": "Skyvern-AI",
+    "repo": "skyvern",
+    "url": "https://github.com/Skyvern-AI/skyvern",
+    "detail": "Automate browser-based workflows with LLMs and Computer Vision"
+  },
+  {
+    "user": "browserless",
+    "repo": "browserless",
+    "url": "https://github.com/browserless/browserless",
+    "detail": "Deploy headless browsers in Docker. Run on our cloud or bring your own. Free for non-commercial uses."
+  },
+  {
+    "user": "artilleryio",
+    "repo": "artillery",
+    "url": "https://github.com/artilleryio/artillery",
+    "detail": "The complete load testing platform. Everything you need for production-grade load tests. Serverless & distributed. Load test with Playwright. Load test HTTP APIs, GraphQL, WebSocket, and more. Use any Node.js module."
+  },
+  {
+    "user": "getmaxun",
+    "repo": "maxun",
+    "url": "https://github.com/getmaxun/maxun",
+    "detail": "🔥 Open-source no-code web data extraction platform. Turn websites to APIs and spreadsheets with no-code robots in minutes! [In Beta]"
+  },
+  {
+    "user": "apify",
+    "repo": "crawlee-python",
+    "url": "https://github.com/apify/crawlee-python",
+    "detail": "Crawlee—A web scraping and browser automation library for Python to build reliable crawlers. Extract data for AI, LLMs, RAG, or GPTs. Download HTML, PDF, JPG, PNG, and other files from websites. Works with BeautifulSoup, Playwright, and raw HTTP. Both headful and headless mode. With proxy rotation."
+  },
+  {
+    "user": "codeceptjs",
+    "repo": "CodeceptJS",
+    "url": "https://github.com/codeceptjs/CodeceptJS",
+    "detail": "Supercharged End 2 End Testing Framework for NodeJS"
+  },
+  {
+    "user": "qawolf",
+    "repo": "qawolf",
+    "url": "https://github.com/qawolf/qawolf",
+    "detail": "🐺 Create browser tests 10x faster"
+  },
+  {
+    "user": "microsoft",
+    "repo": "dotnet-podcasts",
+    "url": "https://github.com/microsoft/dotnet-podcasts",
+    "detail": ".NET reference application shown at .NET Conf featuring ASP.NET Core, Blazor, .NET MAUI, Microservices, Orleans, Playwright, and more!"
+  },
+  {
+    "user": "vogler",
+    "repo": "free-games-claimer",
+    "url": "https://github.com/vogler/free-games-claimer",
+    "detail": "Automatically claims free games on the Epic Games Store, Amazon Prime Gaming and GOG."
+  },
+  {
+    "user": "microsoft",
+    "repo": "playwright-dotnet",
+    "url": "https://github.com/microsoft/playwright-dotnet",
+    "detail": ".NET version of the Playwright testing and automation library."
+  },
+  {
+    "user": "mishushakov",
+    "repo": "llm-scraper",
+    "url": "https://github.com/mishushakov/llm-scraper",
+    "detail": "Turn any webpage into structured data using LLMs"
+  },
+  {
+    "user": "playwright-community",
+    "repo": "playwright-go",
+    "url": "https://github.com/playwright-community/playwright-go",
+    "detail": "Playwright for Go a browser automation library to control Chromium, Firefox and WebKit with a single API."
+  },
+  {
+    "user": "bjesus",
+    "repo": "pipet",
+    "url": "https://github.com/bjesus/pipet",
+    "detail": "Swiss-army tool for scraping and extracting data from online assets, made for hackers"
+  },
+  {
+    "user": "simonw",
+    "repo": "shot-scraper",
+    "url": "https://github.com/simonw/shot-scraper",
+    "detail": "A command-line utility for taking automated screenshots of websites"
+  },
+  {
+    "user": "ocsjs",
+    "repo": "ocsjs",
+    "url": "https://github.com/ocsjs/ocsjs",
+    "detail": "OCS 网课助手，刷课脚本，网课脚本，帮助大学生解决网课难题，支持【超星学习通】【知道智慧树】【职教云】【智慧职教】【中国大学MOOC】等网课 ， 可以在 脚本猫 以及 油猴 等开源脚本管理器下运行。"
+  },
+  {
+    "user": "D4Vinci",
+    "repo": "Scrapling",
+    "url": "https://github.com/D4Vinci/Scrapling",
+    "detail": "Undetectable, Lightning-Fast, and Adaptive Web Scraping for Python"
+  }
+]
