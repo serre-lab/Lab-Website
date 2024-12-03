@@ -9,10 +9,9 @@ import {
 } from "@mantine/core";
 
 import { Home } from "./pages/Home/Home";
-// import About from "./pages/About/About";
 import { Research } from "./pages/Research/Research";
 import { Resources } from "./pages/Resources/Resources";
-// import { SciComm } from "./pages/SciComm/SciComm";
+import { Publications } from "./pages/Publications/Publications";
 import People from "./pages/People/People";
 
 import { Root } from "./components/Root"; // Adjust the path as necessary
@@ -28,6 +27,7 @@ const links: Links = {
     internal: [
         { to: "/", label: "Home" },
         { to: "/research", label: "Research" },
+        { to: "/publications", label: "Publications" },
         { to: "/people", label: "People" },
         // { to: "/about", label: "About" },
         { to: "/resources", label: "Resources" },
@@ -46,6 +46,7 @@ const router = createBrowserRouter([
         children: [
             { path: "/", element: <Home /> },
             { path: "/research", element: <Research /> },
+            { path: "/publications", element: <Publications /> },
             { path: "/people", element: <People /> },
             { path: "/resources", element: <Resources /> },
         ],
