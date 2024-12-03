@@ -11,6 +11,7 @@ import {
 import { Home } from "./pages/Home/Home";
 import { Research } from "./pages/Research/Research";
 import { Resources } from "./pages/Resources/Resources";
+//@ts-ignore
 import { Publications } from "./pages/Publications/Publications";
 import People from "./pages/People/People";
 

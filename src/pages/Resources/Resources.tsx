@@ -19,14 +19,14 @@ export function Resources() {
                             ([subCategoryName, subCategory]) => (
                                 // <li key={subCategoryName}>
                                 <div>
-                                    <Title
-                                        order={3}
+                                    <Text
+                                        size="xl"
                                         style={{
                                             color: "gray",
                                         }}
                                     >
                                         {subCategoryName}
-                                    </Title>
+                                    </Text>
                                     <List>
                                         {subCategory.map((resource) => (
                                             <List.Item key={resource.title}>
