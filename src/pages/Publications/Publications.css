@@ -25,15 +25,33 @@
     flex-direction: column;
 }
 
-.year-filter button {
+.year-filter span {
     margin-bottom: 5px;
-    padding: 8px;
-    background-color: #f0f0f0;
-    border: none;
     cursor: pointer;
+    color: #007bff;
 }
 
-.year-filter button.active {
-    background-color: #007bff;
-    color: white;
+.year-filter span.active {
+    font-weight: bold;
+}
+
+.publication-item {
+    margin-bottom: 15px;
+}
+
+.publication-title {
+    margin-bottom: 5px;
+}
+
+.publication-authors {
+    margin-bottom: 5px;
+}
+
+.journal-tag {
+    display: inline-block;
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.9em;
 }
