@@ -1,4 +1,4 @@
-import { Card, Image, Text, Title, Button, Modal } from "@mantine/core";
+import { Card, Image, Text, Title, Modal } from "@mantine/core";
 import { useState } from "react";
 import "./Person.css";
 // import { FaChevronDown, FaChevronUp } from "react-icons/fa";

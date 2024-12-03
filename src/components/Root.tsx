@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
-import { Link, Links } from "../types";
+import { Links } from "../types";
 
 interface RootProps {
     links: Links;

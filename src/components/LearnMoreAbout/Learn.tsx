@@ -1,5 +1,5 @@
 import { Title, Text } from "@mantine/core";
-import { FaVial, FaHand, FaBookOpen, FaMicrophone } from "react-icons/fa6";
+import { FaVial, FaHand, FaMicrophone } from "react-icons/fa6";
 import "./Learn.css";
 import { Link } from "react-router-dom";
 
