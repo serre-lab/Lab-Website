@@ -93,11 +93,13 @@ export function Publications() {
                                                 </Text>
                                             </Anchor>
                                             <Text className="publication-authors">
+                                                <span className="journal-tag">
+                                                    <Text size="sm">
+                                                        {publication.journal}
+                                                    </Text>
+                                                </span>
                                                 {publication.authors}
                                             </Text>
-                                            <span className="journal-tag">
-                                                {publication.journal}
-                                            </span>
                                         </div>
                                     )
                                 )}

@@ -45,6 +45,8 @@
 
 .publication-authors {
     margin-bottom: 5px;
+    display: flex;
+    gap: 0.5rem;
 }
 
 .journal-tag {
