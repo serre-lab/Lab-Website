@@ -1,5 +1,11 @@
 import { Title, Text } from "@mantine/core";
-import { FaVial, FaHand, FaMicrophone, FaBookOpen } from "react-icons/fa6";
+import {
+    FaVial,
+    FaHand,
+    FaMicrophone,
+    FaBookOpen,
+    FaBook,
+} from "react-icons/fa6";
 import "./Learn.css";
 import { Link } from "react-router-dom";
 
@@ -24,8 +30,14 @@ export default function Learn() {
                 </div>
                 <div>
                     <Link to="resources">
-                        <FaBookOpen size={56} />
+                        <FaBook size={56} />
                         <Text size="lg">Resources</Text>
+                    </Link>
+                </div>
+                <div>
+                    <Link to="publications">
+                        <FaBookOpen size={56} />
+                        <Text size="lg">Publications</Text>
                     </Link>
                 </div>
                 <div>
