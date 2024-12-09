@@ -32,6 +32,10 @@ const links: Links = {
         { to: "/people", label: "People" },
         // { to: "/about", label: "About" },
         { to: "/resources", label: "Resources" },
+        {
+            to: "https://serre-lab.clps.brown.edu/news-page/",
+            label: "Sci-Comm",
+        },
         // { to: "/scicomm", label: "Sci-Comm" },
     ],
     social: [
