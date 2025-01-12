@@ -11,8 +11,8 @@ export function Publications() {
         setSearchQuery(e.target.value.toLowerCase());
     };
 
-    const handleYearClick = (year) => {
-        setSelectedYear(year);
+    const handleYearChange = (e) => {
+        setSelectedYear(e.target.value);
     };
 
     const filterPublications = () => {
@@ -45,31 +45,31 @@ export function Publications() {
     return (
         <div className="publications-container">
             <div className="filter-section">
-                <Title order={2}>Filter Publications</Title>
-                <input
-                    type="text"
-                    placeholder="Search by title or author..."
-                    value={searchQuery}
-                    onChange={handleSearchChange}
-                />
-                <div className="year-filter">
-                    <span
-                        onClick={() => handleYearClick("All")}
-                        className={selectedYear === "All" ? "active" : ""}
+                <div className="search-and-dropdown">
+                    {/* Search Input */}
+                    <input
+                        type="text"
+                        placeholder="Search by title or author..."
+                        value={searchQuery}
+                        onChange={handleSearchChange}
+                    />
+
+                    {/* Year Dropdown */}
+                    <select
+                        value={selectedYear}
+                        onChange={handleYearChange}
+                        className="year-dropdown"
                     >
-                        All Years
-                    </span>
-                    {sortedYears.map((year) => (
-                        <span
-                            key={year}
-                            onClick={() => handleYearClick(year)}
-                            className={selectedYear === year ? "active" : ""}
-                        >
-                            {year}
-                        </span>
-                    ))}
+                        <option value="All">All Years</option>
+                        {sortedYears.map((year) => (
+                            <option key={year} value={year}>
+                                {year}
+                            </option>
+                        ))}
+                    </select>
                 </div>
             </div>
+
             <div className="results-section">
                 {sortedYears.map(
                     (year) =>
@@ -82,6 +82,7 @@ export function Publications() {
                                             key={index}
                                             className="publication-item"
                                         >
+                                            {/* Title */}
                                             <Anchor
                                                 href={publication.url}
                                                 target="_blank"
@@ -92,12 +93,14 @@ export function Publications() {
                                                     {publication.title}
                                                 </Text>
                                             </Anchor>
+
+                                            {/* Journal */}
+                                            <Text className="publication-journal">
+                                                {publication.journal}
+                                            </Text>
+
+                                            {/* Authors */}
                                             <Text className="publication-authors">
-                                                <span className="journal-tag">
-                                                    <Text size="sm">
-                                                        {publication.journal}
-                                                    </Text>
-                                                </span>
                                                 {publication.authors}
                                             </Text>
                                         </div>
