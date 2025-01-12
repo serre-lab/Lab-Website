@@ -5,11 +5,10 @@ import "./MarkdownPage.css";
 import data from "../../content/test.md?raw";
 
 interface MarkdownPageProps {
-    content: string; // Preloaded Markdown content
+    content: string;
 }
 
 const MarkdownPage: React.FC<MarkdownPageProps> = ({ content }) => {
-    // console.log("mkdn page content: ", content);
     return (
         <div className="markdown-container">
             <ReactMarkdown>{content}</ReactMarkdown>

@@ -10,18 +10,16 @@ import { Resources } from "./pages/Resources/Resources";
 import { Publications } from "./pages/Publications/Publications";
 import People from "./pages/People/People";
 
-import { Root } from "./components/Root"; // Adjust the path as necessary
+import { Root } from "./components/Root";
 import { Links } from "./types";
 
 import MarkdownPage from "./components/MarkdownPage/MarkdownPage";
-import { loadMarkdownFiles } from "./utils/loadMarkdownFiles"; // For runtime scanning
+import { loadMarkdownFiles } from "./utils/loadMarkdownFiles";
 
-// Add theme to provider if you want to customize
 const theme = createTheme({
     fontFamily: "futura-pt",
 });
 
-// Static Header and Footer Links
 const staticLinks: Links = {
     internal: [
         { to: "/", label: "Home" },
@@ -40,31 +38,28 @@ const staticLinks: Links = {
     ],
 };
 
-// Utility function to convert a string to Title Case
 const toTitleCase = (str: string): string => {
     return str
-        .replace(/-/g, " ") // Replace dashes with spaces
-        .replace(/\b\w/g, (char) => char.toUpperCase()); // Capitalize first letter of each word
+        .replace(/-/g, " ")
+        .replace(/\b\w/g, (char) => char.toUpperCase());
 };
 
 const App = () => {
     const [routes, setRoutes] = useState<{ path: string; content: string }[]>(
         []
     );
-    const [links, setLinks] = useState<Links>(staticLinks); // Initialize with static links
-    const [loading, setLoading] = useState(true); // Add loading state
+    const [links, setLinks] = useState<Links>(staticLinks);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const fetchRoutes = async () => {
-            const markdownRoutes = await loadMarkdownFiles(); // Wait for the Promise to resolve
+            const markdownRoutes = await loadMarkdownFiles();
 
-            // Update routes state
             setRoutes(markdownRoutes);
 
-            // Dynamically add Markdown links to the internal links array (avoid duplicates)
             const markdownLinks = markdownRoutes.map(({ path }) => ({
                 to: path,
-                label: toTitleCase(path.replace("/", "")), // Generate a readable Title Case label
+                label: toTitleCase(path.replace("/", "")),
             }));
 
             setLinks((prevLinks) => ({
@@ -76,17 +71,16 @@ const App = () => {
                             !prevLinks.internal.some(
                                 (existing) => existing.to === link.to
                             )
-                    ), // Avoid duplicate links
+                    ),
                 ],
             }));
 
-            setLoading(false); // Set loading to false once routes are loaded
+            setLoading(false);
         };
 
         fetchRoutes();
     }, []);
 
-    // Show a loading spinner or placeholder while routes are loading
     if (loading) {
         return <div>Loading...</div>;
     }
@@ -94,7 +88,7 @@ const App = () => {
     const router = createBrowserRouter([
         {
             path: "/",
-            element: <Root links={links} />, // Pass updated links dynamically
+            element: <Root links={links} />,
             children: [
                 // Static Routes
                 { path: "/", element: <Home /> },
