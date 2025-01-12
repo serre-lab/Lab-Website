@@ -1,52 +1,45 @@
 .publications-container {
     display: flex;
-}
-
-.filter-section {
-    flex: 1;
-    padding: 20px;
-    border-right: 1px solid #ccc;
-}
-
-.results-section {
-    flex: 3;
-    padding: 20px;
-}
-
-.filter-section input {
-    display: block;
-    margin-bottom: 10px;
-    width: 100%;
-    padding: 8px;
-}
-
-.year-filter {
-    display: flex;
     flex-direction: column;
 }
 
-.year-filter span {
-    margin-bottom: 5px;
-    cursor: pointer;
-    color: #007bff;
+.filter-section {
+    padding: 20px;
+    border-bottom: 1px solid #ccc; /* Separate filter and results visually */
 }
 
-.year-filter span.active {
-    font-weight: bold;
+.search-and-dropdown {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.search-and-dropdown input {
+    flex: 2;
+    padding: 8px;
+}
+
+.year-dropdown {
+    flex: 0;
+    width: 150px;
+    padding: 8px;
+}
+
+.results-section {
+    padding: 20px;
 }
 
 .publication-item {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .publication-title {
     margin-bottom: 5px;
 }
 
+.publication-journal,
 .publication-authors {
     margin-bottom: 5px;
-    display: flex;
-    gap: 0.5rem;
 }
 
 .journal-tag {
