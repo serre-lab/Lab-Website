@@ -17,7 +17,8 @@ import MarkdownPage from "./components/MarkdownPage/MarkdownPage";
 import { loadMarkdownFiles } from "./utils/loadMarkdownFiles";
 
 const theme = createTheme({
-    fontFamily: "futura-pt",
+    // fontFamily: "futura-pt",
+    fontFamily: "-apple-system, BlinkMacSystemFont, sans-serif",
 });
 
 const staticLinks: Links = {
