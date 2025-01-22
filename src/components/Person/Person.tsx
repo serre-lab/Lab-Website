@@ -65,7 +65,10 @@ export default function Person(props: PersonProps) {
                     <Title order={3} className="person-name">
                         {props.fullName}
                     </Title>
+                    {props.description ? 
                     <Text>{props.description}</Text>
+                        : <Text>{props.fullName} is a student in the Serre Lab at Brown University</Text>
+                    }
                 </Card>
             </Modal>
         </>
