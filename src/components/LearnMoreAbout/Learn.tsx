@@ -41,7 +41,7 @@ export default function Learn() {
                     </Link>
                 </div>
                 <div>
-                    <Link to="scicomm">
+                    <Link to="https://serre-lab.clps.brown.edu/news-page/">
                         <FaMicrophone size={56} />
                         <Text size="lg">Sci-Comm</Text>
                     </Link>
