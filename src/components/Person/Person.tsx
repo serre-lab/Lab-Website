@@ -1,7 +1,6 @@
 import { Card, Image, Text, Title, Modal } from "@mantine/core";
 import { useState } from "react";
 import "./Person.css";
-// import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 interface PersonProps {
     fullName: string;
@@ -10,66 +9,65 @@ interface PersonProps {
     description: string;
 }
 
-export default function Person(props: PersonProps) {
+export default function Person({ fullName, title, imagePath, description }: PersonProps) {
     const [opened, setOpened] = useState(false);
 
     return (
         <>
             <Card
-                shadow="sm"
+                shadow="md"
                 padding="lg"
+                radius="md"
                 className="person-card"
                 onClick={() => setOpened(true)}
+                withBorder
             >
-                {props.imagePath && (
+                {imagePath && (
                     <Card.Section>
                         <Image
-                            src={props.imagePath}
-                            alt={props.fullName}
+                            src={imagePath}
+                            alt={fullName}
                             className="person-image"
+                            radius="sm"
                         />
                     </Card.Section>
                 )}
-                <Title order={3} className="person-name">
-                    {props.fullName}
+                <Title order={4} className="person-name">
+                    {fullName}
                 </Title>
+                <Text className="person-title">{title}</Text>
             </Card>
 
             <Modal
                 opened={opened}
                 onClose={() => setOpened(false)}
-                // title={props.fullName}
                 overlayProps={{
                     backgroundOpacity: 0.55,
-                    blur: 3,
+                    blur: 4,
                 }}
-                withCloseButton={false}
-                size="auto"
+                withCloseButton
+                centered
+                size="lg"
+                padding="lg"
             >
-                <Card
-                    shadow="sm"
-                    padding="lg"
-                    // className="person-card"
-                    className="person-modal"
-                    onClick={() => setOpened(true)}
-                >
-                    {props.imagePath && (
-                        <Card.Section>
-                            <Image
-                                src={props.imagePath}
-                                alt={props.fullName}
-                                className="person-image"
-                            />
-                        </Card.Section>
+                <div className="person-modal-content">
+                    {imagePath && (
+                        <Image
+                            src={imagePath}
+                            alt={fullName}
+                            className="person-modal-image"
+                        />
                     )}
-                    <Title order={3} className="person-name">
-                        {props.fullName}
-                    </Title>
-                    {props.description ? 
-                    <Text>{props.description}</Text>
-                        : <Text>{props.fullName} is a student in the Serre Lab at Brown University</Text>
-                    }
-                </Card>
+                    <div className="person-modal-text">
+                        <Title order={3} className="person-name">
+                            {fullName}
+                        </Title>
+                        <Text className="person-title">{title}</Text>
+                        <Text className="person-description">
+                            {description || `${fullName} is a student in the Serre Lab at Brown University.`}
+                        </Text>
+                    </div>
+                </div>
             </Modal>
         </>
     );

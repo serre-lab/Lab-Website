@@ -70,7 +70,7 @@
         },
         {
             "fullName": "Thomas Fel",
-            "title": "Lab Person",
+            "title": "Member",
             "imagePath": "people/thomas-fel.jpg",
             "description": ""
         },
@@ -89,38 +89,38 @@
         },
         {
             "fullName": "Ella Mohanram",
-            "title": "Principal Investigator",
+            "title": "Member",
             "imagePath": "people/ella-mohanram.jpg",
             "description": ""
         },
         {
-            "fullName": "Jesus",
-            "title": "Principal Investigator",
-            "imagePath": "people/thomas-serre.jpg",
+            "fullName": "Jesus Rodriguez",
+            "title": "Member",
+            "imagePath": "people/jesus-rodriguez.jpg",
             "description": ""
         },
 
         {
             "fullName": "Manna Patiparnprechavut",
-            "title": "Principal Investigator",
+            "title": "Member",
             "imagePath": "people/manna-patiparnprechavut.jpg",
             "description": ""
         },
         {
             "fullName": "Xizheng Yu",
-            "title": "Principal Investigator",
+            "title": "Member",
             "imagePath": "people/xizheng-yu.jpg",
             "description": ""
         },
         {
             "fullName": "Vatsala Nema",
-            "title": "Principal Investigator",
+            "title": "Member",
             "imagePath": "people/vatsala-nema.jpg",
             "description": ""
         },
         {
             "fullName": "Diksha Krishnan",
-            "title": "Principal Investigator",
+            "title": "Member",
             "imagePath": "people/diksha-krishnan.jpg",
             "description": ""
         }

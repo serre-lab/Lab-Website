@@ -1,55 +1,50 @@
-import resourcesData from "./resources.json";
+import resourcesData from "../../data/resources.json";
 import "./Resources.css";
-import { Text, Title, Anchor, List } from "@mantine/core";
+import { Text, Title, Anchor, List, Paper, Divider } from "@mantine/core";
 
 export function Resources() {
-    console.log(Object.entries(resourcesData)[0]);
-    const [category, resources] = Object.entries(resourcesData)[0];
-    console.log(category);
-    console.log(Object.entries(resources));
     return (
         <div className="resources-container">
-            <Title>Resources</Title>
+            <Title order={1} className="resources-title">
+                Resources
+            </Title>
+
             <div className="resources-columns">
                 {Object.entries(resourcesData).map(([category, resources]) => (
-                    <div key={category}>
-                        <Title order={2}>{category}</Title>
-                        {/* <ul> */}
+                    <Paper
+                        key={category}
+                        shadow="xs"
+                        radius="md"
+                        p="md"
+                        className="resource-card"
+                    >
+                        <Title order={3} className="resource-category">
+                            {category}
+                        </Title>
+                        <Divider my="sm" />
                         {Object.entries(resources).map(
                             ([subCategoryName, subCategory]) => (
-                                // <li key={subCategoryName}>
-                                <div>
-                                    <Text
-                                        size="xl"
-                                        style={{
-                                            color: "gray",
-                                        }}
-                                    >
+                                <div key={subCategoryName} className="sub-category-block">
+                                    <Text size="lg" fw={600} className="sub-category-title">
                                         {subCategoryName}
                                     </Text>
-                                    <List>
+                                    <List spacing="xs" size="sm" withPadding>
                                         {subCategory.map((resource) => (
                                             <List.Item key={resource.title}>
                                                 <Anchor
                                                     href={resource.url}
                                                     target="_blank"
+                                                    rel="noopener noreferrer"
                                                 >
-                                                    {resource.title ||
-                                                        resource.url}
+                                                    {resource.title || resource.url}
                                                 </Anchor>
-                                                {/* <a href={resource.url}>
-                                                    {resource.title ||
-                                                        resource.url}
-                                                </a> */}
                                             </List.Item>
                                         ))}
                                     </List>
-                                    {/* // </li> */}
                                 </div>
                             )
                         )}
-                        {/* </ul> */}
-                    </div>
+                    </Paper>
                 ))}
             </div>
         </div>

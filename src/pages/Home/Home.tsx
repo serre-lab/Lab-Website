@@ -2,75 +2,119 @@ import { Link } from "react-router-dom";
 import Learn from "../../components/LearnMoreAbout/Learn";
 import "./Home.css";
 import { Title, Text } from "@mantine/core";
+import { motion } from "motion/react";
+
+// Animation variants
+const fadeUp = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
+
+const fadeZoom = {
+  hidden: { opacity: 0, y: 30, scale: 0.97 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
+
+const staggerContainer = {
+  visible: {
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
 
 export function Home() {
-    return (
-        <div className="home-container">
-            {/* Image + Title */}
-            <div className="image-wrapper">
-                <Title aria-label="lab title">Serre Lab</Title>
-                <Text aria-label="lab one-liner" size="xl">
-                    Understanding the neural computations supporting visual
-                    perception
-                </Text>
-            </div>
-
-            {/* Content */}
-
-            <Learn />
-            <div className="home-content">
-                <Text size="lg">
-                    We are proud members of the{" "}
-                    <Link to="https://carney.brown.edu/">
-                        Carney Institute for Brain Science
-                    </Link>{" "}
-                    and the{" "}
-                    <Link to={"https://ccbs.carney.brown.edu/"}>
-                        Center for Computational Brain Science
-                    </Link>{" "}
-                    at Brown! We also work in close collaboration with and
-                    leverage resources from the{" "}
-                    <Link to={"https://ccv.brown.edu/"}>
-                        Center for Computation and Visualization
-                    </Link>
-                    .
-                </Text>
-                <Text size="lg">
-                    There is little doubt that even a partial solution to the
-                    question of which computations are carried out by the visual
-                    cortex would be a major breakthrough: It would begin to
-                    explain one of our most amazing abilities, vision; and it
-                    would open doors to other aspects of intelligence such as
-                    language, planning or reasoning. It would also help connect
-                    neurobiology and mathematics, making it possible to develop
-                    computer algorithms that follow the information-processing
-                    principles used by biological organisms and honed by natural
-                    evolution.
-                </Text>
-                <Title order={2}>Prospective Students</Title>
-                <Text size="lg">
-                    The lab is actively recruiting! Brown undergrad and MSc
-                    students interested in conducting research in the lab are
-                    encouraged to email Prof. Serre with a copy of their course
-                    transcript and resume/CV. Students are expected to have
-                    taken a CS intro sequence and at least one course in machine
-                    learning, computer vision, and/or deep learning.
-                </Text>
-                <Text size="lg">
-                    Prospective Ph.D. students can apply to the graduate
-                    programs in cognitive science, computer science and/or
-                    neuroscience. They are welcome to email Prof. Serre.
-                    However, due to the high volume of applicants, Prof. Serre
-                    can only meet with prospective students after their
-                    application successfully passes the initial stage of
-                    admission.
-                </Text>
-                <Text size="lg">
-                    Prospective postdoc applicants should email Prof. Serre
-                    directly.
-                </Text>
-            </div>
-            <div></div>
+  return (
+    <div className="home-container">
+      {/* Hero Section */}
+      <motion.div
+  className="image-wrapper"
+  variants={fadeZoom}
+  initial="hidden"
+  animate="visible"
+>
+        <div className="hero-text">
+          <Title aria-label="lab title">Serre Lab</Title>
+          <Text aria-label="lab one-liner" size="xl">
+            Understanding the neural computations supporting visual perception
+          </Text>
         </div>
-    );
+      </motion.div>
+
+      {/* Learn More Section */}
+      <motion.div
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
+        <Learn />
+      </motion.div>
+
+      {/* Main Content */}
+      <motion.div
+        className="home-content"
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <motion.div variants={fadeUp}>
+          <Text size="lg">
+            We are proud members of the{" "}
+            <Link to="https://carney.brown.edu/">Carney Institute for Brain Science</Link> and the{" "}
+            <Link to="https://ccbs.carney.brown.edu/">Center for Computational Brain Science</Link>{" "}
+            at Brown! We also work in close collaboration with and leverage resources from the{" "}
+            <Link to="https://ccv.brown.edu/">Center for Computation and Visualization</Link>.
+          </Text>
+        </motion.div>
+
+        <motion.div variants={fadeUp}>
+          <Text size="lg">
+            Even a partial solution to the computations of the visual cortex would be a breakthrough:
+            it would help explain one of our most profound abilities—vision—and open the door to
+            understanding language, reasoning, and planning. It also bridges neurobiology and
+            mathematics, guiding the development of biologically inspired algorithms.
+          </Text>
+        </motion.div>
+
+        <motion.div variants={fadeUp}>
+          <Title order={2} className="section-title">
+            Prospective Students
+          </Title>
+        </motion.div>
+
+        <motion.div variants={fadeUp}>
+          <Text size="lg">
+            The lab is actively recruiting! Brown undergrad and MSc students interested in research
+            should email Prof. Serre with a transcript and resume/CV. Students should have completed
+            a CS intro sequence and at least one ML, vision, or deep learning course.
+          </Text>
+        </motion.div>
+
+        <motion.div variants={fadeUp}>
+          <Text size="lg">
+            PhD applicants can apply through cognitive science, computer science, or neuroscience
+            graduate programs. Prof. Serre only meets prospective students after the initial
+            application review.
+          </Text>
+        </motion.div>
+
+        <motion.div variants={fadeUp}>
+          <Text size="lg">
+            Prospective postdocs should email Prof. Serre directly.
+          </Text>
+        </motion.div>
+      </motion.div>
+    </div>
+  );
 }
