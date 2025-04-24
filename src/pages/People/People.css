@@ -1,21 +1,23 @@
-/* src/pages/People/People.css */
-.groupedPeople-container {
+.people-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-.people-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(200px, 1fr));
-    gap: 16px;
-}
-
-.people-flex {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-}
-
-.people-container {
+    gap: 2rem;
+  }
+  
+  .people-page-title {
     text-align: center;
-}
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .people-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+    width: 100%;
+  }
+  

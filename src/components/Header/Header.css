@@ -2,32 +2,64 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5em 2em;
-    border-bottom: 0.01em solid black;
+    padding: 1.25rem 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        position: sticky;
+    top: 0;
+    z-index: 10;
     overflow-x: auto;
+    gap: 1rem;
+    flex-wrap: wrap;
 
-    .left {
-        display: flex;
-        align-items: center;
-        gap: 1em;
+    
+  }
+  
+  /* Left Side: Logo + Lab Name */
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: black;
+  }
+  
+  .left img {
+    width: 48px;
+    height: auto;
+  }
+  
+  /* Right Side: Navigation Links */
+  .links {
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+  }
+  
+  .links a {
+    color: #212529;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+  }
+  
+  .links a:hover {
+    color: #a4161a;
+    text-decoration: underline;
+  }
+  
+  /* Responsive: Wrap links on smaller screens */
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
     }
-
+  
     .links {
-        display: flex;
-        gap: 1em;
+      justify-content: flex-start;
     }
-
-    .links a {
-        color: black;
-        text-decoration: none;
-    }
-
-    .links a:hover {
-        color: #f1356d;
-        text-decoration: underline;
-    }
-
-    .left img {
-        width: 50px;
-    }
-}
+  }
+  

@@ -12,7 +12,7 @@ export default function Footer(props: FooterProps) {
     return (
         <div className="footer-container">
             <div className="footer-left">
-                <img src="/serre-logo.webp" alt="Serre Lab Logo" />
+                <img src="/brown-logo.webp" alt="Brown University Logo" />
                 <p>Serre Lab</p>
             </div>
             <div className="footer-right">
@@ -33,6 +33,9 @@ export default function Footer(props: FooterProps) {
                     ))}
                 </div>
             </div>
+            <p className="footer-copy">
+                © {new Date().getFullYear()} Serre Lab · Brown University
+            </p>
         </div>
     );
 }

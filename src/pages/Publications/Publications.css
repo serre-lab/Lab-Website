@@ -11,35 +11,62 @@
 .search-and-dropdown {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-}
-
-.search-and-dropdown input {
-    flex: 2;
-    padding: 8px;
-}
-
-.year-dropdown {
-    flex: 0;
-    width: 150px;
-    padding: 8px;
-}
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .search-bar {
+    flex: 1 1 300px;
+    min-width: 250px;
+  }
+  
+  .year-dropdown {
+    min-width: 150px;
+  }
+  
 
 .results-section {
     padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    align-items: center;
+    justify-content: center; 
+}
+.publication-year-block {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 40px auto; /* center horizontally + spacing */
+    /* text-align: center; */
+  }
+  
+.year-heading {
+    /* font-size: 1.75rem; */
+    /* font-weight: 700; */
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #d6d7e0; /* subtle grey line */
+    text-align: left;
 }
 
+  
 .publication-item {
     margin-bottom: 20px;
 }
 
 .publication-title {
-    margin-bottom: 5px;
+    /* display: inline-block; */
+    color: black;
+    text-decoration: underline;
+    margin-bottom: 1rem;
 }
 
 .publication-journal,
 .publication-authors {
-    margin-bottom: 5px;
+    margin-bottom: 1rem;
 }
 
 .journal-tag {

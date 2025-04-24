@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import "./Publications.css";
-import { Anchor, Text, Title } from "@mantine/core";
+import { Anchor, Text, Title, TextInput, Select } from "@mantine/core";
 import publicationsData from "../../data/publications_by_year.json";
+import { motion } from "framer-motion";
+import { FaMicrophone } from "react-icons/fa";
+// import { IconSearch } from "@tabler/icons-react"; // optional icon
 
 export function Publications() {
     const [searchQuery, setSearchQuery] = useState("");
@@ -35,78 +38,79 @@ export function Publications() {
 
     const filteredPublications = filterPublications();
 
-    // Sort years with "Work in progress" first, then descending numerical order
     const sortedYears = Object.keys(publicationsData).sort((a, b) => {
-        if (a === "Work in progress") return -1; // Keep "Work in progress" at the top
+        if (a === "Work in progress") return -1;
         if (b === "Work in progress") return 1;
-        return parseInt(b) - parseInt(a); // Sort numerically for other years
+        return parseInt(b) - parseInt(a);
     });
+
+    const fadeUp = {
+        hidden: { opacity: 0, y: 30 },
+        visible: (i) => ({
+            opacity: 1,
+            y: 0,
+            transition: { delay: i * 0.001, duration: 0.3 },
+        }),
+    };
 
     return (
         <div className="publications-container">
-            <div className="filter-section">
-                <div className="search-and-dropdown">
-                    {/* Search Input */}
-                    <input
-                        type="text"
-                        placeholder="Search by title or author..."
-                        value={searchQuery}
-                        onChange={handleSearchChange}
-                    />
-
-                    {/* Year Dropdown */}
-                    <select
-                        value={selectedYear}
-                        onChange={handleYearChange}
-                        className="year-dropdown"
-                    >
-                        <option value="All">All Years</option>
-                        {sortedYears.map((year) => (
-                            <option key={year} value={year}>
-                                {year}
-                            </option>
-                        ))}
-                    </select>
-                </div>
-            </div>
-
+           <div className="filter-section">
+  <div className="search-and-dropdown">
+    <TextInput
+      placeholder="Search by title or author..."
+      icon={<FaMicrophone size={48} />}
+      value={searchQuery}
+      onChange={handleSearchChange}
+      className="search-bar"
+    />
+    <Select
+      className="year-dropdown"
+      data={["All", ...sortedYears]}
+      value={selectedYear}
+      onChange={(val) => setSelectedYear(val || "All")}
+      withinPortal
+    />
+  </div>
+</div>
             <div className="results-section">
                 {sortedYears.map(
-                    (year) =>
+                    (year, i) =>
                         filteredPublications[year] && (
-                            <div key={year}>
-                                <Title>{year}</Title>
-                                {filteredPublications[year].map(
-                                    (publication, index) => (
-                                        <div
-                                            key={index}
-                                            className="publication-item"
+                            <motion.div
+                            key={year}
+                            className="publication-year-block"
+                            custom={i}
+                            initial="hidden"
+                            animate="visible"
+                            variants={fadeUp}
+                          >
+                                <Title className="year-heading">{year}</Title>
+                                {filteredPublications[year].map((publication, index) => (
+                                        <motion.div
+                                        key={index}
+                                        className="publication-item"
+                                        custom={index}
+                                        initial="hidden"
+                                        animate="visible"
+                                        variants={fadeUp}
+                                    >                                  
+                                        <Anchor
+                                            href={publication.url}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="publication-title"
                                         >
-                                            {/* Title */}
-                                            <Anchor
-                                                href={publication.url}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="publication-title"
-                                            >
-                                                <Text size="xl">
-                                                    {publication.title}
-                                                </Text>
-                                            </Anchor>
-
-                                            {/* Journal */}
-                                            <Text className="publication-journal">
-                                                {publication.journal}
+                                            <Text size="xl" fw={500}>
+                                                {publication.title}
                                             </Text>
-
-                                            {/* Authors */}
-                                            <Text className="publication-authors">
-                                                {publication.authors}
-                                            </Text>
-                                        </div>
-                                    )
-                                )}
-                            </div>
+                                        </Anchor>
+                                        <Text className="publication-authors" size="sm">
+                                            {publication.authors}
+                                        </Text>
+                                    </motion.div>
+                                ))}
+                            </motion.div>
                         )
                 )}
             </div>
