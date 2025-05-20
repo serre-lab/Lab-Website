@@ -18,14 +18,14 @@ export function Resources() {
                         p="md"
                         className="resource-card"
                     >
-                        <Title order={3} className="resource-category">
+                        <Title order={2} className="resource-category">
                             {category}
                         </Title>
                         <Divider my="sm" />
                         {Object.entries(resources).map(
                             ([subCategoryName, subCategory]) => (
                                 <div key={subCategoryName} className="sub-category-block">
-                                    <Text size="lg" fw={600} className="sub-category-title">
+                                    <Text size="lg" className="sub-category-title">
                                         {subCategoryName}
                                     </Text>
                                     <List spacing="xs" size="sm" withPadding>
@@ -36,7 +36,9 @@ export function Resources() {
                                                     target="_blank"
                                                     rel="noopener noreferrer"
                                                 >
+                                                    <Text>
                                                     {resource.title || resource.url}
+                                                    </Text>
                                                 </Anchor>
                                             </List.Item>
                                         ))}

@@ -6,6 +6,14 @@ Welcome to the Serre Lab site repository! This document explains the structure o
 
 ---
 
+## Typography
+
+For future editors of the code:
+
+<Title order={1}> is for Title
+<Title order={2}> is for Subtitle
+<Text> is for paragraph Text
+
 ## 🚀 Tech Stack
 - **Framework**: React (with Vite)
 - **UI Library**: Mantine UI

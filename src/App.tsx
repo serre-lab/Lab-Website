@@ -19,6 +19,18 @@ import { loadMarkdownFiles } from "./utils/loadMarkdownFiles";
 const theme = createTheme({
     // fontFamily: "futura-pt",
     fontFamily: "-apple-system, BlinkMacSystemFont, sans-serif",
+    components: {
+        // Text: {
+        //     defaultProps: {
+        //         size: "lg",
+        //     }
+        // }
+        // Title: {
+        //     defaultProps: {
+
+        //     }
+        // }
+    }
 });
 
 const staticLinks: Links = {

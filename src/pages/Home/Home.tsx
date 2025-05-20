@@ -43,7 +43,7 @@ export function Home() {
   animate="visible"
 >
         <div className="hero-text">
-          <Title aria-label="lab title">Serre Lab</Title>
+          <Title order={1} aria-label="lab title">Serre Lab</Title>
           <Text aria-label="lab one-liner" size="xl">
             Understanding the neural computations supporting visual perception
           </Text>
@@ -69,7 +69,7 @@ export function Home() {
         viewport={{ once: true, amount: 0.2 }}
       >
         <motion.div variants={fadeUp}>
-          <Text size="lg">
+          <Text>
             We are proud members of the{" "}
             <Link to="https://carney.brown.edu/">Carney Institute for Brain Science</Link> and the{" "}
             <Link to="https://ccbs.carney.brown.edu/">Center for Computational Brain Science</Link>{" "}
@@ -79,7 +79,7 @@ export function Home() {
         </motion.div>
 
         <motion.div variants={fadeUp}>
-          <Text size="lg">
+          <Text>
             Even a partial solution to the computations of the visual cortex would be a breakthrough:
             it would help explain one of our most profound abilities—vision—and open the door to
             understanding language, reasoning, and planning. It also bridges neurobiology and
@@ -94,7 +94,7 @@ export function Home() {
         </motion.div>
 
         <motion.div variants={fadeUp}>
-          <Text size="lg">
+          <Text>
             The lab is actively recruiting! Brown undergrad and MSc students interested in research
             should email Prof. Serre with a transcript and resume/CV. Students should have completed
             a CS intro sequence and at least one ML, vision, or deep learning course.
@@ -102,7 +102,7 @@ export function Home() {
         </motion.div>
 
         <motion.div variants={fadeUp}>
-          <Text size="lg">
+          <Text>
             PhD applicants can apply through cognitive science, computer science, or neuroscience
             graduate programs. Prof. Serre only meets prospective students after the initial
             application review.
@@ -110,7 +110,7 @@ export function Home() {
         </motion.div>
 
         <motion.div variants={fadeUp}>
-          <Text size="lg">
+          <Text>
             Prospective postdocs should email Prof. Serre directly.
           </Text>
         </motion.div>
