@@ -15,14 +15,15 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+/* #008abf is blue on website */
 
 a {
     font-weight: 500;
-    color: #646cff;
+    color: #008abf;
     text-decoration: inherit;
 }
 a:hover {
-    color: #535bf2;
+    color: #008abf;
 }
 
 body {
@@ -55,7 +56,7 @@ button {
     transition: border-color 0.25s;
 }
 button:hover {
-    border-color: #646cff;
+    border-color: #008abf;
 }
 button:focus,
 button:focus-visible {
@@ -68,9 +69,13 @@ button:focus-visible {
         background-color: #ffffff;
     }
     a:hover {
-        color: #747bff;
+        color: #008abf;
     }
     button {
         background-color: #f9f9f9;
     }
+}
+
+.alt-blue {
+  color: #008abf;
 }

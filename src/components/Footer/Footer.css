@@ -45,14 +45,14 @@
   }
   
   .footer-container a {
-    color: #212529;
+    color: #008abf;
     text-decoration: none;
     font-size: 0.95rem;
     transition: color 0.2s ease;
   }
   
   .footer-container a:hover {
-    color: #a4161a;
+    color: #008abf;
     text-decoration: underline;
   }
   
