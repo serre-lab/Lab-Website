@@ -6,8 +6,8 @@ import "./People.css";
 
 // Define the desired role order
 const ROLE_ORDER = [
-  "PI",
-  "Assistant Prof of Research",
+  "Principal Investigator",
+  "Assistant Professor of Research",
   "PostDoc",
   "Grad student",
   "Research Assistant",
