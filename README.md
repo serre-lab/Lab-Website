@@ -48,8 +48,8 @@ src/
 ## 👥 Editing People (People Page)
 - File: `src/data/people.json`
 - **Each person must have a `title` field that is one of:**
-  - `PI`
-  - `Assistant Prof of Research`
+  - `Principal Investigator`
+  - `Assistant Professor of Research`
   - `PostDoc`
   - `Grad student`
   - `Research Assistant`
@@ -72,6 +72,18 @@ src/
 ```
 - Cards are **sorted by title alphabetically**, but not grouped visually.
 - Click opens a **modal with image and description**.
+
+---
+
+## 🖼️ Headshot Image Guidelines
+
+- **Recommended size:** 400x400 to 600x600 pixels (square)
+- **Aspect ratio:** 1:1 (square)
+- **Resolution:** 72–150 dpi (web)
+- **File size:** Hopefully Under 200 KB for fast loading, no worries if not possible
+- **Format:** JPG or PNG
+
+This ensures headshots look sharp on all screens and load quickly.
 
 ---
 
@@ -236,3 +248,4 @@ export default tseslint.config({
   },
 })
 ```
+````
