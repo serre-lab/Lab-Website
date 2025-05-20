@@ -1,0 +1,7 @@
+{
+  "alumni": [
+    { "fullName": "Jane Doe", "years": "2018–2023" },
+    { "fullName": "John Smith", "years": "2019–2022" },
+    { "fullName": "Maria Garcia", "years": "2017–2021" }
+  ]
+}
