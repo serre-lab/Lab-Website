@@ -4,12 +4,13 @@ import "./Person.css";
 
 interface PersonProps {
     fullName: string;
-    title: string;
+    title: string; // One of: PI, Assistant Prof of Research, PostDoc, Grad student, Research Assistant, Undergraduate student
+    university: string; // "Brown" or "ANITI"
     imagePath: string;
     description: string;
 }
 
-export default function Person({ fullName, title, imagePath, description }: PersonProps) {
+export default function Person({ fullName, title, university, imagePath, description }: PersonProps) {
     const [opened, setOpened] = useState(false);
 
     return (
@@ -36,6 +37,9 @@ export default function Person({ fullName, title, imagePath, description }: Pers
                     {fullName}
                 </Title>
                 <Text className="person-title">{title}</Text>
+                <Text size="sm" c="dimmed" ta="center" mt={-8}>
+                    {university}
+                </Text>
             </Card>
 
             <Modal
@@ -63,6 +67,9 @@ export default function Person({ fullName, title, imagePath, description }: Pers
                             {fullName}
                         </Title>
                         <Text className="person-title">{title}</Text>
+                        <Text size="md" c="dimmed" ta="center" mt={-8}>
+                            {university}
+                        </Text>
                         <Text className="person-description">
                             {description || `${fullName} is a student in the Serre Lab at Brown University.`}
                         </Text>
