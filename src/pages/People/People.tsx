@@ -1,6 +1,7 @@
-import { Title, Divider } from "@mantine/core";
+import { Title, Divider, List } from "@mantine/core";
 import Person from "../../components/Person/Person";
 import peopleData from "../../data/people.json";
+import alumniData from "../../data/alumni.json";
 import "./People.css";
 
 // Define the desired role order
@@ -10,7 +11,7 @@ const ROLE_ORDER = [
   "PostDoc",
   "Grad student",
   "Research Assistant",
-  "Undergraduate Student",
+  "Undergraduate student",
 ];
 
 export default function People() {
@@ -36,6 +37,20 @@ export default function People() {
           />
         ))}
       </div>
+      {alumniData.alumni && alumniData.alumni.length > 0 && (
+        <>
+          <Divider my="xl" />
+          <Title order={2} className="people-page-title">Alumni</Title>
+          <List size="md" spacing="xs" className="alumni-list">
+            {alumniData.alumni.map((alumn: any, idx: number) => (
+              <List.Item key={idx}>
+                {alumn.fullName}
+                {alumn.years ? ` (${alumn.years})` : ""}
+              </List.Item>
+            ))}
+          </List>
+        </>
+      )}
     </div>
   );
 }
