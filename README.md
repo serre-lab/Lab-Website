@@ -1,5 +1,3 @@
-
-
 # Serre Lab Website – README
 
 Welcome to the Serre Lab site repository! This document explains the structure of the site and how to update content like people, research, resources, and publications.
@@ -49,13 +47,22 @@ src/
 
 ## 👥 Editing People (People Page)
 - File: `src/data/people.json`
+- **Each person must have a `title` field that is one of:**
+  - `PI`
+  - `Assistant Prof of Research`
+  - `PostDoc`
+  - `Grad student`
+  - `Research Assistant`
+  - `Undergraduate student`
+- **Each person must have a `university` field that is either `Brown` or `ANITI`.**
 - Format:
 ```json
 {
   "people": [
     {
       "fullName": "First Last",
-      "title": "Role (e.g. Postdoc)",
+      "title": "PI",
+      "university": "Brown",
       "description": "Short bio or blurb.",
       "imagePath": "/images/people/firstlast.jpg"
     },
