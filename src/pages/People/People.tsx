@@ -11,7 +11,7 @@ const ROLE_ORDER = [
   "PostDoc",
   "Grad student",
   "Research Assistant",
-  "Undergraduate student",
+  "Undergraduate Student",
 ];
 
 export default function People() {
