@@ -24,22 +24,22 @@
   
   .person-name {
     text-align: center;
-    font-weight: 600;
-    font-size: 1.1rem;
+    /* font-weight: 600; */
+    /* font-size: 1.1rem; */
     margin-top: 1rem;
     margin-bottom: 0.25rem;
   }
   
   .person-title {
     color: #777;
-    font-size: 0.9rem;
+    /* font-size: 0.9rem; */
     text-align: center;
     font-style: italic;
     margin-bottom: 1rem;
   }
   
   .person-description {
-    line-height: 1.6;
+    /* line-height: 1.6; */
     text-align: justify;
     margin-top: 1rem;
     max-height: 250px;

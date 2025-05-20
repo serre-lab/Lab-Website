@@ -59,7 +59,7 @@ export default function Person({ fullName, title, imagePath, description }: Pers
                         />
                     )}
                     <div className="person-modal-text">
-                        <Title order={3} className="person-name">
+                        <Title order={1} className="person-name">
                             {fullName}
                         </Title>
                         <Text className="person-title">{title}</Text>

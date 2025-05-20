@@ -39,7 +39,7 @@ const fadeUp = {
 export default function Learn() {
   return (
     <div className="learn-container">
-      <Title order={3} className="learn-title">
+      <Title order={2} className="learn-title">
         I want to learn more about...
       </Title>
       <div className="icon-grid">
@@ -62,7 +62,7 @@ export default function Learn() {
                 rel={item.external ? "noopener noreferrer" : undefined}
               >
                 {item.icon}
-                <Text size="md" className="icon-label">
+                <Text className="icon-label">
                   {item.label}
                 </Text>
               </Wrapper>

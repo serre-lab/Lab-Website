@@ -101,11 +101,11 @@ export function Publications() {
                                             rel="noopener noreferrer"
                                             className="publication-title"
                                         >
-                                            <Text size="xl" fw={500}>
+                                            <Title order={4} >
                                                 {publication.title}
-                                            </Text>
+                                            </Title>
                                         </Anchor>
-                                        <Text className="publication-authors" size="sm">
+                                        <Text className="publication-authors">
                                             {publication.authors}
                                         </Text>
                                     </motion.div>
