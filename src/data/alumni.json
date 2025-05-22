@@ -1,7 +1,24 @@
 {
   "alumni": [
-    { "fullName": "Jane Doe", "years": "2018–2023" },
-    { "fullName": "John Smith", "years": "2019–2022" },
-    { "fullName": "Maria Garcia", "years": "2017–2021" }
+    { "fullName": "Ali Arslan", "role": "PhD" },
+    { "fullName": "Jonah Cader", "role": "Honors" },
+    { "fullName": "Jennifer Corbett", "role": "Postdoc" },
+    { "fullName": "Lore Goetschalckx", "role": "Postdoc" },
+    { "fullName": "Lakshmi N. Govindarajan", "role": "PhD" },
+    { "fullName": "Charlie Holtz", "role": "Honors" },
+    { "fullName": "Carleen Jeffers", "role": "Honors" },
+    { "fullName": "Hueihan Jhuang", "role": "Postdoc" },
+    { "fullName": "Andrew Jones", "role": "MSc" },
+    { "fullName": "Andreas Karagounis", "role": "MSc" },
+    { "fullName": "Junkyung Kim", "role": "PhD" },
+    { "fullName": "Isabella Longoria-Valenzuela", "role": "Honors" },
+    { "fullName": "Dan Murphy", "role": "Honors" },
+    { "fullName": "David Mély", "role": "PhD" },
+    { "fullName": "David Reichert", "role": "Postdoc" },
+    { "fullName": "Guillaume Riesen", "role": "Honors" },
+    { "fullName": "Eric Sanford", "role": "Honors" },
+    { "fullName": "Imri Sofer", "role": "PhD" },
+    { "fullName": "Amor Ben Tanfous", "role": "Postdoc" },
+    { "fullName": "Aimen Zerroug", "role": "PhD" }
   ]
 }

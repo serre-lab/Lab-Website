@@ -9,6 +9,7 @@ import { Resources } from "./pages/Resources/Resources";
 //@ts-ignore
 import { Publications } from "./pages/Publications/Publications";
 import People from "./pages/People/People";
+import { SciComm } from "./pages/SciComm/SciComm";
 
 import { Root } from "./components/Root";
 import { Links } from "./types";
@@ -41,7 +42,7 @@ const staticLinks: Links = {
         { to: "/people", label: "People" },
         { to: "/resources", label: "Resources" },
         {
-            to: "https://serre-lab.clps.brown.edu/news-page/",
+            to: "/sci-comm",
             label: "Sci-Comm",
         },
     ],
@@ -109,6 +110,7 @@ const App = () => {
                 { path: "/publications", element: <Publications /> },
                 { path: "/people", element: <People /> },
                 { path: "/resources", element: <Resources /> },
+                { path: "/sci-comm", element: <SciComm /> },
 
                 // Dynamic Markdown Routes
                 ...routes.map(({ path, content }) => ({
