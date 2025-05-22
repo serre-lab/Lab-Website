@@ -44,8 +44,7 @@ export default function People() {
           <List size="md" spacing="xs" className="alumni-list">
             {alumniData.alumni.map((alumn: any, idx: number) => (
               <List.Item key={idx}>
-                {alumn.fullName}
-                {alumn.years ? ` (${alumn.years})` : ""}
+                {alumn.fullName} {alumn.role ? `(${alumn.role})` : ""}
               </List.Item>
             ))}
           </List>
