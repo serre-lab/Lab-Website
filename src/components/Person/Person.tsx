@@ -37,9 +37,7 @@ export default function Person({ fullName, title, university, imagePath, descrip
                     {fullName}
                 </Title>
                 <Text className="person-title">{title}</Text>
-                <Text size="sm" c="dimmed" ta="center" mt={-8}>
-                    {university}
-                </Text>
+                {/* Removed university from card */}
             </Card>
 
             <Modal
