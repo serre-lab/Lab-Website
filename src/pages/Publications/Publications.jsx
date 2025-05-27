@@ -55,7 +55,7 @@ export function Publications() {
 
     return (
         <div className="publications-container">
-           {/* <div className="filter-section">
+            {/* <div className="filter-section">
   <div className="search-and-dropdown">
     <TextInput
       placeholder="Search by title or author..."
@@ -76,41 +76,42 @@ export function Publications() {
             <div className="results-section">
                 {sortedYears.map(
                     (year, i) =>
-                        // filteredPublications[year] && (
                         publicationsData[year] && (
                             <motion.div
-                            key={year}
-                            className="publication-year-block"
-                            custom={i}
-                            initial="hidden"
-                            animate="visible"
-                            variants={fadeUp}
-                          >
+                                key={year}
+                                className="publication-year-block"
+                                custom={i}
+                                initial="hidden"
+                                animate="visible"
+                                variants={fadeUp}
+                            >
                                 <Title className="year-heading">{year}</Title>
-                                {publicationsData[year].map((publication, index) => (
-                                        <motion.div
-                                        key={index}
-                                        className="publication-item"
-                                        custom={index}
-                                        initial="hidden"
-                                        animate="visible"
-                                        variants={fadeUp}
-                                    >                                  
-                                        <Anchor
-                                            href={publication.url}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="publication-title"
+                                <ul style={{ listStyle: "none", padding: 0 }}>
+                                    {publicationsData[year].map((publication, index) => (
+                                        <motion.li
+                                            key={index}
+                                            className="publication-item"
+                                            custom={index}
+                                            initial="hidden"
+                                            animate="visible"
+                                            variants={fadeUp}
                                         >
-                                            <Title order={4} >
-                                                {publication.title}
+                                            <Title order={1} className="publication-title">
+                                                <Anchor
+                                                    href={publication.url}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="publication-link"
+                                                >
+                                                    {publication.title}
+                                                </Anchor>
                                             </Title>
-                                        </Anchor>
-                                        <Text className="publication-authors">
-                                            {publication.authors}
-                                        </Text>
-                                    </motion.div>
-                                ))}
+                                            <Text className="publication-authors">
+                                                {publication.authors}
+                                            </Text>
+                                        </motion.li>
+                                    ))}
+                                </ul>
                             </motion.div>
                         )
                 )}

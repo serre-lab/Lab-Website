@@ -3,6 +3,7 @@ import Learn from "../../components/LearnMoreAbout/Learn";
 import "./Home.css";
 import { Title, Text } from "@mantine/core";
 import { motion } from "motion/react";
+import { FaTwitter, FaLinkedin } from "react-icons/fa6";
 
 // Animation variants
 const fadeUp = {
@@ -114,6 +115,54 @@ export function Home() {
             Prospective postdocs should email Prof. Serre directly.
           </Text>
         </motion.div>
+
+        {/* Funding Section */}
+        <motion.div variants={fadeUp}>
+          <Title order={2} className="section-title" style={{ marginTop: "2rem" }}>
+            Funding
+          </Title>
+        </motion.div>
+        <motion.div variants={fadeUp}>
+          <Text>
+            Our work is currently supported by ONR (N00014-24-1-2026 and REPRISM MURI N00014-24-1-2603), NSF (IIS-2402875 and EAR-1925481), and the ANR-3IA Artificial and Natural Intelligence Toulouse Institute (ANR-19-PI3A-0004).
+            <br /><br />
+            Additional support is provided by the Carney Institute for Brain Science and the Center for Computation and Visualization (CCV) (via NIH Office of the Director grant S10OD025181.) We acknowledge the Cloud TPU hardware resources that Google graciously makes available via the TensorFlow Research Cloud (TFRC) program.
+          </Text>
+        </motion.div>
+      </motion.div>
+
+      {/* Social Media Section */}
+      <motion.div
+        className="social-media-section"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        style={{ marginTop: "2rem", textAlign: "center" }}
+      >
+        <Title order={3} style={{ marginBottom: "1rem" }}>
+          Connect with us
+        </Title>
+        <div style={{ display: "flex", justifyContent: "center", gap: "2rem" }}>
+          <a
+            href="https://twitter.com/serre_lab"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Serre Lab Twitter"
+            style={{ color: "inherit" }}
+          >
+            <FaTwitter size={36} />
+          </a>
+          <a
+            href="https://www.linkedin.com/company/serre-lab"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Serre Lab LinkedIn"
+            style={{ color: "inherit" }}
+          >
+            <FaLinkedin size={36} />
+          </a>
+        </div>
       </motion.div>
     </div>
   );

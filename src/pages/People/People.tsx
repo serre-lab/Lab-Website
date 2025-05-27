@@ -21,22 +21,57 @@ export default function People() {
       ROLE_ORDER.indexOf(a.title) - ROLE_ORDER.indexOf(b.title)
   );
 
+  // Separate Brown and ANITI people
+  const brownPeople = sortedPeople.filter((person) => person.university === "Brown");
+  const anitiPeople = sortedPeople.filter((person) => person.university === "ANITI");
+
   return (
     <div className="people-container">
       <Title order={1} className="people-page-title">Meet the Team</Title>
       <Divider my="sm" />
-      <div className="people-grid">
-        {sortedPeople.map((person: any, index: number) => (
-          <Person
-            key={index}
-            fullName={person.fullName}
-            title={person.title}
-            university={person.university}
-            description={person.description}
-            imagePath={person.imagePath}
-          />
-        ))}
-      </div>
+
+      {/* Brown Section */}
+      {brownPeople.length > 0 && (
+        <>
+          <Title order={2} className="people-page-title">Brown</Title>
+          <div className="people-grid">
+            {brownPeople.map((person: any, index: number) => (
+              <Person
+                key={`brown-${index}`}
+                fullName={person.fullName}
+                title={person.title}
+                university={person.university}
+                description={person.description}
+                imagePath={person.imagePath}
+                // university will only show in modal
+              />
+            ))}
+          </div>
+        </>
+      )}
+
+      {/* ANITI Section */}
+      {anitiPeople.length > 0 && (
+        <>
+          <Divider my="xl" />
+          <Title order={2} className="people-page-title">ANITI</Title>
+          <div className="people-grid">
+            {anitiPeople.map((person: any, index: number) => (
+              <Person
+                key={`aniti-${index}`}
+                fullName={person.fullName}
+                title={person.title}
+                university={person.university}
+                description={person.description}
+                imagePath={person.imagePath}
+                // university will only show in modal
+              />
+            ))}
+          </div>
+        </>
+      )}
+
+      {/* Alumni Section */}
       {alumniData.alumni && alumniData.alumni.length > 0 && (
         <>
           <Divider my="xl" />

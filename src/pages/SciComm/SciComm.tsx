@@ -7,7 +7,7 @@ export function SciComm() {
             <ul style={{ listStyle: "none",}}>
                             <Title>Science Communication</Title>
                 {scicommData.map((item, idx) => (
-                    <li key={idx} style={{ marginBottom: "2rem" }}>
+                    <li key={idx}>
                         <Title order={1}>
                             <Anchor href={item.link} target="_blank" rel="noopener noreferrer">
                                 {item.title}
