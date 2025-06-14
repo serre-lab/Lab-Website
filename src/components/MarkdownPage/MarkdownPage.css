@@ -1,14 +1,3 @@
-.markdown-container h1 {
-    font-size: 2rem;
-    color: #333;
-}
-
-.markdown-container p {
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-.markdown-container a {
-    color: #008abf;
-    text-decoration: underline;
+.markdown-container {
+    padding: 20px;
 }
