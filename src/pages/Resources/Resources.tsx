@@ -33,8 +33,8 @@ export function Resources() {
                                             <List.Item key={resource.title}>
                                                 <Anchor
                                                     href={resource.url}
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
+                                                    target={resource.url.startsWith("http") ? "_blank" : undefined}
+                                                    rel={resource.url.startsWith("http") ? "noopener noreferrer" : undefined}
                                                 >
                                                     <Text>
                                                     {resource.title || resource.url}
@@ -42,6 +42,14 @@ export function Resources() {
                                                 </Anchor>
                                             </List.Item>
                                         ))}
+                                        {/* Example markdown page link */}
+                                        {category === "Teaching" && subCategoryName === "Projects" && (
+                                            <List.Item key="example-md">
+                                                <Anchor href="/resources/test">
+                                                    <Text>Example Markdown Resource Page</Text>
+                                                </Anchor>
+                                            </List.Item>
+                                        )}
                                     </List>
                                 </div>
                             )

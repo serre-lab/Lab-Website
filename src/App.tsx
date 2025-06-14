@@ -71,24 +71,6 @@ const App = () => {
 
             setRoutes(markdownRoutes);
 
-            const markdownLinks = markdownRoutes.map(({ path }) => ({
-                to: path,
-                label: toTitleCase(path.replace("/", "")),
-            }));
-
-            setLinks((prevLinks) => ({
-                ...prevLinks,
-                internal: [
-                    ...prevLinks.internal,
-                    ...markdownLinks.filter(
-                        (link) =>
-                            !prevLinks.internal.some(
-                                (existing) => existing.to === link.to
-                            )
-                    ),
-                ],
-            }));
-
             setLoading(false);
         };
 
