@@ -3,100 +3,123 @@
         "Recommended Courses on Computational Modeling": [
             {
                 "title": "Methods & Programming",
-                "url": "https://serre-lab.clps.brown.edu/resource/methods-programming/"
+                "url": "/resources/methods-programming",
+                "old_url": "https://serre-lab.clps.brown.edu/resource/methods-programming/"
             },
             {
                 "title": "Biostats & Bioengineering",
-                "url": "https://serre-lab.clps.brown.edu/resource/biostats-bioengineering/"
+                "url": "/resources/biostats-bioengineering",
+                "old_url": "https://serre-lab.clps.brown.edu/resource/biostats-bioengineering/"
             },
             {
                 "title": "Methods & Data Analysis",
-                "url": "https://serre-lab.clps.brown.edu/resource/methods-data-analysis/"
+                "url": "/resources/methods-data-analysis",
+                "old_url": "https://serre-lab.clps.brown.edu/resource/methods-data-analysis/"
             },
             {
                 "title": "Computational Vision",
-                "url": "https://serre-lab.clps.brown.edu/resource/computational-vision/"
+                "url": "/resources/computational-vision",
+                "old_url": "https://serre-lab.clps.brown.edu/resource/computational-vision/"
             },
             {
                 "title": "Computational Cognitive Science / Neuroscience",
-                "url": "https://serre-lab.clps.brown.edu/resource/computational-cognitive-science-neuroscience/"
+                "url": "/resources/computational-cognitive-science-neuroscience",
+                "old_url": "https://serre-lab.clps.brown.edu/resource/computational-cognitive-science-neuroscience/"
             },
             {
                 "title": "Neuroscience",
-                "url": "https://serre-lab.clps.brown.edu/resource/neuroscience/"
+                "url": "/resources/neuroscience",
+                "old_url": "https://serre-lab.clps.brown.edu/resource/neuroscience/"
             },
             {
                 "title": "Mathematical & Computations",
-                "url": "https://serre-lab.clps.brown.edu/resource/mathematical-computations/"
+                "url": "/resources/mathematical-computations",
+                "old_url": "https://serre-lab.clps.brown.edu/resource/mathematical-computations/"
             }
         ],
         "Research": [
             {
                 "title": "ClickMe",
-                "url": "https://serre-lab.clps.brown.edu/resource/clickme/"
+                "url": "/resources/clickme",
+                "old_url": "https://serre-lab.clps.brown.edu/resource/clickme/"
             },
             {
                 "title": "hGRU Tutorials",
-                "url": "https://serre-lab.clps.brown.edu/resource/hgru-tutorials/"
+                "url": "/resources/hgru-tutorials",
+                "old_url": "https://serre-lab.clps.brown.edu/resource/hgru-tutorials/"
             },
             {
                 "title": "Lab GitHub Repository",
-                "url": "https://github.com/serre-lab"
+                "url": "/resources/lab-github-repository",
+                "old_url": "https://github.com/serre-lab"
             },
             {
                 "title": "Learning Sparse Prototypes for Crowd Perception",
-                "url": "https://serre-lab.clps.brown.edu/resource/zhangetalhbu2014/"
+                "url": "/resources/learning-sparse-prototypes-for-crowd-perception",
+                "old_url": "https://serre-lab.clps.brown.edu/resource/zhangetalhbu2014/"
             },
             {
                 "title": "The Multi-cue Boundary Detection Dataset",
-                "url": "https://serre-lab.clps.brown.edu/resource/multicue/"
+                "url": "/resources/the-multi-cue-boundary-detection-dataset",
+                "old_url": "https://serre-lab.clps.brown.edu/resource/multicue/"
             },
             {
                 "title": "Color Processing",
-                "url": "https://github.com/serre-lab/color_hmax"
+                "url": "/resources/color-processing",
+                "old_url": "https://github.com/serre-lab/color_hmax"
             },
             {
                 "title": "Computational Mechanisms of Color Processing",
-                "url": "https://serre-lab.clps.brown.edu/resource/computational-mechanisms-of-color-processing/"
+                "url": "/resources/computational-mechanisms-of-color-processing",
+                "old_url": "https://serre-lab.clps.brown.edu/resource/computational-mechanisms-of-color-processing/"
             },
             {
                 "title": "Action Recognition",
-                "url": "https://github.com/serre-lab"
+                "url": "/resources/action-recognition",
+                "old_url": "https://github.com/serre-lab"
             },
             {
                 "title": "A Feedforward Architecture Accounts for Rapid Categorization",
-                "url": "http://cbcl.mit.edu/software-datasets/serre/SerreOlivaPoggioPNAS07/index.htm"
+                "url": "/resources/a-feedforward-architecture-accounts-for-rapid-categorization",
+                "old_url": "http://cbcl.mit.edu/software-datasets/serre/SerreOlivaPoggioPNAS07/index.htm"
             },
             {
                 "title": "Automated System for Rodent Behavioral Phenotyping",
-                "url": "https://serre-lab.clps.brown.edu/resource/automated-home-cage-behavioral-phenotyping-of-mice/"
+                "url": "/resources/automated-system-for-rodent-behavioral-phenotyping",
+                "old_url": "https://serre-lab.clps.brown.edu/resource/automated-home-cage-behavioral-phenotyping-of-mice/"
             },
             {
                 "title": "A Neuromorphic Approach to Computer Vision",
-                "url": "https://serre-lab.clps.brown.edu/resource/a-neuromorphic-approach-to-computer-vision/"
+                "url": "/resources/a-neuromorphic-approach-to-computer-vision",
+                "old_url": "https://serre-lab.clps.brown.edu/resource/a-neuromorphic-approach-to-computer-vision/"
             },
             {
                 "title": "Object Recognition",
-                "url": "https://github.com/serre-lab"
+                "url": "/resources/object-recognition",
+                "old_url": "https://github.com/serre-lab"
             },
             {
                 "title": "HMDB: A Large Human Motion Database",
-                "url": "https://serre-lab.clps.brown.edu/resource/hmdb-a-large-human-motion-database/"
+                "url": "/resources/hmdb-a-large-human-motion-database",
+                "old_url": "https://serre-lab.clps.brown.edu/resource/hmdb-a-large-human-motion-database/"
             },
             {
                 "title": "The Breakfast Actions Dataset",
-                "url": "https://serre-lab.clps.brown.edu/resource/breakfast-actions-dataset/"
+                "url": "/resources/the-breakfast-actions-dataset",
+                "old_url": "https://serre-lab.clps.brown.edu/resource/breakfast-actions-dataset/"
             }
         ],
         "Projects": [],
         "Academic Resources at Brown": [
             {
                 "title": "Recommended Coursework for Undergraduate Students",
-                "url": "https://serre-lab.clps.brown.edu/resource/recommended-coursework-for-undergraduate-students/"
+                "url": "/resources/recommended-coursework-for-undergraduate-students",
+                "old_url": "https://serre-lab.clps.brown.edu/resource/recommended-coursework-for-undergraduate-students/"
             },
             {
                 "title": "Faculty with Computational Neuroscience Research",
-                "url": "https://serre-lab.clps.brown.edu/resource/faculty-with-computational-neuroscience-research/"
+                "url": "/resources/faculty-with-computational-neuroscience-research",
+                "old_url": "https://serre-lab.clps.brown.edu/resource/faculty-with-computational-neuroscience-research/"
             }
         ]
     },
@@ -104,63 +127,77 @@
         "Databases": [
             {
                 "title": "ClickMe",
-                "url": "https://serre-lab.clps.brown.edu/resource/clickme/"
+                "url": "/resources/clickme",
+                "old_url": "https://serre-lab.clps.brown.edu/resource/clickme/"
             },
             {
                 "title": "The multi-cue boundary detection dataset",
-                "url": "https://serre-lab.clps.brown.edu/resource/multicue/"
+                "url": "/resources/the-multi-cue-boundary-detection-dataset",
+                "old_url": "https://serre-lab.clps.brown.edu/resource/multicue/"
             },
             {
                 "title": "HMDB: a large human motion database",
-                "url": "https://serre-lab.clps.brown.edu/resource/hmdb-a-large-human-motion-database/"
+                "url": "/resources/hmdb-a-large-human-motion-database",
+                "old_url": "https://serre-lab.clps.brown.edu/resource/hmdb-a-large-human-motion-database/"
             },
             {
                 "title": "The Breakfast Actions Dataset",
-                "url": "https://serre-lab.clps.brown.edu/resource/breakfast-actions-dataset/"
+                "url": "/resources/the-breakfast-actions-dataset",
+                "old_url": "https://serre-lab.clps.brown.edu/resource/breakfast-actions-dataset/"
             }
         ],
         "Software": [
             {
                 "title": "hGRU Tutorials",
-                "url": "https://serre-lab.clps.brown.edu/resource/hgru-tutorials/"
+                "url": "/resources/hgru-tutorials",
+                "old_url": "https://serre-lab.clps.brown.edu/resource/hgru-tutorials/"
             },
             {
                 "title": "Lab GitHub repository",
-                "url": "https://github.com/serre-lab"
+                "url": "/resources/lab-github-repository",
+                "old_url": "https://github.com/serre-lab"
             },
             {
                 "title": "Color processing",
-                "url": "https://github.com/serre-lab/color_hmax"
+                "url": "/resources/color-processing",
+                "old_url": "https://github.com/serre-lab/color_hmax"
             },
             {
                 "title": "Action recognition",
-                "url": "https://github.com/serre-lab"
+                "url": "/resources/action-recognition",
+                "old_url": "https://github.com/serre-lab"
             },
             {
                 "title": "Automated system for rodent behavioral phenotyping",
-                "url": "https://serre-lab.clps.brown.edu/resource/automated-home-cage-behavioral-phenotyping-of-mice/"
+                "url": "/resources/automated-system-for-rodent-behavioral-phenotyping",
+                "old_url": "https://serre-lab.clps.brown.edu/resource/automated-home-cage-behavioral-phenotyping-of-mice/"
             },
             {
                 "title": "Object recognition",
-                "url": "https://github.com/serre-lab"
+                "url": "/resources/object-recognition",
+                "old_url": "https://github.com/serre-lab"
             }
         ],
         "Supplementary Information": [
             {
                 "title": "Learning sparse prototypes for crowd perception",
-                "url": "https://serre-lab.clps.brown.edu/resource/zhangetalhbu2014/"
+                "url": "/resources/learning-sparse-prototypes-for-crowd-perception",
+                "old_url": "https://serre-lab.clps.brown.edu/resource/zhangetalhbu2014/"
             },
             {
                 "title": "Computational mechanisms of color processing",
-                "url": "https://serre-lab.clps.brown.edu/resource/computational-mechanisms-of-color-processing/"
+                "url": "/resources/computational-mechanisms-of-color-processing",
+                "old_url": "https://serre-lab.clps.brown.edu/resource/computational-mechanisms-of-color-processing/"
             },
             {
                 "title": "A feedforward architecture accounts for rapid categorization",
-                "url": "http://cbcl.mit.edu/software-datasets/serre/SerreOlivaPoggioPNAS07/index.htm"
+                "url": "/resources/a-feedforward-architecture-accounts-for-rapid-categorization",
+                "old_url": "http://cbcl.mit.edu/software-datasets/serre/SerreOlivaPoggioPNAS07/index.htm"
             },
             {
                 "title": "A neuromorphic approach to computer vision",
-                "url": "https://serre-lab.clps.brown.edu/resource/a-neuromorphic-approach-to-computer-vision/"
+                "url": "/resources/a-neuromorphic-approach-to-computer-vision",
+                "old_url": "https://serre-lab.clps.brown.edu/resource/a-neuromorphic-approach-to-computer-vision/"
             }
         ]
     }
