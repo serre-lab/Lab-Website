@@ -50,7 +50,7 @@
             },
             {
                 "title": "Lab GitHub Repository",
-                "url": "/resources/lab-github-repository",
+                "url": "https://github.com/serre-lab",
                 "old_url": "https://github.com/serre-lab"
             },
             {
@@ -159,12 +159,12 @@
             },
             {
                 "title": "Color processing",
-                "url": "/resources/color-processing",
+                "url": "https://github.com/serre-lab/color_hmax",
                 "old_url": "https://github.com/serre-lab/color_hmax"
             },
             {
                 "title": "Action recognition",
-                "url": "/resources/action-recognition",
+                "url": "https://github.com/serre-lab",
                 "old_url": "https://github.com/serre-lab"
             },
             {
@@ -174,7 +174,7 @@
             },
             {
                 "title": "Object recognition",
-                "url": "/resources/object-recognition",
+                "url": "https://github.com/serre-lab",
                 "old_url": "https://github.com/serre-lab"
             }
         ],
@@ -191,7 +191,7 @@
             },
             {
                 "title": "A feedforward architecture accounts for rapid categorization",
-                "url": "/resources/a-feedforward-architecture-accounts-for-rapid-categorization",
+                "url": "http://cbcl.mit.edu/software-datasets/serre/SerreOlivaPoggioPNAS07/index.htm",
                 "old_url": "http://cbcl.mit.edu/software-datasets/serre/SerreOlivaPoggioPNAS07/index.htm"
             },
             {
