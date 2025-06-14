@@ -2,31 +2,121 @@
   {
     "title": "Compositionally in Neural Networks",
     "blurb": "PhD student Michael Lepori discusses new approaches to studying compositionality in neural network models in a recent Carney Community Spotlight.",
-    "link": "https://www.brown.edu/carney/spotlights/michael-lepori"
+    "link": "https://www.brown.edu/carney/spotlights/michael-lepori",
+    "image": "https://serre-lab.clps.brown.edu/wp-content/uploads/2024/01/light_background_serre_cropped.jpeg"
   },
   {
     "title": "Finding the art in artificial intelligence",
     "blurb": "When design and neural networks mix the results are both practical and innovative.",
-    "link": "https://www.brown.edu/carney/news/2019/05/20/finding-art-artificial-intelligence"
+    "link": "https://www.brown.edu/carney/news/2019/05/20/finding-art-artificial-intelligence",
+    "image": "https://serre-lab.clps.brown.edu/wp-content/uploads/2019/05/RISD_Brown-200x150.jpg"
   },
   {
     "title": "Brown researchers teach computers to see optical illusions",
     "blurb": "By making a neural-network computer model that can be fooled by optical illusions like humans, the researchers advanced knowledge of the human visual system and may help improve artificial vision.",
-    "link": "https://news.brown.edu/articles/2018/09/illusions"
+    "link": "https://news.brown.edu/articles/2018/09/illusions",
+    "image": "https://serre-lab.clps.brown.edu/wp-content/uploads/2018/09/Illusions-200x123.jpg"
   },
   {
     "title": "Research identifies key weakness in modern computer vision systems",
     "blurb": "In a finding that could point the way toward better computer vision systems, Brown University researchers show why computers are so bad at seeing when one thing is not like another.",
-    "link": "http://news.brown.edu/articles/2018/07/same-different"
+    "link": "http://news.brown.edu/articles/2018/07/same-different",
+    "image": "https://serre-lab.clps.brown.edu/wp-content/uploads/2018/07/samedifferentcrop-152x150.jpg"
   },
   {
     "title": "Focus on early stage of illness may be key to treating ALS, study suggests",
     "blurb": "Many inhibitory neurons were lost early in the development of ALS, new research shows, which is in sharp contrast to other degenerative diseases.",
-    "link": "https://news.brown.edu/articles/2018/03/als"
+    "link": "https://news.brown.edu/articles/2018/03/als",
+    "image": "https://serre-lab.clps.brown.edu/wp-content/uploads/2018/03/download-200x133.jpg"
   },
   {
     "title": "University conference explores future of artificial intelligence",
     "blurb": "Interdisciplinary workshop brings together professors, students from diverse academic fields",
-    "link": "http://www.browndailyherald.com/2018/01/26/u-conference-explores-future-artificial-intelligence/"
+    "link": "http://www.browndailyherald.com/2018/01/26/u-conference-explores-future-artificial-intelligence/",
+    "image": "https://serre-lab.clps.brown.edu/wp-content/uploads/2018/01/AI-1-650x867-e1517314081392-175x150.jpg"
+  },
+  {
+    "title": "Researchers gather at Brown to discuss next-generation artificial intelligence",
+    "blurb": "Technology known as deep learning has fueled an AI revolution, but a workshop series kicking off at Brown this week will consider where the field might go from here. Article by Kevin Stacey.",
+    "link": "https://news.brown.edu/articles/2018/01/deeplearning",
+    "image": "https://serre-lab.clps.brown.edu/wp-content/uploads/2018/01/download-e1516226192589-200x148.jpg"
+  },
+  {
+    "title": "A New Knock-In TDP-43 Mouse Enters the ALS Ring",
+    "blurb": "An emerging mouse model may help scientists identify early changes that occur in ALS that could be targeted in the disease. Article by Richard Robinson.",
+    "link": "http://www.alsresearchforum.org/a-new-knock-in-tdp-43-mouse-enters-the-als-ring/",
+    "image": "https://serre-lab.clps.brown.edu/wp-content/uploads/2017/12/News-mouse-200x148.png"
+  },
+  {
+    "title": "Artificial intelligence helps scientists map behavior in the fruit fly brain",
+    "blurb": "Can you imagine watching 20,000 videos, 16 minutes apiece, of fruit flies walking, grooming, and chasing mates? Fortunately, you don’t have to, because scientists have designed a computer program that can do it faster. Aided by artificial intelligence, researchers have made 100 billion annotations of behavior from 400,000 flies to create a collection of maps linking fly mannerisms to their corresponding brain regions. Article by Ryan Cross.",
+    "link": "https://www.sciencemag.org/news/2017/07/artificial-intelligence-helps-scientists-map-behavior-fruit-fly-brain",
+    "image": "https://serre-lab.clps.brown.edu/wp-content/uploads/2018/01/Kristin-Branson-Fly-behavior-cover-art16x9-200x112.jpg"
+  },
+  {
+    "title": "Meeting of the minds leads to brain science technology venture",
+    "blurb": "Article by David Orenstein.",
+    "link": "https://news.brown.edu/articles/2016/07/observation",
+    "image": "https://serre-lab.clps.brown.edu/wp-content/uploads/2016/07/neurocurious_bath-208x135.jpg"
+  },
+  {
+    "title": "A computer with a great eye is about to transform botany",
+    "blurb": "Article by Margaret Rhodes",
+    "link": "http://www.wired.com/2016/03/computer-great-eye-transform-botany/?mbid=social_fb",
+    "image": "https://serre-lab.clps.brown.edu/wp-content/uploads/2016/03/wired-200x135.png"
+  },
+  {
+    "title": "Computer vision can help classify leaves",
+    "blurb": "So complex are patterns and variations in the vein structures of leaves that botanists struggle to take advantage of them when trying to classify a specimen within the plant kingdom. A new study shows that computer vision technology can provide automated assistance by “learning” how to use venation to assign leaves to their proper family and order. Article by David Orenstein.",
+    "link": "https://news.brown.edu/articles/2016/03/leaves",
+    "image": "https://serre-lab.clps.brown.edu/wp-content/uploads/2018/01/leaves-83x150.jpg"
+  },
+  {
+    "title": "Linking two labs a learning opportunity for Ph.D. student",
+    "blurb": "Aaron Held’s research merges and draws on the expertise of two of the labs in Brown’s broad effort to combat ALS. That role has given him several opportunities to learn novel skills and new science during graduate school. Article by David Orenstein.",
+    "link": "https://news.brown.edu/articles/2016/01/alsbar",
+    "image": "https://serre-lab.clps.brown.edu/wp-content/uploads/2018/01/20160112_093948-200x112.jpg"
+  },
+  {
+    "title": "In analyzing a scene, we make the easiest judgments first",
+    "blurb": "Article by David Orenstein.",
+    "link": "https://news.brown.edu/articles/2015/09/scene",
+    "image": "https://serre-lab.clps.brown.edu/wp-content/uploads/2015/09/Scene1-208x135.jpg"
+  },
+  {
+    "title": "Reducing Myc gene activity extends healthy lifespan in mice",
+    "blurb": "Mice with one rather than the normal two copies of the gene Myc (also found in humans) lived 15 percent longer and had considerably healthier lives than normal mice, according to a new Brown University-led study in Cell. Article by David Orenstein.",
+    "link": "https://news.brown.edu/articles/2015/01/myc",
+    "image": "https://serre-lab.clps.brown.edu/wp-content/uploads/2018/01/Myc2_1-186x150.jpg"
+  },
+  {
+    "title": "Computer based video in behavioral studies",
+    "blurb": "Computer-based video analysis boosts data gathering in behavioral studies. Article by David Orenstein",
+    "link": "http://news.brown.edu/pressreleases/2010/09/mice",
+    "image": "https://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/brown-208x135.png"
+  },
+  {
+    "title": "Reverse engineering the brain",
+    "blurb": "Article by by Roberta Friedman, PhD",
+    "link": "http://biomedicalcomputationreview.org/5/2/7.pdf",
+    "image": "https://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/bc_review-208x135.png"
+  },
+  {
+    "title": "Future watch: understanding the brain",
+    "blurb": "Article by Logan Kugler",
+    "link": "http://www.pcmag.com/article2/0,2817,2325885,00.asp",
+    "image": "https://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/pc_mag-208x135.png"
+  },
+  {
+    "title": "Visions of the future",
+    "blurb": "Our work was featured as part of the BBC series “Visions of the Future\"",
+    "link": "http://video.google.com/googleplayer.swf?docId=1900129797336249123&hl=en",
+    "image": "https://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/visions-208x135.png"
+  },
+  {
+    "title": "Computer vision inspired by the human brain",
+    "blurb": "Article by Pam Frost Gorder",
+    "link": "http://www.scientificamerican.com/article.cfm?id=visionary-research",
+    "image": "https://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/computing_now-208x135.png"
   }
 ]
