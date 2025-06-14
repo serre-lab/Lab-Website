@@ -36,7 +36,7 @@ export function SciComm() {
                     style={{ width: "80%" }}
                 />
             </div>
-            <Title mb="md" align="center">Science Communication</Title>
+            <Title mb="md" style={{ textAlign: "center" }}>Science Communication</Title>
             <div
                 style={{
                     display: "grid",
@@ -72,6 +72,15 @@ export function SciComm() {
                             (e.currentTarget as HTMLDivElement).style.transform = "";
                             (e.currentTarget as HTMLDivElement).style.boxShadow = "";
                         }}
+                        onClick={() => window.open(item.link, "_blank", "noopener,noreferrer")}
+                        tabIndex={0}
+                        role="button"
+                        aria-label={`Open news: ${item.title}`}
+                        onKeyDown={e => {
+                            if (e.key === "Enter" || e.key === " ") {
+                                window.open(item.link, "_blank", "noopener,noreferrer");
+                            }
+                        }}
                     >
                         {item.image && (
                             <Card.Section>
@@ -80,12 +89,11 @@ export function SciComm() {
                                     alt={item.title}
                                     height={180}
                                     fit="cover"
-                                    withPlaceholder
                                     style={{ objectFit: "cover" }}
                                 />
                             </Card.Section>
                         )}
-                        <Group position="apart" mt="md" mb="xs">
+                        <Group justify="space-between" mt="md" mb="xs">
                             <Anchor href={item.link} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
                                 <Title order={3}>{item.title}</Title>
                             </Anchor>
@@ -103,6 +111,7 @@ export function SciComm() {
                             fullWidth
                             mt="md"
                             style={{ marginTop: "auto" }}
+                            onClick={e => e.stopPropagation()}
                         >
                             Continue reading
                         </Button>

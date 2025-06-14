@@ -10,6 +10,8 @@ export const loadMarkdownFiles = async (): Promise<
         import: "default",
     });
 
+    const base = import.meta.env.BASE_URL || "/";
+
     const routes = await Promise.all(
         Object.entries(markdownFiles).map(async ([filePath, loadContent]) => {
             const content = (await loadContent()) as string;
@@ -18,7 +20,7 @@ export const loadMarkdownFiles = async (): Promise<
                 .replace(/^\/src\/markdown-pages\//, "")
                 .replace(/\.md$/, "");
             return {
-                path: `/${relPath}`,
+                path: `${base}${relPath}`,
                 content,
             };
         })

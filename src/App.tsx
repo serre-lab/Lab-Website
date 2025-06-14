@@ -52,17 +52,17 @@ const staticLinks: Links = {
     ],
 };
 
-const toTitleCase = (str: string): string => {
-    return str
-        .replace(/-/g, " ")
-        .replace(/\b\w/g, (char) => char.toUpperCase());
-};
+// const toTitleCase = (str: string): string => {
+//     return str
+//         .replace(/-/g, " ")
+//         .replace(/\b\w/g, (char) => char.toUpperCase());
+// };
 
 const App = () => {
     const [routes, setRoutes] = useState<{ path: string; content: string }[]>(
         []
     );
-    const [links, setLinks] = useState<Links>(staticLinks);
+    const [links] = useState<Links>(staticLinks);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
