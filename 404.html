@@ -1,14 +1,17 @@
-<!-- ...copy the entire contents of index.html here... -->
+<!-- filepath: /home/jesus/brown/Lab-Website/404.html -->
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="/serre-logo.webp" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Serre Lab</title>
-    </head>
-    <body>
-        <div id="root"></div>
-        <script type="module" src="/src/main.tsx"></script>
-    </body>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0; url=/" />
+    <script>
+      // Redirect to index.html and preserve the path
+      var redirectTo = "/" + location.pathname.replace(/^\//, "");
+      if (location.search) redirectTo += location.search;
+      if (location.hash) redirectTo += location.hash;
+      window.location.replace(redirectTo);
+    </script>
+  </head>
+  <body>
+    Redirecting...
+  </body>
 </html>
