@@ -104,6 +104,13 @@
             "university": "Brown",
             "imagePath": "people/vatsala-nema.jpg",
             "description": ""
+        },
+        {
+            "fullName": "Victor Boutin",
+            "title": "Researcher at CNRS",
+            "university": "CNRS and Paul Sabatier university",
+            "imagePath": "people/victor-boutin.jpg",
+            "description": "Victor Boutin is a CNRS researcher working at the intersection of computational neuroscience and AI. He holds a Ph.D. from Aix-Marseille University (2020) and an MSc from École Centrale (2011). His research investigates how the visual cortex learns to generalize from limited data. He combines theoretical modeling, machine learning, and cognitive experiments. His current focus is on building biologically inspired models of human-like generalization."
         }
     ]
 }

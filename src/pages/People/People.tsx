@@ -24,6 +24,9 @@ export default function People() {
   // Separate Brown and ANITI people
   const brownPeople = sortedPeople.filter((person) => person.university === "Brown");
   const anitiPeople = sortedPeople.filter((person) => person.university === "ANITI");
+  const generalPeople = sortedPeople.filter(
+    (person) => person.university !== "Brown" && person.university !== "ANITI"
+  );
 
   return (
     <div className="people-container">
@@ -59,6 +62,27 @@ export default function People() {
             {anitiPeople.map((person: any, index: number) => (
               <Person
                 key={`aniti-${index}`}
+                fullName={person.fullName}
+                title={person.title}
+                university={person.university}
+                description={person.description}
+                imagePath={person.imagePath}
+                // university will only show in modal
+              />
+            ))}
+          </div>
+        </>
+      )}
+
+      {/* General Section */}
+      {generalPeople.length > 0 && (
+        <>
+          <Divider my="xl" />
+          <Title order={2} className="people-page-title">General</Title>
+          <div className="people-grid">
+            {generalPeople.map((person: any, index: number) => (
+              <Person
+                key={`general-${index}`}
                 fullName={person.fullName}
                 title={person.title}
                 university={person.university}
