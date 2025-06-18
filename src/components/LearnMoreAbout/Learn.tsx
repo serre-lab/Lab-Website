@@ -12,9 +12,9 @@ import { motion } from "framer-motion";
 
 const items = [
   { icon: <FaVial size={48} />, label: "Research", to: "research" },
+  { icon: <FaBookOpen size={48} />, label: "Publications", to: "publications" },
   { icon: <FaHand size={48} />, label: "People", to: "people" },
   { icon: <FaBook size={48} />, label: "Resources", to: "resources" },
-  { icon: <FaBookOpen size={48} />, label: "Publications", to: "publications" },
   {
     icon: <FaMicrophone size={48} />,
     label: "Sci-Comm",
