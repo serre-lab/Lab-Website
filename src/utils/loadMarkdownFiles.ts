@@ -10,7 +10,8 @@ export const loadMarkdownFiles = async (): Promise<
         import: "default",
     });
 
-    const base = import.meta.env.BASE_URL || "/";
+    // For hash routing, paths should NOT start with "#/"
+    const base = "/";
 
     const routes = await Promise.all(
         Object.entries(markdownFiles).map(async ([filePath, loadContent]) => {
