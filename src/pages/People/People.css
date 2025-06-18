@@ -4,7 +4,7 @@
     padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem; /* Reduced from 2rem */
   }
   
   .people-page-title {
@@ -20,4 +20,3 @@
     justify-content: center;
     width: 100%;
   }
-  

@@ -85,24 +85,10 @@
             "description": "Julien Colin is a first-year Ph.D. at ELLIS Alicante, co-supervised by Nuria Oliver and Thomas Serre. He received his Master's Degree in Cognitive Sciences: Natural and Artificial Cognition from Grenoble Institute of Technology (France). His research interests include topics related to Computer Vision, Machine Learning, and Computational Cognitive Science. His current research focuses on modeling the interpretability of deep learning models using human-centered approaches."
         },
         {
-            "fullName": "Jesus Rodriguez",
-            "title": "Undergraduate Student",
-            "university": "Brown",
-            "imagePath": "people/jesus-rodriguez.jpg",
-            "description": ""
-        },
-        {
             "fullName": "Xizheng Yu",
             "title": "Research Assistant",
             "university": "Brown",
             "imagePath": "people/xizheng-yu.jpg",
-            "description": ""
-        },
-        {
-            "fullName": "Vatsala Nema",
-            "title": "Research Assistant",
-            "university": "Brown",
-            "imagePath": "people/vatsala-nema.jpg",
             "description": ""
         },
         {
@@ -111,6 +97,14 @@
             "university": "CNRS and Paul Sabatier university",
             "imagePath": "people/victor-boutin.jpg",
             "description": "Victor Boutin is a CNRS researcher working at the intersection of computational neuroscience and AI. He holds a Ph.D. from Aix-Marseille University (2020) and an MSc from École Centrale (2011). His research investigates how the visual cortex learns to generalize from limited data. He combines theoretical modeling, machine learning, and cognitive experiments. His current focus is on building biologically inspired models of human-like generalization."
+        },
+        {
+            "fullName": "Jay Gopal",
+            "title": "Undergraduate Student",
+            "university": "Brown",
+            "imagePath": "people/jay-gopal.jpg",
+            "description": "Jay Gopal is an undergraduate student in Brown University’s Program in Liberal Medical Education (PLME). He is passionate about leveraging artificial intelligence to accelerate progress in healthcare, and has been conducting research into machine learning since 2019. Jay’s research interests include improving the explainability of deep learning models, building brain-inspired computational tools for visual reasoning, and applying machine learning & computer vision directly to the medical setting to make long-term advancements in patient care."
         }
+
     ]
 }
