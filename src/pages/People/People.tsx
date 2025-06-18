@@ -46,7 +46,6 @@ export default function People() {
                 university={person.university}
                 description={person.description}
                 imagePath={person.imagePath}
-                // university will only show in modal
               />
             ))}
           </div>
@@ -56,7 +55,7 @@ export default function People() {
       {/* ANITI Section */}
       {anitiPeople.length > 0 && (
         <>
-          <Divider my="xl" />
+          <Divider my="md" /> {/* Reduced from my="xl" */}
           <Title order={2} className="people-page-title">ANITI</Title>
           <div className="people-grid">
             {anitiPeople.map((person: any, index: number) => (
@@ -67,7 +66,6 @@ export default function People() {
                 university={person.university}
                 description={person.description}
                 imagePath={person.imagePath}
-                // university will only show in modal
               />
             ))}
           </div>
@@ -77,7 +75,7 @@ export default function People() {
       {/* General Section */}
       {generalPeople.length > 0 && (
         <>
-          <Divider my="xl" />
+          <Divider my="md" /> {/* Reduced from my="xl" */}
           <Title order={2} className="people-page-title">General</Title>
           <div className="people-grid">
             {generalPeople.map((person: any, index: number) => (
@@ -88,7 +86,6 @@ export default function People() {
                 university={person.university}
                 description={person.description}
                 imagePath={person.imagePath}
-                // university will only show in modal
               />
             ))}
           </div>
@@ -98,7 +95,7 @@ export default function People() {
       {/* Alumni Section */}
       {alumniData.alumni && alumniData.alumni.length > 0 && (
         <>
-          <Divider my="xl" />
+          <Divider my="md" /> {/* Reduced from my="xl" */}
           <Title order={2} className="people-page-title">Alumni</Title>
           <List size="md" spacing="xs" className="alumni-list">
             {alumniData.alumni.map((alumn: any, idx: number) => (

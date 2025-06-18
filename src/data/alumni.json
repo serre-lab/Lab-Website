@@ -1,7 +1,6 @@
 {
   "alumni": [
     { "fullName": "Thomas Fel", "role": "PostDoc" },
-    { "fullName": "Jay Gopal", "role": "Research Assistant" },
     { "fullName": "Ali Arslan", "role": "PhD" },
     { "fullName": "Jonah Cader", "role": "Honors" },
     { "fullName": "Jennifer Corbett", "role": "Postdoc" },
@@ -21,7 +20,7 @@
     { "fullName": "Eric Sanford", "role": "Honors" },
     { "fullName": "Imri Sofer", "role": "PhD" },
     { "fullName": "Amor Ben Tanfous", "role": "Postdoc" },
-    { "fullName": "Aimen Zerroug", "role": "PhD" }
-
+    { "fullName": "Aimen Zerroug", "role": "PhD" },
+    { "fullName": "Vatsala Nema", "role": "Alumni"}
   ]
 }
