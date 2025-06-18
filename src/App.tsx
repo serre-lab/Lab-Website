@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "@mantine/core/styles.css";
 import { createTheme, MantineProvider } from "@mantine/core";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 
 import { Home } from "./pages/Home/Home";
 import { Research } from "./pages/Research/Research";
@@ -81,7 +81,7 @@ const App = () => {
         return <div>Loading...</div>;
     }
 
-    const router = createBrowserRouter([
+    const router = createHashRouter([
         {
             path: "/",
             element: <Root links={links} />,

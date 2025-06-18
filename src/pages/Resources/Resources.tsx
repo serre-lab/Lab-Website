@@ -1,6 +1,7 @@
 import resourcesData from "../../data/resources.json";
 import "./Resources.css";
 import { Text, Title, Anchor, List, Paper, Divider } from "@mantine/core";
+import { Link } from "react-router-dom";
 
 export function Resources() {
     return (
@@ -32,7 +33,8 @@ export function Resources() {
                                         {subCategory.map((resource) => (
                                             <List.Item key={resource.title}>
                                                 <Anchor
-                                                    href={resource.url}
+                                                    component={Link}
+                                                    to={resource.url}
                                                     target={resource.url.startsWith("http") ? "_blank" : undefined}
                                                     rel={resource.url.startsWith("http") ? "noopener noreferrer" : undefined}
                                                 >
