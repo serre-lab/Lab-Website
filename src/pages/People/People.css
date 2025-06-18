@@ -20,3 +20,14 @@
     justify-content: center;
     width: 100%;
   }
+
+/* Card container shows grab hand */
+.resource-card, .person-card {
+  cursor: grab;
+}
+
+/* Image inside card uses default pointer */
+.resource-card img,
+.person-card img {
+  cursor: default;
+}
