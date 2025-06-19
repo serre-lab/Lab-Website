@@ -1,5 +1,3 @@
-[< back to Resources](https://serre-lab.clps.brown.edu/resources/)
-
 # hGRU Tutorials
 
 - [Google Colab with code for hGRU on PathFinder-14](https://colab.research.google.com/drive/1nahqqz1xjVTgrhtPv6myE1xvi4eRvMge?authuser=1#scrollTo=aamsQuGRVUqn)

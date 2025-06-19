@@ -1,5 +1,3 @@
-[< back to Resources](https://serre-lab.clps.brown.edu/resources/)
-
 # The multi-cue boundary detection dataset
 
 **Video collection**
