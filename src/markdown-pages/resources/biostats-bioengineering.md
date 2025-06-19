@@ -1,5 +1,3 @@
-[< back to Resources](https://serre-lab.clps.brown.edu/resources/)
-
 # Biostats & bioengineering
 
 ## Introduction to Magnetic Resonance Imaging and Neuroimaging (ENGN 1930N, Fall, Deoni)

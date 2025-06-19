@@ -1,5 +1,3 @@
-[< back to Resources](https://serre-lab.clps.brown.edu/resources/)
-
 # ClickMe
 
 [**Play ClickMe Now and Win Cash Prizes! It’s a game that collects annotations on visual feature importance.**](http://clickme.clps.brown.edu)

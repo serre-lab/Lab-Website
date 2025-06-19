@@ -1,5 +1,3 @@
-[< back to Resources](https://serre-lab.clps.brown.edu/resources/)
-
 # A neuromorphic approach to computer vision
 
 [![Hierarchy](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/09/hierarchy.jpg)](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/09/hierarchy.jpg)  

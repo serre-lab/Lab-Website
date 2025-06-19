@@ -1,5 +1,3 @@
-[< back to Resources](https://serre-lab.clps.brown.edu/resources/)
-
 # Automated system for rodent behavioral phenotyping
 
 Download the source code for the system [here.](http://cbcl.mit.edu/software-datasets/mouse/)

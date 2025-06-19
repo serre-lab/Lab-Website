@@ -1,5 +1,3 @@
-[< back to Resources](https://serre-lab.clps.brown.edu/resources/)
-
 # Mathematical & Computations
 
 ## Computational Probability and Statistics (AMPA 1690, Fall, Harrison)
