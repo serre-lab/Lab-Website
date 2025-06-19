@@ -104,6 +104,13 @@
             "university": "Brown",
             "imagePath": "people/jay-gopal.jpg",
             "description": "Jay Gopal is an undergraduate student in Brown University’s Program in Liberal Medical Education (PLME). He is passionate about leveraging artificial intelligence to accelerate progress in healthcare, and has been conducting research into machine learning since 2019. Jay’s research interests include improving the explainability of deep learning models, building brain-inspired computational tools for visual reasoning, and applying machine learning & computer vision directly to the medical setting to make long-term advancements in patient care."
+        },
+        {
+            "fullName": "Christopher José Cueva",
+            "title": "PostDoc",
+            "university": "Brown",
+            "imagePath": "people/chris-cueva.jpg",
+            "description": "My research blends neural data analysis, cognitive science, and artificial intelligence to understand how the brain guides behavior in complex environments, with a particular interest in behaviors that leverage memory. To develop and test new hypotheses about natural intelligence, I enjoy developing and deconstructing recurrent neural network models that instantiate the underlying neural and cognitive mechanisms, and developing new techniques for analyzing experimental data.\nIf you are interested in my research, feel free to reach out!"
         }
 
     ]
