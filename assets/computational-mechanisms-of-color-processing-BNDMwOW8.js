@@ -1,6 +1,4 @@
-const e=`[< back to Resources](https://serre-lab.clps.brown.edu/resources/)
-
-# Computational mechanisms of color processing
+const e=`# Computational mechanisms of color processing
 
 The goal of this project is to study the computational mechanisms underlying color processing in the primate brain. In recent work we have developed a novel framework for the joint processing of color and shape information in natural images [ECCV’12]. A hierarchical non-linear spatio-chromatic operator yields spatial and chromatic opponent channels, which mimics processing in the primate visual cortex. We have extended two popular object recognition systems (our very own hierarchical model of visual processing and a classical bag-of-word approach based on the SIFT descriptor) to incorporate color information along with shape information.
 

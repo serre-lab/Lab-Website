@@ -1,6 +1,4 @@
-const a=`[< back to Resources](https://serre-lab.clps.brown.edu/resources/)
-
-# Methods & data analysis
+const a=`# Methods & data analysis
 
 ## Machine Learning Methods for Brain and Cog Sciences (TBD, Serre)
 

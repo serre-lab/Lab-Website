@@ -1,6 +1,4 @@
-const e=`[< back to Resources](https://serre-lab.clps.brown.edu/resources/)
-
-# Learning sparse prototypes for crowd perception
+const e=`# Learning sparse prototypes for crowd perception
 
 The goal of this project is to study the pre-attentive ensemble coding mechanisms consistent with feedforward hierarchical models of visual processing. In recent work,  
 we extend a biological model of motion processing with a new dictionary learning  

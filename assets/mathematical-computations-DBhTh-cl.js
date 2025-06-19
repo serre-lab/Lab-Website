@@ -1,6 +1,4 @@
-const e=`[< back to Resources](https://serre-lab.clps.brown.edu/resources/)
-
-# Mathematical & Computations
+const a=`# Mathematical & Computations
 
 ## Computational Probability and Statistics (AMPA 1690, Fall, Harrison)
 
@@ -50,4 +48,4 @@ Topics include parameter estimation, probabilistic graphical models, approximate
 ## Special Topics in Machine Learning (CSCI 2950P, Fall, Sudderth)
 
 This course explores current research topics in statistical machine learning. Focus varies by year, and may include Bayesian nonparametrics; models for spatial, temporal, or structured data; and variational or Monte Carlo approximations. Course meetings combine lectures with presentation and discussion of classical and contemporary research papers. Students will apply some this material to a project, ideally drawn from their own research interests.  
-*Graduate, Undergraduate*`;export{e as default};
+*Graduate, Undergraduate*`;export{a as default};

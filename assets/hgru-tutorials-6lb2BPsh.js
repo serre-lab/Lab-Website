@@ -1,11 +1,7 @@
-const e=`[< back to Resources](https://serre-lab.clps.brown.edu/resources/)
+const e=`# hGRU Tutorials
 
-# ClickMe
-
-[**Play ClickMe Now and Win Cash Prizes! It’s a game that collects annotations on visual feature importance.**](http://clickme.clps.brown.edu)
-
-- [Links to original ClickMe datasets](https://connectomics.clps.brown.edu/tf_records/)
-- [Code for running GALA on TPUs](https://github.com/serre-lab/gala_tpu)
+- [Google Colab with code for hGRU on PathFinder-14](https://colab.research.google.com/drive/1nahqqz1xjVTgrhtPv6myE1xvi4eRvMge?authuser=1#scrollTo=aamsQuGRVUqn)
+- [Google Colab with Segmentation with hGRU-FPN on COCO](https://colab.research.google.com/drive/13q2pWR-32q6QfBRcz3fyihxGomZ3P4Ys?usp=sharing)
 
 ---
 

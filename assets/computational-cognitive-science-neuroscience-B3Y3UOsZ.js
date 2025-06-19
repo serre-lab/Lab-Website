@@ -1,6 +1,4 @@
-const n=`[< back to Resources](https://serre-lab.clps.brown.edu/resources/)
-
-# Computational cognitive science / neuroscience
+const n=`# Computational cognitive science / neuroscience
 
 ## Neural Modeling Laboratory (CLPS 1491, Spring, Anderson)
 
