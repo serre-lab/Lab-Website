@@ -1,6 +1,4 @@
-const n=`[< back to Resources](https://serre-lab.clps.brown.edu/resources/)
-
-# Neuroscience
+const n=`# Neuroscience
 
 ## The Brain: An Introduction to Neuroscience (NEUR 0010, Fall, Paradiso & Stein)
 

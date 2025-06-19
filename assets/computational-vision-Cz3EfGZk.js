@@ -1,6 +1,4 @@
-const n=`[< back to Resources](https://serre-lab.clps.brown.edu/resources/)
-
-# Computational vision
+const n=`# Computational vision
 
 ## Computational vision (CLPS 1520, Fall, Serre)
 

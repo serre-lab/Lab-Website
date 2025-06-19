@@ -1,6 +1,4 @@
-const e=`[< back to Resources](https://serre-lab.clps.brown.edu/resources/)
-
-# HMDB: a large human motion database
+const e=`# HMDB: a large human motion database
 
 - [Evaluation](#evaluation)
 - [Download](#download)
