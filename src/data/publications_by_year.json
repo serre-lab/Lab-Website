@@ -722,7 +722,7 @@
             "title": "Monkeys engage in visual simulation to solve complex problems",
             "url": "https://authors.elsevier.com/c/1k6Fc3QW8S6Gde",
             "journal": "Current Biology",
-            "authors": "A. Ahuja, N.Y. Rodriguez, A.K. Ashok, T. Serre, T. Desrochers, D. Sheinberg"
+            "authors": "A. Ahuja,  N.Y. Rodriguez, A.K. Ashok, T. Serre, T. Desrochers,  D. Sheinberg"
         },
         {
             "title": "RTify: Aligning deep neural networks with human behavioral decisions",
@@ -758,7 +758,7 @@
             "title": "Gradient strikes back: How filtering out high frequencies improves explanations",
             "url": "https://arxiv.org/abs/2307.09591",
             "journal": "International Conference on Machine Learning",
-            "authors": "S. Muzellec, T. Fel, V. Boutin, L. Andeol, R. VanRullen & T. Serre"
+            "authors": "S. Muzellec, T. Fel, V. Boutin,  L. Andeol, R. VanRullen & T. Serre"
         },
         {
             "title": "Deceptive learning in histopathology",
@@ -769,28 +769,42 @@
     ],
     "Work in progress": [
         {
-            "title": "Local vs distributed representations: What is the right basis for interpretability?",
-            "url": "https://arxiv.org/abs/2411.03993v1",
+            "title": "Better artificial intelligence does not mean better models of biology",
+            "authors": "Linsley, Feng & Serre",
             "journal": "arXiv",
-            "authors": "J. Colin, L. Goetschalckx, T. Fel, V. Boutin, J. Gopal, T. Serre* & N. Oliver*"
+            "link": "https://arxiv.org/abs/2504.16940"
+        },
+        {
+            "title": "Local vs distributed representations: What is the right basis for interpretability?",
+            "authors": "J. Colin, L. Goetschalckx, T. Fel, V. Boutin, J. Gopal, T. Serre* & N. Oliver*",
+            "journal": "",
+            "link": "https://arxiv.org/abs/2411.03993v1"
+        }
+    ],
+    "2025": [
+        {
+            "title": "Enhancing deep neural networks through complex-valued representations and Kuramoto synchronization dynamics",
+            "authors": "S. Muzellec, A. Alamia, T. Serre & R. VanRullen",
+            "journal": "Transactions on Machine Learning Research",
+            "link": ""
+        },
+        {
+            "title": "Beyond adversarial robustness: Breaking the robustness-alignment trade-off in object recognition",
+            "authors": "P. Feng, D. Linsley, T. Boissin, A.K. Ashok, T. Fel, S. Olaiya & T. Serre",
+            "journal": "ICLR 2025 Workshop on Representational Alignment",
+            "link": "https://openreview.net/forum?id=oe1TzWGFjs"
         },
         {
             "title": "Tracking objects that change in appearance with phase synchrony",
-            "url": "https://arxiv.org/abs/2410.02094",
-            "journal": "arXiv",
-            "authors": "S. Muzellec, D. Linsley, A.K. Ashok, E. Mingolla, G. Malik, R. VanRullen & T. Serre"
+            "authors": "S. Muzellec, D. Linsley, A.K. Ashok, E. Mingolla, G. Malik, R. VanRullen & T. Serre",
+            "journal": "International Conference on Learning Representations",
+            "link": "https://arxiv.org/abs/2410.02094"
         },
         {
             "title": "The 3D-PC: a benchmark for visual perspective taking in humans and machines",
-            "url": "https://arxiv.org/abs/2406.04138",
-            "journal": "arXiv",
-            "authors": "D. Linsley, P. Zhou, A.K. Ashok, A. Nagaraj, G. Gaonkar, F.E. Lewis, Z. Pizlo & T. Serre"
-        },
-        {
-            "title": "Categorizing the visual environment and analyzing the visual attention of dogs",
-            "url": "https://arxiv.org/abs/2311.11988",
-            "journal": "arXiv",
-            "authors": "S.S Raman, M.H. Pelgrim, D. Buchsbaum & T. Serre"
+            "authors": "D. Linsley, P. Zhou, A.K. Ashok, A. Nagaraj, G. Gaonkar, F.E. Lewis, Z. Pizlo & T. Serre",
+            "journal": "International Conference on Learning Representations",
+            "link": "https://arxiv.org/abs/2406.04138"
         }
     ]
 }
