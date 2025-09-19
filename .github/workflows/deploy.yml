@@ -1,0 +1,29 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main # Trigger the workflow on pushes to the main branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checks out your repository so the workflow can access it
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Step 2: Installs dependencies and builds your project
+      # Replace this step with your project's specific build commands
+      - name: Install and Build
+        run: |
+          npm install
+          npm run build
+
+      # Step 3: Deploys the built files to the gh-pages branch
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages # The branch the action should deploy to
+          folder: dist # The folder containing the build output
