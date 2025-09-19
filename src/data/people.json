@@ -15,13 +15,6 @@
             "description": "Drew Linsley is an Assistant Professor of Research in the CLPS department. He builds computational models of the visual system that serve the dual purpose of (1) explaining biological function and (2) extending artificial vision."
         },
         {
-            "fullName": "Ivan Rodriguez",
-            "title": "Grad student",
-            "university": "Brown",
-            "imagePath": "people/ivan-rodriguez.jpg",
-            "description": ""
-        },
-        {
             "fullName": "Alekh Ashok",
             "title": "Grad student",
             "university": "Brown",
@@ -62,13 +55,6 @@
             "university": "Brown",
             "imagePath": "people/abdullah-rashed-ahmed.jpg",
             "description": ""
-        },
-        {
-            "fullName": "Sabine Muzellec",
-            "title": "Grad student",
-            "university": "ANITI",
-            "imagePath": "people/sabine-muzellec.jpg",
-            "description": "Sabine is a Ph.D. student at the University of Toulouse. She obtained her Master's Degree in Computer Vision and Robotics from the University of Toulouse (France). Her research interests include topics related to Computer Vision, Neural Networks and Machine Learning, biologically inspired. She is currently working on developing deep learning networks using complex-valued activations to mimic oscillatory processes and binding in artificial models. "
         },
         {
             "fullName": "Michael Lepori",
