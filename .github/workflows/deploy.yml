@@ -18,7 +18,7 @@ jobs:
       # Replace this step with your project's specific build commands
       - name: Install and Build
         run: |
-          npm install
+          npm install --force
           npm run build
 
       # Step 3: Deploys the built files to the gh-pages branch
