@@ -80,6 +80,13 @@
     font-size: 1rem;
 }
 
+.publication-journal {
+    color: #666;
+    font-size: 0.95rem;
+    font-style: italic;
+    margin-top: 0.25rem;
+}
+
 .journal-tag {
     display: inline-block;
     background-color: #e0e0e0;

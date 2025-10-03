@@ -109,6 +109,11 @@ export function Publications() {
                                             <Text className="publication-authors">
                                                 {publication.authors}
                                             </Text>
+                                            {publication.journal && (
+                                                <Text className="publication-journal">
+                                                    {publication.journal}
+                                                </Text>
+                                            )}
                                         </motion.li>
                                     ))}
                                 </ul>
