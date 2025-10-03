@@ -47,6 +47,11 @@
   
   .section-title {
     margin-top: 2rem;
+    transition: color 0.3s ease;
+  }
+
+  .section-title:hover {
+    color: #3498db;
   }
 
   .student-cards-container {
@@ -143,29 +148,87 @@
     transform: scale(1.1);
   }
 
+  /* Funding Section */
+  .funding-section {
+    text-align: center;
+  }
+
+  .funding-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    margin: 2rem 0;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 12px;
+  }
+
+  .funding-logo-link {
+    transition: all 0.3s ease;
+    opacity: 0.8;
+    filter: grayscale(20%);
+  }
+
+  .funding-logo-link:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+    transform: translateY(-4px);
+  }
+
+  .funding-logo {
+    height: 60px;
+    width: auto;
+    max-width: 180px;
+    object-fit: contain;
+    transition: all 0.3s ease;
+  }
+
+  .funding-description {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #666;
+    line-height: 1.7;
+  }
+
   /* Featured Projects Section */
   .featured-projects-section {
     width: 100%;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 3rem auto;
     padding: 0 2rem;
   }
 
   .featured-title {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     font-size: 2rem;
     color: #2c3e50;
   }
 
+  .featured-subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .featured-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+  }
+
   .featured-card {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border-radius: 16px;
-    padding: 2.5rem;
-    box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
   }
 
   .featured-card::before {
@@ -175,102 +238,142 @@
     right: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%);
     pointer-events: none;
   }
 
   .featured-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 32px rgba(102, 126, 234, 0.4);
+    transform: translateY(-6px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Uniform neutral card colors */
+  .featured-card {
+    background: linear-gradient(135deg, #5a6c7d 0%, #3e4d5e 100%);
   }
 
   .featured-content {
     position: relative;
     z-index: 1;
     color: white;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
   }
 
   .featured-project-title {
     color: white;
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.15rem;
+    font-weight: 600;
   }
 
   .featured-description {
-    color: rgba(255, 255, 255, 0.95);
-    font-size: 1.1rem;
-    line-height: 1.7;
-    margin-bottom: 1.5rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    flex-grow: 1;
   }
 
-  .featured-stats {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    margin: 2rem 0 1.5rem;
-    flex-wrap: wrap;
-  }
-
-  .stat-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .stat-number {
-    font-size: 2rem;
-    font-weight: 700;
-    color: white;
-    line-height: 1.2;
-  }
-
-  .stat-label {
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.85);
-    margin-top: 0.25rem;
-  }
-
-  .featured-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-
-  .featured-button {
+  .featured-button-small {
     display: inline-block;
-    padding: 0.9rem 2rem;
+    background: white;
+    color: #3e4d5e;
+    padding: 0.5rem 1.25rem;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
-    font-size: 1rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-size: 0.85rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     transition: all 0.3s ease;
+    align-self: flex-start;
   }
 
-  .featured-button.primary {
-    background: white;
-    color: #667eea;
-  }
-
-  .featured-button.primary:hover {
+  .featured-button-small:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     background: #f8f9fa;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
   }
 
-  .featured-button.secondary {
-    background: rgba(255, 255, 255, 0.2);
+  /* Recent Highlights Section */
+  .recent-highlights-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+  }
+
+  .highlights-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #2c3e50;
+  }
+
+  .highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .highlight-card {
+    background: white;
+    border: 1px solid #e1e8ed;
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+
+  .highlight-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    border-color: #3498db;
+  }
+
+  .highlight-journal {
+    display: inline-block;
+    background: linear-gradient(135deg, #3498db, #2980b9);
     color: white;
-    border: 2px solid white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
   }
 
-  .featured-button.secondary:hover {
-    background: rgba(255, 255, 255, 0.3);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  .highlight-title {
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+  }
+
+  .highlight-title a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .highlight-title a:hover {
+    color: #3498db;
+  }
+
+  .highlight-authors {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 1024px) {
+    .featured-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .highlights-grid {
+      grid-template-columns: 1fr;
+    }
   }
 
   @media (max-width: 768px) {
@@ -278,34 +381,20 @@
       padding: 0 1rem;
     }
     
+    .featured-grid {
+      grid-template-columns: 1fr;
+    }
+    
     .featured-card {
-      padding: 2rem 1.5rem;
+      padding: 1.5rem;
     }
     
     .featured-project-title {
-      font-size: 1.5rem;
+      font-size: 1.15rem;
     }
     
     .featured-description {
-      font-size: 1rem;
-    }
-
-    .featured-stats {
-      gap: 2rem;
-    }
-
-    .stat-number {
-      font-size: 1.5rem;
-    }
-
-    .featured-buttons {
-      flex-direction: column;
-      width: 100%;
-    }
-
-    .featured-button {
-      width: 100%;
-      text-align: center;
+      font-size: 0.85rem;
     }
   }
   
