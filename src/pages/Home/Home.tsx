@@ -166,43 +166,43 @@ export function Home() {
         <Title order={2} className="highlights-title">Recent Highlights</Title>
         <div className="highlights-grid">
           <div className="highlight-card">
+            <Text className="highlight-journal">Trends in Cognitive Sciences (2025)</Text>
+            <Title order={4} className="highlight-title">
+              <a href="https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(24)00301-5" target="_blank" rel="noopener noreferrer">
+                Feature binding in biological and artificial vision
+              </a>
+            </Title>
+            <Text className="highlight-authors">P. Roelfsema & T. Serre</Text>
+          </div>
+
+          <div className="highlight-card">
+            <Text className="highlight-journal">ICLR (2025)</Text>
+            <Title order={4} className="highlight-title">
+              <a href="https://openreview.net/forum?id=WUQSbz2kna" target="_blank" rel="noopener noreferrer">
+                The 3D-PC: A benchmark for visual perspective taking in humans and machines
+              </a>
+            </Title>
+            <Text className="highlight-authors">D. Linsley et al.</Text>
+          </div>
+
+          <div className="highlight-card">
+            <Text className="highlight-journal">arXiv preprint (2025)</Text>
+            <Title order={4} className="highlight-title">
+              <a href="https://arxiv.org/abs/2504.16940" target="_blank" rel="noopener noreferrer">
+                From Prediction to Understanding: Will AI Foundation Models Transform Brain Science?
+              </a>
+            </Title>
+            <Text className="highlight-authors">T. Serre & E. Pavlick</Text>
+          </div>
+
+          <div className="highlight-card">
             <Text className="highlight-journal">Current Biology (2024)</Text>
             <Title order={4} className="highlight-title">
               <a href="https://authors.elsevier.com/c/1k6Fc3QW8S6Gde" target="_blank" rel="noopener noreferrer">
                 Monkeys engage in visual simulation to solve complex problems
               </a>
             </Title>
-            <Text className="highlight-authors">A. Ahuja, N.Y. Rodriguez, A.K. Ashok, T. Serre, T. Desrochers, D. Sheinberg</Text>
-          </div>
-
-          <div className="highlight-card">
-            <Text className="highlight-journal">NeurIPS (2024)</Text>
-            <Title order={4} className="highlight-title">
-              <a href="http://arxiv.org/abs/2411.03630" target="_blank" rel="noopener noreferrer">
-                RTify: Aligning deep neural networks with human behavioral decisions
-              </a>
-            </Title>
-            <Text className="highlight-authors">Y. Cheng, I.F. Rodriguez, S. Chen, T. Watanabe & T. Serre</Text>
-          </div>
-
-          <div className="highlight-card">
-            <Text className="highlight-journal">ICLR (2025)</Text>
-            <Title order={4} className="highlight-title">
-              <a href="https://arxiv.org/abs/2410.02094" target="_blank" rel="noopener noreferrer">
-                Tracking objects that change in appearance with phase synchrony
-              </a>
-            </Title>
-            <Text className="highlight-authors">S. Muzellec, D. Linsley, A.K. Ashok, E. Mingolla, G. Malik, R. VanRullen & T. Serre</Text>
-          </div>
-
-          <div className="highlight-card">
-            <Text className="highlight-journal">Histopathology (2024)</Text>
-            <Title order={4} className="highlight-title">
-              <a href="https://onlinelibrary.wiley.com/doi/10.1111/his.15180" target="_blank" rel="noopener noreferrer">
-                Deceptive learning in histopathology
-              </a>
-            </Title>
-            <Text className="highlight-authors">S. Shahamatdar, D. Saeed-Vafa, D. Linsley, F. Khalil, K. Lovinger, L. Li, H. McLeod, S. Ramachandran, T. Serre</Text>
+            <Text className="highlight-authors">A. Ahuja et al.</Text>
           </div>
         </div>
         <div style={{ textAlign: "center", marginTop: "1.5rem" }}>
