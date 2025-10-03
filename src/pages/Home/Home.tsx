@@ -323,23 +323,23 @@ export function Home() {
         </motion.div>
         <motion.div variants={fadeUp} className="funding-section">
           <div className="funding-logos">
-            <a href="https://www.onr.navy.mil/" target="_blank" rel="noopener noreferrer" className="funding-logo-link">
-              <img src="/images/logos/onr-logo.png" alt="Office of Naval Research" className="funding-logo" />
+            <a href="https://www.onr.navy.mil/" target="_blank" rel="noopener noreferrer" className="funding-logo-badge">
+              <span className="funding-badge-text">ONR</span>
             </a>
-            <a href="https://www.nsf.gov/" target="_blank" rel="noopener noreferrer" className="funding-logo-link">
-              <img src="/images/logos/nsf-logo.png" alt="National Science Foundation" className="funding-logo" />
+            <a href="https://www.nsf.gov/" target="_blank" rel="noopener noreferrer" className="funding-logo-badge">
+              <span className="funding-badge-text">NSF</span>
             </a>
-            <a href="https://www.nih.gov/" target="_blank" rel="noopener noreferrer" className="funding-logo-link">
-              <img src="/images/logos/nih-logo.png" alt="National Institutes of Health" className="funding-logo" />
+            <a href="https://www.nih.gov/" target="_blank" rel="noopener noreferrer" className="funding-logo-badge">
+              <span className="funding-badge-text">NIH</span>
             </a>
-            <a href="https://anr.fr/en/" target="_blank" rel="noopener noreferrer" className="funding-logo-link">
-              <img src="/images/logos/anr-logo.png" alt="ANR-3IA" className="funding-logo" />
+            <a href="https://anr.fr/en/" target="_blank" rel="noopener noreferrer" className="funding-logo-badge">
+              <span className="funding-badge-text">ANR-3IA</span>
             </a>
-            <a href="https://carney.brown.edu/" target="_blank" rel="noopener noreferrer" className="funding-logo-link">
-              <img src="/images/logos/carney-logo.png" alt="Carney Institute" className="funding-logo" />
+            <a href="https://carney.brown.edu/" target="_blank" rel="noopener noreferrer" className="funding-logo-badge">
+              <span className="funding-badge-text">Carney Institute</span>
             </a>
-            <a href="https://cloud.google.com/tpu" target="_blank" rel="noopener noreferrer" className="funding-logo-link">
-              <img src="/images/logos/google-cloud-logo.png" alt="Google Cloud" className="funding-logo" />
+            <a href="https://cloud.google.com/tpu" target="_blank" rel="noopener noreferrer" className="funding-logo-badge">
+              <span className="funding-badge-text">Google Cloud</span>
             </a>
           </div>
           <Text className="funding-description">
