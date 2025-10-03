@@ -318,32 +318,14 @@ export function Home() {
         {/* Funding Section */}
         <motion.div variants={fadeUp}>
           <Title order={2} className="section-title" style={{ marginTop: "2rem" }}>
-            Funding & Support
+            Funding
           </Title>
         </motion.div>
-        <motion.div variants={fadeUp} className="funding-section">
-          <div className="funding-logos">
-            <a href="https://www.onr.navy.mil/" target="_blank" rel="noopener noreferrer" className="funding-logo-badge">
-              <span className="funding-badge-text">ONR</span>
-            </a>
-            <a href="https://www.nsf.gov/" target="_blank" rel="noopener noreferrer" className="funding-logo-badge">
-              <span className="funding-badge-text">NSF</span>
-            </a>
-            <a href="https://www.nih.gov/" target="_blank" rel="noopener noreferrer" className="funding-logo-badge">
-              <span className="funding-badge-text">NIH</span>
-            </a>
-            <a href="https://anr.fr/en/" target="_blank" rel="noopener noreferrer" className="funding-logo-badge">
-              <span className="funding-badge-text">ANR-3IA</span>
-            </a>
-            <a href="https://carney.brown.edu/" target="_blank" rel="noopener noreferrer" className="funding-logo-badge">
-              <span className="funding-badge-text">Carney Institute</span>
-            </a>
-            <a href="https://cloud.google.com/tpu" target="_blank" rel="noopener noreferrer" className="funding-logo-badge">
-              <span className="funding-badge-text">Google Cloud</span>
-            </a>
-          </div>
-          <Text className="funding-description">
-            Our work is currently supported by ONR (N00014-24-1-2026 and REPRISM MURI N00014-24-1-2603), NSF (IIS-2402875 and EAR-1925481), NIH (S10OD036341), and ANR-3IA (ANR-19-PI3A-0004). Additional support from the Carney Institute for Brain Science, Center for Computation and Visualization, and Google Cloud TPU Research Cloud.
+        <motion.div variants={fadeUp}>
+          <Text>
+            Our work is currently supported by ONR (N00014-24-1-2026 and REPRISM MURI N00014-24-1-2603), NSF (IIS-2402875 and EAR-1925481), NIH (S10OD036341), and ANR-3IA (ANR-19-PI3A-0004).
+            <br /><br />
+            Additional support is provided by the Carney Institute for Brain Science and the Center for Computation and Visualization. We acknowledge the Cloud TPU hardware resources that Google graciously makes available via the TensorFlow Research Cloud (TFRC) program.
           </Text>
         </motion.div>
       </motion.div>
