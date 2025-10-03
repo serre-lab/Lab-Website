@@ -1,0 +1,103 @@
+{
+    "researchProjects": [
+        {
+            "title": "Brain-inspired deep learning models of visual reasoning",
+            "years": "2018 – 2023",
+            "fundingSource": "ONR (N00014-19-1-2029)",
+            "description": [
+                "Primates can effortlessly learn to classify images into arbitrary categories from only a handful of training samples. While progress in deep convolutional networks (DCNs) has recently led to great successes in many engineering applications, these networks do not exhibit neuronal representations and processes that naturally allow for flexible, reasoning about objects and their relations in visual scenes. In particular, beyond basic object recognition tasks, our group and others have found that these networks strugle to solve rather simple but abstract visual reasoning problems. The assumption underlying this research is that understanding and emulating the information-processing strategies used in biological systems will enable the development of ground-breaking technologies.",
+                "The proposed research will identify the perceptual principles and model the brain mechanisms underlying human visual reasoning ability with the following specific aims: Aim 1 will develop a novel visual reasoning challenge used to identify the minimal set of necessary computations by systematically evaluating modern DCN architectures representing an array of computational strategies. Aim 2 will identify the computational strategies underlying human visual reasoning ability with tasks and stimuli derived in Aim 1. Rather than dealing with more realistic spiking neuron models as done in current modeling work, Aim 2 concerns the development of novel machine learning idealizations of key neural operations, which are trainable with machine learning algorithms but still interpretable at the cellular level."
+            ]
+        },
+        {
+            "title": "Oscillatory processes for visual reasoning in deep neural networks",
+            "years": "2019 – 2022",
+            "fundingSource": " NSF CRCNS US-France Research grant (IIS-1912280)",
+            "description": [
+                "Our working hypothesis is that synchronized neural oscillations in cortical networks constitute a versatile mechanism that supports various computations, from gating or modulating neuronal interactions to dynamically binding distributed object representations – computations that may be crucial for visual reasoning. We propose to identify the key oscillatory components and characterize the neural computations underlying humans ability to solve visual reasoning tasks, and to use similar strategies in modern deep learning architectures.",
+                "Our approach will combine all levels of analysis spanning biophysical models, human electrophysiology and behavioral studies, and deep learning architectures. We will address the following aims: Aim 1 will use existing computational models to create tasks and stimuli for EEG studies to identify the oscillatory components underlying human visual reasoning. The goal is not to provide an exhaustive catalog of oscillatory frequencies and brain regions, but rather to identify a limited set of oscillatory “clusters” supporting specific neural computations for these tasks. The analysis of these EEG data will be guided by the development of a biophysically-realistic computational neuroscience model in Aim 2. This will allow us to propose hypotheses on the circuit mechanisms underlying the oscillatory clusters identified in Aim 1 and to relate these mechanisms to neural computations. Aim 3 concerns the creation of novel machine learning idealizations of these neural computations, which are trainable with current deep learning methods but still interpretable at the neural circuit level. In particular, Aim 3 will further our initial machine learning formulation of oscillations based on complex-valued neuronal units – extending the approach and demonstrating its ability to qualitatively capture key oscillatory processes underlying visual reasoning."
+            ]
+        },
+        {
+            "title": "Intelligent Spine Interface (ISI)",
+            "years": "2019 – 2021",
+            "fundingSource": "DARPA  (D19AC00015)",
+            "description": [
+                "This multi-team project aims to build an Intelligent Spine Interface that will interpret neural information from above a spinal cord lesion and transfer that information, via state-of-the-art artificial neural network based interpreter, to sites below the lesion and restore volitional control of the lower limb. The proposed technology is agnostic to the level of the spinal lesion, and has far greater number of sites (electrodes) to interact with the nervous system, making the therapeutic potential far greater than current technologies.",
+                "We propose a bi-directional tool for sensing and stimulating to bridge a gap in the spinal cord and ‘reconnect’ patches of eloquent tissue, without the need in the future of external systems. Our platform innovates on the use of high-density electrode arrays; the use of state-of-the-art artificial neural network designs, optimization methods, and neural network-accelerated hardware targets; and layout of a device regulatory pathway for fully implanted system for advanced future therapies."
+            ]
+        },
+        {
+            "title": "Origins of southeast Asian rainforests from paleobotany and machine learning",
+            "years": "2019 – 2024",
+            "fundingSource": "NSF Collaborative research grant in Frontier Research in Earth Sciences (FRES; D19AC00015)",
+            "description": [
+                "Fossil leaves are the most abundant record of ancient plant life and millions of specimens are contained in museum collections around Fossil leaves are the most abundant record of ancient plant life, and millions of specimens are contained in museum collections around the world, with more discoveries every year. Nevertheless, leaf fossils alone currently provide limited information about the evolution of regional and global plant communities because individual leaf characteristics from a single plant species can vary widely, and detailed, time-consuming examination of each leaf fossil might still not connect it to its true biological family. This project addresses the problem in two ways. First will be the development of the Virtual Paleobotany Assistant (VPA), an artificial intelligence tool that will use machine learning techniques to rapidly analyze leaf characteristics to assign individual fossils to plant families and orders. The VPA, together with more traditional methods of paleobotany, will then be used to interpret the origins of the incredibly diverse tropical rain forests that now exist in Southeast Asia. These plant communities evolved during times of major continental movements and have connections to the former supercontinent of Gondwana, the Indian subcontinent, and Eurasia. Ascertaining the evolutionary and biogeographic pathways that led to the assembly of these tropical forests will help in preserving this important natural resource as the regional human population burgeons. The VPA will be made freely available on the internet and mobile platforms, enabling paleobotanists around the world to make discoveries far beyond this project. The unique collaboration between paleontologists and machine-learning experts will create extremely fertile ground for interdisciplinary advances, while catalyzing new international partnerships and student opportunities."
+            ]
+        },
+        {
+            "title": "Next generation machine vision for automated behavioral phenotyping of knock-in ALS-FTD mouse models",
+            "years": "2020 – 2022",
+            "fundingSource": "NIH/NINDS (R21 NS 112743)",
+            "description": [
+                "Amyotrophic lateral sclerosis (ALS) and Frontotemporal Dementia FTD are devastating neurodegenerative disorders that lie on a genetic and mechanistic continuum. ALS is a disease of motor neurons that begins focally, spreads to cause widespread paralysis, and is almost uniformly lethal, typically from respiratory paralysis within only 3-5 years of diagnosis. FTD is a heterogeneous, rapidly progressing syndrome that is among the top three causes of presenile dementia. Both diseases remain fundamentally untreatable and efforts to find high impact therapies have overwhelmingly failed. About 10% of ALS cases are caused by dominantly transmitted gene defects. SOD1 and FUS mutations cause aggressive motor neuron pathology while TDP43 mutations cause ALS-FTD. Further, wild type FUS and TDP43 are components of abnormal inclusions in many FTD cases, suggesting a mechanistic link between these disorders. Elucidating the early, potentially shared characteristics of these disorders will require new knock-in animal models expressing familial ALS-FTD genes along with sensitive and objective behavioral phenotyping methods that can be used to analyze and compare models generated at different laboratories. In published work the co-PIs applied a first-generation, machine vision-based automated phenotyping method, ACBM ‘1.0’ (automated continuous behavioral monitoring) to detect and quantify the earliest-detected phenotypes in Tdp43Q331K knock-in mice (White et al., Nat. Neurosci, 2018). This method entails continuous video recording for 5 days (~1.4 X 107 frames/mouse/session) that is then scored by a trained computer system. In addition to its sensitivity, objectivity and reproducibility, a major advantage of this method is the ability to acquire and archive video recordings and then analyze the data at sites remote from those of acquisition. The current proposal has three main goals: 1) To refine and apply a Next Generation ACBM – ‘2.0’ – that will allow for more sensitive, expansive and robust automated behavioral phenotyping of four novel knock-in models along with the well characterized SOD1G93A transgenic mouse. 2) To establish and validate procedures to enable remote acquisition of video recording data with cloud-based analysis. Our vision is to establish sensitive, robust, objective, and open-source machine vision-based behavioral analysis tools that will be widely available to workers in the field. Such tools are critical to accelerate the development of novel and effective therapeutics for ALS-FTD."
+            ]
+        },
+        {
+            "title": "Automating pathology with deep learning",
+            "years": "2018 – 2019",
+            "fundingSource": "NIGMS / Advance-CTR (U54GM115677)",
+            "description": [
+                "Deep learning algorithms using convolutional neural networks have demonstrated remarkable ability to classify images. They have been applied to analysis of medical imaging with impressive results. Here, we aim to develop deep learning algorithms for the analysis of histopathologic specimens to predict clinically actionable outcomes for men with prostate cancer at two pivotal disease states: (1) at initial diagnosis and (2) following radical prostatectomy. In Aim 1, we will develop a deep learning algorithm for the analysis of prostate core biopsy specimens to predict adverse pathologic features at radical prostatectomy. In Aim 2, we will develop a deep learning algorithm for the analysis of radical prostatectomy specimens to predict biochemical recurrence following radical prostatectomy. In Aim 3, we will examine the histopathologic features utilized in the neural networks to generate predictions in order identify novel histopathologic features that may improve upon traditional pathologic classification schemes. Deep learning methods represent a paradigm shift that can improve upon traditional, pathology-based risk-stratification and prediction. Such computer vision algorithms have the potential to identify novel histopathologic features to allow more accurate assessment of whole-prostate pathology from core biopsy specimens, or remote clinical outcomes, such as biochemical recurrence, from prostatectomy specimens."
+            ]
+        },
+        {
+            "title": "Naturalistic data collection in the SmartPlayroom",
+            "years": "2017 – 2019",
+            "fundingSource": "NIH R21 (MH 113870)",
+            "description": [
+                "We have designed a unique multi-sensor monitoring space for quantitative behavioral data collection and analysis, called the SmartPlayroom. The space is equipped with mobile eye tracking, wireless physiological heart rate and galvanic skin response sensors, audio and video recording, and depth sensor technologies. By combining fine-grained sensor data with high-throughput automated computer vision and machine learning tools, we will be able to automate quantitative data collection and analysis in the SmartPlayroom for use in addressing myriad developmental questions. It offers an opportunity to monitor unique aspects of children’s behavior including movement kinematics, language, eye movements, and social interactions while a child plays and explores with or without instruction, walks or crawls, and interacts with a caregiver. We have made significant progress with commercially available tools, sensors, and management and storage of large video files. Funding is requested to demonstrate the scientific advantage of naturalistic measurement (Aim 1), and in the process, to provide data to further develop flexible computer vision algorithms for automated behavioral analysis for use in 4-9 year-old children (Aim 2)."
+            ]
+        },
+        {
+            "title": "WildCog: Evolution and local adaptation of cognitive abilities and brain structure in the wild",
+            "years": "2015 – 2018",
+            "fundingSource": "Human Frontier Science Program (RGP0006/2015)",
+            "description": [
+                "Cognition plays a critical role in how organisms interact with their social and ecological environment, and while the mechanisms underlying cognitive processes are becoming clearer, we still know little about the evolution of cognitive traits in natural populations. Cognitive abilities of organisms implicitly lie at the core of many fields since they determine in part how organisms compete with each other and acquire mates, how they find food and avoid being eaten, how they flexibly adjust to new contexts, and how they navigate landscapes. Many different cognitive capacities exist and show within and across species variation; the extent to which this variation results from ecological imperatives faced by each species or population remains to be determined. Furthermore, new methods in neurosciences suggest that we may now be able to link variation in specific cognition functions to variation in neurological structures. An understanding of the selective processes that shape variation in brains and cognitive abilities could provide major advances in our understanding of variations in cognitive abilities, both within and among species. To do this, we have gathered an interdisciplinary research team to conduct a novel research project that will combine measurements of fitness, individual variation in cognitive performance, and neuroanatomy of brain structure and function. Combining data on fitness, cognition, and brain physiology on the same individuals will give us an unprecedented understanding of how selection operates on and shapes variation in cognition."
+            ]
+        },
+        {
+            "title": "Scaling up computational models of visual processing in cortex",
+            "years": "2014 – 2018",
+            "fundingSource": "DARPA young faculty award YFA and Director’s award (N66001-14-1-4037)",
+            "description": [
+                "The goal of this research is to identify functionally-relevant biophysically-plausible computational mechanisms beyond those currently implemented in existing models of the visual cortex and other deep learning architectures. Rather than dealing with more realistic but elaborate spiking neuron models, we propose to develop novel mathematical idealizations that naturally extends current system-level models of vision and related deep networks while still being amenable to many learning algorithms and interpretable in the context of biophysical mechanisms. Our approach, which consists in building phenomenological models of biophysically-realistic operations to scale up computational models of the visual cortex (and other deep learning nets) will thus help bridge a major gap between detailed biophysical models of spiking neurons and state-of-the-art machine learning and computer vision."
+            ]
+        },
+        {
+            "title": "Computational mechanisms of rapid visual categorization",
+            "years": "2013 – 2018",
+            "fundingSource": "NSF early career award (IIS-1252951)",
+            "description": [
+                "The goal of this research is to identify the perceptual principles and model the neural mechanisms underlying rapid visual categorization. By forcing processing to be fast, rapid visual categorization paradigms help isolate the very first pass of visual information before more complex visual routines take place. Hence, understanding ‘vision at a glance’ is arguably a necessary first step before studying natural everyday vision where eye movements and attentional shifts are known to play a key role. Specifically, this proposal will lead to the development of a computational neuroscience model of rapid visual recognition in the primate visual system, which is both consistent with physiological properties of cells in the visual cortex and able to predict behavioral responses (both correct and incorrect responses as well as reaction times) from human participants across a range of conditions."
+            ]
+        },
+        {
+            "title": "Towards a biologically-inspired vision system for the control of navigation in complex environments",
+            "years": "2011 – 2014",
+            "fundingSource": "ONR (N000141110743)",
+            "description": [
+                "The goal of this project is to identify the perceptual principles and model the neural mechanisms responsible for the visual control of primate navigation as a novel approach to navigation for ground vehicles with minimal sensing requirements. Specifically we will develop a neurally plausible, quantitative model of visual perception, which by incorporating bottom-up and top-down cortical connectivity as well as mechanisms of 3D shape and motion processing, should ultimately describe human performance in navigation tasks as well as the underlying circuits and neural mechanisms."
+            ]
+        },
+        {
+            "title": "Towards a human-level neuromorphic artificial visual system",
+            "years": "2010 – 2011",
+            "fundingSource": "DARPA (N10AP20013)",
+            "description": [
+                "The goal of this project is to create intelligent general-purpose cognitive vision algorithms inspired from the primate brain to alleviate the limitations of human-based analysis of complex visual scenes. The human brain is arguably the most advanced information processing device in existence, with a large fraction of its computing power devoted to sensory processing. Despite the importance of image processing for the control of animal behavior, after decades of intensive research in the computer vision communities, artificial vision systems remain poor cousins to their biological counterparts. The assumption underlying this research is that a concerted effort to understand and emulate the information-processing strategies used in biological sensory systems will lead to substantial near-term technological benefits. Importantly, based on our own experience with studying mechanisms of image formation, attention, and object recognition in the primate brain, we believe that a quantum leap advance is only possible through research and development of a new breed of neuroscience-inspired algorithms."
+            ]
+        }
+    ]
+}
