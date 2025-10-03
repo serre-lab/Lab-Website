@@ -38,7 +38,7 @@
   
   .home-content {
     width: 100%;
-    max-width: 900px;
+    max-width: 1100px;
     padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
@@ -194,7 +194,7 @@
   }
 
   .funding-description {
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto;
     color: #666;
     line-height: 1.7;
@@ -203,7 +203,7 @@
   /* Featured Projects Section */
   .featured-projects-section {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 3rem auto;
     padding: 0 2rem;
   }
@@ -307,7 +307,7 @@
   /* Recent Highlights Section */
   .recent-highlights-section {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 3rem auto;
     padding: 0 2rem;
   }

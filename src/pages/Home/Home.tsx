@@ -107,7 +107,7 @@ export function Home() {
                 Align AI models with human vision. Explore our harmonization techniques that make neural networks see more like humans do.
               </Text>
               <a
-                href="https://serre-lab.github.io/neural_harmonizer/"
+                href="https://serre-lab.github.io/Harmonization/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="featured-button-small"
