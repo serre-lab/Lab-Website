@@ -106,14 +106,14 @@ export function Publications() {
                                                     {publication.title}
                                                 </Anchor>
                                             </Title>
-                                            <Text className="publication-authors">
-                                                {publication.authors}
-                                            </Text>
                                             {publication.journal && (
                                                 <Text className="publication-journal">
                                                     {publication.journal}
                                                 </Text>
                                             )}
+                                            <Text className="publication-authors">
+                                                {publication.authors}
+                                            </Text>
                                         </motion.li>
                                     ))}
                                 </ul>
