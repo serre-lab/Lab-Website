@@ -199,7 +199,7 @@ export function Home() {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <Title order={2} className="highlights-title">Recent Highlights</Title>
+        <Title order={2} className="highlights-title">Selected Recent Publications</Title>
         <div className="highlights-grid">
           <div className="highlight-card">
             <Text className="highlight-journal">Trends in Cognitive Sciences (2025)</Text>
