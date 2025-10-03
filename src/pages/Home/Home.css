@@ -48,4 +48,264 @@
   .section-title {
     margin-top: 2rem;
   }
+
+  .student-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    width: 100%;
+    margin-top: 1rem;
+    align-items: start;
+  }
+
+  .student-card {
+    background: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-radius: 12px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .student-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, #3498db, #2980b9);
+  }
+
+  .student-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    border-color: #3498db;
+  }
+
+  .student-card-title {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+
+  .student-card-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #34495e;
+    margin-bottom: 0.5rem;
+  }
+
+  .student-requirements {
+    margin-top: 0.5rem;
+    padding-left: 1.25rem;
+    line-height: 1.6;
+    color: #34495e;
+    font-size: 0.9rem;
+  }
+
+  .student-requirements li {
+    margin-bottom: 0.4rem;
+  }
+
+  @media (max-width: 1024px) {
+    .student-cards-container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .email-icon-button {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.3s ease, transform 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .email-icon-button:hover {
+    color: #3498db;
+    transform: scale(1.1);
+  }
+
+  .social-icon:hover {
+    color: #3498db !important;
+    transform: scale(1.1);
+  }
+
+  /* Featured Projects Section */
+  .featured-projects-section {
+    width: 100%;
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+  }
+
+  .featured-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #2c3e50;
+  }
+
+  .featured-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .featured-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .featured-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(102, 126, 234, 0.4);
+  }
+
+  .featured-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+  }
+
+  .featured-project-title {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+
+  .featured-description {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+
+  .featured-stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: 2rem 0 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    line-height: 1.2;
+  }
+
+  .stat-label {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.85);
+    margin-top: 0.25rem;
+  }
+
+  .featured-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .featured-button {
+    display: inline-block;
+    padding: 0.9rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+  }
+
+  .featured-button.primary {
+    background: white;
+    color: #667eea;
+  }
+
+  .featured-button.primary:hover {
+    background: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .featured-button.secondary {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid white;
+  }
+
+  .featured-button.secondary:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 768px) {
+    .featured-projects-section {
+      padding: 0 1rem;
+    }
+    
+    .featured-card {
+      padding: 2rem 1.5rem;
+    }
+    
+    .featured-project-title {
+      font-size: 1.5rem;
+    }
+    
+    .featured-description {
+      font-size: 1rem;
+    }
+
+    .featured-stats {
+      gap: 2rem;
+    }
+
+    .stat-number {
+      font-size: 1.5rem;
+    }
+
+    .featured-buttons {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .featured-button {
+      width: 100%;
+      text-align: center;
+    }
+  }
   
