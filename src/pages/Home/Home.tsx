@@ -152,6 +152,42 @@ export function Home() {
               </a>
             </div>
           </div>
+
+          {/* Xplique Card */}
+          <div className="featured-card">
+            <div className="featured-content">
+              <Title order={3} className="featured-project-title">Xplique</Title>
+              <Text className="featured-description">
+                Open-source deep learning explainability toolbox. Understand and interpret neural network decisions with state-of-the-art attribution methods.
+              </Text>
+              <a
+                href="https://github.com/deel-ai/xplique"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="featured-button-small"
+              >
+                View on GitHub →
+              </a>
+            </div>
+          </div>
+
+          {/* Horama Card */}
+          <div className="featured-card">
+            <div className="featured-content">
+              <Title order={3} className="featured-project-title">Horama</Title>
+              <Text className="featured-description">
+                Interactive visualization tool for exploring neural network representations and understanding feature hierarchies in deep learning models.
+              </Text>
+              <a
+                href="https://github.com/serre-lab/Horama"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="featured-button-small"
+              >
+                View on GitHub →
+              </a>
+            </div>
+          </div>
         </div>
       </motion.div>
 
