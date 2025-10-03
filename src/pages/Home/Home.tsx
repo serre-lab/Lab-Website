@@ -75,46 +75,140 @@ export function Home() {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <Title order={2} className="featured-title">Help Advance AI Research</Title>
-        <div className="featured-card clickme-card">
-          <div className="featured-content">
-            <Title order={3} className="featured-project-title">🎮 Play ClickMe!</Title>
-            <Text className="featured-description">
-              Join over 2,000 players who have contributed 6.5+ million annotations to help AI see like humans do. Play our interactive game, compete for weekly cash prizes, and contribute to cutting-edge vision research funded by the National Science Foundation.
-            </Text>
-            <div className="featured-stats">
-              <div className="stat-item">
-                <span className="stat-number">2,000+</span>
-                <span className="stat-label">Players</span>
-              </div>
-              <div className="stat-item">
-                <span className="stat-number">6.5M+</span>
-                <span className="stat-label">Annotations</span>
-              </div>
-              <div className="stat-item">
-                <span className="stat-number">$10K+</span>
-                <span className="stat-label">Prizes Awarded</span>
-              </div>
-            </div>
-            <div className="featured-buttons">
+        <Title order={2} className="featured-title">Explore Our Interactive Tools</Title>
+        <Text className="featured-subtitle">
+          Try our AI research tools and help advance vision science
+        </Text>
+        
+        <div className="featured-grid">
+          {/* ClickMe Card */}
+          <div className="featured-card">
+            <div className="featured-content">
+              <Title order={3} className="featured-project-title">ClickMe</Title>
+              <Text className="featured-description">
+                Join 2,000+ players contributing 6.5M+ annotations. Play our game, win weekly cash prizes, and help AI see like humans. Featured on NBC 10.
+              </Text>
               <a
                 href="http://clickme.clps.brown.edu"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="featured-button primary"
+                className="featured-button-small"
               >
-                Play Now & Win Prizes →
-              </a>
-              <a
-                href="https://turnto10.com/news/local/brown-university-offers-cash-incentive-to-assist-with-click-me-ai-research-artificial-intelligence-deep-learning-lab-plme-brain-science-game-vision-february-24-2025"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="featured-button secondary"
-              >
-                📺 As Featured on NBC 10
+                Play Now →
               </a>
             </div>
           </div>
+
+          {/* Neural Harmonizer Card */}
+          <div className="featured-card">
+            <div className="featured-content">
+              <Title order={3} className="featured-project-title">Neural Harmonizer</Title>
+              <Text className="featured-description">
+                Align AI models with human vision. Explore our harmonization techniques that make neural networks see more like humans do.
+              </Text>
+              <a
+                href="https://serre-lab.github.io/neural_harmonizer/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="featured-button-small"
+              >
+                View Demo →
+              </a>
+            </div>
+          </div>
+
+          {/* ObjectLens Card */}
+          <div className="featured-card">
+            <div className="featured-content">
+              <Title order={3} className="featured-project-title">ObjectLens</Title>
+              <Text className="featured-description">
+                Explore what ImageNet models really see. Interactive explainability tool for object recognition revealing how AI vision models make decisions.
+              </Text>
+              <a
+                href="https://lens.visualize.ai/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="featured-button-small"
+              >
+                Explore Tool →
+              </a>
+            </div>
+          </div>
+
+          {/* LeafLens Card */}
+          <div className="featured-card">
+            <div className="featured-content">
+              <Title order={3} className="featured-project-title">LeafLens</Title>
+              <Text className="featured-description">
+                Discover how AI identifies plant species from cleared leaves. Visualize model attention and decision-making processes.
+              </Text>
+              <a
+                href="https://leaf-lens.visualize.ai/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="featured-button-small"
+              >
+                Explore Tool →
+              </a>
+            </div>
+          </div>
+        </div>
+      </motion.div>
+
+      {/* Recent Highlights Section */}
+      <motion.div
+        className="recent-highlights-section"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
+        <Title order={2} className="highlights-title">Recent Highlights</Title>
+        <div className="highlights-grid">
+          <div className="highlight-card">
+            <Text className="highlight-journal">Current Biology (2024)</Text>
+            <Title order={4} className="highlight-title">
+              <a href="https://authors.elsevier.com/c/1k6Fc3QW8S6Gde" target="_blank" rel="noopener noreferrer">
+                Monkeys engage in visual simulation to solve complex problems
+              </a>
+            </Title>
+            <Text className="highlight-authors">A. Ahuja, N.Y. Rodriguez, A.K. Ashok, T. Serre, T. Desrochers, D. Sheinberg</Text>
+          </div>
+
+          <div className="highlight-card">
+            <Text className="highlight-journal">NeurIPS (2024)</Text>
+            <Title order={4} className="highlight-title">
+              <a href="http://arxiv.org/abs/2411.03630" target="_blank" rel="noopener noreferrer">
+                RTify: Aligning deep neural networks with human behavioral decisions
+              </a>
+            </Title>
+            <Text className="highlight-authors">Y. Cheng, I.F. Rodriguez, S. Chen, T. Watanabe & T. Serre</Text>
+          </div>
+
+          <div className="highlight-card">
+            <Text className="highlight-journal">ICLR (2025)</Text>
+            <Title order={4} className="highlight-title">
+              <a href="https://arxiv.org/abs/2410.02094" target="_blank" rel="noopener noreferrer">
+                Tracking objects that change in appearance with phase synchrony
+              </a>
+            </Title>
+            <Text className="highlight-authors">S. Muzellec, D. Linsley, A.K. Ashok, E. Mingolla, G. Malik, R. VanRullen & T. Serre</Text>
+          </div>
+
+          <div className="highlight-card">
+            <Text className="highlight-journal">Histopathology (2024)</Text>
+            <Title order={4} className="highlight-title">
+              <a href="https://onlinelibrary.wiley.com/doi/10.1111/his.15180" target="_blank" rel="noopener noreferrer">
+                Deceptive learning in histopathology
+              </a>
+            </Title>
+            <Text className="highlight-authors">S. Shahamatdar, D. Saeed-Vafa, D. Linsley, F. Khalil, K. Lovinger, L. Li, H. McLeod, S. Ramachandran, T. Serre</Text>
+          </div>
+        </div>
+        <div style={{ textAlign: "center", marginTop: "1.5rem" }}>
+          <Link to="/publications" style={{ color: "#3498db", textDecoration: "none", fontWeight: 600 }}>
+            View All Publications →
+          </Link>
         </div>
       </motion.div>
 
@@ -224,14 +318,32 @@ export function Home() {
         {/* Funding Section */}
         <motion.div variants={fadeUp}>
           <Title order={2} className="section-title" style={{ marginTop: "2rem" }}>
-            Funding
+            Funding & Support
           </Title>
         </motion.div>
-        <motion.div variants={fadeUp}>
-          <Text>
-            Our work is currently supported by ONR (N00014-24-1-2026 and REPRISM MURI N00014-24-1-2603), NSF (IIS-2402875 and EAR-1925481), and the ANR-3IA Artificial and Natural Intelligence Toulouse Institute (ANR-19-PI3A-0004).
-            <br /><br />
-            Additional support is provided by the Carney Institute for Brain Science and the Center for Computation and Visualization (CCV) (via NIH S10OD036341 to TS.) We acknowledge the Cloud TPU hardware resources that Google graciously makes available via the TensorFlow Research Cloud (TFRC) program.
+        <motion.div variants={fadeUp} className="funding-section">
+          <div className="funding-logos">
+            <a href="https://www.onr.navy.mil/" target="_blank" rel="noopener noreferrer" className="funding-logo-link">
+              <img src="/images/logos/onr-logo.png" alt="Office of Naval Research" className="funding-logo" />
+            </a>
+            <a href="https://www.nsf.gov/" target="_blank" rel="noopener noreferrer" className="funding-logo-link">
+              <img src="/images/logos/nsf-logo.png" alt="National Science Foundation" className="funding-logo" />
+            </a>
+            <a href="https://www.nih.gov/" target="_blank" rel="noopener noreferrer" className="funding-logo-link">
+              <img src="/images/logos/nih-logo.png" alt="National Institutes of Health" className="funding-logo" />
+            </a>
+            <a href="https://anr.fr/en/" target="_blank" rel="noopener noreferrer" className="funding-logo-link">
+              <img src="/images/logos/anr-logo.png" alt="ANR-3IA" className="funding-logo" />
+            </a>
+            <a href="https://carney.brown.edu/" target="_blank" rel="noopener noreferrer" className="funding-logo-link">
+              <img src="/images/logos/carney-logo.png" alt="Carney Institute" className="funding-logo" />
+            </a>
+            <a href="https://cloud.google.com/tpu" target="_blank" rel="noopener noreferrer" className="funding-logo-link">
+              <img src="/images/logos/google-cloud-logo.png" alt="Google Cloud" className="funding-logo" />
+            </a>
+          </div>
+          <Text className="funding-description">
+            Our work is currently supported by ONR (N00014-24-1-2026 and REPRISM MURI N00014-24-1-2603), NSF (IIS-2402875 and EAR-1925481), NIH (S10OD036341), and ANR-3IA (ANR-19-PI3A-0004). Additional support from the Carney Institute for Brain Science, Center for Computation and Visualization, and Google Cloud TPU Research Cloud.
           </Text>
         </motion.div>
       </motion.div>
