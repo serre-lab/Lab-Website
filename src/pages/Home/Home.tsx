@@ -323,9 +323,9 @@ export function Home() {
         </motion.div>
         <motion.div variants={fadeUp}>
           <Text>
-            Our work is currently supported by ONR (N00014-24-1-2026 and REPRISM MURI N00014-24-1-2603), NSF (IIS-2402875 and EAR-1925481), NIH (S10OD036341), and ANR-3IA (ANR-19-PI3A-0004).
+            Our work is currently supported by ONR (N00014-24-1-2026 and REPRISM MURI N00014-24-1-2603), NSF (IIS-2402875 and EAR-1925481), and the ANR-3IA Artificial and Natural Intelligence Toulouse Institute (ANR-19-PI3A-0004).
             <br /><br />
-            Additional support is provided by the Carney Institute for Brain Science and the Center for Computation and Visualization. We acknowledge the Cloud TPU hardware resources that Google graciously makes available via the TensorFlow Research Cloud (TFRC) program.
+            Additional support is provided by the Carney Institute for Brain Science and the Center for Computation and Visualization (CCV) (via NIH S10OD036341 to TS.) We acknowledge the Cloud TPU hardware resources that Google graciously makes available via the TensorFlow Research Cloud (TFRC) program.
           </Text>
         </motion.div>
       </motion.div>
