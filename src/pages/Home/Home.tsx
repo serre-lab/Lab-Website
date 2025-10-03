@@ -77,7 +77,7 @@ export function Home() {
       >
         <Title order={2} className="featured-title">Explore Our Interactive Tools</Title>
         <Text className="featured-subtitle">
-          Try our AI research tools and help advance vision science
+          Try our research tools, games, and open-source software to advance vision science
         </Text>
         
         <div className="featured-grid">
