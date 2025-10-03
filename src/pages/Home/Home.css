@@ -230,13 +230,14 @@
 
   .featured-card {
     border-radius: 12px;
-    padding: 1.5rem;
+    padding: 0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    background: white;
   }
 
   .featured-card::before {
@@ -255,29 +256,44 @@
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   }
 
-  /* Uniform neutral card colors */
-  .featured-card {
-    background: linear-gradient(135deg, #5a6c7d 0%, #3e4d5e 100%);
+  .featured-image-container {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    background: #f0f0f0;
+    position: relative;
+  }
+
+  .featured-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .featured-card:hover .featured-image {
+    transform: scale(1.05);
   }
 
   .featured-content {
     position: relative;
     z-index: 1;
-    color: white;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    background: white;
   }
 
   .featured-project-title {
-    color: white;
+    color: #2c3e50;
     margin-bottom: 0.5rem;
     font-size: 1.15rem;
     font-weight: 600;
   }
 
   .featured-description {
-    color: rgba(255, 255, 255, 0.9);
+    color: #666;
     font-size: 0.85rem;
     line-height: 1.5;
     margin-bottom: 1rem;
@@ -286,22 +302,22 @@
 
   .featured-button-small {
     display: inline-block;
-    background: white;
-    color: #3e4d5e;
+    background: #3498db;
+    color: white;
     padding: 0.5rem 1.25rem;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
     font-size: 0.85rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
     transition: all 0.3s ease;
     align-self: flex-start;
   }
 
   .featured-button-small:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    background: #f8f9fa;
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
+    background: #2980b9;
   }
 
   /* Recent Highlights Section */
