@@ -83,6 +83,9 @@ export function Home() {
         <div className="featured-grid">
           {/* ClickMe Card */}
           <div className="featured-card">
+            <div className="featured-image-container">
+              <img src="/images/projects/clickme-preview.jpg" alt="ClickMe Game" className="featured-image" />
+            </div>
             <div className="featured-content">
               <Title order={3} className="featured-project-title">ClickMe</Title>
               <Text className="featured-description">
@@ -101,6 +104,9 @@ export function Home() {
 
           {/* Neural Harmonizer Card */}
           <div className="featured-card">
+            <div className="featured-image-container">
+              <img src="/images/projects/harmonizer-preview.jpg" alt="Neural Harmonizer" className="featured-image" />
+            </div>
             <div className="featured-content">
               <Title order={3} className="featured-project-title">Neural Harmonizer</Title>
               <Text className="featured-description">
@@ -119,6 +125,9 @@ export function Home() {
 
           {/* ObjectLens Card */}
           <div className="featured-card">
+            <div className="featured-image-container">
+              <img src="/images/projects/objectlens-preview.jpg" alt="ObjectLens Tool" className="featured-image" />
+            </div>
             <div className="featured-content">
               <Title order={3} className="featured-project-title">ObjectLens</Title>
               <Text className="featured-description">
@@ -137,6 +146,9 @@ export function Home() {
 
           {/* LeafLens Card */}
           <div className="featured-card">
+            <div className="featured-image-container">
+              <img src="/images/projects/leaflens-preview.jpg" alt="LeafLens Tool" className="featured-image" />
+            </div>
             <div className="featured-content">
               <Title order={3} className="featured-project-title">LeafLens</Title>
               <Text className="featured-description">
