@@ -34,7 +34,6 @@ HMDB (Human Motion Database) is one of the most widely-used benchmarks for human
 | Feature Type | Size | Description |
 |--------------|------|-------------|
 | [**STIP Features (Original)**](http://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/hmdb51_org_stips.rar) | ~3.5GB | HOG/HOF descriptors for HMDB51 |
-| [**STIP Features (Stabilized)**](http://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/hmdb51_sta_stips.rar) | ~2.9GB | Features from stabilized videos |
 | [STIP Binaries](http://www.irisa.fr/vista/Equipe/People/Laptev/download.html) | - | Feature extraction tool |
 
 ### 📋 Evaluation Splits
