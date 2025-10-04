@@ -74,6 +74,10 @@
     text-decoration: none; /* Remove underline on hover */
 }
 
+.publication-title-text {
+    color: #333;
+}
+
 .publication-authors {
     margin-bottom: 0.25rem; /* Less space below authors */
     color: #444;
