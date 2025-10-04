@@ -2,6 +2,7 @@ import resourcesData from "../../data/resources.json";
 import "./Resources.css";
 import { Text, Title, Anchor, Card, Image, Group } from "@mantine/core";
 import { IconVideo } from '@tabler/icons-react';
+import { Link } from "react-router-dom";
 
 // Helper function to get YouTube video ID from URL
 const getYouTubeId = (url: string): string | null => {
@@ -81,15 +82,26 @@ export function Resources() {
                                     ) : (
                                         <div className="resource-list">
                                             {subCategory.map((resource) => (
-                                                <Anchor
-                                                    key={resource.title}
-                                                    href={resource.url}
-                                                    target={resource.url.startsWith("http") ? "_blank" : undefined}
-                                                    rel={resource.url.startsWith("http") ? "noopener noreferrer" : undefined}
-                                                    className="resource-link"
-                                                >
-                                                    {resource.title || resource.url}
-                                                </Anchor>
+                                                resource.url.startsWith("http") ? (
+                                                    <Anchor
+                                                        key={resource.title}
+                                                        href={resource.url}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className="resource-link"
+                                                    >
+                                                        {resource.title || resource.url}
+                                                    </Anchor>
+                                                ) : (
+                                                    <Anchor
+                                                        key={resource.title}
+                                                        component={Link}
+                                                        to={resource.url}
+                                                        className="resource-link"
+                                                    >
+                                                        {resource.title || resource.url}
+                                                    </Anchor>
+                                                )
                                             ))}
                                         </div>
                                     )}
