@@ -101,7 +101,20 @@ function downloadFile(url, destPath) {
     
     console.log(`  Downloading: ${path.basename(destPath)}`);
     
-    protocol.get(url, (response) => {
+    // Parse URL to get proper request options
+    const urlObj = new URL(url);
+    const options = {
+      hostname: urlObj.hostname,
+      path: urlObj.pathname + urlObj.search,
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+        'Accept-Language': 'en-US,en;q=0.5',
+        'Referer': `http://${OLD_DOMAIN}/`
+      }
+    };
+    
+    protocol.get(options, (response) => {
       if (response.statusCode === 302 || response.statusCode === 301) {
         // Handle redirect
         file.close();
@@ -241,6 +254,9 @@ async function migrate(options = {}) {
       
       const result = await downloadFile(item.url, item.destPath);
       results.success.push(result);
+      
+      // Add small delay between requests to be nice to the server
+      await new Promise(resolve => setTimeout(resolve, 500));
       
     } catch (error) {
       console.log(`  ✗ Failed: ${error.message}`);
