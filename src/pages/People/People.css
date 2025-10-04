@@ -1,34 +1,20 @@
 .people-container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 2rem 2rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem; /* align with Resources */
+  }
+
+  /* Reduce top margin for first section heading similar to Resources */
+  .people-grid:first-of-type {
+    margin-top: 0.5rem;
   }
   
   /* Page title uses global .page-title class from typography.css */
+  /* Section titles use global .section-title class from typography.css */
 
-  .people-section-title {
-    text-align: center;
-    font-size: 1.75rem;
-    font-weight: 600;
-    color: #2c3e50;
-    margin-top: 2rem;
-    margin-bottom: 1.5rem;
-    position: relative;
-  }
-
-  .people-section-title::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 3px;
-    background: linear-gradient(90deg, #3498db, #2980b9);
-    margin: 0.5rem auto 0;
-    border-radius: 2px;
-  }
-  
   .people-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
