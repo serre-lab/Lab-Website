@@ -12,6 +12,17 @@ dist
 dist-ssr
 *.local
 
+# Large dataset files (downloaded locally but not committed to repo)
+public/datasets/**/*.rar
+public/datasets/**/*.tar.bz2
+public/datasets/**/*.zip
+public/datasets/**/*.tar.gz
+
+# Migration artifacts (temporary)
+.migration-backup/
+migration-manifest.json
+link-update-report.json
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
