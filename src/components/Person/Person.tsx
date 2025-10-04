@@ -82,9 +82,6 @@ export default function Person({ fullName, title, university, imagePath, descrip
                             {fullName}
                         </Title>
                         <Text className="person-title">{title}</Text>
-                        <Text size="md" c="dimmed" ta="center" mt={-8}>
-                            {university}
-                        </Text>
                         <Text className="person-description">
                             {renderTextWithLinks(description || `${fullName} is a student in the Serre Lab at Brown University.`)}
                         </Text>
