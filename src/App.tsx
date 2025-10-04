@@ -43,7 +43,7 @@ const staticLinks: Links = {
         { to: "/resources", label: "Resources" },
         {
             to: "/sci-comm",
-            label: "Sci-Comm",
+            label: "Media",
         },
     ],
     social: [
