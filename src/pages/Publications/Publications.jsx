@@ -59,10 +59,16 @@ export function Publications() {
             if (selectedYear !== "All" && year !== selectedYear) return;
 
             const filteredPublications = publications.filter(
-                (publication) =>
-                    publication.title.toLowerCase().includes(searchQuery) ||
-                    publication.authors.toLowerCase().includes(searchQuery) ||
-                    (publication.journal && publication.journal.toLowerCase().includes(searchQuery))
+                (publication) => {
+                    // Create word boundary regex for exact word matching
+                    const searchRegex = new RegExp(`\\b${searchQuery.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i');
+                    
+                    return (
+                        searchRegex.test(publication.title) ||
+                        searchRegex.test(publication.authors) ||
+                        (publication.journal && searchRegex.test(publication.journal))
+                    );
+                }
             );
 
             if (filteredPublications.length > 0) {
