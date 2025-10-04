@@ -187,10 +187,10 @@ function createBackup(files) {
   for (const file of files) {
     const relativePath = path.relative(path.join(__dirname, '..'), file);
     const backupPath = path.join(backupDir, relativePath);
-    const backupDir = path.dirname(backupPath);
+    const backupFileDir = path.dirname(backupPath);
     
-    if (!fs.existsSync(backupDir)) {
-      fs.mkdirSync(backupDir, { recursive: true });
+    if (!fs.existsSync(backupFileDir)) {
+      fs.mkdirSync(backupFileDir, { recursive: true });
     }
     
     fs.copyFileSync(file, backupPath);

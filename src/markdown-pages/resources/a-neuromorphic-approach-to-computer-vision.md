@@ -1,6 +1,6 @@
 # A neuromorphic approach to computer vision
 
-[![Hierarchy](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/09/hierarchy.jpg)](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/09/hierarchy.jpg)  
+[![Hierarchy](/images/resources/2012-09-hierarchy.jpg)](/images/resources/2012-09-hierarchy.jpg)  
 **Supplementary Box 1: Functional classes of cells and learning: Simple and complex cells.**
 
 Following their work on striate cortex [1], Hubel & Wiesel first described two classes of functional cells. Simple cells that respond best to bar-like (or edge-like) stimuli at a particular orientation, position and phase (i.e., white bar on a black background or dark bar on a white background) within their relatively small receptive fields. Complex cells, on the other hand, while also selective for bars, tend to have larger receptive fields (about twice as big) and exhibit some tolerance with respect to the exact position (and phase of the bar) within their receptive fields. Hubel & Wiesel described a way by which specific pooling mechanisms could explain the response properties of these cells.

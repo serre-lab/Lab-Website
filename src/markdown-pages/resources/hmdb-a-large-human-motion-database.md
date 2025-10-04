@@ -24,24 +24,24 @@ HMDB (Human Motion Database) is one of the most widely-used benchmarks for human
 
 | Resource | Size | Description |
 |----------|------|-------------|
-| [**HMDB51 Videos**](http://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/hmdb51_org.rar) | ~2GB | 7,000 clips across 51 action classes |
-| [**Stabilized HMDB51**](http://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/hmdb51_sta.rar) | ~2GB | Camera-motion stabilized clips with masks |
-| [Stabilization README](http://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/stabilized_readme.txt) | - | Technical documentation |
+| [**HMDB51 Videos**](/datasets/hmdb/hmdb51_org.rar) | ~2GB | 7,000 clips across 51 action classes |
+| [**Stabilized HMDB51**](/datasets/hmdb/hmdb51_sta.rar) | ~2GB | Camera-motion stabilized clips with masks |
+| [Stabilization README](/datasets/hmdb/stabilized_readme.txt) | - | Technical documentation |
 | [Bounding Boxes](http://lear.inrialpes.fr/people/wang/improved_trajectories) | - | From INRIA improved trajectories |
 
 ### 🔍 Pre-extracted Features
 
 | Feature Type | Size | Description |
 |--------------|------|-------------|
-| [**STIP Features (Original)**](http://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/hmdb51_org_stips.rar) | ~3.5GB | HOG/HOF descriptors for HMDB51 |
+| [**STIP Features (Original)**](/datasets/hmdb/hmdb51_org_stips.rar) | ~3.5GB | HOG/HOF descriptors for HMDB51 |
 | [STIP Binaries](http://www.irisa.fr/vista/Equipe/People/Laptev/download.html) | - | Feature extraction tool |
 
 ### 📋 Evaluation Splits
 
 | Resource | Description |
 |----------|-------------|
-| [**Train/Test Splits**](http://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/test_train_splits.rar) | Three standard splits for reproducible evaluation |
-| [Splits README](http://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/split_readme.txt) | Documentation for using the splits |
+| [**Train/Test Splits**](/datasets/hmdb/test_train_splits.rar) | Three standard splits for reproducible evaluation |
+| [Splits README](/datasets/hmdb/split_readme.txt) | Documentation for using the splits |
 
 ### 💻 Code & Benchmarks
 
@@ -81,7 +81,7 @@ The dataset spans a comprehensive range of human activities organized into five 
 
 ### Visual Examples
 
-| ![HMDB Snapshot 1](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/HMDB_snapshot1-300x225.png) | ![HMDB Snapshot 2](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/HMDB_snapshot2-300x225.png) |
+| ![HMDB Snapshot 1](/images/resources/hmdb/HMDB_snapshot1-300x225.png) | ![HMDB Snapshot 2](/images/resources/hmdb/HMDB_snapshot2-300x225.png) |
 |:--:|:--:|
 | *Sample actions from HMDB51* | *Diverse activities and viewpoints* |
 
@@ -99,7 +99,7 @@ HMDB: A Large Video Database for Human Motion Recognition
 International Conference on Computer Vision (ICCV), 2011
 ```
 
-📄 [**Download Paper (PDF)**](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/Kuehne_etal_iccv11.pdf) | 📋 [BibTeX](http://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/Kuehne_etal_iccv11.bib)
+📄 [**Download Paper (PDF)**](/papers/Kuehne_etal_iccv11.pdf) | 📋 [BibTeX](http://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/Kuehne_etal_iccv11.bib)
 
 ### Additional Citations
 
@@ -139,11 +139,11 @@ Each video clip includes comprehensive annotations beyond the action label:
 
 The following visualizations show the distribution of various properties across HMDB51:
 
-| ![Action Categories](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/ActionCategories-187x300.jpg) | ![Body Part](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/BodyPart-187x300.jpg) | ![Camera Motion](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/CameraMotion-187x300.jpg) | ![Camera Position](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/CameraPosition1-187x300.jpg) |
+| ![Action Categories](/images/resources/hmdb/ActionCategories-187x300.jpg) | ![Body Part](/images/resources/hmdb/BodyPart-187x300.jpg) | ![Camera Motion](/images/resources/hmdb/CameraMotion-187x300.jpg) | ![Camera Position](/images/resources/hmdb/CameraPosition1-187x300.jpg) |
 |:--:|:--:|:--:|:--:|
 | *Action distribution* | *Body parts visible* | *Camera motion* | *Camera viewpoint* |
 
-| ![Clip Quality](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/ClipQuality-187x300.jpg) | ![Duration](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/Duration-187x300.jpg) | ![Duration Count](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/Duration_count-187x300.jpg) |
+| ![Clip Quality](/images/resources/hmdb/ClipQuality-187x300.jpg) | ![Duration](/images/resources/hmdb/Duration-187x300.jpg) | ![Duration Count](/images/resources/hmdb/Duration_count-187x300.jpg) |
 |:--:|:--:|:--:|
 | *Video quality* | *Clip duration* | *Duration histogram* |
 
@@ -160,9 +160,9 @@ We provide camera-stabilized versions of all clips using standard image stitchin
 
 | Original | Stabilized |
 |:--------:|:----------:|
-| ![Before 1](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/00001-300x225.jpg) | ![After 1](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/00002-300x154.jpg) |
-| ![Before 2](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/00020-300x225.jpg) | ![After 2](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/00021-300x154.jpg) |
-| ![Before 3](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/00050-300x225.jpg) | ![After 3](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/00051-300x154.jpg) |
+| ![Before 1](/images/resources/hmdb/00001-300x225.jpg) | ![After 1](/images/resources/hmdb/00002-300x154.jpg) |
+| ![Before 2](/images/resources/hmdb/00020-300x225.jpg) | ![After 2](/images/resources/hmdb/00021-300x154.jpg) |
+| ![Before 3](/images/resources/hmdb/00050-300x225.jpg) | ![After 3](/images/resources/hmdb/00051-300x154.jpg) |
 
 ---
 

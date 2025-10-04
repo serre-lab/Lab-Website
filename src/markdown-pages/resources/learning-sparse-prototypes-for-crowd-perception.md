@@ -17,15 +17,15 @@ unstable and fail to capture typical crowd peculiarities. We conduct examples in
 the below figure like local and unstable codes, we try to get global and prototypical  
 codes.
 
-[![Fig. 1](http://serre-lab.clps.brown.edu/wp-content/uploads/2014/11/image001-300x109.png)](http://serre-lab.clps.brown.edu/wp-content/uploads/2014/11/image001.png)  
+[![Fig. 1](/images/resources/crowd/image001-300x109.png)](/images/resources/crowd/image001.png)  
 *Fig. 1. Illustrative example demonstrating that crowd patterns are difficult to learn with basic sparse coding (left). Patterns of crowd behavior tend to be complex and difficult to represent using only local rules. In this work, we build a feedforward hierarchial models for crowd perception using a novel sparse prototype learning method (right), which incorporates structural and coherence constraints to learn richer, more meaningful, crowd patterns.*
 
 ## Cognitive Psychology Background
 
-[![Fig. 2a](http://serre-lab.clps.brown.edu/wp-content/uploads/2014/11/image003-300x181.png)](http://serre-lab.clps.brown.edu/wp-content/uploads/2014/11/image003.png)  
-[![Fig. 2b](http://serre-lab.clps.brown.edu/wp-content/uploads/2014/11/image006.gif)](http://serre-lab.clps.brown.edu/wp-content/uploads/2014/11/image006.gif)
-[![Fig. 2c](http://serre-lab.clps.brown.edu/wp-content/uploads/2014/11/image005.png)](http://serre-lab.clps.brown.edu/wp-content/uploads/2014/11/image005.png)
-[![Fig. 2d](http://serre-lab.clps.brown.edu/wp-content/uploads/2014/11/image007.gif)](http://serre-lab.clps.brown.edu/wp-content/uploads/2014/11/image007.gif)
+[![Fig. 2a](/images/resources/crowd/image003-300x181.png)](/images/resources/crowd/image003.png)  
+[![Fig. 2b](/images/resources/crowd/image006.gif)](/images/resources/crowd/image006.gif)
+[![Fig. 2c](/images/resources/crowd/image005.png)](/images/resources/crowd/image005.png)
+[![Fig. 2d](/images/resources/crowd/image007.gif)](/images/resources/crowd/image007.gif)
 
 Fig. 2. People are more accurate at reporting the mean direction rather than any  
 individual person (check what they actually do) etc. Such results have been taken as  
@@ -60,14 +60,14 @@ motion directions with a dictionary of stored prototypes. Originally, the dictio
 K S2 prototypes is learned via a simple random sampling procedure. Here, instead,  
 we propose to learn crowd prototypes via sparse coding methods.
 
-[![Fig. 3](http://serre-lab.clps.brown.edu/wp-content/uploads/2014/11/image008-300x130.png)](http://serre-lab.clps.brown.edu/wp-content/uploads/2014/11/image008.png)  
+[![Fig. 3](/images/resources/crowd/image008-300x130.png)](/images/resources/crowd/image008.png)  
 *Fig. 3. Sketch of the proposed hierarchal model for crowd perception.*
 
 ## Crowd prototypes learning
 
 **(1) Sparse Coding Based Crowd Prototypes**
 
-[![Fig. 4a](http://serre-lab.clps.brown.edu/wp-content/uploads/2014/11/image010-300x99.png)](http://serre-lab.clps.brown.edu/wp-content/uploads/2014/11/image010.png)  
+[![Fig. 4a](/images/resources/crowd/image010-300x99.png)](/images/resources/crowd/image010.png)  
 Given a set of N input vectors R, learning a sparse dictionary of coding elements can  
 be formulated as the following optimization problem: where B is a matrix that  
 contains the learned basis functions as column vectors and S is a matrix containing  
@@ -85,11 +85,11 @@ fixing the others. We formulate the coherence constraint as a graph-based Laplac
 regularization problem and the structural constraint as a generalized Tikhonov  
 regularization problem.
 
-[![Fig. 4b](http://serre-lab.clps.brown.edu/wp-content/uploads/2014/11/image012-300x40.png)](http://serre-lab.clps.brown.edu/wp-content/uploads/2014/11/image012.png)  
+[![Fig. 4b](/images/resources/crowd/image012-300x40.png)](/images/resources/crowd/image012.png)  
 (a) Illustrative results on the Marathon sequence for the first 5 iterations (from left  
 to right).
 
-[![Fig. 4c](http://serre-lab.clps.brown.edu/wp-content/uploads/2014/11/image014-300x42.png)](http://serre-lab.clps.brown.edu/wp-content/uploads/2014/11/image014.png)  
+[![Fig. 4c](/images/resources/crowd/image014-300x42.png)](/images/resources/crowd/image014.png)  
 (b) Comparison between different methods for prototype learning on the Marathon  
 sequence using the same number of prototypes. From left to right: standard  
 optical flow, basic sparse coding, graph-based sparse coding, proposed crowd  
@@ -100,32 +100,32 @@ Fig. 4. Illustration of prototypes for 5 iterations.
 
 **Abnormal event detection**
 
-[![Fig. 5](http://serre-lab.clps.brown.edu/wp-content/uploads/2014/11/image017-300x179.jpg)](http://serre-lab.clps.brown.edu/wp-content/uploads/2014/11/image017.jpg)  
+[![Fig. 5](/images/resources/crowd/image017-300x179.jpg)](/images/resources/crowd/image017.jpg)  
 Fig. 5. Evaluation of the different penalty terms used in the proposed optimization function.
 
 Table 1. AUC measures for the detection of abnormal behavior on the UMN dataset.  
-[![Table 1](http://serre-lab.clps.brown.edu/wp-content/uploads/2014/11/image018-300x41.png)](http://serre-lab.clps.brown.edu/wp-content/uploads/2014/11/image018.png)
+[![Table 1](/images/resources/crowd/image018-300x41.png)](/images/resources/crowd/image018.png)
 
 **Collectiveness classification**
 
-[![Fig. 6](http://serre-lab.clps.brown.edu/wp-content/uploads/2014/11/image020-300x122.png)](http://serre-lab.clps.brown.edu/wp-content/uploads/2014/11/image020.png)  
+[![Fig. 6](/images/resources/crowd/image020-300x122.png)](/images/resources/crowd/image020.png)  
 Fig. 6. Representative examples of the learned prototypes. Shown are sample frames  
 from the Collective Motion Dataset [35] overlaid with color coded symbols (best  
 seen in color) indicating the closest prototype for the corresponding location.
 
-[![Fig. 7](http://serre-lab.clps.brown.edu/wp-content/uploads/2014/11/image022-300x100.png)](http://serre-lab.clps.brown.edu/wp-content/uploads/2014/11/image022.png)  
+[![Fig. 7](/images/resources/crowd/image022-300x100.png)](/images/resources/crowd/image022.png)  
 Fig. 7. ROC curves for the classification of collectiveness levels. We compare a  
 “prototype” score P derived using the proposed approach with a “collectiveness”  
 score C and the “normalized velocity” V (see text for details).
 
 **Tracking in Crowded Scene**  
-[![Fig. 8](http://serre-lab.clps.brown.edu/wp-content/uploads/2014/11/image024-300x269.png)](http://serre-lab.clps.brown.edu/wp-content/uploads/2014/11/image024.png)  
+[![Fig. 8](/images/resources/crowd/image024-300x269.png)](/images/resources/crowd/image024.png)  
 Fig. 8. Tracking results on 3 sequences for comparison between the proposed  
 approaches (circles) vs. the approach by Zhang et al [29] (squares). The ground truth  
 is shown with dots. Tracking results for different subjects are marked with different  
 colors.
 
-[![Fig. 9](http://serre-lab.clps.brown.edu/wp-content/uploads/2014/11/image025-300x166.png)](http://serre-lab.clps.brown.edu/wp-content/uploads/2014/11/image025.png)  
+[![Fig. 9](/images/resources/crowd/image025-300x166.png)](/images/resources/crowd/image025.png)  
 Fig. 9. Top: Average position error curves for the proposed sparse coding approach  
 and comparison with baseline. Bottom: Comparison between tracking approaches  
 using the average position error computed over entire sequences.
