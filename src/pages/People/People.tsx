@@ -1,4 +1,4 @@
-import { Title, Divider, List } from "@mantine/core";
+import { Title, List } from "@mantine/core";
 import Person from "../../components/Person/Person";
 import peopleData from "../../data/people.json";
 import alumniData from "../../data/alumni.json";
@@ -45,7 +45,7 @@ export default function People() {
       {brownPeople.length > 0 && (
         <>
           <Title order={2} className="section-title">
-            Brown University Team ({brownPeople.length})
+            Brown Team ({brownPeople.length})
           </Title>
           
           {/* First row: Thomas and Drew */}
@@ -95,8 +95,7 @@ export default function People() {
       {/* ANITI Section */}
       {anitiPeople.length > 0 && (
         <>
-          <Divider my="md" />
-          <Title order={2} className="people-section-title">
+          <Title order={2} className="section-title">
             ANITI Team ({anitiPeople.length})
           </Title>
           <div className="people-grid">
@@ -117,8 +116,7 @@ export default function People() {
       {/* General Section */}
       {generalPeople.length > 0 && (
         <>
-          <Divider my="md" />
-          <Title order={2} className="people-section-title">
+          <Title order={2} className="section-title">
             Collaborators ({generalPeople.length})
           </Title>
           <div className="people-grid">
@@ -139,8 +137,7 @@ export default function People() {
       {/* Alumni Section */}
       {alumniData.alumni && alumniData.alumni.length > 0 && (
         <>
-          <Divider my="md" />
-          <Title order={2} className="people-section-title">
+          <Title order={2} className="section-title">
             Alumni ({alumniData.alumni.length})
           </Title>
           <List size="md" spacing="xs" className="alumni-list">
