@@ -51,12 +51,14 @@ export function Home() {
 >
         <div className="hero-text">
           <Title order={1} aria-label="lab title">Serre Lab</Title>
-          <Text className="hero-affiliation" size="lg">
-            Carney Center for Computational Brain Science
-          </Text>
-          <Text aria-label="lab one-liner" size="xl">
-            Visual Cognition and AI
-          </Text>
+          <div className="hero-affiliations">
+            <Text className="hero-affiliation">
+              Carney Center for Computational Brain Science
+            </Text>
+            <Text className="hero-affiliation">
+              Brown University
+            </Text>
+          </div>
         </div>
       </motion.div>
 

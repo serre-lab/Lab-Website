@@ -25,11 +25,25 @@ header {
     font-size: 1.25rem;
     font-weight: 600;
     color: black;
+    text-decoration: none;
   }
   
   .left img {
     width: 48px;
     height: auto;
+  }
+
+  .lab-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .lab-tagline {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #666;
+    letter-spacing: 0.3px;
   }
   
   /* Right Side: Navigation Links */
