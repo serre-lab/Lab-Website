@@ -52,6 +52,16 @@
                 "url": "https://github.com/serre-lab"
             }
         ],
+        "Demos": [
+            {
+                "title": "Colab Demo 1",
+                "url": "https://colab.research.google.com/drive/1nahqqz1xjVTgrhtPv6myE1xvi4eRvMge?authuser=1#scrollTo=aamsQuGRVUqn"
+            },
+            {
+                "title": "Colab Demo 2",
+                "url": "https://colab.research.google.com/drive/13q2pWR-32q6QfBRcz3fyihxGomZ3P4Ys?usp=sharing"
+            }
+        ],
         "Videos & Talks": [
             {
                 "title": "Vision beyond ImageNet: Understanding the brain mechanisms underlying visual recognition (August 2025)",
@@ -68,16 +78,6 @@
             {
                 "title": "Feedforward and feedback processes in visual reasoning", 
                 "url": "https://www.youtube.com/watch?v=85fdDvpaHGE&pp=ygUMdGhvbWFzIHNlcnJl"
-            }
-        ],
-        "Demos": [
-            {
-                "title": "Colab Demo 1",
-                "url": "https://colab.research.google.com/drive/1nahqqz1xjVTgrhtPv6myE1xvi4eRvMge?authuser=1#scrollTo=aamsQuGRVUqn"
-            },
-            {
-                "title": "Colab Demo 2",
-                "url": "https://colab.research.google.com/drive/13q2pWR-32q6QfBRcz3fyihxGomZ3P4Ys?usp=sharing"
             }
         ]
     }
