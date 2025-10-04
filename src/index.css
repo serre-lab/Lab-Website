@@ -15,6 +15,16 @@
     --color-link: #3498db;
     --color-link-hover: #2980b9;
 
+    /* Background colors */
+    --color-bg-light: #f8f9fa;
+    --color-bg-gray: #e0e0e0;
+    --color-bg-white: #ffffff;
+
+    /* Border colors */
+    --color-border: #e1e8ed;
+    --color-border-light: #d6d7e0;
+    --color-border-dark: #ccc;
+
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;

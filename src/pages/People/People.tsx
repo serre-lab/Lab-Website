@@ -29,9 +29,17 @@ export default function People() {
     (person) => person.university !== "Brown" && person.university !== "ANITI"
   );
 
+  // Split Brown people into three groups: first row (up to Alekh), second row (PhD students), third row (MSc students)
+  const alekhIndex = brownPeople.findIndex(person => person.fullName === "Alekh Ashok");
+  const firstMscIndex = brownPeople.findIndex(person => person.title === "MSc student");
+  
+  const brownFirstRow = brownPeople.slice(0, alekhIndex); // Thomas, Drew, Chris (before Alekh)
+  const brownSecondRow = brownPeople.slice(alekhIndex, firstMscIndex); // PhD students (Alekh onwards until first MSc)
+  const brownThirdRow = brownPeople.slice(firstMscIndex); // MSc students and anyone after
+
   return (
     <div className="people-container">
-      <Title order={1} className="people-page-title">Meet the Team</Title>
+      <Title order={1} className="page-title">People</Title>
       <Divider my="sm" />
 
       {/* Brown Section */}
@@ -40,10 +48,40 @@ export default function People() {
           <Title order={2} className="people-section-title">
             Brown University Team ({brownPeople.length})
           </Title>
+          
+          {/* First row: Thomas and Drew */}
           <div className="people-grid">
-            {brownPeople.map((person: any, index: number) => (
+            {brownFirstRow.map((person: any, index: number) => (
               <Person
-                key={`brown-${index}`}
+                key={`brown-first-${index}`}
+                fullName={person.fullName}
+                title={person.title}
+                university={person.university}
+                description={person.description}
+                imagePath={person.imagePath}
+              />
+            ))}
+          </div>
+
+          {/* Second row: PhD students */}
+          <div className="people-grid">
+            {brownSecondRow.map((person: any, index: number) => (
+              <Person
+                key={`brown-second-${index}`}
+                fullName={person.fullName}
+                title={person.title}
+                university={person.university}
+                description={person.description}
+                imagePath={person.imagePath}
+              />
+            ))}
+          </div>
+
+          {/* Third row: MSc students */}
+          <div className="people-grid">
+            {brownThirdRow.map((person: any, index: number) => (
+              <Person
+                key={`brown-third-${index}`}
                 fullName={person.fullName}
                 title={person.title}
                 university={person.university}

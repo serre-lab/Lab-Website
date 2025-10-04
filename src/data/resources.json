@@ -2,8 +2,8 @@
     "Resources": {
         "Datasets": [
             {
-                "title": "ClickMe Dataset",
-                "url": "https://connectomics.clps.brown.edu/tf_records/"
+                "title": "ClickMe",
+                "url": "https://serre-lab.github.io/Harmonization/evaluation/"
             },
             {
                 "title": "HMDB: A Large Human Motion Database",
@@ -58,12 +58,12 @@
                 "url": "https://cbmm.mit.edu/video/aligning-deep-networks-human-vision-will-require-novel-neural-architectures-data-diets-and"
             },
             {
-                "title": "Thomas Serre - YouTube Talk",
-                "url": "https://www.youtube.com/watch?v=qDz-nZnioeg"
+                "title": "Aligning deep networks with primate vision via self supervised learning",
+                "url": "https://www.youtube.com/watch?v=qDz-nZnioeg&pp=ygUMdGhvbWFzIHNlcnJl"
             },
             {
-                "title": "Thomas Serre - YouTube Presentation",
-                "url": "https://www.youtube.com/watch?v=85fdDvpaHGE"
+                "title": "Feedforward and feedback processes in visual reasoning", 
+                "url": "https://www.youtube.com/watch?v=85fdDvpaHGE&pp=ygUMdGhvbWFzIHNlcnJl"
             }
         ]
     }

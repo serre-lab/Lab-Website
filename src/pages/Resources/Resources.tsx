@@ -1,7 +1,7 @@
 import resourcesData from "../../data/resources.json";
 import "./Resources.css";
 import { Text, Title, Anchor, Card, Image, Group } from "@mantine/core";
-import { IconVideo } from '@tabler/icons-react';
+import { IconVideo, IconExternalLink } from '@tabler/icons-react';
 import { Link } from "react-router-dom";
 
 // Helper function to get YouTube video ID from URL
@@ -15,45 +15,70 @@ const isVideoUrl = (url: string): boolean => {
     return url.includes('youtube.com') || url.includes('youtu.be') || url.includes('cbmm.mit.edu/video');
 };
 
+// Component for resource cards (similar to featured projects)
+const ResourceCard = ({ resource }: { resource: { title: string; url: string } }) => {
+    const youtubeId = getYouTubeId(resource.url);
+    const isCBMM = resource.url.includes('cbmm.mit.edu/video');
+    const isExternal = resource.url.startsWith("http");
+    
+    const cardContent = (
+        <div className="resource-card">
+            <div className="resource-content">
+                <Title order={3} className="resource-title">{resource.title}</Title>
+                <Text className="resource-description">
+                    {isExternal ? "External Resource" : "Internal Resource"}
+                </Text>
+                <div className="resource-button">
+                    <IconExternalLink size={16} />
+                    <span>Access Resource</span>
+                </div>
+            </div>
+        </div>
+    );
+
+    if (isExternal) {
+        return (
+            <a
+                href={resource.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="resource-link"
+            >
+                {cardContent}
+            </a>
+        );
+    } else {
+        return (
+            <Link to={resource.url} className="resource-link">
+                {cardContent}
+            </Link>
+        );
+    }
+};
+
 // Component for video preview cards
 const VideoCard = ({ resource }: { resource: { title: string; url: string } }) => {
     const youtubeId = getYouTubeId(resource.url);
     const isCBMM = resource.url.includes('cbmm.mit.edu/video');
     
     return (
-        <Card 
-            shadow="sm" 
-            padding="xs" 
-            radius="md" 
-            withBorder 
-            className="video-card"
-            component="a"
-            href={resource.url}
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            <Card.Section>
-                {youtubeId ? (
-                    <div className="video-thumbnail-wrapper">
-                        <Image
-                            src={`https://img.youtube.com/vi/${youtubeId}/mqdefault.jpg`}
-                            alt={resource.title}
-                            fit="cover"
-                        />
-                    </div>
-                ) : isCBMM ? (
-                    <div className="video-placeholder">
-                        <IconVideo size={32} />
-                        <Text size="xs" c="dimmed">CBMM Video</Text>
-                    </div>
-                ) : null}
-            </Card.Section>
-            <Group justify="space-between" mt="xs" mb="xs">
-                <Text fw={500} size="xs" lineClamp={2}>
-                    {resource.title}
+        <div className="video-card">
+            <div className="video-content">
+                <Title order={3} className="video-title">{resource.title}</Title>
+                <Text className="video-description">
+                    {youtubeId ? "YouTube Video" : isCBMM ? "CBMM Video" : "Video"}
                 </Text>
-            </Group>
-        </Card>
+                <a
+                    href={resource.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="video-button"
+                >
+                    <IconVideo size={16} />
+                    <span>Watch Video</span>
+                </a>
+            </div>
+        </div>
     );
 };
 
@@ -70,7 +95,7 @@ export function Resources() {
                         {Object.entries(resources).map(
                             ([subCategoryName, subCategory]) => (
                                 <div key={subCategoryName} className="resource-section">
-                                    <Title order={3} className="resource-section-title">
+                                    <Title order={2} className="resource-section-title">
                                         {subCategoryName}
                                     </Title>
                                     {subCategoryName === "Videos & Talks" ? (
@@ -80,28 +105,9 @@ export function Resources() {
                                             ))}
                                         </div>
                                     ) : (
-                                        <div className="resource-list">
+                                        <div className="resource-grid">
                                             {subCategory.map((resource) => (
-                                                resource.url.startsWith("http") ? (
-                                                    <Anchor
-                                                        key={resource.title}
-                                                        href={resource.url}
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                        className="resource-link"
-                                                    >
-                                                        {resource.title || resource.url}
-                                                    </Anchor>
-                                                ) : (
-                                                    <Anchor
-                                                        key={resource.title}
-                                                        component={Link}
-                                                        to={resource.url}
-                                                        className="resource-link"
-                                                    >
-                                                        {resource.title || resource.url}
-                                                    </Anchor>
-                                                )
+                                                <ResourceCard key={resource.title} resource={resource} />
                                             ))}
                                         </div>
                                     )}

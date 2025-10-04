@@ -4,8 +4,8 @@
 }
 
 .filter-section {
-    padding: 20px;
-    border-bottom: 1px solid #ccc; /* Separate filter and results visually */
+    padding: 1.25rem;
+    border-bottom: 1px solid var(--color-border-dark);
 }
 
 .search-and-dropdown {
@@ -28,13 +28,12 @@
   
 
 .results-section {
-    padding: 20px;
+    padding: 1.25rem;
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* gap: 20px; */
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 }
 .publication-year-block {
     width: 100%;
@@ -44,11 +43,9 @@
   }
   
 .year-heading {
-    /* font-size: 1.75rem; */
-    /* font-weight: 700; */
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
-    border-bottom: 1px solid #d6d7e0; /* subtle grey line */
+    border-bottom: 1px solid var(--color-border-light);
     text-align: left;
 }
 
@@ -65,33 +62,33 @@
 }
 
 .publication-link {
-    color: #333 !important; /* Same as non-linked titles */
-    text-decoration: none !important; /* Remove underline */
+    color: var(--color-text-tertiary) !important;
+    text-decoration: none !important;
     transition: color 0.2s;
     font-size: 1.25rem !important;
     font-weight: 700 !important;
     line-height: 1.3 !important;
 }
 .publication-link:hover {
-    color: #1971c2 !important; /* Blue only on hover */
-    text-decoration: none !important; /* Remove underline on hover */
+    color: var(--color-link-hover) !important;
+    text-decoration: none !important;
 }
 
 .publication-title-text {
-    color: #333;
+    color: var(--color-text-tertiary);
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.3;
 }
 
 .publication-authors {
-    margin-bottom: 0.25rem; /* Less space below authors */
-    color: #444;
+    margin-bottom: 0.25rem;
+    color: var(--color-text-tertiary);
     font-size: 1rem;
 }
 
 .publication-journal {
-    color: #666;
+    color: var(--color-text-secondary);
     font-size: 0.95rem;
     font-style: italic;
     margin-top: 0.25rem;
@@ -99,9 +96,9 @@
 
 .journal-tag {
     display: inline-block;
-    background-color: #e0e0e0;
-    color: #333;
-    padding: 4px 8px;
+    background-color: var(--color-bg-gray);
+    color: var(--color-text-tertiary);
+    padding: 0.25rem 0.5rem;
     border-radius: 12px;
     font-size: 0.9em;
 }
@@ -110,14 +107,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8px;
+    padding: 0.5rem;
     border-radius: 4px;
     transition: background-color 0.2s;
     flex-shrink: 0;
 }
 
 .pdf-icon-link:hover {
-    background-color: #f8f9fa;
+    background-color: var(--color-bg-light);
 }
 
 .pdf-icon-link svg {

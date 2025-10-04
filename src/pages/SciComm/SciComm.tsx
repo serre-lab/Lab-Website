@@ -36,7 +36,7 @@ export function SciComm() {
                     style={{ width: "80%" }}
                 />
             </div>
-            <Title mb="md" style={{ textAlign: "center" }}>Science Communication</Title>
+            <Title order={1} className="page-title">Media</Title>
             <div
                 style={{
                     display: "grid",

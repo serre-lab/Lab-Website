@@ -1,41 +1,77 @@
 .resources-container {
-    max-width: 1100px;
+    max-width: 800px;
     width: 100%;
     margin: 0 auto;
     padding: 2rem 2rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
-  }
-  
-  .titleDesc-container {
+}
+
+.titleDesc-container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     text-align: left;
-  }
-  
-  .page-title {
+}
+
+.page-title {
     text-align: center;
     margin-bottom: 1rem;
     font-size: 2.5rem;
     font-weight: 700;
     color: #2c3e50;
-  }
-  
-  .resource-section {
+}
+
+.resource-section {
+    margin-bottom: 3rem;
+}
+
+.resource-section-title {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #2c3e50;
+    line-height: 1.3;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.resource-section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #3498db, #2980b9);
+    border-radius: 2px;
+}
+
+/* Resource Grid Styles (similar to featured projects) */
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.resource-card {
     background: #ffffff;
     border: 1px solid #e1e8ed;
     border-radius: 12px;
-    padding: 2rem;
-    margin-bottom: 2rem;
+    padding: 1.25rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
-  }
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+}
 
-  .resource-section::before {
+.resource-card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -43,128 +79,161 @@
     width: 4px;
     height: 100%;
     background: linear-gradient(180deg, #3498db, #2980b9);
-  }
+}
 
-  .resource-section:hover {
-    transform: translateY(-2px);
+.resource-card:hover {
+    transform: translateY(-4px);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
     border-color: #3498db;
-  }
-  
-  .resource-section-title {
-    margin-top: 0;
-    margin-bottom: 1.5rem;
-    font-weight: 600;
-    font-size: 1.4rem;
-    color: #2c3e50;
-    line-height: 1.3;
-  }
+}
 
-  .resource-list {
+.resource-content {
+    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-  }
+}
 
-  .resource-link {
+.resource-title {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    line-height: 1.3;
+}
+
+.resource-description {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin: 0;
+}
+
+.resource-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
     color: #3498db;
-    text-decoration: none;
+    font-size: 0.9rem;
     font-weight: 500;
-    font-size: 1rem;
-    transition: color 0.2s ease;
-    padding: 0.5rem 0;
-    display: block;
-  }
+    margin-top: auto;
+    transition: color 0.3s ease;
+}
 
-  .resource-link:hover {
-    color: #2980b9;
-    text-decoration: underline;
-  }
-
-  /* Video grid styling */
-  .video-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-
-  .video-card {
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    cursor: pointer;
+.resource-link {
     text-decoration: none;
     color: inherit;
-    max-width: 280px;
-  }
+}
 
-  .video-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  }
+.resource-link:hover {
+    text-decoration: none;
+    color: inherit;
+}
 
-  .video-thumbnail-wrapper {
+.resource-link:hover .resource-button {
+    color: #2980b9;
+}
+
+/* Video Grid Styles */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.video-card {
+    background: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-radius: 12px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
     position: relative;
-    width: 100%;
-    padding-top: 56.25%; /* 16:9 aspect ratio */
     overflow: hidden;
-    background-color: #000;
-  }
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+}
 
-  .video-thumbnail-wrapper img {
+.video-card::before {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 4px;
     height: 100%;
-    object-fit: cover;
-  }
+    background: linear-gradient(180deg, #e74c3c, #c0392b);
+}
 
-  .video-placeholder {
+.video-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    border-color: #e74c3c;
+}
+
+.video-content {
+    flex: 1;
     display: flex;
     flex-direction: column;
+    gap: 0.75rem;
+}
+
+.video-title {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    line-height: 1.3;
+}
+
+.video-description {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin: 0;
+}
+
+.video-button {
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding-top: 56.25%; /* 16:9 aspect ratio */
-    position: relative;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-  }
+    gap: 0.5rem;
+    color: #e74c3c;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: auto;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
 
-  .video-placeholder svg,
-  .video-placeholder div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+.video-button:hover {
+    color: #c0392b;
+    text-decoration: none;
+}
 
-  /* Mobile responsiveness */
-  @media (max-width: 768px) {
+/* Mobile responsiveness */
+@media (max-width: 768px) {
     .resources-container {
-      max-width: 95%;
-      padding: 1rem 0.5rem;
-      gap: 2rem;
+        max-width: 95%;
+        padding: 1rem 0.5rem;
+        gap: 2rem;
     }
     
     .page-title {
-      font-size: 2rem;
-    }
-    
-    .resource-section {
-      padding: 1.5rem;
+        font-size: 2rem;
     }
     
     .resource-section-title {
-      font-size: 1.2rem;
+        font-size: 1.2rem;
     }
     
+    .resource-grid,
     .video-grid {
-      grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
     
+    .resource-card,
     .video-card {
-      max-width: 100%;
+        min-height: 140px;
+        padding: 1rem;
     }
-  }
-  
+}
