@@ -65,17 +65,23 @@
 }
 
 .publication-link {
-    color: #333; /* Same as non-linked titles */
-    text-decoration: none; /* Remove underline */
+    color: #333 !important; /* Same as non-linked titles */
+    text-decoration: none !important; /* Remove underline */
     transition: color 0.2s;
+    font-size: 1.25rem !important;
+    font-weight: 700 !important;
+    line-height: 1.3 !important;
 }
 .publication-link:hover {
-    color: #1971c2; /* Blue only on hover */
-    text-decoration: none; /* Remove underline on hover */
+    color: #1971c2 !important; /* Blue only on hover */
+    text-decoration: none !important; /* Remove underline on hover */
 }
 
 .publication-title-text {
     color: #333;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.3;
 }
 
 .publication-authors {
