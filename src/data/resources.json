@@ -1,35 +1,5 @@
 {
     "Teaching": {
-        "Recommended Courses on Computational Modeling": [
-            {
-                "title": "Methods & Programming",
-                "url": "/resources/methods-programming"
-            },
-            {
-                "title": "Biostats & Bioengineering",
-                "url": "/resources/biostats-bioengineering"
-            },
-            {
-                "title": "Methods & Data Analysis",
-                "url": "/resources/methods-data-analysis"
-            },
-            {
-                "title": "Computational Vision",
-                "url": "/resources/computational-vision"
-            },
-            {
-                "title": "Computational Cognitive Science / Neuroscience",
-                "url": "/resources/computational-cognitive-science-neuroscience"
-            },
-            {
-                "title": "Neuroscience",
-                "url": "/resources/neuroscience"
-            },
-            {
-                "title": "Mathematical & Computations",
-                "url": "/resources/mathematical-computations"
-            }
-        ],
         "Research Tools & Datasets": [
             {
                 "title": "ClickMe",
