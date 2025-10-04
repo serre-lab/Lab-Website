@@ -5,13 +5,13 @@
     padding: 2rem 2rem;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
 }
 
 .filter-section {
-    padding: 1.25rem;
+    padding: 1rem 1.25rem;
     border-bottom: 1px solid var(--color-border-dark);
     background-color: var(--color-bg-light);
+    margin-top: -0.5rem; /* align with Publications */
     margin-bottom: 1rem;
 }
 
