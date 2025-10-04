@@ -207,7 +207,7 @@ export function Home() {
         <Title order={2} className="highlights-title">Selected Recent Publications</Title>
         <div className="highlights-grid">
           <div className="highlight-card">
-            <Text className="highlight-journal">Trends in Cognitive Sciences (2025)</Text>
+            <Text className="highlight-journal">TICS (2025)</Text>
             <Title order={4} className="highlight-title">
               <a href="https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(24)00301-5" target="_blank" rel="noopener noreferrer">
                 Feature binding in biological and artificial vision
