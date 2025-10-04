@@ -6,6 +6,18 @@
                 "url": "https://connectomics.clps.brown.edu/tf_records/"
             },
             {
+                "title": "HMDB: A Large Human Motion Database",
+                "url": "/resources/hmdb-a-large-human-motion-database"
+            },
+            {
+                "title": "The Breakfast Actions Dataset",
+                "url": "/resources/the-breakfast-actions-dataset"
+            },
+            {
+                "title": "Multi-Cue Boundary Detection Dataset",
+                "url": "/resources/the-multi-cue-boundary-detection-dataset"
+            },
+            {
                 "title": "Neural Harmonizer Data",
                 "url": "https://serre-lab.github.io/neural_harmonizer/#data-release"
             }
