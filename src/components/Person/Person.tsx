@@ -1,4 +1,4 @@
-import { Card, Image, Text, Title, Modal } from "@mantine/core";
+import { Card, Image, Text, Title, Modal, Anchor } from "@mantine/core";
 import { useState } from "react";
 import "./Person.css";
 
@@ -8,6 +8,23 @@ interface PersonProps {
     university: string; // "Brown" or "ANITI"
     imagePath: string;
     description: string;
+}
+
+// Helper function to render text with clickable URLs
+function renderTextWithLinks(text: string) {
+    const urlRegex = /(https?:\/\/[^\s]+)/g;
+    const parts = text.split(urlRegex);
+    
+    return parts.map((part, index) => {
+        if (part.match(urlRegex)) {
+            return (
+                <Anchor key={index} href={part} target="_blank" rel="noopener noreferrer" style={{ color: '#3498db' }}>
+                    {part}
+                </Anchor>
+            );
+        }
+        return part;
+    });
 }
 
 export default function Person({ fullName, title, university, imagePath, description }: PersonProps) {
@@ -69,7 +86,7 @@ export default function Person({ fullName, title, university, imagePath, descrip
                             {university}
                         </Text>
                         <Text className="person-description">
-                            {description || `${fullName} is a student in the Serre Lab at Brown University.`}
+                            {renderTextWithLinks(description || `${fullName} is a student in the Serre Lab at Brown University.`)}
                         </Text>
                     </div>
                 </div>
