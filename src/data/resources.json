@@ -6,7 +6,7 @@
                 "url": "https://serre-lab.github.io/Harmonization/evaluation/"
             },
             {
-                "title": "HMDB: A Large Human Motion Database",
+                "title": "HMDB51: Human Motion Database",
                 "url": "/resources/hmdb-a-large-human-motion-database"
             },
             {
@@ -40,26 +40,12 @@
                 "url": "https://serre-lab.github.io/neural_harmonizer/"
             },
             {
-                "title": "SerreLab Models (Python library)",
-                "url": "https://github.com/serre-lab/serrelabmodels"
-            },
-            {
                 "title": "hGRU Tutorials",
                 "url": "/resources/hgru-tutorials"
             },
             {
                 "title": "Lab GitHub Repository",
                 "url": "https://github.com/serre-lab"
-            }
-        ],
-        "Demos": [
-            {
-                "title": "Colab Demo 1",
-                "url": "https://colab.research.google.com/drive/1nahqqz1xjVTgrhtPv6myE1xvi4eRvMge?authuser=1#scrollTo=aamsQuGRVUqn"
-            },
-            {
-                "title": "Colab Demo 2",
-                "url": "https://colab.research.google.com/drive/13q2pWR-32q6QfBRcz3fyihxGomZ3P4Ys?usp=sharing"
             }
         ],
         "Videos & Talks": [
