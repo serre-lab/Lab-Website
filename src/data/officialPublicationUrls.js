@@ -11,6 +11,7 @@ export const officialPublicationUrls = {
     "Beyond adversarial robustness: Breaking the robustness-alignment trade-off in object recognition": "https://openreview.net/forum?id=oe1TzWGFjs",
     "Tracking objects that change in appearance with phase synchrony": "https://openreview.net/forum?id=m2gVfgWYDO",
     "The 3D-PC: a benchmark for visual perspective taking in humans and machines": "https://openreview.net/forum?id=UIFAJZ22ZF",
+    "Local vs distributed representations: What is the right basis for interpretability?": "https://arxiv.org/abs/2411.03993",
     
     // 2023
     "Learning sparse prototypes for crowd perception": "https://ieeexplore.ieee.org/document/10096000",
