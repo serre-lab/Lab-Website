@@ -15,7 +15,10 @@ const Header = (props: HeaderProps) => {
         <header>
             <Link to="/" className="left">
                 <img src="/brown-logo.webp" alt="Brown University Logo" />
-                <b>Serre Lab</b>
+                <div className="lab-info">
+                    <b>Serre Lab</b>
+                    <span className="lab-tagline">Visual Cognition and AI</span>
+                </div>
             </Link>
 
             <div className="links">
