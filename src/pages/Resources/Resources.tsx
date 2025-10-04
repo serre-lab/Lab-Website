@@ -44,14 +44,6 @@ export function Resources() {
                                                 </Anchor>
                                             </List.Item>
                                         ))}
-                                        {/* Example markdown page link */}
-                                        {category === "Teaching" && subCategoryName === "Projects" && (
-                                            <List.Item key="example-md">
-                                                <Anchor href="/resources/test">
-                                                    <Text>Example Markdown Resource Page</Text>
-                                                </Anchor>
-                                            </List.Item>
-                                        )}
                                     </List>
                                 </div>
                             )
