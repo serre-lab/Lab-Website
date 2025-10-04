@@ -70,6 +70,7 @@ function categorizeUrl(url) {
     if (url.includes('hmdb')) return 'datasets/hmdb';
     if (url.includes('multicue')) return 'datasets/multicue';
     if (url.includes('breakfast')) return 'datasets/breakfast';
+    if (url.includes('clipped_database') || url.includes('full_database') || url.includes('2010/07')) return 'datasets/rodent';
     return 'datasets';
   }
   

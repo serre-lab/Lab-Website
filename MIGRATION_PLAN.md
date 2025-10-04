@@ -10,7 +10,8 @@ public/
 ├── datasets/           # Large data files (.rar, .zip, .tar.bz2)
 │   ├── hmdb/          # HMDB51 dataset files
 │   ├── multicue/      # Multi-cue boundary detection
-│   └── breakfast/     # Breakfast actions dataset
+│   ├── breakfast/     # Breakfast actions dataset (external)
+│   └── rodent/        # Rodent behavioral phenotyping
 ├── papers/            # PDF publications
 └── images/
     └── resources/     # Images used in resource pages
@@ -45,9 +46,15 @@ Location: `public/datasets/multicue/`
 ### Breakfast Actions Dataset (Priority: HIGH)
 Location: `public/datasets/breakfast/`
 - **Dataset**: ~77 hours of video, 10 breakfast preparation actions, 52 individuals, 18 kitchens
-- **Source**: Check old website for download links or may need to be obtained from Google Drive
+- **Source**: Hosted on Google Drive
 - **Files needed**: Annotation data, video files, documentation
-- **Note**: Dataset may be hosted externally (Google Drive) - verify current hosting location
+- **Note**: Keep external link to Google Drive (too large for GitHub)
+
+### Rodent Behavioral Phenotyping Dataset (Priority: HIGH)
+Location: `public/datasets/rodent/`
+- `clipped_database.zip` - http://serre-lab.clps.brown.edu/wp-content/uploads/2010/07/clipped_database.zip
+- `full_database.zip` - http://serre-lab.clps.brown.edu/wp-content/uploads/2010/07/full_database.zip
+- **Note**: Sizes need to be verified
 
 ### Papers (Priority: MEDIUM)
 Location: `public/papers/`
@@ -84,11 +91,12 @@ npm run update-links
 ### By Category:
 1. **HMDB Resources**: ~15 files (datasets, papers, images)
 2. **Multi-Cue Dataset**: ~10 files (dataset + images)
-3. **Breakfast Actions**: ~5 files
-4. **Crowd Perception**: ~15 images
-5. **Color Processing**: ~10 images
-6. **Various Papers**: ~20 PDFs
-7. **Other Resources**: ~130 images and misc files
+3. **Breakfast Actions**: External (Google Drive)
+4. **Rodent Behavioral**: 2 files (clipped + full database)
+5. **Crowd Perception**: ~15 images
+6. **Color Processing**: ~10 images
+7. **Various Papers**: ~20 PDFs
+8. **Other Resources**: ~130 images and misc files
 
 ## Link Pattern Updates
 

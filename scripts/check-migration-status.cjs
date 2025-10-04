@@ -65,6 +65,7 @@ function checkDownloadedFiles() {
     { name: 'datasets/hmdb', label: 'HMDB Dataset' },
     { name: 'datasets/multicue', label: 'Multi-Cue Dataset' },
     { name: 'datasets/breakfast', label: 'Breakfast Dataset' },
+    { name: 'datasets/rodent', label: 'Rodent Behavioral Dataset' },
     { name: 'papers', label: 'Papers' },
     { name: 'images/resources/hmdb', label: 'HMDB Images' },
     { name: 'images/resources/multicue', label: 'Multi-Cue Images' },
