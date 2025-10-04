@@ -882,6 +882,13 @@
   ],
   "2025": [
     {
+      "title": "Feature binding in biological and artificial vision",
+      "authors": "P. Roelfsema & T. Serre",
+      "journal": "Trends in Cognitive Sciences",
+      "url": "https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(25)00232-3",
+      "pdfPath": "/papers/feature-binding-biological-artificial-vision-2025.pdf"
+    },
+    {
       "title": "Enhancing deep neural networks through complex-valued representations and Kuramoto synchronization dynamics",
       "authors": "S. Muzellec, A. Alamia, T. Serre & R. VanRullen",
       "journal": "Transactions on Machine Learning Research",
@@ -912,13 +919,6 @@
       "link": "https://openreview.net/forum?id=UIFAJZ22ZF",
       "url": "https://openreview.net/forum?id=UIFAJZ22ZF",
       "pdfPath": "/papers/3d-pc-benchmark-visual-perspective-taking-2025.pdf"
-    },
-    {
-      "title": "Feature binding in biological and artificial vision",
-      "authors": "P. Roelfsema & T. Serre",
-      "journal": "Trends in Cognitive Sciences",
-      "url": "https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(25)00232-3",
-      "pdfPath": "/papers/feature-binding-biological-artificial-vision-2025.pdf"
     }
   ],
   "In press": [
