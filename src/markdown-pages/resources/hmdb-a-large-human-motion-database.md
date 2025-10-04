@@ -1,139 +1,216 @@
-# HMDB: a large human motion database
+# HMDB: A Large Human Motion Database
 
-- [Evaluation](#evaluation)
-- [Download](#download)
-- [Illustration of the 51 Actions](#illustration-of-the-51-actions)
-- [Introduction](#introduction)
-- [Citation](#citation)
-- [Dataset](#dataset-meta-labels-statistics-and-stabilization)
-- [Other action recognition benchmark](#other-action-recognition-benchmark)
-- [About the page](#about-the-page)
+**A comprehensive video dataset for human action recognition containing 6,849 clips across 51 action categories.**
 
-## Evaluation
+---
 
-Current benchmarks provided by [actionrecognition.net](http://actionrecognition.net):
+## Overview
 
-*(See the [evaluation page](http://actionrecognition.net/files/embedEval.php?emid=5;&eid=21) for up-to-date results.)*
+HMDB (Human Motion Database) is one of the most widely-used benchmarks for human action recognition research. Collected from movies and public databases including the Prelinger archive, YouTube, and Google videos, it provides a challenging testbed for video understanding algorithms with rich annotations and diverse video content.
+
+### Key Statistics
+- **51 action categories** spanning facial actions, body movements, and human interactions
+- **6,849 video clips** with minimum 101 clips per category
+- **Detailed annotations** including body parts, camera motion, viewpoint, and quality
+- **Standard evaluation splits** for reproducible benchmarking
+- **Licensed under Creative Commons BY 4.0**
+
+### Quick Links
+- [📥 Download Dataset](#download)
+- [📊 Current Benchmarks](http://actionrecognition.net/files/embedEval.php?emid=5;&eid=21)
+- [📄 Paper & Citation](#citation)
+- [💻 Code Repository](https://github.com/hueihan/Action_Recognition)
 
 ## Download
 
-### Video Database
+### 🎥 Video Database
 
-- [HMDB51](http://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/hmdb51_org.rar) – About 2GB for a total of 7,000 clips distributed in 51 action classes.
-- [Stabilized HMDB51](http://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/hmdb51_sta.rar) – Same number of clips and classes as HMDB51, with a mask in `[video_name].form` for each clip (readable in Matlab).
-- [README](http://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/stabilized_readme.txt)
-- [Bounding boxes (INRIA)](http://lear.inrialpes.fr/people/wang/improved_trajectories)
+| Resource | Size | Description |
+|----------|------|-------------|
+| [**HMDB51 Videos**](http://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/hmdb51_org.rar) | ~2GB | 7,000 clips across 51 action classes |
+| [**Stabilized HMDB51**](http://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/hmdb51_sta.rar) | ~2GB | Camera-motion stabilized clips with masks |
+| [Stabilization README](http://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/stabilized_readme.txt) | - | Technical documentation |
+| [Bounding Boxes](http://lear.inrialpes.fr/people/wang/improved_trajectories) | - | From INRIA improved trajectories |
 
-### HOG/HOF (STIP) features
+### 🔍 Pre-extracted Features
 
-- [STIP features for the HMDB51](http://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/hmdb51_org_stips.rar) (~3.5GB)
-- [STIP features for the stabilized HMDB51](http://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/hmdb51_sta_stips.rar) (~2.9GB)
-- [STIP binaries](http://www.irisa.fr/vista/Equipe/People/Laptev/download.html)
+| Feature Type | Size | Description |
+|--------------|------|-------------|
+| [**STIP Features (Original)**](http://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/hmdb51_org_stips.rar) | ~3.5GB | HOG/HOF descriptors for HMDB51 |
+| [**STIP Features (Stabilized)**](http://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/hmdb51_sta_stips.rar) | ~2.9GB | Features from stabilized videos |
+| [STIP Binaries](http://www.irisa.fr/vista/Equipe/People/Laptev/download.html) | - | Feature extraction tool |
 
-### Three splits
+### 📋 Evaluation Splits
 
-- [Three splits for the HMDB51](http://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/test_train_splits.rar)
-- [README](http://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/split_readme.txt)
+| Resource | Description |
+|----------|-------------|
+| [**Train/Test Splits**](http://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/test_train_splits.rar) | Three standard splits for reproducible evaluation |
+| [Splits README](http://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/split_readme.txt) | Documentation for using the splits |
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)  
-HMDB by [H. Kuehne, H. Jhuang, E. Garrote, T. Poggio, T. Serre](http://serre-lab.clps.brown.edu/resource/hmdb-a-large-human-motion-database/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).  
-Based on a work at [serre-lab.clps.brown.edu](http://serre-lab.clps.brown.edu/resource/hmdb-a-large-human-motion-database/).
+### 💻 Code & Benchmarks
 
-### Code
+- **C2 Features:** [Action Recognition Repository](https://github.com/hueihan/Action_Recognition)
+- **Current Results:** [HMDB51 Leaderboard](http://actionrecognition.net/files/embedEval.php?emid=5;&eid=21)
 
-C2 benchmark: [https://github.com/hueihan/Action_Recognition](https://github.com/hueihan/Action_Recognition)
+---
 
-## Illustration of the 51 Actions
+### 📜 License
 
-| ![HMDB_snapshot1](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/HMDB_snapshot1-300x225.png) | ![HMDB_snapshot2](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/HMDB_snapshot2-300x225.png) |
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
+
+HMDB is licensed under [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). You are free to share and adapt the dataset with appropriate credit to the authors: H. Kuehne, H. Jhuang, E. Garrote, T. Poggio, and T. Serre.
+
+---
+
+## Action Categories
+
+### 51 Actions Across 5 Types
+
+The dataset spans a comprehensive range of human activities organized into five semantic categories:
+
+#### 1. 😊 General Facial Actions
+`smile` • `laugh` • `chew` • `talk`
+
+#### 2. 🍽️ Facial Actions with Object Manipulation
+`smoke` • `eat` • `drink`
+
+#### 3. 🤸 General Body Movements
+`cartwheel` • `clap hands` • `climb` • `climb stairs` • `dive` • `fall on floor` • `backhand flip` • `handstand` • `jump` • `pull up` • `push up` • `run` • `sit down` • `sit up` • `somersault` • `stand up` • `turn` • `walk` • `wave`
+
+#### 4. ⚽ Body Movements with Object Interaction
+`brush hair` • `catch` • `draw sword` • `dribble` • `golf` • `hit something` • `kick ball` • `pick` • `pour` • `push something` • `ride bike` • `ride horse` • `shoot ball` • `shoot bow` • `shoot gun` • `swing baseball` • `sword exercise` • `throw`
+
+#### 5. 🤝 Body Movements for Human Interaction
+`fencing` • `hug` • `kick someone` • `kiss` • `punch` • `shake hands` • `sword fight`
+
+### Visual Examples
+
+| ![HMDB Snapshot 1](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/HMDB_snapshot1-300x225.png) | ![HMDB Snapshot 2](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/HMDB_snapshot2-300x225.png) |
 |:--:|:--:|
+| *Sample actions from HMDB51* | *Diverse activities and viewpoints* |
 
-## Introduction
-
-With nearly one billion online videos viewed everyday, an emerging new frontier in computer vision research is recognition and search in video. While much effort has been devoted to the collection and annotation of large scalable static image datasets containing thousands of image categories, human action datasets lack far behind. Here we introduce HMDB collected from various sources, mostly from movies, and a small proportion from public databases such as the Prelinger archive, YouTube and Google videos. The dataset contains 6849 clips divided into 51 action categories, each containing a minimum of 101 clips. The actions categories can be grouped in five types:
-
-1. General facial actions: smile, laugh, chew, talk.
-2. Facial actions with object manipulation: smoke, eat, drink.
-3. General body movements: cartwheel, clap hands, climb, climb stairs, dive, fall on the floor, backhand flip, handstand, jump, pull up, push up, run, sit down, sit up, somersault, stand up, turn, walk, wave.
-4. Body movements with object interaction: brush hair, catch, draw sword, dribble, golf, hit something, kick ball, pick, pour, push something, ride bike, ride horse, shoot ball, shoot bow, shoot gun, swing baseball bat, sword exercise, throw.
-5. Body movements for human interaction: fencing, hug, kick someone, kiss, punch, shake hands, sword fight.
+---
 
 ## Citation
 
-If you use HMDB, please cite:
+### Primary Citation
 
-> H. Kuehne, H. Jhuang, E. Garrote, T. Poggio, and T. Serre. HMDB: A Large Video Database for Human Motion Recognition. ICCV, 2011. [PDF](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/Kuehne_etal_iccv11.pdf) [Bibtex](http://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/Kuehne_etal_iccv11.bib)
+If you use HMDB in your research, please cite:
 
-For STIP features:
+```bibtex
+H. Kuehne, H. Jhuang, E. Garrote, T. Poggio, and T. Serre
+HMDB: A Large Video Database for Human Motion Recognition
+International Conference on Computer Vision (ICCV), 2011
+```
 
-> I. Laptev, M. Marszalek, C. Schmid, and B. Rozenfeld. Learning Realistic Human Actions From Movies. CVPR, 2008. [PDF](http://www.irisa.fr/vista/Papers/2008_cvpr_laptev.pdf)
+📄 [**Download Paper (PDF)**](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/Kuehne_etal_iccv11.pdf) | 📋 [BibTeX](http://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/Kuehne_etal_iccv11.bib)
 
-For C2 features:
+### Additional Citations
 
-> H. Jhuang, T. Serre, L. Wolf, and T. Poggio. A Biologically Inspired System for Action Recognition. ICCV, 2007. [PDF](http://ps.is.tue.mpg.de/publications/46/get_file)
+**For STIP Features:**
+```
+I. Laptev, M. Marszalek, C. Schmid, and B. Rozenfeld
+Learning Realistic Human Actions From Movies
+CVPR, 2008
+```
+📄 [PDF](http://www.irisa.fr/vista/Papers/2008_cvpr_laptev.pdf)
 
-## Dataset, meta labels, statistics and stabilization
+**For C2 Features:**
+```
+H. Jhuang, T. Serre, L. Wolf, and T. Poggio
+A Biologically Inspired System for Action Recognition
+ICCV, 2007
+```
+📄 [PDF](http://ps.is.tue.mpg.de/publications/46/get_file)
 
-### Meta labels
+---
 
-Each clip is annotated with an action label and meta-labels describing properties such as:
+## Dataset Annotations & Technical Details
 
-- **Visible body parts:** head (h), upper body (u), full body (f), lower body (l)
-- **Camera motion:** motion (cm), static (nm)
-- **Camera viewpoint:** front (fr), back (ba), left (le), right (ri)
-- **Number of people:** single (np1), two (np2), three (np3)
-- **Video quality:** good (goo), medium (med), ok (bad)
+### Rich Meta-Annotations
 
-### Statistics
+Each video clip includes comprehensive annotations beyond the action label:
 
-| ![ActionCategories](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/ActionCategories-187x300.jpg) | ![BodyPart](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/BodyPart-187x300.jpg) | ![CameraMotion](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/CameraMotion-187x300.jpg) | ![CameraPosition1](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/CameraPosition1-187x300.jpg) |
+| Annotation Type | Values | Description |
+|----------------|---------|-------------|
+| **Visible Body Parts** | head (h), upper body (u), full body (f), lower body (l) | Which body parts are visible in the clip |
+| **Camera Motion** | motion (cm), static (nm) | Whether the camera is moving or stationary |
+| **Camera Viewpoint** | front (fr), back (ba), left (le), right (ri) | Camera angle relative to subject |
+| **Number of People** | single (np1), two (np2), three (np3) | How many people are in the scene |
+| **Video Quality** | good (goo), medium (med), ok (bad) | Overall video quality rating |
+
+### Dataset Statistics
+
+The following visualizations show the distribution of various properties across HMDB51:
+
+| ![Action Categories](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/ActionCategories-187x300.jpg) | ![Body Part](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/BodyPart-187x300.jpg) | ![Camera Motion](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/CameraMotion-187x300.jpg) | ![Camera Position](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/CameraPosition1-187x300.jpg) |
 |:--:|:--:|:--:|:--:|
+| *Action distribution* | *Body parts visible* | *Camera motion* | *Camera viewpoint* |
 
-| ![ClipQuality](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/ClipQuality-187x300.jpg) | ![Duration](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/Duration-187x300.jpg) | ![Duration_count](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/Duration_count-187x300.jpg) |
+| ![Clip Quality](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/ClipQuality-187x300.jpg) | ![Duration](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/Duration-187x300.jpg) | ![Duration Count](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/Duration_count-187x300.jpg) |
 |:--:|:--:|:--:|
+| *Video quality* | *Clip duration* | *Duration histogram* |
 
 ### Video Stabilization
 
-To remove camera motion, standard image stitching techniques were used to align frames of a clip. These techniques estimate a background plane by detecting and matching salient features in adjacent frames, using a distance measure that includes both absolute pixel differences and the Euclidean distance of detected points. RANSAC is used to estimate the geometric transformation between frames, and frames are warped and combined to achieve a stabilized clip.
+We provide camera-stabilized versions of all clips using standard image stitching techniques. The stabilization process:
 
-| Original imgs | Stabilized imgs |
-|:--:|:--:|
-| ![00001](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/00001-300x225.jpg) | ![00002](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/00002-300x154.jpg) |
-| ![00020](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/00020-300x225.jpg) | ![00021](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/00021-300x154.jpg) |
-| ![00050](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/00050-300x225.jpg) | ![00051](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/00051-300x154.jpg) |
+1. **Feature Detection:** Identifies salient features in adjacent frames
+2. **Feature Matching:** Uses distance measures combining pixel differences and Euclidean distance
+3. **Transformation Estimation:** Applies RANSAC to estimate geometric transformations
+4. **Frame Alignment:** Warps and combines frames to remove camera motion
 
-## Other action recognition benchmark
+#### Stabilization Examples
 
-- **KTH Dataset**: [KTH Dataset](http://www.nada.kth.se/cvap/actions/) – 6 actions, 100 clips per action.
-- **Weizmann Dataset**: [Weizmann Dataset](http://www.wisdom.weizmann.ac.il/~vision/SpaceTimeActions.html) – 10 actions, 9 clips per action.
-- **Hollywood Human Actions Set**: [Hollywood](http://www.irisa.fr/vista/actions/) – 8 actions, 60–140 clips per class.
-- **Hollywood2 Human Actions Set**: [Hollywood2](http://pascal.inrialpes.fr/hollywood2) – 12 actions, 61–278 clips per class.
-- **UCF group datasets**: [UCF group](http://server.cs.ucf.edu/~vision/data.html) – UCF Sports, UCF YouTube, UCF50, etc.
+| Original | Stabilized |
+|:--------:|:----------:|
+| ![Before 1](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/00001-300x225.jpg) | ![After 1](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/00002-300x154.jpg) |
+| ![Before 2](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/00020-300x225.jpg) | ![After 2](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/00021-300x154.jpg) |
+| ![Before 3](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/00050-300x225.jpg) | ![After 3](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/00051-300x154.jpg) |
 
-| Dataset      | Year | # Actions | # Clips per Action |
-|--------------|------|-----------|--------------------|
-| KTH          | 2004 | 6         | 10                 |
-| Weizmann     | 2005 | 9         | 9                  |
-| IXMAS        | 2006 | 11        | 33                 |
-| Hollywood    | 2008 | 8         | 30–140             |
-| UCF Sports   | 2009 | 9         | 14–35              |
-| Hollywood2   | 2009 | 12        | 61–278             |
-| UCF YouTube  | 2009 | 11        | 100                |
-| MSR          | 2009 | 3         | 14–25              |
-| Olympic      | 2010 | 16        | 50                 |
-| UCF50        | 2010 | 50        | min. 100           |
-| HMDB51       | 2011 | 51        | min. 101           |
+---
 
-## About the page
+## Comparison with Other Benchmarks
 
-**Contact:**  
-For questions about the datasets and benchmarks, please contact Hueihan Jhuang (hueihan.jhuang [at] tuebingen.mpg.de).
+### Related Action Recognition Datasets
 
-**Log:**
-- 19/11/2013 update the evaluation page with more benchmarks
-- 22/04/2013 update the evaluation page with more benchmarks
-- 12/03/2012 second version of the web page, update the evaluation with more benchmarks
-- 10/25/2011 add readme for the stabilized videos
-- 09/24/2011 add readme for the three splits and reference to HOG/HOF
-- 09/01/2011 upload images for statistics, clip, three splits, HOG/HOF features
-- 07/29/2011 first version of the web page
+- **[KTH Dataset](http://www.nada.kth.se/cvap/actions/)** – 6 actions, controlled lab setting
+- **[Weizmann Dataset](http://www.wisdom.weizmann.ac.il/~vision/SpaceTimeActions.html)** – 10 actions, 9 subjects
+- **[Hollywood](http://www.irisa.fr/vista/actions/)** – 8 actions from movies
+- **[Hollywood2](http://pascal.inrialpes.fr/hollywood2)** – 12 actions, larger scale
+- **[UCF Datasets](http://server.cs.ucf.edu/~vision/data.html)** – Sports, YouTube, UCF50
+
+### Dataset Scale Comparison
+
+| Dataset | Year | # Actions | # Clips/Action | Total Clips | Source |
+|---------|------|-----------|----------------|-------------|---------|
+| KTH | 2004 | 6 | ~100 | ~600 | Lab |
+| Weizmann | 2005 | 9 | ~10 | ~90 | Lab |
+| IXMAS | 2006 | 11 | ~33 | ~360 | Lab |
+| Hollywood | 2008 | 8 | 60–140 | ~800 | Movies |
+| UCF Sports | 2009 | 9 | 14–35 | ~200 | Sports |
+| Hollywood2 | 2009 | 12 | 61–278 | ~1,700 | Movies |
+| UCF YouTube | 2009 | 11 | 100 | ~1,100 | YouTube |
+| MSR | 2009 | 3 | 14–25 | ~70 | Lab |
+| Olympic | 2010 | 16 | 50 | ~800 | Sports |
+| UCF50 | 2010 | 50 | min. 100 | ~5,000 | YouTube |
+| **HMDB51** | **2011** | **51** | **min. 101** | **~6,850** | **Movies+Web** |
+
+*HMDB51 provided one of the largest and most diverse action recognition benchmarks at the time of release, with realistic "in-the-wild" video content.*
+
+---
+
+## Contact & Updates
+
+**Questions?**  
+For inquiries about the dataset and benchmarks, contact:  
+Hueihan Jhuang (hueihan.jhuang [at] tuebingen.mpg.de)
+
+**Version History:**
+- **2013-11-19** – Updated evaluation with additional benchmarks
+- **2013-04-22** – Expanded benchmark comparisons
+- **2012-03-12** – Second version, enhanced evaluation page
+- **2011-10-25** – Added stabilized video documentation
+- **2011-09-24** – Added split documentation and HOG/HOF references
+- **2011-09-01** – Uploaded statistics and feature visualizations
+- **2011-07-29** – Initial release
