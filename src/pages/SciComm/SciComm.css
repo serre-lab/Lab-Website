@@ -1,5 +1,5 @@
 .scicomm-container {
-    max-width: 800px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     padding: 2rem 2rem;
@@ -51,10 +51,9 @@
 
 .media-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     width: 100%;
-    max-width: 1200px;
 }
 
 @media (max-width: 768px) {
