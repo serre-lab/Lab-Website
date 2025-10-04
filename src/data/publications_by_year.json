@@ -1,14 +1,12 @@
 {
-  "2000": [
+  "Before 2010": [
     {
       "title": "Feature selection for face detection",
       "url": null,
       "journal": "MIT Center for Biological and Computational Learning",
       "authors": "T. Serre, B. Heisele, S. Mukherjee, T. Poggio",
       "pdfPath": "/papers/serre_etal-AIM-1697.pdf"
-    }
-  ],
-  "2001": [
+    },
     {
       "title": "Feature reduction and hierarchy of classifiers for fast object detection in video images",
       "url": "https://ieeexplore.ieee.org/document/990919",
@@ -22,9 +20,7 @@
       "journal": "Computer Vision and Pattern Recognition",
       "authors": "B. Heisele, T. Serre, M. Pontil, T. Poggio",
       "pdfPath": "/papers/heisele_etal-CVPR01a.pdf"
-    }
-  ],
-  "2002": [
+    },
     {
       "title": "On the role of object-specific features for real-world object recognition in biological vision",
       "url": null,
@@ -38,18 +34,14 @@
       "journal": "Advances in Neural Information Processing Systems",
       "authors": "B. Heisele, T. Serre, M. Pontil, T. Vetter, T. Poggio",
       "pdfPath": "/papers/heisele_etal-NIPS02.pdf"
-    }
-  ],
-  "2003": [
+    },
     {
       "title": "Hierarchical classification and feature reduction for fast face detection with support vector machines",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0031320303000621",
       "journal": "Pattern Recognition",
       "authors": "B. Heisele, T. Serre, S. Prentice, T. Poggio",
       "pdfPath": "/papers/heisele-patternrecog-03.pdf"
-    }
-  ],
-  "2004": [
+    },
     {
       "title": "Realistic modeling of simple and complex cell tuning in the HMAX model, and implications for invariant object recognition in cortex",
       "url": null,
@@ -70,9 +62,7 @@
       "journal": "International Conference on Automatic Face and Gesture Recognition",
       "authors": "Y. Ivanov, B. Heisele, T. Serre",
       "pdfPath": "/papers/ivanov_etal-FG04.pdf"
-    }
-  ],
-  "2005": [
+    },
     {
       "title": "A theory of object recognition: computations and circuits in the feedforward path of the ventral stream in primate visual cortex",
       "url": null,
@@ -100,18 +90,14 @@
       "journal": "MIT Computer Science and Artificial Intelligence Laboratory Technical Report",
       "authors": "Y. Ivanov, T. Serre, J. Bouvrie",
       "pdfPath": "/papers/ivanov_etal_MIT-CSAIL-TR-2005-081.pdf"
-    }
-  ],
-  "2006": [
+    },
     {
       "title": "Learning a dictionary of shape-components in visual cortex: Comparison with neurons, humans and machines",
       "url": null,
       "journal": "MIT Computer Science and Artificial Intelligence Laboratory Technical Report",
       "authors": "T. Serre",
       "pdfPath": "/papers/Serre_MIT-CSAIL-TR-2006-028.pdf"
-    }
-  ],
-  "2007": [
+    },
     {
       "title": "Robust object recognition with cortex-like mechanisms",
       "url": "https://ieeexplore.ieee.org/document/1717568",
@@ -153,9 +139,7 @@
       "journal": "International Journal of Computer Vision",
       "authors": "B. Heisele, T. Serre, T. Poggio",
       "pdfPath": "/papers/heisele_etal-IJCV-07.pdf"
-    }
-  ],
-  "2009": [
+    },
     {
       "title": "Attentive processing improves object recognition",
       "url": null,
