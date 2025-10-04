@@ -830,7 +830,7 @@
       "journal": "Transactions on Machine Learning Research",
       "link": "",
       "url": null,
-      "pdfPath": null
+      "pdfPath": "/papers/enhancing-deep-neural-networks-complex-valued-kuramoto-2025.pdf"
     },
     {
       "title": "Beyond adversarial robustness: Breaking the robustness-alignment trade-off in object recognition",
@@ -838,7 +838,7 @@
       "journal": "ICLR 2025 Workshop on Representational Alignment",
       "link": "https://openreview.net/forum?id=oe1TzWGFjs",
       "url": null,
-      "pdfPath": null
+      "pdfPath": "/papers/beyond-adversarial-robustness-trade-off-2025.pdf"
     },
     {
       "title": "Tracking objects that change in appearance with phase synchrony",
@@ -846,7 +846,7 @@
       "journal": "International Conference on Learning Representations",
       "link": "https://arxiv.org/abs/2410.02094",
       "url": null,
-      "pdfPath": null
+      "pdfPath": "/papers/tracking-objects-phase-synchrony-2025.pdf"
     },
     {
       "title": "The 3D-PC: a benchmark for visual perspective taking in humans and machines",
@@ -854,7 +854,7 @@
       "journal": "International Conference on Learning Representations",
       "link": "https://arxiv.org/abs/2406.04138",
       "url": null,
-      "pdfPath": null
+      "pdfPath": "/papers/3d-pc-benchmark-visual-perspective-taking-2025.pdf"
     }
   ],
   "Work in progress": [
@@ -864,7 +864,7 @@
       "journal": "arXiv",
       "link": "https://arxiv.org/abs/2504.16940",
       "url": "https://arxiv.org/abs/2406.12341",
-      "pdfPath": null
+      "pdfPath": "/papers/better-ai-better-models-biology-2025.pdf"
     },
     {
       "title": "Local vs distributed representations: What is the right basis for interpretability?",
@@ -872,7 +872,7 @@
       "journal": "",
       "link": "https://arxiv.org/abs/2411.03993v1",
       "url": null,
-      "pdfPath": null
+      "pdfPath": "/papers/local-vs-distributed-representations-interpretability-2025.pdf"
     }
   ]
 }
