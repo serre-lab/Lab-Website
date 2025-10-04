@@ -6,6 +6,12 @@ export const officialPublicationUrls = {
     "Deceptive learning in histopathology": "https://www.nature.com/articles/s41591-024-03000-8",
     "Better artificial intelligence does not mean better models of biology": "https://arxiv.org/abs/2406.12341",
     
+    // 2025
+    "Enhancing deep neural networks through complex-valued representations and Kuramoto synchronization dynamics": "https://openreview.net/forum?id=zx6QGmBL43",
+    "Beyond adversarial robustness: Breaking the robustness-alignment trade-off in object recognition": "https://openreview.net/forum?id=oe1TzWGFjs",
+    "Tracking objects that change in appearance with phase synchrony": "https://openreview.net/forum?id=m2gVfgWYDO",
+    "The 3D-PC: a benchmark for visual perspective taking in humans and machines": "https://openreview.net/forum?id=UIFAJZ22ZF",
+    
     // 2023
     "Learning sparse prototypes for crowd perception": "https://ieeexplore.ieee.org/document/10096000",
     
