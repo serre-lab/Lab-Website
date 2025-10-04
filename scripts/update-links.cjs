@@ -51,6 +51,16 @@ const urlMappings = [
     replace: '/images/resources/multicue/$1'
   },
   
+  // Rodent behavioral phenotyping dataset
+  {
+    pattern: /http:\/\/serre-lab\.clps\.brown\.edu\/wp-content\/uploads\/2010\/07\/(clipped_database\.zip)/g,
+    replace: '/datasets/rodent/$1'
+  },
+  {
+    pattern: /http:\/\/serre-lab\.clps\.brown\.edu\/wp-content\/uploads\/2010\/07\/(full_database\.zip)/g,
+    replace: '/datasets/rodent/$1'
+  },
+  
   // Crowd perception images
   {
     pattern: /http:\/\/serre-lab\.clps\.brown\.edu\/wp-content\/uploads\/2014\/11\/([^"'\s)]+\.(png|jpg|jpeg|gif))/g,

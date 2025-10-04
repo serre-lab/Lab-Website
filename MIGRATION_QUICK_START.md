@@ -117,7 +117,8 @@ public/
 ├── datasets/
 │   ├── hmdb/              # HMDB dataset files
 │   ├── multicue/          # Multi-cue dataset
-│   └── breakfast/         # Breakfast actions
+│   ├── breakfast/         # Breakfast actions (external)
+│   └── rodent/            # Rodent behavioral phenotyping
 ├── papers/                # PDF publications
 └── images/
     └── resources/         # Images from resource pages
