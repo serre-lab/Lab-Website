@@ -100,7 +100,7 @@
     "2007": [
         {
             "title": "Robust object recognition with cortex-like mechanisms",
-            "url": "https://serre-lab.clps.brown.edu/publications/",
+            "url": "/publications",
             "journal": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
             "authors": "T. Serre, L. Wolf, S. Bileschi, M. Riesenhuber & T. Poggio"
         },
@@ -528,7 +528,7 @@
         },
         {
             "title": "Deep learning networks and visual perception",
-            "url": "https://serre-lab.clps.brown.edu/publications/",
+            "url": "/publications",
             "journal": "Oxford Research Encyclopedia of Psychology",
             "authors": "G. Lindsay & T. Serre"
         },

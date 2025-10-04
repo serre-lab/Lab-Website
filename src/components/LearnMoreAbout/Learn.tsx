@@ -17,9 +17,9 @@ const items = [
   { icon: <FaBook size={48} />, label: "Resources", to: "resources" },
   {
     icon: <FaMicrophone size={48} />,
-    label: "Sci-Comm",
-    to: "https://serre-lab.clps.brown.edu/news-page/",
-    external: true,
+    label: "Media",
+    to: "sci-comm",
+    external: false,
   },
 ];
 
