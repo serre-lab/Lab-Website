@@ -65,12 +65,12 @@
 }
 
 .publication-link {
-    color: #1971c2; /* Mantine blue */
+    color: #333; /* Same as non-linked titles */
     text-decoration: none; /* Remove underline */
     transition: color 0.2s;
 }
 .publication-link:hover {
-    color: #1864ab;
+    color: #1971c2; /* Blue only on hover */
     text-decoration: none; /* Remove underline on hover */
 }
 
