@@ -35,9 +35,15 @@
   
   .people-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 1.5rem;
-    justify-content: center;
+    justify-items: center;
+    width: 100%;
+  }
+
+  /* Ensure cards don't stretch too wide in small grids */
+  .people-grid > * {
+    max-width: 320px;
     width: 100%;
   }
 
