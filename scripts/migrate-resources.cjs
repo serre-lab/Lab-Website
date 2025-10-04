@@ -26,6 +26,11 @@ const fileCategories = {
 const GITHUB_LIMIT = 100 * 1024 * 1024; // 100MB
 const WARNING_SIZE = 50 * 1024 * 1024;  // 50MB
 
+// Obsolete files to skip
+const SKIP_FILES = [
+  'hmdb51_sta_stips.rar'  // Obsolete HMDB stabilized STIP features
+];
+
 /**
  * Extract all old website links from the codebase
  */
@@ -175,6 +180,12 @@ async function migrate(options = {}) {
     const filename = path.basename(new URL(url).pathname);
     const destDir = path.join(__dirname, '..', 'public', category);
     const destPath = path.join(destDir, filename);
+    
+    // Skip obsolete files
+    if (SKIP_FILES.includes(filename)) {
+      console.log(`⏭️  Skipping obsolete file: ${filename}`);
+      continue;
+    }
     
     // Skip if only downloading images and this isn't an image
     if (onlyImages && !category.startsWith('images')) {

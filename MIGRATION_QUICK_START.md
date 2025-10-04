@@ -9,8 +9,9 @@
 
 ### 📊 Summary
 - **Total files to migrate**: ~206 files
-- **Total size**: ~15GB
-- **Large files**: 5 files exceed GitHub's 100MB limit
+- **Total size**: ~13GB
+- **Large files**: 4 files exceed GitHub's 100MB limit
+- **Breakfast Actions Dataset**: Needs to be located/verified
 
 ### 🎯 Quick Commands
 
@@ -36,12 +37,13 @@ npm run update-links
 
 ## ⚠️ IMPORTANT: Large Files
 
-**5 files are too large for GitHub** (>100MB each, ~13.8GB total):
+**4 files are too large for GitHub** (>100MB each, ~11GB total):
 1. `hmdb51_org.rar` (2GB)
 2. `hmdb51_sta.rar` (2GB)
 3. `hmdb51_org_stips.rar` (3.5GB)
-4. `hmdb51_sta_stips.rar` (2.9GB)
-5. `multicue-dataset.tar.bz2` (3.4GB)
+4. `multicue-dataset.tar.bz2` (3.4GB)
+
+**Note**: `hmdb51_sta_stips.rar` is obsolete and will not be migrated.
 
 ### Solutions:
 

@@ -28,7 +28,7 @@ Location: `public/datasets/hmdb/`
 - `hmdb51_sta.rar` (~2GB) - http://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/hmdb51_sta.rar
 - `stabilized_readme.txt` - http://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/stabilized_readme.txt
 - `hmdb51_org_stips.rar` (~3.5GB) - http://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/hmdb51_org_stips.rar
-- `hmdb51_sta_stips.rar` (~2.9GB) - http://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/hmdb51_sta_stips.rar
+- ~~`hmdb51_sta_stips.rar` (~2.9GB)~~ - **OBSOLETE - SKIP**
 - `test_train_splits.rar` - http://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/test_train_splits.rar
 - `split_readme.txt` - http://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/split_readme.txt
 - `Kuehne_etal_iccv11.pdf` - http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/Kuehne_etal_iccv11.pdf
@@ -42,9 +42,12 @@ Location: `public/images/resources/hmdb/`
 Location: `public/datasets/multicue/`
 - `multicue-dataset.tar.bz2` (~3.4GB) - http://serre-lab.clps.brown.edu/resources-static/multicue-dataset.tar.bz2
 
-### Breakfast Actions Dataset
+### Breakfast Actions Dataset (Priority: HIGH)
 Location: `public/datasets/breakfast/`
-- Dataset files and documentation
+- **Dataset**: ~77 hours of video, 10 breakfast preparation actions, 52 individuals, 18 kitchens
+- **Source**: Check old website for download links or may need to be obtained from Google Drive
+- **Files needed**: Annotation data, video files, documentation
+- **Note**: Dataset may be hosted externally (Google Drive) - verify current hosting location
 
 ### Papers (Priority: MEDIUM)
 Location: `public/papers/`
@@ -103,10 +106,11 @@ New: `/resources/page-name`
 - **Old links**: Keep a redirect map in case external sites link to old URLs
 
 ## Estimated Total Size
-- HMDB: ~10GB
+- HMDB: ~7.5GB (excluding obsolete hmdb51_sta_stips.rar)
 - Multi-Cue: ~3.4GB
+- Breakfast: Size TBD (verify source)
 - Other resources: ~2GB
-- **Total: ~15GB**
+- **Total: ~13GB+**
 
 ⚠️ **GitHub Warning**: GitHub has a 100MB file size limit. Files larger than this will need alternative hosting or Git LFS.
 
