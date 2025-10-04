@@ -921,15 +921,6 @@
       "pdfPath": "/papers/3d-pc-benchmark-visual-perspective-taking-2025.pdf"
     }
   ],
-  "In press": [
-    {
-      "title": "From Prediction to Understanding: Will AI Foundation Models Transform Brain Science?",
-      "authors": "T. Serre & E. Pavlick",
-      "journal": "Neuron",
-      "url": "https://arxiv.org/abs/2504.16940",
-      "pdfPath": "/papers/from-prediction-to-understanding-ai-foundation-models-2025.pdf"
-    }
-  ],
   "Work in progress": [
     {
       "title": "Better artificial intelligence does not mean better models of biology",
@@ -946,6 +937,14 @@
       "link": "https://arxiv.org/abs/2411.03993v1",
       "url": "https://arxiv.org/abs/2411.03993v1",
       "pdfPath": "/papers/local-vs-distributed-representations-interpretability-2025.pdf"
+    }
+  ],
+  "In press": [
+    {
+      "title": "From Prediction to Understanding: Will AI Foundation Models Transform Brain Science?",
+      "authors": "T. Serre & E. Pavlick",
+      "journal": "Neuron",
+      "url": "https://arxiv.org/abs/2504.16940"
     }
   ]
 }
