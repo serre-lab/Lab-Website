@@ -90,6 +90,7 @@ export function Publications() {
 
     return (
         <div className="publications-container">
+            <Title order={1} className="page-title">Publications</Title>
             {/* <div className="filter-section">
   <div className="search-and-dropdown">
     <TextInput

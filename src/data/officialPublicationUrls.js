@@ -4,7 +4,7 @@
 export const officialPublicationUrls = {
     // 2024/2025
     "Deceptive learning in histopathology": "https://www.nature.com/articles/s41591-024-03000-8",
-    "Better artificial intelligence does not mean better models of biology": "https://arxiv.org/abs/2406.12341",
+    "Better artificial intelligence does not mean better models of biology": "https://arxiv.org/abs/2504.16940",
     
     // 2025
     "Enhancing deep neural networks through complex-valued representations and Kuramoto synchronization dynamics": "https://openreview.net/forum?id=zx6QGmBL43",
@@ -36,20 +36,20 @@ export const officialPublicationUrls = {
     "Linsley_et_al_MBCC_2017-3": "https://www.nature.com/articles/s41593-018-0070-0",
     
     // 2017
-    "2016_Mely_VR": "https://www.nature.com/articles/ncomms13928",
-    "2016_Mely_CCNV": "https://www.nature.com/articles/ncomms13928",
-    "2016_Pascarella_JNM-1": "https://www.nature.com/articles/ncomms13928",
-    "2016_Cauchoix_NI": "https://www.nature.com/articles/ncomms13928",
+    "2016_Mely_VR": "https://www.sciencedirect.com/science/article/pii/S0042698915003685",
+    "2016_Mely_CCNV": "https://link.springer.com/chapter/10.1007/978-981-10-0213-7_4",
+    "2016_Pascarella_JNM-1": "https://www.sciencedirect.com/science/article/abs/pii/S0165027016000649",
+    "2016_Cauchoix_NI": "https://www.sciencedirect.com/science/article/abs/pii/S1053811915009131",
     "2016_Wilf_PNAS": "https://www.pnas.org/doi/10.1073/pnas.1602590113",
     "2016_Eberhardt_NIPS": "https://papers.nips.cc/paper/2016/hash/2016_Eberhardt_NIPS",
     "2016_Kuehne_I3WACV": "https://ieeexplore.ieee.org/document/2016_Kuehne_I3WACV",
-    
+
     // 2016
     "Celln": "https://www.cell.com/cell/fulltext/S0092-8674(16)30001-0",
-    "serre2016": "https://www.nature.com/articles/ncomms13928",
-    
+    "serre2016": "https://wires.onlinelibrary.wiley.com/doi/10.1002/wcs.1385",
+
     // 2015
-    "75760312": "https://www.nature.com/articles/ncomms13928",
+    "75760312": "https://link.springer.com/chapter/10.1007/978-3-642-33715-4_23",
     
     // 2014
     "Cauchoix_etal_NIPS20122": "https://papers.nips.cc/paper/2012/hash/Cauchoix_etal_NIPS20122",

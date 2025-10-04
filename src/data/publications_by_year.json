@@ -5,23 +5,23 @@
       "url": null,
       "journal": "MIT Center for Biological and Computational Learning",
       "authors": "T. Serre, B. Heisele, S. Mukherjee, T. Poggio",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/serre_etal-AIM-1697.pdf"
+      "pdfPath": "/papers/serre_etal-AIM-1697.pdf"
     }
   ],
   "2001": [
     {
       "title": "Feature reduction and hierarchy of classifiers for fast object detection in video images",
-      "url": null,
+      "url": "https://ieeexplore.ieee.org/document/990919",
       "journal": "Computer Vision and Pattern Recognition",
       "authors": "B. Heisele, T. Serre, S. Mukherjee, T. Poggio",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2012/12/heisele_etal-CVPR01b.pdf"
+      "pdfPath": "/papers/heisele_etal-CVPR01b.pdf"
     },
     {
       "title": "Component-based face detection",
-      "url": null,
+      "url": "https://ieeexplore.ieee.org/document/990537",
       "journal": "Computer Vision and Pattern Recognition",
       "authors": "B. Heisele, T. Serre, M. Pontil, T. Poggio",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2012/12/heisele_etal-CVPR01a.pdf"
+      "pdfPath": "/papers/heisele_etal-CVPR01a.pdf"
     }
   ],
   "2002": [
@@ -30,23 +30,23 @@
       "url": null,
       "journal": "Workshop on Biologically Motivated Computer Vision",
       "authors": "T. Serre, J. Louie, M. Riesenhuber, T. Poggio",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/serre_etal-BMCV02.pdf"
+      "pdfPath": "/papers/serre_etal-BMCV02.pdf"
     },
     {
       "title": "Categorization by learning and combining object parts",
-      "url": null,
+      "url": "https://proceedings.neurips.cc/paper/2001/hash/05546b0e38ab9175cd905eebcc6ebb76-Abstract.html",
       "journal": "Advances in Neural Information Processing Systems",
       "authors": "B. Heisele, T. Serre, M. Pontil, T. Vetter, T. Poggio",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2012/12/heisele_etal-NIPS02.pdf"
+      "pdfPath": "/papers/heisele_etal-NIPS02.pdf"
     }
   ],
   "2003": [
     {
       "title": "Hierarchical classification and feature reduction for fast face detection with support vector machines",
-      "url": null,
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0031320303000621",
       "journal": "Pattern Recognition",
       "authors": "B. Heisele, T. Serre, S. Prentice, T. Poggio",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2012/12/heisele-patternrecog-03.pdf"
+      "pdfPath": "/papers/heisele-patternrecog-03.pdf"
     }
   ],
   "2004": [
@@ -55,21 +55,21 @@
       "url": null,
       "journal": "MIT Computer Science and Artificial Intelligence Laboratory",
       "authors": "T. Serre, M. Riesenhuber",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/serre_riesenhuber-AIM-2004-017.pdf"
+      "pdfPath": "/papers/serre_riesenhuber-AIM-2004-017.pdf"
     },
     {
       "title": "A new biologically motivated framework for robust object recognition",
       "url": null,
       "journal": "MIT Computer Science and Artificial Intelligence Laboratory",
       "authors": "T. Serre, L. Wolf, T. Poggio",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/serre_etal-AIM-2004-026.pdf"
+      "pdfPath": "/papers/serre_etal-AIM-2004-026.pdf"
     },
     {
       "title": "Using component features for face recognition",
       "url": null,
       "journal": "International Conference on Automatic Face and Gesture Recognition",
       "authors": "Y. Ivanov, B. Heisele, T. Serre",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2012/12/ivanov_etal-FG04.pdf"
+      "pdfPath": "/papers/ivanov_etal-FG04.pdf"
     }
   ],
   "2005": [
@@ -78,28 +78,28 @@
       "url": null,
       "journal": "MIT Computer Science and Artificial Intelligence Laboratory",
       "authors": "T. Serre, M. Kouh, C. Cadieu, U. Knoblich, G. Kreiman, T. Poggio",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/GetTRDoc.pdf"
+      "pdfPath": "/papers/GetTRDoc.pdf"
     },
     {
       "title": "Learning features of intermediate complexity for the recognition of biological motion",
       "url": null,
       "journal": "ICANN 2005",
       "authors": "R. Sigala, T. Serre, T. Poggio, M. Giese",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/sigala_etal-ICANN05.pdf"
+      "pdfPath": "/papers/sigala_etal-ICANN05.pdf"
     },
     {
       "title": "Object recognition with features inspired by visual cortex",
-      "url": null,
+      "url": "https://ieeexplore.ieee.org/document/1467551",
       "journal": "IEEE Computer Vision and Pattern Recognition Conference",
       "authors": "T. Serre, L. Wolf, T. Poggio",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/serre_etal-CVPR05.pdf"
+      "pdfPath": "/papers/serre_etal-CVPR05.pdf"
     },
     {
       "title": "Error weighted classifier combination for multi-modal human identification",
       "url": null,
       "journal": "MIT Computer Science and Artificial Intelligence Laboratory Technical Report",
       "authors": "Y. Ivanov, T. Serre, J. Bouvrie",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2012/12/ivanov_etal_MIT-CSAIL-TR-2005-081.pdf"
+      "pdfPath": "/papers/ivanov_etal_MIT-CSAIL-TR-2005-081.pdf"
     }
   ],
   "2006": [
@@ -108,7 +108,7 @@
       "url": null,
       "journal": "MIT Computer Science and Artificial Intelligence Laboratory Technical Report",
       "authors": "T. Serre",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/Serre_MIT-CSAIL-TR-2006-028.pdf"
+      "pdfPath": "/papers/Serre_MIT-CSAIL-TR-2006-028.pdf"
     }
   ],
   "2007": [
@@ -117,42 +117,42 @@
       "url": "https://ieeexplore.ieee.org/document/1717568",
       "journal": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
       "authors": "T. Serre, L. Wolf, S. Bileschi, M. Riesenhuber & T. Poggio",
-      "pdfPath": null
+      "pdfPath": "/papers/robust-object-recognition-cortex-like-mechanisms-2007.pdf"
     },
     {
       "title": "A feedforward architecture accounts for rapid categorization",
       "url": "https://www.pnas.org/doi/10.1073/pnas.0700622104",
       "journal": "Proceedings of the National Academy of Science",
       "authors": "T. Serre, A. Oliva, T. Poggio",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/PNAS-2007-Serre-6424-9.pdf"
+      "pdfPath": "/papers/PNAS-2007-Serre-6424-9.pdf"
     },
     {
       "title": "A quantitative theory of immediate visual recognition",
       "url": "https://www.sciencedirect.com/science/article/pii/S0079612306650058",
       "journal": "Progress in Brain Research, Computational Neuroscience: Theoretical Insights into Brain Function",
       "authors": "T. Serre, G. Kreiman, M. Kouh, C. Cadieu, U. Knoblich, T. Poggio",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/Serre_etal_PBR07_wfig.pdf"
+      "pdfPath": "/papers/Serre_etal_PBR07_wfig.pdf"
     },
     {
       "title": "Learning complex cell invariance from natural videos: a plausibility proof",
       "url": null,
       "journal": "MIT Computer Science and Artificial Intelligence Laboratory Technical Report",
       "authors": "T. Masquelier, T. Serre, S. Thorpe, T. Poggio",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/Masquelier-etal-MIT-CSAIL-TR-2007-060.pdf"
+      "pdfPath": "/papers/Masquelier-etal-MIT-CSAIL-TR-2007-060.pdf"
     },
     {
       "title": "A biologically inspired system for action recognition",
-      "url": null,
+      "url": "https://ieeexplore.ieee.org/document/4408988",
       "journal": "Proceedings of the Eleventh IEEE International Conference on Computer Vision",
       "authors": "H. Jhuang, T. Serre, L. Wolf, T. Poggio",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2012/12/Jhuang_etal_iccv07.pdf"
+      "pdfPath": "/papers/Jhuang_etal_iccv07.pdf"
     },
     {
       "title": "A component-based framework for face detection and identification",
       "url": null,
       "journal": "International Journal of Computer Vision",
       "authors": "B. Heisele, T. Serre, T. Poggio",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2012/12/heisele_etal-IJCV-07.pdf"
+      "pdfPath": "/papers/heisele_etal-IJCV-07.pdf"
     }
   ],
   "2009": [
@@ -161,81 +161,81 @@
       "url": null,
       "journal": "MIT Computer Science and Artificial Intelligence Laboratory Technical Report",
       "authors": "S. Chikkerur, T. Serre, T. Poggio",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/chikkerur_MIT-CSAIL-TR-2009-046.pdf"
+      "pdfPath": "/papers/chikkerur_MIT-CSAIL-TR-2009-046.pdf"
     },
     {
       "title": "A Bayesian inference theory of attention: neuroscience and algorithms",
       "url": null,
       "journal": "MIT Computer Science and Artificial Intelligence Laboratory Technical Report",
       "authors": "S. Chikkerur, T. Serre, T. Poggio",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/chikkerur_etal_MIT-CSAIL-TR-2009-047.pdf"
+      "pdfPath": "/papers/chikkerur_etal_MIT-CSAIL-TR-2009-047.pdf"
     }
   ],
   "2010": [
     {
       "title": "Automated home-cage behavioral phenotyping of mice",
-      "url": null,
+      "url": "https://www.nature.com/articles/ncomms1064",
       "journal": "Nature Communications",
       "authors": "H. Jhuang, E. Garrote, X. Yu, V. Khilnani, T. Poggio, A. Steele, T. Serre",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2012/10/ncomms1064.pdf"
+      "pdfPath": "/papers/ncomms1064.pdf"
     },
     {
       "title": "What and where: A Bayesian inference theory of attention",
-      "url": null,
+      "url": "https://www.sciencedirect.com/science/article/pii/S0042698910002348",
       "journal": "Vision Research",
       "authors": "S. Chikkerur, T. Serre, C. Tan, T. Poggio",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2012/10/Chikkerur_Serre_Tan_Poggio_VisRsrchApril2010.pdf"
+      "pdfPath": "/papers/Chikkerur_Serre_Tan_Poggio_VisRsrchApril2010.pdf"
     },
     {
       "title": "Elements for a neural theory of the processing of dynamic faces",
       "url": null,
       "journal": "Dynamic Faces: Insights from Experiments and Computation",
       "authors": "T. Serre, M. Giese",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/SerreGiese-Curio_13_Ch13_187-210.pdf"
+      "pdfPath": "/papers/SerreGiese-Curio_13_Ch13_187-210.pdf"
     },
     {
-      "title": "Reading the mind’s eye: Decoding category information during mental imagery",
-      "url": null,
+      "title": "Reading the mind\u2019s eye: Decoding category information during mental imagery",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1053811909012701",
       "journal": "NeuroImage",
       "authors": "L. Reddy, N. Tsuchyia, T. Serre",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/ReddyNeuroImage2009.pdf"
+      "pdfPath": "/papers/ReddyNeuroImage2009.pdf"
     },
     {
       "title": "The story of a single cell: Peeking into the semantics of spikes",
       "url": null,
       "journal": "IAPR Workshop on Cognitive Information Processing",
       "authors": "R. Kliper, T. Serre, D. Weinshall, I. Nelken",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2016/01/Story-of-a-Single-Cell1.pdf"
+      "pdfPath": "/papers/Story-of-a-Single-Cell1.pdf"
     },
     {
       "title": "A neuromorphic approach to computer vision",
-      "url": null,
+      "url": "https://cacm.acm.org/research/a-neuromorphic-approach-to-computer-vision/",
       "journal": "Communications of the ACM",
       "authors": "T. Serre & T. Poggio",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2012/10/Commun.-ACM-2010-Serre.pdf"
+      "pdfPath": "/papers/neuromorphic-approach-computer-vision-2010.pdf"
     }
   ],
   "2011": [
     {
       "title": "What are the visual features underlying rapid recognition?",
-      "url": null,
+      "url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2011.00326/full",
       "journal": "Frontiers in Psychology",
       "authors": "S.M. Crouzet & T. Serre",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2012/09/fpsyg-02-00326.pdf"
+      "pdfPath": "/papers/fpsyg-02-00326.pdf"
     },
     {
       "title": "Object decoding with attention in inferior temporal cortex",
-      "url": null,
+      "url": "https://www.pnas.org/doi/10.1073/pnas.1100999108",
       "journal": "Proceedings of the National Academy of Sciences",
       "authors": "Y. Zhang*, E. Meyers*, N. Bichot, T. Serre, T. Poggio, R. Desimone",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/PNAS-2011-Zhang-8850-5.pdf"
+      "pdfPath": "/papers/PNAS-2011-Zhang-8850-5.pdf"
     },
     {
       "title": "HMDB: A large video database for human motion recognition",
-      "url": null,
+      "url": "https://ieeexplore.ieee.org/document/6126543",
       "journal": "IEEE International Computer Vision Conference",
       "authors": "H. Kuhne, H. Jhuang, E. Garrote, T. Poggio, T. Serre",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/Kuehne_etal_ICCV2011.pdf"
+      "pdfPath": "/papers/Kuehne_etal_ICCV2011.pdf"
     }
   ],
   "2012": [
@@ -244,36 +244,37 @@
       "url": null,
       "journal": "Biological Psychiatry",
       "authors": "M. Leussis, E. Berry-Scott, M. Saito, H. Jhuang, G. Haan, O. Alkan, C. Luce, J. Madison, P. Sklar, T. Serre, D. Root, T. Petryshen",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2016/01/Leussis_Ank3_BiolPsych2012.pdf"
+      "pdfPath": "/papers/Leussis_Ank3_BiolPsych2012.pdf"
     },
     {
       "title": "A new biologically inspired color image descriptor",
-      "url": null,
+      "url": "https://link.springer.com/chapter/10.1007/978-3-642-33715-4_23",
       "journal": "Proceedings of the European Computer Vision Conference",
       "authors": "J. Zhang, Y. Barhomi, T. Serre",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2012/10/75760312.pdf"
+      "pdfPath": "/papers/75760312.pdf"
     },
     {
       "title": "The neural dynamics of visual processing in monkey extrastriate cortex: A comparison between univariate and multivariate techniques",
-      "url": null,
-      "journal": "Neural Information Processing Systems – Workshop on Machine Learning and Interpretation in Neuroimaging",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-642-34713-9_21",
+      "journal": "Neural Information Processing Systems \u2013 Workshop on Machine Learning and Interpretation in Neuroimaging",
       "authors": "M. Cauchoix, A. Arslan, D. Fize, T. Serre",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2014/02/Cauchoix_etal_NIPS20122.pdf"
+      "pdfPath": "/papers/Cauchoix_etal_NIPS20122.pdf"
     }
   ],
   "2013": [
     {
       "title": "Neural representation of action sequences: How far can a simple snippet-matching model take us?",
-      "url": null,
+      "url": "https://papers.nips.cc/paper_files/paper/2013/hash/c3e878e27f52e2a57ace4d9a76fd9acf-Abstract.html",
       "journal": "Neural Information Processing Systems",
       "authors": "C. Tan, J. Singer, T. Serre, D. Sheinberg & T. Poggio",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2016/12/2013_Tan_NIPS.pdf"
+      "pdfPath": "/papers/2013_Tan_NIPS.pdf"
     },
     {
       "title": "Models of the visual cortex",
       "url": "http://www.scholarpedia.org/article/Models_of_visual_cortex",
       "journal": "Scholarpedia, 8(4):3516.",
-      "authors": "T. Poggio & T. Serre"
+      "authors": "T. Poggio & T. Serre",
+      "pdfPath": "/papers/models-visual-cortex-scholarpedia-2013.pdf"
     }
   ],
   "2014": [
@@ -281,33 +282,36 @@
       "title": "The neural dynamics of face detection in the wild revealed by MVPA",
       "url": "http://www.jneurosci.org/content/34/3/846.long",
       "journal": "Journal of Neuroscience",
-      "authors": "M. Cauchoix^, G. Barragan-­Jason^, T. Serre* & E.J. Barbeau* (^,* are authors with equal contributions)"
+      "authors": "M. Cauchoix^, G. Barragan-\u00adJason^, T. Serre* & E.J. Barbeau* (^,* are authors with equal contributions)",
+      "pdfPath": "/papers/neural-dynamics-face-detection-2014.pdf"
     },
     {
       "title": "Neuronal synchrony in complex-valued deep networks",
-      "url": "http://arxiv.org/abs/1312.6115",
+      "url": "https://openreview.net/forum?id=O_cyOSWv8TrlS",
       "journal": "International Conference on Learning Representations",
-      "authors": "D. Reichert & T. Serre"
+      "authors": "D. Reichert & T. Serre",
+      "pdfPath": "/papers/neuronal-synchrony-complex-valued-networks-2014.pdf"
     },
     {
       "title": "The language of actions: Recovering the syntax and semantics of goal-directed human activities",
-      "url": null,
+      "url": "https://openaccess.thecvf.com/content_cvpr_2014/html/Kuehne_The_Language_of_2014_CVPR_paper.html",
       "journal": "IEEE Conference on Computer Vision and Pattern Recognition",
       "authors": "H. Kuehne, A. Arlsan & T. Serre",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2014/05/paper_cameraReady-2.pdf"
+      "pdfPath": "/papers/paper_cameraReady-2.pdf"
     },
     {
       "title": "Hierarchical models of the visual system",
       "url": null,
       "journal": "Encyclopedia of Computational Neuroscience",
       "authors": "T. Serre",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2014/10/Serre-encyclopedia_revised.pdf"
+      "pdfPath": "/papers/hierarchical-models-visual-system-2020.pdf"
     },
     {
       "title": "Learning sparse prototypes for crowd perception via ensemble coding mechanisms",
-      "url": "http://link.springer.com/chapter/10.1007/978-3-319-11839-0_8",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-319-11839-0_8",
       "journal": "5th International Workshop on Human Behavior Understanding",
-      "authors": "Y. Zhang, S. Zhang, Q. Huang & T. Serre"
+      "authors": "Y. Zhang, S. Zhang, Q. Huang & T. Serre",
+      "pdfPath": "/papers/learning-sparse-prototypes-crowd-2014.pdf"
     }
   ],
   "2015": [
@@ -315,20 +319,22 @@
       "title": "Explaining the timing of natural scene understanding with a computational model of perceptual categorization",
       "url": "http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004456",
       "journal": "PLoS Computational Biology",
-      "authors": "I. Sofer, S. Crouzet & T. Serre"
+      "authors": "I. Sofer, S. Crouzet & T. Serre",
+      "pdfPath": "/papers/explaining-timing-natural-scene-understanding-2015.pdf"
     },
     {
       "title": "Unsupervised invariance learning of transformation sequences in a model of object recognition yields selectivity for non-accidental properties",
       "url": "http://journal.frontiersin.org/article/10.3389/fncom.2015.00115/full",
       "journal": "Frontiers in Computational Neuroscience",
-      "authors": "S.M. Parker & T. Serre"
+      "authors": "S.M. Parker & T. Serre",
+      "pdfPath": "/papers/unsupervised-invariance-learning-2015.pdf"
     },
     {
       "title": "Reduced expression of MYC increases longevity and enhances healthspan",
-      "url": null,
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(14)01586-4",
       "journal": "Cell",
       "authors": "J.W. Hofmann et al",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2018/04/Celln.pdf"
+      "pdfPath": "/papers/reduced-expression-myc-cell-2015.pdf"
     }
   ],
   "2016": [
@@ -337,56 +343,56 @@
       "url": null,
       "journal": "Wiley Interdisciplinary Reviews: Cognitive Science",
       "authors": "T. Serre",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2018/03/serre2016.pdf"
+      "pdfPath": "/papers/serre2016.pdf"
     },
     {
       "title": "How deep is the feature analysis underlying rapid visual categorization?",
-      "url": null,
+      "url": "https://proceedings.neurips.cc/paper/2016/hash/42e77b63637ab381e8be5f8318cc28a2-Abstract.html",
       "journal": "Neural Information Processing Systems",
       "authors": "S. Eberhardt, J. Cader & T. Serre",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2016/12/2016_Eberhardt_NIPS.pdf"
+      "pdfPath": "/papers/2016_Eberhardt_NIPS.pdf"
     },
     {
       "title": "Computer vision cracks the leaf code",
-      "url": null,
+      "url": "https://www.pnas.org/content/113/12/3305",
       "journal": "Proceedings of the National Academy of Sciences",
       "authors": "P. Wilf, S. Zhang, S. Chikkerur, S. Little, S. Wing & T. Serre",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2016/11/2016_Wilf_PNAS.pdf"
+      "pdfPath": "/papers/2016_Wilf_PNAS.pdf"
     },
     {
       "title": "Fast ventral stream neural activity enables rapid visual categorization",
       "url": null,
       "journal": "Neuroimage",
       "authors": "M. Cauchoix*, S.M. Crouzet*, D. Fize & T. Serre",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2016/11/2016_Cauchoix_NI.pdf"
+      "pdfPath": "/papers/2016_Cauchoix_NI.pdf"
     },
     {
       "title": "Source modelling of ElectroCorticoGraphy (ECoG) data: Analysis of stability and spatial filtering",
       "url": null,
       "journal": "Journal of Neuroscience Methods",
       "authors": "A. Pascarella, C. Todaro, M. Clerc, T. Serre and M. Piana",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2016/11/2016_Pascarella_JNM-1.pdf"
+      "pdfPath": "/papers/2016_Pascarella_JNM-1.pdf"
     },
     {
       "title": "Towards a theory of computation in the visual cortex",
       "url": null,
       "journal": "Computational and Cognitive Neuroscience of Vision",
       "authors": "D. Mely & T. Serre",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2016/11/2016_Mely_CCNV.pdf"
+      "pdfPath": "/papers/2016_Mely_CCNV.pdf"
     },
     {
       "title": "An end-to-end generative framework for video segmentation and recognition",
-      "url": null,
+      "url": "https://ieeexplore.ieee.org/document/7477701",
       "journal": "IEEE Winter conference on Applications of Computer Vision",
       "authors": "H. Kuehne, J. Galle & T. Serre",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2016/11/2016_Kuehne_I3WACV.pdf"
+      "pdfPath": "/papers/2016_Kuehne_I3WACV.pdf"
     },
     {
       "title": "A systematic comparison between visual cues for boundary detection",
       "url": null,
       "journal": "Vision Research (Special Issue on Vision and the Statistics of the Natural Environment)",
-      "authors": "D.A. Mély, J. Kim, M. McGill, Y. Guo and T. Serre",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2016/11/2016_Mely_VR.pdf"
+      "authors": "D.A. M\u00e9ly, J. Kim, M. McGill, Y. Guo and T. Serre",
+      "pdfPath": "/papers/2016_Mely_VR.pdf"
     }
   ],
   "2017": [
@@ -395,7 +401,7 @@
       "url": null,
       "journal": "IEEE ICCV Workshop on the Mutual Benefit of Cognitive and Computer Vision",
       "authors": "D Linsley, S Eberhardt, T Sharma, P Gupta & T Serre",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2018/02/Linsley_et_al_MBCC_2017-3.pdf"
+      "pdfPath": "/papers/Linsley_et_al_MBCC_2017-3.pdf"
     }
   ],
   "2018": [
@@ -403,66 +409,71 @@
       "title": "Robust neural circuit reconstruction from serial electron microscopy with convolutional recurrent networks",
       "url": "https://arxiv.org/abs/1811.11356",
       "journal": "ArXiv",
-      "authors": "D. Linsley, J.K. Kim, D. Berson & T. Serre"
+      "authors": "D. Linsley, J.K. Kim, D. Berson & T. Serre",
+      "pdfPath": "/papers/robust-neural-circuit-reconstruction-2018.pdf"
     },
     {
       "title": "Early life stress leads to sex differences in development of depressive-like outcomes in a mouse model",
       "url": "https://www.nature.com/articles/s41386-018-0195-5",
       "journal": "Neuropsychopharmacology",
-      "authors": "H. Goodwill, G. Manzano-Nieves, M. Gallo, H.I. Lee, E. Oyerinde, T. Serre & K. Bath"
+      "authors": "H. Goodwill, G. Manzano-Nieves, M. Gallo, H.I. Lee, E. Oyerinde, T. Serre & K. Bath",
+      "pdfPath": "/papers/early-life-stress-depressive-outcomes-2018.pdf"
     },
     {
       "title": "Robust pose tracking with a joint model of appearance and shape",
       "url": "https://arxiv.org/abs/1806.11011",
       "journal": "Arxiv",
-      "authors": "Y. Guo, L.N. Govindarajan, B. Kimia & T. Serre"
+      "authors": "Y. Guo, L.N. Govindarajan, B. Kimia & T. Serre",
+      "pdfPath": "/papers/robust-pose-tracking-appearance-shape-2018.pdf"
     },
     {
       "title": "Learning long-range spatial dependencies with horizontal gated-recurrent units",
-      "url": "https://arxiv.org/abs/1805.08315",
+      "url": "https://proceedings.neurips.cc/paper/2018/hash/ec8956637a99787bd197eacd77acce5e-Abstract.html",
       "journal": "Neural Information Processing Systems",
-      "authors": "D. Linsley, J. Kim, V. Veerabadran, C. Windolf & T. Serre"
+      "authors": "D. Linsley, J. Kim, V. Veerabadran, C. Windolf & T. Serre",
+      "pdfPath": "/papers/learning-long-range-spatial-dependencies-2018.pdf"
     },
     {
       "title": "Complementary surrounds explain diversity of contextual phenomena across visual modalities",
-      "url": null,
+      "url": "https://psycnet.apa.org/doiLanding?doi=10.1037/rev0000109",
       "journal": "Psychological Review",
       "authors": "D.A. Mely, D. Linsley & T. Serre",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2019/12/Serre_092018.pdf"
+      "pdfPath": "/papers/complementary-surrounds-explain-diversity-2018.pdf"
     },
     {
       "title": "Neural computing on a raspberry pi: Applications to zebrafish behavior monitoring",
       "url": null,
       "journal": "Visual observation and analysis of Vertebrate And Insect Behavior (VAIB)",
       "authors": "L. Govindarajan, T. Sharma, R. Colwill & T. Serre",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2018/09/VAIB_2018-1.pdf"
+      "pdfPath": "/papers/VAIB_2018-1.pdf"
     },
     {
-      "title": "Not-So-CLEVR: learning same–different relations strains feedforward neural networks",
-      "url": null,
+      "title": "Not-So-CLEVR: learning same\u2013different relations strains feedforward neural networks",
+      "url": "https://royalsocietypublishing.org/doi/10.1098/rsfs.2018.0011",
       "journal": "Royal Society Interface Focus",
-      "authors": "J.K Kim, M. Ricci & T. Serre",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2019/12/RSFS20180011.pdf"
+      "authors": "J.K. Kim, M. Ricci & T. Serre",
+      "pdfPath": "/papers/not-so-clevr-diagnosing-biases-2022.pdf"
     },
     {
       "title": "Same-different problems strain convolutional neural networks",
       "url": null,
       "journal": "Annual Meeting of the Cognitive Science Society",
       "authors": "M. Ricci, J.K. Kim & T. Serre",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2018/05/2018_COGSCI-1.pdf"
+      "pdfPath": "/papers/2018_COGSCI-1.pdf"
     },
     {
       "title": "TDP-43 gains function due to perturbed auto-regulation in a Tardbp knock-in mouse model of ALS-FTD",
-      "url": "https://www.nature.com/articles/s41593-018-0113-5.epdf?author_access_token=tB-YHEG4TZfSoWTUzfjcqtRgN0jAjWel9jnR3ZoTv0O5tKRsu_15A7kgas9VXTn4AmTHYI5PC4urTFZuCNn7vqzjv1Z1Q4r_BLfbrlAgBqJNXRoDmmFd-4kT4BMvJuWoznQ_YdS2eGAug-EXsqst8Q%3D%3D",
+      "url": "https://www.nature.com/articles/s41593-018-0113-5",
       "journal": "Nature Neuroscience",
-      "authors": "M.A. White et al"
+      "authors": "M.A. White et al.",
+      "pdfPath": "/papers/tdp43-gains-function-als-ftd-2018.pdf"
     },
     {
       "title": "Learning to predict action potentials end-to-end from calcium imaging data",
       "url": null,
       "journal": "IEEE Conference on Information Sciences and Systems",
       "authors": "D Linsley, J Linsley, T Sharma, N Meyers & T Serre",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2018/03/Linsley_et_al_CISS2018.pdf"
+      "pdfPath": "/papers/Linsley_et_al_CISS2018.pdf"
     }
   ],
   "2019": [
@@ -471,19 +482,21 @@
       "url": null,
       "journal": "European urology focus",
       "authors": "O. Kott*, D. Linsley*, A. Karagounis, C. Jeffers, G. Dragan, Ali Amin, T. Serre** & B. Gershman**",
-      "pdfPath": "http://serre-lab.clps.brown.edu/wp-content/uploads/2019/12/PIIS240545691930344X.pdf"
+      "pdfPath": "/papers/PIIS240545691930344X.pdf"
     },
     {
       "title": "Deep learning: the good, the bad and the ugly",
       "url": "https://www.annualreviews.org/doi/full/10.1146/annurev-vision-091718-014951",
       "journal": "Annual Review of Vision Science",
-      "authors": "T. Serre & S. Leone"
+      "authors": "T. Serre & S. Leone",
+      "pdfPath": "/papers/deep-learning-good-bad-ugly-2019.pdf"
     },
     {
       "title": "Learning what and where to attend",
       "url": "https://openreview.net/forum?id=BJgLg3R9KQ",
       "journal": "International Conference on Learning Representations",
-      "authors": "D. Linsley, D. Schiebler, S. Eberhardt & T. Serre"
+      "authors": "D. Linsley, D. Schiebler, S. Eberhardt & T. Serre",
+      "pdfPath": "/papers/learning-what-where-attend-2019.pdf"
     }
   ],
   "2020": [
@@ -491,55 +504,64 @@
       "title": "Iterative VAE as a predictive brain model for out-of-distribution generalization",
       "url": "https://arxiv.org/abs/2012.00557",
       "journal": "NeurIPS workshop on Shared Visual Representations in Human and Machine Intelligence (SVRHM)",
-      "authors": "V. Boutin, A. Zerroug, M. Jung, & Thomas Serre"
+      "authors": "V. Boutin, A. Zerroug, M. Jung & T. Serre",
+      "pdfPath": "/papers/iterative-vae-predictive-brain-model-2020.pdf"
     },
     {
       "title": "Same-different conceptualization: A machine vision perspective",
       "url": "https://www.sciencedirect.com/science/article/pii/S2352154620301352",
       "journal": "Current Opinion in Behavioral Sciences",
-      "authors": "M. Ricci, R. Cadene & T. Serre"
+      "authors": "M. Ricci, R. Cadene & T. Serre",
+      "pdfPath": "/papers/same-different-conceptualization-machine-vision-2020.pdf"
     },
     {
       "title": "Stable and expressive recurrent vision models",
-      "url": "https://arxiv.org/abs/2005.11362",
+      "url": "https://proceedings.neurips.cc/paper/2020/hash/766d856ef1a6b02f93d894415e6bfa0e-Abstract.html",
       "journal": "Neural Information Processing Systems",
-      "authors": "D. Linsley, A.K. Ashok, L.N. Govindarajan, R. Liu & T. Serre"
+      "authors": "D. Linsley, A.K. Ashok, L.N. Govindarajan, R. Liu & T. Serre",
+      "pdfPath": "/papers/stable-expressive-recurrent-vision-models-2020.pdf"
     },
     {
       "title": "Hierarchical models of the visual system",
       "url": "https://doi.org/10.1007/978-1-4614-7320-6_345-2",
       "journal": "Encyclopedia of Computational Neuroscience",
-      "authors": "M. Ricci & T. Serre"
+      "authors": "M. Ricci & T. Serre",
+      "pdfPath": "/papers/hierarchical-models-visual-system-2020.pdf"
     },
     {
       "title": "Discriminating between sleep and exercise-induced fatigue using computer vision and behavioral genetics",
-      "url": "https://www.biorxiv.org/content/10.1101/2020.02.06.937359v1",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/01677063.2020.1804565",
       "journal": "Journal of Neurogenetics",
-      "authors": "K.N. Schuch†, L.N. Govindarajan,†, Y. Guo, S.N. Baskoylu, S. Kim, B. Kimia, T. Serre‡, & A.C. Hart‡"
+      "authors": "K.N. Schuch\u2020, L.N. Govindarajan,\u2020, Y. Guo, S.N. Baskoylu, S. Kim, B. Kimia, T. Serre\u2021, & A.C. Hart\u2021",
+      "pdfPath": "/papers/discriminating-sleep-exercise-fatigue-2020.pdf"
     },
     {
       "title": "Differential involvement of EEG oscillatory components in sameness vs. spatial-relation visual reasoning tasks",
       "url": "https://www.eneuro.org/content/early/2020/11/23/ENEURO.0267-20.2020",
       "journal": "eNeuro",
-      "authors": "A. Alamia, C. Luo, M. Ricci, J. Kim, T. Serre & R. VanRullen"
+      "authors": "A. Alamia, C. Luo, M. Ricci, J. Kim, T. Serre & R. VanRullen",
+      "pdfPath": "/papers/differential-eeg-oscillatory-components-2020.pdf"
     },
     {
       "title": "Beyond the feedforward sweep: feedback computations in the visual cortex",
       "url": "https://nyaspubs.onlinelibrary.wiley.com/doi/abs/10.1111/nyas.14320",
       "journal": "The Year in Cognitive Neuroscience",
-      "authors": "G. Kreiman & T. Serre"
+      "authors": "G. Kreiman & T. Serre",
+      "pdfPath": "/papers/beyond-feedforward-sweep-2020.pdf"
     },
     {
       "title": "Disentangling neural mechanisms for perceptual grouping",
       "url": "https://openreview.net/forum?id=HJxrVA4FDS",
       "journal": "International Conference on Learning Representations",
-      "authors": "J.K. Kim*, D. Linsley*, K. Thakkar & T. Serre"
+      "authors": "J.K. Kim*, D. Linsley*, K. Thakkar & T. Serre",
+      "pdfPath": "/papers/disentangling-neural-mechanisms-perceptual-grouping-2020.pdf"
     },
     {
-      "title": "Recurrent neural circuits for contours detection",
+      "title": "Recurrent neural circuits for contour detection",
       "url": "https://openreview.net/forum?id=H1gB4RVKvB",
       "journal": "International Conference on Learning Representations",
-      "authors": "D. Linsley*, J.K. Kim*, A. Ashok & T. Serre"
+      "authors": "D. Linsley*, J.K. Kim*, A. Ashok & T. Serre",
+      "pdfPath": "/papers/recurrent-neural-circuits-contours-detection-2020.pdf"
     }
   ],
   "2021": [
@@ -547,56 +569,64 @@
       "title": "Super-human cell death detection with biomarker-optimized neural networks",
       "url": "https://www.science.org/doi/10.1126/sciadv.abf8142",
       "journal": "Science Advances",
-      "authors": "J.W. Linsley, D.A. Linsley, J. Lamstein, G. Ryan, K. Shah, N.A. Castello, V. Oza, J. Kalra, S. Wang, Z. Tokuno, A. Javaherian, T. Serre & S. Finkbeiner"
+      "authors": "J.W. Linsley, D.A. Linsley, J. Lamstein, G. Ryan, K. Shah, N.A. Castello, V. Oza, J. Kalra, S. Wang, Z. Tokuno, A. Javaherian, T. Serre & S. Finkbeiner",
+      "pdfPath": "/papers/super-human-cell-death-detection-2021.pdf"
     },
     {
       "title": "Look at the variance! Efficient black-box explanations with Sobol-based sensitivity analysis",
-      "url": "https://arxiv.org/abs/2111.04138",
+      "url": "https://proceedings.neurips.cc/paper/2021/hash/da94cbeff56cfda50785df477941308b-Abstract.html",
       "journal": "Neural Information Processing Systems",
-      "authors": "T. Fel, R. Cadene, M. Chalvidal, M. Cord, D. Vigouroux & T. Serre."
+      "authors": "T. Fel, R. Cadene, M. Chalvidal, M. Cord, D. Vigouroux & T. Serre",
+      "pdfPath": "/papers/look-at-variance-sobol-2021.pdf"
     },
     {
       "title": "KuraNet: systems of coupled oscillators that learn to synchronize",
       "url": "https://arxiv.org/abs/2105.02838",
       "journal": "arXiv",
-      "authors": "M. Ricci, M. Jung, Y. Zhang, M. Chalvidal, A. Soni & T. Serre"
+      "authors": "M. Ricci, M. Jung, Y. Zhang, M. Chalvidal, A. Soni & T. Serre",
+      "pdfPath": "/papers/kuranet-coupled-oscillators-2021.pdf"
     },
     {
       "title": "Tracking without re-recognition in humans and machines",
-      "url": "https://arxiv.org/abs/2105.13351",
+      "url": "https://proceedings.neurips.cc/paper/2021/hash/a2557a7b2e94197ff767970b67041697-Abstract.html",
       "journal": "Neural Information Processing Systems",
-      "authors": "D. Linsley*, G. Malik*, J.K. Kim, L.N. Govindarajan, E. Mingolla^, T. Serre^"
+      "authors": "D. Linsley*, G. Malik*, J.K. Kim, L.N. Govindarajan, E. Mingolla^, T. Serre^",
+      "pdfPath": "/papers/tracking-without-rerecognition-2021.pdf"
     },
     {
       "title": "The challenge of appearance-free object tracking with feedforward neural networks",
-      "url": null,
+      "url": "https://arxiv.org/abs/2110.02772",
       "journal": "CVPR Workshop on Dynamic Neural Networks Meets Computer Vision",
       "authors": "G. Malik, D. Linsley, T. Serre & E. Mingolla",
-      "pdfPath": "https://serre-lab.clps.brown.edu/wp-content/uploads/2021/08/The-Challenge-of-Appearance-Free-Object-Tracking-with-Feedforward-Neural-Networks.pdf"
+      "pdfPath": "/papers/challenge-appearance-free-object-tracking-2022.pdf"
     },
     {
       "title": "An image dataset of cleared, x-rayed, and fossil leaves vetted to plant family for human and machine learning",
       "url": "https://phytokeys.pensoft.net/article/72350/",
       "journal": "PhytoKeys",
-      "authors": "P. Wilf, S.L. Wing, H.W. Meyer, J.A. Rose, R. Saha, T. Serre, N.R. Cúneo, M.P. Donovan, D.M. Erwin, M.A. Gandolfo, E. González-Akre, F. Herrera, S. Hu, A. Iglesias, K.R. Johnson, T.S. Karim & X. Zou"
+      "authors": "P. Wilf, S.L. Wing, H.W. Meyer, J.A. Rose, R. Saha, T. Serre, N.R. C\u00faneo, M.P. Donovan, D.M. Erwin, M.A. Gandolfo, E. Gonz\u00e1lez-Akre, F. Herrera, S. Hu, A. Iglesias, K.R. Johnson, T.S. Karim & X. Zou",
+      "pdfPath": "/papers/image-dataset-cleared-xrayed-fossil-leaves-2021.pdf"
     },
     {
       "title": "Deep learning networks and visual perception",
-      "url": "/publications",
+      "url": "https://doi.org/10.1093/acrefore/9780190236557.013.841",
       "journal": "Oxford Research Encyclopedia of Psychology",
-      "authors": "G. Lindsay & T. Serre"
+      "authors": "G. Lindsay & T. Serre",
+      "pdfPath": "/papers/deep-learning-networks-visual-perception-oxford-2021.pdf"
     },
     {
       "title": "Go with the flow: Adaptive control for Neural ODEs",
       "url": "https://openreview.net/forum?id=giit4HdDNa",
       "journal": "International Conference on Learning Representations",
-      "authors": "M. Chalvidal, M. Ricci, R. VanRullen, T. Serre"
+      "authors": "M. Chalvidal, M. Ricci, R. VanRullen, T. Serre",
+      "pdfPath": "/papers/go-with-flow-adaptive-control-neural-odes-2020.pdf"
     },
     {
       "title": "Using computational analysis of behavior to discover developmental change in memory-guided attention mechanisms in childhood",
       "url": "https://psyarxiv.com/gq4rt/",
       "journal": "psychArXiv",
-      "authors": "D. Amso, L. Govindarajan, P. Gupta, H. Baumgartner, A. Lynn, K. Gunther, D. Placido, T. Sharma, V. Veerabadran, K. Thakkar, S. Kim & T. Serre"
+      "authors": "D. Amso, L. Govindarajan, P. Gupta, H. Baumgartner, A. Lynn, K. Gunther, D. Placido, T. Sharma, V. Veerabadran, K. Thakkar, S. Kim & T. Serre",
+      "pdfPath": "/papers/using-computational-analysis-behavior-2021.pdf"
     }
   ],
   "2022": [
@@ -604,80 +634,92 @@
       "title": "The emergence of visual simulation in task-optimized recurrent neural networks",
       "url": "https://openreview.net/forum?id=qYLp6nNU7m-",
       "journal": "NeurIPS Workshop on Shared Visual Representations in Human & Machine Intelligence",
-      "authors": "A.K. Ashok, L.N. Govindarajan, D. Linsley, D. Sheinber & T. Serre. T"
+      "authors": "A.K. Ashok, L.N. Govindarajan, D. Linsley, D. Sheinber & T. Serre. T",
+      "pdfPath": "/papers/emergence-visual-simulation-recurrent-networks-2022.pdf"
     },
     {
       "title": "Fast inference of spinal neuromodulation for motor control using amortized neural networks",
       "url": "https://iopscience.iop.org/article/10.1088/1741-2552/ac9646",
       "journal": "Journal of Neural Engineering",
-      "authors": "L.N. Govindarajan, J.S. Calvert, S.R. Parker, M. Jung, R. Darie, P. Miranda, E. Shaaya, D.A. Borton* & T. Serre*"
+      "authors": "L.N. Govindarajan, J.S. Calvert, S.R. Parker, M. Jung, R. Darie, P. Miranda, E. Shaaya, D.A. Borton* & T. Serre*",
+      "pdfPath": "/papers/fast-inference-spinal-neuromodulation-2022.pdf"
     },
     {
       "title": "What I cannot predict, I do not understand: A human-centered evaluation framework for explainability methods",
-      "url": "https://arxiv.org/abs/2112.04417",
+      "url": "https://openreview.net/forum?id=MKDdTASg_1y",
       "journal": "Neural Information Processing Systems",
-      "authors": "T. Fel, J. Colin, R. Cadene & T. Serre"
+      "authors": "T. Fel, J. Colin, R. Cadene & T. Serre",
+      "pdfPath": "/papers/what-i-cannot-predict-explainability-2022.pdf"
     },
     {
       "title": "Harmonizing the object recognition strategies of deep neural networks with humans",
       "url": "https://openreview.net/forum?id=ZYKWi6Ylfg",
       "journal": "Neural Information Processing Systems",
-      "authors": "T. Fel*, I.F. Rodriguez*, D. Linsley* & T. Serre"
+      "authors": "T. Fel*, I.F. Rodriguez*, D. Linsley* & T. Serre",
+      "pdfPath": "/papers/harmonizing-object-recognition-2022.pdf"
     },
     {
       "title": "A benchmark for compositional visual reasoning",
-      "url": "https://arxiv.org/abs/2206.05379",
+      "url": "https://openreview.net/forum?id=59pMU2xFxG",
       "journal": "Neural Information Processing Systems",
-      "authors": "A. Zerroug, M. Vaishnav, J. Colin, S. Musslick & T. Serre"
+      "authors": "A. Zerroug, M. Vaishnav, J. Colin, S. Musslick & T. Serre",
+      "pdfPath": "/papers/benchmark-compositional-visual-reasoning-2022.pdf"
     },
     {
       "title": "Meta-reinforcement learning with self-modifying networks",
-      "url": "https://arxiv.org/abs/2202.02363",
+      "url": "https://openreview.net/forum?id=cYeYzaP-5AF",
       "journal": "Neural Information Processing Systems",
-      "authors": "M. Chalvidal, T. Serre, R. VanRullen"
+      "authors": "M. Chalvidal, T. Serre, R. VanRullen",
+      "pdfPath": "/papers/meta-reinforcement-learning-self-modifying-networks-2022.pdf"
     },
     {
       "title": "Diversity vs. recognizability: Human-like generalization in one-shot generative models",
-      "url": "https://arxiv.org/abs/2205.10370",
+      "url": "https://openreview.net/forum?id=DVfZKXSFW5m",
       "journal": "Neural Information Processing Systems",
-      "authors": "V. Boutin, L. Singhal, X. Thomas & T. Serre"
+      "authors": "V. Boutin, L. Singhal, X. Thomas & T. Serre",
+      "pdfPath": "/papers/diversity-vs-recognizability-2022.pdf"
     },
     {
-      "title": "A practitioner’s guide to improve the logistics of spatiotemporal deep neural networks",
+      "title": "A practitioner\u2019s guide to improve the logistics of spatiotemporal deep neural networks",
       "url": null,
       "journal": "Workshop on visual observation and analysis of Vertebrate And Insect Behavior (VAIB)",
       "authors": "L.N. Govindarajan, R. Kakodkar & T. Serre",
-      "pdfPath": "https://serre-lab.clps.brown.edu/wp-content/uploads/2022/09/VAIB22_CameraReady.pdf"
+      "pdfPath": "/papers/VAIB22_CameraReady.pdf"
     },
     {
       "title": "Xplique: A deep learning explainability toolbox",
       "url": "https://arxiv.org/abs/2206.04394",
       "journal": "CVPR workshop on XAI4CV: Explainable Artificial Intelligence for Computer Vision",
-      "authors": "T. Fel, L. Hervier, D. Vigouroux, A. Poche, J. Plakoo, R. Cadene, M. Chalvidal, J. Colin, T.. Boissin, L. Bethune, A. Picard, C. Nicodeme, L. Gardes, G. Flandin & T. Serre"
+      "authors": "T. Fel, L. Hervier, D. Vigouroux, A. Poche, J. Plakoo, R. Cadene, M. Chalvidal, J. Colin, T. Boissin, L. Bethune, A. Picard, C. Nicodeme, L. Gardes, G. Flandin & T. Serre",
+      "pdfPath": "/papers/xplique-explainability-toolbox-2022.pdf"
     },
     {
       "title": "Decoding family-level features for modern and fossil leaves from computer-vision heat maps",
       "url": "https://doi.org/10.1002/ajb2.1842",
       "journal": "American Journal of Botany",
-      "authors": "E.J. Spagnuolo, P. Wilf & T. Serre"
+      "authors": "E.J. Spagnuolo, P. Wilf & T. Serre",
+      "pdfPath": "/papers/decoding-family-level-features-leaves-2022.pdf"
     },
     {
       "title": "How and what to learn: Taxonomizing self-supervised learning for 3D action recognition",
       "url": "https://ieeexplore.ieee.org/document/9707095",
       "journal": "Winter Conference on Applications of Computer Vision",
-      "authors": "A. Ben Tanfous, A. Zerroug, D. Linsley & T. Serre"
+      "authors": "A. Ben Tanfous, A. Zerroug, D. Linsley & T. Serre",
+      "pdfPath": "/papers/how-and-what-to-learn-wacv-2022.pdf"
     },
     {
       "title": "How good is your explanation? Algorithmic stability measures to assess the quality of explanations for deep neural networks",
       "url": "https://ieeexplore.ieee.org/document/9706798",
       "journal": "Winter Conference on Applications of Computer Vision",
-      "authors": "T Fel, D. Vigouroux, R. Cadene & T. Serre"
+      "authors": "T Fel, D. Vigouroux, R. Cadene & T. Serre",
+      "pdfPath": "/papers/how-good-is-your-explanation-wacv-2022.pdf"
     },
     {
       "title": "Understanding the computational demands underlying visual reasoning",
-      "url": "https://arxiv.org/abs/2108.03603",
+      "url": "https://direct.mit.edu/neco/article/34/5/1075/109662/Understanding-the-Computational-Demands-Underlying",
       "journal": "Neural Computation",
-      "authors": "M.Vaishnav, R. Cadene, A. Alamia, D. Linsley, R. VanRullen & T. Serre"
+      "authors": "M. Vaishnav, R. Cadene, A. Alamia, D. Linsley, R. VanRullen & T. Serre",
+      "pdfPath": "/papers/understanding-computational-demands-visual-reasoning-2022.pdf"
     }
   ],
   "2023": [
@@ -685,142 +727,157 @@
       "title": "Ecological data and objectives align deep neural network representations with humans",
       "url": "https://openreview.net/forum?id=KeiQNpb7sv",
       "journal": "\"UniReps: Unifying Representations in Neural Models\" NeurIPS workshop",
-      "authors": "A. Nagaraj, A.K. Ashok, D. Linsley, F.E Lewis, P. Zhou & T. Serre"
+      "authors": "A. Nagaraj, A.K. Ashok, D. Linsley, F.E Lewis, P. Zhou & T. Serre",
+      "pdfPath": "/papers/ecological-data-objectives-align-dnns-2023.pdf"
     },
     {
       "title": "Fixing the problems of deep neural networks will require better training data and learning algorithms",
       "url": "https://www.cambridge.org/core/journals/behavioral-and-brain-sciences/article/fixing-the-problems-of-deep-neural-networks-will-require-better-training-data-and-learning-algorithms/5F130059A056A4DB316101BE9954203B",
       "journal": "Behavioral & Brain Sciences",
-      "authors": "T. Serre & D. Linsley"
+      "authors": "T. Serre & D. Linsley",
+      "pdfPath": "/papers/fixing-problems-deep-networks-2023.pdf"
     },
     {
-      "title": "Unlocking feature visualization for deeper networks with magnitude constrained optimization",
+      "title": "Unlocking feature visualization for deep networks with MAgnitude Constrained Optimization",
       "url": "https://openreview.net/forum?id=J7VoDuzuKs",
       "journal": "Neural Information Processing Systems",
-      "authors": "T. Fel, T. Boissin, V. Boutin, A. Picard, P. Novello, J. Colin, D. Linsley, T. Rousseau, R. Cadène, L. Gardes & T. Serre"
+      "authors": "T. Fel, T. Boissin, V. Boutin, A. Picard, P. Novello, J. Colin, D. Linsley, T. Rousseau, R. Cad\u00e8ne, L. Gardes & T. Serre",
+      "pdfPath": "/papers/unlocking-feature-visualization-magnco-2023.pdf"
     },
     {
       "title": "Computing a human-like reaction time metric from stable recurrent vision models",
       "url": "https://openreview.net/forum?id=1xPsn2gCOe",
       "journal": "Neural Information Processing Systems",
-      "authors": "L. Goetschalckx, L.N. Govindarajan, A.K. Ashok, A. Ahuja, D.L. Sheinberg & T. Serre"
+      "authors": "L. Goetschalckx, L.N. Govindarajan, A.K. Ashok, A. Ahuja, D.L. Sheinberg & T. Serre",
+      "pdfPath": "/papers/computing-human-like-reaction-time-2023.pdf"
     },
     {
       "title": "A holistic approach to unifying automatic concept extraction and concept importance estimation",
       "url": "https://openreview.net/forum?id=MziFFGjpkb",
       "journal": "Neural Information Processing Systems",
-      "authors": "T. Fel, V. Boutin, M. Moayeri, R. Cadene, L. Bethune, L. Andeol, M. Chalvidal & T. Serre"
+      "authors": "T. Fel, V. Boutin, M. Moayeri, R. Cadene, L. Bethune, L. Andeol, M. Chalvidal & T. Serre",
+      "pdfPath": "/papers/holistic-concept-extraction-importance-2023.pdf"
     },
     {
       "title": "Break it down: Evidence for structural compositionality in neural networks",
       "url": "https://openreview.net/forum?id=rwbzMiuFQl",
       "journal": "Neural Information Processing Systems",
-      "authors": "M.A. Lepori, T. Serre & E. Pavlick"
-    },
-    {
-      "title": "Adversarial alignment: Breaking the trade-off between the strength of an attack and its relevance to human perception",
-      "url": "https://arxiv.org/abs/2306.03229",
-      "journal": "arXiv",
-      "authors": "D. Linsley, P. Feng, T. Boissin, A.K. Ashok, T. Fel, S. Olaiya, T. Serre"
+      "authors": "M.A. Lepori, T. Serre & E. Pavlick",
+      "pdfPath": "/papers/break-it-down-structural-compositionality-2023.pdf"
     },
     {
       "title": "Performance-optimized deep neural networks are evolving into worse models of inferotemporal visual cortex",
       "url": "https://openreview.net/forum?id=X4mmXQ4Nxw",
       "journal": "Neural Information Processing Systems",
-      "authors": "D. Linsley, I.F. Rodriguez, T. Fel, M. Arcaro, S. Sharma, M. Livingstone & T. Serre"
+      "authors": "D. Linsley, I.F. Rodriguez, T. Fel, M. Arcaro, S. Sharma, M. Livingstone & T. Serre",
+      "pdfPath": "/papers/performance-optimized-dnns-worse-models-2023.pdf"
     },
     {
       "title": "Learning functional transduction",
       "url": "https://openreview.net/forum?id=2BFZ8cPIf6",
       "journal": "Neural Information Processing Systems",
-      "authors": "M. Chalvidal, T. Serre & R.VanRullen"
+      "authors": "M. Chalvidal, T. Serre & R. VanRullen",
+      "pdfPath": "/papers/learning-functional-transduction-2023.pdf"
     },
     {
       "title": "Diagnosing and exploiting the computational demands of videos games for deep reinforcement learning",
       "url": "https://arxiv.org/abs/2309.13181",
       "journal": "arXiv",
-      "authors": "L.N. Govindarajan, R.G. Liu, D. Linsley, A.K. Ashok, M. Reuter, M.J. Frank & T. Serre"
+      "authors": "L.N. Govindarajan, R.G. Liu, D. Linsley, A.K. Ashok, M. Reuter, M.J. Frank & T. Serre",
+      "pdfPath": "/papers/diagnosing-exploiting-computational-demands-games-2023.pdf"
     },
     {
       "title": "Diffusion models as artists: Are we closing the gap between humans and machines?",
-      "url": "https://arxiv.org/abs/2301.11722",
+      "url": "https://icml.cc/virtual/2023/oral/25539",
       "journal": "International Conference on Machine Learning",
-      "authors": "V. Boutin, T. Fel, L. Singhal, R. Mukherji, A. Nagaraj, J Colin & T. Serre"
+      "authors": "V. Boutin, T. Fel, L. Singhal, R. Mukherji, A. Nagaraj, J Colin & T. Serre",
+      "pdfPath": "/papers/diffusion-models-as-artists-2023.pdf"
     },
     {
       "title": "CRAFT: Concept Recursive Activation FacTorization for explainability",
-      "url": "https://arxiv.org/abs/2211.10154",
+      "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Fel_CRAFT_Concept_Recursive_Activation_FacTorization_for_Explainability_CVPR_2023_paper.html",
       "journal": "IEEE Conference on Computer Vision and Pattern Recognition",
-      "authors": "T. Fel, A. Picard, L. Bethune, T. Boissin, D. Vigouroux, J. Colin, R. Cadene & T. Serre"
+      "authors": "T. Fel, A. Picard, L. Bethune, T. Boissin, D. Vigouroux, J. Colin, R. Cadene & T. Serre",
+      "pdfPath": "/papers/craft-concept-recursive-activation-2023.pdf"
     },
     {
       "title": "Transcriptomic profiling of cerebrospinal fluid predicts shunt surgery responses in patients with normal pressure hydrocephalus",
       "url": "https://academic.oup.com/brain/advance-article-abstract/doi/10.1093/brain/awad109/7174209",
       "journal": "Brain",
-      "authors": "Z. Levin, O.P. Leary, V. Mora, S. Kant, S. Brown, K. Svokos, U. Akbar, T. Serre, P. Klinge, A. Fleischmann, M.G. Ruocco"
+      "authors": "Z. Levin, O.P. Leary, V. Mora, S. Kant, S. Brown, K. Svokos, U. Akbar, T. Serre, P. Klinge, A. Fleischmann, M.G. Ruocco",
+      "pdfPath": "/papers/transcriptomic-profiling-csf-shunt-surgery-2023.pdf"
     },
     {
       "title": "GAMR: A Guided Attention Model for (visual) Reasoning",
       "url": "https://openreview.net/forum?id=iLMgk2IGNyv",
       "journal": "International Conference on Learning Representations",
-      "authors": "M Vaishnav & T. Serre"
+      "authors": "M Vaishnav & T. Serre",
+      "pdfPath": "/papers/gamr-guided-attention-model-reasoning-2023.pdf"
     },
     {
-      "title": "Don’t lie to me! Robust and efficient explainability with verified perturbation analysis",
-      "url": "https://arxiv.org/abs/2202.07728",
+      "title": "Don't lie to me! Robust and efficient explainability with verified perturbation analysis",
+      "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Fel_Dont_Lie_to_Me_Robust_and_Efficient_Explainability_With_Verified_CVPR_2023_paper.html",
       "journal": "IEEE Conference on Computer Vision and Pattern Recognition",
-      "authors": "T. Fel, M. Ducoffe, D. Vigouroux, R. Cadène, M. Capelle, C. Nicodème, T. Serre"
+      "authors": "T. Fel, M. Ducoffe, D. Vigouroux, R. Cad\u00e8ne, M. Capelle, C. Nicod\u00e8me, T. Serre",
+      "pdfPath": "/papers/dont-lie-to-me-explainability-2023.pdf"
     }
   ],
   "2024": [
     {
       "title": "Monkeys engage in visual simulation to solve complex problems",
-      "url": "https://authors.elsevier.com/c/1k6Fc3QW8S6Gde",
+      "url": "https://www.cell.com/current-biology/abstract/S0960-9822(24)01380-0",
       "journal": "Current Biology",
-      "authors": "A. Ahuja,  N.Y. Rodriguez, A.K. Ashok, T. Serre, T. Desrochers,  D. Sheinberg"
+      "authors": "A. Ahuja,  N.Y. Rodriguez, A.K. Ashok, T. Serre, T. Desrochers,  D. Sheinberg",
+      "pdfPath": "/papers/monkeys-visual-simulation-2024.pdf"
     },
     {
       "title": "RTify: Aligning deep neural networks with human behavioral decisions",
-      "url": "http://arxiv.org/abs/2411.03630",
+      "url": "https://openreview.net/forum?id=nTJeOXlWyV",
       "journal": "Neural Information Processing Systems",
-      "authors": "Y. Cheng∗, I.F. Rodriguez∗, S. Chen, T. Watanabe & T. Serre"
+      "authors": "Y. Cheng\u2217, I.F. Rodriguez\u2217, S. Chen, T. Watanabe & T. Serre",
+      "pdfPath": "/papers/rtify-aligning-dnns-human-decisions-2024.pdf"
     },
     {
       "title": "Understanding visual feature reliance through the lens of complexity",
-      "url": "https://arxiv.org/abs/2407.06076",
+      "url": "https://openreview.net/forum?id=NhqZpst42I",
       "journal": "Neural Information Processing Systems",
-      "authors": "T. Fel, L. Bethune, A.K. Lampinen, T. Serre & K. Hermann"
+      "authors": "T. Fel, L. Bethune, A.K. Lampinen, T. Serre & K. Hermann",
+      "pdfPath": "/papers/understanding-visual-feature-reliance-complexity-2024.pdf"
     },
     {
       "title": "Beyond the doors of perception: Vision transformers represent relations between objects",
-      "url": "https://arxiv.org/abs/2406.15955",
+      "url": "https://openreview.net/forum?id=8puv3c9CPg",
       "journal": "Neural Information Processing Systems",
-      "authors": "M.A. Lepori, A.R. Tartaglini, W.K. Vong, T. Serre, B.M. Lake & E. Pavlick"
+      "authors": "M.A. Lepori, A.R. Tartaglini, W.K. Vong, T. Serre, B.M. Lake & E. Pavlick",
+      "pdfPath": "/papers/beyond-doors-perception-vit-relations-2024.pdf"
     },
     {
       "title": "Latent representation matters: Human-like sketches in one-shot drawing tasks",
-      "url": "https://arxiv.org/abs/2406.06079",
+      "url": "https://openreview.net/forum?id=tZRpvLXevU",
       "journal": "Neural Information Processing Systems",
-      "authors": "V. Boutin, R. Mukherji, A. Agrawal, S. Muzellec, T. Fel, T. Serre & R. VanRullen"
+      "authors": "V. Boutin, R. Mukherji, A. Agrawal, S. Muzellec, T. Fel, T. Serre & R. VanRullen",
+      "pdfPath": "/papers/latent-representation-human-like-sketches-2024.pdf"
     },
     {
       "title": "Uncovering intermediate variables in transformers using circuit probing",
-      "url": "https://arxiv.org/abs/2311.04354",
+      "url": "https://openreview.net/forum?id=gUNeyiLNxr",
       "journal": "Conference on Language Modeling",
-      "authors": "MA. Lepori, T. Serre & E. Pavlick"
+      "authors": "M.A. Lepori, T. Serre & E. Pavlick",
+      "pdfPath": "/papers/uncovering-intermediate-variables-transformers-2024.pdf"
     },
     {
       "title": "Gradient strikes back: How filtering out high frequencies improves explanations",
-      "url": "https://arxiv.org/abs/2307.09591",
+      "url": "https://openreview.net/forum?id=IQ6GI7fM2z",
       "journal": "International Conference on Machine Learning",
-      "authors": "S. Muzellec, T. Fel, V. Boutin,  L. Andeol, R. VanRullen & T. Serre"
+      "authors": "S. Muzellec, T. Fel, V. Boutin,  L. Andeol, R. VanRullen & T. Serre",
+      "pdfPath": "/papers/gradient-strikes-back-filtering-frequencies-2024.pdf"
     },
     {
       "title": "Deceptive learning in histopathology",
       "url": "https://www.nature.com/articles/s41591-024-03000-8",
       "journal": "Histopathology",
       "authors": "S. Shahamatdar, D. Saeed-Vafa, D. Linsley, F. Khalil, K. Lovinger, L. Li, H. McLeod, S. Ramachandran, T. Serre",
-      "pdfPath": null
+      "pdfPath": "/papers/deceptive-learning-histopathology-2024.pdf"
     }
   ],
   "2025": [
@@ -828,8 +885,8 @@
       "title": "Enhancing deep neural networks through complex-valued representations and Kuramoto synchronization dynamics",
       "authors": "S. Muzellec, A. Alamia, T. Serre & R. VanRullen",
       "journal": "Transactions on Machine Learning Research",
-      "link": "",
-      "url": null,
+      "link": "https://openreview.net/forum?id=zx6QGmBL43",
+      "url": "https://openreview.net/forum?id=zx6QGmBL43",
       "pdfPath": "/papers/enhancing-deep-neural-networks-complex-valued-kuramoto-2025.pdf"
     },
     {
@@ -837,24 +894,40 @@
       "authors": "P. Feng, D. Linsley, T. Boissin, A.K. Ashok, T. Fel, S. Olaiya & T. Serre",
       "journal": "ICLR 2025 Workshop on Representational Alignment",
       "link": "https://openreview.net/forum?id=oe1TzWGFjs",
-      "url": null,
+      "url": "https://openreview.net/forum?id=oe1TzWGFjs",
       "pdfPath": "/papers/beyond-adversarial-robustness-trade-off-2025.pdf"
     },
     {
       "title": "Tracking objects that change in appearance with phase synchrony",
       "authors": "S. Muzellec, D. Linsley, A.K. Ashok, E. Mingolla, G. Malik, R. VanRullen & T. Serre",
       "journal": "International Conference on Learning Representations",
-      "link": "https://arxiv.org/abs/2410.02094",
-      "url": null,
+      "link": "https://openreview.net/forum?id=m2gVfgWYDO",
+      "url": "https://openreview.net/forum?id=m2gVfgWYDO",
       "pdfPath": "/papers/tracking-objects-phase-synchrony-2025.pdf"
     },
     {
       "title": "The 3D-PC: a benchmark for visual perspective taking in humans and machines",
       "authors": "D. Linsley, P. Zhou, A.K. Ashok, A. Nagaraj, G. Gaonkar, F.E. Lewis, Z. Pizlo & T. Serre",
       "journal": "International Conference on Learning Representations",
-      "link": "https://arxiv.org/abs/2406.04138",
-      "url": null,
+      "link": "https://openreview.net/forum?id=UIFAJZ22ZF",
+      "url": "https://openreview.net/forum?id=UIFAJZ22ZF",
       "pdfPath": "/papers/3d-pc-benchmark-visual-perspective-taking-2025.pdf"
+    },
+    {
+      "title": "Feature binding in biological and artificial vision",
+      "authors": "P. Roelfsema & T. Serre",
+      "journal": "Trends in Cognitive Sciences",
+      "url": "https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(25)00232-3",
+      "pdfPath": "/papers/feature-binding-biological-artificial-vision-2025.pdf"
+    }
+  ],
+  "In press": [
+    {
+      "title": "From Prediction to Understanding: Will AI Foundation Models Transform Brain Science?",
+      "authors": "T. Serre & E. Pavlick",
+      "journal": "Neuron",
+      "url": "https://arxiv.org/abs/2504.16940",
+      "pdfPath": "/papers/from-prediction-to-understanding-ai-foundation-models-2025.pdf"
     }
   ],
   "Work in progress": [
@@ -863,7 +936,7 @@
       "authors": "Linsley, Feng & Serre",
       "journal": "arXiv",
       "link": "https://arxiv.org/abs/2504.16940",
-      "url": "https://arxiv.org/abs/2406.12341",
+      "url": "https://arxiv.org/abs/2504.16940",
       "pdfPath": "/papers/better-ai-better-models-biology-2025.pdf"
     },
     {
@@ -871,7 +944,7 @@
       "authors": "J. Colin, L. Goetschalckx, T. Fel, V. Boutin, J. Gopal, T. Serre* & N. Oliver*",
       "journal": "",
       "link": "https://arxiv.org/abs/2411.03993v1",
-      "url": null,
+      "url": "https://arxiv.org/abs/2411.03993v1",
       "pdfPath": "/papers/local-vs-distributed-representations-interpretability-2025.pdf"
     }
   ]

@@ -85,6 +85,20 @@
             "description": "Victor Boutin is a CNRS researcher working at the intersection of computational neuroscience and AI. He holds a Ph.D. from Aix-Marseille University (2020) and an MSc from École Centrale (2011). His research investigates how the visual cortex learns to generalize from limited data. He combines theoretical modeling, machine learning, and cognitive experiments. His current focus is on building biologically inspired models of human-like generalization."
         },
         {
+            "fullName": "Bastien Lelan",
+            "title": "PhD student",
+            "university": "ANITI",
+            "imagePath": "people/bastien-lelan.jpg",
+            "description": "Bastien Lelan is a PhD student at ANITI with a strong background in computational neuroscience. He recently completed research at Harvard University working with Gabriel Kreiman and Margaret Livingstone, where he focused on understanding neural mechanisms underlying visual processing. His research interests span the intersection of neuroscience, machine learning, and computer vision."
+        },
+        {
+            "fullName": "Jorge Chang",
+            "title": "PhD student",
+            "university": "ANITI",
+            "imagePath": "people/jorge-chang.jpg",
+            "description": "Jorge Chang is a PhD student at ANITI who will begin his doctoral studies in January 2026. He recently completed his Master of Science degree at Brown University, where he conducted research in the Serre Lab, gaining experience in computational approaches to understanding visual perception and neural mechanisms. His work focuses on bridging neuroscience and artificial intelligence to develop better models of biological vision."
+        },
+        {
             "fullName": "Christopher José Cueva",
             "title": "PostDoc",
             "university": "Brown",
