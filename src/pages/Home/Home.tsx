@@ -86,7 +86,7 @@ export function Home() {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <Title order={2} className="section-title">Explore Our Interactive Tools</Title>
+        <Title order={2} className="section-title">Explore Interactive Tools and XAI Libraries</Title>
         <Text className="body-text featured-subtitle">
           Try our research tools, games, and open-source software to advance vision science
         </Text>
