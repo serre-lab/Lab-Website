@@ -51,6 +51,9 @@ export function Home() {
 >
         <div className="hero-text">
           <Title order={1} aria-label="lab title">Serre Lab</Title>
+          <Text className="hero-affiliation" size="lg">
+            Carney Center for Computational Brain Science
+          </Text>
           <Text aria-label="lab one-liner" size="xl">
             Understanding the neural computations supporting visual perception
           </Text>
