@@ -40,13 +40,12 @@ export default function People() {
   return (
     <div className="people-container">
       <Title order={1} className="page-title">People</Title>
-      <Divider my="sm" />
 
       {/* Brown Section */}
       {brownPeople.length > 0 && (
         <>
           <Title order={2} className="section-title">
-            Brown Team ({brownPeople.length})
+            Brown University Team ({brownPeople.length})
           </Title>
           
           {/* First row: Thomas and Drew */}
@@ -98,7 +97,7 @@ export default function People() {
         <>
           <Divider my="md" />
           <Title order={2} className="people-section-title">
-            ANITI Toulouse Team ({anitiPeople.length})
+            ANITI Team ({anitiPeople.length})
           </Title>
           <div className="people-grid">
             {anitiPeople.map((person: any, index: number) => (
