@@ -40,6 +40,10 @@
                 "url": "https://serre-lab.github.io/neural_harmonizer/"
             },
             {
+                "title": "SerreLab Models (Python library)",
+                "url": "https://github.com/serre-lab/serrelabmodels"
+            },
+            {
                 "title": "hGRU Tutorials",
                 "url": "/resources/hgru-tutorials"
             },
