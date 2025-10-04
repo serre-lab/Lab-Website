@@ -55,7 +55,7 @@ export function Home() {
             Carney Center for Computational Brain Science
           </Text>
           <Text aria-label="lab one-liner" size="xl">
-            Understanding the neural computations supporting visual perception
+            Visual Cognition and AI
           </Text>
         </div>
       </motion.div>
