@@ -15,13 +15,7 @@
     text-align: left;
   }
   
-  .page-title {
-    text-align: center;
-    margin-bottom: 1rem;
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #2c3e50;
-  }
+  /* Use global .page-title from typography.css for consistent title spacing */
   
   .research-description {
     font-size: 1.2rem;
@@ -131,9 +125,7 @@
       gap: 2rem;
     }
     
-    .page-title {
-      font-size: 2rem;
-    }
+    /* Use global responsive .page-title sizing */
     
     .research-description {
       font-size: 1.1rem;
