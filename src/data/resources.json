@@ -30,7 +30,7 @@
                 "url": "/resources/mathematical-computations"
             }
         ],
-        "Research": [
+        "Research Tools & Datasets": [
             {
                 "title": "ClickMe",
                 "url": "/resources/clickme"
@@ -42,53 +42,8 @@
             {
                 "title": "Lab GitHub Repository",
                 "url": "https://github.com/serre-lab"
-            },
-            {
-                "title": "Learning Sparse Prototypes for Crowd Perception",
-                "url": "/resources/learning-sparse-prototypes-for-crowd-perception"
-            },
-            {
-                "title": "The Multi-cue Boundary Detection Dataset",
-                "url": "/resources/the-multi-cue-boundary-detection-dataset"
-            },
-            {
-                "title": "Color Processing",
-                "url": "/resources/color-processing"
-            },
-            {
-                "title": "Computational Mechanisms of Color Processing",
-                "url": "/resources/computational-mechanisms-of-color-processing"
-            },
-            {
-                "title": "Action Recognition",
-                "url": "https://github.com/serre-lab"
-            },
-            {
-                "title": "A Feedforward Architecture Accounts for Rapid Categorization",
-                "url": "/resources/a-feedforward-architecture-accounts-for-rapid-categorization"
-            },
-            {
-                "title": "Automated System for Rodent Behavioral Phenotyping",
-                "url": "/resources/automated-system-for-rodent-behavioral-phenotyping"
-            },
-            {
-                "title": "A Neuromorphic Approach to Computer Vision",
-                "url": "/resources/a-neuromorphic-approach-to-computer-vision"
-            },
-            {
-                "title": "Object Recognition",
-                "url": "https://github.com/serre-lab"
-            },
-            {
-                "title": "HMDB: A Large Human Motion Database",
-                "url": "/resources/hmdb-a-large-human-motion-database"
-            },
-            {
-                "title": "The Breakfast Actions Dataset",
-                "url": "/resources/the-breakfast-actions-dataset"
             }
         ],
-        "Projects": [],
         "Academic Resources at Brown": [
             {
                 "title": "Recommended Coursework for Undergraduate Students",
@@ -193,24 +148,6 @@
             {
                 "title": "Neural Harmonizer Data",
                 "url": "https://serre-lab.github.io/neural_harmonizer/##data-release"
-            }
-        ],
-        "Supplementary Information": [
-            {
-                "title": "Learning sparse prototypes for crowd perception",
-                "url": "/resources/learning-sparse-prototypes-for-crowd-perception"
-            },
-            {
-                "title": "Computational mechanisms of color processing",
-                "url": "/resources/computational-mechanisms-of-color-processing"
-            },
-            {
-                "title": "A feedforward architecture accounts for rapid categorization",
-                "url": "http://cbcl.mit.edu/software-datasets/serre/SerreOlivaPoggioPNAS07/index.htm"
-            },
-            {
-                "title": "A neuromorphic approach to computer vision",
-                "url": "/resources/a-neuromorphic-approach-to-computer-vision"
             }
         ]
     }
