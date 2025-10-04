@@ -37,7 +37,9 @@ export default function People() {
       {/* Brown Section */}
       {brownPeople.length > 0 && (
         <>
-          <Title order={2} className="people-page-title">Brown</Title>
+          <Title order={2} className="people-section-title">
+            Brown University Team ({brownPeople.length})
+          </Title>
           <div className="people-grid">
             {brownPeople.map((person: any, index: number) => (
               <Person
@@ -56,8 +58,10 @@ export default function People() {
       {/* ANITI Section */}
       {anitiPeople.length > 0 && (
         <>
-          <Divider my="md" /> {/* Reduced from my="xl" */}
-          <Title order={2} className="people-page-title">ANITI</Title>
+          <Divider my="md" />
+          <Title order={2} className="people-section-title">
+            ANITI Toulouse Team ({anitiPeople.length})
+          </Title>
           <div className="people-grid">
             {anitiPeople.map((person: any, index: number) => (
               <Person
@@ -76,8 +80,10 @@ export default function People() {
       {/* General Section */}
       {generalPeople.length > 0 && (
         <>
-          <Divider my="md" /> {/* Reduced from my="xl" */}
-          <Title order={2} className="people-page-title">General</Title>
+          <Divider my="md" />
+          <Title order={2} className="people-section-title">
+            Collaborators ({generalPeople.length})
+          </Title>
           <div className="people-grid">
             {generalPeople.map((person: any, index: number) => (
               <Person
@@ -96,8 +102,10 @@ export default function People() {
       {/* Alumni Section */}
       {alumniData.alumni && alumniData.alumni.length > 0 && (
         <>
-          <Divider my="md" /> {/* Reduced from my="xl" */}
-          <Title order={2} className="people-page-title">Alumni</Title>
+          <Divider my="md" />
+          <Title order={2} className="people-section-title">
+            Alumni ({alumniData.alumni.length})
+          </Title>
           <List size="md" spacing="xs" className="alumni-list">
             {alumniData.alumni.map((alumn: any, idx: number) => (
               <List.Item key={idx}>
