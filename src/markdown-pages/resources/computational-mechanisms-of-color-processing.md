@@ -10,7 +10,7 @@ The goal of this project is to study the computational mechanisms underlying col
 
 **Double-Opponent (DO) neurons** lack “ON” and “OFF” subfields. They are selective for both color and orientation (as well as spatial frequency), and thought to influence the perception of form.
 
-[![Fig. 1](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/10/image003-1024x583.jpg)](http://serre-lab.clps.brown.edu/resource/computational-mechanisms-of-color-processing/image003/)  
+[![Fig. 1](/images/resources/color/image003-1024x583.jpg)](/resources/computational-mechanisms-of-color-processingimage003/)  
 **Fig. 1.** Receptive fields (RFs) for luminance (A), single-opponent (color-preferring, B), and double-opponent (color-luminance, C) neurons.
 
 ## Insights from neuroscience
@@ -20,14 +20,14 @@ The goal of this project is to study the computational mechanisms underlying col
 
 ## Approach
 
-[![Fig. 2](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/10/image004-1024x289.jpg)](http://serre-lab.clps.brown.edu/resource/computational-mechanisms-of-color-processing/image004/)  
+[![Fig. 2](/images/resources/color/image004-1024x289.jpg)](/resources/computational-mechanisms-of-color-processingimage004/)  
 **Fig. 2.** Proposed spatio-chromatic opponent image descriptors. Top: Individual R, G, B color channels are first convolved with a center and a surround filter at orientation, phase, and scale *s*. The corresponding color channels are further combined and rectified by half-squaring followed by divisive normalization **(I)**. This yields eight chromatic SO channels organized in four pairs (e.g., R+G- shown here and R-G+). In stage **II**, an oriented filter (with both excitatory and inhibitory subunits) is further applied on each SO channel, followed by half-squaring rectification and summation over phases and opponent pairs to yield four spatio-chromatic DO channels that are invariant to figure-ground reversal (e.g., RG).
 
 **(1) Spatio-chromatic sensitivity function**
 
 The response of an SO (S1) unit is obtained by considering the dot-product between an image patch and the spatio-chromatic sensitivity function.
 
-[![Fig. 3](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/10/image009.jpg)](http://serre-lab.clps.brown.edu/resource/computational-mechanisms-of-color-processing/image009/)  
+[![Fig. 3](/images/resources/color/image009.jpg)](/resources/computational-mechanisms-of-color-processingimage009/)  
 **Fig. 3.** Spatial sensitivity distributions for each individual color component. These are obtained by isolating the positive/negative subunits from linear oriented filters to form excitatory/inhibitory center or surround structures.
 
 **(2) From Single-Opponent to Double-Opponent units**
@@ -38,11 +38,11 @@ Note: unlike the SO stage, the convolution here is only 2D and contains both cen
 
 **(3) Non-linear operations**
 
-[![Fig. 4](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/10/image012.jpg)](http://serre-lab.clps.brown.edu/resource/computational-mechanisms-of-color-processing/image012/)
+[![Fig. 4](/images/resources/color/image012.jpg)](/resources/computational-mechanisms-of-color-processingimage012/)
 
 **Example:**
 
-[![Fig. 5](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/10/image013-1024x310.jpg)](http://serre-lab.clps.brown.edu/resource/computational-mechanisms-of-color-processing/image013/)  
+[![Fig. 5](/images/resources/color/image013-1024x310.jpg)](/resources/computational-mechanisms-of-color-processingimage013/)  
 **Fig. 4.** Processing by the SO and DO color channels. A. Original image. B. SO maps. C. DO maps (after max over all dimensions for display).
 
 ## Sample results
@@ -95,12 +95,12 @@ We have evaluated our approach on four systems:
 |-------------|-------|---------|--------|--------|----------|
 | Accuracy    | 83.5  | 84.1    | 70.5   | 85.9   | **87.1** |
 
-[![Fig. 6](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/10/image015.jpg)](http://serre-lab.clps.brown.edu/resource/computational-mechanisms-of-color-processing/image015/)  
+[![Fig. 6](/images/resources/color/image015.jpg)](/resources/computational-mechanisms-of-color-processingimage015/)  
 **Fig. 6.** Classification performance of SO/DO/gray-GIST on 8-category scenes dataset broken down by category.
 
 ## Contour detection
 
-[![Fig. 7](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/10/image016-1024x382.jpg)](http://serre-lab.clps.brown.edu/resource/computational-mechanisms-of-color-processing/image016/)  
+[![Fig. 7](/images/resources/color/image016-1024x382.jpg)](/resources/computational-mechanisms-of-color-processingimage016/)  
 **Fig. 7.** Contour detection on BSDS500. (A) Representative examples obtained using the original texton maps and our proposed color extensions. From left to right: original images, color-texton map (SOTG) and texton map (TG). (B) Precision-recall curves on BSDS500, comparing the original grayscale texture channel with the full Berkeley system [7] which combines brightness, color, and texture cues against our color-texture cue.
 
 ## Source code
