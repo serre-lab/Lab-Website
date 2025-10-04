@@ -86,8 +86,8 @@ export function Home() {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <Title order={2} className="featured-title">Explore Our Interactive Tools</Title>
-        <Text className="featured-subtitle">
+        <Title order={2} className="section-title">Explore Our Interactive Tools</Title>
+        <Text className="body-text featured-subtitle">
           Try our research tools, games, and open-source software to advance vision science
         </Text>
         
@@ -210,7 +210,7 @@ export function Home() {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <Title order={2} className="highlights-title">Selected Recent Publications</Title>
+        <Title order={2} className="section-title">Selected Recent Publications</Title>
         <div className="highlights-grid">
           <div className="highlight-card">
             <Text className="highlight-journal">arXiv (2025)</Text>

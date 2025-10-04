@@ -59,15 +59,6 @@
     gap: 1.5rem;
   }
   
-  .section-title {
-    margin-top: 2rem;
-    transition: color 0.3s ease;
-  }
-
-  .section-title:hover {
-    color: #3498db;
-  }
-
   .student-cards-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -222,18 +213,11 @@
     padding: 0 2rem;
   }
 
-  .featured-title {
-    text-align: center;
-    margin-bottom: 0.5rem;
-    font-size: 2rem;
-    color: #2c3e50;
-  }
-
   .featured-subtitle {
-    text-align: center;
+    text-align: left;
     color: var(--color-text-secondary);
-    font-size: 1.1rem;
-    margin-bottom: 2.5rem;
+    font-size: 1rem;
+    margin: 0.5rem 0 2rem 0;
   }
 
   .featured-grid {
@@ -320,13 +304,6 @@
     max-width: 800px;
     margin: 3rem auto;
     padding: 0 2rem;
-  }
-
-  .highlights-title {
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    color: #2c3e50;
   }
 
   .highlights-grid {
