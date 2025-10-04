@@ -218,7 +218,7 @@
   .featured-projects-section {
     width: 100%;
     max-width: 800px;
-    margin: 0.75rem auto 1.5rem auto; /* reduce whitespace above section */
+    margin: 0.75rem auto 1.5rem auto; /* consistent spacing with highlights */
     padding: 0 2rem;
   }
 
@@ -239,7 +239,7 @@
   .featured-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.25rem;
+    gap: 1.25rem; /* keep in sync with highlights-grid */
   }
 
   .featured-card {
@@ -318,14 +318,22 @@
   .recent-highlights-section {
     width: 100%;
     max-width: 800px;
-    margin: 3rem auto;
+    margin: 0.75rem auto 1.5rem auto; /* match featured-projects-section */
     padding: 0 2rem;
+  }
+
+  /* Tighten heading spacing within both sections for consistency */
+  .featured-projects-section .section-title,
+  .recent-highlights-section .section-title {
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.4rem;
   }
 
   .highlights-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 1.25rem; /* match featured-grid */
   }
 
   .highlight-card {
