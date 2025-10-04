@@ -45,8 +45,8 @@ export default function People() {
       {/* Brown Section */}
       {brownPeople.length > 0 && (
         <>
-          <Title order={2} className="people-section-title">
-            Brown University Team ({brownPeople.length})
+          <Title order={2} className="section-title">
+            Brown Team ({brownPeople.length})
           </Title>
           
           {/* First row: Thomas and Drew */}
