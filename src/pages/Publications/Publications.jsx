@@ -8,8 +8,8 @@ import { FaMicrophone, FaFilePdf } from "react-icons/fa";
 // import { IconSearch } from "@tabler/icons-react"; // optional icon
 
 export function Publications() {
-    // const [searchQuery, setSearchQuery] = useState("");
-    // const [selectedYear, setSelectedYear] = useState("All");
+    const [searchQuery, setSearchQuery] = useState("");
+    const [selectedYear, setSelectedYear] = useState("All");
 
     // Function to get the official publication URL (journal/conference/OpenReview)
     const getOfficialUrl = (publication) => {
@@ -45,35 +45,36 @@ export function Publications() {
         return null;
     };
 
-    // const handleSearchChange = (e) => {
-    //     setSearchQuery(e.target.value.toLowerCase());
-    // };
+    const handleSearchChange = (e) => {
+        setSearchQuery(e.target.value.toLowerCase());
+    };
 
-    // const handleYearChange = (e) => {
-    //     setSelectedYear(e.target.value);
-    // };
+    const handleYearChange = (value) => {
+        setSelectedYear(value || "All");
+    };
 
-    // const filterPublications = () => {
-    //     const filteredData = {};
-    //     Object.entries(publicationsData).forEach(([year, publications]) => {
-    //         if (selectedYear !== "All" && year !== selectedYear) return;
+    const filterPublications = () => {
+        const filteredData = {};
+        Object.entries(publicationsData).forEach(([year, publications]) => {
+            if (selectedYear !== "All" && year !== selectedYear) return;
 
-    //         const filteredPublications = publications.filter(
-    //             (publication) =>
-    //                 publication.title.toLowerCase().includes(searchQuery) ||
-    //                 publication.authors.toLowerCase().includes(searchQuery)
-    //         );
+            const filteredPublications = publications.filter(
+                (publication) =>
+                    publication.title.toLowerCase().includes(searchQuery) ||
+                    publication.authors.toLowerCase().includes(searchQuery) ||
+                    (publication.journal && publication.journal.toLowerCase().includes(searchQuery))
+            );
 
-    //         if (filteredPublications.length > 0) {
-    //             filteredData[year] = filteredPublications;
-    //         }
-    //     });
-    //     return filteredData;
-    // };
+            if (filteredPublications.length > 0) {
+                filteredData[year] = filteredPublications;
+            }
+        });
+        return filteredData;
+    };
 
-    // const filteredPublications = filterPublications();
+    const filteredPublications = filterPublications();
 
-    const sortedYears = Object.keys(publicationsData).sort((a, b) => {
+    const sortedYears = Object.keys(filteredPublications).sort((a, b) => {
         if (a === "Work in progress") return -1;
         if (b === "Work in progress") return 1;
         return parseInt(b) - parseInt(a);
@@ -91,28 +92,33 @@ export function Publications() {
     return (
         <div className="publications-container">
             <Title order={1} className="page-title">Publications</Title>
-            {/* <div className="filter-section">
-  <div className="search-and-dropdown">
-    <TextInput
-      placeholder="Search by title or author..."
-      icon={<FaMicrophone size={48} />}
-      value={searchQuery}
-      onChange={handleSearchChange}
-      className="search-bar"
-    />
-    <Select
-      className="year-dropdown"
-      data={["All", ...sortedYears]}
-      value={selectedYear}
-      onChange={(val) => setSelectedYear(val || "All")}
-      withinPortal
-    />
-  </div>
-</div> */}
+            <div className="filter-section">
+                <div className="search-and-dropdown">
+                    <TextInput
+                        placeholder="Search by title, author, or journal..."
+                        value={searchQuery}
+                        onChange={handleSearchChange}
+                        className="search-bar"
+                        size="md"
+                    />
+                    <Select
+                        className="year-dropdown"
+                        data={["All", ...Object.keys(publicationsData).sort((a, b) => {
+                            if (a === "Work in progress") return -1;
+                            if (b === "Work in progress") return 1;
+                            return parseInt(b) - parseInt(a);
+                        })]}
+                        value={selectedYear}
+                        onChange={handleYearChange}
+                        placeholder="Filter by year"
+                        size="md"
+                    />
+                </div>
+            </div>
             <div className="results-section">
                 {sortedYears.map(
                     (year, i) =>
-                        publicationsData[year] && (
+                        filteredPublications[year] && (
                             <motion.div
                                 key={year}
                                 className="publication-year-block"
@@ -123,7 +129,7 @@ export function Publications() {
                             >
                                 <Title className="year-heading">{year}</Title>
                                 <ul style={{ listStyle: "none", padding: 0 }}>
-                                    {publicationsData[year].map((publication, index) => (
+                                    {filteredPublications[year].map((publication, index) => (
                                         <motion.li
                                             key={index}
                                             className="publication-item"
