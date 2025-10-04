@@ -227,7 +227,7 @@ export function Home() {
           </div>
 
           <div className="highlight-card">
-            <Text className="highlight-journal">arXiv preprint (2025)</Text>
+            <Text className="highlight-journal">arXiv (2025)</Text>
             <Title order={4} className="highlight-title">
               <a href="https://arxiv.org/abs/2504.16940" target="_blank" rel="noopener noreferrer">
                 From Prediction to Understanding: Will AI Foundation Models Transform Brain Science?
@@ -244,6 +244,26 @@ export function Home() {
               </a>
             </Title>
             <Text className="highlight-authors">A. Ahuja et al.</Text>
+          </div>
+
+          <div className="highlight-card">
+            <Text className="highlight-journal">Histopathology (2024)</Text>
+            <Title order={4} className="highlight-title">
+              <a href="https://onlinelibrary.wiley.com/doi/10.1111/his.15180" target="_blank" rel="noopener noreferrer">
+                Deceptive learning in histopathology
+              </a>
+            </Title>
+            <Text className="highlight-authors">S. Shahamatdar, D. Saeed-Vafa, D. Linsley, F. Khalil, K. Lovinger, L. Li, H. McLeod, S. Ramachandran, T. Serre</Text>
+          </div>
+
+          <div className="highlight-card">
+            <Text className="highlight-journal">arXiv (2025)</Text>
+            <Title order={4} className="highlight-title">
+              <a href="https://arxiv.org/abs/2504.16940" target="_blank" rel="noopener noreferrer">
+                Better artificial intelligence does not mean better models of biology
+              </a>
+            </Title>
+            <Text className="highlight-authors">D. Linsley, P. Feng & T. Serre</Text>
           </div>
         </div>
         <div style={{ textAlign: "center", marginTop: "1.5rem" }}>
