@@ -1,0 +1,91 @@
+/* 
+ * Global Typography Standards
+ * Consistent fonts, sizes, colors, and weights across all pages
+ */
+
+/* Main page titles (H1) */
+.page-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  letter-spacing: -0.5px;
+}
+
+/* Section titles (H2) */
+.section-title {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  transition: color 0.3s ease;
+}
+
+.section-title:hover {
+  color: #3498db;
+}
+
+/* Subsection titles (H3) */
+.subsection-title {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* Card titles (H4) */
+.card-title {
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* Body text */
+.body-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* Secondary text */
+.secondary-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* Link colors */
+.link-primary {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.link-primary:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .subsection-title {
+    font-size: 1.3rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+}
+
