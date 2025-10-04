@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Publications.css";
 import { Anchor, Text, Title, TextInput, Select, Group } from "@mantine/core";
 import publicationsData from "../../data/publications_by_year.json";
+import { getOfficialPublicationUrl } from "../../data/officialPublicationUrls";
 import { motion } from "framer-motion";
 import { FaMicrophone, FaFilePdf } from "react-icons/fa";
 // import { IconSearch } from "@tabler/icons-react"; // optional icon
@@ -10,17 +11,35 @@ export function Publications() {
     // const [searchQuery, setSearchQuery] = useState("");
     // const [selectedYear, setSelectedYear] = useState("All");
 
-    // Function to check if a PDF exists for a publication
+    // Function to get the official publication URL (journal/conference/OpenReview)
+    const getOfficialUrl = (publication) => {
+        // First try to get from our mapping
+        const mappedUrl = getOfficialPublicationUrl(publication.title);
+        if (mappedUrl) {
+            return mappedUrl;
+        }
+        
+        // If URL is not a PDF and not our internal publications page, use it as official URL
+        if (publication.url && 
+            !publication.url.endsWith('.pdf') && 
+            !publication.url.includes('/papers/') &&
+            publication.url !== '/publications') {
+            return publication.url;
+        }
+        
+        return null;
+    };
+
+    // Function to get the local PDF path
     const getPdfPath = (publication) => {
-        // If the URL is already a PDF path, use it
+        // If the URL is a PDF path, use it
         if (publication.url && publication.url.endsWith('.pdf')) {
             return publication.url;
         }
         
-        // Try to find PDF by extracting filename from title or other methods
-        // For now, we'll check if the URL points to a PDF in our papers directory
-        if (publication.url && publication.url.includes('/papers/')) {
-            return publication.url;
+        // Check if there's a separate PDF path
+        if (publication.pdfPath) {
+            return publication.pdfPath;
         }
         
         return null;
@@ -115,14 +134,20 @@ export function Publications() {
                                             <Group align="flex-start" gap="sm">
                                                 <div style={{ flex: 1 }}>
                                                     <Title order={1} className="publication-title">
-                                                        <Anchor
-                                                            href={publication.url}
-                                                            target="_blank"
-                                                            rel="noopener noreferrer"
-                                                            className="publication-link"
-                                                        >
-                                                            {publication.title}
-                                                        </Anchor>
+                                                        {getOfficialUrl(publication) ? (
+                                                            <Anchor
+                                                                href={getOfficialUrl(publication)}
+                                                                target="_blank"
+                                                                rel="noopener noreferrer"
+                                                                className="publication-link"
+                                                            >
+                                                                {publication.title}
+                                                            </Anchor>
+                                                        ) : (
+                                                            <span className="publication-title-text">
+                                                                {publication.title}
+                                                            </span>
+                                                        )}
                                                     </Title>
                                                     {publication.journal && (
                                                         <Text className="publication-journal">
