@@ -19,7 +19,7 @@
             "title": "PhD student",
             "university": "Brown",
             "imagePath": "people/alekh-ashok.jpg",
-            "description": "Alekh Ashok is a PhD student in Computer Science at Brown University. His research focuses on computational models of visual perception and cognition, with particular interest in understanding how biological and artificial systems process visual information. Personal website: https://alekhka.github.io/"
+            "description": "Alekh Ashok is a PhD student at Brown University working at the intersection of computer vision, neuroscience, and cognitive science. His research focuses on building biologically-inspired artificial vision models, developing training algorithms, and collecting neural data (ECoG). He is particularly interested in recurrent neural network models for vision. Prior to his PhD, he spent two years as a researcher at Brown and worked as a software engineer at Walmart's R&D division. He received his Bachelor of Engineering with a focus on electrical and computer science, where he worked on machine learning-based image compression. Personal website: https://alekhka.github.io/"
         },
         {
             "fullName": "Sixuan Chen",
