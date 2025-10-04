@@ -1,14 +1,30 @@
 import React, { useState } from "react";
 import "./Publications.css";
-import { Anchor, Text, Title, TextInput, Select } from "@mantine/core";
+import { Anchor, Text, Title, TextInput, Select, Group } from "@mantine/core";
 import publicationsData from "../../data/publications_by_year.json";
 import { motion } from "framer-motion";
-import { FaMicrophone } from "react-icons/fa";
+import { FaMicrophone, FaFilePdf } from "react-icons/fa";
 // import { IconSearch } from "@tabler/icons-react"; // optional icon
 
 export function Publications() {
     // const [searchQuery, setSearchQuery] = useState("");
     // const [selectedYear, setSelectedYear] = useState("All");
+
+    // Function to check if a PDF exists for a publication
+    const getPdfPath = (publication) => {
+        // If the URL is already a PDF path, use it
+        if (publication.url && publication.url.endsWith('.pdf')) {
+            return publication.url;
+        }
+        
+        // Try to find PDF by extracting filename from title or other methods
+        // For now, we'll check if the URL points to a PDF in our papers directory
+        if (publication.url && publication.url.includes('/papers/')) {
+            return publication.url;
+        }
+        
+        return null;
+    };
 
     // const handleSearchChange = (e) => {
     //     setSearchQuery(e.target.value.toLowerCase());
@@ -96,24 +112,39 @@ export function Publications() {
                                             animate="visible"
                                             variants={fadeUp}
                                         >
-                                            <Title order={1} className="publication-title">
-                                                <Anchor
-                                                    href={publication.url}
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
-                                                    className="publication-link"
-                                                >
-                                                    {publication.title}
-                                                </Anchor>
-                                            </Title>
-                                            {publication.journal && (
-                                                <Text className="publication-journal">
-                                                    {publication.journal}
-                                                </Text>
-                                            )}
-                                            <Text className="publication-authors">
-                                                {publication.authors}
-                                            </Text>
+                                            <Group align="flex-start" gap="sm">
+                                                <div style={{ flex: 1 }}>
+                                                    <Title order={1} className="publication-title">
+                                                        <Anchor
+                                                            href={publication.url}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            className="publication-link"
+                                                        >
+                                                            {publication.title}
+                                                        </Anchor>
+                                                    </Title>
+                                                    {publication.journal && (
+                                                        <Text className="publication-journal">
+                                                            {publication.journal}
+                                                        </Text>
+                                                    )}
+                                                    <Text className="publication-authors">
+                                                        {publication.authors}
+                                                    </Text>
+                                                </div>
+                                                {getPdfPath(publication) && (
+                                                    <Anchor
+                                                        href={getPdfPath(publication)}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className="pdf-icon-link"
+                                                        title="Download PDF"
+                                                    >
+                                                        <FaFilePdf size={20} color="#e74c3c" />
+                                                    </Anchor>
+                                                )}
+                                            </Group>
                                         </motion.li>
                                     ))}
                                 </ul>
