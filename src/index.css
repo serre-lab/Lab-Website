@@ -1,33 +1,37 @@
 @import url("https://use.typekit.net/zoa2byl.css");
+@import "./styles/typography.css";
 
 :root {
-    font-family:  Inter, futura-pt, system-ui, Avenir, Helvetica, Arial,
-        sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, system-ui, sans-serif;
     line-height: 1.5;
     font-weight: 400;
 
-    /* color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424; */
+    /* Color variables for consistency */
+    --color-primary: #3498db;
+    --color-primary-dark: #2980b9;
+    --color-text-primary: #2c3e50;
+    --color-text-secondary: #666;
+    --color-text-tertiary: #444;
+    --color-link: #3498db;
+    --color-link-hover: #2980b9;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-/* #008abf is blue on website */
 
 a {
     font-weight: 500;
-    color: #008abf;
+    color: var(--color-link);
     text-decoration: inherit;
 }
 a:hover {
-    color: #008abf;
+    color: var(--color-link-hover);
 }
 
 h2, h3, h4, h5, h6 {
-  color: #008abf;
+  color: var(--color-text-primary);
 }
 
 body {
