@@ -19,7 +19,7 @@
             "title": "PhD student",
             "university": "Brown",
             "imagePath": "people/alekh-ashok.jpg",
-            "description": "https://alekhka.github.io/"
+            "description": "Alekh Ashok is a PhD student in Computer Science at Brown University. His research focuses on computational models of visual perception and cognition, with particular interest in understanding how biological and artificial systems process visual information. Personal website: https://alekhka.github.io/"
         },
         {
             "fullName": "Sixuan Chen",
@@ -47,14 +47,14 @@
             "title": "PhD student",
             "university": "Brown",
             "imagePath": "people/peisen-zhou.jpg",
-            "description": ""
+            "description": "Peisen Zhou is a PhD student in Cognitive, Linguistic, and Psychological Sciences at Brown University. His research interests include computational neuroscience and visual cognition, with a focus on understanding the neural mechanisms underlying visual perception."
         },
         {
             "fullName": "Abdullah Rashed Ahmed",
             "title": "PhD student",
             "university": "Brown",
             "imagePath": "people/abdullah-rashed-ahmed.jpg",
-            "description": ""
+            "description": "Abdullah Rashed Ahmed is a PhD student at Brown University working on computational models of vision and artificial intelligence. His research explores the intersection of deep learning and cognitive neuroscience to better understand visual information processing."
         },
         {
             "fullName": "Michael Lepori",
@@ -75,7 +75,7 @@
             "title": "MSc student",
             "university": "Brown",
             "imagePath": "people/xizheng-yu.jpg",
-            "description": ""
+            "description": "Xizheng Yu is a Master's student at Brown University. His research interests include computer vision and machine learning, with a focus on developing computational approaches to understand visual intelligence."
         },
         {
             "fullName": "Victor Boutin",
