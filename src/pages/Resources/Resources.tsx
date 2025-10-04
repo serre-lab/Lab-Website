@@ -23,7 +23,7 @@ const VideoCard = ({ resource }: { resource: { title: string; url: string } }) =
     return (
         <Card 
             shadow="sm" 
-            padding="sm" 
+            padding="xs" 
             radius="md" 
             withBorder 
             className="video-card"
@@ -34,20 +34,22 @@ const VideoCard = ({ resource }: { resource: { title: string; url: string } }) =
         >
             <Card.Section>
                 {youtubeId ? (
-                    <Image
-                        src={`https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`}
-                        height={180}
-                        alt={resource.title}
-                    />
+                    <div className="video-thumbnail-wrapper">
+                        <Image
+                            src={`https://img.youtube.com/vi/${youtubeId}/mqdefault.jpg`}
+                            alt={resource.title}
+                            fit="cover"
+                        />
+                    </div>
                 ) : isCBMM ? (
                     <div className="video-placeholder">
-                        <IconVideo size={48} />
-                        <Text size="sm" c="dimmed">CBMM Video</Text>
+                        <IconVideo size={32} />
+                        <Text size="xs" c="dimmed">CBMM Video</Text>
                     </div>
                 ) : null}
             </Card.Section>
-            <Group justify="space-between" mt="md" mb="xs">
-                <Text fw={500} size="sm" lineClamp={2}>
+            <Group justify="space-between" mt="xs" mb="xs">
+                <Text fw={500} size="xs" lineClamp={2}>
                     {resource.title}
                 </Text>
             </Group>
