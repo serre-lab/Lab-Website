@@ -1,0 +1,99 @@
+<!--
+COPYRIGHT 2012
+Developed By Carl Olsson and Eugene Park
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Research in the Serre lab focuses on understanding the brain mechanisms underlying the recognition of objects and complex visual scenes using a combination of behavioral, imaging and physiological techniques.">
+<meta name="keywords" content="thomas serre, computational neuroscience, computational models, visual cortex, object recognition, attention, bayesian inference">
+<meta name="robots" content="index, follow">
+<meta name="googlebot" content="index, follow">
+<title>Serre Lab   &raquo; News</title>
+<link href="https://serre-lab.clps.brown.edu/wp-content/themes/serre_lab/css/reset.css" rel="stylesheet" type="text/css" />
+<link href="https://serre-lab.clps.brown.edu/wp-content/themes/serre_lab/css/stylesheet.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="https://serre-lab.clps.brown.edu/wp-content/themes/serre_lab/js/jquery-1.7.2.min.js"></script>
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Serre Lab &raquo; Feed" href="https://serre-lab.clps.brown.edu/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Serre Lab &raquo; Comments Feed" href="https://serre-lab.clps.brown.edu/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Serre Lab &raquo; News Comments Feed" href="https://serre-lab.clps.brown.edu/news-page/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/serre-lab.clps.brown.edu\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.1.19"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])?!1:!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55358,56760,9792,65039],[55358,56760,8203,9792,65039])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://serre-lab.clps.brown.edu/wp-includes/css/dist/block-library/style.min.css?ver=5.1.19' type='text/css' media='all' />
+<link rel='https://api.w.org/' href='https://serre-lab.clps.brown.edu/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://serre-lab.clps.brown.edu/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://serre-lab.clps.brown.edu/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.1.19" />
+<link rel="canonical" href="https://serre-lab.clps.brown.edu/news-page/" />
+<link rel='shortlink' href='https://serre-lab.clps.brown.edu/?p=11' />
+<link rel="alternate" type="application/json+oembed" href="https://serre-lab.clps.brown.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fserre-lab.clps.brown.edu%2Fnews-page%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://serre-lab.clps.brown.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fserre-lab.clps.brown.edu%2Fnews-page%2F&#038;format=xml" />
+<link rel="icon" href="https://serre-lab.clps.brown.edu/wp-content/uploads/2016/05/cropped-Serrelab-logo-32x32.gif" sizes="32x32" />
+<link rel="icon" href="https://serre-lab.clps.brown.edu/wp-content/uploads/2016/05/cropped-Serrelab-logo-192x192.gif" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://serre-lab.clps.brown.edu/wp-content/uploads/2016/05/cropped-Serrelab-logo-180x180.gif" />
+<meta name="msapplication-TileImage" content="https://serre-lab.clps.brown.edu/wp-content/uploads/2016/05/cropped-Serrelab-logo-270x270.gif" />
+<style id="sccss">.simcal-default-calendar-list {
+  font-family: Georgia,"Times New Roman",Times,serif;
+  line-height: 15px;
+  color: #666666;
+  margin-top: 11px;
+  padding: 0;
+}
+
+.simcal-default-calendar-list ul.simcal-events {
+  margin: 0;
+}
+
+.simcal-default-calendar-list ul.simcal-events li.simcal-event {
+  margin: 0;
+}</style></head>
+<body>
+	<div id="page_wrapper">
+    	<div class="masthead">
+        	<div class="fixed_width_masthead">
+			<h1 class="page_title">
+            	<a href="https://serre-lab.clps.brown.edu/home/" class="title"><img src="https://serre-lab.clps.brown.edu/wp-content/themes/serre_lab/images/masthead_title.png"/></a>
+            	<span class="sub_title">A Brown University Research Group</span>
+            </h1>
+            <div class="nav">
+                <ul>
+                                        <li id="menu-item-391" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-391"><a href="https://serre-lab.clps.brown.edu/research/">Research</a></li>
+<li id="menu-item-390" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-390"><a href="https://serre-lab.clps.brown.edu/publications/">Publications</a></li>
+<li id="menu-item-392" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-392"><a href="https://serre-lab.clps.brown.edu/people/">People</a></li>
+<li id="menu-item-389" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-389"><a href="https://serre-lab.clps.brown.edu/resources/">Resources</a></li>
+<li id="menu-item-393" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-11 current_page_item menu-item-393"><a href="https://serre-lab.clps.brown.edu/news-page/" aria-current="page">News</a></li>
+                </ul>
+         	</div>
+            </div>
+            <div class="nav_bar"></div>
+        </div><script type="text/javascript">
+	document.getElementById("news_link").className += " selected";
+</script>
+<div class="content">
+        	<div class="content_wrapper">
+            	<h1 class="blurb">In the News</h1>
+                <div class="high_horizontal_line"></div>
+                <div class="news_piece"><a class="news_image" href="https://www.brown.edu/carney/spotlights/michael-lepori"><img width="200" height="133" src="https://serre-lab.clps.brown.edu/wp-content/uploads/2024/01/light_background_serre_cropped.jpeg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" /></a><div class="news_text"><a class="news_title" href="https://www.brown.edu/carney/spotlights/michael-lepori">Compositionally in Neural Networks</a><h2 class="news_source">Carney Institute of Brain Science</h2><p class="news_blurb">PhD student Michael Lepori discusses new approaches to studying compositionality in neural network models in a recent Carney Community Spotlight.</p><h2 class="date">Posted January, 2024</h2></div><div class="clear"></div></div><div class="news_piece"><a class="news_image" href="https://www.brown.edu/carney/news/2019/05/20/finding-art-artificial-intelligence"><img width="200" height="150" src="https://serre-lab.clps.brown.edu/wp-content/uploads/2019/05/RISD_Brown-200x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" srcset="https://serre-lab.clps.brown.edu/wp-content/uploads/2019/05/RISD_Brown-200x150.jpg 200w, https://serre-lab.clps.brown.edu/wp-content/uploads/2019/05/RISD_Brown-300x225.jpg 300w, https://serre-lab.clps.brown.edu/wp-content/uploads/2019/05/RISD_Brown.jpg 480w" sizes="(max-width: 200px) 100vw, 200px" /></a><div class="news_text"><a class="news_title" href="https://www.brown.edu/carney/news/2019/05/20/finding-art-artificial-intelligence">Finding the art in artificial intelligence</a><h2 class="news_source">Brown News Office</h2><p class="news_blurb">When design and neural networks mix the results are both practical and innovative.</p><h2 class="date">Posted May, 2019</h2></div><div class="clear"></div></div><div class="news_piece"><a class="news_image" href="https://news.brown.edu/articles/2018/09/illusions"><img width="200" height="123" src="https://serre-lab.clps.brown.edu/wp-content/uploads/2018/09/Illusions-200x123.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" srcset="https://serre-lab.clps.brown.edu/wp-content/uploads/2018/09/Illusions-200x123.jpg 200w, https://serre-lab.clps.brown.edu/wp-content/uploads/2018/09/Illusions-300x185.jpg 300w, https://serre-lab.clps.brown.edu/wp-content/uploads/2018/09/Illusions.jpg 580w" sizes="(max-width: 200px) 100vw, 200px" /></a><div class="news_text"><a class="news_title" href="https://news.brown.edu/articles/2018/09/illusions">Brown researchers teach computers to see optical illusions</a><h2 class="news_source">Brown News Office</h2><p class="news_blurb">By making a neural-network computer model that can be fooled by optical illusions like humans, the researchers advanced knowledge of the human visual system and may help improve artificial vision.</p><h2 class="date">Posted September, 2018</h2></div><div class="clear"></div></div><div class="news_piece"><a class="news_image" href="http://news.brown.edu/articles/2018/07/same-different"><img width="152" height="150" src="https://serre-lab.clps.brown.edu/wp-content/uploads/2018/07/samedifferentcrop-152x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" srcset="https://serre-lab.clps.brown.edu/wp-content/uploads/2018/07/samedifferentcrop-152x150.jpg 152w, https://serre-lab.clps.brown.edu/wp-content/uploads/2018/07/samedifferentcrop-300x295.jpg 300w, https://serre-lab.clps.brown.edu/wp-content/uploads/2018/07/samedifferentcrop.jpg 580w" sizes="(max-width: 152px) 100vw, 152px" /></a><div class="news_text"><a class="news_title" href="http://news.brown.edu/articles/2018/07/same-different">Research identifies key weakness in modern computer vision systems</a><h2 class="news_source">Brown News Office</h2><p class="news_blurb">In a finding that could point the way toward better computer vision systems, Brown University researchers show why computers are so bad at seeing when one thing is not like another.</p><h2 class="date">Posted July, 2018</h2></div><div class="clear"></div></div><div class="news_piece"><a class="news_image" href="https://news.brown.edu/articles/2018/03/als"><img width="200" height="133" src="https://serre-lab.clps.brown.edu/wp-content/uploads/2018/03/download-200x133.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" srcset="https://serre-lab.clps.brown.edu/wp-content/uploads/2018/03/download-200x133.jpg 200w, https://serre-lab.clps.brown.edu/wp-content/uploads/2018/03/download-300x199.jpg 300w, https://serre-lab.clps.brown.edu/wp-content/uploads/2018/03/download-768x510.jpg 768w, https://serre-lab.clps.brown.edu/wp-content/uploads/2018/03/download-1024x681.jpg 1024w, https://serre-lab.clps.brown.edu/wp-content/uploads/2018/03/download.jpg 1300w" sizes="(max-width: 200px) 100vw, 200px" /></a><div class="news_text"><a class="news_title" href="https://news.brown.edu/articles/2018/03/als">Focus on early stage of illness may be key to treating ALS, study suggests</a><h2 class="news_source">Brown News Office</h2><p class="news_blurb">Many inhibitory neurons were lost early in the development of ALS, new research shows, which is in sharp contrast to other degenerative diseases.</p><h2 class="date">Posted March, 2018</h2></div><div class="clear"></div></div><div class="news_piece"><a class="news_image" href="http://www.browndailyherald.com/2018/01/26/u-conference-explores-future-artificial-intelligence/"><img width="175" height="150" src="https://serre-lab.clps.brown.edu/wp-content/uploads/2018/01/AI-1-650x867-e1517314081392-175x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" srcset="https://serre-lab.clps.brown.edu/wp-content/uploads/2018/01/AI-1-650x867-e1517314081392-175x150.jpg 175w, https://serre-lab.clps.brown.edu/wp-content/uploads/2018/01/AI-1-650x867-e1517314081392-300x256.jpg 300w, https://serre-lab.clps.brown.edu/wp-content/uploads/2018/01/AI-1-650x867-e1517314081392.jpg 613w" sizes="(max-width: 175px) 100vw, 175px" /></a><div class="news_text"><a class="news_title" href="http://www.browndailyherald.com/2018/01/26/u-conference-explores-future-artificial-intelligence/">University conference explores future of artificial intelligence</a><h2 class="news_source">Brown Daily Herald</h2><p class="news_blurb">Interdisciplinary workshop brings together professors, students from diverse academic fields</p><h2 class="date">Posted January, 2018</h2></div><div class="clear"></div></div><div class="pagination"><span class="page_text">Page 1 of 4</span><span class="page_links"><span class='current'>1</span><a href='https://serre-lab.clps.brown.edu/news-page/page/2/' class='inactive' >2</a><a href='https://serre-lab.clps.brown.edu/news-page/page/2/'>Next &rsaquo;</a></span></div>
+            </div>
+        </div>
+    </div>
+    <script type='text/javascript' src='https://serre-lab.clps.brown.edu/wp-includes/js/wp-embed.min.js?ver=5.1.19'></script>
+</body>
+</html>
