@@ -1,6 +1,7 @@
 import { Title, Anchor, Text, TextInput, Card, Image, Button, Group } from "@mantine/core";
 import { useState } from "react";
 import scicommData from "../../data/scicomm.json";
+import "./SciComm.css";
 
 // Add type for scicommData items to include image
 type SciCommItem = {
@@ -11,44 +12,45 @@ type SciCommItem = {
 };
 
 export function SciComm() {
-    const [search, setSearch] = useState("");
+    const [searchQuery, setSearchQuery] = useState("");
 
-    const filteredData = (scicommData as SciCommItem[]).filter(
-        (item) =>
-            item.title.toLowerCase().includes(search.toLowerCase()) ||
-            item.blurb.toLowerCase().includes(search.toLowerCase())
-    );
+    const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setSearchQuery(e.target.value.toLowerCase());
+    };
+
+    const filterMedia = () => {
+        if (!searchQuery.trim()) {
+            return scicommData as SciCommItem[];
+        }
+
+        // Create word boundary regex for exact word matching
+        const searchRegex = new RegExp(`\\b${searchQuery.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i');
+        
+        return (scicommData as SciCommItem[]).filter(
+            (item) =>
+                searchRegex.test(item.title) ||
+                searchRegex.test(item.blurb)
+        );
+    };
+
+    const filteredData = filterMedia();
 
     return (
-        <div>
-            <div
-                style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    marginBottom: 24,
-                    paddingTop: 32
-                }}
-            >
-                <TextInput
-                    placeholder="Search news..."
-                    value={search}
-                    onChange={(e) => setSearch(e.currentTarget.value)}
-                    style={{ width: "80%" }}
-                />
-            </div>
+        <div className="scicomm-container">
             <Title order={1} className="page-title">Media</Title>
-            <div
-                style={{
-                    display: "grid",
-                    gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))",
-                    gap: "24px",
-                    width: "85vw",
-                    maxWidth: 1200,
-                    margin: "0 auto",
-                    paddingLeft: 0,
-                    paddingRight: 0,
-                }}
-            >
+            <div className="filter-section">
+                <div className="search-and-dropdown">
+                    <TextInput
+                        placeholder="Search by title or content..."
+                        value={searchQuery}
+                        onChange={handleSearchChange}
+                        className="search-bar"
+                        size="md"
+                    />
+                </div>
+            </div>
+            <div className="results-section">
+                <div className="media-grid">
                 {filteredData.map((item, idx) => (
                     <Card
                         key={idx}
@@ -89,7 +91,7 @@ export function SciComm() {
                                     alt={item.title}
                                     height={180}
                                     fit="cover"
-                                    style={{ objectFit: "cover" }}
+                                    style={{ objectFit: "cover", objectPosition: "center top" }}
                                 />
                             </Card.Section>
                         )}
@@ -117,6 +119,7 @@ export function SciComm() {
                         </Button>
                     </Card>
                 ))}
+                </div>
             </div>
 
             {/* --- Previous list-based rendering version ---

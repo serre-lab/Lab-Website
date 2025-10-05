@@ -7,7 +7,7 @@
             },
             {
                 "title": "HMDB51: Human Motion Database",
-                "url": "/resources/hmdb-a-large-human-motion-database"
+                "url": "/hmdb51.html"
             },
             {
                 "title": "The Breakfast Actions Dataset",
@@ -16,37 +16,45 @@
             {
                 "title": "Multi-Cue Boundary Detection Dataset",
                 "url": "/resources/the-multi-cue-boundary-detection-dataset"
-            },
-            {
-                "title": "Neural Harmonizer Data",
-                "url": "https://serre-lab.github.io/neural_harmonizer/#data-release"
             }
         ],
-        "Tools & Software": [
+        "Demos and Tutorials": [
             {
-                "title": "ClickMe",
-                "url": "https://clickme.clps.brown.edu/"
+                "title": "ObjectLens",
+                "url": "https://serre-lab.github.io/ObjectLens/"
             },
             {
-                "title": "Lens",
-                "url": "https://serre-lab.github.io/Lens/"
-            },
-            {
-                "title": "Harmonization",
-                "url": "https://serre-lab.github.io/Harmonization/"
-            },
-            {
-                "title": "Neural Harmonizer",
-                "url": "https://serre-lab.github.io/neural_harmonizer/"
+                "title": "LeafLens",
+                "url": "https://leaf-lens.visualize.ai/"
             },
             {
                 "title": "hGRU Tutorials",
                 "url": "/resources/hgru-tutorials"
             },
             {
-                "title": "Lab GitHub Repository",
-                "url": "https://github.com/serre-lab"
+                "title": "Panoptic segmentation with hGRU",
+                "url": "https://colab.research.google.com/drive/13q2pWR-32q6QfBRcz3fyihxGomZ3P4Ys?usp=sharing"
             }
+        ],
+        "Tools & Software": [
+            {
+                "title": "Harmonization",
+                "url": "https://serre-lab.github.io/Harmonization/"
+            },
+            {
+                "title": "Xplique",
+                "url": "https://github.com/deel-ai/xplique"
+            },
+            {
+                "title": "Horama",
+                "url": "https://github.com/serre-lab/Horama"
+            },
+            {
+                "title": "Neuroscience feedback models (PyTorch)",
+                "url": "https://github.com/serre-lab/serrelabmodels"
+            }
+        ],
+        "Cognitive Benchmark Tests": [
         ],
         "Videos & Talks": [
             {
@@ -68,3 +76,4 @@
         ]
     }
 }
+
