@@ -11,7 +11,7 @@
             },
             {
                 "title": "The Breakfast Actions Dataset",
-                "url": "/resources/the-breakfast-actions-dataset"
+                "url": "/breakfast-actions-dataset.html"
             },
             {
                 "title": "Multi-Cue Boundary Detection Dataset",
@@ -20,11 +20,11 @@
         ],
         "Demos and Tutorials": [
             {
-                "title": "ObjectLens",
+                "title": "ObjectLENS",
                 "url": "https://serre-lab.github.io/ObjectLens/"
             },
             {
-                "title": "LeafLens",
+                "title": "LeafLENS",
                 "url": "https://leaf-lens.visualize.ai/"
             },
             {
@@ -58,15 +58,15 @@
         ],
         "Videos & Talks": [
             {
-                "title": "Vision beyond ImageNet: Understanding the brain mechanisms underlying visual recognition (August 2025)",
+                "title": "Vision beyond ImageNet",
                 "url": "https://cbmm.mit.edu/video/vision-beyond-imagenet-understanding-brain-mechanisms-underlying-visual-recognition"
             },
             {
-                "title": "Aligning deep networks with human vision will require novel neural architectures, data diets and training algorithms (February 2025)",
+                "title": "Aligning deep networks with human vision",
                 "url": "https://cbmm.mit.edu/video/aligning-deep-networks-human-vision-will-require-novel-neural-architectures-data-diets-and"
             },
             {
-                "title": "Aligning deep networks with primate vision via self supervised learning",
+                "title": "Aligning deep networks with primate vision",
                 "url": "https://www.youtube.com/watch?v=qDz-nZnioeg&pp=ygUMdGhvbWFzIHNlcnJl"
             },
             {

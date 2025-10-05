@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Breakfast Actions Dataset - Serre Lab</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: #fff;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .pill {
+            display: inline-block;
+            padding: 0.15rem 0.55rem;
+            border-radius: 999px;
+            background: #eef2ff;
+            color: #334155;
+            font-size: 0.85rem;
+            margin-left: 0.4rem;
+            font-weight: 500;
+        }
+        
+        h2 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #374151;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+            color: #4b5563;
+        }
+        
+        ul {
+            margin-top: 0.5rem;
+            padding-left: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+            color: #4b5563;
+        }
+        
+        a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        a:hover {
+            color: #1d4ed8;
+            text-decoration: underline;
+        }
+        
+        strong {
+            color: #111827;
+            font-weight: 600;
+        }
+        
+        code {
+            background: #f3f4f6;
+            padding: 0.1rem 0.35rem;
+            border-radius: 4px;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 0.85rem;
+        }
+        
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .card {
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 1.5rem;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .card-content {
+            flex-grow: 1;
+        }
+        
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+        }
+        
+        .muted {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+        
+        .contact-button {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background-color 0.2s;
+        }
+        
+        .contact-button:hover {
+            background: #1d4ed8;
+        }
+        
+        #contact-info {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 6px;
+            border-left: 4px solid #2563eb;
+            text-align: left;
+        }
+        
+        footer {
+            margin-top: 3rem;
+            font-size: 0.9rem;
+            color: #6b7280;
+            padding-top: 2rem;
+            border-top: 1px solid #e2e8f0;
+            text-align: center;
+        }
+        
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 1.75rem;
+            }
+            
+            .cards {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .card {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>The Breakfast Actions Dataset <span class="pill">Official</span></h1>
+    
+    <p>A comprehensive dataset of breakfast preparation activities performed by <strong>52 different individuals</strong> in <strong>18 different kitchens</strong>, designed to reflect real-world recognition scenarios.</p>
+    <p>This dataset comprises 10 actions related to breakfast preparation. The dataset is to-date one of the largest fully annotated datasets available, designed to reflect real-world conditions for monitoring and analysis of daily activities.</p>
+    <p><strong>Dataset specifications:</strong> ~77 hours of video (&gt;4 million frames), 320×240 pixels resolution (down-sampled), 15 fps frame rate, 3-5 uncalibrated cameras per location.</p>
+
+    <h2>Downloads</h2>
+    <div class="cards">
+        <div class="card">
+            <div class="card-content">
+                <h3>Videos</h3>
+                <ul>
+                    <li><a href="https://drive.google.com/open?id=1jgSoof1AatiDRpGY091qd4TEKF-BUt6I">Main file</a> — 3.6 GB</li>
+                </ul>
+            </div>
+            <p class="muted">License: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
+        </div>
+
+        <div class="card">
+            <h3>Pre-computed Features</h3>
+            <ul>
+                <li><a href="https://www.dropbox.com/s/mfz8pe7jerlj54g/dense_traj_all_s1.tar.gz?dl=1">dense_traj_all_s1.tar.gz</a> — ~37GB</li>
+                <li><a href="https://www.dropbox.com/s/l25u0jbmi62jwjp/dense_traj_all_s2.tar.gz?dl=1">dense_traj_all_s2.tar.gz</a> — ~57GB</li>
+                <li><a href="https://www.dropbox.com/s/0j7enp6cjq2r8jd/dense_traj_all_s3.tar.gz?dl=1">dense_traj_all_s3.tar.gz</a> — ~42GB</li>
+                <li><a href="https://www.dropbox.com/s/0ynhovye29ygha7/dense_traj_all_s4.tar.gz?dl=1">dense_traj_all_s4.tar.gz</a> — ~75GB</li>
+                <li><a href="https://drive.google.com/file/d/1I70VymcaQypIcJ8TXhb2_AlSmoo6MUm4/view">bf_kinetics_feat.tar.gz</a> — 27.7 GB I3D features (RGB and flow)</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Segmentation Data</h3>
+            <ul>
+                <li><a href="https://drive.google.com/open?id=1R3z_CkO1uIOhu4y2Nh0pCHjQQ2l-Ab9E">Coarse segmentation</a></li>
+                <li><a href="https://drive.google.com/open?id=1Alg_xjefEFOOpO_6_RnelWiNqbJlKhVF">Fine segmentation</a></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Code and Documentation</h3>
+            <ul>
+                <li><a href="https://github.com/hildekuehne/HTK_actionRecognition">HTK-based model by Kuehne et al. (2016)</a> — Available on GitHub</li>
+                <li><a href="/datasets/breakfast/demo_bundle.rar">MATLAB demo</a> — Previous demo bundle for action recognition</li>
+            </ul>
+        </div>
+    </div>
+
+    <p class="muted">
+        <strong>Note:</strong> Large files are hosted externally on Dropbox or other services. Please contact the lab for access to external files.
+    </p>
+
+    <h2>Action Classes (10)</h2>
+    <ul>
+        <li>Coffee (n=200)</li>
+        <li>Orange juice (n=187)</li>
+        <li>Chocolate milk (n=224)</li>
+        <li>Tea (n=223)</li>
+        <li>Bowl of cereals (n=214)</li>
+        <li>Fried eggs (n=198)</li>
+        <li>Pancakes (n=173)</li>
+        <li>Fruit salad (n=185)</li>
+        <li>Sandwich (n=197)</li>
+        <li>Scrambled eggs (n=188)</li>
+    </ul>
+
+    <h2>Current Benchmarks</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Fully Supervised Learning</h3>
+            <ul>
+                <li><strong>Activity Classification</strong>: Classify full videos according to the 10 activity classes</li>
+                <li><strong>Temporal Segmentation</strong>: Detect and classify the 48 action units within the videos</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Weakly Supervised Learning</h3>
+            <ul>
+                <li><strong>Temporal Alignment</strong>: Detect actions given transcripts at test time</li>
+                <li><strong>Temporal Segmentation</strong>: Detect and classify 48 action units without transcripts</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>Train/Test Splits</h2>
+    <p>The dataset includes predefined splits for evaluation:</p>
+    <ul>
+        <li><strong>s1</strong>: P03 – P15</li>
+        <li><strong>s2</strong>: P16 – P28</li>
+        <li><strong>s3</strong>: P29 – P41</li>
+        <li><strong>s4</strong>: P42 – P54</li>
+    </ul>
+
+    <h2>Citation</h2>
+    <p>Please cite the following papers when using this dataset:</p>
+
+    <p><strong>Primary paper:</strong><br />
+    H. Kuehne, A. B. Arslan and T. Serre. The Language of Actions: Recovering the Syntax and Semantics of Goal-Directed Human Activities. <em>CVPR</em>, 2014.</p>
+
+    <p><strong>Follow-up work:</strong><br />
+    H. Kuehne, J. Gall and T. Serre. An end-to-end generative framework for video segmentation and recognition. <em>WACV</em>, 2016.</p>
+
+    <footer>
+        <p><strong>Contact:</strong> For questions about the dataset and benchmarks, please contact:</p>
+        <p>
+            <button onclick="showContact()" class="contact-button">Show Contact Email</button>
+        </p>
+        <div id="contact-info" style="display: none;">
+            <p><strong>Hilde Kuehne</strong><br />
+            <a href="mailto:h.kuehne@uni-tuebingen.de">h.kuehne@uni-tuebingen.de</a><br />
+            University of Tübingen, Germany</p>
+        </div>
+        <p class="muted">© 2025 Serre Lab. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showContact() {
+            const contactInfo = document.getElementById('contact-info');
+            const button = document.querySelector('.contact-button');
+            
+            if (contactInfo && button) {
+                if (contactInfo.style.display === 'none' || contactInfo.style.display === '') {
+                    contactInfo.style.display = 'block';
+                    button.textContent = 'Hide Contact Email';
+                } else {
+                    contactInfo.style.display = 'none';
+                    button.textContent = 'Show Contact Email';
+                }
+            }
+        }
+    </script>
+</body>
+</html>

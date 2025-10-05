@@ -2,72 +2,73 @@
 
 A comprehensive dataset of breakfast preparation activities performed by 52 different individuals in 18 different kitchens, designed to reflect real-world recognition scenarios.
 
-## Introduction
+## Overview
 
-A common problem in computer vision is the applicability of algorithms developed on meticulously controlled datasets to real-world problems, such as unscripted, uncontrolled videos with natural lighting, viewpoints and environments. With the advancements in feature descriptors and generative methods in action recognition, a need for comprehensive datasets that reflect the variability of real-world recognition scenarios has emerged.
-
-This dataset comprises 10 actions related to breakfast preparation, performed by 52 different individuals in 18 different kitchens. The dataset is to-date one of the largest fully annotated datasets available. One of the main motivations for the proposed recording setup "in the wild" as opposed to a single controlled lab environment is for the dataset to more closely reflect real-world conditions as it pertains to the monitoring and analysis of daily activities.
+This dataset comprises 10 actions related to breakfast preparation, performed by 52 different individuals in 18 different kitchens. The dataset is to-date one of the largest fully annotated datasets available, designed to reflect real-world conditions for monitoring and analysis of daily activities.
 
 ## Dataset Specifications
 
 - **Participants**: 52 different individuals
-- **Locations**: 18 different kitchens
-- **Cameras**: 3-5 cameras per location (uncalibrated, varying positions)
+- **Locations**: 18 different kitchens  
 - **Total recording**: ~77 hours of video (>4 million frames)
-- **Camera types**: Webcams, industry cameras (Prosilica GE680C), stereo camera (BumbleBee)
 - **Resolution**: 320×240 pixels (down-sampled)
 - **Frame rate**: 15 fps
-- **Data augmentation**: Videos mirrored from laterally-positioned cameras
+- **Camera setup**: 3-5 uncalibrated cameras per location
 
 ## Action Categories
 
 The dataset includes 10 breakfast preparation activities:
 
-1. **Coffee** (n=200)
-2. **Orange juice** (n=187)
-3. **Chocolate milk** (n=224)
-4. **Tea** (n=223)
-5. **Bowl of cereals** (n=214)
-6. **Fried eggs** (n=198)
-7. **Pancakes** (n=173)
-8. **Fruit salad** (n=185)
-9. **Sandwich** (n=197)
-10. **Scrambled eggs** (n=188)
+- Coffee (n=200)
+- Orange juice (n=187) 
+- Chocolate milk (n=224)
+- Tea (n=223)
+- Bowl of cereals (n=214)
+- Fried eggs (n=198)
+- Pancakes (n=173)
+- Fruit salad (n=185)
+- Sandwich (n=197)
+- Scrambled eggs (n=188)
 
 ## Downloads
 
 ### Videos
-- **Main file**: BreakfastII_15fps_qvga_sync.tar.gz (3.6 GB)
-- **Multipart files**: Available in 6 parts for easier downloading
+- **Main file**: [BreakfastII_15fps_qvga_sync.tar.gz](https://serre-lab.clps.brown.edu/wp-content/uploads/2014/04/BreakfastII_15fps_qvga_sync.tar.gz) (3.6 GB)
 
 ### Pre-computed Features
-- **Dense trajectories**: dense_traj_all.rar (~220GB) or split into 4 parts
-- **Frame-based features**: breakfast_data.tar.gz (~1GB) - reduced FV (64 dim)
-- **I3D features**: bf_kinetics_feat.tar.gz (27.7 GB) - RGB and flow (2048 dim)
+- **Dense trajectories**: Available as split files for easier downloading:
+  - [dense_traj_all_s1.tar.gz](https://www.dropbox.com/s/mfz8pe7jerlj54g/dense_traj_all_s1.tar.gz?dl=1) (~37GB)
+  - [dense_traj_all_s2.tar.gz](https://www.dropbox.com/s/l25u0jbmi62jwjp/dense_traj_all_s2.tar.gz?dl=1) (~57GB)
+  - [dense_traj_all_s3.tar.gz](https://www.dropbox.com/s/0j7enp6cjq2r8jd/dense_traj_all_s3.tar.gz?dl=1) (~42GB)
+  - [dense_traj_all_s4.tar.gz](https://www.dropbox.com/s/0ynhovye29ygha7/dense_traj_all_s4.tar.gz?dl=1) (~75GB)
+- **Frame-based features**: [breakfast_data.tar.gz](https://serre-lab.clps.brown.edu/wp-content/uploads/2014/04/breakfast_data.tar.gz) (~1GB) - reduced FV (64 dim)
+- **I3D features**: [bf_kinetics_feat.tar.gz](https://serre-lab.clps.brown.edu/wp-content/uploads/2014/04/bf_kinetics_feat.tar.gz) (27.7 GB) - RGB and flow (2048 dim)
 
 ### Segmentation Data
-- **Coarse segmentation**: segmentation_coarse.tar.gz
-- **Fine segmentation**: segmentation_fine.tar.gz
+- **Coarse segmentation**: [segmentation_coarse.tar.gz](https://serre-lab.clps.brown.edu/wp-content/uploads/2014/04/segmentation_coarse.tar.gz)
+- **Fine segmentation**: [segmentation_fine.tar.gz](https://serre-lab.clps.brown.edu/wp-content/uploads/2014/04/segmentation_fine.tar.gz)
+
+### Code and Documentation
+- **MATLAB demo**: [demo_bundle.rar](/datasets/breakfast/demo_bundle.rar) - *Available locally*
 
 ### Train/Test Splits
+The dataset includes predefined splits for evaluation:
 - **s1**: P03 – P15
-- **s2**: P16 – P28
+- **s2**: P16 – P28  
 - **s3**: P29 – P41
 - **s4**: P42 – P54
+
+> **Note**: Large files are hosted externally on Dropbox or other services. Please contact the lab for access to external files.
 
 ## Citation
 
 Please cite the following papers when using this dataset:
 
 **Primary paper:**
-```
-H. Kuehne, A. B. Arslan and T. Serre. The Language of Actions: Recovering the Syntax and Semantics of Goal-Directed Human Activities. CVPR, 2014.
-```
+H. Kuehne, A. B. Arslan and T. Serre. The Language of Actions: Recovering the Syntax and Semantics of Goal-Directed Human Activities. *CVPR*, 2014.
 
 **Follow-up work:**
-```
-H. Kuehne, J. Gall and T. Serre. An end-to-end generative framework for video segmentation and recognition. WACV, 2016.
-```
+H. Kuehne, J. Gall and T. Serre. An end-to-end generative framework for video segmentation and recognition. *WACV*, 2016.
 
 ## Current Benchmarks
 
@@ -75,14 +76,14 @@ H. Kuehne, J. Gall and T. Serre. An end-to-end generative framework for video se
 - **Activity Classification**: Classify full videos according to the 10 activity classes
 - **Temporal Segmentation**: Detect and classify the 48 action units within videos
 
-### Weakly Supervised Learning
+### Weakly Supervised Learning  
 - **Temporal Alignment**: Detect actions given transcripts at test time
 - **Temporal Segmentation**: Detect and classify 48 action units without transcripts
 
 ## Code and Resources
 
 - **Current system**: Available on [GitHub](https://github.com/hildekuehne/HTK_actionRecognition)
-- **MATLAB demo**: Previous demo bundle available for action recognition
+- **MATLAB demo**: [Previous demo bundle](/datasets/breakfast/demo_bundle.rar) available for action recognition
 
 ## License
 
@@ -92,6 +93,3 @@ This dataset is licensed under a [Creative Commons Attribution 4.0 International
 
 For questions about the dataset and benchmarks, please contact Hilde Kuehne (kuehne [@] ibm . com).
 
-## Acknowledgments
-
-This work was supported by ONR grant (N000141110743) and NSF early career award (IIS-1252951) to TS. Additional support was provided by the Robert J. and Nancy D. Carney Fund for Scientific Innovation and the Center for Computation and Visualization (CCV). HK was funded by the Quaero Programme and OSEO, the French State agency for innovation.
