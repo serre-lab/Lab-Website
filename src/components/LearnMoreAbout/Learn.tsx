@@ -1,7 +1,7 @@
 import { Title, Text } from "@mantine/core";
 import {
   FaVial,
-  FaHand,
+  FaUsers,
   FaMicrophone,
   FaBookOpen,
   FaBook,
@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 const items = [
   { icon: <FaVial size={48} />, label: "Research", to: "research" },
   { icon: <FaBookOpen size={48} />, label: "Publications", to: "publications" },
-  { icon: <FaHand size={48} />, label: "People", to: "people" },
+  { icon: <FaUsers size={48} />, label: "People", to: "people" },
   { icon: <FaBook size={48} />, label: "Resources", to: "resources" },
   {
     icon: <FaMicrophone size={48} />,
