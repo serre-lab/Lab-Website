@@ -1,10 +1,34 @@
 [
   {
-  "title": "Brown University offers cash incentive to assist with 'Click Me' AI research",
-  "link": "https://turnto10.com/news/local/brown-university-offers-cash-incentive-to-assist-with-click-me-ai-research-artificial-intelligence-deep-learning-lab-plme-brain-science-game-vision-february-24-2025#",
-  "blurb": "A Brown University department is paying people to participate in an online game that helps train artificial intelligence.",
-  "image": "https://turnto10.com/resources/media2/16x9/1920/986/center/90/48cfa15b-64cf-481c-bdd1-8366385e822b-6PPKG.transfer_frame_122.jpeg"
-},
+    "title": "Brown University to lead national institute focused on intuitive, trustworthy AI assistants",
+    "link": "https://www.brown.edu/news/2025-07-29/aria-ai-institute-brown",
+    "blurb": "Brown University will lead a $20 million National Science Foundation-funded AI research institute aimed at developing AI assistants capable of trustworthy, sensitive and context-aware interactions with people, with potential applications in mental and behavioral health. The ARIA institute includes Thomas Serre as associate director.",
+    "image": "https://www.brown.edu/sites/default/files/styles/portrait_full_med/public/quote/20250722_COMM_AIResearch002%20copy.jpg"
+  },
+  {
+    "title": "Inside ClickMe: Professor Thomas Serre and Jay Gopal on advancing explainable AI",
+    "link": "https://americanbazaaronline.com/2025/02/19/clickme-professor-thomas-serre-and-jay-gopal-on-advancing-explainable-ai-459719/",
+    "blurb": "Professor Thomas Serre and student Jay Gopal discuss the inspiration and challenges behind ClickMe, an explainable AI initiative building human-aligned vision models from the Serre Lab. The online game collects psychophysics data to understand where humans think is important in an image.",
+    "image": "https://americanbazaaronline.com/wp-content/uploads/2025/02/photo-output-3.jpg"
+  },
+  {
+    "title": "Brown University offers cash incentive to assist with 'Click Me' AI research",
+    "link": "https://turnto10.com/news/local/brown-university-offers-cash-incentive-to-assist-with-click-me-ai-research-artificial-intelligence-deep-learning-lab-plme-brain-science-game-vision-february-24-2025",
+    "blurb": "A Brown University department is paying people to participate in an online game that helps train artificial intelligence. The Serre Lab has already given out more than $10,000 to game participants thanks to National Science Foundation funding.",
+    "image": "https://turnto10.com/resources/media2/16x9/1920/986/center/90/48cfa15b-64cf-481c-bdd1-8366385e822b-6PPKG.transfer_frame_122.jpeg"
+  },
+  {
+    "title": "Explainable AI busts open black boxes",
+    "link": "https://carney.brown.edu/news/2024-10-31/explainable-ai",
+    "blurb": "The Carney Institute for Brain Science is home to one of the foremost explainability research groups in the world, led by Thomas Serre. The team develops tools to understand and interpret deep learning models, making AI decision-making transparent.",
+    "image": "https://scx1.b-cdn.net/csz/news/800a/2023/new-tool-explains-how.jpg"
+  },
+  {
+    "title": "New tool explains how AI 'sees' images and why it might mistake an astronaut for a shovel",
+    "link": "https://www.brown.edu/news/2023-06-28/computer-vision",
+    "blurb": "Brown brain and computer scientists developed CRAFT (Concept Recursive Activation FacTorization for Explainability), a tool that identifies what concepts AI systems use and how they rank them. The project was presented at CVPR 2023 and explains classic AI mistakes.",
+    "image": "https://scx1.b-cdn.net/csz/news/800a/2023/new-tool-explains-how.jpg"
+  },
   {
     "title": "Compositionally in Neural Networks",
     "blurb": "PhD student Michael Lepori discusses new approaches to studying compositionality in neural network models in a recent Carney Community Spotlight.",
@@ -26,7 +50,7 @@
   {
     "title": "Research identifies key weakness in modern computer vision systems",
     "blurb": "In a finding that could point the way toward better computer vision systems, Brown University researchers show why computers are so bad at seeing when one thing is not like another.",
-    "link": "http://news.brown.edu/articles/2018/07/same-different",
+    "link": "https://news.brown.edu/articles/2018/07/same-different",
     "image": "https://serre-lab.clps.brown.edu/wp-content/uploads/2018/07/samedifferentcrop-152x150.jpg"
   },
   {
@@ -48,14 +72,14 @@
     "image": "https://serre-lab.clps.brown.edu/wp-content/uploads/2018/01/download-e1516226192589-200x148.jpg"
   },
   {
-    "title": "A New Knock-In TDP-43 Mouse Enters the ALS Ring",
-    "blurb": "An emerging mouse model may help scientists identify early changes that occur in ALS that could be targeted in the disease. Article by Richard Robinson.",
-    "link": "http://www.alsresearchforum.org/a-new-knock-in-tdp-43-mouse-enters-the-als-ring/",
+    "title": "TDP-43 Mouse Model Research Featured",
+    "blurb": "Serre Lab's machine vision-based automated phenotyping method (ACBM) was used to detect and quantify the earliest phenotypes in TDP-43 knock-in mice, contributing to ALS research. Published in Nature Neuroscience 2018.",
+    "link": "https://pubmed.ncbi.nlm.nih.gov/29556029/",
     "image": "https://serre-lab.clps.brown.edu/wp-content/uploads/2017/12/News-mouse-200x148.png"
   },
   {
     "title": "Artificial intelligence helps scientists map behavior in the fruit fly brain",
-    "blurb": "Can you imagine watching 20,000 videos, 16 minutes apiece, of fruit flies walking, grooming, and chasing mates? Fortunately, you don’t have to, because scientists have designed a computer program that can do it faster. Aided by artificial intelligence, researchers have made 100 billion annotations of behavior from 400,000 flies to create a collection of maps linking fly mannerisms to their corresponding brain regions. Article by Ryan Cross.",
+    "blurb": "Can you imagine watching 20,000 videos, 16 minutes apiece, of fruit flies walking, grooming, and chasing mates? Fortunately, you don't have to, because scientists have designed a computer program that can do it faster. Aided by artificial intelligence, researchers have made 100 billion annotations of behavior from 400,000 flies to create a collection of maps linking fly mannerisms to their corresponding brain regions. Article by Ryan Cross.",
     "link": "https://www.sciencemag.org/news/2017/07/artificial-intelligence-helps-scientists-map-behavior-fruit-fly-brain",
     "image": "https://serre-lab.clps.brown.edu/wp-content/uploads/2018/01/Kristin-Branson-Fly-behavior-cover-art16x9-200x112.jpg"
   },
@@ -73,13 +97,13 @@
   },
   {
     "title": "Computer vision can help classify leaves",
-    "blurb": "So complex are patterns and variations in the vein structures of leaves that botanists struggle to take advantage of them when trying to classify a specimen within the plant kingdom. A new study shows that computer vision technology can provide automated assistance by “learning” how to use venation to assign leaves to their proper family and order. Article by David Orenstein.",
+    "blurb": "So complex are patterns and variations in the vein structures of leaves that botanists struggle to take advantage of them when trying to classify a specimen within the plant kingdom. A new study shows that computer vision technology can provide automated assistance by 'learning' how to use venation to assign leaves to their proper family and order. Article by David Orenstein.",
     "link": "https://news.brown.edu/articles/2016/03/leaves",
     "image": "https://serre-lab.clps.brown.edu/wp-content/uploads/2018/01/leaves-83x150.jpg"
   },
   {
     "title": "Linking two labs a learning opportunity for Ph.D. student",
-    "blurb": "Aaron Held’s research merges and draws on the expertise of two of the labs in Brown’s broad effort to combat ALS. That role has given him several opportunities to learn novel skills and new science during graduate school. Article by David Orenstein.",
+    "blurb": "Aaron Held's research merges and draws on the expertise of two of the labs in Brown's broad effort to combat ALS. That role has given him several opportunities to learn novel skills and new science during graduate school. Article by David Orenstein.",
     "link": "https://news.brown.edu/articles/2016/01/alsbar",
     "image": "https://serre-lab.clps.brown.edu/wp-content/uploads/2018/01/20160112_093948-200x112.jpg"
   },
@@ -103,8 +127,8 @@
   },
   {
     "title": "Reverse engineering the brain",
-    "blurb": "Article by by Roberta Friedman, PhD",
-    "link": "http://biomedicalcomputationreview.org/5/2/7.pdf",
+    "blurb": "Cover story by Roberta Friedman featuring work from researchers including Thomas Serre on understanding and modeling the brain's computational mechanisms.",
+    "link": "https://modha.org/2009/04/biomedical-computation-review-reverse-engineering-the-brain/",
     "image": "https://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/bc_review-208x135.png"
   },
   {
@@ -114,9 +138,9 @@
     "image": "https://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/pc_mag-208x135.png"
   },
   {
-    "title": "Visions of the future",
-    "blurb": "Our work was featured as part of the BBC series “Visions of the Future\"",
-    "link": "http://video.google.com/googleplayer.swf?docId=1900129797336249123&hl=en",
+    "title": "Visions of the Future - BBC Documentary",
+    "blurb": "Serre Lab's work was featured in the BBC series 'Visions of the Future' with Dr. Michio Kaku, exploring the future of artificial intelligence and brain-inspired computing.",
+    "link": "https://en.wikipedia.org/wiki/Visions_of_the_Future",
     "image": "https://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/visions-208x135.png"
   },
   {

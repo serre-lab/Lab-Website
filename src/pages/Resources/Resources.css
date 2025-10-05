@@ -5,212 +5,31 @@
     padding: 2rem 2rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem; /* slightly tighter overall spacing */
+    gap: 2rem;
 }
 
 .titleDesc-container {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem; /* reduce space between page title and first section */
+    gap: 1rem;
     text-align: left;
 }
 
-/* Reduce top margin for the first section heading to match People page */
+.resource-section {
+    margin-bottom: 2rem;
+}
+
 .resource-section:first-of-type .section-title {
     margin-top: 0.5rem;
 }
 
-/* Use global .page-title from typography.css for consistent title spacing */
+/* Use featured-grid from Home.css - no custom grid styles needed */
 
-.resource-section {
-    margin-bottom: 3rem;
-}
-
-/* Section titles use global .section-title class from typography.css */
-
-/* Resource Grid Styles (similar to featured projects) */
-.resource-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1rem;
-}
-
-.resource-card {
-    background: #ffffff;
-    border: 1px solid #e1e8ed;
-    border-radius: 12px;
-    padding: 1.25rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    min-height: 160px;
-    display: flex;
-    flex-direction: column;
-}
-
-.resource-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 4px;
-    height: 100%;
-    background: linear-gradient(180deg, #3498db, #2980b9);
-}
-
-.resource-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-    border-color: #3498db;
-}
-
-.resource-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-}
-
-.resource-title {
-    margin: 0;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #2c3e50;
-    line-height: 1.3;
-}
-
-.resource-description {
-    font-size: 0.9rem;
-    color: #7f8c8d;
-    margin: 0;
-}
-
-.resource-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: #3498db;
-    font-size: 0.9rem;
-    font-weight: 500;
-    margin-top: auto;
-    transition: color 0.3s ease;
-}
-
-.resource-link {
-    text-decoration: none;
-    color: inherit;
-}
-
-.resource-link:hover {
-    text-decoration: none;
-    color: inherit;
-}
-
-.resource-link:hover .resource-button {
-    color: #2980b9;
-}
-
-/* Video Grid Styles */
-.video-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1rem;
-}
-
-.video-card {
-    background: #ffffff;
-    border: 1px solid #e1e8ed;
-    border-radius: 12px;
-    padding: 1.25rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    min-height: 160px;
-    display: flex;
-    flex-direction: column;
-}
-
-.video-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 4px;
-    height: 100%;
-    background: linear-gradient(180deg, #e74c3c, #c0392b);
-}
-
-.video-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-    border-color: #e74c3c;
-}
-
-.video-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-}
-
-.video-title {
-    margin: 0;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #2c3e50;
-    line-height: 1.3;
-}
-
-.video-description {
-    font-size: 0.9rem;
-    color: #7f8c8d;
-    margin: 0;
-}
-
-.video-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: #e74c3c;
-    font-size: 0.9rem;
-    font-weight: 500;
-    margin-top: auto;
-    transition: color 0.3s ease;
-    text-decoration: none;
-}
-
-.video-button:hover {
-    color: #c0392b;
-    text-decoration: none;
-}
-
-/* Mobile responsiveness */
+/* Mobile responsiveness - featured-grid responsive styles are handled in Home.css */
 @media (max-width: 768px) {
     .resources-container {
         max-width: 95%;
         padding: 1rem 0.5rem;
         gap: 2rem;
-    }
-    
-    /* Use global responsive .page-title sizing */
-    
-    .resource-section-title {
-        font-size: 1.2rem;
-    }
-    
-    .resource-grid,
-    .video-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-    
-    .resource-card,
-    .video-card {
-        min-height: 140px;
-        padding: 1rem;
     }
 }

@@ -1,0 +1,11 @@
+{
+  "hmdb51": {
+    "title": "HMDB: A Large Video Database for Human Motion Recognition",
+    "authors": "Kuehne, H., Jhuang, H., Garrote, E., Poggio, T., & Serre, T.",
+    "year": 2011,
+    "venue": "ICCV",
+    "citations": 5269,
+    "lastUpdated": "2025-01-27",
+    "googleScholarUrl": "https://scholar.google.com/scholar?q=HMDB:+A+Large+Video+Database+for+Human+Motion+Recognition"
+  }
+}
