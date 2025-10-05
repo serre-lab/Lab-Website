@@ -23,6 +23,27 @@
     margin-top: 0.5rem;
 }
 
+/* Bottom-align content in all resource cards */
+.featured-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.featured-project-title {
+    flex-grow: 1;
+    margin-bottom: 0.75rem;
+}
+
+.featured-description {
+    margin-top: auto;
+    margin-bottom: 1rem;
+}
+
+.featured-button-small {
+    margin-top: auto;
+}
+
 /* Use featured-grid from Home.css - no custom grid styles needed */
 
 /* Mobile responsiveness - featured-grid responsive styles are handled in Home.css */

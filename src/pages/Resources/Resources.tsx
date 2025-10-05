@@ -1,14 +1,8 @@
 import resourcesData from "../../data/resources.json";
 import "./Resources.css";
-import { Text, Title, Anchor, Card, Image, Group } from "@mantine/core";
-import { IconVideo, IconExternalLink, IconDatabase, IconCode, IconBook, IconBrain } from '@tabler/icons-react';
+import { Text, Title } from "@mantine/core";
 import { Link } from "react-router-dom";
 
-// Helper function to get YouTube video ID from URL
-const getYouTubeId = (url: string): string | null => {
-    const match = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&\s]+)/);
-    return match ? match[1] : null;
-};
 
 // Helper function to check if URL is a video
 const isVideoUrl = (url: string): boolean => {
@@ -20,10 +14,10 @@ const getResourceDescription = (title: string, url: string): string => {
     const titleLower = title.toLowerCase();
     
     // Dataset descriptions
-    if (titleLower.includes('clickme')) return "Large dataset";
+    if (titleLower.includes('clickme')) return "Dataset for evaluating the alignment between AI models and humans using ImageNet images";
     if (titleLower.includes('hmdb')) return "Large video database with 6,849 clips across 51 action categories";
-    if (titleLower.includes('breakfast')) return "Video dataset of breakfast preparation activities collected in real people's kitchens";
-    if (titleLower.includes('multi-cue')) return "Boundary detection dataset with multiple visual cues including color stereo video sequences";
+    if (titleLower.includes('breakfast')) return "Video dataset of breakfast preparation activities: 52 individuals, 18 kitchens, ~77 hours of video, >4 million frames";
+    if (titleLower.includes('multi-cue')) return "Boundary detection dataset with multiple visual cues using color stereo video sequences";
     if (titleLower.includes('neural harmonizer')) return "Dataset for harmonizing neural network representations with human visual processing";
     
     // Demo descriptions
@@ -36,7 +30,7 @@ const getResourceDescription = (title: string, url: string): string => {
     if (titleLower.includes('harmonization')) return "Techniques for aligning AI models with human vision";
     if (titleLower.includes('xplique')) return "Open-source explainability toolbox for deep learning";
     if (titleLower.includes('horama')) return "Interactive visualization tool for neural network representations";
-    if (titleLower.includes('neuroscience feedback')) return "PyTorch library for neuroscience-inspired feedback models";
+    if (titleLower.includes('neuroscience')) return "PyTorch library for neuroscience-inspired models";
     
     // Video descriptions
     if (titleLower.includes('vision beyond imagenet')) return "Understanding brain mechanisms underlying visual recognition";
@@ -70,23 +64,10 @@ const getButtonText = (category: string, title: string): string => {
     }
 };
 
-// Helper function to get icon based on category
-const getCategoryIcon = (category: string) => {
-    switch (category.toLowerCase()) {
-        case 'datasets': return <IconDatabase size={20} />;
-        case 'demos and tutorials': return <IconCode size={20} />;
-        case 'tools & software': return <IconCode size={20} />;
-        case 'cognitive benchmark tests': return <IconBrain size={20} />;
-        case 'videos & talks': return <IconVideo size={20} />;
-        default: return <IconExternalLink size={20} />;
-    }
-};
 
 // Component for resource cards (exactly like featured projects)
 const ResourceCard = ({ resource, category }: { resource: { title: string; url: string }, category: string }) => {
-    const youtubeId = getYouTubeId(resource.url);
-    const isCBMM = resource.url.includes('cbmm.mit.edu/video');
-    const isExternal = resource.url.startsWith("http");
+    const isExternal = resource.url.startsWith("http") || resource.url.endsWith(".html");
     const description = getResourceDescription(resource.title, resource.url);
     const buttonText = getButtonText(category, resource.title);
 
@@ -121,8 +102,6 @@ const ResourceCard = ({ resource, category }: { resource: { title: string; url: 
 
 // Component for video preview cards (exactly like featured projects)
 const VideoCard = ({ resource }: { resource: { title: string; url: string } }) => {
-    const youtubeId = getYouTubeId(resource.url);
-    const isCBMM = resource.url.includes('cbmm.mit.edu/video');
     const description = getResourceDescription(resource.title, resource.url);
     const buttonText = getButtonText("Videos & Talks", resource.title);
     

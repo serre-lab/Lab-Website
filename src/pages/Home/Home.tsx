@@ -6,6 +6,73 @@ import { motion } from "motion/react";
 import { FaTwitter, FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa6";
 import { useState } from "react";
 
+// Helper function to shorten journal names
+const shortenJournalName = (journal: string): string => {
+  const journalMap: { [key: string]: string } = {
+    'Current Biology': 'Curr Biol',
+    'Histopathology': 'Histopath',
+    'Trends in Cognitive Sciences': 'TICS',
+    'International Conference on Learning Representations': 'ICLR',
+    'arXiv': 'arXiv',
+    'Nature': 'Nature',
+    'Science': 'Science',
+    'Cell': 'Cell',
+    'Neuron': 'Neuron',
+    'Proceedings of the National Academy of Sciences': 'PNAS',
+    'Journal of Neuroscience': 'J Neurosci',
+    'Cerebral Cortex': 'Cereb Cortex',
+    'PLOS Computational Biology': 'PLOS Comput Biol',
+    'Journal of Vision': 'J Vis',
+    'Vision Research': 'Vis Res',
+    'Perception': 'Perception',
+    'Psychological Science': 'Psychol Sci',
+    'Journal of Experimental Psychology': 'J Exp Psychol',
+    'Cognitive Psychology': 'Cogn Psychol',
+    'Memory & Cognition': 'Mem Cogn',
+    'Attention, Perception, & Psychophysics': 'Atten Percept Psychophys'
+  };
+  
+  return journalMap[journal] || journal;
+};
+
+// Helper function to abbreviate author lists
+const abbreviateAuthors = (authors: string, maxAuthors: number = 2): string => {
+  // Handle "et al." format - just remove initials from the first author
+  if (authors.includes(' et al.')) {
+    const firstAuthor = authors.replace(' et al.', '').trim();
+    const parts = firstAuthor.split(/\s+/);
+    const lastName = parts[parts.length - 1];
+    return `${lastName} et al.`;
+  }
+  
+  // Handle both comma and ampersand separators
+  const authorList = authors.split(/,\s*|\s*&\s*/).filter(author => author.trim() !== '');
+  
+  // Extract last name from author (remove initials)
+  const getLastName = (author: string) => {
+    const parts = author.trim().split(/\s+/);
+    return parts[parts.length - 1]; // Get the last part (last name)
+  };
+  
+  if (authorList.length <= maxAuthors) {
+    // For 2 or fewer authors, remove initials but keep all names
+    return authorList.map(getLastName).join(' & ');
+  }
+  
+  // Find the first author that contains "Serre" or "T. Serre"
+  const serreIndex = authorList.findIndex(author => 
+    author.toLowerCase().includes('serre') || author.toLowerCase().includes('t. serre')
+  );
+  
+  if (serreIndex === 0) {
+    // Serre is first author
+    return `${getLastName(authorList[0])} et al.`;
+  } else {
+    // Serre is not first author or not found, just show first author + et al.
+    return `${getLastName(authorList[0])} et al.`;
+  }
+};
+
 // Animation variants
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -128,10 +195,10 @@ export function Home() {
             </div>
           </div>
 
-          {/* ObjectLens Card */}
+          {/* ObjectLENS Card */}
           <div className="featured-card">
             <div className="featured-content">
-              <Title order={3} className="featured-project-title">ObjectLens</Title>
+              <Title order={3} className="featured-project-title">ObjectLENS</Title>
               <Text className="featured-description">
                 Explore what ImageNet models really see. Interactive explainability tool for object recognition revealing how AI vision models make decisions.
               </Text>
@@ -146,10 +213,10 @@ export function Home() {
             </div>
           </div>
 
-          {/* LeafLens Card */}
+          {/* LeafLENS Card */}
           <div className="featured-card">
             <div className="featured-content">
-              <Title order={3} className="featured-project-title">LeafLens</Title>
+              <Title order={3} className="featured-project-title">LeafLENS</Title>
               <Text className="featured-description">
                 Discover how AI identifies plant species from cleared leaves. Visualize model attention and decision-making processes.
               </Text>
@@ -215,11 +282,11 @@ export function Home() {
           <div className="highlight-card">
             <Text className="highlight-journal">arXiv (2025)</Text>
             <Title order={4} className="highlight-title">
-              <a href="https://arxiv.org/abs/2504.16940" target="_blank" rel="noopener noreferrer">
+              <a href="https://arxiv.org/abs/2509.17280" target="_blank" rel="noopener noreferrer">
                 From Prediction to Understanding: Will AI Foundation Models Transform Brain Science?
               </a>
             </Title>
-            <Text className="highlight-authors">T. Serre & E. Pavlick</Text>
+            <Text className="highlight-authors">{abbreviateAuthors("T. Serre & E. Pavlick")}</Text>
           </div>
 
           <div className="highlight-card">
@@ -229,7 +296,7 @@ export function Home() {
                 Better artificial intelligence does not mean better models of biology
               </a>
             </Title>
-            <Text className="highlight-authors">D. Linsley, P. Feng & T. Serre</Text>
+            <Text className="highlight-authors">{abbreviateAuthors("D. Linsley, P. Feng & T. Serre")}</Text>
           </div>
 
           <div className="highlight-card">
@@ -239,7 +306,7 @@ export function Home() {
                 The 3D-PC: A benchmark for visual perspective taking in humans and machines
               </a>
             </Title>
-            <Text className="highlight-authors">D. Linsley et al.</Text>
+            <Text className="highlight-authors">{abbreviateAuthors("D. Linsley et al.")}</Text>
           </div>
 
           <div className="highlight-card">
@@ -249,27 +316,27 @@ export function Home() {
                 Feature binding in biological and artificial vision
               </a>
             </Title>
-            <Text className="highlight-authors">P. Roelfsema & T. Serre</Text>
+            <Text className="highlight-authors">{abbreviateAuthors("P. Roelfsema & T. Serre")}</Text>
           </div>
 
           <div className="highlight-card">
-            <Text className="highlight-journal">Current Biology (2024)</Text>
+            <Text className="highlight-journal">{shortenJournalName("Current Biology")} (2024)</Text>
             <Title order={4} className="highlight-title">
               <a href="https://authors.elsevier.com/c/1k6Fc3QW8S6Gde" target="_blank" rel="noopener noreferrer">
                 Monkeys engage in visual simulation to solve complex problems
               </a>
             </Title>
-            <Text className="highlight-authors">A. Ahuja et al.</Text>
+            <Text className="highlight-authors">{abbreviateAuthors("A. Ahuja et al.")}</Text>
           </div>
 
           <div className="highlight-card">
-            <Text className="highlight-journal">Histopathology (2024)</Text>
+            <Text className="highlight-journal">{shortenJournalName("Histopathology")} (2024)</Text>
             <Title order={4} className="highlight-title">
               <a href="https://onlinelibrary.wiley.com/doi/10.1111/his.15180" target="_blank" rel="noopener noreferrer">
                 Deceptive learning in histopathology
               </a>
             </Title>
-            <Text className="highlight-authors">S. Shahamatdar, D. Saeed-Vafa, D. Linsley, F. Khalil, K. Lovinger, L. Li, H. McLeod, S. Ramachandran, T. Serre</Text>
+            <Text className="highlight-authors">{abbreviateAuthors("S. Shahamatdar, D. Saeed-Vafa, D. Linsley, F. Khalil, K. Lovinger, L. Li, H. McLeod, S. Ramachandran, T. Serre")}</Text>
           </div>
         </div>
         <div style={{ textAlign: "center", marginTop: "1.5rem" }}>
@@ -329,7 +396,7 @@ export function Home() {
                 </ul>
               </>
             )}
-            <Text className="student-card-expand" style={{ marginTop: "0.75rem", fontSize: "0.85rem", color: "#3498db", fontWeight: 500 }}>
+            <Text className="student-card-expand">
               {showUndergradDetails ? "Click to show less ▲" : "Click to see requirements ▼"}
             </Text>
           </div>
@@ -355,7 +422,7 @@ export function Home() {
                 </Text>
               </>
             )}
-            <Text className="student-card-expand" style={{ marginTop: "0.75rem", fontSize: "0.85rem", color: "#3498db", fontWeight: 500 }}>
+            <Text className="student-card-expand">
               {showPhdDetails ? "Click to show less ▲" : "Click to see requirements ▼"}
             </Text>
           </div>
@@ -376,7 +443,7 @@ export function Home() {
                 </ul>
               </>
             )}
-            <Text className="student-card-expand" style={{ marginTop: "0.75rem", fontSize: "0.85rem", color: "#3498db", fontWeight: 500 }}>
+            <Text className="student-card-expand">
               {showPostdocDetails ? "Click to show less ▲" : "Click to see requirements ▼"}
             </Text>
           </div>

@@ -94,6 +94,7 @@ const App = () => {
                 { path: "/resources", element: <Resources /> },
                 { path: "/sci-comm", element: <SciComm /> },
 
+
                 // Dynamic Markdown Routes
                 ...routes.map(({ path, content }) => ({
                     path,
