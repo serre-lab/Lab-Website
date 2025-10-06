@@ -33,7 +33,7 @@ The dataset includes 10 breakfast preparation activities:
 ## Downloads
 
 ### Videos
-- **Main file**: [BreakfastII_15fps_qvga_sync.tar.gz](https://serre-lab.clps.brown.edu/wp-content/uploads/2014/04/BreakfastII_15fps_qvga_sync.tar.gz) (3.6 GB)
+> **Note**: Video files are currently being migrated to new hosting. Please contact the lab for access.
 
 ### Pre-computed Features
 - **Dense trajectories**: Available as split files for easier downloading:
@@ -41,12 +41,8 @@ The dataset includes 10 breakfast preparation activities:
   - [dense_traj_all_s2.tar.gz](https://www.dropbox.com/s/l25u0jbmi62jwjp/dense_traj_all_s2.tar.gz?dl=1) (~57GB)
   - [dense_traj_all_s3.tar.gz](https://www.dropbox.com/s/0j7enp6cjq2r8jd/dense_traj_all_s3.tar.gz?dl=1) (~42GB)
   - [dense_traj_all_s4.tar.gz](https://www.dropbox.com/s/0ynhovye29ygha7/dense_traj_all_s4.tar.gz?dl=1) (~75GB)
-- **Frame-based features**: [breakfast_data.tar.gz](https://serre-lab.clps.brown.edu/wp-content/uploads/2014/04/breakfast_data.tar.gz) (~1GB) - reduced FV (64 dim)
-- **I3D features**: [bf_kinetics_feat.tar.gz](https://serre-lab.clps.brown.edu/wp-content/uploads/2014/04/bf_kinetics_feat.tar.gz) (27.7 GB) - RGB and flow (2048 dim)
 
-### Segmentation Data
-- **Coarse segmentation**: [segmentation_coarse.tar.gz](https://serre-lab.clps.brown.edu/wp-content/uploads/2014/04/segmentation_coarse.tar.gz)
-- **Fine segmentation**: [segmentation_fine.tar.gz](https://serre-lab.clps.brown.edu/wp-content/uploads/2014/04/segmentation_fine.tar.gz)
+> **Note**: Frame-based features, I3D features, and segmentation data are currently being migrated to new hosting. Please contact the lab for access.
 
 ### Code and Documentation
 - **MATLAB demo**: [demo_bundle.rar](/datasets/breakfast/demo_bundle.rar) - *Available locally*

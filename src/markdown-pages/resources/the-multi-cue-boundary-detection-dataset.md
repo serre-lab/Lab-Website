@@ -39,8 +39,7 @@ Annotations were performed by undergraduate students at Brown University using c
 
 ## Downloads
 
-- **Dataset**: [multicue-dataset.tar.bz2](/datasets/multicue/multicue-dataset.tar.bz2) (~3.4 GB)
-- **Documentation**: [Dataset description (PDF)](http://serre-lab.clps.brown.edu/wp-content/uploads/2014/08/dataset_lowfi.pdf)
+- **Dataset**: [multicue-dataset.tar.bz2](https://drive.google.com/uc?export=download&id=1OugiFy_f20hnIwaao9d05o-3buGYLsNo) (~3.4 GB)
 
 ## Citation
 
