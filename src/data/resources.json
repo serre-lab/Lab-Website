@@ -21,15 +21,15 @@
         "Demos and Tutorials": [
             {
                 "title": "ObjectLENS",
-                "url": "https://serre-lab.github.io/ObjectLens/"
+                "url": "https://serre-lab.github.io/Lens/"
             },
             {
                 "title": "LeafLENS",
-                "url": "https://leaf-lens.visualize.ai/"
+                "url": "https://serre-lab.github.io/LeafLens/"
             },
             {
                 "title": "hGRU Tutorials",
-                "url": "/resources/hgru-tutorials"
+                "url": "https://colab.research.google.com/drive/1nahqqz1xjVTgrhtPv6myE1xvi4eRvMge?authuser=1#scrollTo=aamsQuGRVUqn"
             },
             {
                 "title": "Panoptic segmentation with hGRU",

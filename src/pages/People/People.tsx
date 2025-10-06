@@ -29,13 +29,17 @@ export default function People() {
     (person) => person.university !== "Brown" && person.university !== "ANITI"
   );
 
-  // Split Brown people into three groups: first row (up to Alekh), second row (PhD students), third row (MSc students)
-  const alekhIndex = brownPeople.findIndex(person => person.fullName === "Alekh Ashok");
-  const firstMscIndex = brownPeople.findIndex(person => person.title === "MSc student");
-  
-  const brownFirstRow = brownPeople.slice(0, alekhIndex); // Thomas, Drew, Chris (before Alekh)
-  const brownSecondRow = brownPeople.slice(alekhIndex, firstMscIndex); // PhD students (Alekh onwards until first MSc)
-  const brownThirdRow = brownPeople.slice(firstMscIndex); // MSc students and anyone after
+  // Split Brown people into Senior Personnel and Graduate Students
+  const seniorPersonnel = brownPeople.filter(person =>
+    person.title === "Professor" ||
+    person.title === "Assistant Professor of Research" ||
+    person.title === "PostDoc"
+  );
+
+  const graduateStudents = brownPeople.filter(person =>
+    person.title === "PhD student" ||
+    person.title === "MSc student"
+  );
 
   return (
     <div className="people-container">
@@ -47,48 +51,48 @@ export default function People() {
           <Title order={2} className="section-title">
             Brown Team ({brownPeople.length})
           </Title>
-          
-          {/* First row: Thomas and Drew */}
-          <div className="people-grid">
-            {brownFirstRow.map((person: any, index: number) => (
-              <Person
-                key={`brown-first-${index}`}
-                fullName={person.fullName}
-                title={person.title}
-                university={person.university}
-                description={person.description}
-                imagePath={person.imagePath}
-              />
-            ))}
-          </div>
 
-          {/* Second row: PhD students */}
-          <div className="people-grid">
-            {brownSecondRow.map((person: any, index: number) => (
-              <Person
-                key={`brown-second-${index}`}
-                fullName={person.fullName}
-                title={person.title}
-                university={person.university}
-                description={person.description}
-                imagePath={person.imagePath}
-              />
-            ))}
-          </div>
+          {/* Senior Personnel Section */}
+          {seniorPersonnel.length > 0 && (
+            <>
+              <Title order={3} className="subsection-title">
+                Senior Personnel ({seniorPersonnel.length})
+              </Title>
+              <div className="people-grid">
+                {seniorPersonnel.map((person: any, index: number) => (
+                  <Person
+                    key={`senior-${index}`}
+                    fullName={person.fullName}
+                    title={person.title}
+                    university={person.university}
+                    description={person.description}
+                    imagePath={person.imagePath}
+                  />
+                ))}
+              </div>
+            </>
+          )}
 
-          {/* Third row: MSc students */}
-          <div className="people-grid">
-            {brownThirdRow.map((person: any, index: number) => (
-              <Person
-                key={`brown-third-${index}`}
-                fullName={person.fullName}
-                title={person.title}
-                university={person.university}
-                description={person.description}
-                imagePath={person.imagePath}
-              />
-            ))}
-          </div>
+          {/* Graduate Students Section */}
+          {graduateStudents.length > 0 && (
+            <>
+              <Title order={3} className="subsection-title">
+                Graduate Students ({graduateStudents.length})
+              </Title>
+              <div className="people-grid">
+                {graduateStudents.map((person: any, index: number) => (
+                  <Person
+                    key={`grad-${index}`}
+                    fullName={person.fullName}
+                    title={person.title}
+                    university={person.university}
+                    description={person.description}
+                    imagePath={person.imagePath}
+                  />
+                ))}
+              </div>
+            </>
+          )}
         </>
       )}
 

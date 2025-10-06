@@ -203,7 +203,7 @@ export function Home() {
                 Explore what ImageNet models really see. Interactive explainability tool for object recognition revealing how AI vision models make decisions.
               </Text>
               <a
-                href="https://lens.visualize.ai/"
+                href="https://serre-lab.github.io/Lens/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="featured-button-small"
@@ -221,7 +221,7 @@ export function Home() {
                 Discover how AI identifies plant species from cleared leaves. Visualize model attention and decision-making processes.
               </Text>
               <a
-                href="https://leaf-lens.visualize.ai/"
+                href="https://serre-lab.github.io/LeafLens/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="featured-button-small"
@@ -302,7 +302,7 @@ export function Home() {
           <div className="highlight-card">
             <Text className="highlight-journal">ICLR (2025)</Text>
             <Title order={4} className="highlight-title">
-              <a href="https://openreview.net/forum?id=WUQSbz2kna" target="_blank" rel="noopener noreferrer">
+              <a href="https://openreview.net/forum?id=UIFAJZ22ZF" target="_blank" rel="noopener noreferrer">
                 The 3D-PC: A benchmark for visual perspective taking in humans and machines
               </a>
             </Title>
@@ -312,7 +312,7 @@ export function Home() {
           <div className="highlight-card">
             <Text className="highlight-journal">TICS (2025)</Text>
             <Title order={4} className="highlight-title">
-              <a href="https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(24)00301-5" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(25)00232-3" target="_blank" rel="noopener noreferrer">
                 Feature binding in biological and artificial vision
               </a>
             </Title>
@@ -322,7 +322,7 @@ export function Home() {
           <div className="highlight-card">
             <Text className="highlight-journal">{shortenJournalName("Current Biology")} (2024)</Text>
             <Title order={4} className="highlight-title">
-              <a href="https://authors.elsevier.com/c/1k6Fc3QW8S6Gde" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.cell.com/current-biology/abstract/S0960-9822(24)01380-0" target="_blank" rel="noopener noreferrer">
                 Monkeys engage in visual simulation to solve complex problems
               </a>
             </Title>
@@ -478,7 +478,7 @@ export function Home() {
         </Title>
         <div style={{ display: "flex", justifyContent: "center", gap: "2rem", alignItems: "center", flexWrap: "wrap" }}>
           <a
-            href="https://twitter.com/serre_lab"
+            href="https://x.com/tserre"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Serre Lab Twitter"
