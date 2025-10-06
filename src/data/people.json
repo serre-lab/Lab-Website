@@ -82,7 +82,7 @@
             "title": "PhD student",
             "university": "ANITI",
             "imagePath": "people/bastien-lelan.jpg",
-            "description": "Bastien Lelan is a PhD student at ANITI with a strong background in computational neuroscience. He recently completed research at Harvard University working with Gabriel Kreiman and Margaret Livingstone, where he focused on understanding neural mechanisms underlying visual processing. His research interests span the intersection of neuroscience, machine learning, and computer vision."
+            "description": "Bastien Lelan is a PhD student at the University of Toulouse and a member of the ELLIS program. He holds a Master's degree in Data Science and Computational Neuroscience from EPFL. His research interests lie at the intersection of machine learning, deep learning, and neuroscience. Currently, his work focuses on leveraging energy-based models to simulate mental processes and traditional psychophysical experiments."
         },
         {
             "fullName": "Jorge Chang",
