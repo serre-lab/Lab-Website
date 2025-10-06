@@ -32,9 +32,9 @@ const e=`<!doctype html>
       <div class="card">
         <h3>Video Database</h3>
         <ul>
-          <li><a href="https://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/hmdb51_org.rar">HMDB51 (original, unstabilized)</a> — about 2 GB; 51 classes, 6,849 clips.</li>
-          <li><a href="https://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/hmdb51_sta.rar">HMDB51 (stabilized)</a> — same clips and labels, with geometric frame alignment; each clip includes a mask file <code>[video_name].form</code> readable in MATLAB.</li>
-          <li><a href="https://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/test_train_splits.rar">Train/Test splits (3 lists)</a> — predefined lists for Split 1–3 (used for standard evaluation).</li>
+          <li><a href="https://drive.google.com/uc?export=download&id=17anw5Oxp7lmp9cMwXPOyOpL5olDLmPpj">HMDB51 (original, unstabilized)</a> — about 2 GB; 51 classes, 6,849 clips.</li>
+          <li><a href="https://drive.google.com/uc?export=download&id=1TyCwgNSzms7VU6-Mc64RTgwd8Zd9ynxy">HMDB51 (stabilized)</a> — same clips and labels, with geometric frame alignment; each clip includes a mask file <code>[video_name].form</code> readable in MATLAB.</li>
+          <li><a href="https://drive.google.com/uc?export=download&id=1NQxJWJSYWefyNS-LFYCenFih4gRDUPCX">Train/Test splits (3 lists)</a> — predefined lists for Split 1–3 (used for standard evaluation).</li>
         </ul>
         <p class="muted">License: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
       </div>
@@ -92,8 +92,8 @@ const e=`<!doctype html>
   <section id="citation">
     <h2>Citation</h2>
     <p>Kuehne, H., Jhuang, H., Garrote, E., Poggio, T., &amp; Serre, T. (2011). <em>HMDB: A Large Video Database for Human Motion Recognition.</em> ICCV.<br>
-      <a href="https://serre-lab.clps.brown.edu/wp-content/uploads/2012/08/Kuehne_etal_iccv11.pdf">PDF</a> ·
-      <a href="https://serre-lab.clps.brown.edu/wp-content/uploads/2013/10/Kuehne_etal_iccv11.bib">BibTeX</a>
+      <a href="/papers/Kuehne_etal_ICCV2011.pdf">PDF</a> ·
+      <a href="/papers/Kuehne_etal_iccv11.bib">BibTeX</a>
     </p>
   </section>
 
