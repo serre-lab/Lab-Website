@@ -30,6 +30,9 @@ function renderTextWithLinks(text: string) {
 export default function Person({ fullName, title, university, imagePath, description }: PersonProps) {
     const [opened, setOpened] = useState(false);
 
+    // Ensure image path starts with /
+    const imageUrl = imagePath?.startsWith('/') ? imagePath : `/${imagePath}`;
+
     return (
         <>
             <Card
@@ -43,7 +46,7 @@ export default function Person({ fullName, title, university, imagePath, descrip
                 {imagePath && (
                     <Card.Section>
                         <Image
-                            src={imagePath}
+                            src={imageUrl}
                             alt={fullName}
                             className="person-image"
                             radius="sm"
@@ -72,7 +75,7 @@ export default function Person({ fullName, title, university, imagePath, descrip
                 <div className="person-modal-content">
                     {imagePath && (
                         <Image
-                            src={imagePath}
+                            src={imageUrl}
                             alt={fullName}
                             className="person-modal-image"
                         />

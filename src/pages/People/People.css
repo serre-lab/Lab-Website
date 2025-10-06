@@ -15,6 +15,14 @@
   /* Page title uses global .page-title class from typography.css */
   /* Section titles use global .section-title class from typography.css */
 
+  .subsection-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+  }
+
   .people-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
