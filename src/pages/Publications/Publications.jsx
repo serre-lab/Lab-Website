@@ -85,8 +85,6 @@ export function Publications() {
         if (b === "Work in progress") return 1;
         if (a === "In press") return -1;
         if (b === "In press") return 1;
-        if (a === "Before 2010") return 1;
-        if (b === "Before 2010") return -1;
         return parseInt(b) - parseInt(a);
     });
 
