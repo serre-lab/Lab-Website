@@ -82,7 +82,7 @@ export const officialPublicationUrls = {
     "chikkerur_etal_MIT-CSAIL-TR-2009-047": "https://dspace.mit.edu/handle/1721.1/chikkerur_etal_MIT-CSAIL-TR-2009-047",
     
     // 2007
-    "Robust object recognition with cortex-like mechanisms": "https://ieeexplore.ieee.org/document/1717568",
+    "Robust object recognition with cortex-like mechanisms": "https://ieeexplore.ieee.org/document/4069258",
     "A feedforward architecture accounts for rapid categorization": "https://www.pnas.org/doi/10.1073/pnas.0700622104",
     "A quantitative theory of immediate visual recognition": "https://www.sciencedirect.com/science/article/pii/S0079612306650058",
     "PNAS-2007-Serre-6424-9": "https://www.pnas.org/doi/10.1073/pnas.0700622104",
