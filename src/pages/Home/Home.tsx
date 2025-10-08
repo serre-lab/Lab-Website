@@ -199,23 +199,21 @@ export function Home() {
                 >
                   Play Now →
                 </a>
-                <a
-                  href="https://clickme.clps.brown.edu"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="clickme-secondary-button"
-                  onClick={() => {
-                    if (typeof window !== 'undefined' && (window as any).gtag) {
-                      (window as any).gtag('event', 'click', {
-                        'event_category': 'engagement',
-                        'event_label': 'clickme_learn_more',
-                        'value': 1
-                      });
-                    }
-                  }}
-                >
-                  Learn More
-                </a>
+              <Link
+                to="/research"
+                className="clickme-secondary-button"
+                onClick={() => {
+                  if (typeof window !== 'undefined' && (window as any).gtag) {
+                    (window as any).gtag('event', 'click', {
+                      'event_category': 'engagement',
+                      'event_label': 'clickme_learn_more_research',
+                      'value': 1
+                    });
+                  }
+                }}
+              >
+                Learn More
+              </Link>
               </div>
             </div>
           </div>
@@ -369,7 +367,7 @@ export function Home() {
             <Text className="highlight-journal">arXiv (2025)</Text>
             <Title order={4} className="highlight-title">
               <a href="https://arxiv.org/abs/2509.17280" target="_blank" rel="noopener noreferrer">
-                From Prediction to Understanding: Will AI Foundation Models Transform Brain Science?
+                From prediction to understanding: will AI foundation models transform brain science?
               </a>
             </Title>
             <Text className="highlight-authors">{abbreviateAuthors("T. Serre & E. Pavlick")}</Text>
