@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://serre.lab.brown.edu/sitemap.xml
+
+# Allow all search engines to crawl
+Disallow: /admin/
+Disallow: /private/
