@@ -3,7 +3,7 @@ import Learn from "../../components/LearnMoreAbout/Learn";
 import "./Home.css";
 import { Title, Text } from "@mantine/core";
 import { motion } from "motion/react";
-import { FaTwitter, FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa6";
+import { FaTwitter, FaGithub, FaEnvelope } from "react-icons/fa6";
 import { useState } from "react";
 
 // Helper function to shorten journal names
@@ -602,16 +602,6 @@ export function Home() {
             className="social-icon"
           >
             <FaTwitter size={36} />
-          </a>
-          <a
-            href="https://www.linkedin.com/company/serre-lab"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Serre Lab LinkedIn"
-            style={{ color: "inherit", transition: "color 0.3s ease" }}
-            className="social-icon"
-          >
-            <FaLinkedin size={36} />
           </a>
           <a
             href="https://github.com/serre-lab"
