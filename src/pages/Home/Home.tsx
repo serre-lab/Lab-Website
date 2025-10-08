@@ -156,8 +156,25 @@ export function Home() {
         <div className="clickme-featured-card">
           <div className="clickme-featured-content">
             <div className="clickme-featured-header">
-              <Title order={2} className="clickme-main-title">🎮 Play ClickMe</Title>
-              <span className="clickme-badge">Featured Game</span>
+              <div className="clickme-title-group">
+                <Title order={2} className="clickme-main-title">🎮 Play ClickMe</Title>
+                <span className="clickme-badge">Featured Game</span>
+              </div>
+              <Link
+                to="/research"
+                className="clickme-header-button"
+                onClick={() => {
+                  if (typeof window !== 'undefined' && (window as any).gtag) {
+                    (window as any).gtag('event', 'click', {
+                      'event_category': 'engagement',
+                      'event_label': 'clickme_learn_more_research',
+                      'value': 1
+                    });
+                  }
+                }}
+              >
+                Learn More
+              </Link>
             </div>
             <Text className="clickme-featured-description">
               Join 2,000+ players. Win weekly cash prizes while helping AI see like humans.
@@ -176,45 +193,60 @@ export function Home() {
                   <span className="clickme-stat-number">$</span>
                   <span className="clickme-stat-label">Prizes</span>
                 </div>
-                <div className="clickme-stat-item">
-                  <span className="clickme-stat-number">NBC</span>
-                  <span className="clickme-stat-label">Featured</span>
-                </div>
-              </div>
-              <div className="clickme-cta-container">
-                <a
-                  href="https://clickme.clps.brown.edu/tutorial"
-                  target="_blank"
+                <a 
+                  href="https://www.nsf.gov/news/training-ai-see-more-humans" 
+                  target="_blank" 
                   rel="noopener noreferrer"
-                  className="clickme-featured-button"
+                  className="clickme-stat-item clickme-stat-link"
                   onClick={() => {
                     if (typeof window !== 'undefined' && (window as any).gtag) {
                       (window as any).gtag('event', 'click', {
                         'event_category': 'engagement',
-                        'event_label': 'clickme_play_now_featured',
+                        'event_label': 'nsf_article_featured',
                         'value': 1
                       });
                     }
                   }}
                 >
-                  Play Now →
+                  <span className="clickme-stat-number">NSF</span>
+                  <span className="clickme-stat-label">Featured</span>
                 </a>
-              <Link
-                to="/research"
-                className="clickme-secondary-button"
+                <a 
+                  href="https://turnto10.com/news/local/brown-university-offers-cash-incentive-to-assist-with-click-me-ai-research-artificial-intelligence-deep-learning-lab-plme-brain-science-game-vision-february-24-2025" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="clickme-stat-item clickme-stat-link"
+                  onClick={() => {
+                    if (typeof window !== 'undefined' && (window as any).gtag) {
+                      (window as any).gtag('event', 'click', {
+                        'event_category': 'engagement',
+                        'event_label': 'nbc_article',
+                        'value': 1
+                      });
+                    }
+                  }}
+                >
+                  <span className="clickme-stat-number">NBC</span>
+                  <span className="clickme-stat-label">Featured</span>
+                </a>
+              </div>
+              <a
+                href="https://clickme.clps.brown.edu/tutorial"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="clickme-featured-button"
                 onClick={() => {
                   if (typeof window !== 'undefined' && (window as any).gtag) {
                     (window as any).gtag('event', 'click', {
                       'event_category': 'engagement',
-                      'event_label': 'clickme_learn_more_research',
+                      'event_label': 'clickme_play_now_featured',
                       'value': 1
                     });
                   }
                 }}
               >
-                Learn More
-              </Link>
-              </div>
+                Play Now →
+              </a>
             </div>
           </div>
         </div>
