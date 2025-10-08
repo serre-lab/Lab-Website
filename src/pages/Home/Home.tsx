@@ -145,6 +145,60 @@ export function Home() {
         <Learn />
       </motion.div>
 
+      {/* PhD Recruitment Card */}
+      <motion.div
+        className="phd-recruitment-section"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
+        <div className="phd-recruitment-card">
+          <div className="phd-recruitment-content">
+            <div className="phd-recruitment-header">
+              <div className="phd-title-group">
+                <Title order={2} className="phd-main-title">🎓 PhD Students for Fall 2026</Title>
+                <span className="phd-badge">Now Recruiting</span>
+              </div>
+            </div>
+            <Text className="phd-recruitment-description">
+              Join our lab to work on cutting-edge NeuroAI, vision and computational neuroscience research.
+            </Text>
+            <div className="phd-bottom-row">
+              <div className="phd-info-stats">
+                <div className="phd-stat-item">
+                  <span className="phd-stat-text">Cognitive Science</span>
+                </div>
+                <div className="phd-stat-item">
+                  <span className="phd-stat-text">Computer Science</span>
+                </div>
+                <div className="phd-stat-item">
+                  <span className="phd-stat-text">Neuroscience</span>
+                </div>
+              </div>
+              <button
+                className="phd-learn-more-button"
+                onClick={() => {
+                  const phdSection = document.querySelector('.student-card');
+                  if (phdSection) {
+                    phdSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    phdSection.style.transition = 'all 0.3s ease';
+                    phdSection.style.transform = 'scale(1.02)';
+                    phdSection.style.boxShadow = '0 8px 24px rgba(52, 152, 219, 0.3)';
+                    setTimeout(() => {
+                      phdSection.style.transform = '';
+                      phdSection.style.boxShadow = '';
+                    }, 1000);
+                  }
+                }}
+              >
+                Learn More →
+              </button>
+            </div>
+          </div>
+        </div>
+      </motion.div>
+
       {/* ClickMe Featured Section */}
       <motion.div
         className="clickme-featured-section"
@@ -177,16 +231,16 @@ export function Home() {
               </Link>
             </div>
             <Text className="clickme-featured-description">
-              Join 2,000+ players. Win weekly cash prizes while helping AI see like humans.
+              Join 3,000+ players. Win weekly cash prizes while helping AI see like humans.
             </Text>
             <div className="clickme-bottom-row">
               <div className="clickme-featured-stats">
                 <div className="clickme-stat-item">
-                  <span className="clickme-stat-number">2,000+</span>
+                  <span className="clickme-stat-number">3,000+</span>
                   <span className="clickme-stat-label">Players</span>
                 </div>
                 <div className="clickme-stat-item">
-                  <span className="clickme-stat-number">6.5M+</span>
+                  <span className="clickme-stat-number">12M+</span>
                   <span className="clickme-stat-label">Annotations</span>
                 </div>
                 <div className="clickme-stat-item">
@@ -271,7 +325,7 @@ export function Home() {
             <div className="featured-content">
               <Title order={3} className="featured-project-title">🎮 ClickMe</Title>
               <Text className="featured-description">
-                Join 2,000+ players contributing 6.5M+ annotations. Play our game, win weekly cash prizes, and help AI see like humans. Featured on NBC 10.
+                Join 3,000+ players contributing 12M+ annotations. Play our game, win weekly cash prizes, and help AI see like humans. Featured on NBC 10.
               </Text>
               <a
                 href="https://clickme.clps.brown.edu/tutorial"
