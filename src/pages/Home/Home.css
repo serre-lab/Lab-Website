@@ -363,13 +363,21 @@
     justify-content: space-between;
     align-items: center;
     gap: 1.5rem;
+    flex-wrap: wrap;
   }
 
   .clickme-featured-header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 1rem;
     margin-bottom: 0;
+  }
+
+  .clickme-title-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
   }
 
   .clickme-main-title {
@@ -377,6 +385,25 @@
     margin: 0;
     font-size: 1.5rem;
     font-weight: 700;
+  }
+
+  .clickme-header-button {
+    background: transparent;
+    color: white;
+    padding: 0.5rem 1.25rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    white-space: nowrap;
+  }
+
+  .clickme-header-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
   }
 
   .clickme-badge {
@@ -400,7 +427,10 @@
 
   .clickme-featured-stats {
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    flex: 1;
+    min-width: 250px;
   }
 
   .clickme-stat-item {
@@ -411,6 +441,18 @@
     padding: 0.4rem 0.75rem;
     border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+  }
+
+  .clickme-stat-link {
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .clickme-stat-link:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px);
   }
 
   .clickme-stat-number {
@@ -472,6 +514,19 @@
   }
 
   /* Responsive Design */
+  @media (max-width: 900px) {
+    .clickme-bottom-row {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 1rem;
+    }
+    
+    .clickme-featured-stats {
+      justify-content: center;
+      min-width: auto;
+    }
+  }
+
   @media (max-width: 768px) {
     .clickme-featured-section {
       padding: 0 1rem;
@@ -484,20 +539,10 @@
     .clickme-main-title {
       font-size: 1.25rem;
     }
-
-    .clickme-bottom-row {
-      flex-direction: column;
-      align-items: stretch;
-      gap: 1rem;
-    }
-    
-    .clickme-featured-stats {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
     
     .clickme-cta-container {
       flex-direction: column;
+      width: 100%;
     }
     
     .clickme-featured-button,
