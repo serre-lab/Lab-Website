@@ -322,6 +322,190 @@
     background: #2980b9;
   }
 
+  /* ClickMe Featured Section - Full Width */
+  .clickme-featured-section {
+    width: 100%;
+    max-width: 800px;
+    margin: 1rem auto;
+    padding: 0 2rem;
+  }
+
+  .clickme-featured-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.2);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .clickme-featured-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .clickme-featured-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .clickme-bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .clickme-featured-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0;
+  }
+
+  .clickme-main-title {
+    color: white;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .clickme-badge {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .clickme-featured-description {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 0;
+  }
+
+  .clickme-featured-stats {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .clickme-stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 0.4rem 0.75rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .clickme-stat-number {
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.1rem;
+  }
+
+  .clickme-stat-label {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.65rem;
+    text-align: center;
+  }
+
+  .clickme-cta-container {
+    display: flex;
+    gap: 0.75rem;
+    flex-shrink: 0;
+  }
+
+  .clickme-featured-button {
+    background: white;
+    color: #667eea;
+    padding: 0.65rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border: 2px solid white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  .clickme-featured-button:hover {
+    background: #f7fafc;
+    color: #5a67d8;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .clickme-secondary-button {
+    background: transparent;
+    color: white;
+    padding: 0.65rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+  }
+
+  .clickme-secondary-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .clickme-featured-section {
+      padding: 0 1rem;
+    }
+    
+    .clickme-featured-card {
+      padding: 1rem 1.25rem;
+    }
+    
+    .clickme-main-title {
+      font-size: 1.25rem;
+    }
+
+    .clickme-bottom-row {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 1rem;
+    }
+    
+    .clickme-featured-stats {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .clickme-cta-container {
+      flex-direction: column;
+    }
+    
+    .clickme-featured-button,
+    .clickme-secondary-button {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
   /* Recent Highlights Section */
   .recent-highlights-section {
     width: 100%;

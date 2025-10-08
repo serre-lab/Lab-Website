@@ -145,6 +145,83 @@ export function Home() {
         <Learn />
       </motion.div>
 
+      {/* ClickMe Featured Section */}
+      <motion.div
+        className="clickme-featured-section"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
+        <div className="clickme-featured-card">
+          <div className="clickme-featured-content">
+            <div className="clickme-featured-header">
+              <Title order={2} className="clickme-main-title">🎮 Play ClickMe</Title>
+              <span className="clickme-badge">Featured Game</span>
+            </div>
+            <Text className="clickme-featured-description">
+              Join 2,000+ players. Win weekly cash prizes while helping AI see like humans.
+            </Text>
+            <div className="clickme-bottom-row">
+              <div className="clickme-featured-stats">
+                <div className="clickme-stat-item">
+                  <span className="clickme-stat-number">2,000+</span>
+                  <span className="clickme-stat-label">Players</span>
+                </div>
+                <div className="clickme-stat-item">
+                  <span className="clickme-stat-number">6.5M+</span>
+                  <span className="clickme-stat-label">Annotations</span>
+                </div>
+                <div className="clickme-stat-item">
+                  <span className="clickme-stat-number">$</span>
+                  <span className="clickme-stat-label">Prizes</span>
+                </div>
+                <div className="clickme-stat-item">
+                  <span className="clickme-stat-number">NBC</span>
+                  <span className="clickme-stat-label">Featured</span>
+                </div>
+              </div>
+              <div className="clickme-cta-container">
+                <a
+                  href="https://clickme.clps.brown.edu/tutorial"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="clickme-featured-button"
+                  onClick={() => {
+                    if (typeof window !== 'undefined' && (window as any).gtag) {
+                      (window as any).gtag('event', 'click', {
+                        'event_category': 'engagement',
+                        'event_label': 'clickme_play_now_featured',
+                        'value': 1
+                      });
+                    }
+                  }}
+                >
+                  Play Now →
+                </a>
+                <a
+                  href="https://clickme.clps.brown.edu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="clickme-secondary-button"
+                  onClick={() => {
+                    if (typeof window !== 'undefined' && (window as any).gtag) {
+                      (window as any).gtag('event', 'click', {
+                        'event_category': 'engagement',
+                        'event_label': 'clickme_learn_more',
+                        'value': 1
+                      });
+                    }
+                  }}
+                >
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </motion.div>
+
       {/* Featured Projects Section */}
       <motion.div
         className="featured-projects-section"
@@ -162,15 +239,24 @@ export function Home() {
           {/* ClickMe Card */}
           <div className="featured-card">
             <div className="featured-content">
-              <Title order={3} className="featured-project-title">ClickMe</Title>
+              <Title order={3} className="featured-project-title">🎮 ClickMe</Title>
               <Text className="featured-description">
                 Join 2,000+ players contributing 6.5M+ annotations. Play our game, win weekly cash prizes, and help AI see like humans. Featured on NBC 10.
               </Text>
               <a
-                href="http://clickme.clps.brown.edu"
+                href="https://clickme.clps.brown.edu/tutorial"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="featured-button-small"
+                onClick={() => {
+                  if (typeof window !== 'undefined' && (window as any).gtag) {
+                    (window as any).gtag('event', 'click', {
+                      'event_category': 'engagement',
+                      'event_label': 'clickme_play_now_grid',
+                      'value': 1
+                    });
+                  }
+                }}
               >
                 Play Now →
               </a>
@@ -506,6 +592,22 @@ export function Home() {
             className="social-icon"
           >
             <FaGithub size={36} />
+          </a>
+          <a
+            href="https://bsky.app/profile/thomasserre.bsky.social"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Thomas Serre on Bluesky"
+            style={{ color: "inherit", transition: "color 0.3s ease" }}
+            className="social-icon"
+          >
+            <img 
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Bluesky_logo_%28black%29.svg/869px-Bluesky_logo_%28black%29.svg.png"
+              alt="Bluesky"
+              width="36"
+              height="36"
+              style={{ display: 'block' }}
+            />
           </a>
           {!showEmail ? (
             <button
