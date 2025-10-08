@@ -166,15 +166,60 @@ export function Home() {
             </Text>
             <div className="phd-bottom-row">
               <div className="phd-info-stats">
-                <div className="phd-stat-item">
+                <a
+                  href="https://graduateprograms.brown.edu/graduate-program/cognitive-science-phd"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="phd-stat-item phd-stat-link"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    if (typeof window !== 'undefined' && (window as any).gtag) {
+                      (window as any).gtag('event', 'click', {
+                        'event_category': 'recruitment',
+                        'event_label': 'phd_cognitive_science_link',
+                        'value': 1
+                      });
+                    }
+                  }}
+                >
                   <span className="phd-stat-text">Cognitive Science</span>
-                </div>
-                <div className="phd-stat-item">
+                </a>
+                <a
+                  href="https://graduateprograms.brown.edu/graduate-program/computer-science-phd"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="phd-stat-item phd-stat-link"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    if (typeof window !== 'undefined' && (window as any).gtag) {
+                      (window as any).gtag('event', 'click', {
+                        'event_category': 'recruitment',
+                        'event_label': 'phd_computer_science_link',
+                        'value': 1
+                      });
+                    }
+                  }}
+                >
                   <span className="phd-stat-text">Computer Science</span>
-                </div>
-                <div className="phd-stat-item">
+                </a>
+                <a
+                  href="https://www.brown.edu/academics/neuroscience/graduate/home"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="phd-stat-item phd-stat-link"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    if (typeof window !== 'undefined' && (window as any).gtag) {
+                      (window as any).gtag('event', 'click', {
+                        'event_category': 'recruitment',
+                        'event_label': 'phd_neuroscience_link',
+                        'value': 1
+                      });
+                    }
+                  }}
+                >
                   <span className="phd-stat-text">Neuroscience</span>
-                </div>
+                </a>
               </div>
               <button
                 className="phd-learn-more-button"
