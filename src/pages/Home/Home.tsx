@@ -179,7 +179,7 @@ export function Home() {
               <button
                 className="phd-learn-more-button"
                 onClick={() => {
-                  const phdSection = document.querySelector('.student-card');
+                  const phdSection = document.querySelector('.student-card') as HTMLElement;
                   if (phdSection) {
                     phdSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
                     phdSection.style.transition = 'all 0.3s ease';
