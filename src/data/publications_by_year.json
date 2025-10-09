@@ -16,7 +16,7 @@
     },
     {
       "title": "Elements for a neural theory of the processing of dynamic faces",
-      "url": null,
+      "url": "https://direct.mit.edu/books/book/2866/Dynamic-FacesInsights-from-Experiments-and",
       "journal": "Dynamic Faces: Insights from Experiments and Computation",
       "authors": "T. Serre & M. Giese",
       "pdfPath": "/papers/SerreGiese-Curio_13_Ch13_187-210.pdf"
@@ -30,7 +30,7 @@
     },
     {
       "title": "The story of a single cell: Peeking into the semantics of spikes",
-      "url": null,
+      "url": "https://ieeexplore.ieee.org/document/5604119",
       "journal": "IAPR Workshop on Cognitive Information Processing",
       "authors": "R. Kliper, T. Serre, D. Weinshall & I. Nelken",
       "pdfPath": "/papers/Story-of-a-Single-Cell1.pdf"
@@ -69,7 +69,7 @@
   "2012": [
     {
       "title": "The ankyrin 3 (ANK3) bipolar disorder gene regulates mood-related behaviors that are modulated by lithium and stress",
-      "url": null,
+      "url": "https://www.sciencedirect.com/science/article/pii/S0006322312009389",
       "journal": "Biological Psychiatry",
       "authors": "M. Leussis, E. Berry-Scott, M. Saito, H. Jhuang, G. Haan, O. Alkan, C. Luce, J. Madison, P. Sklar, T. Serre, D. Root & T. Petryshen",
       "pdfPath": "/papers/Leussis_Ank3_BiolPsych2012.pdf"
@@ -129,7 +129,7 @@
     },
     {
       "title": "Hierarchical models of the visual system",
-      "url": null,
+      "url": "https://link.springer.com/referenceworkentry/10.1007/978-1-4614-7320-6_345-1",
       "journal": "Encyclopedia of Computational Neuroscience",
       "authors": "T. Serre",
       "pdfPath": "/papers/hierarchical-models-visual-system-2020.pdf"
@@ -168,7 +168,7 @@
   "2016": [
     {
       "title": "Models of visual categorization",
-      "url": null,
+      "url": "https://wires.onlinelibrary.wiley.com/doi/10.1002/wcs.1385",
       "journal": "Wiley Interdisciplinary Reviews: Cognitive Science",
       "authors": "T. Serre",
       "pdfPath": "/papers/serre2016.pdf"
@@ -189,21 +189,21 @@
     },
     {
       "title": "Fast ventral stream neural activity enables rapid visual categorization",
-      "url": null,
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1053811915009131",
       "journal": "Neuroimage",
       "authors": "M. Cauchoix*, S.M. Crouzet*, D. Fize & T. Serre",
       "pdfPath": "/papers/2016_Cauchoix_NI.pdf"
     },
     {
       "title": "Source modelling of ElectroCorticoGraphy (ECoG) data: Analysis of stability and spatial filtering",
-      "url": null,
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0165027016000649",
       "journal": "Journal of Neuroscience Methods",
       "authors": "A. Pascarella, C. Todaro, M. Clerc, T. Serre and M. Piana",
       "pdfPath": "/papers/2016_Pascarella_JNM-1.pdf"
     },
     {
       "title": "Towards a theory of computation in the visual cortex",
-      "url": null,
+      "url": "https://link.springer.com/chapter/10.1007/978-981-10-0213-7_4",
       "journal": "Computational and Cognitive Neuroscience of Vision",
       "authors": "D. Mely & T. Serre",
       "pdfPath": "/papers/2016_Mely_CCNV.pdf"
@@ -217,7 +217,7 @@
     },
     {
       "title": "A systematic comparison between visual cues for boundary detection",
-      "url": null,
+      "url": "https://www.sciencedirect.com/science/article/pii/S0042698915003685",
       "journal": "Vision Research (Special Issue on Vision and the Statistics of the Natural Environment)",
       "authors": "D.A. Mély, J. Kim, M. McGill, Y. Guo and T. Serre",
       "pdfPath": "/papers/2016_Mely_VR.pdf"
@@ -226,7 +226,7 @@
   "2017": [
     {
       "title": "What are the visual features underlying human versus machine vision?",
-      "url": null,
+      "url": "https://ieeexplore.ieee.org/document/8265530/",
       "journal": "IEEE ICCV Workshop on the Mutual Benefit of Cognitive and Computer Vision",
       "authors": "D Linsley, S Eberhardt, T Sharma, P Gupta & T Serre",
       "pdfPath": "/papers/Linsley_et_al_MBCC_2017-3.pdf"
@@ -284,7 +284,7 @@
     },
     {
       "title": "Same-different problems strain convolutional neural networks",
-      "url": null,
+      "url": "https://escholarship.org/uc/item/9zz2g6g1",
       "journal": "Annual Meeting of the Cognitive Science Society",
       "authors": "M. Ricci, J.K. Kim & T. Serre",
       "pdfPath": "/papers/2018_COGSCI-1.pdf"
@@ -298,7 +298,7 @@
     },
     {
       "title": "Learning to predict action potentials end-to-end from calcium imaging data",
-      "url": null,
+      "url": "https://ieeexplore.ieee.org/document/8362319",
       "journal": "IEEE Conference on Information Sciences and Systems",
       "authors": "D Linsley, J Linsley, T Sharma, N Meyers & T Serre",
       "pdfPath": "/papers/Linsley_et_al_CISS2018.pdf"
@@ -307,7 +307,7 @@
   "2019": [
     {
       "title": "Development of a deep learning algorithm for the histopathologic diagnosis and gleason grading of prostate cancer biopsies: A pilot study",
-      "url": null,
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S240545691930344X",
       "journal": "European urology focus",
       "authors": "O. Kott*, D. Linsley*, A. Karagounis, C. Jeffers, G. Dragan, Ali Amin, T. Serre** & B. Gershman**",
       "pdfPath": "/papers/PIIS240545691930344X.pdf"
@@ -752,14 +752,14 @@
   "2009": [
     {
       "title": "Attentive processing improves object recognition",
-      "url": null,
+      "url": "https://dspace.mit.edu/handle/1721.1/49415",
       "journal": "MIT Computer Science and Artificial Intelligence Laboratory Technical Report",
       "authors": "S. Chikkerur, T. Serre & T. Poggio",
       "pdfPath": "/papers/chikkerur_MIT-CSAIL-TR-2009-046.pdf"
     },
     {
       "title": "A Bayesian inference theory of attention: neuroscience and algorithms",
-      "url": null,
+      "url": "https://dspace.mit.edu/handle/1721.1/49416",
       "journal": "MIT Computer Science and Artificial Intelligence Laboratory Technical Report",
       "authors": "S. Chikkerur, T. Serre & T. Poggio",
       "pdfPath": "/papers/chikkerur_etal_MIT-CSAIL-TR-2009-047.pdf"
@@ -789,7 +789,7 @@
     },
     {
       "title": "Learning complex cell invariance from natural videos: a plausibility proof",
-      "url": null,
+      "url": "https://dspace.mit.edu/handle/1721.1/39833",
       "journal": "MIT Computer Science and Artificial Intelligence Laboratory Technical Report",
       "authors": "T. Masquelier, T. Serre, S. Thorpe & T. Poggio",
       "pdfPath": "/papers/Masquelier-etal-MIT-CSAIL-TR-2007-060.pdf"
@@ -803,7 +803,7 @@
     },
     {
       "title": "A component-based framework for face detection and identification",
-      "url": null,
+      "url": "https://link.springer.com/article/10.1007/s11263-006-0006-z",
       "journal": "International Journal of Computer Vision",
       "authors": "B. Heisele, T. Serre & T. Poggio",
       "pdfPath": "/papers/heisele_etal-IJCV-07.pdf"
@@ -812,7 +812,7 @@
   "2006": [
     {
       "title": "Learning a dictionary of shape-components in visual cortex: Comparison with neurons, humans and machines",
-      "url": null,
+      "url": "https://dspace.mit.edu/handle/1721.1/34270",
       "journal": "MIT Computer Science and Artificial Intelligence Laboratory Technical Report",
       "authors": "T. Serre",
       "pdfPath": "/papers/Serre_MIT-CSAIL-TR-2006-028.pdf"
@@ -821,7 +821,7 @@
   "2005": [
     {
       "title": "Learning features of intermediate complexity for the recognition of biological motion",
-      "url": null,
+      "url": "https://link.springer.com/chapter/10.1007/11550822_39",
       "journal": "ICANN 2005",
       "authors": "R. Sigala, T. Serre, T. Poggio & M. Giese",
       "pdfPath": "/papers/sigala_etal-ICANN05.pdf"
@@ -835,7 +835,7 @@
     },
     {
       "title": "Error weighted classifier combination for multi-modal human identification",
-      "url": null,
+      "url": "https://dspace.mit.edu/handle/1721.1/30590",
       "journal": "MIT Computer Science and Artificial Intelligence Laboratory Technical Report",
       "authors": "Y. Ivanov, T. Serre & J. Bouvrie",
       "pdfPath": "/papers/ivanov_etal_MIT-CSAIL-TR-2005-081.pdf"
@@ -844,28 +844,28 @@
   "2004": [
     {
       "title": "Realistic modeling of simple and complex cell tuning in the HMAX model, and implications for invariant object recognition in cortex",
-      "url": null,
+      "url": "https://dspace.mit.edu/handle/1721.1/30491",
       "journal": "MIT Computer Science and Artificial Intelligence Laboratory",
       "authors": "T. Serre & M. Riesenhuber",
       "pdfPath": "/papers/serre_riesenhuber-AIM-2004-017.pdf"
     },
     {
       "title": "A new biologically motivated framework for robust object recognition",
-      "url": null,
+      "url": "https://dspace.mit.edu/handle/1721.1/30504",
       "journal": "MIT Computer Science and Artificial Intelligence Laboratory",
       "authors": "T. Serre, L. Wolf & T. Poggio",
       "pdfPath": "/papers/serre_etal-AIM-2004-026.pdf"
     },
     {
       "title": "Using component features for face recognition",
-      "url": null,
+      "url": "https://ieeexplore.ieee.org/document/1301569",
       "journal": "International Conference on Automatic Face and Gesture Recognition",
       "authors": "Y. Ivanov, B. Heisele & T. Serre",
       "pdfPath": "/papers/ivanov_etal-FG04.pdf"
     },
     {
       "title": "A theory of object recognition: computations and circuits in the feedforward path of the ventral stream in primate visual cortex",
-      "url": null,
+      "url": "https://dspace.mit.edu/handle/1721.1/36407",
       "journal": "MIT Computer Science and Artificial Intelligence Laboratory",
       "authors": "T. Serre, M. Kouh, C. Cadieu, U. Knoblich, G. Kreiman & T. Poggio",
       "pdfPath": "/papers/GetTRDoc.pdf"
@@ -883,7 +883,7 @@
   "2002": [
     {
       "title": "On the role of object-specific features for real-world object recognition in biological vision",
-      "url": null,
+      "url": "https://link.springer.com/chapter/10.1007/3-540-36181-2_39",
       "journal": "Workshop on Biologically Motivated Computer Vision",
       "authors": "T. Serre, J. Louie, M. Riesenhuber & T. Poggio",
       "pdfPath": "/papers/serre_etal-BMCV02.pdf"
@@ -913,7 +913,7 @@
     },
     {
       "title": "Feature selection for face detection",
-      "url": null,
+      "url": "https://dspace.mit.edu/handle/1721.1/7232",
       "journal": "MIT Center for Biological and Computational Learning",
       "authors": "T. Serre, B. Heisele, S. Mukherjee & T. Poggio",
       "pdfPath": "/papers/serre_etal-AIM-1697.pdf"
