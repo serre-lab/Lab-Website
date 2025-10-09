@@ -162,7 +162,7 @@ export function Home() {
               </div>
             </div>
             <Text className="phd-recruitment-description">
-              Join our lab to work on cutting-edge NeuroAI, vision and computational neuroscience research.
+              Apply to one of these three PhD programs to join our lab and work on cutting-edge NeuroAI, vision and computational neuroscience research.
             </Text>
             <div className="phd-bottom-row">
               <div className="phd-info-stats">
