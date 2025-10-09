@@ -263,6 +263,26 @@
     border: 1px solid var(--color-border);
   }
 
+  .clickme-grid-card {
+    border: 2px solid #667eea;
+    background: linear-gradient(to bottom, rgba(102, 126, 234, 0.05), var(--color-bg-white));
+  }
+
+  .featured-badge-small {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 0.35rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+  }
+
   .featured-card::before {
     content: '';
     position: absolute;
@@ -322,21 +342,22 @@
     background: #2980b9;
   }
 
-  /* PhD Recruitment Card - Matching ClickMe Layout */
+  /* PhD Recruitment Section */
   .phd-recruitment-section {
     width: 100%;
     max-width: 800px;
-    margin: 0.5rem auto 0.25rem auto;
+    margin: 1rem auto;
     padding: 0 2rem;
   }
 
   .phd-recruitment-card {
-    background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
     border-radius: 12px;
     padding: 1.25rem 1.5rem;
-    box-shadow: 0 8px 32px rgba(39, 174, 96, 0.2);
+    box-shadow: 0 8px 32px rgba(52, 152, 219, 0.2);
     position: relative;
     overflow: hidden;
+    height: 100%;
   }
 
   .phd-recruitment-card::before {
@@ -433,7 +454,7 @@
 
   .phd-learn-more-button {
     background: white;
-    color: #27ae60;
+    color: #3498db;
     padding: 0.65rem 1.5rem;
     border-radius: 50px;
     text-decoration: none;
@@ -448,18 +469,11 @@
 
   .phd-learn-more-button:hover {
     background: #f7fafc;
-    color: #1e8449;
+    color: #2980b9;
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   }
 
-  /* ClickMe Featured Section - Full Width */
-  .clickme-featured-section {
-    width: 100%;
-    max-width: 800px;
-    margin: 0.25rem auto 0.5rem auto;
-    padding: 0 2rem;
-  }
 
   .clickme-featured-card {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -468,6 +482,7 @@
     box-shadow: 0 8px 32px rgba(102, 126, 234, 0.2);
     position: relative;
     overflow: hidden;
+    height: 100%;
   }
 
   .clickme-featured-card::before {
@@ -644,40 +659,34 @@
     transform: translateY(-2px);
   }
 
-  /* Responsive Design */
+  /* Responsive Design for PhD Card */
   @media (max-width: 900px) {
-    .clickme-bottom-row {
+    .phd-bottom-row {
       flex-direction: column;
       align-items: stretch;
       gap: 1rem;
     }
     
-    .clickme-featured-stats {
+    .phd-info-stats {
       justify-content: center;
       min-width: auto;
     }
   }
 
   @media (max-width: 768px) {
-    .clickme-featured-section {
+    .phd-recruitment-section {
       padding: 0 1rem;
     }
     
-    .clickme-featured-card {
+    .phd-recruitment-card {
       padding: 1rem 1.25rem;
     }
     
-    .clickme-main-title {
+    .phd-main-title {
       font-size: 1.25rem;
     }
     
-    .clickme-cta-container {
-      flex-direction: column;
-      width: 100%;
-    }
-    
-    .clickme-featured-button,
-    .clickme-secondary-button {
+    .phd-learn-more-button {
       width: 100%;
       text-align: center;
     }

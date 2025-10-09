@@ -244,113 +244,6 @@ export function Home() {
         </div>
       </motion.div>
 
-      {/* ClickMe Featured Section */}
-      <motion.div
-        className="clickme-featured-section"
-        variants={fadeUp}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-      >
-        <div className="clickme-featured-card">
-          <div className="clickme-featured-content">
-            <div className="clickme-featured-header">
-              <div className="clickme-title-group">
-                <Title order={2} className="clickme-main-title">🎮 Play ClickMe</Title>
-                <span className="clickme-badge">Featured Game</span>
-              </div>
-              <Link
-                to="/research"
-                className="clickme-header-button"
-                onClick={() => {
-                  if (typeof window !== 'undefined' && (window as any).gtag) {
-                    (window as any).gtag('event', 'click', {
-                      'event_category': 'engagement',
-                      'event_label': 'clickme_learn_more_research',
-                      'value': 1
-                    });
-                  }
-                }}
-              >
-                Learn More
-              </Link>
-            </div>
-            <Text className="clickme-featured-description">
-              Join 3,000+ players. Win weekly cash prizes while helping AI see like humans.
-            </Text>
-            <div className="clickme-bottom-row">
-              <div className="clickme-featured-stats">
-                <div className="clickme-stat-item">
-                  <span className="clickme-stat-number">3,000+</span>
-                  <span className="clickme-stat-label">Players</span>
-                </div>
-                <div className="clickme-stat-item">
-                  <span className="clickme-stat-number">12M+</span>
-                  <span className="clickme-stat-label">Annotations</span>
-                </div>
-                <div className="clickme-stat-item">
-                  <span className="clickme-stat-number">$</span>
-                  <span className="clickme-stat-label">Prizes</span>
-                </div>
-                <a 
-                  href="https://www.nsf.gov/news/training-ai-see-more-humans" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="clickme-stat-item clickme-stat-link"
-                  onClick={() => {
-                    if (typeof window !== 'undefined' && (window as any).gtag) {
-                      (window as any).gtag('event', 'click', {
-                        'event_category': 'engagement',
-                        'event_label': 'nsf_article_featured',
-                        'value': 1
-                      });
-                    }
-                  }}
-                >
-                  <span className="clickme-stat-number">NSF</span>
-                  <span className="clickme-stat-label">Featured</span>
-                </a>
-                <a 
-                  href="https://turnto10.com/news/local/brown-university-offers-cash-incentive-to-assist-with-click-me-ai-research-artificial-intelligence-deep-learning-lab-plme-brain-science-game-vision-february-24-2025" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="clickme-stat-item clickme-stat-link"
-                  onClick={() => {
-                    if (typeof window !== 'undefined' && (window as any).gtag) {
-                      (window as any).gtag('event', 'click', {
-                        'event_category': 'engagement',
-                        'event_label': 'nbc_article',
-                        'value': 1
-                      });
-                    }
-                  }}
-                >
-                  <span className="clickme-stat-number">NBC</span>
-                  <span className="clickme-stat-label">Featured</span>
-                </a>
-              </div>
-              <a
-                href="https://clickme.clps.brown.edu/tutorial"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="clickme-featured-button"
-                onClick={() => {
-                  if (typeof window !== 'undefined' && (window as any).gtag) {
-                    (window as any).gtag('event', 'click', {
-                      'event_category': 'engagement',
-                      'event_label': 'clickme_play_now_featured',
-                      'value': 1
-                    });
-                  }
-                }}
-              >
-                Play Now →
-              </a>
-            </div>
-          </div>
-        </div>
-      </motion.div>
-
       {/* Featured Projects Section */}
       <motion.div
         className="featured-projects-section"
@@ -366,11 +259,12 @@ export function Home() {
         
         <div className="featured-grid">
           {/* ClickMe Card */}
-          <div className="featured-card">
+          <div className="featured-card clickme-grid-card">
+            <span className="featured-badge-small">Featured</span>
             <div className="featured-content">
               <Title order={3} className="featured-project-title">🎮 ClickMe</Title>
               <Text className="featured-description">
-                Join 3,000+ players contributing 12M+ annotations. Play our game, win weekly cash prizes, and help AI see like humans. Featured on NBC 10.
+                Play our game, win weekly cash prizes, and help AI see like humans. Featured by NSF and NBC 10.
               </Text>
               <a
                 href="https://clickme.clps.brown.edu/tutorial"
