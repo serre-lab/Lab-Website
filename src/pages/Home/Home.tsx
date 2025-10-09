@@ -203,7 +203,7 @@ export function Home() {
                   <span className="phd-stat-text">Computer Science</span>
                 </a>
                 <a
-                  href="https://www.brown.edu/academics/neuroscience/graduate/home"
+                  href="https://graduateprograms.brown.edu/graduate-program/biomed-neuroscience-phd"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="phd-stat-item phd-stat-link"
