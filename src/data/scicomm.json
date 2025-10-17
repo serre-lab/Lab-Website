@@ -183,7 +183,7 @@
     "title": "Biologically Inspired Vision Systems",
     "link": "https://www.technologyreview.com/2007/02/21/226667/biologically-inspired-vision-systems/",
     "blurb": "MIT Technology Review features neuroscientists at MIT who developed a computer model that mimics the human vision system to accurately detect and recognize objects in busy street scenes. Thomas Serre and Tomaso Poggio's model successfully recognized objects more than 95 percent of the time. Such biologically inspired vision systems could be used in surveillance systems and smart sensors.",
-    "image": "/images/scicomm/brown.png"
+    "image": "https://s3.amazonaws.com/files.technologyreview.com/p/pub/legacy/roboticeye.jpg"
   },
   {
     "title": "Computer model mimics neural processes in object recognition",
