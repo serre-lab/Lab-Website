@@ -195,6 +195,6 @@
     "title": "Reverse-Engineering the Brain",
     "link": "https://www.technologyreview.com/2006/07/01/228791/reverse-engineering-the-brain/",
     "blurb": "MIT Technology Review article discusses how neuroscience and artificial intelligence were beginning to intersect at MIT. Thomas Serre and Tomaso Poggio's immediate-recognition program achieved 82 percent accuracy on animal presence tests, performing as well as or better than human subjects - almost certainly the first time a general-vision program had performed as well as humans.",
-    "image": "/images/scicomm/brown.png"
+    "image": "https://s3.amazonaws.com/files.technologyreview.com/p/pub/legacy/0706brainb2.jpg"
   }
 ]
