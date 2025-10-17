@@ -36,6 +36,12 @@
     "image": "https://scx1.b-cdn.net/csz/news/800a/2023/new-tool-explains-how.jpg"
   },
   {
+    "title": "Summers are for science: A look at what Brown researchers were up to this summer",
+    "link": "https://www.browndailyherald.com/article/2023/09/summers-are-for-science-a-look-at-what-brown-researchers-were-up-to-this-summer",
+    "blurb": "The Brown Daily Herald features Thomas Serre's research on artificial intelligence and deep neural networks. The article highlights CRAFT (Concept Recursive Activation FacTorization for Explainability), a project by researchers at the Carney Institute for Brain Science that helps explain how visual AI systems solve problems and make mistakes.",
+    "image": "https://snworksceo.imgix.net/bdh/9247581e-6574-4099-a85d-9b28fdb9a0b0.sized-1000x1000.jpg?w=1000"
+  },
+  {
     "title": "Compositionally in Neural Networks",
     "blurb": "PhD student Michael Lepori discusses new approaches to studying compositionality in neural network models in a recent Carney Community Spotlight.",
     "link": "https://www.brown.edu/carney/spotlights/michael-lepori",
@@ -46,6 +52,24 @@
     "blurb": "When design and neural networks mix the results are both practical and innovative.",
     "link": "https://www.brown.edu/carney/news/2019/05/20/finding-art-artificial-intelligence",
     "image": "/images/scicomm/RISD_Brown.jpg"
+  },
+  {
+    "title": "Intel and Brown University researchers embark on two-year project to bridge spinal cord breaks using AI",
+    "link": "https://venturebeat.com/ai/intel-and-brown-university-researchers-embark-on-two-year-project-to-bridge-spinal-cord-breaks-using-ai/",
+    "blurb": "Engineers and neuroscientists at Brown University, Rhode Island Hospital, Intel, and Micro-Leads Medical committed to designing an Intelligent Spine Interface (ISI) with a $6.3 million DARPA grant. Thomas Serre works with Intel scientists to devise AI-powered analogs for the spinal cord's biological systems to help restore limb movement and bladder control for people with spinal cord injuries.",
+    "image": "/images/scicomm/brown.png"
+  },
+  {
+    "title": "Brain science blooms at Brown",
+    "link": "https://www.browndailyherald.com/article/2019/05/brain-science-blooms-at-brown",
+    "blurb": "The Brown Daily Herald explores the Carney Institute for Brain Science, which comprises scientists from 23 departments including engineers, biologists, psychologists, doctors, cognitive scientists, neuroscientists, and computer scientists who collaborate to address disorders of the nervous system. The article highlights interdisciplinary brain research initiatives including the BrainGate consortium.",
+    "image": "https://snworksceo.imgix.net/bdh/d2af1cc9-c0f1-4cad-bec4-41f7c5a83d08.sized-1000x1000.jpg?w=1000"
+  },
+  {
+    "title": "Carney Institute settles in above Brown bookstore",
+    "link": "https://www.browndailyherald.com/2019/04/10/carney-institute-settles-brown-bookstore/",
+    "blurb": "The Carney Institute for Brain Science moved into its new home at 164 Angell St. above the University's bookstore, following a $100 million donation from Robert Carney '61 and Nancy Carney. The new space includes offices, conference rooms and improved collaborative spaces for interdisciplinary brain science research.",
+    "image": "https://snworksceo.imgix.net/bdh/2fe935db-affb-4e80-9f71-cf402e2e62ce.sized-1000x1000.jpg?w=1000"
   },
   {
     "title": "Brown researchers teach computers to see optical illusions",
@@ -145,7 +169,7 @@
   },
   {
     "title": "Visions of the Future - BBC Documentary",
-    "blurb": "Serre Lab's work was featured in the BBC series 'Visions of the Future' with Dr. Michio Kaku, exploring the future of artificial intelligence and brain-inspired computing.",
+    "blurb": "Thomas Serre's doctoral research was featured in the BBC series 'Visions of the Future' with Dr. Michio Kaku, exploring the future of artificial intelligence and brain-inspired computing.",
     "link": "https://en.wikipedia.org/wiki/Visions_of_the_Future",
     "image": "/images/scicomm/visions.png"
   },
@@ -154,5 +178,23 @@
     "blurb": "Article by Pam Frost Gorder",
     "link": "http://www.scientificamerican.com/article.cfm?id=visionary-research",
     "image": "/images/scicomm/computing_now.png"
+  },
+  {
+    "title": "Biologically Inspired Vision Systems",
+    "link": "https://www.technologyreview.com/2007/02/21/226667/biologically-inspired-vision-systems/",
+    "blurb": "MIT Technology Review features neuroscientists at MIT who developed a computer model that mimics the human vision system to accurately detect and recognize objects in busy street scenes. Thomas Serre and Tomaso Poggio's model successfully recognized objects more than 95 percent of the time. Such biologically inspired vision systems could be used in surveillance systems and smart sensors.",
+    "image": "/images/scicomm/brown.png"
+  },
+  {
+    "title": "Computer model mimics neural processes in object recognition",
+    "link": "https://news.mit.edu/2007/surveillance",
+    "blurb": "MIT News covers Thomas Serre's research on a computer model of the visual system published in IEEE Transactions on Pattern Analysis and Machine Intelligence. The model mimics the brain's hierarchical processing to achieve remarkable object recognition performance in surveillance and street scene analysis.",
+    "image": "/images/scicomm/brown.png"
+  },
+  {
+    "title": "Reverse-Engineering the Brain",
+    "link": "https://www.technologyreview.com/2006/07/01/228791/reverse-engineering-the-brain/",
+    "blurb": "MIT Technology Review article discusses how neuroscience and artificial intelligence were beginning to intersect at MIT. Thomas Serre and Tomaso Poggio's immediate-recognition program achieved 82 percent accuracy on animal presence tests, performing as well as or better than human subjects - almost certainly the first time a general-vision program had performed as well as humans.",
+    "image": "/images/scicomm/brown.png"
   }
 ]
