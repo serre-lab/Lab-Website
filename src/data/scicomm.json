@@ -192,9 +192,9 @@
     "image": "https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/200702/200908311112474721_0.jpg?itok=ci10deDx"
   },
   {
-    "title": "Reverse-Engineering the Brain",
-    "link": "https://www.technologyreview.com/2006/07/01/228791/reverse-engineering-the-brain/",
-    "blurb": "MIT Technology Review article discusses how neuroscience and artificial intelligence were beginning to intersect at MIT. Thomas Serre and Tomaso Poggio's immediate-recognition program achieved 82 percent accuracy on animal presence tests, performing as well as or better than human subjects - almost certainly the first time a general-vision program had performed as well as humans.",
-    "image": "https://s3.amazonaws.com/files.technologyreview.com/p/pub/legacy/0706brainb2.jpg"
-  }
+    "title": "Easy on the eyes",
+    "link": "https://www.economist.com/science-and-technology/2007/04/04/easy-on-the-eyes",
+    "blurb": "A computer can now recognise classes of things as accurately as a person can. The Economist covers Thomas Serre and Tomaso Poggio's breakthrough in computer vision, where their biologically inspired model achieved human-level performance in object recognition tasks.",
+    "image": "https://www.economist.com/cdn-cgi/image/width=1424,quality=80,format=auto/sites/default/files/cf_images/20070407/D1407ST1.jpg"
+  },
 ]
