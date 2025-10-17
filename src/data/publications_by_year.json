@@ -648,6 +648,13 @@
       "journal": "IEEE Conference on Computer Vision and Pattern Recognition",
       "authors": "T. Fel, M. Ducoffe, D. Vigouroux, R. Cadène, M. Capelle, C. Nicodème & T. Serre",
       "pdfPath": "/papers/dont-lie-to-me-explainability-2023.pdf"
+    },
+    {
+      "title": "NeuroSurgeon: A Toolkit for Subnetwork Analysis",
+      "url": "https://arxiv.org/abs/2309.00244",
+      "journal": "arXiv",
+      "authors": "M.A. Lepori, E. Pavlick & T. Serre",
+      "pdfPath": "/papers/neurosurgeon-toolkit-subnetwork-analysis-2023.pdf"
     }
   ],
   "2024": [
@@ -944,6 +951,15 @@
       "journal": "Neuron",
       "url": "https://arxiv.org/abs/2509.17280",
       "pdfPath": "/papers/from-prediction-to-understanding-ai-foundation-models-2025.pdf"
+    }
+  ],
+  "Under review": [
+    {
+      "title": "Is This Just Fantasy? Language Model Representations Reflect Human Judgments of Event Plausibility",
+      "authors": "M.A. Lepori, J. Hu, I. Dasgupta, R. Patel, T. Serre & E. Pavlick",
+      "journal": "Under review",
+      "url": "",
+      "pdfPath": "/papers/is-this-just-fantasy-language-model-representations-2025.pdf"
     }
   ]
 }

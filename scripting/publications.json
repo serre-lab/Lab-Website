@@ -6,6 +6,18 @@
     "authors": "J. Colin, L. Goetschalckx, T. Fel, V. Boutin, J. Gopal, T. Serre* & N. Oliver*"
   },
   {
+    "title": "NeuroSurgeon: A Toolkit for Subnetwork Analysis",
+    "url": "https://arxiv.org/abs/2309.00244",
+    "journal": "arXiv",
+    "authors": "M.A. Lepori, E. Pavlick & T. Serre"
+  },
+  {
+    "title": "Is This Just Fantasy? Language Model Representations Reflect Human Judgments of Event Plausibility",
+    "url": "",
+    "journal": "Under review",
+    "authors": "M.A. Lepori, J. Hu, I. Dasgupta, R. Patel, T. Serre & E. Pavlick"
+  },
+  {
     "title": "Tracking objects that change in appearance with phase synchrony",
     "url": "https://arxiv.org/abs/2410.02094",
     "journal": "arXiv",
