@@ -228,7 +228,7 @@
       "title": "What are the visual features underlying human versus machine vision?",
       "url": "https://ieeexplore.ieee.org/document/8265530/",
       "journal": "IEEE ICCV Workshop on the Mutual Benefit of Cognitive and Computer Vision",
-      "authors": "D Linsley, S Eberhardt, T Sharma, P Gupta & T Serre",
+      "authors": "D. Linsley, S. Eberhardt, T. Sharma, P. Gupta & T. Serre",
       "pdfPath": "/papers/Linsley_et_al_MBCC_2017-3.pdf"
     }
   ],
@@ -300,7 +300,7 @@
       "title": "Learning to predict action potentials end-to-end from calcium imaging data",
       "url": "https://ieeexplore.ieee.org/document/8362319",
       "journal": "IEEE Conference on Information Sciences and Systems",
-      "authors": "D Linsley, J Linsley, T Sharma, N Meyers & T Serre",
+      "authors": "D. Linsley, J. Linsley, T. Sharma, N. Meyers & T. Serre",
       "pdfPath": "/papers/Linsley_et_al_CISS2018.pdf"
     }
   ],
@@ -539,7 +539,7 @@
       "title": "How good is your explanation? Algorithmic stability measures to assess the quality of explanations for deep neural networks",
       "url": "https://ieeexplore.ieee.org/document/9706798",
       "journal": "Winter Conference on Applications of Computer Vision",
-      "authors": "T Fel, D. Vigouroux, R. Cadene & T. Serre",
+      "authors": "T. Fel, D. Vigouroux, R. Cadene & T. Serre",
       "pdfPath": "/papers/how-good-is-your-explanation-wacv-2022.pdf"
     },
     {
@@ -618,7 +618,7 @@
       "title": "Diffusion models as artists: Are we closing the gap between humans and machines?",
       "url": "https://icml.cc/virtual/2023/oral/25539",
       "journal": "International Conference on Machine Learning",
-      "authors": "V. Boutin, T. Fel, L. Singhal, R. Mukherji, A. Nagaraj, J Colin & T. Serre",
+      "authors": "V. Boutin, T. Fel, L. Singhal, R. Mukherji, A. Nagaraj, J. Colin & T. Serre",
       "pdfPath": "/papers/diffusion-models-as-artists-2023.pdf"
     },
     {
@@ -639,7 +639,7 @@
       "title": "GAMR: A Guided Attention Model for (visual) Reasoning",
       "url": "https://openreview.net/forum?id=iLMgk2IGNyv",
       "journal": "International Conference on Learning Representations",
-      "authors": "M Vaishnav & T. Serre",
+      "authors": "M. Vaishnav & T. Serre",
       "pdfPath": "/papers/gamr-guided-attention-model-reasoning-2023.pdf"
     },
     {
@@ -922,7 +922,7 @@
   "Work in progress": [
     {
       "title": "Better artificial intelligence does not mean better models of biology",
-      "authors": "Linsley, Feng & Serre",
+      "authors": "D. Linsley, P. Feng & T. Serre",
       "journal": "arXiv",
       "link": "https://arxiv.org/abs/2504.16940",
       "url": "https://arxiv.org/abs/2504.16940",
