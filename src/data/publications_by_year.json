@@ -55,7 +55,7 @@
       "title": "Object decoding with attention in inferior temporal cortex",
       "url": "https://www.pnas.org/doi/10.1073/pnas.1100999108",
       "journal": "Proceedings of the National Academy of Sciences",
-      "authors": "Y. Zhang*, E. Meyers*, N. Bichot, T. Serre, T. Poggio & R. Desimone",
+      "authors": "Y. Zhang†, E. Meyers†, N. Bichot, T. Serre, T. Poggio & R. Desimone",
       "pdfPath": "/papers/PNAS-2011-Zhang-8850-5.pdf"
     },
     {
@@ -110,7 +110,7 @@
       "title": "The neural dynamics of face detection in the wild revealed by MVPA",
       "url": "http://www.jneurosci.org/content/34/3/846.long",
       "journal": "Journal of Neuroscience",
-      "authors": "M. Cauchoix^, G. Barragan-­Jason^, T. Serre* & E.J. Barbeau* (^,* are authors with equal contributions)",
+      "authors": "M. Cauchoix†, G. Barragan-­Jason†, T. Serre‡ & E.J. Barbeau‡",
       "pdfPath": "/papers/neural-dynamics-face-detection-2014.pdf"
     },
     {
@@ -191,7 +191,7 @@
       "title": "Fast ventral stream neural activity enables rapid visual categorization",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S1053811915009131",
       "journal": "Neuroimage",
-      "authors": "M. Cauchoix*, S.M. Crouzet*, D. Fize & T. Serre",
+      "authors": "M. Cauchoix†, S.M. Crouzet†, D. Fize & T. Serre",
       "pdfPath": "/papers/2016_Cauchoix_NI.pdf"
     },
     {
@@ -309,7 +309,7 @@
       "title": "Development of a deep learning algorithm for the histopathologic diagnosis and gleason grading of prostate cancer biopsies: A pilot study",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S240545691930344X",
       "journal": "European urology focus",
-      "authors": "O. Kott*, D. Linsley*, A. Karagounis, C. Jeffers, G. Dragan, Ali Amin, T. Serre** & B. Gershman**",
+      "authors": "O. Kott†, D. Linsley†, A. Karagounis, C. Jeffers, G. Dragan, Ali Amin, T. Serre‡ & B. Gershman‡",
       "pdfPath": "/papers/PIIS240545691930344X.pdf"
     },
     {
@@ -381,14 +381,14 @@
       "title": "Disentangling neural mechanisms for perceptual grouping",
       "url": "https://openreview.net/forum?id=HJxrVA4FDS",
       "journal": "International Conference on Learning Representations",
-      "authors": "J.K. Kim*, D. Linsley*, K. Thakkar & T. Serre",
+      "authors": "J.K. Kim†, D. Linsley†, K. Thakkar & T. Serre",
       "pdfPath": "/papers/disentangling-neural-mechanisms-perceptual-grouping-2020.pdf"
     },
     {
       "title": "Recurrent neural circuits for contour detection",
       "url": "https://openreview.net/forum?id=H1gB4RVKvB",
       "journal": "International Conference on Learning Representations",
-      "authors": "D. Linsley*, J.K. Kim*, A. Ashok & T. Serre",
+      "authors": "D. Linsley†, J.K. Kim†, A. Ashok & T. Serre",
       "pdfPath": "/papers/recurrent-neural-circuits-contours-detection-2020.pdf"
     }
   ],
@@ -418,7 +418,7 @@
       "title": "Tracking without re-recognition in humans and machines",
       "url": "https://proceedings.neurips.cc/paper/2021/hash/a2557a7b2e94197ff767970b67041697-Abstract.html",
       "journal": "Neural Information Processing Systems",
-      "authors": "D. Linsley*, G. Malik*, J.K. Kim, L.N. Govindarajan, E. Mingolla^ & T. Serre^",
+      "authors": "D. Linsley†, G. Malik†, J.K. Kim, L.N. Govindarajan, E. Mingolla‡ & T. Serre‡",
       "pdfPath": "/papers/tracking-without-rerecognition-2021.pdf"
     },
     {
@@ -469,7 +469,7 @@
       "title": "Fast inference of spinal neuromodulation for motor control using amortized neural networks",
       "url": "https://iopscience.iop.org/article/10.1088/1741-2552/ac9646",
       "journal": "Journal of Neural Engineering",
-      "authors": "L.N. Govindarajan, J.S. Calvert, S.R. Parker, M. Jung, R. Darie, P. Miranda, E. Shaaya, D.A. Borton* & T. Serre*",
+      "authors": "L.N. Govindarajan, J.S. Calvert, S.R. Parker, M. Jung, R. Darie, P. Miranda, E. Shaaya, D.A. Borton‡ & T. Serre‡",
       "pdfPath": "/papers/fast-inference-spinal-neuromodulation-2022.pdf"
     },
     {
@@ -483,7 +483,7 @@
       "title": "Harmonizing the object recognition strategies of deep neural networks with humans",
       "url": "https://openreview.net/forum?id=ZYKWi6Ylfg",
       "journal": "Neural Information Processing Systems",
-      "authors": "T. Fel*, I.F. Rodriguez*, D. Linsley* & T. Serre",
+      "authors": "T. Fel†, I.F. Rodriguez†, D. Linsley† & T. Serre",
       "pdfPath": "/papers/harmonizing-object-recognition-2022.pdf"
     },
     {
@@ -829,7 +829,7 @@
     {
       "title": "Object recognition with features inspired by visual cortex",
       "url": "https://ieeexplore.ieee.org/document/1467551",
-      "journal": "IEEE Computer Vision and Pattern Recognition Conference",
+      "journal": "IEEE Conference on Computer Vision and Pattern Recognition",
       "authors": "T. Serre, L. Wolf & T. Poggio",
       "pdfPath": "/papers/serre_etal-CVPR05.pdf"
     },
@@ -900,14 +900,14 @@
     {
       "title": "Feature reduction and hierarchy of classifiers for fast object detection in video images",
       "url": "https://ieeexplore.ieee.org/document/990919",
-      "journal": "Computer Vision and Pattern Recognition",
+      "journal": "IEEE Conference on Computer Vision and Pattern Recognition",
       "authors": "B. Heisele, T. Serre, S. Mukherjee & T. Poggio",
       "pdfPath": "/papers/heisele_etal-CVPR01b.pdf"
     },
     {
       "title": "Component-based face detection",
       "url": "https://ieeexplore.ieee.org/document/990537",
-      "journal": "Computer Vision and Pattern Recognition",
+      "journal": "IEEE Conference on Computer Vision and Pattern Recognition",
       "authors": "B. Heisele, T. Serre, M. Pontil & T. Poggio",
       "pdfPath": "/papers/heisele_etal-CVPR01a.pdf"
     },
@@ -930,7 +930,7 @@
     },
     {
       "title": "Local vs distributed representations: What is the right basis for interpretability?",
-      "authors": "J. Colin, L. Goetschalckx, T. Fel, V. Boutin, J. Gopal, T. Serre* & N. Oliver*",
+      "authors": "J. Colin, L. Goetschalckx, T. Fel, V. Boutin, J. Gopal, T. Serre‡ & N. Oliver‡",
       "journal": "",
       "link": "https://arxiv.org/abs/2411.03993v1",
       "url": "https://arxiv.org/abs/2411.03993v1",
