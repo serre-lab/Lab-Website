@@ -1,9 +1,9 @@
 [
   {
-    "title": "Training AI to see more like humans",
-    "link": "https://www.nsf.gov/news/training-ai-see-more-humans",
-    "blurb": "The National Science Foundation features the Serre Lab's ClickMe project and human-AI alignment research. The article highlights how the online game helps train AI models to focus on the same visual features that humans prioritize, bridging the gap between human and AI visual perception.",
-    "image": "https://nsf-gov-resources.nsf.gov/styles/news_hero_tablet_1200x468_/s3/media_hub/Tier%203%20story%20-%20Training%20AI%20to%20See_Hero%20Image_v1.jpg.webp?VersionId=Y6tCZqhFrqq8uhlKvL6.pWLS4OfxjVyA&itok=crZuOcxs"
+    "title": "Brown University offers cash incentive to assist with 'Click Me' AI research",
+    "link": "https://turnto10.com/news/local/brown-university-offers-cash-incentive-to-assist-with-click-me-ai-research-artificial-intelligence-deep-learning-lab-plme-brain-science-game-vision-february-24-2025",
+    "blurb": "A Brown University department is paying people to participate in an online game that helps train artificial intelligence. The Serre Lab has already given out more than $10,000 to game participants thanks to National Science Foundation funding.",
+    "image": "https://turnto10.com/resources/media2/16x9/1920/986/center/90/48cfa15b-64cf-481c-bdd1-8366385e822b-6PPKG.transfer_frame_122.jpeg"
   },
   {
     "title": "Brown University to lead national institute focused on intuitive, trustworthy AI assistants",
@@ -18,16 +18,16 @@
     "image": "https://americanbazaaronline.com/wp-content/uploads/2025/02/photo-output-3.jpg"
   },
   {
-    "title": "Brown University offers cash incentive to assist with 'Click Me' AI research",
-    "link": "https://turnto10.com/news/local/brown-university-offers-cash-incentive-to-assist-with-click-me-ai-research-artificial-intelligence-deep-learning-lab-plme-brain-science-game-vision-february-24-2025",
-    "blurb": "A Brown University department is paying people to participate in an online game that helps train artificial intelligence. The Serre Lab has already given out more than $10,000 to game participants thanks to National Science Foundation funding.",
-    "image": "https://turnto10.com/resources/media2/16x9/1920/986/center/90/48cfa15b-64cf-481c-bdd1-8366385e822b-6PPKG.transfer_frame_122.jpeg"
-  },
-  {
     "title": "Explainable AI busts open black boxes",
     "link": "https://carney.brown.edu/news/2024-10-31/explainable-ai",
     "blurb": "The Carney Institute for Brain Science is home to one of the foremost explainability research groups in the world, led by Thomas Serre. The team develops tools to understand and interpret deep learning models, making AI decision-making transparent.",
     "image": "https://carney.brown.edu/sites/default/files/2024-11/LENS-BEE_PETAL-EXAMPLE-copy.png"
+  },
+  {
+    "title": "Training AI to see more like humans",
+    "link": "https://www.nsf.gov/news/training-ai-see-more-humans",
+    "blurb": "The National Science Foundation features the Serre Lab's ClickMe project and human-AI alignment research. The article highlights how the online game helps train AI models to focus on the same visual features that humans prioritize, bridging the gap between human and AI visual perception.",
+    "image": "https://nsf-gov-resources.nsf.gov/styles/news_hero_tablet_1200x468_/s3/media_hub/Tier%203%20story%20-%20Training%20AI%20to%20See_Hero%20Image_v1.jpg.webp?VersionId=Y6tCZqhFrqq8uhlKvL6.pWLS4OfxjVyA&itok=crZuOcxs"
   },
   {
     "title": "New tool explains how AI 'sees' images and why it might mistake an astronaut for a shovel",
@@ -42,22 +42,10 @@
     "image": "https://snworksceo.imgix.net/bdh/9247581e-6574-4099-a85d-9b28fdb9a0b0.sized-1000x1000.jpg?w=1000"
   },
   {
-    "title": "Compositionally in Neural Networks",
-    "blurb": "PhD student Michael Lepori discusses new approaches to studying compositionality in neural network models in a recent Carney Community Spotlight.",
-    "link": "https://www.brown.edu/carney/spotlights/michael-lepori",
-    "image": "/images/scicomm/light_background_serre_cropped.jpeg"
-  },
-  {
     "title": "Finding the art in artificial intelligence",
-    "blurb": "When design and neural networks mix the results are both practical and innovative.",
     "link": "https://www.brown.edu/carney/news/2019/05/20/finding-art-artificial-intelligence",
+    "blurb": "When design and neural networks mix the results are both practical and innovative.",
     "image": "/images/scicomm/RISD_Brown.jpg"
-  },
-  {
-    "title": "Intel and Brown University researchers embark on two-year project to bridge spinal cord breaks using AI",
-    "link": "https://venturebeat.com/ai/intel-and-brown-university-researchers-embark-on-two-year-project-to-bridge-spinal-cord-breaks-using-ai/",
-    "blurb": "Engineers and neuroscientists at Brown University, Rhode Island Hospital, Intel, and Micro-Leads Medical committed to designing an Intelligent Spine Interface (ISI) with a $6.3 million DARPA grant. Thomas Serre works with Intel scientists to devise AI-powered analogs for the spinal cord's biological systems to help restore limb movement and bladder control for people with spinal cord injuries.",
-    "image": "https://venturebeat.com/_next/image?url=https%3A%2F%2Folk2kzr7lpbpdtkx.public.blob.vercel-storage.com%2Fhome%2Fandy%2Fwork%2Fevrone%2Fventure_beat%2Fmedia%2Fwp-content%2Fuploads%2F2019%2F10%2Fspine-intelligence-graphic-explainer-FINAL-B.jpg&w=3840&q=75"
   },
   {
     "title": "Brain science blooms at Brown",
@@ -72,112 +60,112 @@
     "image": "https://snworksceo.imgix.net/bdh/2fe935db-affb-4e80-9f71-cf402e2e62ce.sized-1000x1000.jpg?w=1000"
   },
   {
+    "title": "Intel and Brown University researchers embark on two-year project to bridge spinal cord breaks using AI",
+    "link": "https://venturebeat.com/ai/intel-and-brown-university-researchers-embark-on-two-year-project-to-bridge-spinal-cord-breaks-using-ai/",
+    "blurb": "Engineers and neuroscientists at Brown University, Rhode Island Hospital, Intel, and Micro-Leads Medical committed to designing an Intelligent Spine Interface (ISI) with a $6.3 million DARPA grant. Thomas Serre works with Intel scientists to devise AI-powered analogs for the spinal cord's biological systems to help restore limb movement and bladder control for people with spinal cord injuries.",
+    "image": "https://venturebeat.com/_next/image?url=https%3A%2F%2Folk2kzr7lpbpdtkx.public.blob.vercel-storage.com%2Fhome%2Fandy%2Fwork%2Fevrone%2Fventure_beat%2Fmedia%2Fwp-content%2Fuploads%2F2019%2F10%2Fspine-intelligence-graphic-explainer-FINAL-B.jpg&w=3840&q=75"
+  },
+  {
     "title": "Brown researchers teach computers to see optical illusions",
-    "blurb": "By making a neural-network computer model that can be fooled by optical illusions like humans, the researchers advanced knowledge of the human visual system and may help improve artificial vision.",
     "link": "https://news.brown.edu/articles/2018/09/illusions",
+    "blurb": "By making a neural-network computer model that can be fooled by optical illusions like humans, the researchers advanced knowledge of the human visual system and may help improve artificial vision.",
     "image": "/images/scicomm/Illusions.jpg"
   },
   {
-    "title": "Research identifies key weakness in modern computer vision systems",
-    "blurb": "In a finding that could point the way toward better computer vision systems, Brown University researchers show why computers are so bad at seeing when one thing is not like another.",
-    "link": "https://news.brown.edu/articles/2018/07/same-different",
-    "image": "/images/scicomm/samedifferent.jpg"
-  },
-  {
     "title": "Focus on early stage of illness may be key to treating ALS, study suggests",
-    "blurb": "Many inhibitory neurons were lost early in the development of ALS, new research shows, which is in sharp contrast to other degenerative diseases.",
     "link": "https://news.brown.edu/articles/2018/03/als",
+    "blurb": "Many inhibitory neurons were lost early in the development of ALS, new research shows, which is in sharp contrast to other degenerative diseases.",
     "image": "/images/scicomm/als.jpg"
   },
   {
+    "title": "Research identifies key weakness in modern computer vision systems",
+    "link": "https://news.brown.edu/articles/2018/07/same-different",
+    "blurb": "In a finding that could point the way toward better computer vision systems, Brown University researchers show why computers are so bad at seeing when one thing is not like another.",
+    "image": "/images/scicomm/samedifferent.jpg"
+  },
+  {
     "title": "University conference explores future of artificial intelligence",
-    "blurb": "Interdisciplinary workshop brings together professors, students from diverse academic fields",
     "link": "http://www.browndailyherald.com/2018/01/26/u-conference-explores-future-artificial-intelligence/",
+    "blurb": "Interdisciplinary workshop brings together professors, students from diverse academic fields",
     "image": "/images/scicomm/AI-conference.jpg"
   },
   {
     "title": "Researchers gather at Brown to discuss next-generation artificial intelligence",
-    "blurb": "Technology known as deep learning has fueled an AI revolution, but a workshop series kicking off at Brown this week will consider where the field might go from here. Article by Kevin Stacey.",
     "link": "https://news.brown.edu/articles/2018/01/deeplearning",
+    "blurb": "Technology known as deep learning has fueled an AI revolution, but a workshop series kicking off at Brown this week will consider where the field might go from here. Article by Kevin Stacey.",
     "image": "/images/scicomm/deeplearning.jpg"
   },
   {
     "title": "TDP-43 Mouse Model Research Featured",
-    "blurb": "Serre Lab's machine vision-based automated phenotyping method (ACBM) was used to detect and quantify the earliest phenotypes in TDP-43 knock-in mice, contributing to ALS research. Published in Nature Neuroscience 2018.",
     "link": "https://pubmed.ncbi.nlm.nih.gov/29556029/",
+    "blurb": "Serre Lab's machine vision-based automated phenotyping method (ACBM) was used to detect and quantify the earliest phenotypes in TDP-43 knock-in mice, contributing to ALS research. Published in Nature Neuroscience 2018.",
     "image": "/images/scicomm/mouse.png"
   },
   {
     "title": "Artificial intelligence helps scientists map behavior in the fruit fly brain",
-    "blurb": "Can you imagine watching 20,000 videos, 16 minutes apiece, of fruit flies walking, grooming, and chasing mates? Fortunately, you don't have to, because scientists have designed a computer program that can do it faster. Aided by artificial intelligence, researchers have made 100 billion annotations of behavior from 400,000 flies to create a collection of maps linking fly mannerisms to their corresponding brain regions. Article by Ryan Cross.",
     "link": "https://www.sciencemag.org/news/2017/07/artificial-intelligence-helps-scientists-map-behavior-fruit-fly-brain",
+    "blurb": "Can you imagine watching 20,000 videos, 16 minutes apiece, of fruit flies walking, grooming, and chasing mates? Fortunately, you don't have to, because scientists have designed a computer program that can do it faster. Aided by artificial intelligence, researchers have made 100 billion annotations of behavior from 400,000 flies to create a collection of maps linking fly mannerisms to their corresponding brain regions. Article by Ryan Cross.",
     "image": "/images/scicomm/fly-behavior.jpg"
   },
   {
-    "title": "Meeting of the minds leads to brain science technology venture",
-    "blurb": "Article by David Orenstein.",
-    "link": "https://news.brown.edu/articles/2016/07/observation",
-    "image": "/images/scicomm/neurocurious.jpg"
-  },
-  {
-    "title": "A computer with a great eye is about to transform botany",
-    "blurb": "Article by Margaret Rhodes",
-    "link": "http://www.wired.com/2016/03/computer-great-eye-transform-botany/?mbid=social_fb",
-    "image": "/images/scicomm/wired.png"
-  },
-  {
-    "title": "Computer vision can help classify leaves",
-    "blurb": "So complex are patterns and variations in the vein structures of leaves that botanists struggle to take advantage of them when trying to classify a specimen within the plant kingdom. A new study shows that computer vision technology can provide automated assistance by 'learning' how to use venation to assign leaves to their proper family and order. Article by David Orenstein.",
-    "link": "https://news.brown.edu/articles/2016/03/leaves",
-    "image": "/images/scicomm/leaves.jpg"
-  },
-  {
     "title": "Linking two labs a learning opportunity for Ph.D. student",
-    "blurb": "Aaron Held's research merges and draws on the expertise of two of the labs in Brown's broad effort to combat ALS. That role has given him several opportunities to learn novel skills and new science during graduate school. Article by David Orenstein.",
     "link": "https://news.brown.edu/articles/2016/01/alsbar",
+    "blurb": "Aaron Held's research merges and draws on the expertise of two of the labs in Brown's broad effort to combat ALS. That role has given him several opportunities to learn novel skills and new science during graduate school. Article by David Orenstein.",
     "image": "/images/scicomm/alsbar.jpg"
   },
   {
-    "title": "In analyzing a scene, we make the easiest judgments first",
+    "title": "A computer with a great eye is about to transform botany",
+    "link": "http://www.wired.com/2016/03/computer-great-eye-transform-botany/?mbid=social_fb",
+    "blurb": "Article by Margaret Rhodes",
+    "image": "/images/scicomm/wired.png"
+  },
+  {
+    "title": "Meeting of the minds leads to brain science technology venture",
+    "link": "https://news.brown.edu/articles/2016/07/observation",
     "blurb": "Article by David Orenstein.",
+    "image": "/images/scicomm/neurocurious.jpg"
+  },
+  {
+    "title": "Computer vision can help classify leaves",
+    "link": "https://news.brown.edu/articles/2016/03/leaves",
+    "blurb": "So complex are patterns and variations in the vein structures of leaves that botanists struggle to take advantage of them when trying to classify a specimen within the plant kingdom. A new study shows that computer vision technology can provide automated assistance by 'learning' how to use venation to assign leaves to their proper family and order. Article by David Orenstein.",
+    "image": "/images/scicomm/leaves.jpg"
+  },
+  {
+    "title": "In analyzing a scene, we make the easiest judgments first",
     "link": "https://news.brown.edu/articles/2015/09/scene",
+    "blurb": "Article by David Orenstein.",
     "image": "/images/scicomm/scene.jpg"
   },
   {
-    "title": "Reducing Myc gene activity extends healthy lifespan in mice",
-    "blurb": "Mice with one rather than the normal two copies of the gene Myc (also found in humans) lived 15 percent longer and had considerably healthier lives than normal mice, according to a new Brown University-led study in Cell. Article by David Orenstein.",
-    "link": "https://news.brown.edu/articles/2015/01/myc",
-    "image": "/images/scicomm/myc.jpg"
-  },
-  {
-    "title": "Computer based video in behavioral studies",
-    "blurb": "Computer-based video analysis boosts data gathering in behavioral studies. Article by David Orenstein",
-    "link": "http://news.brown.edu/pressreleases/2010/09/mice",
-    "image": "https://archive2.news.brown.edu/2007-2015/sites/default/files/styles/horizontal/public/article_images/Mice13f3c.jpg?itok=FyFGqzQI"
-  },
-  {
-    "title": "Reverse engineering the brain",
-    "blurb": "Cover story by Roberta Friedman featuring work from researchers including Thomas Serre on understanding and modeling the brain's computational mechanisms.",
-    "link": "https://modha.org/2009/04/biomedical-computation-review-reverse-engineering-the-brain/",
-    "image": "/images/scicomm/bc_review.png"
-  },
-  {
     "title": "Future watch: understanding the brain",
-    "blurb": "Article by Logan Kugler",
     "link": "http://www.pcmag.com/article2/0,2817,2325885,00.asp",
+    "blurb": "Article by Logan Kugler",
     "image": "/images/scicomm/pc_mag.png"
   },
   {
+    "title": "Reverse engineering the brain",
+    "link": "https://modha.org/2009/04/biomedical-computation-review-reverse-engineering-the-brain/",
+    "blurb": "Cover story by Roberta Friedman featuring work from researchers including Thomas Serre on understanding and modeling the brain's computational mechanisms.",
+    "image": "/images/scicomm/bc_review.png"
+  },
+  {
     "title": "Visions of the Future - BBC Documentary",
-    "blurb": "Thomas Serre's doctoral research was featured in the BBC series 'Visions of the Future' with Dr. Michio Kaku, exploring the future of artificial intelligence and brain-inspired computing.",
     "link": "https://en.wikipedia.org/wiki/Visions_of_the_Future",
+    "blurb": "Thomas Serre's doctoral research was featured in the BBC series 'Visions of the Future' with Dr. Michio Kaku, exploring the future of artificial intelligence and brain-inspired computing.",
     "image": "/images/scicomm/visions.png"
   },
   {
     "title": "Computer vision inspired by the human brain",
-    "blurb": "Article by Pam Frost Gorder",
     "link": "http://www.scientificamerican.com/article.cfm?id=visionary-research",
+    "blurb": "Article by Pam Frost Gorder",
     "image": "/images/scicomm/computing_now.png"
+  },
+  {
+    "title": "Easy on the eyes",
+    "link": "https://www.economist.com/science-and-technology/2007/04/04/easy-on-the-eyes",
+    "blurb": "A computer can now recognise classes of things as accurately as a person can. The Economist covers Thomas Serre and Tomaso Poggio's breakthrough in computer vision, where their biologically inspired model achieved human-level performance in object recognition tasks.",
+    "image": "https://www.economist.com/cdn-cgi/image/width=1424,quality=80,format=auto/sites/default/files/cf_images/20070407/D1407ST1.jpg"
   },
   {
     "title": "Biologically Inspired Vision Systems",
@@ -192,15 +180,27 @@
     "image": "https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/200702/200908311112474721_0.jpg?itok=ci10deDx"
   },
   {
-    "title": "Easy on the eyes",
-    "link": "https://www.economist.com/science-and-technology/2007/04/04/easy-on-the-eyes",
-    "blurb": "A computer can now recognise classes of things as accurately as a person can. The Economist covers Thomas Serre and Tomaso Poggio's breakthrough in computer vision, where their biologically inspired model achieved human-level performance in object recognition tasks.",
-    "image": "https://www.economist.com/cdn-cgi/image/width=1424,quality=80,format=auto/sites/default/files/cf_images/20070407/D1407ST1.jpg"
-  },
-  {
     "title": "Reverse-Engineering the Brain",
     "link": "https://www.technologyreview.com/2006/07/01/228791/reverse-engineering-the-brain/",
     "blurb": "MIT Technology Review article discusses how neuroscience and artificial intelligence were beginning to intersect at MIT. Thomas Serre and Tomaso Poggio's immediate-recognition program achieved 82 percent accuracy on animal presence tests, performing as well as or better than human subjects - almost certainly the first time a general-vision program had performed as well as humans.",
     "image": "https://s3.amazonaws.com/files.technologyreview.com/p/pub/legacy/0706brainb2.jpg"
+  },
+  {
+    "title": "Compositionally in Neural Networks",
+    "link": "https://www.brown.edu/carney/spotlights/michael-lepori",
+    "blurb": "PhD student Michael Lepori discusses new approaches to studying compositionality in neural network models in a recent Carney Community Spotlight.",
+    "image": "/images/scicomm/light_background_serre_cropped.jpeg"
+  },
+  {
+    "title": "Reducing Myc gene activity extends healthy lifespan in mice",
+    "link": "https://news.brown.edu/articles/2015/01/myc",
+    "blurb": "Mice with one rather than the normal two copies of the gene Myc (also found in humans) lived 15 percent longer and had considerably healthier lives than normal mice, according to a new Brown University-led study in Cell. Article by David Orenstein.",
+    "image": "/images/scicomm/myc.jpg"
+  },
+  {
+    "title": "Computer based video in behavioral studies",
+    "link": "http://news.brown.edu/pressreleases/2010/09/mice",
+    "blurb": "Computer-based video analysis boosts data gathering in behavioral studies. Article by David Orenstein",
+    "image": "https://archive2.news.brown.edu/2007-2015/sites/default/files/styles/horizontal/public/article_images/Mice13f3c.jpg?itok=FyFGqzQI"
   }
 ]
