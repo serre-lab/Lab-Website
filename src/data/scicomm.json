@@ -24,6 +24,12 @@
     "image": "https://carney.brown.edu/sites/default/files/2024-11/LENS-BEE_PETAL-EXAMPLE-copy.png"
   },
   {
+    "title": "Compositionally in Neural Networks",
+    "link": "https://www.brown.edu/carney/spotlights/michael-lepori",
+    "blurb": "PhD student Michael Lepori discusses new approaches to studying compositionality in neural network models in a recent Carney Community Spotlight (2024).",
+    "image": "/images/scicomm/light_background_serre_cropped.jpeg"
+  },
+  {
     "title": "Training AI to see more like humans",
     "link": "https://www.nsf.gov/news/training-ai-see-more-humans",
     "blurb": "The National Science Foundation features the Serre Lab's ClickMe project and human-AI alignment research. The article highlights how the online game helps train AI models to focus on the same visual features that humans prioritize, bridging the gap between human and AI visual perception.",
@@ -190,12 +196,6 @@
     "link": "https://www.technologyreview.com/2006/07/01/228791/reverse-engineering-the-brain/",
     "blurb": "MIT Technology Review article discusses how neuroscience and artificial intelligence were beginning to intersect at MIT. Thomas Serre and Tomaso Poggio's immediate-recognition program achieved 82 percent accuracy on animal presence tests, performing as well as or better than human subjects - almost certainly the first time a general-vision program had performed as well as humans.",
     "image": "https://s3.amazonaws.com/files.technologyreview.com/p/pub/legacy/0706brainb2.jpg"
-  },
-  {
-    "title": "Compositionally in Neural Networks",
-    "link": "https://www.brown.edu/carney/spotlights/michael-lepori",
-    "blurb": "PhD student Michael Lepori discusses new approaches to studying compositionality in neural network models in a recent Carney Community Spotlight.",
-    "image": "/images/scicomm/light_background_serre_cropped.jpeg"
   },
   {
     "title": "Reducing Myc gene activity extends healthy lifespan in mice",
