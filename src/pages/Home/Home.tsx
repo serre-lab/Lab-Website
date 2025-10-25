@@ -389,9 +389,9 @@ export function Home() {
         <Title order={2} className="section-title">Selected Recent Publications</Title>
         <div className="highlights-grid">
           <div className="highlight-card">
-            <Text className="highlight-journal">arXiv (2025)</Text>
+            <Text className="highlight-journal">Neuron (2025)</Text>
             <Title order={4} className="highlight-title">
-              <a href="https://arxiv.org/abs/2509.17280" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.sciencedirect.com/science/article/abs/pii/S0896627325007524" target="_blank" rel="noopener noreferrer">
                 From prediction to understanding: will AI foundation models transform brain science?
               </a>
             </Title>
