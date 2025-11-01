@@ -911,13 +911,6 @@
       "pdfPath": "/papers/is-this-just-fantasy-language-model-representations-2024.pdf"
     },
     {
-      "title": "Better artificial intelligence does not mean better models of biology",
-      "authors": "D. Linsley, P. Feng & T. Serre",
-      "journal": "arXiv",
-      "url": "https://arxiv.org/abs/2504.16940",
-      "pdfPath": "/papers/better-ai-better-models-biology-2025-OLD-WRONG.pdf"
-    },
-    {
       "title": "GASPnet: Global agreement to synchronize phases",
       "authors": "A. Alamia, S. Muzellec, T. Serre & R. VanRullen",
       "journal": "arXiv",
@@ -939,6 +932,13 @@
       "journal": "Nature Biomedical Engineering",
       "url": "https://www.nature.com/articles/s41551-024-00420-0",
       "pdfPath": "/papers/parker-epidural-paddle-array-2025.pdf"
+    },
+    {
+      "title": "Better artificial intelligence does not mean better models of biology",
+      "authors": "D. Linsley, P. Feng & T. Serre",
+      "journal": "Trends in Cognitive Sciences",
+      "url": "https://arxiv.org/abs/2504.16940",
+      "pdfPath": "/papers/better-ai-better-models-biology-2025-OLD-WRONG.pdf"
     }
   ]
 }
