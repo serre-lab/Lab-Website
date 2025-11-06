@@ -141,10 +141,19 @@
     border-radius: 4px;
 }
 
+.footer-social-icon img {
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
 .footer-social-icon:hover {
     color: var(--color-link);
     background-color: rgba(52, 152, 219, 0.1);
     transform: translateY(-2px);
+}
+
+.footer-social-icon:hover img {
+    opacity: 1;
 }
 
 /* Bottom Bar */

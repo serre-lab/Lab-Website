@@ -1,7 +1,7 @@
 import { Title, Text } from "@mantine/core";
 import "./Footer.css";
 import { Link } from "react-router-dom";
-import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa6";
+import { FaTwitter, FaGithub } from "react-icons/fa6";
 import { FaEnvelope } from "react-icons/fa";
 
 interface FooterProps {
@@ -60,22 +60,13 @@ export default function Footer(props: FooterProps) {
                         <Title order={4} className="footer-column-title">Follow Us</Title>
                         <div className="footer-social-icons">
                             <a 
-                                href="https://twitter.com/serre_lab" 
+                                href="https://x.com/tserre" 
                                 target="_blank" 
                                 rel="noopener noreferrer"
                                 className="footer-social-icon"
                                 aria-label="Twitter"
                             >
                                 <FaTwitter size={20} />
-                            </a>
-                            <a 
-                                href="https://www.linkedin.com/company/serre-lab" 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                className="footer-social-icon"
-                                aria-label="LinkedIn"
-                            >
-                                <FaLinkedin size={20} />
                             </a>
                             <a 
                                 href="https://github.com/serre-lab" 
@@ -85,6 +76,21 @@ export default function Footer(props: FooterProps) {
                                 aria-label="GitHub"
                             >
                                 <FaGithub size={20} />
+                            </a>
+                            <a 
+                                href="https://bsky.app/profile/thomasserre.bsky.social" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="footer-social-icon"
+                                aria-label="Bluesky"
+                            >
+                                <img 
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Bluesky_logo_%28black%29.svg/869px-Bluesky_logo_%28black%29.svg.png"
+                                    alt="Bluesky"
+                                    width="20"
+                                    height="20"
+                                    style={{ display: 'block' }}
+                                />
                             </a>
                         </div>
                     </div>
