@@ -42,6 +42,42 @@
   letter-spacing: 0.5px;
 }
 
+.hero-social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.hero-social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.hero-social-icon:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.hero-social-icon img {
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.hero-social-icon:hover img {
+  opacity: 1;
+}
+
   
   .home-container {
     width: 100%;

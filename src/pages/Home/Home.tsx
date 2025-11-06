@@ -3,7 +3,7 @@ import Learn from "../../components/LearnMoreAbout/Learn";
 import "./Home.css";
 import { Title, Text } from "@mantine/core";
 import { motion } from "motion/react";
-import { FaTwitter, FaGithub, FaEnvelope } from "react-icons/fa6";
+import { FaTwitter, FaGithub } from "react-icons/fa6";
 import { useState } from "react";
 
 // Helper function to shorten journal names
@@ -105,7 +105,6 @@ export function Home() {
   const [showUndergradDetails, setShowUndergradDetails] = useState(false);
   const [showPhdDetails, setShowPhdDetails] = useState(false);
   const [showPostdocDetails, setShowPostdocDetails] = useState(false);
-  const [showEmail, setShowEmail] = useState(false);
 
   return (
     <div className="home-container">
@@ -131,6 +130,42 @@ export function Home() {
             <Text className="hero-affiliation">
               Brown University
             </Text>
+          </div>
+          {/* Social Media Icons */}
+          <div className="hero-social-icons">
+            <a
+              href="https://x.com/tserre"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+              className="hero-social-icon"
+            >
+              <FaTwitter size={24} />
+            </a>
+            <a
+              href="https://github.com/serre-lab"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              className="hero-social-icon"
+            >
+              <FaGithub size={24} />
+            </a>
+            <a
+              href="https://bsky.app/profile/thomasserre.bsky.social"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Bluesky"
+              className="hero-social-icon"
+            >
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Bluesky_logo_%28black%29.svg/869px-Bluesky_logo_%28black%29.svg.png"
+                alt="Bluesky"
+                width="24"
+                height="24"
+                style={{ display: 'block', filter: 'brightness(0) invert(1)' }}
+              />
+            </a>
           </div>
         </div>
       </motion.div>
@@ -571,81 +606,6 @@ export function Home() {
             Additional support is provided by the Carney Institute for Brain Science and the Center for Computation and Visualization (CCV) (via NIH S10OD036341 to TS.) We acknowledge the Cloud TPU hardware resources that Google graciously makes available via the TensorFlow Research Cloud (TFRC) program.
           </Text>
         </motion.div>
-      </motion.div>
-
-      {/* Social Media Section */}
-      <motion.div
-        className="social-media-section"
-        variants={fadeUp}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        style={{ marginTop: "2rem", textAlign: "center" }}
-      >
-        <Title order={3} style={{ marginBottom: "1rem" }}>
-          Connect with us
-        </Title>
-        <div style={{ display: "flex", justifyContent: "center", gap: "2rem", alignItems: "center", flexWrap: "wrap" }}>
-          <a
-            href="https://x.com/tserre"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Serre Lab Twitter"
-            style={{ color: "inherit", transition: "color 0.3s ease" }}
-            className="social-icon"
-          >
-            <FaTwitter size={36} />
-          </a>
-          <a
-            href="https://github.com/serre-lab"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Serre Lab GitHub"
-            style={{ color: "inherit", transition: "color 0.3s ease" }}
-            className="social-icon"
-          >
-            <FaGithub size={36} />
-          </a>
-          <a
-            href="https://bsky.app/profile/thomasserre.bsky.social"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Thomas Serre on Bluesky"
-            style={{ color: "inherit", transition: "color 0.3s ease" }}
-            className="social-icon"
-          >
-            <img 
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Bluesky_logo_%28black%29.svg/869px-Bluesky_logo_%28black%29.svg.png"
-              alt="Bluesky"
-              width="36"
-              height="36"
-              style={{ display: 'block' }}
-            />
-          </a>
-          {!showEmail ? (
-            <button
-              onClick={() => setShowEmail(true)}
-              aria-label="Reveal email address"
-              className="email-icon-button"
-            >
-              <FaEnvelope size={36} />
-            </button>
-          ) : (
-            <a
-              href="mailto:thomas_serre@brown.edu"
-              aria-label="Email Prof. Serre"
-              style={{ color: "inherit", transition: "color 0.3s ease" }}
-              className="social-icon"
-            >
-              <FaEnvelope size={36} />
-            </a>
-          )}
-        </div>
-        {showEmail && (
-          <Text size="sm" style={{ marginTop: "1rem", color: "#666" }}>
-            thomas_serre@brown.edu
-          </Text>
-        )}
       </motion.div>
     </div>
   );
