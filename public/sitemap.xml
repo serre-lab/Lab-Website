@@ -2,38 +2,176 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://serre.lab.brown.edu/</loc>
-    <lastmod>2025-01-07</lastmod>
+    <lastmod>2025-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://serre.lab.brown.edu/#/research</loc>
-    <lastmod>2025-01-07</lastmod>
+    <loc>https://serre.lab.brown.edu#/research</loc>
+    <lastmod>2025-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://serre.lab.brown.edu/#/publications</loc>
-    <lastmod>2025-01-07</lastmod>
+    <loc>https://serre.lab.brown.edu#/publications</loc>
+    <lastmod>2025-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://serre.lab.brown.edu/#/people</loc>
-    <lastmod>2025-01-07</lastmod>
+    <loc>https://serre.lab.brown.edu#/people</loc>
+    <lastmod>2025-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://serre.lab.brown.edu/#/resources</loc>
-    <lastmod>2025-01-07</lastmod>
+    <loc>https://serre.lab.brown.edu#/resources</loc>
+    <lastmod>2025-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://serre.lab.brown.edu/#/sci-comm</loc>
-    <lastmod>2025-01-07</lastmod>
+    <loc>https://serre.lab.brown.edu#/sci-comm</loc>
+    <lastmod>2025-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://serre.lab.brown.edu#/resources/a-feedforward-architecture-accounts-for-rapid-categorization</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://serre.lab.brown.edu#/resources/a-neuromorphic-approach-to-computer-vision</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://serre.lab.brown.edu#/resources/action-recognition</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://serre.lab.brown.edu#/resources/automated-system-for-rodent-behavioral-phenotyping</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://serre.lab.brown.edu#/resources/biostats-bioengineering</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://serre.lab.brown.edu#/resources/clickme</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://serre.lab.brown.edu#/resources/color-processing</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://serre.lab.brown.edu#/resources/computational-cognitive-science-neuroscience</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://serre.lab.brown.edu#/resources/computational-mechanisms-of-color-processing</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://serre.lab.brown.edu#/resources/computational-vision</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://serre.lab.brown.edu#/resources/faculty-with-computational-neuroscience-research</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://serre.lab.brown.edu#/resources/hgru-tutorials</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://serre.lab.brown.edu#/resources/hmdb-a-large-human-motion-database</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://serre.lab.brown.edu#/resources/lab-github-repository</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://serre.lab.brown.edu#/resources/learning-sparse-prototypes-for-crowd-perception</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://serre.lab.brown.edu#/resources/mathematical-computations</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://serre.lab.brown.edu#/resources/methods-data-analysis</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://serre.lab.brown.edu#/resources/methods-programming</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://serre.lab.brown.edu#/resources/neuroscience</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://serre.lab.brown.edu#/resources/object-recognition</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://serre.lab.brown.edu#/resources/recommended-coursework-for-undergraduate-students</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://serre.lab.brown.edu#/resources/the-breakfast-actions-dataset</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://serre.lab.brown.edu#/resources/the-multi-cue-boundary-detection-dataset</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>

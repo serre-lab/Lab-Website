@@ -16,7 +16,8 @@
     "migrate:all": "node scripts/migrate-resources.cjs --live",
     "update-links:dry-run": "node scripts/update-links.cjs",
     "update-links": "node scripts/update-links.cjs --live",
-    "migration:status": "node scripts/check-migration-status.cjs"
+    "migration:status": "node scripts/check-migration-status.cjs",
+    "generate-sitemap": "node scripts/generate-sitemap.cjs"
   },
   "dependencies": {
     "@mantine/core": "^7.14.1",
