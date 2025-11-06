@@ -99,14 +99,6 @@ export default function Footer(props: FooterProps) {
                             >
                                 Brown Profile
                             </a>
-                            <a 
-                                href="https://serre-lab.clps.brown.edu/" 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                className="footer-link"
-                            >
-                                Legacy Site
-                            </a>
                         </nav>
                     </div>
                 </div>
