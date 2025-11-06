@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Header from "./Header/Header";
-// import Footer from "./Footer/Footer"; // Commented out
+import Footer from "./Footer/Footer";
 import { Links } from "../types";
 import { SEOHead } from "./SEOHead";
 
@@ -14,7 +14,7 @@ export function Root(props: RootProps) {
             <SEOHead />
             <Header links={props.links.internal} />
             <Outlet />
-            {/* <Footer links={props.links} /> */}
+            <Footer links={props.links} />
         </div>
     );
 }
