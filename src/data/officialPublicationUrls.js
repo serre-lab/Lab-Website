@@ -3,7 +3,7 @@
 
 export const officialPublicationUrls = {
     // 2024/2025
-    "Deceptive learning in histopathology": "https://www.nature.com/articles/s41591-024-03000-8",
+    "Deceptive learning in histopathology": "https://onlinelibrary.wiley.com/doi/10.1111/his.15180",
     "Better artificial intelligence does not mean better models of biology": "https://arxiv.org/abs/2504.16940",
     
     // 2025
