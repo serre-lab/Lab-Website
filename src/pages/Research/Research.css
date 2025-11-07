@@ -95,14 +95,14 @@
 
   .funding-badge {
     display: inline-block;
-    background: linear-gradient(135deg, #27ae60, #2ecc71);
+    background: linear-gradient(135deg, #3498db, #2980b9);
     color: white;
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
     font-size: 0.85rem;
     font-weight: 500;
     margin-top: 1rem;
-    box-shadow: 0 2px 4px rgba(39, 174, 96, 0.3);
+    box-shadow: 0 2px 4px rgba(52, 152, 219, 0.3);
   }
 
   .research-link {

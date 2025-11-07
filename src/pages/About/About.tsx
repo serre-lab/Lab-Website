@@ -1,9 +1,13 @@
 
+import { HeroBanner } from "../../components/HeroBanner/HeroBanner";
 
 const About = () => {
     return (
         <div>
-            <h1>About</h1>
+            <HeroBanner 
+                title="About" 
+                subtitle="Learn more about the Serre Lab and our research mission"
+            />
         </div>
     )
 }

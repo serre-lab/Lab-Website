@@ -2,6 +2,7 @@ import resourcesData from "../../data/resources.json";
 import "./Resources.css";
 import { Text, Title } from "@mantine/core";
 import { Link } from "react-router-dom";
+import { HeroBanner } from "../../components/HeroBanner/HeroBanner";
 
 
 // Helper function to check if URL is a video
@@ -125,12 +126,15 @@ const VideoCard = ({ resource }: { resource: { title: string; url: string } }) =
 
 export function Resources() {
     return (
-        <div className="resources-container">
-            <div className="titleDesc-container">
-                <Title order={1} className="page-title">
-                    Resources
-                </Title>
-
+        <>
+            <HeroBanner 
+                title="Resources" 
+                subtitle="Datasets, tools, demos, and tutorials"
+                backgroundImage="/metcalf.png"
+                blur={true}
+            />
+            <div className="resources-container">
+                <div className="titleDesc-container">
                 {Object.entries(resourcesData).map(([category, resources]) => (
                     <div key={category}>
                         {Object.entries(resources).map(
@@ -159,5 +163,6 @@ export function Resources() {
                 ))}
             </div>
         </div>
+        </>
     );
 }

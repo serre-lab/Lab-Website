@@ -5,6 +5,7 @@ import publicationsData from "../../data/publications_by_year.json";
 import { getOfficialPublicationUrl } from "../../data/officialPublicationUrls";
 import { motion } from "framer-motion";
 import { FaMicrophone, FaFilePdf } from "react-icons/fa";
+import { HeroBanner } from "../../components/HeroBanner/HeroBanner";
 // import { IconSearch } from "@tabler/icons-react"; // optional icon
 
 export function Publications() {
@@ -98,32 +99,38 @@ export function Publications() {
     };
 
     return (
-        <div className="publications-container">
-            <Title order={1} className="page-title">Publications</Title>
-            <div className="filter-section">
-                <div className="search-and-dropdown">
-                    <TextInput
-                        placeholder="Search by title, author, or journal..."
-                        value={searchQuery}
-                        onChange={handleSearchChange}
-                        className="search-bar"
-                        size="md"
-                    />
-                    <Select
-                        className="year-dropdown"
-                        data={["All", ...Object.keys(publicationsData).sort((a, b) => {
-                            if (a === "Work in progress") return -1;
-                            if (b === "Work in progress") return 1;
-                            return parseInt(b) - parseInt(a);
-                        })]}
-                        value={selectedYear}
-                        onChange={handleYearChange}
-                        placeholder="Filter by year"
-                        size="md"
-                    />
+        <>
+            <HeroBanner 
+                title="Publications" 
+                subtitle="Research contributions advancing computational neuroscience, NeuroAI, and brain-inspired vision models"
+                backgroundImage="/metcalf.png"
+                blur={true}
+            />
+            <div className="publications-container">
+                <div className="filter-section">
+                    <div className="search-and-dropdown">
+                        <TextInput
+                            placeholder="Search by title, author, or journal..."
+                            value={searchQuery}
+                            onChange={handleSearchChange}
+                            className="search-bar"
+                            size="md"
+                        />
+                        <Select
+                            className="year-dropdown"
+                            data={["All", ...Object.keys(publicationsData).sort((a, b) => {
+                                if (a === "Work in progress") return -1;
+                                if (b === "Work in progress") return 1;
+                                return parseInt(b) - parseInt(a);
+                            })]}
+                            value={selectedYear}
+                            onChange={handleYearChange}
+                            placeholder="Filter by year"
+                            size="md"
+                        />
+                    </div>
                 </div>
-            </div>
-            <div className="results-section">
+                <div className="results-section">
                 {sortedYears.map(
                     (year, i) =>
                         filteredPublications[year] && (
@@ -193,5 +200,6 @@ export function Publications() {
                 )}
             </div>
         </div>
+        </>
     );
 }

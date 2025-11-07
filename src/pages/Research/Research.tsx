@@ -1,12 +1,18 @@
 import { Text, Title, Anchor } from "@mantine/core";
 import "./Research.css";
+import { HeroBanner } from "../../components/HeroBanner/HeroBanner";
 
 export function Research() {
   return (
-    <div className="research-container">
-      <div className="titleDesc-container">
-        <Title order={1} className="page-title">Research</Title>
-        
+    <>
+      <HeroBanner 
+        title="Research" 
+        subtitle="Advancing computational neuroscience and NeuroAI through cutting-edge research in vision and brain-inspired artificial intelligence"
+        backgroundImage="/metcalf.png"
+        blur={true}
+      />
+      <div className="research-container">
+        <div className="titleDesc-container">
         <div className="research-direction-card">
           <Title order={3} className="research-direction-title">Human-AI Alignment in Vision</Title>
           <Text className="research-direction-text">
@@ -38,9 +44,8 @@ export function Research() {
           </Text>
           <div className="funding-badge">Funded by ANR-3IA (ANR-19-PI3A-0004) and NSF (EAR-1925481)</div>
         </div>
+        </div>
       </div>
-
-      {/* Grant details removed - see research.json.backup to restore */}
-    </div>
+    </>
   );
 }

@@ -1,0 +1,91 @@
+import { Title, Text } from "@mantine/core";
+import { motion } from "motion/react";
+import { FaTwitter, FaGithub } from "react-icons/fa6";
+import "./HeroBanner.css";
+
+interface HeroBannerProps {
+  title: string;
+  subtitle?: string | React.ReactNode;
+  showSocialIcons?: boolean;
+  height?: string;
+  backgroundImage?: string;
+  blur?: boolean;
+}
+
+const fadeZoom = {
+  hidden: { opacity: 0, y: 30, scale: 0.97 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
+
+export function HeroBanner({ title, subtitle, showSocialIcons = false, height, backgroundImage, blur = false }: HeroBannerProps) {
+  const bgImage = backgroundImage || "/metcalf.png";
+  
+  return (
+    <motion.div
+      className={`hero-banner-wrapper ${blur ? 'hero-banner-blur' : ''}`}
+      variants={fadeZoom}
+      initial="hidden"
+      animate="visible"
+      style={{ 
+        height: height || undefined,
+        backgroundImage: blur ? 'none' : `url(${bgImage})`,
+        '--bg-image': `url(${bgImage})`
+      } as React.CSSProperties & { '--bg-image': string }}
+    >
+      <div className="hero-banner-text">
+        <Title order={1} className="hero-banner-title">{title}</Title>
+        {subtitle && (
+          <div className="hero-banner-subtitle">
+            {typeof subtitle === 'string' ? (
+              <Text className="hero-banner-subtitle-text">{subtitle}</Text>
+            ) : (
+              subtitle
+            )}
+          </div>
+        )}
+        {showSocialIcons && (
+          <div className="hero-social-icons">
+            <a
+              href="https://x.com/tserre"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+              className="hero-social-icon"
+            >
+              <FaTwitter size={24} />
+            </a>
+            <a
+              href="https://github.com/serre-lab"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              className="hero-social-icon"
+            >
+              <FaGithub size={24} />
+            </a>
+            <a
+              href="https://bsky.app/profile/thomasserre.bsky.social"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Bluesky"
+              className="hero-social-icon"
+            >
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Bluesky_logo_%28black%29.svg/869px-Bluesky_logo_%28black%29.svg.png"
+                alt="Bluesky"
+                width="24"
+                height="24"
+                style={{ display: 'block', filter: 'brightness(0) invert(1)' }}
+              />
+            </a>
+          </div>
+        )}
+      </div>
+    </motion.div>
+  );
+}

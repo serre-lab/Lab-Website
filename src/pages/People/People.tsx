@@ -3,6 +3,7 @@ import Person from "../../components/Person/Person";
 import peopleData from "../../data/people.json";
 import alumniData from "../../data/alumni.json";
 import "./People.css";
+import { HeroBanner } from "../../components/HeroBanner/HeroBanner";
 
 // Define the desired role order
 const ROLE_ORDER = [
@@ -42,10 +43,14 @@ export default function People() {
   );
 
   return (
-    <div className="people-container">
-      <Title order={1} className="page-title">People</Title>
-
-      {/* Brown Section */}
+    <>
+      <HeroBanner 
+        title="People" 
+        subtitle="Meet the researchers, students, and collaborators"
+        backgroundImage="/metcalf.png"
+        blur={true}
+      />
+      <div className="people-container">
       {brownPeople.length > 0 && (
         <>
           <Title order={2} className="section-title">
@@ -154,5 +159,6 @@ export default function People() {
         </>
       )}
     </div>
+    </>
   );
 }

@@ -2,6 +2,7 @@ import { Title, Anchor, Text, TextInput, Card, Image, Button, Group } from "@man
 import { useState } from "react";
 import scicommData from "../../data/scicomm.json";
 import "./SciComm.css";
+import { HeroBanner } from "../../components/HeroBanner/HeroBanner";
 
 // Add type for scicommData items to include image
 type SciCommItem = {
@@ -36,20 +37,26 @@ export function SciComm() {
     const filteredData = filterMedia();
 
     return (
-        <div className="scicomm-container">
-            <Title order={1} className="page-title">Media</Title>
-            <div className="filter-section">
-                <div className="search-and-dropdown">
-                    <TextInput
-                        placeholder="Search by title or content..."
-                        value={searchQuery}
-                        onChange={handleSearchChange}
-                        className="search-bar"
-                        size="md"
-                    />
+        <>
+            <HeroBanner 
+                title="Media" 
+                subtitle="News coverage, talks, and science communication from the Serre Lab"
+                backgroundImage="/metcalf.png"
+                blur={true}
+            />
+            <div className="scicomm-container">
+                <div className="filter-section">
+                    <div className="search-and-dropdown">
+                        <TextInput
+                            placeholder="Search by title or content..."
+                            value={searchQuery}
+                            onChange={handleSearchChange}
+                            className="search-bar"
+                            size="md"
+                        />
+                    </div>
                 </div>
-            </div>
-            <div className="results-section">
+                <div className="results-section">
                 <div className="media-grid">
                 {filteredData.map((item, idx) => (
                     <Card
@@ -121,26 +128,7 @@ export function SciComm() {
                 ))}
                 </div>
             </div>
-
-            {/* --- Previous list-based rendering version ---
-            // Uncomment below if you prefer the old list style instead of cards:
-
-            <ul style={{ listStyle: "none",}}>
-                <Title>Science Communication</Title>
-                {filteredData.map((item, idx) => (
-                    <li key={idx}>
-                        // image property is now available for future use
-                        // Example: <img src={item.image} alt={item.title} />
-                        <Title order={1}>
-                            <Anchor href={item.link} target="_blank" rel="noopener noreferrer">
-                                {item.title}
-                            </Anchor>
-                        </Title>
-                        <Text>{item.blurb}</Text>
-                    </li>
-                ))}
-            </ul>
-            */ }
         </div>
+        </>
     );
 }
