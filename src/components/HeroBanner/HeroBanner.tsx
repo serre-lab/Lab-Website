@@ -24,7 +24,7 @@ const fadeZoom = {
 };
 
 export function HeroBanner({ title, subtitle, showSocialIcons = true, height, backgroundImage, blur = false }: HeroBannerProps) {
-  const bannerBackground = backgroundImage || "/hero-texture.svg";
+  const bannerBackground = backgroundImage || "/metcalf.png";
 
   return (
     <motion.div
