@@ -53,7 +53,6 @@ const MarkdownPage: React.FC<MarkdownPageProps> = ({ content }) => {
                 title={title}
                 subtitle={subtitle || "Resource page from the Serre Lab"}
                 backgroundImage="/metcalf.png"
-                blur={true}
             />
             <div className="markdown-container">
                 <ReactMarkdown

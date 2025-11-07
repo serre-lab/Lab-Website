@@ -9,7 +9,6 @@ export function Research() {
         title="Research" 
         subtitle="Advancing computational neuroscience and NeuroAI through research in vision and brain-inspired artificial intelligence"
         backgroundImage="/metcalf.png"
-        blur={true}
       />
       <div className="research-container">
         <div className="titleDesc-container">

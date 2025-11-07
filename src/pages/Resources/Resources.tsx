@@ -131,7 +131,6 @@ export function Resources() {
                 title="Resources" 
                 subtitle="Datasets, tools, demos, and tutorials"
                 backgroundImage="/metcalf.png"
-                blur={true}
             />
             <div className="resources-container">
                 <div className="titleDesc-container">

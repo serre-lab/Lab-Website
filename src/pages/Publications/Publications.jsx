@@ -104,7 +104,6 @@ export function Publications() {
                 title="Publications" 
                 subtitle="Research contributions advancing computational neuroscience, NeuroAI, and brain-inspired vision models"
                 backgroundImage="/metcalf.png"
-                blur={true}
             />
             <div className="publications-container">
                 <div className="filter-section">

@@ -48,7 +48,6 @@ export default function People() {
         title="People" 
         subtitle="Meet the researchers, students, and collaborators"
         backgroundImage="/metcalf.png"
-        blur={true}
       />
       <div className="people-container">
       {brownPeople.length > 0 && (

@@ -42,7 +42,6 @@ export function SciComm() {
                 title="Media" 
                 subtitle="News coverage, talks, and science communication from the Serre Lab"
                 backgroundImage="/metcalf.png"
-                blur={true}
             />
             <div className="scicomm-container">
                 <div className="filter-section">
@@ -65,10 +64,10 @@ export function SciComm() {
                         padding="lg"
                         radius="md"
                         withBorder
+                        className="media-card"
                         style={{
                             display: "flex",
                             flexDirection: "column",
-                            height: 430,
                             minHeight: 430,
                             transition: "transform 0.18s, box-shadow 0.18s",
                             cursor: "pointer",
