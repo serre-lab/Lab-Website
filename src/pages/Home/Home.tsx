@@ -3,8 +3,8 @@ import Learn from "../../components/LearnMoreAbout/Learn";
 import "./Home.css";
 import { Title, Text } from "@mantine/core";
 import { motion } from "motion/react";
-import { FaTwitter, FaGithub } from "react-icons/fa6";
 import { useState } from "react";
+import { HeroBanner } from "../../components/HeroBanner/HeroBanner";
 
 // Helper function to shorten journal names
 const shortenJournalName = (journal: string): string => {
@@ -83,16 +83,6 @@ const fadeUp = {
   },
 };
 
-const fadeZoom = {
-  hidden: { opacity: 0, y: 30, scale: 0.97 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    scale: 1,
-    transition: { duration: 0.6, ease: "easeOut" },
-  },
-};
-
 const staggerContainer = {
   visible: {
     transition: {
@@ -108,67 +98,18 @@ export function Home() {
 
   return (
     <div className="home-container">
-      {/* Hero Section */}
-      <motion.div
-  className="image-wrapper"
-  variants={fadeZoom}
-  initial="hidden"
-  animate="visible"
->
-        <div className="hero-text">
-          <Title order={1} aria-label="lab title">Serre Lab</Title>
-          <div className="hero-affiliations">
-            <Text className="hero-affiliation">
-              Center for Computational Brain Science
-            </Text>
-            <Text className="hero-affiliation">
-              Robert J. and Nancy D. Carney Institute for Brain Science
-            </Text>
-            <Text className="hero-affiliation">
-              Cognitive & Psychological Sciences and Computer Science Depts
-            </Text>
-            <Text className="hero-affiliation">
-              Brown University
-            </Text>
+      <HeroBanner
+        title="Serre Lab"
+        subtitle={(
+          <div className="home-hero-subtitle">
+            <Text className="home-hero-line">Center for Computational Brain Science</Text>
+            <Text className="home-hero-line">Robert J. and Nancy D. Carney Institute for Brain Science</Text>
+            <Text className="home-hero-line">Cognitive & Psychological Sciences and Computer Science Depts</Text>
+            <Text className="home-hero-line">Brown University</Text>
           </div>
-          {/* Social Media Icons */}
-          <div className="hero-social-icons">
-            <a
-              href="https://x.com/tserre"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Twitter"
-              className="hero-social-icon"
-            >
-              <FaTwitter size={24} />
-            </a>
-            <a
-              href="https://github.com/serre-lab"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHub"
-              className="hero-social-icon"
-            >
-              <FaGithub size={24} />
-            </a>
-            <a
-              href="https://bsky.app/profile/thomasserre.bsky.social"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Bluesky"
-              className="hero-social-icon"
-            >
-              <img 
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Bluesky_logo_%28black%29.svg/869px-Bluesky_logo_%28black%29.svg.png"
-                alt="Bluesky"
-                width="24"
-                height="24"
-                style={{ display: 'block', filter: 'brightness(0) invert(1)' }}
-              />
-            </a>
-          </div>
-        </div>
-      </motion.div>
+        )}
+        backgroundImage="/metcalf.png"
+      />
 
       {/* Learn More Section */}
       <motion.div
@@ -484,7 +425,7 @@ export function Home() {
           </div>
         </div>
         <div style={{ textAlign: "center", marginTop: "1.5rem" }}>
-          <Link to="/publications" style={{ color: "#3498db", textDecoration: "none", fontWeight: 600 }}>
+          <Link to="/publications" style={{ color: "var(--color-primary)", textDecoration: "none", fontWeight: 600 }}>
             View All Publications →
           </Link>
         </div>

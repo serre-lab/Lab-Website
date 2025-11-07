@@ -7,23 +7,28 @@
     font-weight: 400;
 
     /* Color variables for consistency */
-    --color-primary: #3498db;
-    --color-primary-dark: #2980b9;
-    --color-text-primary: #2c3e50;
-    --color-text-secondary: #666;
-    --color-text-tertiary: #444;
-    --color-link: #3498db;
-    --color-link-hover: #2980b9;
+    --color-primary: #2f80d3;
+    --color-primary-dark: #1f5fa2;
+    --color-accent: #1abc9c;
+    --color-accent-light: #5de6c3;
+    --color-highlight: #cce9ff;
+    --color-text-primary: #1f2a30;
+    --color-text-secondary: #45545d;
+    --color-text-tertiary: #5f6c75;
+    --color-link: var(--color-primary);
+    --color-link-hover: var(--color-accent);
 
     /* Background colors */
-    --color-bg-light: #f8f9fa;
-    --color-bg-gray: #e0e0e0;
+    --color-bg-light: #f4f8fc;
+    --color-bg-gray: #e2eef8;
     --color-bg-white: #ffffff;
 
     /* Border colors */
-    --color-border: #e1e8ed;
-    --color-border-light: #d6d7e0;
-    --color-border-dark: #ccc;
+    --color-border: #c5dff5;
+    --color-border-light: #e2f1fb;
+    --color-border-dark: #8dbbea;
+    --gradient-primary: linear-gradient(135deg, rgba(47,128,211,1), rgba(26,188,156,1));
+    --gradient-vertical: linear-gradient(180deg, rgba(47,128,211,1), rgba(26,188,156,1));
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;

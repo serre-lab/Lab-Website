@@ -1,17 +1,17 @@
 .hero-banner-wrapper {
   position: relative;
   width: 100%;
-  height: clamp(280px, 35vh, 450px);
-  background-image: url("/metcalf.png");
+  min-height: clamp(320px, 38vh, 480px);
+  background-image: url("/hero-texture.svg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 1.5rem;
+  align-items: stretch;
+  padding: 0 2.25rem;
   color: white;
-  text-align: center;
+  text-align: left;
   overflow: hidden;
 }
 
@@ -35,14 +35,26 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: linear-gradient(120deg, rgba(9, 25, 38, 0.85), rgba(12, 46, 54, 0.75));
   z-index: 1;
 }
 
-.hero-banner-text {
+.hero-banner-content {
   position: relative;
   z-index: 1;
-  max-width: 900px;
+  display: flex;
+  align-items: flex-start;
+  gap: 2.75rem;
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 2.25rem 0;
+}
+
+.hero-banner-text {
+  flex: 1;
+  max-width: 760px;
+  text-align: left;
 }
 
 .hero-banner-title {
@@ -57,7 +69,7 @@
 }
 
 .hero-banner-subtitle {
-  margin-top: 1rem;
+  margin-top: 0.75rem;
 }
 
 .hero-banner-subtitle-text {
@@ -68,55 +80,86 @@
   line-height: 1.6;
 }
 
-.hero-social-icons {
+.hero-banner-social {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
-  margin-top: 1.5rem;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: flex-start;
+  min-width: 140px;
 }
 
-.hero-social-icon {
+.hero-banner-social-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.28rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.hero-banner-social-icons {
   display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.hero-banner-social-icon {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 40px;
   height: 40px;
-  color: rgba(255, 255, 255, 0.9);
-  transition: all 0.3s ease;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.18);
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(10, 30, 34, 0.28);
 }
 
-.hero-social-icon:hover {
-  color: white;
-  background: rgba(255, 255, 255, 0.2);
+.hero-banner-social-icon:hover {
+  color: #ffffff;
+  background: rgba(47, 128, 211, 0.8);
   transform: translateY(-2px);
 }
 
-.hero-social-icon img {
-  opacity: 0.9;
-  transition: opacity 0.3s ease;
-}
-
-.hero-social-icon:hover img {
-  opacity: 1;
+.centered-text {
+  text-align: center;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
   .hero-banner-wrapper {
-    height: clamp(220px, 30vh, 380px);
-    padding: 1rem;
+    min-height: clamp(260px, 45vh, 420px);
+    padding: 0 1.5rem;
   }
-  
+
+  .hero-banner-content {
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: flex-start;
+    padding: 1.75rem 0;
+  }
+
+  .hero-banner-social {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .hero-banner-social-icons {
+    flex-direction: row;
+    gap: 0.85rem;
+  }
+
+  .hero-banner-text {
+    text-align: left;
+  }
+
   .hero-banner-title {
-    font-size: clamp(1.5rem, 8vw, 2rem);
+    font-size: clamp(1.75rem, 8vw, 2.4rem);
     white-space: nowrap;
   }
-  
+
   .hero-banner-subtitle-text {
-    font-size: clamp(0.85rem, 4vw, 1rem);
+    font-size: clamp(0.95rem, 4vw, 1.1rem);
   }
 }
 

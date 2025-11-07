@@ -1,108 +1,24 @@
-.image-wrapper {
-  position: relative;
-  width: 100%;
-  height: clamp(280px, 35vh, 450px);
-  background-image: url("/metcalf.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1.5rem;
-  color: white;
-  text-align: center;
-}
-
-.image-wrapper::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-}
-
-.hero-text {
-  position: relative;
-  z-index: 1;
-  max-width: 800px;
-}
-
-.hero-text h1,
-.hero-text [aria-label="lab title"] {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.hero-affiliations {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin-top: 1.5rem;
-}
-
-.hero-affiliation {
-  color: rgba(255, 255, 255, 0.95);
-  font-weight: 400;
-  font-size: 1.1rem;
-  letter-spacing: 0.5px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.hero-social-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
-  margin-top: 1.5rem;
-}
-
-.hero-social-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  color: rgba(255, 255, 255, 0.9);
-  transition: all 0.3s ease;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-}
-
-.hero-social-icon:hover {
-  color: white;
-  background: rgba(255, 255, 255, 0.2);
-  transform: translateY(-2px);
-}
-
-.hero-social-icon img {
-  opacity: 0.9;
-  transition: opacity 0.3s ease;
-}
-
-.hero-social-icon:hover img {
-  opacity: 1;
-}
-
-  
-  .home-container {
+.home-container {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
     align-items: center;
   }
-
-  @media (max-width: 768px) {
-    .image-wrapper {
-      height: clamp(220px, 30vh, 380px);
-      padding: 1rem;
-    }
-  }
   
+.home-hero-subtitle {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.home-hero-line {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 1.05rem;
+  letter-spacing: 0.4px;
+  white-space: nowrap;
+}
+
   .home-content {
     width: 100%;
     max-width: 800px;
@@ -142,13 +58,13 @@
     left: 0;
     width: 4px;
     height: 100%;
-    background: linear-gradient(180deg, #3498db, #2980b9);
+    background: var(--gradient-vertical);
   }
 
   .student-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-    border-color: #3498db;
+    box-shadow: 0 6px 20px rgba(31, 122, 140, 0.22);
+    border-color: var(--color-primary);
   }
 
   .student-card-title {
@@ -182,7 +98,7 @@
   .student-card-expand {
     margin-top: auto;
     font-size: 0.85rem;
-    color: #3498db;
+    color: var(--color-primary);
     font-weight: 500;
   }
 
@@ -205,12 +121,12 @@
   }
 
   .email-icon-button:hover {
-    color: #3498db;
+    color: var(--color-accent);
     transform: scale(1.1);
   }
 
   .social-icon:hover {
-    color: #3498db !important;
+    color: var(--color-accent) !important;
     transform: scale(1.1);
   }
 
@@ -252,11 +168,11 @@
   }
 
   .funding-logo-badge:hover .funding-badge-text {
-    background: #3498db;
-    color: white;
-    border-color: #3498db;
+    background: var(--color-primary);
+    color: #ffffff;
+    border-color: var(--color-primary);
     transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+    box-shadow: 0 4px 12px rgba(20, 85, 99, 0.25);
   }
 
   .funding-description {
@@ -308,15 +224,15 @@
   }
 
   .clickme-grid-card {
-    border: 2px solid #667eea;
-    background: linear-gradient(to bottom, rgba(102, 126, 234, 0.05), var(--color-bg-white));
+    border: 2px solid rgba(31, 122, 140, 0.18);
+    background: var(--color-bg-white);
   }
 
   .featured-badge-small {
     position: absolute;
     top: 0.75rem;
     right: 0.75rem;
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: var(--color-primary);
     color: white;
     padding: 0.35rem 0.75rem;
     border-radius: 20px;
@@ -368,22 +284,23 @@
 
   .featured-button-small {
     display: inline-block;
-    background: #3498db;
-    color: white;
+    background: var(--color-accent);
+    color: #0c2f34;
     padding: 0.5rem 1.25rem;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
     font-size: 0.85rem;
-    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+    box-shadow: 0 6px 18px rgba(20, 85, 99, 0.2);
     transition: all 0.3s ease;
     align-self: flex-start;
   }
 
   .featured-button-small:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
-    background: #2980b9;
+    box-shadow: 0 8px 22px rgba(20, 85, 99, 0.3);
+    background: var(--color-primary);
+    color: #ffffff;
   }
 
   /* PhD Recruitment Section */
@@ -395,10 +312,10 @@
   }
 
   .phd-recruitment-card {
-    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    background: var(--gradient-primary);
     border-radius: 12px;
     padding: 1.25rem 1.5rem;
-    box-shadow: 0 8px 32px rgba(52, 152, 219, 0.2);
+    box-shadow: 0 12px 40px rgba(31, 122, 140, 0.35);
     position: relative;
     overflow: hidden;
     height: 100%;
@@ -497,33 +414,34 @@
   }
 
   .phd-learn-more-button {
-    background: white;
-    color: #3498db;
+    background: var(--color-accent);
+    color: #06353a;
     padding: 0.65rem 1.5rem;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 700;
     font-size: 0.9rem;
-    border: 2px solid white;
+    border: 2px solid transparent;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 16px rgba(39, 128, 211, 0.2);
     cursor: pointer;
     flex-shrink: 0;
   }
 
   .phd-learn-more-button:hover {
-    background: #f7fafc;
-    color: #2980b9;
+    background: var(--color-primary-dark);
+    color: #ffffff;
+    border-color: var(--color-primary-dark);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 24px rgba(31, 128, 211, 0.3);
   }
 
 
   .clickme-featured-card {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: var(--color-primary);
     border-radius: 12px;
     padding: 1.25rem 1.5rem;
-    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.2);
+    box-shadow: 0 8px 28px rgba(31, 128, 211, 0.3);
     position: relative;
     overflow: hidden;
     height: 100%;
@@ -772,13 +690,13 @@
 
   .highlight-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-    border-color: #3498db;
+    box-shadow: 0 4px 16px rgba(31, 122, 140, 0.18);
+    border-color: var(--color-primary);
   }
 
   .highlight-journal {
     display: inline-block;
-    background: linear-gradient(135deg, #3498db, #2980b9);
+    background: var(--color-primary);
     color: white;
     padding: 0.25rem 0.75rem;
     border-radius: 20px;
@@ -802,7 +720,7 @@
   }
 
   .highlight-title a:hover {
-    color: #3498db;
+    color: var(--color-accent);
   }
 
   .highlight-authors {

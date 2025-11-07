@@ -28,10 +28,23 @@
     gap: 0.75rem;
 }
 
-.footer-logo-section img {
+.footer-brown-logo {
     width: 44px;
     height: auto;
     flex-shrink: 0;
+}
+
+.footer-logo-divider {
+    display: block;
+    width: 1px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.footer-logo-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
 }
 
 .footer-lab-name {
@@ -64,14 +77,14 @@
 .footer-email-link {
     display: inline-flex;
     align-items: center;
-    color: var(--color-link);
+    color: var(--color-text-primary);
     text-decoration: none;
     transition: color 0.2s ease;
     font-size: 0.9rem;
 }
 
 .footer-email-link:hover {
-    color: var(--color-link-hover);
+    color: var(--color-primary);
     text-decoration: underline;
 }
 

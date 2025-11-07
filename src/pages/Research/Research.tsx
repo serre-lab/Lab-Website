@@ -7,7 +7,7 @@ export function Research() {
     <>
       <HeroBanner 
         title="Research" 
-        subtitle="Advancing computational neuroscience and NeuroAI through cutting-edge research in vision and brain-inspired artificial intelligence"
+        subtitle="Advancing computational neuroscience and NeuroAI through research in vision and brain-inspired artificial intelligence"
         backgroundImage="/metcalf.png"
         blur={true}
       />

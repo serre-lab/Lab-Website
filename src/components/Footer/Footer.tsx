@@ -19,12 +19,13 @@ export default function Footer(props: FooterProps) {
             <div className="footer-content">
                 {/* Left Column: Lab Info */}
                 <div className="footer-column footer-lab-info">
-                    <div className="footer-logo-section">
-                        <img src="/brown-logo.webp" alt="Brown University Logo" />
-                        <div>
-                            <Title order={3} className="footer-lab-name">Serre Lab</Title>
-                            <Text className="footer-lab-tagline">Vision, Neuroscience & AI</Text>
-                        </div>
+                           <div className="footer-logo-section">
+                               <img src="/brown-logo.webp" alt="Brown University Logo" className="footer-brown-logo" />
+                               <span className="footer-logo-divider" aria-hidden="true" />
+                               <div className="footer-logo-text">
+                                   <Title order={3} className="footer-lab-name">Serre Lab</Title>
+                                   <Text className="footer-lab-tagline">Vision, Neuroscience & AI</Text>
+                               </div>
                     </div>
                     <div className="footer-contact">
                         <Text size="sm" className="footer-contact-item">
@@ -34,7 +35,7 @@ export default function Footer(props: FooterProps) {
                             Providence, RI 02912
                         </Text>
                         <Text size="sm" className="footer-contact-item">
-                            <a href="mailto:serre-lab@brown.edu" className="footer-email-link">
+                            <a href="mailto:serre-lab@brown.edu" className="footer-email-link" style={{ color: '#2c3e50' }}>
                                 <FaEnvelope size={14} style={{ marginRight: '6px', verticalAlign: 'middle' }} />
                                 Contact Us
                             </a>

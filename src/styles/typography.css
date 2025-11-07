@@ -9,7 +9,7 @@
   margin-bottom: 2rem;
   font-size: 2.5rem;
   font-weight: 700;
-  color: #2c3e50;
+  color: var(--color-text-primary);
   letter-spacing: -0.5px;
 }
 
@@ -18,7 +18,7 @@
   text-align: left;
   font-size: 1.75rem;
   font-weight: 600;
-  color: #2c3e50;
+  color: var(--color-text-primary);
   margin-top: 2rem;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
@@ -31,7 +31,7 @@
   margin-bottom: 1rem;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #2c3e50;
+  color: var(--color-text-primary);
 }
 
 /* Card titles (H4) */
@@ -39,21 +39,21 @@
   margin-bottom: 0.75rem;
   font-size: 1.25rem;
   font-weight: 600;
-  color: #2c3e50;
+  color: var(--color-text-primary);
 }
 
 /* Body text */
 .body-text {
   font-size: 1rem;
   line-height: 1.7;
-  color: #444;
+  color: var(--color-text-tertiary);
 }
 
 /* Secondary text */
 .secondary-text {
   font-size: 0.95rem;
   line-height: 1.6;
-  color: #666;
+  color: var(--color-text-secondary);
 }
 
 /* Link colors */

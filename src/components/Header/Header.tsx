@@ -14,9 +14,10 @@ const Header = (props: HeaderProps) => {
     return (
         <header>
             <Link to="/" className="left">
-                <img src="/brown-logo.webp" alt="Brown University Logo" />
+                <img src="/brown-logo.webp" alt="Brown University crest" className="brown-logo" />
+                <span className="brand-divider" aria-hidden="true" />
                 <div className="lab-info">
-                    <b>Serre Lab</b>
+                    <b className="lab-name">Serre Lab</b>
                     <span className="lab-tagline">Vision, Neuroscience & AI</span>
                 </div>
             </Link>
