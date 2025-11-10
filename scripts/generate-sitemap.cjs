@@ -71,7 +71,7 @@ function generateSitemap() {
   for (const route of allRoutes) {
     const url = route.path === '/' 
       ? `${BASE_URL}/` 
-      : `${BASE_URL}#${route.path}`;
+      : `${BASE_URL}/#${route.path}`;
     
     const priority = route.priority || '0.6';
     const changefreq = route.changefreq || 'monthly';

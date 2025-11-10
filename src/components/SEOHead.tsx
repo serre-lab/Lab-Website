@@ -73,7 +73,7 @@ export function SEOHead() {
         // Build canonical URL
         const canonicalUrl = path === '/' 
             ? `${BASE_URL}/` 
-            : `${BASE_URL}#${path}`;
+            : `${BASE_URL}/#${path}`;
         
         // Get page metadata
         const title = getPageTitle(path);
