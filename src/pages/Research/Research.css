@@ -7,6 +7,11 @@
     flex-direction: column;
     gap: 3rem;
   }
+
+  /* Reduce top margin for first section heading similar to People and Resources pages */
+  .research-container .section-title:first-of-type {
+    margin-top: 0.5rem;
+  }
   
   .titleDesc-container {
     display: flex;
