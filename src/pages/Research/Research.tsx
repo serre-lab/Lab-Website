@@ -1,6 +1,7 @@
-import { Text, Title, Anchor } from "@mantine/core";
+import { Text, Title, Anchor, Accordion } from "@mantine/core";
 import "./Research.css";
 import { HeroBanner } from "../../components/HeroBanner/HeroBanner";
+import researchData from "../../data/research.json";
 
 export function Research() {
   return (
@@ -42,6 +43,86 @@ export function Research() {
             In collaboration with the Artificial and Natural Intelligence Toulouse Institute, we're creating tools to understand and interpret deep learning models. Our <Anchor href="https://openaccess.thecvf.com/content/CVPR2023/papers/Fel_CRAFT_Concept_Recursive_Activation_FacTorization_for_Explainability_CVPR_2023_paper.pdf" target="_blank" className="research-link">CRAFT framework</Anchor> and <Anchor href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/76d2f8e328e1081c22a77ca0fa330ca5-Abstract-Conference.html" target="_blank" className="research-link">MACO approach</Anchor> help researchers peek inside the "black box" of AI. CRAFT provides concept-based explanations that reveal both "what" and "where" models look, while MACO unlocks feature visualization for state-of-the-art deep networks. These methods are implemented in our open-source <Anchor href="https://github.com/deel-ai/xplique" target="_blank" className="research-link">Xplique toolbox</Anchor>, making explainability accessible to the broader research community. Critically, our explainability tools reveal when AI learns deceptive strategies—as we demonstrated in <Anchor href="https://onlinelibrary.wiley.com/doi/10.1111/his.15180" target="_blank" className="research-link">histopathology</Anchor>, where models claiming superhuman cancer diagnosis actually relied on spurious correlations rather than meaningful biological features. See these tools in action: <Anchor href="https://serre-lab.github.io/Lens/" target="_blank" className="research-link">ObjectLENS explains what ImageNet models really see</Anchor>, and <Anchor href="https://serre-lab.github.io/LeafLens/" target="_blank" className="research-link">LeafLENS reveals how AI identifies plant species from cleared leaves</Anchor>. We're now developing methods to identify the computational mechanisms learned by foundation models—work outlined in our <Anchor href="https://arxiv.org/abs/2509.17280" target="_blank" className="research-link">perspective on moving from prediction to understanding</Anchor> in brain science.
           </Text>
           <div className="funding-badge">Funded by ANR-3IA (ANR-19-PI3A-0004) and NSF (EAR-1925481)</div>
+        </div>
+
+        {/* Grants Section */}
+        <div className="grants-section" style={{ marginTop: "3rem" }}>
+          <Title order={2} className="section-title">Research Funding</Title>
+          
+          {/* Current Grants */}
+          <div style={{ marginTop: "2rem" }}>
+            <Title order={3} style={{ marginBottom: "1rem", color: "var(--color-primary)" }}>Current Grants</Title>
+            <Accordion variant="separated">
+              {researchData.currentGrants.map((grant, index) => (
+                <Accordion.Item key={index} value={`current-${index}`}>
+                  <Accordion.Control>
+                    <div>
+                      <Text fw={600} size="md">{grant.title}</Text>
+                      <Text size="sm" c="dimmed">
+                        {grant.agency} • {grant.grantNumber} • {grant.years} • {grant.amount}
+                      </Text>
+                    </div>
+                  </Accordion.Control>
+                  <Accordion.Panel>
+                    <Text size="sm" style={{ marginBottom: "0.5rem" }}>
+                      <strong>Role:</strong> {grant.role}
+                    </Text>
+                    <Text size="sm">{grant.description}</Text>
+                  </Accordion.Panel>
+                </Accordion.Item>
+              ))}
+            </Accordion>
+          </div>
+
+          {/* Training Grants */}
+          <div style={{ marginTop: "2rem" }}>
+            <Title order={3} style={{ marginBottom: "1rem", color: "var(--color-primary)" }}>Training Grants</Title>
+            <Accordion variant="separated">
+              {researchData.trainingGrants.map((grant, index) => (
+                <Accordion.Item key={index} value={`training-${index}`}>
+                  <Accordion.Control>
+                    <div>
+                      <Text fw={600} size="md">{grant.title}</Text>
+                      <Text size="sm" c="dimmed">
+                        {grant.agency} • {grant.grantNumber} • {grant.years} • {grant.amount}
+                      </Text>
+                    </div>
+                  </Accordion.Control>
+                  <Accordion.Panel>
+                    <Text size="sm" style={{ marginBottom: "0.5rem" }}>
+                      <strong>Role:</strong> {grant.role}
+                    </Text>
+                    <Text size="sm">{grant.description}</Text>
+                  </Accordion.Panel>
+                </Accordion.Item>
+              ))}
+            </Accordion>
+          </div>
+
+          {/* Completed Grants */}
+          <div style={{ marginTop: "2rem", marginBottom: "3rem" }}>
+            <Title order={3} style={{ marginBottom: "1rem", color: "var(--color-primary)" }}>Completed Grants</Title>
+            <Accordion variant="separated">
+              {researchData.completedGrants.map((grant, index) => (
+                <Accordion.Item key={index} value={`completed-${index}`}>
+                  <Accordion.Control>
+                    <div>
+                      <Text fw={600} size="md">{grant.title}</Text>
+                      <Text size="sm" c="dimmed">
+                        {grant.agency} {grant.grantNumber ? `• ${grant.grantNumber}` : ''} • {grant.years} • {grant.amount}
+                      </Text>
+                    </div>
+                  </Accordion.Control>
+                  <Accordion.Panel>
+                    <Text size="sm" style={{ marginBottom: "0.5rem" }}>
+                      <strong>Role:</strong> {grant.role}
+                    </Text>
+                    <Text size="sm">{grant.description}</Text>
+                  </Accordion.Panel>
+                </Accordion.Item>
+              ))}
+            </Accordion>
+          </div>
         </div>
         </div>
       </div>
