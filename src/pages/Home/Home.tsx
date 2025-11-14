@@ -138,7 +138,7 @@ export function Home() {
               </div>
             </div>
             <Text className="phd-recruitment-description">
-              Apply to one of these three PhD programs to join our lab and work on cutting-edge NeuroAI, vision and computational neuroscience research.
+              Apply to one of these three PhD programs to join our lab and work on cutting-edge research in NeuroAI, vision, and computational neuroscience.
             </Text>
             <div className="phd-bottom-row">
               <div className="phd-info-stats">
@@ -230,7 +230,7 @@ export function Home() {
       >
         <Title order={2} className="section-title">Explore Interactive Tools and XAI Libraries</Title>
         <Text className="body-text featured-subtitle">
-          Try our research tools, games, and open-source software to advance vision science
+          Try our research tools, interactive demos, and open-source software to advance vision science
         </Text>
         
         <div className="featured-grid">
@@ -240,7 +240,7 @@ export function Home() {
             <div className="featured-content">
               <Title order={3} className="featured-project-title">🎮 ClickMe</Title>
               <Text className="featured-description">
-                Play our game, win weekly cash prizes, and help AI see like humans. Featured by NSF and NBC 10.
+                Play our game, compete for weekly cash prizes, and help AI learn to see like humans. Featured by NSF and NBC 10.
               </Text>
               <a
                 href="https://clickme.clps.brown.edu/tutorial"
@@ -267,7 +267,7 @@ export function Home() {
             <div className="featured-content">
               <Title order={3} className="featured-project-title">Neural Harmonizer</Title>
               <Text className="featured-description">
-                Align AI models with human vision. Explore our harmonization techniques that make neural networks see more like humans do.
+                Align AI models with human vision. Explore our harmonization techniques that train neural networks to see more like humans do.
               </Text>
               <a
                 href="https://serre-lab.github.io/Harmonization/"
@@ -285,7 +285,7 @@ export function Home() {
             <div className="featured-content">
               <Title order={3} className="featured-project-title">ObjectLENS</Title>
               <Text className="featured-description">
-                Explore what ImageNet models really see. Interactive explainability tool for object recognition revealing how AI vision models make decisions.
+                Explore what ImageNet models actually see. Interactive explainability tool revealing how AI vision models make object recognition decisions.
               </Text>
               <a
                 href="https://serre-lab.github.io/Lens/"
@@ -303,7 +303,7 @@ export function Home() {
             <div className="featured-content">
               <Title order={3} className="featured-project-title">LeafLENS</Title>
               <Text className="featured-description">
-                Discover how AI identifies plant species from cleared leaves. Visualize model attention and decision-making processes.
+                Discover how AI identifies plant species from cleared leaves. Visualize model attention patterns and decision-making processes.
               </Text>
               <a
                 href="https://serre-lab.github.io/LeafLens/"
@@ -321,7 +321,7 @@ export function Home() {
             <div className="featured-content">
               <Title order={3} className="featured-project-title">Xplique</Title>
               <Text className="featured-description">
-                Open-source deep learning explainability toolbox. Understand and interpret neural network decisions with state-of-the-art attribution methods.
+                Open-source explainability toolbox for deep learning. Understand and interpret neural network decisions using state-of-the-art attribution methods.
               </Text>
               <a
                 href="https://github.com/deel-ai/xplique"
@@ -441,7 +441,7 @@ export function Home() {
       >
         <motion.div variants={fadeUp}>
           <Text>
-            Our research investigates the computational principles of biological vision to understand how the brain works and to build more human-like AI systems. We work at the intersection of neuroscience, cognitive science, and artificial intelligence.
+            Our research investigates the computational principles of biological vision—both to understand how the brain works and to build more human-like AI systems. Working at the intersection of neuroscience, cognitive science, and artificial intelligence, we tackle a fundamental question: How can we bridge the gap between biological and artificial vision to advance both brain science and AI?
           </Text>
         </motion.div>
 
@@ -544,7 +544,7 @@ export function Home() {
           <Text>
             Our work is currently supported by ONR (N00014-24-1-2026 and REPRISM MURI N00014-24-1-2603), NSF (IIS-2402875 and EAR-1925481), and the ANR-3IA Artificial and Natural Intelligence Toulouse Institute (ANR-19-PI3A-0004).
             <br /><br />
-            Additional support is provided by the Carney Institute for Brain Science and the Center for Computation and Visualization (CCV) (via NIH S10OD036341 to TS.) We acknowledge the Cloud TPU hardware resources that Google graciously makes available via the TensorFlow Research Cloud (TFRC) program.
+            Additional support is provided by the Carney Institute for Brain Science and the Center for Computation and Visualization (via NIH S10OD036341). We gratefully acknowledge Cloud TPU hardware resources made available by Google through the TensorFlow Research Cloud (TFRC) program.
           </Text>
         </motion.div>
       </motion.div>
