@@ -59,7 +59,7 @@ export function Research() {
                     <div>
                       <Text fw={600} size="md">{grant.title}</Text>
                       <Text size="sm" c="dimmed">
-                        {grant.agency} • {grant.grantNumber} • {grant.years} • {grant.amount}
+                        {grant.agency} • {grant.grantNumber} • {grant.years}
                       </Text>
                     </div>
                   </Accordion.Control>
@@ -84,7 +84,7 @@ export function Research() {
                     <div>
                       <Text fw={600} size="md">{grant.title}</Text>
                       <Text size="sm" c="dimmed">
-                        {grant.agency} • {grant.grantNumber} • {grant.years} • {grant.amount}
+                        {grant.agency} • {grant.grantNumber} • {grant.years}
                       </Text>
                     </div>
                   </Accordion.Control>
@@ -109,7 +109,7 @@ export function Research() {
                     <div>
                       <Text fw={600} size="md">{grant.title}</Text>
                       <Text size="sm" c="dimmed">
-                        {grant.agency} {grant.grantNumber ? `• ${grant.grantNumber}` : ''} • {grant.years} • {grant.amount}
+                        {grant.agency} {grant.grantNumber ? `• ${grant.grantNumber}` : ''} • {grant.years}
                       </Text>
                     </div>
                   </Accordion.Control>
