@@ -121,103 +121,92 @@ export function Home() {
         <Learn />
       </motion.div>
 
-      {/* PhD Recruitment Card */}
+      {/* Prospective Students Section */}
       <motion.div
-        className="phd-recruitment-section"
-        variants={fadeUp}
+        className="home-content"
+        variants={staggerContainer}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 0.2 }}
       >
-        <div className="phd-recruitment-card">
-          <div className="phd-recruitment-content">
-            <div className="phd-recruitment-header">
-              <div className="phd-title-group">
-                <Title order={2} className="phd-main-title">🎓 PhD Students for Fall 2026</Title>
-                <span className="phd-badge">Now Recruiting</span>
-              </div>
-            </div>
-            <Text className="phd-recruitment-description">
-              Apply to one of these three PhD programs to join our lab and work on cutting-edge research in NeuroAI, vision, and computational neuroscience.
+        <motion.div variants={fadeUp}>
+          <Title order={2} className="section-title">
+            Prospective Students
+          </Title>
+        </motion.div>
+
+        <motion.div variants={fadeUp} className="student-cards-container">
+          <div className="student-card" onClick={() => setShowUndergradDetails(!showUndergradDetails)} style={{ cursor: "pointer" }}>
+            <Title order={3} className="student-card-title">🎓 Undergraduate & MSc Students</Title>
+            <Text className="student-card-text">
+              Brown undergrad and MSc students interested in research
+              should email Prof. Serre with a transcript and resume/CV.
             </Text>
-            <div className="phd-bottom-row">
-              <div className="phd-info-stats">
-                <a
-                  href="https://graduateprograms.brown.edu/graduate-program/cognitive-science-phd"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="phd-stat-item phd-stat-link"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    if (typeof window !== 'undefined' && (window as any).gtag) {
-                      (window as any).gtag('event', 'click', {
-                        'event_category': 'recruitment',
-                        'event_label': 'phd_cognitive_science_link',
-                        'value': 1
-                      });
-                    }
-                  }}
-                >
-                  <span className="phd-stat-text">Cognitive Science</span>
-                </a>
-                <a
-                  href="https://graduateprograms.brown.edu/graduate-program/computer-science-phd"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="phd-stat-item phd-stat-link"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    if (typeof window !== 'undefined' && (window as any).gtag) {
-                      (window as any).gtag('event', 'click', {
-                        'event_category': 'recruitment',
-                        'event_label': 'phd_computer_science_link',
-                        'value': 1
-                      });
-                    }
-                  }}
-                >
-                  <span className="phd-stat-text">Computer Science</span>
-                </a>
-                <a
-                  href="https://graduateprograms.brown.edu/graduate-program/biomed-neuroscience-phd"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="phd-stat-item phd-stat-link"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    if (typeof window !== 'undefined' && (window as any).gtag) {
-                      (window as any).gtag('event', 'click', {
-                        'event_category': 'recruitment',
-                        'event_label': 'phd_neuroscience_link',
-                        'value': 1
-                      });
-                    }
-                  }}
-                >
-                  <span className="phd-stat-text">Neuroscience</span>
-                </a>
-              </div>
-              <button
-                className="phd-learn-more-button"
-                onClick={() => {
-                  const phdSection = document.querySelector('.student-card') as HTMLElement;
-                  if (phdSection) {
-                    phdSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    phdSection.style.transition = 'all 0.3s ease';
-                    phdSection.style.transform = 'scale(1.02)';
-                    phdSection.style.boxShadow = '0 8px 24px rgba(52, 152, 219, 0.3)';
-                    setTimeout(() => {
-                      phdSection.style.transform = '';
-                      phdSection.style.boxShadow = '';
-                    }, 1000);
-                  }
-                }}
-              >
-                Learn More →
-              </button>
-            </div>
+            {showUndergradDetails && (
+              <>
+                <Text className="student-card-text" style={{ marginTop: "0.5rem" }}>
+                  <strong>Requirements:</strong>
+                </Text>
+                <ul className="student-requirements">
+                  <li>CS intro sequence</li>
+                  <li>At least one ML, vision, or deep learning course</li>
+                  <li>Strongly encouraged: CPSY 1291 or CPSY 1950 with Prof. Serre</li>
+                  <li>Familiarity with our research and ability to articulate a specific project interest</li>
+                </ul>
+              </>
+            )}
+            <Text className="student-card-expand">
+              {showUndergradDetails ? "Click to show less ▲" : "Click to see requirements ▼"}
+            </Text>
           </div>
-        </div>
+
+          <div className="student-card" onClick={() => setShowPhdDetails(!showPhdDetails)} style={{ cursor: "pointer" }}>
+            <Title order={3} className="student-card-title">📚 PhD Students</Title>
+            <Text className="student-card-text">
+              PhD applicants can apply through cognitive science, computer science, or neuroscience
+              graduate programs.
+            </Text>
+            {showPhdDetails && (
+              <>
+                <Text className="student-card-text" style={{ marginTop: "0.5rem" }}>
+                  <strong>Requirements:</strong>
+                </Text>
+                <ul className="student-requirements">
+                  <li>Strong quantitative skills including math and programming</li>
+                  <li>Prior work in vision (required)</li>
+                  <li>Prior experience in brain and cognitive science (a plus but not required)</li>
+                </ul>
+                <Text className="student-card-text" style={{ marginTop: "0.5rem" }}>
+                  Due to the large volume of applicants, Prof. Serre can only meet with applicants after they have been invited for an interview.
+                </Text>
+              </>
+            )}
+            <Text className="student-card-expand">
+              {showPhdDetails ? "Click to show less ▲" : "Click to see requirements ▼"}
+            </Text>
+          </div>
+
+          <div className="student-card" onClick={() => setShowPostdocDetails(!showPostdocDetails)} style={{ cursor: "pointer" }}>
+            <Title order={3} className="student-card-title">🔬 Postdoctoral Researchers</Title>
+            <Text className="student-card-text">
+              Prospective postdocs should email Prof. Serre directly with their CV, research statement, and references.
+            </Text>
+            {showPostdocDetails && (
+              <>
+                <Text className="student-card-text" style={{ marginTop: "0.5rem" }}>
+                  <strong>Requirements:</strong>
+                </Text>
+                <ul className="student-requirements">
+                  <li>Graduate training in computational neuroscience or AI</li>
+                  <li>Strong track record publishing at top venues including NeurIPS, ICML, ICLR, and/or CVPR</li>
+                </ul>
+              </>
+            )}
+            <Text className="student-card-expand">
+              {showPostdocDetails ? "Click to show less ▲" : "Click to see requirements ▼"}
+            </Text>
+          </div>
+        </motion.div>
       </motion.div>
 
       {/* Featured Projects Section */}
@@ -453,85 +442,6 @@ export function Home() {
             at Brown! We also work in close collaboration with and leverage resources from the{" "}
             <Link to="https://ccv.brown.edu/">Center for Computation and Visualization</Link>.
           </Text>
-        </motion.div>
-
-        <motion.div variants={fadeUp}>
-          <Title order={2} className="section-title">
-            Prospective Students
-          </Title>
-        </motion.div>
-
-        <motion.div variants={fadeUp} className="student-cards-container">
-          <div className="student-card" onClick={() => setShowUndergradDetails(!showUndergradDetails)} style={{ cursor: "pointer" }}>
-            <Title order={3} className="student-card-title">🎓 Undergraduate & MSc Students</Title>
-            <Text className="student-card-text">
-              Brown undergrad and MSc students interested in research
-              should email Prof. Serre with a transcript and resume/CV.
-            </Text>
-            {showUndergradDetails && (
-              <>
-                <Text className="student-card-text" style={{ marginTop: "0.5rem" }}>
-                  <strong>Requirements:</strong>
-                </Text>
-                <ul className="student-requirements">
-                  <li>CS intro sequence</li>
-                  <li>At least one ML, vision, or deep learning course</li>
-                  <li>Strongly encouraged: CPSY 1291 or CPSY 1950 with Prof. Serre</li>
-                  <li>Familiarity with our research and ability to articulate a specific project interest</li>
-                </ul>
-              </>
-            )}
-            <Text className="student-card-expand">
-              {showUndergradDetails ? "Click to show less ▲" : "Click to see requirements ▼"}
-            </Text>
-          </div>
-
-          <div className="student-card" onClick={() => setShowPhdDetails(!showPhdDetails)} style={{ cursor: "pointer" }}>
-            <Title order={3} className="student-card-title">📚 PhD Students</Title>
-            <Text className="student-card-text">
-              PhD applicants can apply through cognitive science, computer science, or neuroscience
-              graduate programs.
-            </Text>
-            {showPhdDetails && (
-              <>
-                <Text className="student-card-text" style={{ marginTop: "0.5rem" }}>
-                  <strong>Requirements:</strong>
-                </Text>
-                <ul className="student-requirements">
-                  <li>Strong quantitative skills including math and programming</li>
-                  <li>Prior work in vision (required)</li>
-                  <li>Prior experience in brain and cognitive science (a plus but not required)</li>
-                </ul>
-                <Text className="student-card-text" style={{ marginTop: "0.5rem" }}>
-                  Due to the large volume of applicants, Prof. Serre can only meet with applicants after they have been invited for an interview.
-                </Text>
-              </>
-            )}
-            <Text className="student-card-expand">
-              {showPhdDetails ? "Click to show less ▲" : "Click to see requirements ▼"}
-            </Text>
-          </div>
-
-          <div className="student-card" onClick={() => setShowPostdocDetails(!showPostdocDetails)} style={{ cursor: "pointer" }}>
-            <Title order={3} className="student-card-title">🔬 Postdoctoral Researchers</Title>
-            <Text className="student-card-text">
-              Prospective postdocs should email Prof. Serre directly with their CV, research statement, and references.
-            </Text>
-            {showPostdocDetails && (
-              <>
-                <Text className="student-card-text" style={{ marginTop: "0.5rem" }}>
-                  <strong>Requirements:</strong>
-                </Text>
-                <ul className="student-requirements">
-                  <li>Graduate training in computational neuroscience or AI</li>
-                  <li>Strong track record publishing at top venues including NeurIPS, ICML, ICLR, and/or CVPR</li>
-                </ul>
-              </>
-            )}
-            <Text className="student-card-expand">
-              {showPostdocDetails ? "Click to show less ▲" : "Click to see requirements ▼"}
-            </Text>
-          </div>
         </motion.div>
 
         {/* Funding Section */}
