@@ -46,15 +46,6 @@
             "description": "This project develops scalable causal reasoning methods for Earth system science and embedded applications. We create novel computational approaches that combine graph-based representations, spiking neural networks, and causal inference methods to analyze complex environmental data. The work aims to improve our ability to understand and predict Earth system dynamics while maintaining computational efficiency for deployment on resource-constrained platforms."
         },
         {
-            "title": "Secondary analysis of resting state MEG data using the Human Neocortical Neurosolver",
-            "agency": "NIH/NIMH",
-            "grantNumber": "1RF1MH130415",
-            "years": "2022 – 2025",
-            "role": "co-I (PI: Jones)",
-            "amount": "$1,173,602",
-            "description": "This project performs secondary analysis of magnetoencephalography (MEG) data to understand neural circuit mechanisms underlying resting state brain activity. Using the Human Neocortical Neurosolver software tool, we interpret MEG signals at the cellular and circuit level, providing insights into the biophysical mechanisms generating observed neural dynamics. This work bridges scales from single neurons to whole-brain recordings, advancing our understanding of cortical computation."
-        },
-        {
             "title": "The next generation of operator regression networks: Theory, algorithms, applications",
             "agency": "ONR",
             "grantNumber": "N00014-22-1-2795",
