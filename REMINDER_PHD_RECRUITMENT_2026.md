@@ -26,3 +26,5 @@ The section was previously located around lines 124-221 in `Home.tsx` and includ
 - Update the year in the title if needed (e.g., "Fall 2027" if adding in 2026 for the following year)
 - The section should be placed before the "Featured Projects Section"
 - The "Prospective Students" section should remain on the page (it's now positioned earlier)
+
+
