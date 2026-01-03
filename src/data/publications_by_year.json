@@ -311,7 +311,7 @@
       "authors": "S. Eberhardt, J. Cader & T. Serre",
       "journal": "Neural Information Processing Systems",
       "url": "https://proceedings.neurips.cc/paper/2016/hash/42e77b63637ab381e8be5f8318cc28a2-Abstract.html",
-      "pdfPath": "/papers/deep-learning-networks-visual-perception-oxford-2021.pdf"
+      "pdfPath": "/papers/2016_Eberhardt_NIPS.pdf"
     },
     {
       "title": "Computer vision cracks the leaf code",
@@ -566,7 +566,7 @@
       "authors": "G. Lindsay & T. Serre",
       "journal": "Oxford Research Encyclopedia of Psychology",
       "url": "https://doi.org/10.1093/acrefore/9780190236557.013.841",
-      "pdfPath": "/papers/deep-learning-good-bad-ugly-2019.pdf"
+      "pdfPath": "/papers/deep-learning-networks-visual-perception-oxford-2021.pdf"
     },
     {
       "title": "Go with the flow: Adaptive control for Neural ODEs",
