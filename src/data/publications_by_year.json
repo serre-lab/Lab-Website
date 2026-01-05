@@ -860,7 +860,7 @@
       "title": "Feature binding in biological and artificial vision",
       "authors": "P. Roelfsema & T. Serre",
       "journal": "Trends in Cognitive Sciences",
-      "url": "https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(25)00232-3",
+      "url": "https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(25)00232-3",
       "pdfPath": "/papers/feature-binding-biological-artificial-vision-2025.pdf"
     },
     {
@@ -904,6 +904,13 @@
       "journal": "Neural Information Processing Systems",
       "url": "https://openreview.net/forum?id=BOiQ7Kd5Lx",
       "pdfPath": "/papers/follow-energy-find-path-riemannian-metrics-ebms-2025.pdf"
+    },
+    {
+      "title": "Better artificial intelligence does not mean better models of biology",
+      "authors": "D. Linsley, P. Feng & T. Serre",
+      "journal": "Trends in Cognitive Sciences",
+      "url": "https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(25)00349-3",
+      "pdfPath": "/papers/better-ai-better-models-biology-2025.pdf"
     }
   ],
   "Work in progress": [
@@ -936,13 +943,6 @@
       "journal": "Nature Biomedical Engineering",
       "url": "https://www.nature.com/articles/s41551-024-00420-0",
       "pdfPath": "/papers/parker-epidural-paddle-array-2025.pdf"
-    },
-    {
-      "title": "Better artificial intelligence does not mean better models of biology",
-      "authors": "D. Linsley, P. Feng & T. Serre",
-      "journal": "Trends in Cognitive Sciences",
-      "url": "https://arxiv.org/abs/2504.16940",
-      "pdfPath": "/papers/better-ai-better-models-biology-2025.pdf"
     }
   ]
 }
