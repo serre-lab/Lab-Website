@@ -850,6 +850,13 @@
   ],
   "2025": [
     {
+      "title": "Better artificial intelligence does not mean better models of biology",
+      "authors": "D. Linsley, P. Feng & T. Serre",
+      "journal": "Trends in Cognitive Sciences",
+      "url": "https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(25)00349-3",
+      "pdfPath": "/papers/better-ai-better-models-biology-2025.pdf"
+    },
+    {
       "title": "From prediction to understanding: Will AI foundation models transform brain science?",
       "authors": "T. Serre & E. Pavlick",
       "journal": "Neuron",
@@ -904,13 +911,6 @@
       "journal": "Neural Information Processing Systems",
       "url": "https://openreview.net/forum?id=BOiQ7Kd5Lx",
       "pdfPath": "/papers/follow-energy-find-path-riemannian-metrics-ebms-2025.pdf"
-    },
-    {
-      "title": "Better artificial intelligence does not mean better models of biology",
-      "authors": "D. Linsley, P. Feng & T. Serre",
-      "journal": "Trends in Cognitive Sciences",
-      "url": "https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(25)00349-3",
-      "pdfPath": "/papers/better-ai-better-models-biology-2025.pdf"
     }
   ],
   "Work in progress": [
