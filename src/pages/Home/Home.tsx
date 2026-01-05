@@ -364,9 +364,9 @@ export function Home() {
           </div>
 
           <div className="highlight-card">
-            <Text className="highlight-journal">arXiv (2025)</Text>
+            <Text className="highlight-journal">TICS (2025)</Text>
             <Title order={4} className="highlight-title">
-              <a href="https://arxiv.org/abs/2504.16940" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(25)00349-3" target="_blank" rel="noopener noreferrer">
                 Better artificial intelligence does not mean better models of biology
               </a>
             </Title>
