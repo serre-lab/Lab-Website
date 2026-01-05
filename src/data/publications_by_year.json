@@ -13,6 +13,13 @@
       "journal": "arXiv",
       "url": "https://arxiv.org/abs/2411.03993v1",
       "pdfPath": "/papers/local-vs-distributed-representations-interpretability-2025.pdf"
+    },
+    {
+      "title": "GASPnet: Global agreement to synchronize phases",
+      "authors": "A. Alamia, S. Muzellec, T. Serre & R. VanRullen",
+      "journal": "arXiv",
+      "url": "https://arxiv.org/abs/2507.16674",
+      "pdfPath": "/papers/gaspnet-global-agreement-synchronize-phases-2025.pdf"
     }
   ],
   "In press": [
@@ -80,13 +87,6 @@
       "journal": "Journal of Neural Engineering",
       "url": "https://doi.org/10.1088/1741-2552/adba8b",
       "pdfPath": "/papers/parker-epidural-paddle-array-2025.pdf"
-    },
-    {
-      "title": "GASPnet: Global agreement to synchronize phases",
-      "authors": "A. Alamia, S. Muzellec, T. Serre & R. VanRullen",
-      "journal": "arXiv",
-      "url": "https://arxiv.org/abs/2507.16674",
-      "pdfPath": "/papers/gaspnet-global-agreement-synchronize-phases-2025.pdf"
     }
   ],
   "2024": [
