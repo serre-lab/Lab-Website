@@ -17,13 +17,6 @@
   ],
   "In press": [
     {
-      "title": "From prediction to understanding: Will AI foundation models transform brain science?",
-      "authors": "T. Serre & E. Pavlick",
-      "journal": "Neuron",
-      "url": "https://arxiv.org/abs/2509.17280",
-      "pdfPath": "/papers/from-prediction-to-understanding-ai-foundation-models-2025.pdf"
-    },
-    {
       "title": "Translesional stimulation replaces lost function in persons with paraplegia",
       "authors": "J.S. Calvert, S.R. Parker, L.N. Govindarajan, R. Darie, E. Shaaya, R. Solinsky, L.M. Del Valle, P. Miranda, J. Jang, E. Tiwari, S. Syed, R.M. Villalobos, L.M. Aguiar, H. Tang, S. McPherson, W. Xue, A.G. Carayannopoulos, A.A. Oyelese, Z.L. Gokaslan, A.K. Bansal, L.J. Resnik, T. Serre, J.S. Fridley & D.A. Borton",
       "journal": "Nature Biomedical Engineering",
@@ -38,6 +31,13 @@
       "journal": "Trends in Cognitive Sciences",
       "url": "https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(25)00349-3",
       "pdfPath": "/papers/better-ai-better-models-biology-2025.pdf"
+    },
+    {
+      "title": "From prediction to understanding: Will AI foundation models transform brain science?",
+      "authors": "T. Serre & E. Pavlick",
+      "journal": "Neuron",
+      "url": "https://arxiv.org/abs/2509.17280",
+      "pdfPath": "/papers/from-prediction-to-understanding-ai-foundation-models-2025.pdf"
     },
     {
       "title": "Feature binding in biological and artificial vision",
