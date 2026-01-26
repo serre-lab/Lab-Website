@@ -23,6 +23,15 @@
       "url": "https://www.nature.com/articles/s41551-024-00420-0"
     }
   ],
+  "2026": [
+    {
+      "title": "Is this just fantasy? Language model representations reflect human judgments of event plausibility",
+      "authors": "M.A. Lepori, J. Hu, I. Dasgupta, R. Patel, T. Serre & E. Pavlick",
+      "journal": "International Conference on Learning Representations",
+      "url": "https://openreview.net/forum?id=Czul60ELOH&noteId=PBIgBC0DAW",
+      "pdfPath": "/papers/lepori2026_is_this_just_fantasy.pdf"
+    }
+  ],
   "2025": [
     {
       "title": "Better artificial intelligence does not mean better models of biology",
@@ -79,15 +88,6 @@
       "journal": "Journal of Neural Engineering",
       "url": "https://doi.org/10.1088/1741-2552/adba8b",
       "pdfPath": "/papers/parker-epidural-paddle-array-2025.pdf"
-    }
-  ],
-  "2026": [
-    {
-      "title": "Is this just fantasy? Language model representations reflect human judgments of event plausibility",
-      "authors": "M.A. Lepori, J. Hu, I. Dasgupta, R. Patel, T. Serre & E. Pavlick",
-      "journal": "International Conference on Learning Representations",
-      "url": "https://openreview.net/forum?id=Czul60ELOH&noteId=PBIgBC0DAW",
-      "pdfPath": "/papers/lepori2026_is_this_just_fantasy.pdf"
     }
   ],
   "2024": [
