@@ -4,7 +4,7 @@ from html import unescape
 
 # HTML data with publication information
 html_data = '''
-<div class="left_column"><ol class="publication_list"><a href="" name="Work in progress"><h1 class="publication_year">Work in progress</h1></a><li class="low_horizontal_line"></li><li class="publication"><a class="publication_title" href="https://arxiv.org/abs/2504.16940">Better artificial intelligence does not mean better models of biology</a><h2 class="journal">arXiv</h2><h2 class="authors">Linsley, Feng &amp; Serre</h2></li><li class="publication"><a class="publication_title" href="https://arxiv.org/abs/2411.03993v1">Local vs distributed representations: What is the right basis for interpretability?</a><h2 class="journal"></h2><h2 class="authors">J. Colin, L. Goetschalckx, T. Fel, V. Boutin, J. Gopal, T. Serre* 
+<div class="left_column"><ol class="publication_list"><a href="" name="Work in progress"><h1 class="publication_year">Work in progress</h1></a><li class="low_horizontal_line"></li><li class="publication"><a class="publication_title" href="https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(25)00349-3">Better artificial intelligence does not mean better models of biology</a><h2 class="journal">Trends in Cognitive Sciences</h2><h2 class="authors">Linsley, Feng &amp; Serre</h2></li><li class="publication"><a class="publication_title" href="https://arxiv.org/abs/2411.03993v1">Local vs distributed representations: What is the right basis for interpretability?</a><h2 class="journal"></h2><h2 class="authors">J. Colin, L. Goetschalckx, T. Fel, V. Boutin, J. Gopal, T. Serre* 
  &amp; N. Oliver*</h2></li></ol><ol class="publication_list"><a href="" name="2025"><h1 class="publication_year">2025</h1></a><li class="low_horizontal_line"></li><li class="publication"><a class="publication_title" href="">Enhancing deep neural networks through complex-valued representations and Kuramoto synchronization dynamics</a><h2 class="journal">Transactions on Machine Learning Research
 </h2><h2 class="authors">S. Muzellec, A. Alamia, T. Serre &amp; R. VanRullen </h2></li><li class="publication"><a class="publication_title" href="https://openreview.net/forum?id=oe1TzWGFjs">Beyond adversarial robustness: Breaking the robustness-alignment trade-off in object recognition</a><h2 class="journal">ICLR 2025 Workshop on Representational Alignment</h2><h2 class="authors">P. Feng, D. Linsley, T. Boissin, A.K. Ashok, T. Fel, S. Olaiya &amp; T. Serre</h2></li><li class="publication"><a class="publication_title" href="https://arxiv.org/abs/2410.02094">Tracking objects that change in appearance with phase synchrony</a><h2 class="journal">International Conference on Learning Representations</h2><h2 class="authors">S. Muzellec, D. Linsley, A.K. Ashok, E. Mingolla, G. Malik, R. VanRullen &amp; T. Serre</h2></li><li class="publication"><a class="publication_title" href="https://arxiv.org/abs/2406.04138">The 3D-PC: a benchmark for visual perspective taking in humans and machines</a><h2 class="journal">International Conference on Learning Representations</h2><h2 class="authors">D. Linsley, P. Zhou, A.K. Ashok, A. Nagaraj, G. Gaonkar, F.E. Lewis, Z. Pizlo &amp; T. Serre</h2></li></ol>
 '''
@@ -54,8 +54,8 @@ publications_data = {
     "Work in progress": [
         {
             "title": "Better artificial intelligence does not mean better models of biology",
-            "url": "https://arxiv.org/abs/2504.16940",
-            "journal": "arXiv",
+            "url": "https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(25)00349-3",
+            "journal": "Trends in Cognitive Sciences",
             "authors": "Linsley, Feng & Serre"
         },
         {

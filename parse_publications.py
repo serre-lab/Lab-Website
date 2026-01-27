@@ -53,7 +53,7 @@ def parse_publications_html(html_content):
 
 # HTML content (paste your HTML here)
 html_content = '''
-<div class="left_column"><ol class="publication_list"><a href="" name="Work in progress"><h1 class="publication_year">Work in progress</h1></a><li class="low_horizontal_line"></li><li class="publication"><a class="publication_title" href="https://arxiv.org/abs/2504.16940">Better artificial intelligence does not mean better models of biology</a><h2 class="journal">arXiv</h2><h2 class="authors">Linsley, Feng &amp; Serre</h2></li><li class="publication"><a class="publication_title" href="https://arxiv.org/abs/2411.03993v1">Local vs distributed representations: What is the right basis for interpretability?</a><h2 class="journal"></h2><h2 class="authors">J. Colin, L. Goetschalckx, T. Fel, V. Boutin, J. Gopal, T. Serre* 
+<div class="left_column"><ol class="publication_list"><a href="" name="Work in progress"><h1 class="publication_year">Work in progress</h1></a><li class="low_horizontal_line"></li><li class="publication"><a class="publication_title" href="https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(25)00349-3">Better artificial intelligence does not mean better models of biology</a><h2 class="journal">Trends in Cognitive Sciences</h2><h2 class="authors">Linsley, Feng &amp; Serre</h2></li><li class="publication"><a class="publication_title" href="https://arxiv.org/abs/2411.03993v1">Local vs distributed representations: What is the right basis for interpretability?</a><h2 class="journal"></h2><h2 class="authors">J. Colin, L. Goetschalckx, T. Fel, V. Boutin, J. Gopal, T. Serre* 
  &amp; N. Oliver*</h2></li></ol>
 <!-- ... rest of your HTML content ... -->
 </div>
