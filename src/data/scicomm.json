@@ -1,5 +1,11 @@
 [
   {
+    "title": "AI foundation models may revolutionize neuroscience, Brown researchers say",
+    "link": "https://www.browndailyherald.com/article/2026/01/ai-foundation-models-may-revolutionize-neuroscience",
+    "blurb": "Two Brown researchers, Thomas Serre and Ellie Pavlick, predict that self-supervised learning will transform neuroscience. Their Neuron paper examines how deep-learning approaches will enable higher accuracy in neuroscience research, particularly in predicting human decision making. The article discusses digital twins and the importance of understanding AI mechanisms.",
+    "image": "https://snworksceo.imgix.net/bdh/ba2dc733-9526-40b4-ba0b-da3ec64600a9.sized-1000x1000.jpg?w=1000"
+  },
+  {
     "title": "Brown University offers cash incentive to assist with 'Click Me' AI research",
     "link": "https://turnto10.com/news/local/brown-university-offers-cash-incentive-to-assist-with-click-me-ai-research-artificial-intelligence-deep-learning-lab-plme-brain-science-game-vision-february-24-2025",
     "blurb": "A Brown University department is paying people to participate in an online game that helps train artificial intelligence. The Serre Lab has already given out more than $10,000 to game participants thanks to National Science Foundation funding.",
@@ -63,7 +69,7 @@
     "title": "Intel and Brown University researchers embark on two-year project to bridge spinal cord breaks using AI",
     "link": "https://venturebeat.com/ai/intel-and-brown-university-researchers-embark-on-two-year-project-to-bridge-spinal-cord-breaks-using-ai/",
     "blurb": "Engineers and neuroscientists at Brown University, Rhode Island Hospital, Intel, and Micro-Leads Medical committed to designing an Intelligent Spine Interface (ISI) with a $6.3 million DARPA grant. Thomas Serre works with Intel scientists to devise AI-powered analogs for the spinal cord's biological systems to help restore limb movement and bladder control for people with spinal cord injuries.",
-    "image": "/images/scicomm/intel-brown.png"
+    "image": "https://venturebeat.com/_next/image?url=https%3A%2F%2Folk2kzr7lpbpdtkx.public.blob.vercel-storage.com%2Fhome%2Fandy%2Fwork%2Fevrone%2Fventure_beat%2Fmedia%2Fwp-content%2Fuploads%2F2019%2F10%2Fspine-intelligence-graphic-explainer-FINAL-B.jpg&w=3840&q=75"
   },
   {
     "title": "Brown researchers teach computers to see optical illusions",
