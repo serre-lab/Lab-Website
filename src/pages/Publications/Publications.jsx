@@ -12,21 +12,12 @@ export function Publications() {
     const [searchQuery, setSearchQuery] = useState("");
     const [selectedYear, setSelectedYear] = useState("All");
 
-    // Official journal URL overrides (used when mapping or publication.url could be stale/wrong)
-    const BETTER_AI_JOURNAL_URL = "https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(25)00349-3";
-
     // Function to get the official publication URL (journal/conference/OpenReview)
     const getOfficialUrl = (publication) => {
-        // Explicit overrides for papers that must always link to the journal (not arXiv)
-        if (publication.title && publication.title.includes("Better artificial intelligence does not mean better models of biology")) {
-            return BETTER_AI_JOURNAL_URL;
-        }
-        // Then try the mapping
         const mappedUrl = getOfficialPublicationUrl(publication.title);
         if (mappedUrl) {
             return mappedUrl;
         }
-        // If URL is not a PDF and not our internal publications page, use it as official URL
         if (publication.url && 
             !publication.url.endsWith('.pdf') && 
             !publication.url.includes('/papers/') &&
