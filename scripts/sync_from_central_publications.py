@@ -61,33 +61,37 @@ def convert_to_lab_website_format(central_data, existing_pdf_paths):
     
     # Process under_review -> "Work in progress"
     for pub in central_data.get('under_review', []):
+        title = pub.get('title', '')
         lab_pub = {
-            "title": pub.get('title', ''),
+            "title": title,
             "authors": pub.get('authors', ''),
             "journal": pub.get('journal', ''),
             "url": pub.get('url', '')
         }
         
-        # Preserve existing PDF path if available
-        normalized_title = normalize_title(pub.get('title', ''))
-        if normalized_title in existing_pdf_paths:
-            lab_pub["pdfPath"] = existing_pdf_paths[normalized_title]
+        # PDF path: central file takes precedence, then existing lab file
+        normalized_title = normalize_title(title)
+        pdf_path = pub.get('pdfPath') or pub.get('pdf_path') or existing_pdf_paths.get(normalized_title)
+        if pdf_path:
+            lab_pub["pdfPath"] = pdf_path
         
         lab_data["Work in progress"].append(lab_pub)
     
     # Process in_press -> "In press"
     for pub in central_data.get('in_press', []):
+        title = pub.get('title', '')
         lab_pub = {
-            "title": pub.get('title', ''),
+            "title": title,
             "authors": pub.get('authors', ''),
             "journal": pub.get('journal', ''),
             "url": pub.get('url', '')
         }
         
-        # Preserve existing PDF path if available
-        normalized_title = normalize_title(pub.get('title', ''))
-        if normalized_title in existing_pdf_paths:
-            lab_pub["pdfPath"] = existing_pdf_paths[normalized_title]
+        # PDF path: central file takes precedence, then existing lab file
+        normalized_title = normalize_title(title)
+        pdf_path = pub.get('pdfPath') or pub.get('pdf_path') or existing_pdf_paths.get(normalized_title)
+        if pdf_path:
+            lab_pub["pdfPath"] = pdf_path
         
         lab_data["In press"].append(lab_pub)
     
@@ -98,17 +102,19 @@ def convert_to_lab_website_format(central_data, existing_pdf_paths):
             # If year is missing or out of range, skip
             continue
         
+        title = pub.get('title', '')
         lab_pub = {
-            "title": pub.get('title', ''),
+            "title": title,
             "authors": pub.get('authors', ''),
             "journal": pub.get('journal', ''),
             "url": pub.get('url', '')
         }
         
-        # Preserve existing PDF path if available
-        normalized_title = normalize_title(pub.get('title', ''))
-        if normalized_title in existing_pdf_paths:
-            lab_pub["pdfPath"] = existing_pdf_paths[normalized_title]
+        # PDF path: central file takes precedence, then existing lab file
+        normalized_title = normalize_title(title)
+        pdf_path = pub.get('pdfPath') or pub.get('pdf_path') or existing_pdf_paths.get(normalized_title)
+        if pdf_path:
+            lab_pub["pdfPath"] = pdf_path
         
         lab_data[year].append(lab_pub)
     
@@ -119,17 +125,19 @@ def convert_to_lab_website_format(central_data, existing_pdf_paths):
             # If year is missing or out of range, skip
             continue
         
+        title = pub.get('title', '')
         lab_pub = {
-            "title": pub.get('title', ''),
+            "title": title,
             "authors": pub.get('authors', ''),
             "journal": pub.get('journal', ''),
             "url": pub.get('url', '')
         }
         
-        # Preserve existing PDF path if available
-        normalized_title = normalize_title(pub.get('title', ''))
-        if normalized_title in existing_pdf_paths:
-            lab_pub["pdfPath"] = existing_pdf_paths[normalized_title]
+        # PDF path: central file takes precedence, then existing lab file
+        normalized_title = normalize_title(title)
+        pdf_path = pub.get('pdfPath') or pub.get('pdf_path') or existing_pdf_paths.get(normalized_title)
+        if pdf_path:
+            lab_pub["pdfPath"] = pdf_path
         
         lab_data[year].append(lab_pub)
     
