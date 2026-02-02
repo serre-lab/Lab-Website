@@ -4,7 +4,7 @@
 export const officialPublicationUrls = {
     // 2024/2025
     "Deceptive learning in histopathology": "https://onlinelibrary.wiley.com/doi/10.1111/his.15180",
-    "Better artificial intelligence does not mean better models of biology": "https://arxiv.org/abs/2504.16940",
+    "Better artificial intelligence does not mean better models of biology": "https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(25)00349-3",
     
     // 2025
     "Enhancing deep neural networks through complex-valued representations and Kuramoto synchronization dynamics": "https://openreview.net/forum?id=zx6QGmBL43",
