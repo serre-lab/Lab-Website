@@ -28,3 +28,5 @@ The section was previously located around lines 124-221 in `Home.tsx` and includ
 - The "Prospective Students" section should remain on the page (it's now positioned earlier)
 
 
+
+
