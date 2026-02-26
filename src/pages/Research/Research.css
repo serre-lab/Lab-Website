@@ -100,7 +100,7 @@
 
   .funding-badge {
     display: inline-block;
-    background: var(--color-primary);
+    background: #1a5a9e;
     color: white;
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
@@ -111,7 +111,7 @@
   }
 
   .research-link {
-    color: var(--color-primary);
+    color: #1565c0;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.2s ease;
@@ -120,6 +120,12 @@
   .research-link:hover {
     color: var(--color-accent);
     text-decoration: underline;
+  }
+
+  /* Accordion grant labels: override Mantine dimmed for WCAG 4.5:1 contrast */
+  .research-container .mantine-Accordion-label [data-size="sm"],
+  .research-container .mantine-Accordion-label .mantine-Text-root[data-size="sm"] {
+    color: #555 !important;
   }
 
   /* Mobile responsiveness */
