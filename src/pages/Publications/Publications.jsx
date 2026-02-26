@@ -4,7 +4,6 @@ import { Anchor, Text, Title, TextInput, Select, Group } from "@mantine/core";
 import publicationsData from "../../data/publications_by_year.json";
 import { getOfficialPublicationUrl } from "../../data/officialPublicationUrls";
 import { motion } from "framer-motion";
-import { FaMicrophone, FaFilePdf } from "react-icons/fa";
 import { HeroBanner } from "../../components/HeroBanner/HeroBanner";
 // import { IconSearch } from "@tabler/icons-react"; // optional icon
 
@@ -27,18 +26,10 @@ export function Publications() {
         return null;
     };
 
-    // Function to get the local PDF path
+    // Function to get the local PDF path (preserved for future use; pdfPath in publications_by_year.json)
     const getPdfPath = (publication) => {
-        // If the URL is a PDF path, use it
-        if (publication.url && publication.url.endsWith('.pdf')) {
-            return publication.url;
-        }
-        
-        // Check if there's a separate PDF path
-        if (publication.pdfPath) {
-            return publication.pdfPath;
-        }
-        
+        if (publication.url && publication.url.endsWith('.pdf')) return publication.url;
+        if (publication.pdfPath) return publication.pdfPath;
         return null;
     };
 
@@ -176,18 +167,7 @@ export function Publications() {
                                                         {publication.authors}
                                                     </Text>
                                                 </div>
-                                                {getPdfPath(publication) && (
-                                                    <Anchor
-                                                        href={getPdfPath(publication)}
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                        className="pdf-icon-link"
-                                                        aria-label={`Download PDF of ${publication.title} (opens in new tab)`}
-                                                        title="Opens in new tab"
-                                                    >
-                                                        <FaFilePdf size={20} color="#e74c3c" aria-hidden="true" />
-                                                    </Anchor>
-                                                )}
+                                                {/* PDF icons removed; pdfPath preserved in data for future use */}
                                             </Group>
                                         </motion.li>
                                     ))}
