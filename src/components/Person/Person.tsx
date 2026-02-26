@@ -18,7 +18,7 @@ function renderTextWithLinks(text: string) {
     return parts.map((part, index) => {
         if (part.match(urlRegex)) {
             return (
-                <Anchor key={index} href={part} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)' }}>
+                <Anchor key={index} href={part} target="_blank" rel="noopener noreferrer" title="Opens in new tab" style={{ color: 'var(--color-primary)' }}>
                     {part}
                 </Anchor>
             );

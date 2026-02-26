@@ -102,3 +102,36 @@ button:focus-visible {
 .alt-blue {
   color: #008abf;
 }
+
+/* WCAG 2.1 AA: Visually hidden (screen reader only) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.sr-only:focus,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 0.5em 1em;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+  background: #fff;
+  color: #000;
+  z-index: 9999;
+}
+
+/* WCAG 2.1 AA: Visible focus for keyboard navigation */
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}

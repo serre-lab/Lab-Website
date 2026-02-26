@@ -82,6 +82,7 @@ const ResourceCard = ({ resource, category }: { resource: { title: string; url: 
                         href={resource.url}
                         target="_blank"
                         rel="noopener noreferrer"
+                        title="Opens in new tab"
                         className="featured-button-small"
                     >
                         {buttonText}
@@ -115,6 +116,7 @@ const VideoCard = ({ resource }: { resource: { title: string; url: string } }) =
                     href={resource.url}
                     target="_blank"
                     rel="noopener noreferrer"
+                    title="Opens in new tab"
                     className="featured-button-small"
                 >
                     {buttonText}

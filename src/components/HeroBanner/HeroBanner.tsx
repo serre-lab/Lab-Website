@@ -42,41 +42,45 @@ export function HeroBanner({ title, subtitle, showSocialIcons = true, height, ba
         {showSocialIcons && (
         <div className="hero-banner-social">
           <span className="hero-banner-social-label">Follow Us</span>
-          <div className="hero-banner-social-icons">
+          <nav className="hero-banner-social-icons" aria-label="Social links">
               <a
                 href="https://x.com/tserre"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Twitter"
+                aria-label="Twitter (opens in new tab)"
+                title="Opens in new tab"
                 className="hero-banner-social-icon"
               >
-                <FaTwitter size={18} />
+                <FaTwitter size={18} aria-hidden="true" />
               </a>
               <a
                 href="https://github.com/serre-lab"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="GitHub"
+                aria-label="GitHub (opens in new tab)"
+                title="Opens in new tab"
                 className="hero-banner-social-icon"
               >
-                <FaGithub size={18} />
+                <FaGithub size={18} aria-hidden="true" />
               </a>
               <a
                 href="https://bsky.app/profile/thomasserre.bsky.social"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Bluesky"
+                aria-label="Bluesky (opens in new tab)"
+                title="Opens in new tab"
                 className="hero-banner-social-icon"
               >
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Bluesky_logo_%28black%29.svg/869px-Bluesky_logo_%28black%29.svg.png"
-                  alt="Bluesky"
+                  alt=""
                   width={18}
                   height={18}
                   style={{ display: "block", filter: "brightness(0) invert(1)" }}
+                  aria-hidden="true"
                 />
               </a>
-            </div>
+            </nav>
           </div>
         )}
 

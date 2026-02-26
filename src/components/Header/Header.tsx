@@ -12,7 +12,7 @@ interface HeaderProps {
 
 const Header = (props: HeaderProps) => {
     return (
-        <header>
+        <header role="banner">
             <div className="header-content">
                 <Link to="/" className="left">
                     <img src="/brown-logo.webp" alt="Brown University crest" className="brown-logo" />
@@ -23,13 +23,13 @@ const Header = (props: HeaderProps) => {
                     </div>
                 </Link>
 
-                <div className="links">
+                <nav className="links" aria-label="Primary navigation">
                     {props.links.map((link, index) => (
                         <Link key={index} to={link.to}>
                             {link.label}
                         </Link>
                     ))}
-                </div>
+                </nav>
             </div>
         </header>
     );

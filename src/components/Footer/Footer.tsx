@@ -15,7 +15,7 @@ export default function Footer(props: FooterProps) {
     const currentYear = new Date().getFullYear();
     
     return (
-        <footer className="footer-container">
+        <footer className="footer-container" role="contentinfo">
             <div className="footer-content">
                 {/* Left Column: Lab Info */}
                 <div className="footer-column footer-lab-info">
@@ -46,7 +46,7 @@ export default function Footer(props: FooterProps) {
                 {/* Middle Column: Quick Links */}
                 <div className="footer-column footer-links">
                     <Title order={4} className="footer-column-title">Quick Links</Title>
-                    <nav className="footer-nav">
+                    <nav className="footer-nav" aria-label="Quick links">
                         {props.links.internal.map((link, index) => (
                             <Link key={index} to={link.to} className="footer-link">
                                 {link.label}
@@ -59,50 +59,55 @@ export default function Footer(props: FooterProps) {
                 <div className="footer-column footer-social-resources">
                     <div className="footer-social-section">
                         <Title order={4} className="footer-column-title">Follow Us</Title>
-                        <div className="footer-social-icons">
+                        <nav className="footer-social-icons" aria-label="Social links">
                             <a 
                                 href="https://x.com/tserre" 
                                 target="_blank" 
                                 rel="noopener noreferrer"
                                 className="footer-social-icon"
-                                aria-label="Twitter"
+                                aria-label="Twitter (opens in new tab)"
+                                title="Opens in new tab"
                             >
-                                <FaTwitter size={20} />
+                                <FaTwitter size={20} aria-hidden="true" />
                             </a>
                             <a 
                                 href="https://github.com/serre-lab" 
                                 target="_blank" 
                                 rel="noopener noreferrer"
                                 className="footer-social-icon"
-                                aria-label="GitHub"
+                                aria-label="GitHub (opens in new tab)"
+                                title="Opens in new tab"
                             >
-                                <FaGithub size={20} />
+                                <FaGithub size={20} aria-hidden="true" />
                             </a>
                             <a 
                                 href="https://bsky.app/profile/thomasserre.bsky.social" 
                                 target="_blank" 
                                 rel="noopener noreferrer"
                                 className="footer-social-icon"
-                                aria-label="Bluesky"
+                                aria-label="Bluesky (opens in new tab)"
+                                title="Opens in new tab"
                             >
                                 <img 
                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Bluesky_logo_%28black%29.svg/869px-Bluesky_logo_%28black%29.svg.png"
-                                    alt="Bluesky"
+                                    alt=""
                                     width="20"
                                     height="20"
                                     style={{ display: 'block' }}
+                                    aria-hidden="true"
                                 />
                             </a>
-                        </div>
+                        </nav>
                     </div>
                     <div className="footer-resources-section">
                         <Title order={4} className="footer-column-title">Resources</Title>
-                        <nav className="footer-nav">
+                        <nav className="footer-nav" aria-label="External resources">
                             <a 
                                 href="https://vivo.brown.edu/display/tserre" 
                                 target="_blank" 
                                 rel="noopener noreferrer"
                                 className="footer-link"
+                                title="Opens in new tab"
                             >
                                 Brown Profile
                             </a>
@@ -120,7 +125,8 @@ export default function Footer(props: FooterProps) {
                     <a href="https://www.brown.edu/about/administration/institutional-accessibility" 
                        target="_blank" 
                        rel="noopener noreferrer"
-                       className="footer-legal-link">
+                       className="footer-legal-link"
+                       title="Opens in new tab">
                         Accessibility
                     </a>
                     <span className="footer-separator">·</span>

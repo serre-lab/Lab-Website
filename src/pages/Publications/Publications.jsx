@@ -157,6 +157,7 @@ export function Publications() {
                                                                 target="_blank"
                                                                 rel="noopener noreferrer"
                                                                 className="publication-link"
+                                                                title="Opens in new tab"
                                                             >
                                                                 {publication.title}
                                                             </Anchor>
@@ -181,9 +182,10 @@ export function Publications() {
                                                         target="_blank"
                                                         rel="noopener noreferrer"
                                                         className="pdf-icon-link"
-                                                        title="Download PDF"
+                                                        aria-label={`Download PDF of ${publication.title} (opens in new tab)`}
+                                                        title="Opens in new tab"
                                                     >
-                                                        <FaFilePdf size={20} color="#e74c3c" />
+                                                        <FaFilePdf size={20} color="#e74c3c" aria-hidden="true" />
                                                     </Anchor>
                                                 )}
                                             </Group>

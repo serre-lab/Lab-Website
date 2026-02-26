@@ -235,6 +235,7 @@ export function Home() {
                 href="https://clickme.clps.brown.edu/tutorial"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="Opens in new tab"
                 className="featured-button-small"
                 onClick={() => {
                   if (typeof window !== 'undefined' && (window as any).gtag) {
@@ -262,6 +263,7 @@ export function Home() {
                 href="https://serre-lab.github.io/Harmonization/"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="Opens in new tab"
                 className="featured-button-small"
               >
                 View Demo →
@@ -280,6 +282,7 @@ export function Home() {
                 href="https://serre-lab.github.io/Lens/"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="Opens in new tab"
                 className="featured-button-small"
               >
                 Explore Tool →
@@ -298,6 +301,7 @@ export function Home() {
                 href="https://serre-lab.github.io/LeafLens/"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="Opens in new tab"
                 className="featured-button-small"
               >
                 Explore Tool →
@@ -316,6 +320,7 @@ export function Home() {
                 href="https://github.com/deel-ai/xplique"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="Opens in new tab"
                 className="featured-button-small"
               >
                 View on GitHub →
@@ -334,6 +339,7 @@ export function Home() {
                 href="https://github.com/serre-lab/Horama"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="Opens in new tab"
                 className="featured-button-small"
               >
                 View on GitHub →
@@ -356,7 +362,7 @@ export function Home() {
           <div className="highlight-card">
             <Text className="highlight-journal">Neuron (2025)</Text>
             <Title order={4} className="highlight-title">
-              <a href="https://www.sciencedirect.com/science/article/abs/pii/S0896627325007524" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.sciencedirect.com/science/article/abs/pii/S0896627325007524" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
                 From prediction to understanding: will AI foundation models transform brain science?
               </a>
             </Title>
@@ -366,7 +372,7 @@ export function Home() {
           <div className="highlight-card">
             <Text className="highlight-journal">TICS (2025)</Text>
             <Title order={4} className="highlight-title">
-              <a href="https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(25)00349-3" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(25)00349-3" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
                 Better artificial intelligence does not mean better models of biology
               </a>
             </Title>
@@ -376,7 +382,7 @@ export function Home() {
           <div className="highlight-card">
             <Text className="highlight-journal">ICLR (2025)</Text>
             <Title order={4} className="highlight-title">
-              <a href="https://openreview.net/forum?id=UIFAJZ22ZF" target="_blank" rel="noopener noreferrer">
+              <a href="https://openreview.net/forum?id=UIFAJZ22ZF" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
                 The 3D-PC: A benchmark for visual perspective taking in humans and machines
               </a>
             </Title>
@@ -386,7 +392,7 @@ export function Home() {
           <div className="highlight-card">
             <Text className="highlight-journal">TICS (2025)</Text>
             <Title order={4} className="highlight-title">
-              <a href="https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(25)00232-3" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(25)00232-3" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
                 Feature binding in biological and artificial vision
               </a>
             </Title>
@@ -396,7 +402,7 @@ export function Home() {
           <div className="highlight-card">
             <Text className="highlight-journal">{shortenJournalName("Current Biology")} (2024)</Text>
             <Title order={4} className="highlight-title">
-              <a href="https://www.cell.com/current-biology/abstract/S0960-9822(24)01380-0" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.cell.com/current-biology/abstract/S0960-9822(24)01380-0" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
                 Monkeys engage in visual simulation to solve complex problems
               </a>
             </Title>
@@ -406,7 +412,7 @@ export function Home() {
           <div className="highlight-card">
             <Text className="highlight-journal">{shortenJournalName("Histopathology")} (2024)</Text>
             <Title order={4} className="highlight-title">
-              <a href="https://onlinelibrary.wiley.com/doi/10.1111/his.15180" target="_blank" rel="noopener noreferrer">
+              <a href="https://onlinelibrary.wiley.com/doi/10.1111/his.15180" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
                 Deceptive learning in histopathology
               </a>
             </Title>
@@ -437,10 +443,10 @@ export function Home() {
         <motion.div variants={fadeUp}>
           <Text>
             We are proud members of the{" "}
-            <Link to="https://carney.brown.edu/">Carney Institute for Brain Science</Link> and the{" "}
-            <Link to="https://ccbs.carney.brown.edu/">Center for Computational Brain Science</Link>{" "}
+            <a href="https://carney.brown.edu/" target="_blank" rel="noopener noreferrer" title="Opens in new tab">Carney Institute for Brain Science</a> and the{" "}
+            <a href="https://ccbs.carney.brown.edu/" target="_blank" rel="noopener noreferrer" title="Opens in new tab">Center for Computational Brain Science</a>{" "}
             at Brown! We also work in close collaboration with and leverage resources from the{" "}
-            <Link to="https://ccv.brown.edu/">Center for Computation and Visualization</Link>.
+            <a href="https://ccv.brown.edu/" target="_blank" rel="noopener noreferrer" title="Opens in new tab">Center for Computation and Visualization</a>.
           </Text>
         </motion.div>
 
