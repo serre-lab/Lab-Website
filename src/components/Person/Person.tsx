@@ -1,4 +1,4 @@
-import { Card, Image, Text, Title, Modal, Anchor } from "@mantine/core";
+import { Card, Image, Text, Modal, Anchor } from "@mantine/core";
 import { useState } from "react";
 import "./Person.css";
 
@@ -53,9 +53,7 @@ export default function Person({ fullName, title, university, imagePath, descrip
                         />
                     </Card.Section>
                 )}
-                <Title order={4} className="person-name">
-                    {fullName}
-                </Title>
+                <div className="person-name">{fullName}</div>
                 <Text className="person-title">{title}</Text>
                 {/* Removed university from card */}
             </Card>
@@ -81,9 +79,7 @@ export default function Person({ fullName, title, university, imagePath, descrip
                         />
                     )}
                     <div className="person-modal-text">
-                        <Title order={1} className="person-name">
-                            {fullName}
-                        </Title>
+                        <div className="person-name person-name-modal">{fullName}</div>
                         <Text className="person-title">{title}</Text>
                         <Text className="person-description">
                             {renderTextWithLinks(description || `${fullName} is a student in the Serre Lab at Brown University.`)}

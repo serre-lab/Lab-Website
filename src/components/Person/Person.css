@@ -24,10 +24,16 @@
   
   .person-name {
     text-align: center;
-    /* font-weight: 600; */
-    /* font-size: 1.1rem; */
+    font-weight: 600;
+    font-size: 1.1rem;
     margin-top: 1rem;
     margin-bottom: 0.25rem;
+  }
+
+  .person-name-modal {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-top: 0;
   }
   
   .person-title {
