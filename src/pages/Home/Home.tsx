@@ -102,7 +102,7 @@ export function Home() {
         title="Serre Lab"
         subtitle={(
           <div className="home-hero-subtitle">
-            <Text className="home-hero-line">Center for Computational Brain Science</Text>
+            <Text className="home-hero-line">Nancy G. Zimmerman Center for Computational Brain Science</Text>
             <Text className="home-hero-line">Robert J. and Nancy D. Carney Institute for Brain Science</Text>
             <Text className="home-hero-line">Cognitive & Psychological Sciences and Computer Science Depts</Text>
             <Text className="home-hero-line">Brown University</Text>
@@ -444,7 +444,7 @@ export function Home() {
           <Text>
             We are proud members of the{" "}
             <a href="https://carney.brown.edu/" target="_blank" rel="noopener noreferrer" title="Opens in new tab">Carney Institute for Brain Science</a> and the{" "}
-            <a href="https://ccbs.carney.brown.edu/" target="_blank" rel="noopener noreferrer" title="Opens in new tab">Center for Computational Brain Science</a>{" "}
+            <a href="https://ccbs.carney.brown.edu/" target="_blank" rel="noopener noreferrer" title="Opens in new tab">Nancy G. Zimmerman Center for Computational Brain Science</a>{" "}
             at Brown! We also work in close collaboration with and leverage resources from the{" "}
             <a href="https://ccv.brown.edu/" target="_blank" rel="noopener noreferrer" title="Opens in new tab">Center for Computation and Visualization</a>.
           </Text>
