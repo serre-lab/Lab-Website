@@ -45,7 +45,7 @@ export default function Footer(props: FooterProps) {
 
                 {/* Middle Column: Quick Links */}
                 <div className="footer-column footer-links">
-                    <p className="footer-column-title">Quick Links</p>
+                    <span className="footer-column-title">Quick Links</span>
                     <nav className="footer-nav" aria-label="Quick links">
                         {props.links.internal.map((link, index) => (
                             <Link key={index} to={link.to} className="footer-link">
@@ -58,7 +58,7 @@ export default function Footer(props: FooterProps) {
                 {/* Right Column: Social & Resources */}
                 <div className="footer-column footer-social-resources">
                     <div className="footer-social-section">
-                        <p className="footer-column-title">Follow Us</p>
+                        <span className="footer-column-title">Follow Us</span>
                         <nav className="footer-social-icons" aria-label="Social links">
                             <a 
                                 href="https://x.com/tserre" 
@@ -100,7 +100,7 @@ export default function Footer(props: FooterProps) {
                         </nav>
                     </div>
                     <div className="footer-resources-section">
-                        <p className="footer-column-title">Resources</p>
+                        <span className="footer-column-title">Resources</span>
                         <nav className="footer-nav" aria-label="External resources">
                             <a 
                                 href="https://vivo.brown.edu/display/tserre" 

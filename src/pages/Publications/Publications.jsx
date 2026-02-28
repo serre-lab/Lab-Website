@@ -141,7 +141,7 @@ export function Publications() {
                                         >
                                             <Group align="flex-start" gap="sm">
                                                 <div style={{ flex: 1 }}>
-                                                    <Title order={3} className="publication-title">
+                                                    <div className="publication-title">
                                                         {getOfficialUrl(publication) ? (
                                                             <Anchor
                                                                 href={getOfficialUrl(publication)}
@@ -157,7 +157,7 @@ export function Publications() {
                                                                 {publication.title}
                                                             </span>
                                                         )}
-                                                    </Title>
+                                                    </div>
                                                     {publication.journal && (
                                                         <Text className="publication-journal">
                                                             {publication.journal}

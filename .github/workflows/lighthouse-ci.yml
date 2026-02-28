@@ -16,9 +16,27 @@ jobs:
         run: sleep 180
 
       - name: Audit URLs using Lighthouse
+        id: lighthouse
         uses: treosh/lighthouse-ci-action@v12
         with:
           urls: |
             https://serre.lab.brown.edu/
           uploadArtifacts: true
           temporaryPublicStorage: true
+
+      - name: Display Lighthouse scores
+        run: |
+          echo "## Lighthouse results" >> $GITHUB_STEP_SUMMARY
+          manifest='${{ steps.lighthouse.outputs.manifest }}'
+          links='${{ steps.lighthouse.outputs.links }}'
+          if [ -n "$manifest" ]; then
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "| URL | Performance | Accessibility | Best Practices | SEO |" >> $GITHUB_STEP_SUMMARY
+            echo "|-----|-------------|---------------|----------------|-----|" >> $GITHUB_STEP_SUMMARY
+            echo "$manifest" | jq -r '.[] | "| \(.url) | \(.summary.performance * 100 | floor)% | \(.summary.accessibility * 100 | floor)% | \(.summary["best-practices"] * 100 | floor)% | \(.summary.seo * 100 | floor)% |"' >> $GITHUB_STEP_SUMMARY
+          fi
+          if [ -n "$links" ]; then
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "### Full reports (click to open)" >> $GITHUB_STEP_SUMMARY
+            echo "$links" | jq -r 'to_entries[] | "- [\(.key)](\(.value))"' >> $GITHUB_STEP_SUMMARY
+          fi

@@ -13,8 +13,9 @@ export function Research() {
       />
       <div className="research-container">
         <div className="titleDesc-container">
+        <Title order={2} className="section-title" style={{ marginTop: 0 }}>Research Directions</Title>
         <div className="research-direction-card">
-          <Title order={2} className="research-direction-title">Human-AI Alignment in Vision</Title>
+          <Title order={3} className="research-direction-title">Human-AI Alignment in Vision</Title>
           <Text className="research-direction-text">
             We are developing methods to quantify and improve the alignment between deep neural networks and human visual processing. Our <Anchor href="https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(25)00349-3" target="_blank"
               rel="noopener noreferrer"
@@ -30,7 +31,7 @@ export function Research() {
         </div>
         
         <div className="research-direction-card">
-          <Title order={2} className="research-direction-title">Cognitive Benchmarks for AI Visual Reasoning</Title>
+          <Title order={3} className="research-direction-title">Cognitive Benchmarks for AI Visual Reasoning</Title>
           <Text className="research-direction-text">
             We develop rigorous cognitive-psychology-inspired tests to evaluate fundamental gaps between human and machine vision. Our benchmarks reveal systematic failures in modern AI: the <Anchor href="https://proceedings.neurips.cc/paper/2018/hash/ec8956637a99787bd197eacd77acce5e-Abstract.html" target="_blank"
               rel="noopener noreferrer"
@@ -44,7 +45,7 @@ export function Research() {
         </div>
         
         <div className="research-direction-card">
-          <Title order={2} className="research-direction-title">Cortical Feedback and Visual Reasoning</Title>
+          <Title order={3} className="research-direction-title">Cortical Feedback and Visual Reasoning</Title>
           <Text className="research-direction-text">
             We are reverse-engineering how feedback connections in the brain enable complex visual reasoning and mental simulation. Our cognitive benchmarks reveal systematic failures of feedforward networks—from contour integration to relational judgments—suggesting precisely which computations require recurrent processing. These insights guide our experimental design: our neurophysiology work shows that same-different tasks that strain feedforward AI engage <Anchor href="https://www.eneuro.org/content/8/1/ENEURO.0267-20.2020" target="_blank"
               rel="noopener noreferrer"
@@ -56,7 +57,7 @@ export function Research() {
         </div>
         
         <div className="research-direction-card">
-          <Title order={2} className="research-direction-title">Explainable AI for Scientific Discovery</Title>
+          <Title order={3} className="research-direction-title">Explainable AI for Scientific Discovery</Title>
           <Text className="research-direction-text">
             In collaboration with the Artificial and Natural Intelligence Toulouse Institute, we're creating tools to understand and interpret deep learning models. Our <Anchor href="https://openaccess.thecvf.com/content/CVPR2023/papers/Fel_CRAFT_Concept_Recursive_Activation_FacTorization_for_Explainability_CVPR_2023_paper.pdf" target="_blank"
               rel="noopener noreferrer"
