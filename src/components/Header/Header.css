@@ -72,9 +72,11 @@ header {
   font-weight: 500;
 }
 
-.links a:hover {
+.links a:hover,
+.links a:focus-visible {
   color: var(--color-primary);
   text-decoration: underline;
+  text-underline-offset: 0.15em;
 }
 
 @media (max-width: 720px) {

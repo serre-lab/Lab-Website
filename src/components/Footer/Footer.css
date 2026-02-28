@@ -83,9 +83,11 @@
     font-size: 0.9rem;
 }
 
-.footer-email-link:hover {
+.footer-email-link:hover,
+.footer-email-link:focus-visible {
     color: var(--color-primary);
     text-decoration: underline;
+    text-underline-offset: 0.15em;
 }
 
 /* Links Column */
@@ -131,9 +133,11 @@
     line-height: 1.4;
 }
 
-.footer-link:hover {
+.footer-link:hover,
+.footer-link:focus-visible {
     color: var(--color-link);
     text-decoration: underline;
+    text-underline-offset: 0.15em;
 }
 
 /* Social Icons */
@@ -201,9 +205,11 @@
     transition: color 0.2s ease;
 }
 
-.footer-legal-link:hover {
+.footer-legal-link:hover,
+.footer-legal-link:focus-visible {
     color: var(--color-link);
     text-decoration: underline;
+    text-underline-offset: 0.15em;
 }
 
 .footer-separator {

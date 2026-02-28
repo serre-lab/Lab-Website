@@ -63,9 +63,11 @@
   transition: color 0.2s ease;
 }
 
-.link-primary:hover {
+.link-primary:hover,
+.link-primary:focus-visible {
   color: #2980b9;
   text-decoration: underline;
+  text-underline-offset: 0.15em;
 }
 
 /* Responsive typography */

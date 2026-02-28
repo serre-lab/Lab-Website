@@ -61,9 +61,11 @@
     font-weight: 500;
 }
 
-.markdown-container a:hover {
+.markdown-container a:hover,
+.markdown-container a:focus-visible {
     color: var(--color-link-hover);
     text-decoration: underline;
+    text-underline-offset: 0.15em;
 }
 
 .markdown-container code {

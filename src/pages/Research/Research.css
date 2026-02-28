@@ -117,9 +117,22 @@
     transition: color 0.2s ease;
   }
 
-  .research-link:hover {
+  .research-link:hover,
+  .research-link:focus-visible {
     color: var(--color-accent);
     text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+
+  /* Links inside funding badge: keep white on blue background */
+  .funding-badge .research-link {
+    color: white;
+  }
+  .funding-badge .research-link:hover,
+  .funding-badge .research-link:focus-visible {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
   }
 
   /* Accordion grant labels: override Mantine dimmed for WCAG 4.5:1 contrast */

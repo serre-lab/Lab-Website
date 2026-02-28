@@ -39,10 +39,13 @@
 a {
     font-weight: 500;
     color: var(--color-link);
-    text-decoration: inherit;
+    text-decoration: none;
 }
-a:hover {
+a:hover,
+a:focus-visible {
     color: var(--color-link-hover);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
 }
 
 h2, h3, h4, h5, h6 {

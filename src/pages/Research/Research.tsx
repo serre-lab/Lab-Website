@@ -26,7 +26,7 @@ export function Research() {
           </Text>
           <div className="funding-badge">Funded by NSF (IIS-2402875) • <Anchor href="https://www.nsf.gov/news/training-ai-see-more-humans" target="_blank"
               rel="noopener noreferrer"
-              title="Opens in new tab" style={{ color: 'white', textDecoration: 'underline' }}>Featured by NSF</Anchor></div>
+              title="Opens in new tab" className="research-link">Featured by NSF</Anchor></div>
         </div>
         
         <div className="research-direction-card">
