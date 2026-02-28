@@ -138,3 +138,10 @@ button:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 2px;
 }
+
+/* WCAG 2.1 AA: Override Mantine dimmed color for sufficient contrast (4.5:1) */
+[data-mantine-color-scheme] [data-mantine-color="dimmed"],
+.mantine-Text-root[data-mantine-color="dimmed"],
+.mantine-Text-root[color="dimmed"] {
+  color: var(--color-text-secondary) !important;
+}

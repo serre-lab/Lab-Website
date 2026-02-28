@@ -67,6 +67,16 @@
     flex-grow: 1;
 }
 
+/* WCAG 2.1 AA: Ensure Continue reading button has sufficient contrast */
+.media-card .mantine-Button-root[data-variant="filled"] {
+    background-color: var(--color-primary) !important;
+    color: white !important;
+}
+.media-card .mantine-Button-root[data-variant="filled"]:hover {
+    background-color: var(--color-primary-dark) !important;
+    color: white !important;
+}
+
 @media (max-width: 768px) {
     .search-and-dropdown {
         flex-direction: column;

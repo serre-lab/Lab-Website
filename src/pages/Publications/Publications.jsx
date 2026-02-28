@@ -128,7 +128,7 @@ export function Publications() {
                                 animate="visible"
                                 variants={fadeUp}
                             >
-                                <Title className="year-heading">{year}</Title>
+                                <Title order={2} className="year-heading">{year}</Title>
                                 <ul style={{ listStyle: "none", padding: 0 }}>
                                     {filteredPublications[year].map((publication, index) => (
                                         <motion.li
@@ -141,7 +141,7 @@ export function Publications() {
                                         >
                                             <Group align="flex-start" gap="sm">
                                                 <div style={{ flex: 1 }}>
-                                                    <Title order={1} className="publication-title">
+                                                    <Title order={3} className="publication-title">
                                                         {getOfficialUrl(publication) ? (
                                                             <Anchor
                                                                 href={getOfficialUrl(publication)}

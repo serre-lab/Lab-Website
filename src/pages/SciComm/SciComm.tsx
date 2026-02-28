@@ -106,7 +106,7 @@ export function SciComm() {
                                 <Title order={3}>{item.title}</Title>
                             </Anchor>
                         </Group>
-                        <Text size="sm" color="dimmed" lineClamp={4} style={{ flexGrow: 1 }}>
+                        <Text size="sm" lineClamp={4} style={{ flexGrow: 1, color: 'var(--color-text-secondary)' }}>
                             {item.blurb}
                         </Text>
                         <Button
@@ -115,7 +115,7 @@ export function SciComm() {
                             target="_blank"
                             rel="noopener noreferrer"
                             title="Opens in new tab"
-                            variant="light"
+                            variant="filled"
                             color="blue"
                             fullWidth
                             mt="md"

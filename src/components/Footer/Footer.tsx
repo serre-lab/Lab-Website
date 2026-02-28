@@ -1,4 +1,4 @@
-import { Title, Text } from "@mantine/core";
+import { Text } from "@mantine/core";
 import "./Footer.css";
 import { Link } from "react-router-dom";
 import { FaTwitter, FaGithub } from "react-icons/fa6";
@@ -23,7 +23,7 @@ export default function Footer(props: FooterProps) {
                                <img src="/brown-logo.webp" alt="Brown University Logo" className="footer-brown-logo" />
                                <span className="footer-logo-divider" aria-hidden="true" />
                                <div className="footer-logo-text">
-                                   <Title order={3} className="footer-lab-name">Serre Lab</Title>
+                                   <p className="footer-lab-name"><strong>Serre Lab</strong></p>
                                    <Text className="footer-lab-tagline">Vision, Neuroscience & AI</Text>
                                </div>
                     </div>
@@ -45,7 +45,7 @@ export default function Footer(props: FooterProps) {
 
                 {/* Middle Column: Quick Links */}
                 <div className="footer-column footer-links">
-                    <Title order={4} className="footer-column-title">Quick Links</Title>
+                    <p className="footer-column-title">Quick Links</p>
                     <nav className="footer-nav" aria-label="Quick links">
                         {props.links.internal.map((link, index) => (
                             <Link key={index} to={link.to} className="footer-link">
@@ -58,7 +58,7 @@ export default function Footer(props: FooterProps) {
                 {/* Right Column: Social & Resources */}
                 <div className="footer-column footer-social-resources">
                     <div className="footer-social-section">
-                        <Title order={4} className="footer-column-title">Follow Us</Title>
+                        <p className="footer-column-title">Follow Us</p>
                         <nav className="footer-social-icons" aria-label="Social links">
                             <a 
                                 href="https://x.com/tserre" 
@@ -100,7 +100,7 @@ export default function Footer(props: FooterProps) {
                         </nav>
                     </div>
                     <div className="footer-resources-section">
-                        <Title order={4} className="footer-column-title">Resources</Title>
+                        <p className="footer-column-title">Resources</p>
                         <nav className="footer-nav" aria-label="External resources">
                             <a 
                                 href="https://vivo.brown.edu/display/tserre" 
