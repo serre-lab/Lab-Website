@@ -19,7 +19,7 @@ Use the **official published URL** (Cell, OpenReview, etc.) once a paper is publ
 ### 2. Sync to This Repo (Lab Website)
 From this repo:
 ```bash
-cd /Users/tserre/Projects/Lab-Website
+cd /Users/tserre/Projects/prj_web/Lab-Website
 python3 scripts/sync_from_central_publications.py
 ```
 This overwrites `src/data/publications_by_year.json` from the central file (and keeps existing `pdfPath` values).
@@ -32,7 +32,7 @@ python3 generate_cv.py
 
 ### 4. Rebuild and Deploy
 ```bash
-cd /Users/tserre/Projects/Lab-Website
+cd /Users/tserre/Projects/prj_web/Lab-Website
 npm run build
 # then your normal deploy (e.g. push to trigger GitHub Actions)
 ```

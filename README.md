@@ -13,7 +13,7 @@ For future editors of the code:
 - `<Title order={3}>` is for subsection titles
 - `<Text>` is for paragraph text
 
-## 🚀 Tech Stack
+## Tech stack
 - **Framework**: React (with Vite)
 - **UI Library**: Mantine UI
 - **Routing**: React Router (Hash Router)
@@ -111,7 +111,7 @@ src/
 
 ---
 
-## 📚 Editing Research (Research Page)
+## Editing research (Research page)
 - **File**: `src/data/research.json`
 - **Format**:
 ```json
@@ -262,7 +262,7 @@ src/
 
 ---
 
-## 📝 Adding Dynamic Markdown Pages
+## Adding dynamic markdown pages
 - **Location**: `src/markdown-pages/resources/`
 - **Format**: Create `.md` files for new pages
 - **Routing**: Automatically added to navigation
@@ -270,7 +270,7 @@ src/
 
 ---
 
-## ✨ How to Add New Content
+## Adding new content
 
 ### Adding People:
 1. Add headshot to `public/people/`
@@ -297,7 +297,7 @@ src/
 
 ---
 
-## 🔧 Development Workflow
+## Development workflow
 
 ### Local Development:
 ```bash
@@ -349,4 +349,4 @@ For questions about editing the website:
 2. Look at existing examples in the JSON files
 3. Contact the development team
 
-**Happy editing!** 🧠✨
+Contact the development team for questions.

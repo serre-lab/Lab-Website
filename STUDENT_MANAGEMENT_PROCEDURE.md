@@ -16,7 +16,7 @@ This file contains ALL student information organized by categories:
 - External examiner roles
 
 ### Lab Website System
-**Location:** `/Users/tserre/Projects/Lab-Website/src/data/people.json`
+**Location:** `/Users/tserre/Projects/prj_web/Lab-Website/src/data/people.json`
 
 This file contains current lab members with:
 - Full name
@@ -49,7 +49,7 @@ Edit `/Users/tserre/Projects/prj_cv/data/mentoring.json`
 - **Lab website uses full names:** Alekh Ashok, Jorge Chang, etc.
 
 ### 2. Add to Lab Website Central File
-Edit `/Users/tserre/Projects/Lab-Website/src/data/people.json`
+Edit `/Users/tserre/Projects/prj_web/Lab-Website/src/data/people.json`
 
 **Structure:**
 ```json
@@ -89,7 +89,7 @@ Edit `/Users/tserre/Projects/prj_cv/data/mentoring.json`
 - Update `current_position` to reflect new position
 
 ### 2. Remove from Lab Website Central File
-Edit `/Users/tserre/Projects/Lab-Website/src/data/people.json`
+Edit `/Users/tserre/Projects/prj_web/Lab-Website/src/data/people.json`
 
 **Remove the entire student entry** from the `people` array
 
