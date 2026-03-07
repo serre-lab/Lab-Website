@@ -3,7 +3,7 @@
 ## CENTRAL SOURCES OF TRUTH
 
 ### CV System
-**Location:** `/Users/tserre/Projects/prj_cv/data/mentoring.json`
+**Location:** `/Users/tserre/Projects/personal/cv/data/mentoring.json`
 
 This file contains ALL student information organized by categories:
 - Graduate students
@@ -16,7 +16,7 @@ This file contains ALL student information organized by categories:
 - External examiner roles
 
 ### Lab Website System
-**Location:** `/Users/tserre/Projects/prj_web/Lab-Website/src/data/people.json`
+**Location:** `/Users/tserre/Projects/research/lab_website/src/data/people.json`
 
 This file contains current lab members with:
 - Full name
@@ -28,7 +28,7 @@ This file contains current lab members with:
 ## PROCEDURE FOR ADDING NEW STUDENTS
 
 ### 1. Add to CV Central File
-Edit `/Users/tserre/Projects/prj_cv/data/mentoring.json`
+Edit `/Users/tserre/Projects/personal/cv/data/mentoring.json`
 
 **Structure:**
 ```json
@@ -49,7 +49,7 @@ Edit `/Users/tserre/Projects/prj_cv/data/mentoring.json`
 - **Lab website uses full names:** Alekh Ashok, Jorge Chang, etc.
 
 ### 2. Add to Lab Website Central File
-Edit `/Users/tserre/Projects/prj_web/Lab-Website/src/data/people.json`
+Edit `/Users/tserre/Projects/research/lab_website/src/data/people.json`
 
 **Structure:**
 ```json
@@ -64,7 +64,7 @@ Edit `/Users/tserre/Projects/prj_web/Lab-Website/src/data/people.json`
 
 ### 3. Regenerate CV
 ```bash
-cd /Users/tserre/Projects/prj_cv/scripts
+cd /Users/tserre/Projects/personal/cv/scripts
 python generate_cv.py
 ```
 
@@ -73,7 +73,7 @@ The lab website will automatically reflect changes from `people.json`
 
 ### 5. Commit Changes
 ```bash
-cd /Users/tserre/Projects/prj_cv
+cd /Users/tserre/Projects/personal/cv
 git add -A
 git commit -m "Add new student: [Name]"
 git push origin main
@@ -82,14 +82,14 @@ git push origin main
 ## PROCEDURE FOR MOVING STUDENTS TO ALUMNI
 
 ### 1. Update CV Central File
-Edit `/Users/tserre/Projects/prj_cv/data/mentoring.json`
+Edit `/Users/tserre/Projects/personal/cv/data/mentoring.json`
 
 **Change:**
 - Update `years` field to include end date (e.g., "2021–2024")
 - Update `current_position` to reflect new position
 
 ### 2. Remove from Lab Website Central File
-Edit `/Users/tserre/Projects/prj_web/Lab-Website/src/data/people.json`
+Edit `/Users/tserre/Projects/research/lab_website/src/data/people.json`
 
 **Remove the entire student entry** from the `people` array
 
@@ -99,7 +99,7 @@ Edit `/Users/tserre/Projects/prj_web/Lab-Website/src/data/people.json`
 
 ### 4. Commit Changes
 ```bash
-cd /Users/tserre/Projects/prj_cv
+cd /Users/tserre/Projects/personal/cv
 git add -A
 git commit -m "Move student to alumni: [Name]"
 git push origin main
@@ -110,7 +110,7 @@ git push origin main
 - ✅ Keep student information synchronized between systems
 - ✅ Use consistent formatting conventions
 - ❌ Never edit generated files directly
-- ❌ Never edit `/Users/tserre/Projects/prj_cv/latex/serre_cv.tex` directly
+- ❌ Never edit `/Users/tserre/Projects/personal/cv/latex/serre_cv.tex` directly
 
 ## VERIFICATION
 1. Check CV shows student in correct category with correct dates

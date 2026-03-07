@@ -167,7 +167,7 @@ These 15 papers are published at major conferences but currently link to arXiv i
 For each paper:
 
 1. Find the official URL using the methods above
-2. Edit `/Users/tserre/Projects/prj_web/Lab-Website/src/data/publications_by_year.json`
+2. Edit `/Users/tserre/Projects/research/lab_website/src/data/publications_by_year.json`
 3. Find the paper entry by year and title
 4. Replace the arXiv URL with the official URL
 5. Save the file

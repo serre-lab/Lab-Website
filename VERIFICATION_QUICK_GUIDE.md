@@ -2,7 +2,7 @@
 
 ## 📁 Generated Files
 
-**Location:** `/Users/tserre/Projects/prj_web/Lab-Website/`
+**Location:** `/Users/tserre/Projects/research/lab_website/`
 
 1. **CRITICAL_ISSUES_SUMMARY.md** (7.3KB)
    - Start here - executive summary of all issues
@@ -31,7 +31,7 @@
 ## 🚨 Most Critical Issues
 
 ### 1. officialPublicationUrls.js Bug
-**File:** `/Users/tserre/Projects/prj_web/Lab-Website/src/data/officialPublicationUrls.js`
+**File:** `/Users/tserre/Projects/research/lab_website/src/data/officialPublicationUrls.js`
 **Lines:** 39-52
 
 Six different papers incorrectly mapped to same URL:
@@ -63,7 +63,7 @@ These papers are published at NeurIPS/ICLR/CVPR/ICML but link to arXiv.
 
 ### Task 1: Fix officialPublicationUrls.js (5 min)
 ```bash
-cd /Users/tserre/Projects/prj_web/Lab-Website
+cd /Users/tserre/Projects/research/lab_website
 # Edit src/data/officialPublicationUrls.js
 # Remove or correct lines 39-52
 ```
@@ -101,7 +101,7 @@ Get from **16% complete** (URL + local PDF) to **100% complete** for all 126 pub
 
 Use the CSV file to track your progress:
 ```bash
-cd /Users/tserre/Projects/prj_web/Lab-Website
+cd /Users/tserre/Projects/research/lab_website
 open publication_issues_detailed.csv
 ```
 

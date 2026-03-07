@@ -264,9 +264,9 @@ The following entries in the override file appear suspicious or potentially inco
 
 ## Data Files Analyzed
 
-1. `/Users/tserre/Projects/prj_web/Lab-Website/src/data/publications_by_year.json` - Main publication database
-2. `/Users/tserre/Projects/prj_web/Lab-Website/src/data/officialPublicationUrls.js` - URL overrides (contains errors)
-3. `/Users/tserre/Projects/prj_web/Lab-Website/public/papers/` - Local PDF directory (84 files)
+1. `/Users/tserre/Projects/research/lab_website/src/data/publications_by_year.json` - Main publication database
+2. `/Users/tserre/Projects/research/lab_website/src/data/officialPublicationUrls.js` - URL overrides (contains errors)
+3. `/Users/tserre/Projects/research/lab_website/public/papers/` - Local PDF directory (84 files)
 
 ---
 

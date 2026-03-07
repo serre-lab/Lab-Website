@@ -8,7 +8,7 @@
 
 ## 🚨 CRITICAL ISSUE: officialPublicationUrls.js Contains Duplicate/Wrong URLs
 
-**File:** `/Users/tserre/Projects/prj_web/Lab-Website/src/data/officialPublicationUrls.js`
+**File:** `/Users/tserre/Projects/research/lab_website/src/data/officialPublicationUrls.js`
 
 ### The Problem
 Six different 2016 publications are ALL mapped to the SAME Nature Communications article (ncomms13928):
@@ -141,7 +141,7 @@ This verification generated the following files:
 3. **CRITICAL_ISSUES_SUMMARY.md** - This file (executive summary)
 4. **publication_verification_report.json** - Machine-readable full data
 
-All files located in: `/Users/tserre/Projects/prj_web/Lab-Website/`
+All files located in: `/Users/tserre/Projects/research/lab_website/`
 
 ---
 
