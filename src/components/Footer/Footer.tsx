@@ -102,19 +102,6 @@ export default function Footer(props: FooterProps) {
                 <Text size="xs" className="footer-copyright">
                     © {currentYear} Serre Lab · Brown University
                 </Text>
-                <div className="footer-legal-links">
-                    <a href="https://www.brown.edu/about/administration/institutional-accessibility" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       className="footer-legal-link"
-                       title="Opens in new tab">
-                        Accessibility
-                    </a>
-                    <span className="footer-separator">·</span>
-                    <a href="/sitemap.xml" className="footer-legal-link">
-                        Sitemap
-                    </a>
-                </div>
             </div>
         </footer>
     );
