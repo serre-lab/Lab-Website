@@ -1,7 +1,7 @@
 import type { ReactNode, CSSProperties } from "react";
 import { Title, Text } from "@mantine/core";
 import { motion } from "motion/react";
-import { FaTwitter, FaGithub } from "react-icons/fa6";
+import { FaTwitter, FaGithub, FaBluesky } from "react-icons/fa6";
 import "./HeroBanner.css";
 
 interface HeroBannerProps {
@@ -71,14 +71,7 @@ export function HeroBanner({ title, subtitle, showSocialIcons = true, height, ba
                 title="Opens in new tab"
                 className="hero-banner-social-icon"
               >
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Bluesky_logo_%28black%29.svg/869px-Bluesky_logo_%28black%29.svg.png"
-                  alt=""
-                  width={18}
-                  height={18}
-                  style={{ display: "block", filter: "brightness(0) invert(1)" }}
-                  aria-hidden="true"
-                />
+                <FaBluesky size={18} aria-hidden="true" />
               </a>
             </nav>
           </div>

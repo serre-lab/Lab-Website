@@ -1,7 +1,7 @@
 import { Text } from "@mantine/core";
 import "./Footer.css";
-import { Link } from "react-router-dom";
-import { FaTwitter, FaGithub } from "react-icons/fa6";
+
+import { FaTwitter, FaGithub, FaBluesky } from "react-icons/fa6";
 import { FaEnvelope } from "react-icons/fa";
 
 interface FooterProps {
@@ -43,18 +43,6 @@ export default function Footer(props: FooterProps) {
                     </div>
                 </div>
 
-                {/* Middle Column: Quick Links */}
-                <div className="footer-column footer-links">
-                    <span className="footer-column-title">Quick Links</span>
-                    <nav className="footer-nav" aria-label="Quick links">
-                        {props.links.internal.map((link, index) => (
-                            <Link key={index} to={link.to} className="footer-link">
-                                {link.label}
-                            </Link>
-                        ))}
-                    </nav>
-                </div>
-
                 {/* Right Column: Social & Resources */}
                 <div className="footer-column footer-social-resources">
                     <div className="footer-social-section">
@@ -88,14 +76,7 @@ export default function Footer(props: FooterProps) {
                                 aria-label="Bluesky (opens in new tab)"
                                 title="Opens in new tab"
                             >
-                                <img 
-                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Bluesky_logo_%28black%29.svg/869px-Bluesky_logo_%28black%29.svg.png"
-                                    alt=""
-                                    width="20"
-                                    height="20"
-                                    style={{ display: 'block' }}
-                                    aria-hidden="true"
-                                />
+                                <FaBluesky size={20} aria-hidden="true" />
                             </a>
                         </nav>
                     </div>
