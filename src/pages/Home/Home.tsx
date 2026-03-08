@@ -108,7 +108,7 @@ export function Home() {
             <Text className="home-hero-line">Brown University</Text>
           </div>
         )}
-        backgroundImage="/metcalf.png"
+        backgroundImage="/metcalf.webp"
       />
 
       {/* Learn More Section */}

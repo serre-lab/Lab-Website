@@ -1,15 +1,15 @@
-import { useEffect, useState } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import "@mantine/core/styles.css";
 import { createTheme, MantineProvider } from "@mantine/core";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 
 import { Home } from "./pages/Home/Home";
-import { Research } from "./pages/Research/Research";
-import { Resources } from "./pages/Resources/Resources";
+const Research = lazy(() => import("./pages/Research/Research").then(m => ({ default: m.Research })));
+const Resources = lazy(() => import("./pages/Resources/Resources").then(m => ({ default: m.Resources })));
 //@ts-ignore
-import { Publications } from "./pages/Publications/Publications";
-import People from "./pages/People/People";
-import { SciComm } from "./pages/SciComm/SciComm";
+const Publications = lazy(() => import("./pages/Publications/Publications").then(m => ({ default: m.Publications })));
+const People = lazy(() => import("./pages/People/People"));
+const SciComm = lazy(() => import("./pages/SciComm/SciComm").then(m => ({ default: m.SciComm })));
 
 import { Root } from "./components/Root";
 import { Links } from "./types";
@@ -87,13 +87,13 @@ const App = () => {
             path: "/",
             element: <Root links={links} />,
             children: [
-                // Static Routes
+                // Static Routes (lazy-loaded)
                 { path: "/", element: <Home /> },
-                { path: "/research", element: <Research /> },
-                { path: "/publications", element: <Publications /> },
-                { path: "/people", element: <People /> },
-                { path: "/resources", element: <Resources /> },
-                { path: "/sci-comm", element: <SciComm /> },
+                { path: "/research", element: <Suspense fallback={null}><Research /></Suspense> },
+                { path: "/publications", element: <Suspense fallback={null}><Publications /></Suspense> },
+                { path: "/people", element: <Suspense fallback={null}><People /></Suspense> },
+                { path: "/resources", element: <Suspense fallback={null}><Resources /></Suspense> },
+                { path: "/sci-comm", element: <Suspense fallback={null}><SciComm /></Suspense> },
 
 
                 // Dynamic Markdown Routes

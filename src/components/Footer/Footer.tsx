@@ -20,7 +20,7 @@ export default function Footer(props: FooterProps) {
                 {/* Left Column: Lab Info */}
                 <div className="footer-column footer-lab-info">
                            <div className="footer-logo-section">
-                               <img src="/brown-logo.webp" alt="Brown University Logo" className="footer-brown-logo" />
+                               <img src="/brown-logo.webp" alt="Brown University Logo" className="footer-brown-logo" width={40} height={46} loading="lazy" />
                                <span className="footer-logo-divider" aria-hidden="true" />
                                <div className="footer-logo-text">
                                    <p className="footer-lab-name"><strong>Serre Lab</strong></p>

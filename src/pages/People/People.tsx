@@ -47,7 +47,7 @@ export default function People() {
       <HeroBanner 
         title="People" 
         subtitle="Meet the researchers, students, and collaborators"
-        backgroundImage="/metcalf.png"
+        backgroundImage="/metcalf.webp"
       />
       <div className="people-container">
       {brownPeople.length > 0 && (

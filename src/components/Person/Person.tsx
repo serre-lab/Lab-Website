@@ -50,6 +50,9 @@ export default function Person({ fullName, title, university, imagePath, descrip
                             alt={fullName}
                             className="person-image"
                             radius="sm"
+                            loading="lazy"
+                            w={280}
+                            h={220}
                         />
                     </Card.Section>
                 )}

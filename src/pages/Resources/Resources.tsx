@@ -132,7 +132,7 @@ export function Resources() {
             <HeroBanner 
                 title="Resources" 
                 subtitle="Datasets, tools, demos, and tutorials"
-                backgroundImage="/metcalf.png"
+                backgroundImage="/metcalf.webp"
             />
             <div className="resources-container">
                 <div className="titleDesc-container">

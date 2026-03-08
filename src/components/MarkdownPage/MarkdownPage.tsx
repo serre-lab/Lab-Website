@@ -52,7 +52,7 @@ const MarkdownPage: React.FC<MarkdownPageProps> = ({ content }) => {
             <HeroBanner 
                 title={title}
                 subtitle={subtitle || "Resource page from the Serre Lab"}
-                backgroundImage="/metcalf.png"
+                backgroundImage="/metcalf.webp"
             />
             <div className="markdown-container">
                 <ReactMarkdown

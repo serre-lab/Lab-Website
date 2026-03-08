@@ -90,7 +90,7 @@ export function Publications() {
             <HeroBanner 
                 title="Publications" 
                 subtitle="Research contributions advancing computational neuroscience, NeuroAI, and brain-inspired vision models"
-                backgroundImage="/metcalf.png"
+                backgroundImage="/metcalf.webp"
             />
             <div className="publications-container">
                 <div className="filter-section">
