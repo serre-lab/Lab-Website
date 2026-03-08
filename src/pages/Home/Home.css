@@ -711,6 +711,7 @@
     margin-bottom: 0.75rem;
     line-height: 1.4;
     flex-grow: 1;
+    font-size: 1.15rem;
   }
 
   .highlight-title a {
