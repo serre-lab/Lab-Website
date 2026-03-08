@@ -46,7 +46,6 @@ export default function Footer(props: FooterProps) {
                 {/* Right Column: Social & Resources */}
                 <div className="footer-column footer-social-resources">
                     <div className="footer-social-section">
-                        <span className="footer-column-title">Follow Us</span>
                         <nav className="footer-social-icons" aria-label="Social links">
                             <a 
                                 href="https://x.com/tserre" 
