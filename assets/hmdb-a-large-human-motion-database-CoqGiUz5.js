@@ -32,9 +32,9 @@ const e=`<!doctype html>
       <div class="card">
         <h3>Video Database</h3>
         <ul>
-          <li><a href="https://drive.google.com/uc?export=download&id=17anw5Oxp7lmp9cMwXPOyOpL5olDLmPpj">HMDB51 (original, unstabilized)</a> — about 2 GB; 51 classes, 6,849 clips.</li>
-          <li><a href="https://drive.google.com/uc?export=download&id=1TyCwgNSzms7VU6-Mc64RTgwd8Zd9ynxy">HMDB51 (stabilized)</a> — same clips and labels, with geometric frame alignment; each clip includes a mask file <code>[video_name].form</code> readable in MATLAB.</li>
-          <li><a href="https://drive.google.com/uc?export=download&id=1NQxJWJSYWefyNS-LFYCenFih4gRDUPCX">Train/Test splits (3 lists)</a> — predefined lists for Split 1–3 (used for standard evaluation).</li>
+          <li><a href="https://huggingface.co/datasets/Serrelab/hmdb51/resolve/main/hmdb51_org.rar">HMDB51 (original, unstabilized)</a> — about 2 GB; 51 classes, 6,849 clips.</li>
+          <li><a href="https://huggingface.co/datasets/Serrelab/hmdb51/resolve/main/hmdb51_sta.rar">HMDB51 (stabilized)</a> — same clips and labels, with geometric frame alignment; each clip includes a mask file <code>[video_name].form</code> readable in MATLAB.</li>
+          <li><a href="https://huggingface.co/datasets/Serrelab/hmdb51/resolve/main/test_train_splits.rar">Train/Test splits (3 lists)</a> — predefined lists for Split 1–3 (used for standard evaluation).</li>
         </ul>
         <p class="muted">License: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
       </div>
@@ -44,8 +44,7 @@ const e=`<!doctype html>
         <ul>
           <li><a href="https://docs.pytorch.org/vision/main/generated/torchvision.datasets.HMDB51.html">Torchvision: <code>datasets.HMDB51</code></a></li>
           <li><a href="https://mmaction2.readthedocs.io/en/latest/user_guides/prepare_dataset.html">MMAction2: dataset preparation</a></li>
-          <li><a href="https://huggingface.co/datasets/jili5044/hmdb51">Hugging Face: HMDB51</a></li>
-          <li><a href="https://huggingface.co/datasets/MichiganNLP/hmdb">Hugging Face: HMDB (ZIP repack)</a></li>
+          <li><a href="https://huggingface.co/datasets/Serrelab/hmdb51">Hugging Face: HMDB51 (Official)</a></li>
           <li><a href="https://datasets.activeloop.ai/docs/ml/datasets/hmdb51-dataset/">Activeloop Hub: HMDB51</a></li>
         </ul>
         <p class="muted">Additional community mirrors provided for convenience.</p>
