@@ -45,7 +45,7 @@ The dataset includes 10 breakfast preparation activities:
 > **Note**: Frame-based features, I3D features, and segmentation data are currently being migrated to new hosting. Please contact the lab for access.
 
 ### Code and Documentation
-- **MATLAB demo**: [demo_bundle.rar](/datasets/breakfast/demo_bundle.rar) - *Available locally*
+- **MATLAB demo**: [demo_bundle.rar](https://huggingface.co/datasets/Serrelab/breakfast-actions/resolve/main/demo_bundle.rar)
 
 ### Train/Test Splits
 The dataset includes predefined splits for evaluation:
@@ -79,7 +79,7 @@ H. Kuehne, J. Gall and T. Serre. An end-to-end generative framework for video se
 ## Code and Resources
 
 - **Current system**: Available on [GitHub](https://github.com/hildekuehne/HTK_actionRecognition)
-- **MATLAB demo**: [Previous demo bundle](/datasets/breakfast/demo_bundle.rar) available for action recognition
+- **MATLAB demo**: [Previous demo bundle](https://huggingface.co/datasets/Serrelab/breakfast-actions/resolve/main/demo_bundle.rar) available for action recognition
 
 ## License
 

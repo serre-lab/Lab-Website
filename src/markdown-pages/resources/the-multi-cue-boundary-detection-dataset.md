@@ -39,7 +39,7 @@ Annotations were performed by undergraduate students at Brown University using c
 
 ## Downloads
 
-- **Dataset**: [multicue-dataset.tar.bz2](https://drive.google.com/uc?export=download&id=1OugiFy_f20hnIwaao9d05o-3buGYLsNo) (~3.4 GB)
+- **Dataset**: [multicue-dataset.tar.bz2](https://huggingface.co/datasets/Serrelab/multicue-boundary-detection/resolve/main/multicue-dataset.tar.bz2) (~3.4 GB)
 
 ## Citation
 
