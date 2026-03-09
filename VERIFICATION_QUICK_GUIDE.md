@@ -7,7 +7,7 @@
 1. **CRITICAL_ISSUES_SUMMARY.md** (7.3KB)
    - Start here - executive summary of all issues
    - Prioritized action items
-   - Critical bug in officialPublicationUrls.js
+   - officialPublicationUrls.js: cleaned up (March 2026)
 
 2. **PUBLICATION_VERIFICATION_REPORT.md** (9.6KB)
    - Detailed full report
@@ -30,18 +30,8 @@
 
 ## 🚨 Most Critical Issues
 
-### 1. officialPublicationUrls.js Bug
-**File:** `/Users/tserre/Projects/research/lab_website/src/data/officialPublicationUrls.js`
-**Lines:** 39-52
-
-Six different papers incorrectly mapped to same URL:
-```
-"2016_Mely_VR": "https://www.nature.com/articles/ncomms13928",
-"2016_Mely_CCNV": "https://www.nature.com/articles/ncomms13928",
-... (4 more)
-```
-
-**Fix:** Remove or correct these entries
+### 1. officialPublicationUrls.js — ✅ RESOLVED (March 2026)
+Dead entries and broken placeholder URLs have been removed. File now contains only valid mappings.
 
 ### 2. arXiv URLs for Published Papers (15 papers)
 These papers are published at NeurIPS/ICLR/CVPR/ICML but link to arXiv.
@@ -61,35 +51,28 @@ These papers are published at NeurIPS/ICLR/CVPR/ICML but link to arXiv.
 
 ## 📋 Top Priority Tasks
 
-### Task 1: Fix officialPublicationUrls.js (5 min)
-```bash
-cd /Users/tserre/Projects/research/lab_website
-# Edit src/data/officialPublicationUrls.js
-# Remove or correct lines 39-52
-```
-
-### Task 2: Fix arXiv URLs (30 min)
+### Task 1: Fix arXiv URLs (30 min)
 1. Open publication_issues_detailed.csv
 2. Filter: "arXiv URL for published paper"
 3. For each of 15 papers:
    - Find official NeurIPS/ICLR/CVPR page
    - Update URL in publications_by_year.json
 
-### Task 3: Add High-Impact PDFs (1 hour)
+### Task 2: Add High-Impact PDFs (1 hour)
 1. Open publication_issues_detailed.csv
 2. Filter: "Missing pdfPath" + high-impact journals
 3. Download 5 PDFs from Science/Nature/Brain
 4. Add to `/public/papers/` with consistent naming
 5. Update pdfPath in publications_by_year.json
 
-### Task 4: Add Missing URLs (2 hours)
+### Task 3: Add Missing URLs (2 hours)
 Focus on high-impact journals first:
 - Nature Communications (2010)
 - PNAS (2011, 2016)
 - Psychological Review (2018)
 - Communications of the ACM (2010)
 
-### Task 5: Download Remote PDFs (3 hours)
+### Task 4: Download Remote PDFs (3 hours)
 53 papers link to serre-lab.clps.brown.edu
 Download and host locally for reliability
 

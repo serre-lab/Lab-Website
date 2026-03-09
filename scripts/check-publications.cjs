@@ -7,15 +7,11 @@ const publicationsData = JSON.parse(fs.readFileSync('src/data/publications_by_ye
 // Read the official URLs (it's a JS file, so we need to extract the object)
 const officialUrlsContent = fs.readFileSync('src/data/officialPublicationUrls.js', 'utf8');
 // Extract the object from the JS file (simple approach)
-const officialUrlsMatch = officialUrlsContent.match(/export const officialPublicationUrls = ({[\s\S]*?});/);
+const officialUrlsMatch = officialUrlsContent.match(/export const officialPublicationUrls = (\{[\s\S]*?\});/);
 let officialUrls = {};
 if (officialUrlsMatch) {
     try {
-        // Replace the JS object syntax with JSON syntax
-        let jsonString = officialUrlsMatch[1]
-            .replace(/(\w+):/g, '"$1":') // Add quotes around keys
-            .replace(/'/g, '"'); // Replace single quotes with double quotes
-        officialUrls = JSON.parse(jsonString);
+        officialUrls = eval('(' + officialUrlsMatch[1] + ')');
     } catch (e) {
         console.log('Warning: Could not parse officialPublicationUrls.js');
     }
@@ -59,8 +55,10 @@ Object.entries(publicationsData).forEach(([year, publications]) => {
         totalPublications++;
         const pubNum = index + 1;
         
-        // Check for official URL
-        const hasOfficialUrl = officialUrls[pub.title] || 
+        // Check for official URL (case-insensitive match for override map)
+        const officialUrlMatch = officialUrls[pub.title] ||
+            Object.entries(officialUrls).find(([k]) => k.toLowerCase() === pub.title?.toLowerCase())?.[1];
+        const hasOfficialUrl = officialUrlMatch ||
                              (pub.url && !pub.url.endsWith('.pdf') && !pub.url.includes('/papers/'));
         
         // Check for PDF

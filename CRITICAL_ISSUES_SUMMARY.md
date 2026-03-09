@@ -1,36 +1,16 @@
 # Critical Issues Summary - Lab Website Publications
 
-**Date:** October 4, 2025
+**Date:** October 4, 2025 (updated March 2026)
 **Total Publications:** 126
 **Total Local PDFs:** 84
 
 ---
 
-## 🚨 CRITICAL ISSUE: officialPublicationUrls.js Contains Duplicate/Wrong URLs
+## ✅ RESOLVED: officialPublicationUrls.js Cleanup (March 2026)
 
-**File:** `/Users/tserre/Projects/research/lab_website/src/data/officialPublicationUrls.js`
+**File:** `src/data/officialPublicationUrls.js`
 
-### The Problem
-Six different 2016 publications are ALL mapped to the SAME Nature Communications article (ncomms13928):
-
-```javascript
-"2016_Mely_VR": "https://www.nature.com/articles/ncomms13928",
-"2016_Mely_CCNV": "https://www.nature.com/articles/ncomms13928",
-"2016_Pascarella_JNM-1": "https://www.nature.com/articles/ncomms13928",
-"2016_Cauchoix_NI": "https://www.nature.com/articles/ncomms13928",
-"serre2016": "https://www.nature.com/articles/ncomms13928",
-"75760312": "https://www.nature.com/articles/ncomms13928",
-```
-
-This is clearly incorrect. These are different papers that should link to different articles:
-- 2016_Mely_VR → Vision Research paper on boundary detection
-- 2016_Mely_CCNV → Computational and Cognitive Neuroscience chapter
-- 2016_Pascarella_JNM-1 → Journal of Neuroscience Methods paper
-- 2016_Cauchoix_NI → Neuroimage paper on visual categorization
-- serre2016 → Wiley review article
-- 75760312 → ECCV 2012 color descriptor paper
-
-**Action Required:** Remove or correct these entries immediately. They will cause the wrong URLs to appear on the website.
+The file has been cleaned up. All 60+ dead entries (PDF filenames used as keys, broken placeholder URLs) were removed. The file now contains only 11 entries that match actual publication titles, with valid DOIs and conference URLs. Lookup is case-insensitive to handle title variations.
 
 ---
 
@@ -166,11 +146,10 @@ All files located in: `/Users/tserre/Projects/research/lab_website/`
 3. Search for official journal/conference pages
 4. Update `url` field in `publications_by_year.json`
 
-### For Cleaning officialPublicationUrls.js:
-1. Review lines 39-52 (duplicate ncomms13928 entries)
-2. Either remove these entries or correct them with proper URLs
-3. Review other placeholder/incomplete URL entries
-4. Consider whether this file is still needed or if URLs should be in the main JSON
+### For Adding to officialPublicationUrls.js:
+1. Add entries only when the key matches a publication title exactly (from publications_by_year.json)
+2. Use valid DOIs or official conference/journal URLs
+3. Run `node scripts/check-publications.cjs` to verify
 
 ---
 

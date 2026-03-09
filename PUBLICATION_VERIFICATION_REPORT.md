@@ -182,32 +182,11 @@ These papers link to PDFs on the old serre-lab.clps.brown.edu server instead of 
 
 ---
 
-## Suspicious Entries in officialPublicationUrls.js
+## officialPublicationUrls.js — ✅ RESOLVED (March 2026)
 
-The following entries in the override file appear suspicious or potentially incorrect:
+**File:** `src/data/officialPublicationUrls.js`
 
-1. **Lines 39-46:** Multiple 2016 papers all mapped to the same Nature Communications URL (ncomms13928):
-   - "2016_Mely_VR"
-   - "2016_Mely_CCNV"
-   - "2016_Pascarella_JNM-1"
-   - "2016_Cauchoix_NI"
-   - "serre2016"
-   - "75760312"
-
-   This is clearly wrong - different papers shouldn't link to the same article.
-
-2. **Lines 54-67:** Placeholders with incomplete URLs (missing DOI/article IDs):
-   - "Cauchoix_etal_NIPS20122"
-   - "paper_cameraReady-2"
-   - "Serre-encyclopedia_revised"
-   - "2013_Tan_NIPS"
-   - "Leussis_Ank3_BiolPsych2012"
-   - etc.
-
-3. **Systematic Issues:**
-   - Many entries use PDF filenames instead of publication titles
-   - URLs contain placeholder text instead of actual DOIs
-   - Several entries reference MIT CSAIL technical reports with incomplete handles
+The file has been cleaned up. All 60+ dead entries (PDF filenames as keys, broken placeholder URLs) were removed. The file now contains only 11 entries that match actual publication titles, with valid DOIs and conference URLs. Lookup is case-insensitive.
 
 ---
 
@@ -215,7 +194,7 @@ The following entries in the override file appear suspicious or potentially inco
 
 ### High Priority
 1. **Fix arXiv URLs (15 papers):** Replace arXiv links with official conference/journal URLs for published papers
-2. **Fix officialPublicationUrls.js:** Remove or correct the suspicious duplicate/placeholder entries
+2. ~~**Fix officialPublicationUrls.js:**~~ ✅ Done (March 2026)
 3. **Add missing URLs (52 papers):** Particularly for high-impact journals and recent papers (2010-2022)
 
 ### Medium Priority
@@ -275,7 +254,7 @@ The following entries in the override file appear suspicious or potentially inco
 To fix the identified issues, you should:
 
 1. Create a spreadsheet or database to track the 15 papers that need arXiv→official URL updates
-2. Clean up or remove the officialPublicationUrls.js file's duplicate/placeholder entries
+2. ~~Clean up officialPublicationUrls.js~~ ✅ Done (March 2026)
 3. Systematically add missing official URLs for the 52 papers without any URL
 4. Obtain and add PDFs for the 47 papers missing them, prioritizing high-impact journals
 5. Consider downloading the 53 remote PDFs to local storage for long-term reliability

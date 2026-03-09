@@ -17,13 +17,13 @@ const officialUrlsPath = path.join(__dirname, '..', 'src', 'data', 'officialPubl
 const officialUrlsContent = fs.readFileSync(officialUrlsPath, 'utf-8');
 
 // Extract the mapping object from the JS file
-const mappingMatch = officialUrlsContent.match(/export const officialPublicationUrls = ({[\s\S]*?});/);
+const mappingMatch = officialUrlsContent.match(/export const officialPublicationUrls = (\{[\s\S]*?\});/);
 if (!mappingMatch) {
     console.error('Could not extract officialPublicationUrls mapping');
     process.exit(1);
 }
 
-const officialUrls = eval(`(${mappingMatch[1]})`);
+const officialUrls = eval('(' + mappingMatch[1] + ')');
 
 console.log('🔄 Updating publication data structure...\n');
 
@@ -37,8 +37,9 @@ Object.keys(publicationsData).forEach(year => {
     publicationsData[year].forEach((publication, index) => {
         const originalUrl = publication.url;
         
-        // Get official URL from mapping
-        const officialUrl = officialUrls[publication.title];
+        // Get official URL from mapping (case-insensitive)
+        const officialUrl = officialUrls[publication.title] ||
+            Object.entries(officialUrls).find(([k]) => k.toLowerCase() === publication.title?.toLowerCase())?.[1];
         
         // Determine PDF path
         let pdfPath = null;

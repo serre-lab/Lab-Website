@@ -148,7 +148,7 @@ export function Publications() {
                                                                 target="_blank"
                                                                 rel="noopener noreferrer"
                                                                 className="publication-link"
-                                                                title="Opens in new tab"
+                                                                aria-label={`${publication.title} (opens in new tab)`}
                                                             >
                                                                 {publication.title}
                                                             </Anchor>
