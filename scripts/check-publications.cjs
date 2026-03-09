@@ -55,7 +55,7 @@ Object.entries(publicationsData).forEach(([year, publications]) => {
         totalPublications++;
         const pubNum = index + 1;
         
-        // Check for official URL (case-insensitive match for override map)
+        // Check for official URL
         const officialUrlMatch = officialUrls[pub.title] ||
             Object.entries(officialUrls).find(([k]) => k.toLowerCase() === pub.title?.toLowerCase())?.[1];
         const hasOfficialUrl = officialUrlMatch ||

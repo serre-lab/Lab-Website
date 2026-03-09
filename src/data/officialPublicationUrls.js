@@ -1,6 +1,5 @@
 // Official publication URLs mapping
-// Maps publication titles to their official journal/conference/OpenReview URLs.
-// Only includes entries that match actual publication titles.
+// Maps publication titles to their official journal/conference/OpenReview URLs
 
 export const officialPublicationUrls = {
     // 2024/2025
@@ -26,7 +25,6 @@ export const officialPublicationUrls = {
     "A quantitative theory of immediate visual recognition": "https://www.sciencedirect.com/science/article/pii/S0079612306650058",
 };
 
-// Case-insensitive lookup (publication titles may differ in casing)
 const _titleToUrlLower = Object.fromEntries(
     Object.entries(officialPublicationUrls).map(([k, v]) => [k.toLowerCase(), v])
 );

@@ -37,7 +37,7 @@ Object.keys(publicationsData).forEach(year => {
     publicationsData[year].forEach((publication, index) => {
         const originalUrl = publication.url;
         
-        // Get official URL from mapping (case-insensitive)
+        // Get official URL from mapping
         const officialUrl = officialUrls[publication.title] ||
             Object.entries(officialUrls).find(([k]) => k.toLowerCase() === publication.title?.toLowerCase())?.[1];
         
