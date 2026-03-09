@@ -17,7 +17,7 @@ export const officialPublicationUrls = {
     "Learning sparse prototypes for crowd perception": "https://ieeexplore.ieee.org/document/10096000",
 
     // 2022
-    "The challenge of appearance-free object tracking with feedforward neural networks": "https://arxiv.org/abs/2208.11746",
+    "The challenge of appearance-free object tracking with feedforward neural networks": "https://arxiv.org/abs/2110.02772",
 
     // 2007
     "Robust object recognition with cortex-like mechanisms": "https://ieeexplore.ieee.org/document/4069258",

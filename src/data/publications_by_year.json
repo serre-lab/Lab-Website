@@ -164,7 +164,7 @@
       "pdfPath": "/papers/fixing-problems-deep-networks-2023.pdf"
     },
     {
-      "title": "Unlocking feature visualization for deep networks with MAgnitude Constrained Optimization",
+      "title": "Unlocking feature visualization for deep network with MAgnitude Constrained Optimization",
       "authors": "T. Fel, T. Boissin, V. Boutin, A. Picard, P. Novello, J. Colin, D. Linsley, T. Rousseau, R. Cadène, L. Gardes & T. Serre",
       "journal": "Neural Information Processing Systems",
       "url": "https://openreview.net/forum?id=J7VoDuzuKs",
@@ -450,7 +450,7 @@
       "pdfPath": "/papers/discriminating-sleep-exercise-fatigue-2020.pdf"
     },
     {
-      "title": "Differential involvement of EEG oscillatory components in sameness vs. spatial-relation visual reasoning tasks",
+      "title": "Differential involvement of EEG oscillatory components in sameness versus spatial-relation visual reasoning tasks",
       "authors": "A. Alamia, C. Luo, M. Ricci, J. Kim, T. Serre & R. VanRullen",
       "journal": "eNeuro",
       "url": "https://www.eneuro.org/content/early/2020/11/23/ENEURO.0267-20.2020",
@@ -612,7 +612,7 @@
       "pdfPath": "/papers/2016_Cauchoix_NI.pdf"
     },
     {
-      "title": "Source modelling of ElectroCorticoGraphy (ECoG) data: Analysis of stability and spatial filtering",
+      "title": "Source modeling of ElectroCorticoGraphy (ECoG) data: Stability analysis and spatial filtering",
       "authors": "A. Pascarella, C. Todaro, M. Clerc, T. Serre and M. Piana",
       "journal": "Journal of Neuroscience Methods",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0165027016000649",
@@ -645,14 +645,14 @@
       "title": "Explaining the timing of natural scene understanding with a computational model of perceptual categorization",
       "authors": "I. Sofer, S. Crouzet & T. Serre",
       "journal": "PLoS Computational Biology",
-      "url": "http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004456",
+      "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004456",
       "pdfPath": "/papers/explaining-timing-natural-scene-understanding-2015.pdf"
     },
     {
       "title": "Unsupervised invariance learning of transformation sequences in a model of object recognition yields selectivity for non-accidental properties",
       "authors": "S.M. Parker & T. Serre",
       "journal": "Frontiers in Computational Neuroscience",
-      "url": "http://journal.frontiersin.org/article/10.3389/fncom.2015.00115/full",
+      "url": "https://journal.frontiersin.org/article/10.3389/fncom.2015.00115/full",
       "pdfPath": "/papers/unsupervised-invariance-learning-2015.pdf"
     },
     {
@@ -668,7 +668,7 @@
       "title": "The neural dynamics of face detection in the wild revealed by MVPA",
       "authors": "M. Cauchoix†, G. Barragan-­Jason†, T. Serre‡ & E.J. Barbeau‡",
       "journal": "Journal of Neuroscience",
-      "url": "http://www.jneurosci.org/content/34/3/846.long",
+      "url": "https://www.jneurosci.org/content/34/3/846.long",
       "pdfPath": "/papers/neural-dynamics-face-detection-2014.pdf"
     },
     {
@@ -718,7 +718,7 @@
   ],
   "2012": [
     {
-      "title": "The ankyrin 3 (ANK3) bipolar disorder gene regulates mood-related behaviors that are modulated by lithium and stress",
+      "title": "The ANK3 bipolar disorder gene regulates psychiatric-related behaviors that are modulated by lithium and stress",
       "authors": "M. Leussis, E. Berry-Scott, M. Saito, H. Jhuang, G. Haan, O. Alkan, C. Luce, J. Madison, P. Sklar, T. Serre, D. Root & T. Petryshen",
       "journal": "Biological Psychiatry",
       "url": "https://www.sciencedirect.com/science/article/pii/S0006322312009389",
