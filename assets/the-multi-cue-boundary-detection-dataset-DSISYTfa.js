@@ -47,7 +47,7 @@ Please cite the following paper when using this dataset:
 
 Mély, D.A., Kim, J., McGill, M., Guo, Y., & Serre, T. (2016). A systematic comparison between visual cues for boundary detection. *Vision Research*, 120, 93-107.
 
-[PubMed](http://www.ncbi.nlm.nih.gov/pubmed/26748113)
+[Vision Research](https://www.sciencedirect.com/science/article/pii/S0042698915003685)
 
 ## License
 

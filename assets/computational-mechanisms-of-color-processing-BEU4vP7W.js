@@ -109,7 +109,7 @@ Sample code is available on the lab [github](https://github.com/serre-lab/color_
 
 ## Relevant publication
 
-[ECCV’12] Zhang, J., Barhomi, Y., Serre, T. A new biologically inspired color image descriptor. In: Proceedings of the IEEE Conference on European Conference on Computer Vision (ECCV), Florence, Italy, 2012. [pdf](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/09/proof-eccv2012-color.pdf) [slides](http://serre-lab.clps.brown.edu/wp-content/uploads/2012/10/eccv_poster_color_v2.pdf)
+[ECCV’12] Zhang, J., Barhomi, Y., Serre, T. A new biologically inspired color image descriptor. In: Proceedings of the IEEE Conference on European Conference on Computer Vision (ECCV), Florence, Italy, 2012. [pdf](/papers/proof-eccv2012-color.pdf) [slides](/papers/eccv_poster_color_v2.pdf)
 
 ## Additional references
 

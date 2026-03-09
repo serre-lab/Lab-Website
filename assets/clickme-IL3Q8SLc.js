@@ -1,6 +1,6 @@
 const o=`# ClickMe
 
-[**Play ClickMe Now and Win Cash Prizes! It’s a game that collects annotations on visual feature importance.**](http://clickme.clps.brown.edu)
+[**Play ClickMe Now and Win Cash Prizes! It’s a game that collects annotations on visual feature importance.**](https://clickme.clps.brown.edu)
 
 - [Links to original ClickMe datasets](https://connectomics.clps.brown.edu/tf_records/)
 - [Code for running GALA on TPUs](https://github.com/serre-lab/gala_tpu)
