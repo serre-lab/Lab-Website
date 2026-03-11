@@ -2,6 +2,9 @@
 // Maps publication titles to their official journal/conference/OpenReview URLs
 
 export const officialPublicationUrls = {
+    // 2026
+    "Perilesional neuromodulation replaces lost sensorimotor function in persons with spinal cord injury": "https://www.nature.com/articles/s41551-026-01627-5",
+
     // 2024/2025
     "Deceptive learning in histopathology": "https://onlinelibrary.wiley.com/doi/10.1111/his.15180",
     "Better artificial intelligence does not mean better models of biology": "https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(25)00349-3",
