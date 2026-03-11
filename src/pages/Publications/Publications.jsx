@@ -107,6 +107,8 @@ export function Publications() {
                             data={["All", ...Object.keys(publicationsData).sort((a, b) => {
                                 if (a === "Work in progress") return -1;
                                 if (b === "Work in progress") return 1;
+                                if (a === "In press") return -1;
+                                if (b === "In press") return 1;
                                 return parseInt(b) - parseInt(a);
                             })]}
                             value={selectedYear}
