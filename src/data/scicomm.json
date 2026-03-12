@@ -1,5 +1,11 @@
 [
   {
+    "title": "Study: Electrical stimulation can restore ability to move limbs, receive sensory feedback after spinal cord injury",
+    "link": "https://www.brown.edu/news/2026-03-11/spinal-cord-stimulation",
+    "blurb": "Brown researchers report results from a clinical trial in Nature Biomedical Engineering: electrical stimulation above and below the injury site restored both muscle control and sensory feedback in three participants with complete spinal cord injuries. Thomas Serre developed the machine learning algorithm that optimized stimulation patterns to match desired muscle activity. The work is part of the Intelligent Spine Interface collaboration with David Borton's lab.",
+    "image": "https://www.brown.edu/sites/default/files/styles/wide_lrg/public/2026-03/20240730_COMM_BortonCINNR048%20%281%29%20%281%29.jpg?h=ff4cb896&itok=itUwQuFN"
+  },
+  {
     "title": "AI foundation models may revolutionize neuroscience, Brown researchers say",
     "link": "https://www.browndailyherald.com/article/2026/01/ai-foundation-models-may-revolutionize-neuroscience",
     "blurb": "Two Brown researchers, Thomas Serre and Ellie Pavlick, predict that self-supervised learning will transform neuroscience. Their Neuron paper examines how deep-learning approaches will enable higher accuracy in neuroscience research, particularly in predicting human decision making. The article discusses digital twins and the importance of understanding AI mechanisms.",

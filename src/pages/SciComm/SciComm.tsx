@@ -102,7 +102,7 @@ export function SciComm() {
                             </Card.Section>
                         )}
                         <Group justify="space-between" mt="md" mb="xs">
-                            <Anchor href={item.link} target="_blank" rel="noopener noreferrer" title="Opens in new tab" style={{ textDecoration: "none" }}>
+                            <Anchor href={item.link} target="_blank" rel="noopener noreferrer" title="Opens in new tab" aria-label={`${item.title} (opens in new tab)`} style={{ textDecoration: "none" }}>
                                 <Title order={3}>{item.title}</Title>
                             </Anchor>
                         </Group>

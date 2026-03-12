@@ -291,8 +291,8 @@ src/
 
 ### Adding Media:
 1. Edit `src/data/scicomm.json`
-2. Use appropriate category
-3. YouTube URLs work best for video previews
+2. Use the image from the source article by default (extract og:image or hero image URL)
+3. Each entry: `title`, `link`, `blurb`, `image`
 
 > ⚠️ **Important**: Always validate your JSON syntax (check for commas, braces, quotes)
 
