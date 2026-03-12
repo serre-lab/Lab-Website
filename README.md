@@ -174,7 +174,8 @@ src/
 ---
 
 ## 📄 Editing Publications (Publications Page)
-- **File**: `src/data/publications_by_year.json`
+- **File**: `src/data/publications_by_year.json` (generated—do not edit by hand)
+- **Sync**: Publications come from the central repo. Run `python3 scripts/sync_from_central_publications.py` after updating the central `publications_structured.json`
 - **Structure**: Grouped by year with special categories
 - **Format**:
 ```json
