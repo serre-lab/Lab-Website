@@ -79,7 +79,7 @@ export default function Footer(props: FooterProps) {
                                 <FaBluesky size={20} aria-hidden="true" />
                             </a>
                             <a
-                                href="https://www.zotero.org/users/277107"
+                                href="https://www.zotero.org/tserre"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="footer-social-icon"

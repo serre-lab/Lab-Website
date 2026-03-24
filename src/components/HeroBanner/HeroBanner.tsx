@@ -75,7 +75,7 @@ export function HeroBanner({ title, subtitle, showSocialIcons = true, height, ba
                 <FaBluesky size={18} aria-hidden="true" />
               </a>
               <a
-                href="https://www.zotero.org/users/277107"
+                href="https://www.zotero.org/tserre"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Zotero (opens in new tab)"
