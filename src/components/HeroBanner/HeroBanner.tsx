@@ -2,6 +2,7 @@ import type { ReactNode, CSSProperties } from "react";
 import { Title, Text } from "@mantine/core";
 import { motion } from "motion/react";
 import { FaTwitter, FaGithub, FaBluesky } from "react-icons/fa6";
+import { SiZotero } from "react-icons/si";
 import "./HeroBanner.css";
 
 interface HeroBannerProps {
@@ -72,6 +73,16 @@ export function HeroBanner({ title, subtitle, showSocialIcons = true, height, ba
                 className="hero-banner-social-icon"
               >
                 <FaBluesky size={18} aria-hidden="true" />
+              </a>
+              <a
+                href="https://www.zotero.org/users/277107"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Zotero (opens in new tab)"
+                title="Opens in new tab"
+                className="hero-banner-social-icon"
+              >
+                <SiZotero size={18} aria-hidden="true" />
               </a>
             </nav>
           </div>

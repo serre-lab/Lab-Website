@@ -3,6 +3,7 @@ import "./Footer.css";
 
 import { FaTwitter, FaGithub, FaBluesky } from "react-icons/fa6";
 import { FaEnvelope } from "react-icons/fa";
+import { SiZotero } from "react-icons/si";
 
 interface FooterProps {
     links: {
@@ -67,15 +68,25 @@ export default function Footer(props: FooterProps) {
                             >
                                 <FaGithub size={20} aria-hidden="true" />
                             </a>
-                            <a 
-                                href="https://bsky.app/profile/thomasserre.bsky.social" 
-                                target="_blank" 
+                            <a
+                                href="https://bsky.app/profile/thomasserre.bsky.social"
+                                target="_blank"
                                 rel="noopener noreferrer"
                                 className="footer-social-icon"
                                 aria-label="Bluesky (opens in new tab)"
                                 title="Opens in new tab"
                             >
                                 <FaBluesky size={20} aria-hidden="true" />
+                            </a>
+                            <a
+                                href="https://www.zotero.org/users/277107"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="footer-social-icon"
+                                aria-label="Zotero (opens in new tab)"
+                                title="Opens in new tab"
+                            >
+                                <SiZotero size={20} aria-hidden="true" />
                             </a>
                         </nav>
                     </div>
