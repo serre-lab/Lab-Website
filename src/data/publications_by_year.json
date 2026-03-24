@@ -1,10 +1,10 @@
 {
   "Work in progress": [
     {
-      "title": "Local vs distributed representations: What is the right basis for interpretability?",
+      "title": "Choosing the right basis for interpretability: Psychophysical comparison between neuron-based and dictionary-based representations",
       "authors": "J. Colin, L. Goetschalckx, T. Fel, V. Boutin, J. Gopal, T. Serre‡ & N. Oliver‡",
       "journal": "arXiv",
-      "url": "https://arxiv.org/abs/2411.03993v1",
+      "url": "https://arxiv.org/abs/2411.03993v2",
       "pdfPath": "/papers/local-vs-distributed-representations-interpretability-2025.pdf"
     },
     {
