@@ -29,7 +29,8 @@ const shortenJournalName = (journal: string): string => {
     'Journal of Experimental Psychology': 'J Exp Psychol',
     'Cognitive Psychology': 'Cogn Psychol',
     'Memory & Cognition': 'Mem Cogn',
-    'Attention, Perception, & Psychophysics': 'Atten Percept Psychophys'
+    'Attention, Perception, & Psychophysics': 'Atten Percept Psychophys',
+    'Nature Biomedical Engineering': 'Nature BME'
   };
   
   return journalMap[journal] || journal;
