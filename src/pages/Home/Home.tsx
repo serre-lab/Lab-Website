@@ -410,13 +410,13 @@ export function Home() {
           </div>
 
           <div className="highlight-card">
-            <Text className="highlight-journal">{shortenJournalName("Histopathology")} (2024)</Text>
+            <Text className="highlight-journal">{shortenJournalName("Nature Biomedical Engineering")} (2026)</Text>
             <Title order={3} className="highlight-title">
-              <a href="https://onlinelibrary.wiley.com/doi/10.1111/his.15180" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
-                Deceptive learning in histopathology
+              <a href="https://www.nature.com/articles/s41551-026-01627-5" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
+                Perilesional neuromodulation replaces lost sensorimotor function in persons with spinal cord injury
               </a>
             </Title>
-            <Text className="highlight-authors">{abbreviateAuthors("S. Shahamatdar, D. Saeed-Vafa, D. Linsley, F. Khalil, K. Lovinger, L. Li, H. McLeod, S. Ramachandran, T. Serre")}</Text>
+            <Text className="highlight-authors">{abbreviateAuthors("J.S. Calvert, S.R. Parker, L.N. Govindarajan, R. Darie, E. Shaaya, R. Solinsky, L.M. Del Valle, P. Miranda, J. Jang, E. Tiwari, S. Syed, R.M. Villalobos, L.M. Aguiar, J.A. Taylor, H. Tang, S. McPherson, W. Xue, A.G. Carayannopoulos, A.A. Oyelese, Z.L. Gokaslan, A.K. Bansal, L.J. Resnik, T. Serre, J.S. Fridley & D.A. Borton")}</Text>
           </div>
         </div>
         <div style={{ textAlign: "center", marginTop: "1.5rem" }}>
