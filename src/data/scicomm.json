@@ -1,5 +1,11 @@
 [
   {
+    "title": "Do AI language models 'understand' the real world? On a basic level, they do, a new study finds",
+    "link": "https://www.brown.edu/news/2026-04-22/artificial-intelligence-understanding-real-world",
+    "blurb": "Brown researchers used mechanistic interpretability to probe whether language models distinguish commonplace, improbable, impossible, and nonsensical scenarios. Led by Ph.D. student Michael Lepori and co-authored by Thomas Serre and Ellie Pavlick, the work finds distinct internal patterns aligned with human judgments and will be presented at ICLR 2026.",
+    "image": "https://www.brown.edu/sites/default/files/styles/wide_lrg/public/2026-04/neuralnets.jpg?h=d0198ad1&itok=8fmmvBBy"
+  },
+  {
     "title": "Study: Electrical stimulation can restore ability to move limbs, receive sensory feedback after spinal cord injury",
     "link": "https://www.brown.edu/news/2026-03-11/spinal-cord-stimulation",
     "blurb": "Brown researchers report results from a clinical trial in Nature Biomedical Engineering: electrical stimulation above and below the injury site restored both muscle control and sensory feedback in three participants with complete spinal cord injuries. Thomas Serre developed the machine learning algorithm that optimized stimulation patterns to match desired muscle activity. The work is part of the Intelligent Spine Interface collaboration with David Borton's lab.",
