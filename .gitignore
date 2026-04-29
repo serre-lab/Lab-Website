@@ -37,3 +37,4 @@ link-update-report.json
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+.next
