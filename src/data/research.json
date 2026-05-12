@@ -19,6 +19,15 @@
             "description": "This project develops methods to quantify and improve alignment between deep neural networks and human visual processing. Our work reveals that current vision models process information fundamentally differently from humans. We adopt a developmental psychology approach to identify learning principles that shape human vision and incorporate these into AI training to create models that see the world as humans do. This research is crucial for building more robust AI systems and understanding brain mechanisms underlying human vision."
         },
         {
+            "title": "NSF AI Research Institute on Interaction for AI Assistants (ARIA)",
+            "agency": "NSF",
+            "grantNumber": "2433429 (Cooperative Agreement)",
+            "years": "2025 – 2030",
+            "role": "Investigator",
+            "amount": "$20,000,000",
+            "description": "This national AI research institute, led at Brown with partners across the United States, develops trustworthy, context-aware AI assistants grounded in human and machine cognition, with mental and behavioral health as a central high-stakes use case. The program integrates computer science, cognitive neuroscience, ethics, law, education, and participatory design to advance safe interaction, causal models of users and environments, and responsible deployment. Research priorities include trustworthy multimodal interaction, reasoning in humans and AI, alignment in subjective domains, and participatory design."
+        },
+        {
             "title": "Brain-inspired deep learning models of visual reasoning",
             "agency": "ONR",
             "grantNumber": "N00014-24-1-2026",
