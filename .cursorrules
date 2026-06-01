@@ -64,3 +64,10 @@ footer, since the <nav aria-label="..."> landmarks already convey structure.
 ## Testing
 - Run Lighthouse accessibility audit before each deploy
 - Test keyboard navigation (Tab, Shift+Tab, Enter, Escape)
+
+## Publications data
+
+- **Source of truth:** `~/Work/personal/cv/data/publications_structured.json` (not this repo’s JSON by hand).
+- **Style:** `~/Work/personal/cv/memory/procedures/publication-style.md` — sentence-case titles, author lines; never arXiv title case.
+- **Sync:** `python3 scripts/sync_from_central_publications.py` after central file edits.
+- **Home highlights:** `src/pages/Home/Home.tsx` cards are manual; update journal/year labels when featuring a paper.

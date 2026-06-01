@@ -850,13 +850,6 @@
   ],
   "2025": [
     {
-      "title": "Better artificial intelligence does not mean better models of biology",
-      "authors": "D. Linsley, P. Feng & T. Serre",
-      "journal": "Trends in Cognitive Sciences",
-      "url": "https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(25)00349-3",
-      "pdfPath": "/papers/better-ai-better-models-biology-2025.pdf"
-    },
-    {
       "title": "From prediction to understanding: Will AI foundation models transform brain science?",
       "authors": "T. Serre & E. Pavlick",
       "journal": "Neuron",
@@ -927,17 +920,24 @@
       "journal": "International Conference on Learning Representations",
       "url": "https://openreview.net/forum?id=Czul60ELOH&noteId=PBIgBC0DAW",
       "pdfPath": "/papers/is-this-just-fantasy-language-model-representations-2024.pdf"
+    },
+    {
+      "title": "Better artificial intelligence does not mean better models of biology",
+      "authors": "D. Linsley, P. Feng & T. Serre",
+      "journal": "Trends in Cognitive Sciences",
+      "url": "https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(25)00349-3",
+      "pdfPath": "/papers/better-ai-better-models-biology-2025.pdf"
     }
   ],
   "Work in progress": [
     {
-      "title": "Not Too Generative, Not Too Discriminative: The Human Alignment Sweet Spot",
-      "authors": "J. Chang, B. Le Lan, T. Serre & V. Boutin‡",
+      "title": "Not too generative, not too discriminative: The human alignment sweet spot",
+      "authors": "J. Chang, B. Le Lan, T. Serre‡ & V. Boutin‡",
       "journal": "arXiv",
       "url": "https://arxiv.org/abs/2605.23819"
     },
     {
-      "title": "Capability ≠ Interpretability: Human Interpretability of Vision Foundation Models",
+      "title": "Capability ≠ interpretability: Human interpretability of vision foundation models",
       "authors": "J. Colin, L. Goetschalckx, T. Serre‡ & N. Oliver‡",
       "journal": "arXiv",
       "url": "https://arxiv.org/abs/2605.20337"
