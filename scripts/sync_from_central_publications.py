@@ -152,7 +152,7 @@ def main():
     print("🔄 Syncing lab website publications from central file...\n")
     
     # Load central file
-    central_file = Path("/Users/tserre/Projects/personal/cv/data/publications_structured.json")
+    central_file = Path("/Users/tserre/Work/personal/cv/data/publications_structured.json")
     if not central_file.exists():
         print(f"❌ Error: Central file not found: {central_file}")
         return
