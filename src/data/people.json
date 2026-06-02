@@ -81,8 +81,9 @@
       "fullName": "Julien Colin",
       "title": "PhD student",
       "university": "ANITI",
-      "imagePath": "people/julien-colin.jpg",
-      "description": "Julien Colin is a first-year Ph.D. at ELLIS Alicante, co-supervised by Nuria Oliver and Thomas Serre. He received his Master's Degree in Cognitive Sciences: Natural and Artificial Cognition from Grenoble Institute of Technology (France). His research interests include topics related to Computer Vision, Machine Learning, and Computational Cognitive Science. His current research focuses on modeling the interpretability of deep learning models using human-centered approaches."
+      "imagePath": "people/julien-colin.JPG",
+      "description": "Julien Colin is a Ph.D. at ELLIS Alicante, co-supervised by Nuria Oliver and Thomas Serre. He studies what makes representations interpretable to humans, how aligning models with human perception reshapes their representations, and how we can leverage this to steer models toward more interpretable representations.",
+      "website": "https://julien-co.github.io/"
     },
     {
       "fullName": "Bastien Le Lan",
