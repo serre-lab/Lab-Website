@@ -81,7 +81,7 @@
       "fullName": "Julien Colin",
       "title": "PhD student",
       "university": "ANITI",
-      "imagePath": "people/julien-colin.JPG",
+      "imagePath": "people/julien-colin.jpg",
       "description": "Julien Colin is a Ph.D. at ELLIS Alicante, co-supervised by Nuria Oliver and Thomas Serre. He studies what makes representations interpretable to humans, how aligning models with human perception reshapes their representations, and how we can leverage this to steer models toward more interpretable representations.",
       "website": "https://julien-co.github.io/"
     },
