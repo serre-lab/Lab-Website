@@ -50,13 +50,6 @@
       "description": "Peisen Zhou is a Ph.D. student in Cognitive, Linguistic, and Psychological Sciences at Brown University. His research focuses on 3D perception in human and computer vision. His current research involves finding learning methods to train human-aligned deep learning models and building tasks to evaluate visual perception. He received his BA in Computational Biology and East Asian Studies from Colby College and his MSc in Computer Science from Brown University."
     },
     {
-      "fullName": "Xizheng Yu",
-      "title": "MSc student",
-      "university": "Brown",
-      "imagePath": "people/xizheng-yu.jpg",
-      "description": "Xizheng Yu is a Master's student at Brown University. His research interests include computer vision and machine learning, with a focus on developing computational approaches to understand visual intelligence."
-    },
-    {
       "fullName": "Tekin Gunasar",
       "title": "MSc student",
       "university": "Brown",
