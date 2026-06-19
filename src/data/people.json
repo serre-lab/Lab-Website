@@ -12,49 +12,49 @@
       "title": "PhD student",
       "university": "Brown",
       "imagePath": "people/alekh-ashok.jpg",
-      "description": "Alekh Ashok is a PhD student at Brown University working at the intersection of computer vision, neuroscience, and cognitive science. His research focuses on building biologically-inspired artificial vision models, developing training algorithms, and collecting neural data (ECoG). He is particularly interested in recurrent neural network models for vision. Prior to his PhD, he spent two years as a researcher at Brown and worked as a software engineer at Walmart's R&D division. He received his Bachelor of Engineering with a focus on electrical and computer science, where he worked on machine learning-based image compression. Personal website: https://alekhka.github.io/"
+      "description": "Alekh Ashok is a PhD student at Brown University working at the intersection of computer vision, neuroscience, and cognitive science. His research focuses on building biologically-inspired artificial vision models, developing training algorithms, and collecting neural data (ECoG). He is particularly interested in recurrent neural network models for vision. Prior to his PhD, he spent two years as a researcher at Brown and worked as a software engineer at Walmart's R&D division. He received his Bachelor of Engineering with a focus on electrical and computer science, where he worked on machine learning-based image compression. Website: https://alekhka.github.io/"
     },
     {
       "fullName": "Akash Nagaraj",
       "title": "PhD student",
       "university": "Brown",
       "imagePath": "people/akash-nagaraj.jpg",
-      "description": "Akash Nagaraj is a PhD student in Computer Science at Brown University. His research focuses on (i) data-driven AI models that learn generalizable representations, (ii) computer vision models with decisions and objectives grounded in human semantics, and (iii) deploying AI models in real-world environments. He received his MSc in Computer Science from Brown University. www.akashnagaraj.me"
+      "description": "Akash Nagaraj is a PhD student in Computer Science at Brown University. His research focuses on (i) data-driven AI models that learn generalizable representations, (ii) computer vision models with decisions and objectives grounded in human semantics, and (iii) deploying AI models in real-world environments. He received his MSc in Computer Science from Brown University. Website: https://akashnagaraj.me"
     },
     {
       "fullName": "Sixuan Chen",
       "title": "PhD student",
       "university": "Brown",
       "imagePath": "people/sixuan-chen.jpg",
-      "description": "Sixuan Chen is a PhD student in Cognitive, Linguistic, and Psychological Sciences. Her current research centers on understanding the mechanisms of mental simulation."
+      "description": "Sixuan Chen is a PhD student in Cognitive and Psychological Sciences at Brown University. Her research investigates the mechanisms of mental simulation—how the visual system internally simulates the movement and dynamics of objects. Drawing on intracranial (SEEG) recordings together with behavioral and computational methods, she studies the neural evidence for visual simulation in the human brain."
     },
     {
       "fullName": "Yu-Ang Cheng",
       "title": "PhD student",
       "university": "Brown",
       "imagePath": "people/yu-ang-cheng.jpg",
-      "description": "Yu-Ang is a graduate student in Cognitive Science PhD program at the Department of Cognitive, Linguistic & Psychological Sciences (CLPS). He earned his BS in Psychology from Peking University. Currently, he is focused on building computational models of the vision system to explain the psychophysical, imaging, and neurophysiological findings."
+      "description": "Yu-Ang is a graduate student in Cognitive Science PhD program at the Department of Cognitive and Psychological Sciences (CoPsy). He earned his BS in Psychology from Peking University. Currently, he is focused on building computational models of the vision system to explain the psychophysical, imaging, and neurophysiological findings."
     },
     {
       "fullName": "Michael Lepori",
       "title": "PhD student",
       "university": "Brown",
       "imagePath": "people/michael-lepori.jpg",
-      "description": "Michael Lepori is a Ph.D. student in Computer Science at Brown University. He received his BS in Physics and Computer Science from Johns Hopkins University. He is broadly interested in the intersection of cognitive science and machine learning, and his current research seeks to characterize the kinds of algorithms neural networks implement when solving compositional tasks."
+      "description": "Michael Lepori is a PhD student in Computer Science at Brown University. He received his BS in Physics and Computer Science from Johns Hopkins University. He is broadly interested in the intersection of cognitive science and machine learning, and his current research seeks to characterize the kinds of algorithms neural networks implement when solving compositional tasks. Website: https://lepori.xyz/"
     },
     {
       "fullName": "Peisen Zhou",
       "title": "PhD student",
       "university": "Brown",
       "imagePath": "people/peisen-zhou.jpg",
-      "description": "Peisen Zhou is a Ph.D. student in Cognitive, Linguistic, and Psychological Sciences at Brown University. His research focuses on 3D perception in human and computer vision. His current research involves finding learning methods to train human-aligned deep learning models and building tasks to evaluate visual perception. He received his BA in Computational Biology and East Asian Studies from Colby College and his MSc in Computer Science from Brown University."
+      "description": "Peisen Zhou is a PhD student in Cognitive and Psychological Sciences at Brown University. His research focuses on 3D perception in human and computer vision. His current research involves finding learning methods to train human-aligned deep learning models and building tasks to evaluate visual perception. He received his BA in Computational Biology and East Asian Studies from Colby College and his MSc in Computer Science from Brown University."
     },
     {
       "fullName": "Tekin Gunasar",
       "title": "MSc student",
       "university": "Brown",
       "imagePath": "people/tekin-gunaras.jpg",
-      "description": "Tekin Gunasar is a Master's student in Computer Science at Brown University."
+      "description": "Tekin Gunasar is a Master's student in Computer Science at Brown University. His work focuses on brain–computer interfaces and on characterizing cognitive structure using explainable and multimodal models."
     },
     {
       "fullName": "Christopher José Cueva",
@@ -68,22 +68,21 @@
       "title": "Assistant Professor of Research",
       "university": "Brown",
       "imagePath": "people/drew-linsley.jpg",
-      "description": "Drew Linsley is an Assistant Professor of Research in the CLPS department. He builds computational models of the visual system that serve the dual purpose of (1) explaining biological function and (2) extending artificial vision."
+      "description": "Drew Linsley is an Assistant Professor of Research in the Cognitive and Psychological Sciences (CoPsy) department at Brown University. He develops AI systems inspired by biological vision and uses modern AI to understand the brain, working at the intersection of computer vision and computational neuroscience. His research spans recurrent neural networks for visual reasoning, object tracking and perceptual grouping, and human–AI alignment—including the ClickMe dataset of human attention maps and the Harmonization training method for building more human-aligned deep networks. A complementary line of work applies deep learning to neuroscience and medicine, from neural circuit reconstruction to cell-death detection for ALS/FTD research. He completed his postdoc with Thomas Serre at Brown, his PhD at Boston College, and his BA at Hamilton College. Website: https://sites.brown.edu/drewlinsley/"
     },
     {
       "fullName": "Jorge Chang",
       "title": "PhD student",
       "university": "ANITI",
       "imagePath": "people/jorge-chang.jpg",
-      "description": "Jorge Chang is a PhD student at ANITI who will begin his doctoral studies in January 2026. He recently completed his Master of Science degree at Brown University, where he conducted research in the Serre Lab, gaining experience in computational approaches to understanding visual perception and neural mechanisms. His work focuses on bridging neuroscience and artificial intelligence to develop better models of biological vision."
+      "description": "Jorge Chang is a PhD student at ANITI, where he began his doctoral studies in January 2026. He completed his Master of Science degree at Brown University, where he conducted research in the Serre Lab, gaining experience in computational approaches to understanding visual perception and neural mechanisms. His work focuses on bridging neuroscience and artificial intelligence to develop better models of biological vision."
     },
     {
       "fullName": "Julien Colin",
       "title": "PhD student",
       "university": "ANITI",
       "imagePath": "people/julien-colin.jpg",
-      "description": "Julien Colin is a Ph.D. at ELLIS Alicante, co-supervised by Nuria Oliver and Thomas Serre. He studies what makes representations interpretable to humans, how aligning models with human perception reshapes their representations, and how we can leverage this to steer models toward more interpretable representations.",
-      "website": "https://julien-co.github.io/"
+      "description": "Julien Colin is a PhD student at ELLIS Alicante, co-supervised by Nuria Oliver and Thomas Serre. He studies what makes representations interpretable to humans, how aligning models with human perception reshapes their representations, and how we can leverage this to steer models toward more interpretable representations. Website: https://julien-co.github.io/"
     },
     {
       "fullName": "Bastien Le Lan",
@@ -93,11 +92,18 @@
       "description": "Bastien Le Lan is a PhD student at the University of Toulouse and a member of the ELLIS program. He holds a Master's degree in Data Science and Computational Neuroscience from EPFL. His research interests lie at the intersection of machine learning, deep learning, and neuroscience. Currently, his work focuses on leveraging energy-based models to simulate mental processes and traditional psychophysical experiments."
     },
     {
+      "fullName": "Grégoire Dhimoïla",
+      "title": "PhD student",
+      "university": "ANITI",
+      "imagePath": "people/gregoire-dhimoila.jpg",
+      "description": "Grégoire Dhimoïla is a PhD student at ANITI, beginning his doctoral studies in September 2026. He joined the Serre Lab from the École Normale Supérieure Paris-Saclay, following research internships with the DEEL team in Toulouse and in the Serre Lab at Brown. His earlier work focused on the interpretability of deep networks, including sparse autoencoders and the geometry of vision–language model representations (ICLR 2026). His doctoral research develops brain-inspired models of vision, with a focus on recurrent and state space models (SSMs) that capture the spatiotemporal dynamics of cortical processing for visual reasoning and video understanding."
+    },
+    {
       "fullName": "Victor Boutin",
       "title": "Researcher at CNRS",
       "university": "ANITI",
       "imagePath": "people/victor-boutin.jpg",
-      "description": "Victor Boutin is a CNRS researcher working at the intersection of computational neuroscience and AI. He holds a Ph.D. from Aix-Marseille University (2020) and an MSc from École Centrale (2011). His research investigates how the visual cortex learns to generalize from limited data. He combines theoretical modeling, machine learning, and cognitive experiments. His current focus is on building biologically inspired models of human-like generalization."
+      "description": "Victor Boutin is a CNRS researcher working at the intersection of computational neuroscience and AI. He holds a Ph.D. from Aix-Marseille University (2020) and an MSc from École Centrale (2011). His research investigates how the visual cortex learns to generalize from limited data. He combines theoretical modeling, machine learning, and cognitive experiments. His current focus is on building biologically inspired models of human-like generalization. Website: https://victorboutin.github.io/"
     }
   ]
 }
