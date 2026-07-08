@@ -1,6 +1,13 @@
 {
   "Work in progress": [
     {
+      "title": "Structuring sparsity: Block-sparse featurizers capture visual concept manifolds",
+      "authors": "T. Fel, M. Kowal, M. Jacobs, D. Hazra, U. Bhalla, L. Sharkey, L. Bushnaq, S. Grant, T. Haklay, T. Icard, C. Rager, M. Pearce, D. Wurgaft, A. Swann, F. Doshi, S. Boppana, C. Tigges, N. Cammarata, T. Serre, V. Shyam, O. Lewis, T. McGrath, J. Merullo, E.S. Lubana & A. Geiger",
+      "journal": "arXiv",
+      "url": "https://arxiv.org/abs/2606.25234",
+      "pdfPath": ""
+    },
+    {
       "title": "A unifying framework for concept-based representational similarity",
       "authors": "G. Dhimoïla, V. Boutin, A.M. Picard, T. Fel & T. Serre",
       "journal": "arXiv",
