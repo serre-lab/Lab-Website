@@ -5,6 +5,8 @@ Preserves existing PDF paths from the lab website file
 """
 
 import json
+import subprocess
+import sys
 from pathlib import Path
 
 
@@ -195,10 +197,29 @@ def main():
             print(f"    {year}: {year_counts[str(year)]} publications")
     
     print(f"\n✅ Lab website publications synced successfully!")
+
+    # Automatically fetch local PDFs for any new publications that expose a
+    # downloadable source (arXiv / OpenReview). This keeps public/papers/ in
+    # step with the metadata so we always retain local copies — see the
+    # 2026-07 audit, when metadata sync had drifted ahead of the PDF archive.
+    fetch_missing_pdfs()
+
     print(f"\nNext steps:")
     print(f"  1. Review the updated file: {lab_file}")
     print(f"  2. Test the publications page on the lab website")
     print(f"  3. If the website is deployed, rebuild and redeploy")
+
+
+def fetch_missing_pdfs():
+    """Run download_publication_pdfs.py so new pubs get a local PDF."""
+    downloader = Path(__file__).parent / "download_publication_pdfs.py"
+    if not downloader.exists():
+        return
+    print("\n🔽 Fetching PDFs for publications missing a local copy...")
+    try:
+        subprocess.run([sys.executable, str(downloader)], check=False)
+    except Exception as e:  # pragma: no cover - best-effort convenience step
+        print(f"  ⚠️  PDF download step failed (non-fatal): {e}")
 
 
 if __name__ == "__main__":

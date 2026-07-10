@@ -41,6 +41,23 @@ def get_pdf_url(article_url: str) -> str | None:
     return None
 
 
+def derive_year(section: str, pub: dict, url: str) -> str:
+    """Best-effort publication year for the filename.
+
+    Sections like "Work in progress" / "In press" are not years, so fall back to
+    the pub's own ``year`` field, then to the year encoded in an arXiv id
+    (YYMM.xxxxx -> 20YY), and finally to "preprint".
+    """
+    if section.isdigit():
+        return section
+    if str(pub.get("year", "")).strip().isdigit():
+        return str(pub["year"]).strip()
+    m = re.search(r"arxiv\.org/(?:abs|pdf)/(\d\d)(\d\d)\.", url, re.I)
+    if m:
+        return "20" + m.group(1)
+    return "preprint"
+
+
 def download_pdf(url: str, dest: Path) -> bool:
     """Download URL to dest. Returns True on success."""
     try:
@@ -89,7 +106,7 @@ def main():
             if not pdf_url:
                 continue
             title = pub.get("title", "")
-            year = section if section.isdigit() else "unknown"
+            year = derive_year(section, pub, url)
             base_name = slugify(title) + "-" + str(year) + ".pdf"
             dest = papers_dir / base_name
             pdf_path_value = "/papers/" + base_name
