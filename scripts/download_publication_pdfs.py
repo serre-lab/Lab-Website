@@ -1,4 +1,4 @@
- #!/usr/bin/env python3
+#!/usr/bin/env python3
 """
 Download PDFs for publications that have a known public PDF URL.
 
