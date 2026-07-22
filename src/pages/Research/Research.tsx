@@ -75,7 +75,7 @@ export function Research() {
               rel="noopener noreferrer"
               title="Opens in new tab" className="research-link">perspective on moving from prediction to understanding</Anchor> in brain science.
           </Text>
-          <div className="funding-badge">Funded by ANR-3IA (ANR-19-PI3A-0004), the NSF AI Research Institute on Interaction for AI Assistants (ARIA; NSF Cooperative Agreement No. 2433429), and NIH/NIMH (R01 MH140004)</div>
+          <div className="funding-badge">Funded by ANR-3IA (ANR-19-PI3A-0004), the NSF AI Research Institute on Interaction for AI Assistants (ARIA; NSF Cooperative Agreement No. 2433429), and NIH/NIMH (R01 MH140004 and R01 MH143695)</div>
         </div>
 
         {/* Grants Section */}

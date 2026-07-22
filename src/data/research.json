@@ -23,8 +23,8 @@
             "agency": "NSF",
             "grantNumber": "2433429 (Cooperative Agreement)",
             "years": "2025 – 2030",
-            "role": "Investigator",
-            "amount": "$20,000,000",
+            "role": "Senior Personnel (Institute PI: Pavlick)",
+            "amount": "$20,000,000 (institute total)",
             "description": "This national AI research institute, led at Brown with partners across the United States, develops trustworthy, context-aware AI assistants grounded in human and machine cognition, with mental and behavioral health as a central high-stakes use case. The program integrates computer science, cognitive neuroscience, ethics, law, education, and participatory design to advance safe interaction, causal models of users and environments, and responsible deployment. Research priorities include trustworthy multimodal interaction, reasoning in humans and AI, alignment in subjective domains, and participatory design."
         },
         {
@@ -67,9 +67,17 @@
             "title": "Enhancing suicide risk detection through computer vision",
             "agency": "NIH/NIMH",
             "grantNumber": "R01 MH140004",
-            "years": "2025 – 2030",
+            "years": "2026 – 2030",
             "role": "co-I (PI: Burke)",
             "description": "This project applies computer vision and machine learning to improve the detection of suicide risk. Building on prior work, we develop algorithms that analyze behavioral cues to identify signals associated with elevated risk, with the goal of augmenting clinical assessment and supporting timely intervention by mental health professionals."
+        },
+        {
+            "title": "A mechanistic analysis of the transition from nonsuicidal to suicidal self-injury in adolescents",
+            "agency": "NIH/NIMH",
+            "grantNumber": "R01 MH143695",
+            "years": "2026 – 2031",
+            "role": "co-I (MPIs: Ammerman/Burke)",
+            "description": "This project investigates the mechanistic transition from nonsuicidal self-injury to suicidal self-injury in adolescents. Combining computational modeling with clinical assessment, the work aims to identify behavioral and cognitive markers that underlie escalation of self-injurious behavior, informing earlier and more targeted intervention."
         }
     ],
     "trainingGrants": [
