@@ -67,13 +67,15 @@
     flex-grow: 1;
 }
 
-/* WCAG 2.1 AA: Ensure Continue reading button has sufficient contrast */
+/* WCAG 2.1 AA: Ensure Continue reading button has sufficient contrast.
+   --color-primary (#2f80d3) is only 4.07:1 on white; use the darker shade
+   (#1f5fa2 ≈ 6:1) so white button text meets the 4.5:1 threshold. */
 .media-card .mantine-Button-root[data-variant="filled"] {
-    background-color: var(--color-primary) !important;
+    background-color: var(--color-primary-dark) !important;
     color: white !important;
 }
 .media-card .mantine-Button-root[data-variant="filled"]:hover {
-    background-color: var(--color-primary-dark) !important;
+    background-color: #17497d !important;
     color: white !important;
 }
 

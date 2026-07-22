@@ -29,6 +29,7 @@
     "react-router-dom": "^6.30.4"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.12.1",
     "@eslint/js": "^9.9.0",
     "@playwright/test": "^1.57.0",
     "@types/node": "^22.10.1",
@@ -46,6 +47,6 @@
     "postcss-simple-vars": "^7.0.1",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
-    "vite": "^7.3.5"
+    "vite": "^7.3.6"
   }
 }

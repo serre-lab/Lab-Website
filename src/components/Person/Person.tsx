@@ -42,6 +42,16 @@ export default function Person({ fullName, title, university, imagePath, descrip
                 className="person-card"
                 onClick={() => setOpened(true)}
                 withBorder
+                role="button"
+                tabIndex={0}
+                aria-haspopup="dialog"
+                aria-label={`View bio for ${fullName}`}
+                onKeyDown={(e) => {
+                    if (e.key === "Enter" || e.key === " ") {
+                        e.preventDefault();
+                        setOpened(true);
+                    }
+                }}
             >
                 {imagePath && (
                     <Card.Section>

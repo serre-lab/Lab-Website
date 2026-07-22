@@ -56,6 +56,7 @@ export function SciComm() {
                     </div>
                 </div>
                 <div className="results-section">
+                <Title order={2} className="section-title">Media Coverage</Title>
                 <div className="media-grid">
                 {filteredData.map((item, idx) => (
                     <Card
@@ -70,7 +71,6 @@ export function SciComm() {
                             flexDirection: "column",
                             minHeight: 430,
                             transition: "transform 0.18s, box-shadow 0.18s",
-                            cursor: "pointer",
                         }}
                         onMouseEnter={e => {
                             (e.currentTarget as HTMLDivElement).style.transform = "translateY(-6px) scale(1.025)";
@@ -79,15 +79,6 @@ export function SciComm() {
                         onMouseLeave={e => {
                             (e.currentTarget as HTMLDivElement).style.transform = "";
                             (e.currentTarget as HTMLDivElement).style.boxShadow = "";
-                        }}
-                        onClick={() => window.open(item.link, "_blank", "noopener,noreferrer")}
-                        tabIndex={0}
-                        role="button"
-                        aria-label={`Open news: ${item.title}`}
-                        onKeyDown={e => {
-                            if (e.key === "Enter" || e.key === " ") {
-                                window.open(item.link, "_blank", "noopener,noreferrer");
-                            }
                         }}
                     >
                         {item.image && (
@@ -115,12 +106,12 @@ export function SciComm() {
                             target="_blank"
                             rel="noopener noreferrer"
                             title="Opens in new tab"
+                            aria-label={`Continue reading: ${item.title} (opens in new tab)`}
                             variant="filled"
-                            color="blue"
+                            color="blue.8"
                             fullWidth
                             mt="md"
                             style={{ marginTop: "auto" }}
-                            onClick={e => e.stopPropagation()}
                         >
                             Continue reading
                         </Button>

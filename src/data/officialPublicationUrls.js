@@ -25,7 +25,7 @@ export const officialPublicationUrls = {
     // 2007
     "Robust object recognition with cortex-like mechanisms": "https://ieeexplore.ieee.org/document/4069258",
     "A feedforward architecture accounts for rapid categorization": "https://www.pnas.org/doi/10.1073/pnas.0700622104",
-    "A quantitative theory of immediate visual recognition": "https://www.sciencedirect.com/science/article/pii/S0079612306650058",
+    "A quantitative theory of immediate visual recognition": "https://www.sciencedirect.com/science/chapter/bookseries/abs/pii/S0079612306650048",
 };
 
 const _titleToUrlLower = Object.fromEntries(

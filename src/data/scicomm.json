@@ -61,7 +61,7 @@
   },
   {
     "title": "Finding the art in artificial intelligence",
-    "link": "https://www.brown.edu/carney/news/2019/05/20/finding-art-artificial-intelligence",
+    "link": "https://carney.brown.edu/news/2019-05-20/finding-artificial-art",
     "blurb": "When design and neural networks mix the results are both practical and innovative.",
     "image": "/images/scicomm/RISD_Brown.jpg"
   },
@@ -73,7 +73,7 @@
   },
   {
     "title": "Carney Institute settles in above Brown bookstore",
-    "link": "https://www.browndailyherald.com/2019/04/10/carney-institute-settles-brown-bookstore/",
+    "link": "https://www.browndailyherald.com/article/2019/04/carney-institute-settles-in-above-brown-bookstore",
     "blurb": "The Carney Institute for Brain Science moved into its new home at 164 Angell St. above the University's bookstore, following a $100 million donation from Robert Carney '61 and Nancy Carney. The new space includes offices, conference rooms and improved collaborative spaces for interdisciplinary brain science research.",
     "image": "https://snworksceo.imgix.net/bdh/2fe935db-affb-4e80-9f71-cf402e2e62ce.sized-1000x1000.jpg?w=1000"
   },
@@ -85,31 +85,31 @@
   },
   {
     "title": "Brown researchers teach computers to see optical illusions",
-    "link": "https://news.brown.edu/articles/2018/09/illusions",
+    "link": "https://www.brown.edu/news/2018-09-21/illusions",
     "blurb": "By making a neural-network computer model that can be fooled by optical illusions like humans, the researchers advanced knowledge of the human visual system and may help improve artificial vision.",
     "image": "/images/scicomm/Illusions.jpg"
   },
   {
     "title": "Focus on early stage of illness may be key to treating ALS, study suggests",
-    "link": "https://news.brown.edu/articles/2018/03/als",
+    "link": "https://www.brown.edu/news/2018-03-19/als",
     "blurb": "Many inhibitory neurons were lost early in the development of ALS, new research shows, which is in sharp contrast to other degenerative diseases.",
     "image": "/images/scicomm/als.jpg"
   },
   {
     "title": "Research identifies key weakness in modern computer vision systems",
-    "link": "https://news.brown.edu/articles/2018/07/same-different",
+    "link": "https://www.brown.edu/news/2018-07-30/same-different",
     "blurb": "In a finding that could point the way toward better computer vision systems, Brown University researchers show why computers are so bad at seeing when one thing is not like another.",
     "image": "/images/scicomm/samedifferent.jpg"
   },
   {
     "title": "University conference explores future of artificial intelligence",
-    "link": "http://www.browndailyherald.com/2018/01/26/u-conference-explores-future-artificial-intelligence/",
+    "link": "https://www.browndailyherald.com/article/2018/01/u-conference-explores-future-of-artificial-intelligence",
     "blurb": "Interdisciplinary workshop brings together professors, students from diverse academic fields",
     "image": "/images/scicomm/AI-conference.jpg"
   },
   {
     "title": "Researchers gather at Brown to discuss next-generation artificial intelligence",
-    "link": "https://news.brown.edu/articles/2018/01/deeplearning",
+    "link": "https://www.brown.edu/news/2018-01-17/deeplearning",
     "blurb": "Technology known as deep learning has fueled an AI revolution, but a workshop series kicking off at Brown this week will consider where the field might go from here. Article by Kevin Stacey.",
     "image": "/images/scicomm/deeplearning.jpg"
   },
@@ -127,31 +127,31 @@
   },
   {
     "title": "Linking two labs a learning opportunity for Ph.D. student",
-    "link": "https://news.brown.edu/articles/2016/01/alsbar",
+    "link": "https://www.brown.edu/news/2016-01-25/alsbar",
     "blurb": "Aaron Held's research merges and draws on the expertise of two of the labs in Brown's broad effort to combat ALS. That role has given him several opportunities to learn novel skills and new science during graduate school. Article by David Orenstein.",
     "image": "/images/scicomm/alsbar.jpg"
   },
   {
     "title": "A computer with a great eye is about to transform botany",
-    "link": "http://www.wired.com/2016/03/computer-great-eye-transform-botany/?mbid=social_fb",
+    "link": "https://www.wired.com/2016/03/computer-great-eye-transform-botany/",
     "blurb": "Article by Margaret Rhodes",
     "image": "/images/scicomm/wired.png"
   },
   {
     "title": "Meeting of the minds leads to brain science technology venture",
-    "link": "https://news.brown.edu/articles/2016/07/observation",
+    "link": "https://www.brown.edu/news/2016-07-11/observation",
     "blurb": "Article by David Orenstein.",
     "image": "/images/scicomm/neurocurious.jpg"
   },
   {
     "title": "Computer vision can help classify leaves",
-    "link": "https://news.brown.edu/articles/2016/03/leaves",
+    "link": "https://www.brown.edu/news/2016-03-07/leaves",
     "blurb": "So complex are patterns and variations in the vein structures of leaves that botanists struggle to take advantage of them when trying to classify a specimen within the plant kingdom. A new study shows that computer vision technology can provide automated assistance by 'learning' how to use venation to assign leaves to their proper family and order. Article by David Orenstein.",
     "image": "/images/scicomm/leaves.jpg"
   },
   {
     "title": "In analyzing a scene, we make the easiest judgments first",
-    "link": "https://news.brown.edu/articles/2015/09/scene",
+    "link": "https://archive2.news.brown.edu/2007-2015/articles/2015/09/scene.html",
     "blurb": "Article by David Orenstein.",
     "image": "/images/scicomm/scene.jpg"
   },
@@ -175,7 +175,7 @@
   },
   {
     "title": "Computer vision inspired by the human brain",
-    "link": "http://www.scientificamerican.com/article.cfm?id=visionary-research",
+    "link": "https://www.scientificamerican.com/article/visionary-research/",
     "blurb": "Article by Pam Frost Gorder",
     "image": "/images/scicomm/computing_now.png"
   },
@@ -204,20 +204,20 @@
     "image": "https://s3.amazonaws.com/files.technologyreview.com/p/pub/legacy/0706brainb2.jpg"
   },
   {
-    "title": "Compositionally in Neural Networks",
-    "link": "https://www.brown.edu/carney/spotlights/michael-lepori",
+    "title": "Compositionality in Neural Networks",
+    "link": "https://carney.brown.edu/news/2024-01-08/michael-lepori",
     "blurb": "PhD student Michael Lepori discusses new approaches to studying compositionality in neural network models in a recent Carney Community Spotlight.",
     "image": "/images/scicomm/light_background_serre_cropped.jpeg"
   },
   {
     "title": "Reducing Myc gene activity extends healthy lifespan in mice",
-    "link": "https://news.brown.edu/articles/2015/01/myc",
+    "link": "https://archive2.news.brown.edu/2007-2015/articles/2015/01/myc.html",
     "blurb": "Mice with one rather than the normal two copies of the gene Myc (also found in humans) lived 15 percent longer and had considerably healthier lives than normal mice, according to a new Brown University-led study in Cell. Article by David Orenstein.",
     "image": "/images/scicomm/myc.jpg"
   },
   {
     "title": "Computer based video in behavioral studies",
-    "link": "http://news.brown.edu/pressreleases/2010/09/mice",
+    "link": "https://archive2.news.brown.edu/2007-2015/articles/2010/09/mice.html",
     "blurb": "Computer-based video analysis boosts data gathering in behavioral studies. Article by David Orenstein",
     "image": "https://archive2.news.brown.edu/2007-2015/sites/default/files/styles/horizontal/public/article_images/Mice13f3c.jpg?itok=FyFGqzQI"
   }
