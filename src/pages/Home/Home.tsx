@@ -459,7 +459,7 @@ export function Home() {
         </motion.div>
         <motion.div variants={fadeUp}>
           <Text>
-            Our work is currently supported by ONR (N00014-24-1-2026 and REPRISM MURI N00014-24-1-2603), NSF (IIS-2402875), the NSF AI Research Institute on Interaction for AI Assistants (ARIA), supported by the U.S. National Science Foundation (NSF) under Cooperative Agreement No. 2433429, and the ANR-3IA Artificial and Natural Intelligence Toulouse Institute (ANR-19-PI3A-0004).
+            Our work is currently supported by ONR (N00014-24-1-2026 and REPRISM MURI N00014-24-1-2603), NSF (IIS-2402875), the NSF AI Research Institute on Interaction for AI Assistants (ARIA), supported by the U.S. National Science Foundation (NSF) under Cooperative Agreement 2433429, and the ANR-3IA Artificial and Natural Intelligence Toulouse Institute (ANR-19-PI3A-0004).
             <br /><br />
             Additional support is provided by the Carney Institute for Brain Science and the Center for Computation and Visualization (via NIH S10OD036341). We gratefully acknowledge Cloud TPU hardware resources made available by Google through the TensorFlow Research Cloud (TFRC) program.
           </Text>
