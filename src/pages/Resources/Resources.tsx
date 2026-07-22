@@ -15,6 +15,7 @@ const getResourceDescription = (title: string, url: string): string => {
     const titleLower = title.toLowerCase();
     
     // Dataset descriptions
+    if (titleLower.includes('stimulus set')) return "1,200 natural images (animal vs. non-animal) from the rapid categorization task in Serre, Oliva & Poggio (PNAS 2007), re-hosted on Hugging Face";
     if (titleLower.includes('clickme')) return "Dataset for evaluating the alignment between AI models and humans using ImageNet images";
     if (titleLower.includes('hmdb')) return "Large video database with 6,849 clips across 51 action categories";
     if (titleLower.includes('breakfast')) return "Video dataset of breakfast preparation activities: 52 individuals, 18 kitchens, ~77 hours of video, >4 million frames";

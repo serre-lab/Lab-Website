@@ -62,20 +62,37 @@
             "role": "co-I (PI: Karniadakis)",
             "amount": "$2,999,480",
             "description": "This project advances the theoretical foundations and practical applications of operator regression networks, a class of neural networks that learn mappings between function spaces. We develop new algorithms that improve the efficiency, accuracy, and interpretability of these networks. Applications include solving partial differential equations, modeling physical systems, and accelerating scientific computing across domains from fluid dynamics to materials science."
+        },
+        {
+            "title": "Enhancing suicide risk detection through computer vision",
+            "agency": "NIH/NIMH",
+            "grantNumber": "R01 MH140004",
+            "years": "2025 – 2030",
+            "role": "co-I (PI: Burke)",
+            "description": "This project applies computer vision and machine learning to improve the detection of suicide risk. Building on prior work, we develop algorithms that analyze behavioral cues to identify signals associated with elevated risk, with the goal of augmenting clinical assessment and supporting timely intervention by mental health professionals."
         }
     ],
     "trainingGrants": [
         {
             "title": "Brown Postdoctoral Training Program in Computational Psychiatry",
             "agency": "NIH/NIMH",
-            "grantNumber": "5T32MH126388",
-            "years": "2021 – 2026",
-            "role": "co-PI (Frank/Rasmussen/Serre)",
-            "amount": "$1,840,290",
+            "grantNumber": "T32 MH126388",
+            "years": "2021 – 2031",
+            "role": "Contact PI (2026–); MPI (Frank/Jones/Philip/Serre); co-PI (2021–2026)",
+            "amount": "$3,667,000",
             "description": "This T32 training grant supports postdoctoral fellows at the intersection of computational neuroscience, machine learning, and psychiatry. The program trains the next generation of researchers to develop and apply computational methods for understanding psychiatric disorders, with emphasis on translating computational models into clinical insights. Fellows receive interdisciplinary training combining neuroscience, computer science, and clinical psychiatry."
         }
     ],
     "completedGrants": [
+        {
+            "title": "Secondary analysis of resting state MEG data using the Human Neocortical Neurosolver software tool for cellular and circuit-level interpretation",
+            "agency": "NIH/NIMH",
+            "grantNumber": "1RF1MH130415",
+            "years": "2022 – 2025",
+            "role": "co-I (PI: Jones)",
+            "amount": "$1,173,602",
+            "description": "This project applied the Human Neocortical Neurosolver (HNN) software tool to resting-state magnetoencephalography (MEG) data to interpret macroscale signals in terms of their underlying cellular and circuit-level mechanisms. Our contribution focused on computational analyses linking observed oscillatory dynamics to biophysically grounded models of neocortical circuits."
+        },
         {
             "title": "Origins of Southeast Asian rainforests from paleobotany and machine learning",
             "agency": "NSF",

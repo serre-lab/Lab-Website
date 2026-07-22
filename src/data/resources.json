@@ -2,6 +2,10 @@
     "Resources": {
         "Datasets": [
             {
+                "title": "Animal/Non-Animal Stimulus Set (Serre, Oliva & Poggio, PNAS 2007)",
+                "url": "https://huggingface.co/datasets/Serrelab/SerreOlivaPoggio-PNAS07"
+            },
+            {
                 "title": "ClickMe",
                 "url": "https://serre-lab.github.io/Harmonization/evaluation/"
             },
