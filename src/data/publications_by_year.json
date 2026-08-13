@@ -74,17 +74,10 @@
       "pdfPath": "/papers/local-vs-distributed-representations-interpretability-2025.pdf"
     },
     {
-      "title": "Can human perceptual similarity alignment improve interpretability in visual representations?",
-      "authors": "J. Colin, N. Oliver‡ & T. Serre‡",
-      "journal": "Cognitive Computational Neuroscience",
-      "url": "",
-      "pdfPath": ""
-    },
-    {
       "title": "Does human-alignment benefit interpretability?",
       "authors": "J. Colin, N. Oliver‡ & T. Serre‡",
       "journal": "ICLR 2026 Workshop on Representational Alignment",
-      "url": "",
+      "url": "https://openreview.net/forum?id=r2OyK4cnc6",
       "pdfPath": ""
     }
   ],
