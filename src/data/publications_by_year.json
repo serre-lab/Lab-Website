@@ -72,6 +72,20 @@
       "journal": "Transactions on Machine Learning Research",
       "url": "https://openreview.net/forum?id=vb57jDotru",
       "pdfPath": "/papers/local-vs-distributed-representations-interpretability-2025.pdf"
+    },
+    {
+      "title": "Can human perceptual similarity alignment improve interpretability in visual representations?",
+      "authors": "J. Colin, N. Oliver‡ & T. Serre‡",
+      "journal": "Cognitive Computational Neuroscience",
+      "url": "",
+      "pdfPath": ""
+    },
+    {
+      "title": "Does human-alignment benefit interpretability?",
+      "authors": "J. Colin, N. Oliver‡ & T. Serre‡",
+      "journal": "ICLR 2026 Workshop on Representational Alignment",
+      "url": "",
+      "pdfPath": ""
     }
   ],
   "2025": [
@@ -130,6 +144,13 @@
       "journal": "Journal of Neural Engineering",
       "url": "https://doi.org/10.1088/1741-2552/adba8b",
       "pdfPath": "/papers/parker-epidural-paddle-array-2025.pdf"
+    },
+    {
+      "title": "Evaluating dogs' real-world visual environment and attention",
+      "authors": "M.H. Pelgrim, S.S. Raman, T. Serre & D. Buchsbaum",
+      "journal": "Cognitive Science",
+      "url": "https://doi.org/10.1111/cogs.70080",
+      "pdfPath": ""
     }
   ],
   "2024": [
@@ -262,7 +283,7 @@
       "pdfPath": "/papers/craft-concept-recursive-activation-2023.pdf"
     },
     {
-      "title": "Transcriptomic profiling of cerebrospinal fluid predicts shunt surgery responses in patients with normal pressure hydrocephalus",
+      "title": "Cerebrospinal fluid transcripts may predict shunt surgery responses in normal pressure hydrocephalus",
       "authors": "Z. Levin, O.P. Leary, V. Mora, S. Kant, S. Brown, K. Svokos, U. Akbar, T. Serre, P. Klinge, A. Fleischmann & M.G. Ruocco",
       "journal": "Brain",
       "url": "https://academic.oup.com/brain/advance-article-abstract/doi/10.1093/brain/awad109/7174209",
@@ -388,6 +409,13 @@
       "journal": "Neural Computation",
       "url": "https://direct.mit.edu/neco/article/34/5/1075/109662/Understanding-the-Computational-Demands-Underlying",
       "pdfPath": "/papers/understanding-computational-demands-visual-reasoning-2022.pdf"
+    },
+    {
+      "title": "Conviformers: Convolutionally guided vision transformer",
+      "authors": "M. Vaishnav, T. Fel, I.F. Rodríguez & T. Serre",
+      "journal": "arXiv",
+      "url": "https://arxiv.org/abs/2208.08900",
+      "pdfPath": ""
     }
   ],
   "2021": [
