@@ -74,6 +74,13 @@
       "pdfPath": "/papers/local-vs-distributed-representations-interpretability-2025.pdf"
     },
     {
+      "title": "Feature binding in biological and artificial vision",
+      "authors": "P. Roelfsema & T. Serre",
+      "journal": "Trends in Cognitive Sciences",
+      "url": "https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(25)00232-3",
+      "pdfPath": "/papers/feature-binding-biological-artificial-vision-2025.pdf"
+    },
+    {
       "title": "Does human-alignment benefit interpretability?",
       "authors": "J. Colin, N. Oliver‡ & T. Serre‡",
       "journal": "ICLR 2026 Workshop on Representational Alignment",
@@ -95,13 +102,6 @@
       "journal": "Neural Information Processing Systems",
       "url": "https://openreview.net/forum?id=BOiQ7Kd5Lx",
       "pdfPath": "/papers/follow-energy-find-path-riemannian-metrics-ebms-2025.pdf"
-    },
-    {
-      "title": "Feature binding in biological and artificial vision",
-      "authors": "P. Roelfsema & T. Serre",
-      "journal": "Trends in Cognitive Sciences",
-      "url": "https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(25)00232-3",
-      "pdfPath": "/papers/feature-binding-biological-artificial-vision-2025.pdf"
     },
     {
       "title": "Enhancing deep neural networks through complex-valued representations and Kuramoto synchronization dynamics",
@@ -413,7 +413,7 @@
   ],
   "2021": [
     {
-      "title": "Super-human cell death detection with biomarker-optimized neural networks",
+      "title": "Superhuman cell death detection with biomarker-optimized neural networks",
       "authors": "J.W. Linsley, D.A. Linsley, J. Lamstein, G. Ryan, K. Shah, N.A. Castello, V. Oza, J. Kalra, S. Wang, Z. Tokuno, A. Javaherian, T. Serre & S. Finkbeiner",
       "journal": "Science Advances",
       "url": "https://www.science.org/doi/10.1126/sciadv.abf8142",
@@ -462,6 +462,27 @@
       "pdfPath": "/papers/The-Challenge-of-Appearance-Free-Object-Tracking-with-Feedforward-Neural-Networks.pdf"
     },
     {
+      "title": "Same-different conceptualization: A machine vision perspective",
+      "authors": "M. Ricci, R. Cadène & T. Serre",
+      "journal": "Current Opinion in Behavioral Sciences",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2352154620301352",
+      "pdfPath": "/papers/same-different-conceptualization-machine-vision-2020.pdf"
+    },
+    {
+      "title": "Differential involvement of EEG oscillatory components in sameness vs. spatial-relation visual reasoning tasks",
+      "authors": "A. Alamia, C. Luo, M. Ricci, J. Kim, T. Serre & R. VanRullen",
+      "journal": "eNeuro",
+      "url": "https://www.eneuro.org/content/early/2020/11/23/ENEURO.0267-20.2020",
+      "pdfPath": "/papers/differential-eeg-oscillatory-components-2020.pdf"
+    },
+    {
+      "title": "Development of a deep learning algorithm for the histopathologic diagnosis and Gleason grading of prostate cancer biopsies: A pilot study",
+      "authors": "O. Kott†, D. Linsley†, A. Karagounis, C. Jeffers, G. Dragan, Ali Amin, T. Serre‡ & B. Gershman‡",
+      "journal": "European Urology Focus",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S240545691930344X",
+      "pdfPath": "/papers/deep-learning-good-bad-ugly-2019.pdf"
+    },
+    {
       "title": "Using computational analysis of behavior to discover developmental change in memory-guided attention mechanisms in childhood",
       "authors": "D. Amso, L. Govindarajan, P. Gupta, H. Baumgartner, A. Lynn, K. Gunther, D. Placido, T. Sharma, V. Veerabadran, K. Thakkar, S. Kim & T. Serre",
       "journal": "psychArXiv",
@@ -485,13 +506,6 @@
       "pdfPath": "/papers/iterative-vae-predictive-brain-model-2020.pdf"
     },
     {
-      "title": "Same-different conceptualization: A machine vision perspective",
-      "authors": "M. Ricci, R. Cadene & T. Serre",
-      "journal": "Current Opinion in Behavioral Sciences",
-      "url": "https://www.sciencedirect.com/science/article/pii/S2352154620301352",
-      "pdfPath": "/papers/same-different-conceptualization-machine-vision-2020.pdf"
-    },
-    {
       "title": "Stable and expressive recurrent vision models",
       "authors": "D. Linsley, A.K. Ashok, L.N. Govindarajan, R. Liu & T. Serre",
       "journal": "Neural Information Processing Systems",
@@ -507,17 +521,10 @@
     },
     {
       "title": "Discriminating between sleep and exercise-induced fatigue using computer vision and behavioral genetics",
-      "authors": "K.N. Schuch†, L.N. Govindarajan,†, Y. Guo, S.N. Baskoylu, S. Kim, B. Kimia, T. Serre‡, & A.C. Hart‡",
+      "authors": "K.N. Schuch†, L.N. Govindarajan†, Y. Guo, S.N. Baskoylu, S. Kim, B. Kimia, T. Serre‡ & A.C. Hart‡",
       "journal": "Journal of Neurogenetics",
       "url": "https://www.tandfonline.com/doi/full/10.1080/01677063.2020.1804565",
       "pdfPath": "/papers/discriminating-sleep-exercise-fatigue-2020.pdf"
-    },
-    {
-      "title": "Differential involvement of EEG oscillatory components in sameness vs. spatial-relation visual reasoning tasks",
-      "authors": "A. Alamia, C. Luo, M. Ricci, J. Kim, T. Serre & R. VanRullen",
-      "journal": "eNeuro",
-      "url": "https://www.eneuro.org/content/early/2020/11/23/ENEURO.0267-20.2020",
-      "pdfPath": "/papers/differential-eeg-oscillatory-components-2020.pdf"
     },
     {
       "title": "Beyond the feedforward sweep: Feedback computations in the visual cortex",
@@ -543,15 +550,8 @@
   ],
   "2019": [
     {
-      "title": "Development of a deep learning algorithm for the histopathologic diagnosis and gleason grading of prostate cancer biopsies: A pilot study",
-      "authors": "O. Kott†, D. Linsley†, A. Karagounis, C. Jeffers, G. Dragan, Ali Amin, T. Serre‡ & B. Gershman‡",
-      "journal": "European urology focus",
-      "url": "https://www.sciencedirect.com/science/article/abs/pii/S240545691930344X",
-      "pdfPath": "/papers/deep-learning-good-bad-ugly-2019.pdf"
-    },
-    {
-      "title": "Deep learning: The good, the bad and the ugly",
-      "authors": "T. Serre & S. Leone",
+      "title": "Deep learning: The good, the bad, and the ugly",
+      "authors": "T. Serre",
       "journal": "Annual Review of Vision Science",
       "url": "https://www.annualreviews.org/doi/full/10.1146/annurev-vision-091718-014951",
       "pdfPath": "/papers/deceptive-learning-histopathology-2024.pdf"
@@ -562,16 +562,16 @@
       "journal": "International Conference on Learning Representations",
       "url": "https://openreview.net/forum?id=BJgLg3R9KQ",
       "pdfPath": "/papers/deceptive-learning-histopathology-2024.pdf"
-    }
-  ],
-  "2018": [
+    },
     {
       "title": "Early life stress leads to sex differences in development of depressive-like outcomes in a mouse model",
       "authors": "H. Goodwill, G. Manzano-Nieves, M. Gallo, H.I. Lee, E. Oyerinde, T. Serre & K. Bath",
       "journal": "Neuropsychopharmacology",
       "url": "https://www.nature.com/articles/s41386-018-0195-5",
       "pdfPath": "/papers/early-life-stress-depressive-outcomes-2018.pdf"
-    },
+    }
+  ],
+  "2018": [
     {
       "title": "Robust pose tracking with a joint model of appearance and shape",
       "authors": "Y. Guo, L.N. Govindarajan, B. Kimia & T. Serre",
@@ -587,15 +587,15 @@
       "pdfPath": "/papers/learning-long-range-spatial-dependencies-2018.pdf"
     },
     {
-      "title": "Complementary surrounds explain diversity of contextual phenomena across visual modalities",
-      "authors": "D.A. Mely, D. Linsley & T. Serre",
+      "title": "Complementary surrounds explain diverse contextual phenomena across visual modalities",
+      "authors": "D.A. Mély, D. Linsley & T. Serre",
       "journal": "Psychological Review",
       "url": "https://psycnet.apa.org/doiLanding?doi=10.1037/rev0000109",
       "pdfPath": "/papers/Serre_092018.pdf"
     },
     {
-      "title": "Neural computing on a raspberry pi: Applications to zebrafish behavior monitoring",
-      "authors": "L. Govindarajan, T. Sharma, R. Colwill & T. Serre",
+      "title": "Neural computing on a Raspberry Pi: Applications to zebrafish behavior monitoring",
+      "authors": "L.N. Govindarajan, T. Sharma, R. Colwill & T. Serre",
       "journal": "Visual observation and analysis of Vertebrate And Insect Behavior (VAIB)",
       "url": "",
       "pdfPath": "/papers/VAIB_2018-1.pdf"
@@ -615,8 +615,8 @@
       "pdfPath": "/papers/The-Challenge-of-Appearance-Free-Object-Tracking-with-Feedforward-Neural-Networks.pdf"
     },
     {
-      "title": "TDP-43 gains function due to perturbed auto-regulation in a Tardbp knock-in mouse model of ALS-FTD",
-      "authors": "M.A. White, J. Kim, J. Duffy, A. Adalbert, M. Phillips, M. Peters, M. Stephenson, M. Yang, M. H. Coleman & T. Serre",
+      "title": "TDP-43 gains function due to perturbed autoregulation in a Tardbp knock-in mouse model of ALS-FTD",
+      "authors": "M.A. White, E. Kim, A. Duffy, R. Adalbert, B.U. Phillips, O.M. Peters, J. Stephenson, S. Yang, F. Massenzio, Z. Lin, S. Andrews, A. Segonds-Pichon, J. Metterville, L.M. Saksida, R. Mead, R.R. Ribchester, Y. Barhomi, T. Serre, M.P. Coleman, J.R. Fallon, T.J. Bussey, R.H. Brown & J. Sreedharan",
       "journal": "Nature Neuroscience",
       "url": "https://www.nature.com/articles/s41593-018-0113-5",
       "pdfPath": "/papers/tdp43-gains-function-als-ftd-2018.pdf"
@@ -675,8 +675,8 @@
       "pdfPath": "/papers/2016_Cauchoix_NI.pdf"
     },
     {
-      "title": "Source modelling of ElectroCorticoGraphy (ECoG) data: Analysis of stability and spatial filtering",
-      "authors": "A. Pascarella, C. Todaro, M. Clerc, T. Serre and M. Piana",
+      "title": "Source modeling of ElectroCorticoGraphy (ECoG) data: Stability analysis and spatial filtering",
+      "authors": "A. Pascarella, C. Todaro, M. Clerc, T. Serre & M. Piana",
       "journal": "Journal of Neuroscience Methods",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0165027016000649",
       "pdfPath": "/papers/2016_Pascarella_JNM-1.pdf"
@@ -777,16 +777,16 @@
       "journal": "Scholarpedia, 8(4):3516.",
       "url": "http://www.scholarpedia.org/article/Models_of_visual_cortex",
       "pdfPath": "/papers/3d-pc-benchmark-visual-perspective-taking-2025.pdf"
-    }
-  ],
-  "2012": [
+    },
     {
-      "title": "The ankyrin 3 (ANK3) bipolar disorder gene regulates mood-related behaviors that are modulated by lithium and stress",
-      "authors": "M. Leussis, E. Berry-Scott, M. Saito, H. Jhuang, G. Haan, O. Alkan, C. Luce, J. Madison, P. Sklar, T. Serre, D. Root & T. Petryshen",
+      "title": "The ANK3 bipolar disorder gene regulates psychiatric-related behaviors that are modulated by lithium and stress",
+      "authors": "M.P. Leussis, E.M. Berry-Scott, M. Saito, H. Jhuang, G. de Haan, O. Alkan, C.J. Luce, J.M. Madison, P. Sklar, T. Serre, D.E. Root & T.L. Petryshen",
       "journal": "Biological Psychiatry",
       "url": "https://www.sciencedirect.com/science/article/pii/S0006322312009389",
       "pdfPath": "/papers/Leussis_Ank3_BiolPsych2012.pdf"
-    },
+    }
+  ],
+  "2012": [
     {
       "title": "A new biologically inspired color image descriptor",
       "authors": "J. Zhang, Y. Barhomi & T. Serre",
@@ -827,8 +827,8 @@
   ],
   "2010": [
     {
-      "title": "Automated home-cage behavioral phenotyping of mice",
-      "authors": "H. Jhuang, E. Garrote, X. Yu, V. Khilnani, T. Poggio, A. Steele & T. Serre",
+      "title": "Automated home-cage behavioural phenotyping of mice",
+      "authors": "H. Jhuang, E. Garrote, X. Yu, V. Khilnani, T. Poggio, A.D. Steele & T. Serre",
       "journal": "Nature Communications",
       "url": "https://www.nature.com/articles/ncomms1064",
       "pdfPath": "/papers/ncomms1064.pdf"
