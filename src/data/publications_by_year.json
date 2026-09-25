@@ -8,17 +8,17 @@
       "pdfPath": ""
     },
     {
-      "title": "Not too generative, not too discriminative: The human alignment sweet spot",
-      "authors": "J. Chang, B. Le Lan, T. Serre‡ & V. Boutin‡",
-      "journal": "arXiv",
-      "url": "https://arxiv.org/abs/2605.23819",
-      "pdfPath": ""
-    },
-    {
       "title": "Capability ≠ interpretability: Human interpretability of vision foundation models",
       "authors": "J. Colin, L. Goetschalckx, T. Serre‡ & N. Oliver‡",
       "journal": "arXiv",
       "url": "https://arxiv.org/abs/2605.20337",
+      "pdfPath": ""
+    },
+    {
+      "title": "Recurrent vision in parallel: Spectral convolutional state space models",
+      "authors": "D. Linsley†, G. Dhimoïla†, A.K. Ashok, B. Kim & T. Serre",
+      "journal": "",
+      "url": "",
       "pdfPath": ""
     },
     {
@@ -37,6 +37,13 @@
       "journal": "Nature Biomedical Engineering",
       "url": "https://www.nature.com/articles/s41551-026-01627-5",
       "pdfPath": "/papers/parker-epidural-paddle-array-2025.pdf"
+    },
+    {
+      "title": "Not too generative, not too discriminative: The human alignment sweet spot",
+      "authors": "J. Chang, B. Le Lan, T. Serre‡ & V. Boutin‡",
+      "journal": "Neural Information Processing Systems",
+      "url": "https://openreview.net/forum?id=XYmvp2YQdC",
+      "pdfPath": ""
     },
     {
       "title": "Structuring sparsity: Block-sparse featurizers capture visual concept manifolds",
