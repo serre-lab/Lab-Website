@@ -1,0 +1,49 @@
+[
+  {
+    "title": "Scaling laws vs. neural laws: Toward more natural artificial vision",
+    "venue": "Charles Jones Seminar, Dartmouth College",
+    "location": "Hanover, NH",
+    "date": "October 2026",
+    "upcoming": true
+  },
+  {
+    "venue": "ECCV Workshop on Human-inspired Computer Vision (keynote)",
+    "location": "Malmö, Sweden",
+    "date": "September 2026"
+  },
+  {
+    "venue": "SFARI Workshop on Quantitative Behavioral Phenotyping",
+    "location": "New York, NY",
+    "date": "September 2026"
+  },
+  {
+    "venue": "CBMM Summer School",
+    "location": "Woods Hole, MA",
+    "date": "August 2026"
+  },
+  {
+    "title": "Scaling laws vs. neural laws: Toward more natural artificial vision",
+    "venue": "IEEE CVPR 2026 (keynote)",
+    "location": "Denver, CO",
+    "date": "June 2026",
+    "link": "https://cvpr.thecvf.com/virtual/2026/invited-talk/40399"
+  },
+  {
+    "title": "Scaling laws vs. neural laws: Do AI advances translate to biological insights?",
+    "venue": "Stiles-Nicholson Brain Institute Neuroscience Seminar Series",
+    "location": "Boca Raton, FL",
+    "date": "May 2026"
+  },
+  {
+    "title": "Cortical feedback mechanisms in visual reasoning: From perceptual grouping to abstract compositional reasoning",
+    "venue": "Seminar in Cognitive Informatics, Université du Québec à Montréal",
+    "location": "Montréal, Canada",
+    "date": "February 2026",
+    "link": "https://www.youtube.com/watch?v=xnfidn2lmog"
+  },
+  {
+    "venue": "Winter Conference on Brain Research",
+    "location": "Big Sky, MT",
+    "date": "January 2026"
+  }
+]
