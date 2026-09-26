@@ -2,6 +2,7 @@
 import { Title, Text, Anchor, List } from "@mantine/core";
 import React from "react";
 import ReactMarkdown from "react-markdown";
+import { Link } from "react-router-dom";
 import "./MarkdownPage.css";
 import { HeroBanner } from "../HeroBanner/HeroBanner";
 
@@ -60,7 +61,11 @@ const MarkdownPage: React.FC<MarkdownPageProps> = ({ content }) => {
                         h1: ({ node, ...props }) => <Title order={1} {...props} />,
                         h2: ({ node, ...props }) => <Title order={2} {...props} />,
                         p: ({ node, ...props }) => <Text {...props} />,
-                        a: ({ node, ...props }) => <Anchor {...props} />,
+                        // Site-internal page paths go through the hash router; static files and external URLs stay plain links.
+                        a: ({ node, href, ...props }) =>
+                            href?.startsWith("/") && !/\.[a-z0-9]+$/i.test(href)
+                                ? <Anchor component={Link} to={href} {...props} />
+                                : <Anchor href={href} {...props} />,
                         ul: ({ node, ...props }) => <List {...props} />,
                         // Add more mappings as needed
                     }}

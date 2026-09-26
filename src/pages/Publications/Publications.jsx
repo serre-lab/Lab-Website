@@ -3,7 +3,7 @@ import "./Publications.css";
 import { Anchor, Text, Title, TextInput, Select, Group } from "@mantine/core";
 import publicationsData from "../../data/publications_by_year.json";
 import { getOfficialPublicationUrl } from "../../data/officialPublicationUrls";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { HeroBanner } from "../../components/HeroBanner/HeroBanner";
 // import { IconSearch } from "@tabler/icons-react"; // optional icon
 

@@ -82,7 +82,7 @@
           ],
           "sameAs": [
             "https://twitter.com/serre_lab",
-            "https://www.linkedin.com/company/serre-lab",
+            "https://www.linkedin.com/company/serrelab",
             "https://bsky.app/profile/thomasserre.bsky.social",
             "https://www.zotero.org/tserre"
           ]
@@ -90,7 +90,7 @@
         </script>
     </head>
     <body>
-        <a href="#main-content" class="sr-only sr-only-focusable">Skip to main content</a>
+        <a href="#main-content" class="sr-only sr-only-focusable" onclick="event.preventDefault(); document.getElementById('main-content')?.focus();">Skip to main content</a>
         <div id="root"></div>
         <script type="module" src="/src/main.tsx"></script>
     </body>

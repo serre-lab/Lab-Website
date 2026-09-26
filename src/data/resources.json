@@ -2,7 +2,7 @@
     "Resources": {
         "Datasets": [
             {
-                "title": "Animal/Non-Animal Stimulus Set (Serre, Oliva & Poggio, PNAS 2007)",
+                "title": "Animal/Non-Animal Stimuli (PNAS 2007)",
                 "url": "https://huggingface.co/datasets/Serrelab/SerreOlivaPoggio-PNAS07"
             },
             {
@@ -33,7 +33,7 @@
             },
             {
                 "title": "hGRU Tutorials",
-                "url": "https://colab.research.google.com/drive/1nahqqz1xjVTgrhtPv6myE1xvi4eRvMge?authuser=1#scrollTo=aamsQuGRVUqn"
+                "url": "https://colab.research.google.com/drive/1nahqqz1xjVTgrhtPv6myE1xvi4eRvMge"
             },
             {
                 "title": "Panoptic segmentation with hGRU",
@@ -57,8 +57,6 @@
                 "title": "Neuroscience feedback models (PyTorch)",
                 "url": "https://github.com/serre-lab/serrelabmodels"
             }
-        ],
-        "Cognitive Benchmark Tests": [
         ],
         "Videos & Talks": [
             {

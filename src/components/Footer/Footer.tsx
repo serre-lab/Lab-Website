@@ -37,7 +37,7 @@ export default function Footer(props: FooterProps) {
                         </Text>
                         <Text size="sm" className="footer-contact-item">
                             <a href="mailto:serre-lab@brown.edu" className="footer-email-link" style={{ color: '#2c3e50' }}>
-                                <FaEnvelope size={14} style={{ marginRight: '6px', verticalAlign: 'middle' }} />
+                                <FaEnvelope size={14} style={{ marginRight: '6px', verticalAlign: 'middle' }} aria-hidden="true" />
                                 Contact Us
                             </a>
                         </Text>
@@ -101,6 +101,24 @@ export default function Footer(props: FooterProps) {
                                 title="Opens in new tab"
                             >
                                 Brown Profile
+                            </a>
+                            <a
+                                href="https://digital-accessibility.brown.edu/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="footer-link"
+                                title="Opens in new tab"
+                            >
+                                Accessibility at Brown
+                            </a>
+                            <a
+                                href="https://cm.maxient.com/reportingform.php?BrownUniv=&layout_id=59"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="footer-link"
+                                title="Opens in new tab"
+                            >
+                                Report an accessibility barrier
                             </a>
                         </nav>
                     </div>

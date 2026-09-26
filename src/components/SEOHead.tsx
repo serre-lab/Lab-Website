@@ -27,7 +27,7 @@ const pageMetadata: Record<string, { title: string; description: string }> = {
     },
     '/sci-comm': {
         title: 'Media & Science Communication | Serre Lab',
-        description: 'Media coverage, talks, and science communication from the Serre Lab at Brown University, sharing research in computational neuroscience and NeuroAI.'
+        description: 'Media coverage and science communication from the Serre Lab at Brown University, sharing research in computational neuroscience and NeuroAI.'
     }
 };
 

@@ -57,6 +57,13 @@
       "description": "Tekin Gunasar is a Master's student in Computer Science at Brown University. His work focuses on brain–computer interfaces and on characterizing cognitive structure using explainable and multimodal models."
     },
     {
+      "fullName": "Athulith Paraselli",
+      "title": "MSc student",
+      "university": "Brown",
+      "imagePath": "people/athulith-paraselli.jpg",
+      "description": "Athulith Paraselli is a Master's student in Computer Science at Brown University. His research focuses on the mechanistic interpretability of vision-language models, including how these models implement visual attention and feature binding."
+    },
+    {
       "fullName": "Christopher José Cueva",
       "title": "PostDoc",
       "university": "Brown",
@@ -96,7 +103,7 @@
       "title": "PhD student",
       "university": "ANITI",
       "imagePath": "people/gregoire-dhimoila.jpg",
-      "description": "Grégoire Dhimoïla is a PhD student at ANITI, beginning his doctoral studies in September 2026. He joined the Serre Lab from the École Normale Supérieure Paris-Saclay, following research internships with the DEEL team in Toulouse and in the Serre Lab at Brown. His earlier work focused on the interpretability of deep networks, including sparse autoencoders and the geometry of vision–language model representations (ICLR 2026). His doctoral research develops brain-inspired models of vision, with a focus on recurrent and state space models (SSMs) that capture the spatiotemporal dynamics of cortical processing for visual reasoning and video understanding."
+      "description": "Grégoire Dhimoïla is a PhD student at ANITI, where he began his doctoral studies in September 2026. He joined the Serre Lab from the École Normale Supérieure Paris-Saclay, following research internships with the DEEL team in Toulouse and in the Serre Lab at Brown. His earlier work focused on the interpretability of deep networks, including sparse autoencoders and the geometry of vision–language model representations (ICLR 2026). His doctoral research develops brain-inspired models of vision, with a focus on recurrent and state space models (SSMs) that capture the spatiotemporal dynamics of cortical processing for visual reasoning and video understanding."
     },
     {
       "fullName": "Victor Boutin",

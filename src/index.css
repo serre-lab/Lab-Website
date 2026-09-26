@@ -7,7 +7,7 @@
     font-weight: 400;
 
     /* Color variables for consistency */
-    --color-primary: #2f80d3;
+    --color-primary: #2a73be; /* 4.9:1 on white (WCAG AA) */
     --color-primary-dark: #1f5fa2;
     --color-accent: #1abc9c;
     --color-accent-light: #5de6c3;

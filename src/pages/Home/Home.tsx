@@ -138,13 +138,13 @@ export function Home() {
 
         <motion.div variants={fadeUp} className="student-cards-container">
           <div className="student-card" onClick={() => setShowUndergradDetails(!showUndergradDetails)} style={{ cursor: "pointer" }}>
-            <Title order={3} className="student-card-title">🎓 Undergraduate & MSc Students</Title>
+            <Title order={3} className="student-card-title"><span aria-hidden="true">🎓</span> Undergraduate & MSc Students</Title>
             <Text className="student-card-text">
               Brown undergrad and MSc students interested in research
               should email Prof. Serre with a transcript and resume/CV.
             </Text>
             {showUndergradDetails && (
-              <>
+              <div id="undergrad-requirements">
                 <Text className="student-card-text" style={{ marginTop: "0.5rem" }}>
                   <strong>Requirements:</strong>
                 </Text>
@@ -154,21 +154,27 @@ export function Home() {
                   <li>Strongly encouraged: CPSY 1291 or CPSY 1950 with Prof. Serre</li>
                   <li>Familiarity with our research and ability to articulate a specific project interest</li>
                 </ul>
-              </>
+              </div>
             )}
-            <Text className="student-card-expand">
-              {showUndergradDetails ? "Click to show less ▲" : "Click to see requirements ▼"}
-            </Text>
+            <button
+              type="button"
+              className="student-card-expand"
+              aria-expanded={showUndergradDetails}
+              aria-controls="undergrad-requirements"
+              onClick={(e) => { e.stopPropagation(); setShowUndergradDetails(!showUndergradDetails); }}
+            >
+              {showUndergradDetails ? "Show less ▲" : "Show requirements ▼"}
+            </button>
           </div>
 
           <div className="student-card" onClick={() => setShowPhdDetails(!showPhdDetails)} style={{ cursor: "pointer" }}>
-            <Title order={3} className="student-card-title">📚 PhD Students</Title>
+            <Title order={3} className="student-card-title"><span aria-hidden="true">📚</span> PhD Students</Title>
             <Text className="student-card-text">
               PhD applicants can apply through cognitive science, computer science, or neuroscience
               graduate programs.
             </Text>
             {showPhdDetails && (
-              <>
+              <div id="phd-requirements">
                 <Text className="student-card-text" style={{ marginTop: "0.5rem" }}>
                   <strong>Requirements:</strong>
                 </Text>
@@ -180,20 +186,26 @@ export function Home() {
                 <Text className="student-card-text" style={{ marginTop: "0.5rem" }}>
                   Due to the large volume of applicants, Prof. Serre can only meet with applicants after they have been invited for an interview.
                 </Text>
-              </>
+              </div>
             )}
-            <Text className="student-card-expand">
-              {showPhdDetails ? "Click to show less ▲" : "Click to see requirements ▼"}
-            </Text>
+            <button
+              type="button"
+              className="student-card-expand"
+              aria-expanded={showPhdDetails}
+              aria-controls="phd-requirements"
+              onClick={(e) => { e.stopPropagation(); setShowPhdDetails(!showPhdDetails); }}
+            >
+              {showPhdDetails ? "Show less ▲" : "Show requirements ▼"}
+            </button>
           </div>
 
           <div className="student-card" onClick={() => setShowPostdocDetails(!showPostdocDetails)} style={{ cursor: "pointer" }}>
-            <Title order={3} className="student-card-title">🔬 Postdoctoral Researchers</Title>
+            <Title order={3} className="student-card-title"><span aria-hidden="true">🔬</span> Postdoctoral Researchers</Title>
             <Text className="student-card-text">
               Prospective postdocs should email Prof. Serre directly with their CV, research statement, and references.
             </Text>
             {showPostdocDetails && (
-              <>
+              <div id="postdoc-requirements">
                 <Text className="student-card-text" style={{ marginTop: "0.5rem" }}>
                   <strong>Requirements:</strong>
                 </Text>
@@ -201,11 +213,17 @@ export function Home() {
                   <li>Graduate training in computational neuroscience or AI</li>
                   <li>Strong track record publishing at top venues including NeurIPS, ICML, ICLR, and/or CVPR</li>
                 </ul>
-              </>
+              </div>
             )}
-            <Text className="student-card-expand">
-              {showPostdocDetails ? "Click to show less ▲" : "Click to see requirements ▼"}
-            </Text>
+            <button
+              type="button"
+              className="student-card-expand"
+              aria-expanded={showPostdocDetails}
+              aria-controls="postdoc-requirements"
+              onClick={(e) => { e.stopPropagation(); setShowPostdocDetails(!showPostdocDetails); }}
+            >
+              {showPostdocDetails ? "Show less ▲" : "Show requirements ▼"}
+            </button>
           </div>
         </motion.div>
       </motion.div>
@@ -228,7 +246,7 @@ export function Home() {
           <div className="featured-card clickme-grid-card">
             <span className="featured-badge-small">Featured</span>
             <div className="featured-content">
-              <Title order={3} className="featured-project-title">🎮 ClickMe</Title>
+              <Title order={3} className="featured-project-title"><span aria-hidden="true">🎮</span> ClickMe</Title>
               <Text className="featured-description">
                 Play our game, compete for weekly cash prizes, and help AI learn to see like humans. Featured by NSF and NBC 10.
               </Text>
@@ -361,13 +379,33 @@ export function Home() {
         <Title order={2} className="section-title">Selected Recent Publications</Title>
         <div className="highlights-grid">
           <div className="highlight-card">
-            <Text className="highlight-journal">Neuron (2025)</Text>
+            <Text className="highlight-journal">{shortenJournalName("Nature Biomedical Engineering")} (2026)</Text>
             <Title order={3} className="highlight-title">
-              <a href="https://www.sciencedirect.com/science/article/abs/pii/S0896627325007524" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
-                From prediction to understanding: will AI foundation models transform brain science?
+              <a href="https://www.nature.com/articles/s41551-026-01627-5" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
+                Perilesional neuromodulation replaces lost sensorimotor function in persons with spinal cord injury
               </a>
             </Title>
-            <Text className="highlight-authors">{abbreviateAuthors("T. Serre & E. Pavlick")}</Text>
+            <Text className="highlight-authors">{abbreviateAuthors("J.S. Calvert, S.R. Parker, L.N. Govindarajan, R. Darie, E. Shaaya, R. Solinsky, L.M. Del Valle, P. Miranda, J. Jang, E. Tiwari, S. Syed, R.M. Villalobos, L.M. Aguiar, J.A. Taylor, H. Tang, S. McPherson, W. Xue, A.G. Carayannopoulos, A.A. Oyelese, Z.L. Gokaslan, A.K. Bansal, L.J. Resnik, T. Serre, J.S. Fridley & D.A. Borton")}</Text>
+          </div>
+
+          <div className="highlight-card">
+            <Text className="highlight-journal">NeurIPS (2026)</Text>
+            <Title order={3} className="highlight-title">
+              <a href="https://openreview.net/forum?id=XYmvp2YQdC" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
+                Not too generative, not too discriminative: The human alignment sweet spot
+              </a>
+            </Title>
+            <Text className="highlight-authors">{abbreviateAuthors("J. Chang, B. Le Lan, T. Serre & V. Boutin")}</Text>
+          </div>
+
+          <div className="highlight-card">
+            <Text className="highlight-journal">NeurIPS (2026)</Text>
+            <Title order={3} className="highlight-title">
+              <a href="https://openreview.net/forum?id=37eNHfTSDD" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
+                A unified spectral theory of multimodal losses
+              </a>
+            </Title>
+            <Text className="highlight-authors">{abbreviateAuthors("Y. Cheng, S. Chen, Z. Lu, X. Yu, G. Dhimoïla & T. Serre")}</Text>
           </div>
 
           <div className="highlight-card">
@@ -381,17 +419,7 @@ export function Home() {
           </div>
 
           <div className="highlight-card">
-            <Text className="highlight-journal">ICLR (2025)</Text>
-            <Title order={3} className="highlight-title">
-              <a href="https://openreview.net/forum?id=UIFAJZ22ZF" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
-                The 3D-PC: A benchmark for visual perspective taking in humans and machines
-              </a>
-            </Title>
-            <Text className="highlight-authors">{abbreviateAuthors("D. Linsley et al.")}</Text>
-          </div>
-
-          <div className="highlight-card">
-            <Text className="highlight-journal">TICS (2025)</Text>
+            <Text className="highlight-journal">TICS (2026)</Text>
             <Title order={3} className="highlight-title">
               <a href="https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(25)00232-3" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
                 Feature binding in biological and artificial vision
@@ -401,23 +429,13 @@ export function Home() {
           </div>
 
           <div className="highlight-card">
-            <Text className="highlight-journal">{shortenJournalName("Current Biology")} (2024)</Text>
+            <Text className="highlight-journal">Neuron (2025)</Text>
             <Title order={3} className="highlight-title">
-              <a href="https://www.cell.com/current-biology/abstract/S0960-9822(24)01380-0" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
-                Monkeys engage in visual simulation to solve complex problems
+              <a href="https://www.sciencedirect.com/science/article/abs/pii/S0896627325007524" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
+                From prediction to understanding: will AI foundation models transform brain science?
               </a>
             </Title>
-            <Text className="highlight-authors">{abbreviateAuthors("A. Ahuja et al.")}</Text>
-          </div>
-
-          <div className="highlight-card">
-            <Text className="highlight-journal">{shortenJournalName("Nature Biomedical Engineering")} (2026)</Text>
-            <Title order={3} className="highlight-title">
-              <a href="https://www.nature.com/articles/s41551-026-01627-5" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
-                Perilesional neuromodulation replaces lost sensorimotor function in persons with spinal cord injury
-              </a>
-            </Title>
-            <Text className="highlight-authors">{abbreviateAuthors("J.S. Calvert, S.R. Parker, L.N. Govindarajan, R. Darie, E. Shaaya, R. Solinsky, L.M. Del Valle, P. Miranda, J. Jang, E. Tiwari, S. Syed, R.M. Villalobos, L.M. Aguiar, J.A. Taylor, H. Tang, S. McPherson, W. Xue, A.G. Carayannopoulos, A.A. Oyelese, Z.L. Gokaslan, A.K. Bansal, L.J. Resnik, T. Serre, J.S. Fridley & D.A. Borton")}</Text>
+            <Text className="highlight-authors">{abbreviateAuthors("T. Serre & E. Pavlick")}</Text>
           </div>
         </div>
         <div style={{ textAlign: "center", marginTop: "1.5rem" }}>
@@ -459,9 +477,9 @@ export function Home() {
         </motion.div>
         <motion.div variants={fadeUp}>
           <Text>
-            Our work is currently supported by ONR (N00014-24-1-2026 and REPRISM MURI N00014-24-1-2603), NSF (IIS-2402875), the NSF AI Research Institute on Interaction for AI Assistants (ARIA), supported by the U.S. National Science Foundation (NSF) under Cooperative Agreement 2433429, and the ANR-3IA Artificial and Natural Intelligence Toulouse Institute (ANR-19-PI3A-0004).
+            Our work is currently supported by ONR (N00014-24-1-2026, N00014-22-1-2795, and REPRISM MURI N00014-24-1-2603), NSF (IIS-2402875), NIH/NIMH (R01 MH140004, R01 MH143695, and T32 MH126388), DOE (DE-SC0023191), the NSF AI Research Institute on Interaction for AI Assistants (ARIA), supported by the U.S. National Science Foundation (NSF) under Cooperative Agreement 2433429, and the Artificial and Natural Intelligence Toulouse Institute (ANITI), funded by the France 2030 program (ANR-23-IACL-0002).
             <br /><br />
-            Additional support is provided by the Carney Institute for Brain Science and the Center for Computation and Visualization (via NIH S10OD036341). We gratefully acknowledge Cloud TPU hardware resources made available by Google through the TensorFlow Research Cloud (TFRC) program.
+            Additional support is provided by the Carney Institute for Brain Science and the Center for Computation and Visualization (via NIH S10OD036341). We gratefully acknowledge Cloud TPU hardware resources made available by Google through the TPU Research Cloud (TRC) program.
           </Text>
         </motion.div>
       </motion.div>

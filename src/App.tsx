@@ -2,6 +2,7 @@ import { lazy, Suspense, useEffect, useState } from "react";
 import "@mantine/core/styles.css";
 import { createTheme, MantineProvider } from "@mantine/core";
 import { createHashRouter, RouterProvider } from "react-router-dom";
+import { MotionConfig } from "motion/react";
 
 import { Home } from "./pages/Home/Home";
 const Research = lazy(() => import("./pages/Research/Research").then(m => ({ default: m.Research })));
@@ -48,7 +49,7 @@ const staticLinks: Links = {
     ],
     social: [
         { to: "https://twitter.com/serre_lab", label: "Twitter" },
-        { to: "https://www.linkedin.com/company/serre-lab", label: "LinkedIn" },
+        { to: "https://www.linkedin.com/company/serrelab", label: "LinkedIn" },
         { to: "https://bsky.app/profile/thomasserre.bsky.social", label: "Bluesky" },
         { to: "https://www.zotero.org/tserre", label: "Zotero" },
     ],
@@ -102,16 +103,19 @@ const App = () => {
                     path,
                     element: <MarkdownPage content={content} />,
                 })),
+
+                // Catch-all for unknown hash routes
+                { path: "*", element: <MarkdownPage content={"# Page not found\n\nThe page you requested does not exist. Return to the [home page](/) or browse our [resources](/resources)."} /> },
             ],
         },
     ]);
 
-    console.log("routes", routes);
-    console.log("links", links);
-
     return (
         <MantineProvider theme={theme}>
-            <RouterProvider router={router} />
+            {/* Respect the OS "reduce motion" setting for all animations */}
+            <MotionConfig reducedMotion="user">
+                <RouterProvider router={router} />
+            </MotionConfig>
         </MantineProvider>
     );
 };

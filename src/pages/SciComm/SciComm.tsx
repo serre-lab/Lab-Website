@@ -40,7 +40,7 @@ export function SciComm() {
         <>
             <HeroBanner 
                 title="Media" 
-                subtitle="News coverage, talks, and science communication from the Serre Lab"
+                subtitle="News coverage and science communication from the Serre Lab"
                 backgroundImage="/metcalf.webp"
             />
             <div className="scicomm-container">

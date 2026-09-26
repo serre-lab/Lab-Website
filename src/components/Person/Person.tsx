@@ -78,6 +78,8 @@ export default function Person({ fullName, title, university, imagePath, descrip
                     backgroundOpacity: 0.55,
                     blur: 4,
                 }}
+                // Visually hidden title gives the dialog an accessible name (aria-labelledby)
+                title={<span className="sr-only">{fullName}</span>}
                 withCloseButton
                 centered
                 size="lg"

@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa6";
 import "./Learn.css";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 const items = [
   { icon: <FaVial size={48} />, label: "Research", to: "research" },

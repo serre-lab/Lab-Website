@@ -10,22 +10,18 @@
 ## Databases
 
 - [ClickMe](/resources/clickme)
-- [The multi-cue boundary detection dataset](/resources/multicue)
-- [HMDB: a large human motion database](/resources/hmdb-a-large-human-motion-database)
-- [The Breakfast Actions Dataset](/resources/breakfast-actions-dataset)
+- [The multi-cue boundary detection dataset](/resources/the-multi-cue-boundary-detection-dataset)
+- [HMDB: a large human motion database](/hmdb51.html)
+- [The Breakfast Actions Dataset](/resources/the-breakfast-actions-dataset)
 
 ## Software
 
 - [hGRU Tutorials](/resources/hgru-tutorials)
-- [Lab GitHub repository](/resources/github)
-- [Color processing](/resources/computational-mechanisms-of-color-processing-2)
-- [Action recognition](/resources/action-recognition)
-- [Automated system for rodent behavioral phenotyping](/resources/automated-home-cage-behavioral-phenotyping-of-mice)
-- [Object recognition](/resources/object-recognition)
+- [Lab GitHub repository](https://github.com/serre-lab)
+- [Automated system for rodent behavioral phenotyping](/resources/automated-system-for-rodent-behavioral-phenotyping)
 
 ## Supplementary Information
 
-- [Learning sparse prototypes for crowd perception](/resources/zhangetalhbu2014)
+- [Learning sparse prototypes for crowd perception](/resources/learning-sparse-prototypes-for-crowd-perception)
 - [Computational mechanisms of color processing](/resources/computational-mechanisms-of-color-processing)
-- [A feedforward architecture accounts for rapid categorization](/resources/a-feedforward-architecture-accounts-for-rapid-categorization)
 - [A neuromorphic approach to computer vision](/resources/a-neuromorphic-approach-to-computer-vision)

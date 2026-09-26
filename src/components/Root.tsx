@@ -22,6 +22,7 @@ export function Root(props: RootProps) {
     const location = useLocation();
     const mainRef = useRef<HTMLElement>(null);
     const liveRegionRef = useRef<HTMLDivElement>(null);
+    const isFirstRender = useRef(true);
 
     // SPA route announcement for screen readers
     useEffect(() => {
@@ -38,7 +39,11 @@ export function Root(props: RootProps) {
             liveRegionRef.current.textContent = announcement;
         }
 
-        // Focus main content for keyboard/screen reader users
+        // Focus main content on route changes (not first load, so the skip link stays first in tab order)
+        if (isFirstRender.current) {
+            isFirstRender.current = false;
+            return;
+        }
         const timer = setTimeout(() => {
             mainRef.current?.focus({ preventScroll: true });
         }, 100);

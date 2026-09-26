@@ -11,7 +11,7 @@
     { "fullName": "Sebastien Crouzet", "role": "Postdoc" },
     { "fullName": "Sven Eberhardt", "role": "Postdoc" },
     { "fullName": "Roman Feiman", "role": "Honors" },
-    { "fullName": "Thomas Fel", "role": "PostDoc" },
+    { "fullName": "Thomas Fel", "role": "Postdoc" },
     { "fullName": "Lore Goetschalckx", "role": "Postdoc" },
     { "fullName": "Lakshmi N. Govindarajan", "role": "PhD" },
     { "fullName": "Charlie Holtz", "role": "Honors" },
@@ -41,8 +41,8 @@
     { "fullName": "Sahar Shahamatdar", "role": "Honors" },
     { "fullName": "Imri Sofer", "role": "PhD" },
     { "fullName": "Mohit Vaishnav", "role": "PhD" },
-    { "fullName": "Xizheng Yu", "role": "MSc" },
     { "fullName": "Michele Winter", "role": "Honors" },
+    { "fullName": "Xizheng Yu", "role": "MSc" },
     { "fullName": "Aimen Zerroug", "role": "PhD" }
   ]
 }
