@@ -12,16 +12,32 @@ jobs:
     steps:
       # Step 1: Checks out your repository so the workflow can access it
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
-      # Step 2: Installs dependencies and builds your project
-      # Replace this step with your project's specific build commands
+      # Step 2: Pinned Node with a cached npm store, so installs rarely hit the network
+      - name: Set up Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+
+      # Step 3: Installs dependencies (retrying transient registry errors such as
+      # the ECONNRESET that failed the 2026-09-27 run) and builds the project
       - name: Install and Build
         run: |
-          npm install --force
+          npm config set fetch-retries 5
+          npm config set fetch-retry-mintimeout 20000
+          npm config set fetch-retry-maxtimeout 120000
+          n=0
+          until npm install --force; do
+            n=$((n+1))
+            if [ "$n" -ge 3 ]; then exit 1; fi
+            echo "npm install failed; retrying ($n/3)"
+            sleep 20
+          done
           npm run build
 
-      # Step 3: Deploys the built files to the gh-pages branch
+      # Step 4: Deploys the built files to the gh-pages branch
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
