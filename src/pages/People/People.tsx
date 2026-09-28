@@ -16,6 +16,32 @@ const ROLE_ORDER = [
   "Undergraduate student",
 ];
 
+type PersonEntry = (typeof peopleData.people)[number];
+
+// A titled group of person cards within a team section; renders nothing when empty
+function PeopleGroup({ title, people }: { title: string; people: PersonEntry[] }) {
+  if (people.length === 0) return null;
+  return (
+    <>
+      <Title order={3} className="subsection-title">
+        {title} ({people.length})
+      </Title>
+      <div className="people-grid">
+        {people.map((person) => (
+          <Person
+            key={person.fullName}
+            fullName={person.fullName}
+            title={person.title}
+            university={person.university}
+            description={person.description}
+            imagePath={person.imagePath}
+          />
+        ))}
+      </div>
+    </>
+  );
+}
+
 export default function People() {
   // Sort people by the custom role order
   const sortedPeople = [...peopleData.people].sort(
@@ -42,13 +68,11 @@ export default function People() {
     person.title === "PostDoc"
   );
 
-  const graduateStudents = brownPeople.filter(person =>
-    person.title === "PhD student" ||
-    person.title === "MSc student"
-  );
+  const phdStudents = brownPeople.filter(person => person.title === "PhD student");
+  const mscStudents = brownPeople.filter(person => person.title === "MSc student");
   // Everyone else at Brown (research assistants, undergraduates) so no one is silently dropped
   const otherBrownPeople = brownPeople.filter(person =>
-    !seniorPersonnel.includes(person) && !graduateStudents.includes(person)
+    !seniorPersonnel.includes(person) && !phdStudents.includes(person) && !mscStudents.includes(person)
   );
 
   return (
@@ -85,68 +109,10 @@ export default function People() {
             Brown Team ({brownPeople.length})
           </Title>
 
-          {/* Senior Personnel Section */}
-          {seniorPersonnel.length > 0 && (
-            <>
-              <Title order={3} className="subsection-title">
-                Senior Personnel ({seniorPersonnel.length})
-              </Title>
-              <div className="people-grid">
-                {seniorPersonnel.map((person: any, index: number) => (
-                  <Person
-                    key={`senior-${index}`}
-                    fullName={person.fullName}
-                    title={person.title}
-                    university={person.university}
-                    description={person.description}
-                    imagePath={person.imagePath}
-                  />
-                ))}
-              </div>
-            </>
-          )}
-
-          {/* Graduate Students Section */}
-          {graduateStudents.length > 0 && (
-            <>
-              <Title order={3} className="subsection-title">
-                Graduate Students ({graduateStudents.length})
-              </Title>
-              <div className="people-grid">
-                {graduateStudents.map((person: any, index: number) => (
-                  <Person
-                    key={`grad-${index}`}
-                    fullName={person.fullName}
-                    title={person.title}
-                    university={person.university}
-                    description={person.description}
-                    imagePath={person.imagePath}
-                  />
-                ))}
-              </div>
-            </>
-          )}
-
-          {/* Research Assistants Section */}
-          {otherBrownPeople.length > 0 && (
-            <>
-              <Title order={3} className="subsection-title">
-                Research Assistants ({otherBrownPeople.length})
-              </Title>
-              <div className="people-grid">
-                {otherBrownPeople.map((person, index) => (
-                  <Person
-                    key={`other-${index}`}
-                    fullName={person.fullName}
-                    title={person.title}
-                    university={person.university}
-                    description={person.description}
-                    imagePath={person.imagePath}
-                  />
-                ))}
-              </div>
-            </>
-          )}
+          <PeopleGroup title="Senior Personnel" people={seniorPersonnel} />
+          <PeopleGroup title="PhD Students" people={phdStudents} />
+          <PeopleGroup title="MSc Students" people={mscStudents} />
+          <PeopleGroup title="Research Assistants" people={otherBrownPeople} />
         </>
       )}
 
