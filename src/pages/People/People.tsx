@@ -109,7 +109,7 @@ export default function People() {
                 Research Assistants ({otherBrownPeople.length})
               </Title>
               <div className="people-grid">
-                {otherBrownPeople.map((person: any, index: number) => (
+                {otherBrownPeople.map((person, index) => (
                   <Person
                     key={`other-${index}`}
                     fullName={person.fullName}
