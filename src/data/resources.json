@@ -60,6 +60,10 @@
         ],
         "Videos & Talks": [
             {
+                "title": "CVPR 2026 Keynote: Scaling laws vs. neural laws",
+                "url": "https://www.youtube.com/watch?v=tjn2MW0d8K8&t=7185s"
+            },
+            {
                 "title": "Vision beyond ImageNet",
                 "url": "https://cbmm.mit.edu/video/vision-beyond-imagenet-understanding-brain-mechanisms-underlying-visual-recognition"
             },

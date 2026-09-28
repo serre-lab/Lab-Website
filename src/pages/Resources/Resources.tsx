@@ -35,6 +35,7 @@ const getResourceDescription = (title: string, url: string): string => {
     if (titleLower.includes('neuroscience')) return "PyTorch library for neuroscience-inspired models";
     
     // Video descriptions
+    if (titleLower.includes('cvpr 2026')) return "Keynote on why scaling alone won't yield human-like vision, and what brains can teach AI";
     if (titleLower.includes('vision beyond imagenet')) return "Understanding brain mechanisms underlying visual recognition";
     if (titleLower.includes('primate vision')) return "Self-supervised learning approaches for visual alignment";
     if (titleLower.includes('aligning deep networks')) return "Novel neural architectures for human-like vision";

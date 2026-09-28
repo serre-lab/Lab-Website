@@ -368,6 +368,37 @@ export function Home() {
         </div>
       </motion.div>
 
+      {/* Featured Talk Section */}
+      <motion.div
+        className="recent-highlights-section"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
+        <Title order={2} className="section-title">Featured Talk</Title>
+        <div className="highlight-card featured-talk-card">
+          <Text className="highlight-journal">CVPR 2026 Keynote</Text>
+          <Title order={3} className="highlight-title">
+            <a href="https://www.youtube.com/watch?v=tjn2MW0d8K8&t=7185s" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
+              Scaling laws vs. neural laws: Toward more natural artificial vision
+            </a>
+          </Title>
+          <Text className="featured-talk-text">
+            Thomas Serre's keynote at CVPR 2026 gives an overview of the lab's current work: as vision models scale, they match human accuracy while drifting away from human vision, and brain-inspired learning and recurrent architectures offer a path back.
+          </Text>
+          <a
+            href="https://www.youtube.com/watch?v=tjn2MW0d8K8&t=7185s"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="featured-button-small"
+            aria-label="Watch the CVPR 2026 keynote on YouTube (opens in new tab)"
+          >
+            Watch on YouTube →
+          </a>
+        </div>
+      </motion.div>
+
       {/* Recent Highlights Section */}
       <motion.div
         className="recent-highlights-section"

@@ -60,8 +60,15 @@
       "fullName": "Athulith Paraselli",
       "title": "MSc student",
       "university": "Brown",
-      "imagePath": "people/athulith-paraselli.jpg",
+      "imagePath": "people/athulith-paraselli.svg",
       "description": "Athulith Paraselli is a Master's student in Computer Science at Brown University. His research focuses on the mechanistic interpretability of vision-language models, including how these models implement visual attention and feature binding."
+    },
+    {
+      "fullName": "Chealyfey (Lyfey) Vutha",
+      "title": "Research Assistant",
+      "university": "Brown",
+      "imagePath": "people/lyfey-vutha.jpg",
+      "description": "Chealyfey (Lyfey) Vutha is a student researcher at Brown University working with the lab's ANITI team on generative and energy-based models of vision. Lyfey is also a teaching assistant for CPSY 1291: Computational Methods for Mind, Brain & Behavior."
     },
     {
       "fullName": "Christopher José Cueva",

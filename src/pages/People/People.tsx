@@ -41,6 +41,10 @@ export default function People() {
     person.title === "PhD student" ||
     person.title === "MSc student"
   );
+  // Everyone else at Brown (research assistants, undergraduates) so no one is silently dropped
+  const otherBrownPeople = brownPeople.filter(person =>
+    !seniorPersonnel.includes(person) && !graduateStudents.includes(person)
+  );
 
   return (
     <>
@@ -87,6 +91,27 @@ export default function People() {
                 {graduateStudents.map((person: any, index: number) => (
                   <Person
                     key={`grad-${index}`}
+                    fullName={person.fullName}
+                    title={person.title}
+                    university={person.university}
+                    description={person.description}
+                    imagePath={person.imagePath}
+                  />
+                ))}
+              </div>
+            </>
+          )}
+
+          {/* Research Assistants Section */}
+          {otherBrownPeople.length > 0 && (
+            <>
+              <Title order={3} className="subsection-title">
+                Research Assistants ({otherBrownPeople.length})
+              </Title>
+              <div className="people-grid">
+                {otherBrownPeople.map((person: any, index: number) => (
+                  <Person
+                    key={`other-${index}`}
                     fullName={person.fullName}
                     title={person.title}
                     university={person.university}
