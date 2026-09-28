@@ -23,8 +23,13 @@ export default function People() {
       ROLE_ORDER.indexOf(a.title) - ROLE_ORDER.indexOf(b.title)
   );
 
+  // The PI leads both the Brown and ANITI teams, so is shown on their own and counted in neither
+  const principalInvestigators = sortedPeople.filter((person) => person.title === "Professor");
+
   // Separate Brown and ANITI people
-  const brownPeople = sortedPeople.filter((person) => person.university === "Brown");
+  const brownPeople = sortedPeople.filter(
+    (person) => person.university === "Brown" && !principalInvestigators.includes(person)
+  );
   const anitiPeople = sortedPeople.filter((person) => person.university === "ANITI");
   const generalPeople = sortedPeople.filter(
     (person) => person.university !== "Brown" && person.university !== "ANITI"
@@ -54,6 +59,26 @@ export default function People() {
         backgroundImage="/metcalf.webp"
       />
       <div className="people-container">
+      {principalInvestigators.length > 0 && (
+        <>
+          <Title order={2} className="section-title">
+            Principal Investigator
+          </Title>
+          <div className="people-grid">
+            {principalInvestigators.map((person, index) => (
+              <Person
+                key={`pi-${index}`}
+                fullName={person.fullName}
+                title={person.title}
+                university={person.university}
+                description={person.description}
+                imagePath={person.imagePath}
+              />
+            ))}
+          </div>
+        </>
+      )}
+
       {brownPeople.length > 0 && (
         <>
           <Title order={2} className="section-title">
