@@ -18,7 +18,7 @@ At this stage Slack is all you need. Accounts on the lab's machines, the lab's G
 
 We like to bring in new collaborators, whether they contribute a new skill or a new pair of hands, and get them involved in the lab's ongoing projects. This is the best way for a new student to start.
 
-- **Projects are open to anyone who wants to join.** Each project has a Slack channel whose name starts with #proj-. Follow the channels of the projects that interest you.
+- **Projects are open to anyone who wants to join.** Most projects have a Slack channel whose name starts with #proj-. Follow the channels of the projects that interest you, and ask the project lead if you cannot find one.
 - **Go to the project meetings.** You do not need to be invited.
 - **Ask the project lead how you can help.**
 - **Grow from someone else's project into your own.** Start thinking about your own project in parallel, and move towards independence as you become more confident.
