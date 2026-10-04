@@ -12,6 +12,9 @@ const BASE_URL = 'https://serre.lab.brown.edu';
 const SITEMAP_PATH = path.join(__dirname, '../public/sitemap.xml');
 const MARKDOWN_DIR = path.join(__dirname, '../src/markdown-pages');
 
+// Unlisted pages: reachable by direct link only, so kept out of the sitemap
+const UNLISTED_ROUTES = ['/resources/joining-the-lab'];
+
 // Main static routes
 const staticRoutes = [
   { path: '/', priority: '1.0', changefreq: 'weekly' },
@@ -52,7 +55,8 @@ function generateSitemap() {
   const today = new Date().toISOString().split('T')[0];
   
   // Get all markdown routes
-  const markdownRoutes = findMarkdownFiles(MARKDOWN_DIR);
+  const markdownRoutes = findMarkdownFiles(MARKDOWN_DIR)
+    .filter(route => !UNLISTED_ROUTES.includes(route));
   
   // Combine all routes
   const allRoutes = [
