@@ -11,7 +11,7 @@ Thomas Serre
 - Ask me for a Slack invitation. Slack is where the lab talks. Sign up with your Brown email address if you have one.
 - Come to group meeting. We meet on Wednesdays at 11:00 Providence time (US Eastern) in the Carney Innovation Zone, 164 Angell St, room 402. The first hour is a presentation or discussion, and the second is an informal lunch. Every meeting is hybrid, and the Zoom link is posted on Slack each week.
 - Follow the #lab-group-meeting channel on Slack. If a meeting is cancelled or moved, it is announced there.
-- Join the CCBS Slack too. The Carney Center for Computational Brain Science has its own Slack workspace, where events, talks and papers on AI and neuroscience from across Brown are posted. Go to [carney-ccbs.slack.com/signup](https://carney-ccbs.slack.com/signup) and sign up with your Brown email address. You do not need an invitation.
+- Join the CCBS Slack too. The Center for Computational Brain Science (CCBS), part of the Carney Institute, has its own Slack workspace, where events, talks and papers on AI and neuroscience from across Brown are posted. Go to [carney-ccbs.slack.com/signup](https://carney-ccbs.slack.com/signup) and sign up with your Brown email address. You do not need an invitation.
 - Read. Lab members post papers of general interest in the Slack channel #lab-interesting.
 
 At this stage Slack is all you need. Accounts on the lab's machines, the lab's GitHub organization and the private lab handbook come later, once you are active in research. If you want to write code before then, use [Google Colab](https://colab.research.google.com/), which is free.
