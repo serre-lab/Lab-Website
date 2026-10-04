@@ -1,30 +1,28 @@
 # Joining the lab
 
-How to start in the Serre Lab, how to find a project, and what we expect of each other.
+How to start in the Serre Lab and how to find a project.
 
-The lab has been growing steadily, and I keep being asked the same questions. How do I get the neuroscience background I need? How much Python should I learn? How much should I be reading? This page is my answer. It is written for anyone who wants to join the lab, at Brown or at ANITI in Toulouse. An old article, [How to do Research at the MIT AI Lab](https://hdl.handle.net/1721.1/41487), is still worth reading alongside it.
+The lab has been growing steadily, and I keep being asked the same questions. How do I get the neuroscience background I need? How much Python should I learn? How much should I be reading? I wrote this page for anyone who wants to join the lab, at Brown or at ANITI in Toulouse. An old article, [How to do Research at the MIT AI Lab](https://hdl.handle.net/1721.1/41487), is still worth reading alongside it.
 
 Thomas Serre
 
 ## How to start
 
-- **Ask me for a Slack invitation.** Slack is where the lab talks. Sign up with your Brown email address if you have one.
-- **Come to group meeting.** We meet on Wednesdays at 11:00 Providence time (US Eastern) in the Carney Innovation Zone, 164 Angell St, room 402. Every meeting is hybrid, and the Zoom link is posted on Slack each week. Follow the #lab-group-meeting channel on Slack: if a meeting is cancelled or moved, it is announced there.
-- **Join the CCBS Slack too.** The Carney Center for Computational Brain Science has its own Slack workspace, where events, talks and papers on AI and neuroscience from across Brown are posted. Go to [carney-ccbs.slack.com/signup](https://carney-ccbs.slack.com/signup) and sign up with your Brown email address. You do not need an invitation.
-- **Read.** Lab members post papers of general interest in the Slack channel #lab-interesting. The Reading section below says how much I expect.
+- Ask me for a Slack invitation. Slack is where the lab talks. Sign up with your Brown email address if you have one.
+- Come to group meeting. We meet on Wednesdays at 11:00 Providence time (US Eastern) in the Carney Innovation Zone, 164 Angell St, room 402. The first hour is a presentation or discussion, and the second is an informal lunch. Every meeting is hybrid, and the Zoom link is posted on Slack each week.
+- Follow the #lab-group-meeting channel on Slack. If a meeting is cancelled or moved, it is announced there.
+- Join the CCBS Slack too. The Carney Center for Computational Brain Science has its own Slack workspace, where events, talks and papers on AI and neuroscience from across Brown are posted. Go to [carney-ccbs.slack.com/signup](https://carney-ccbs.slack.com/signup) and sign up with your Brown email address. You do not need an invitation.
+- Read. Lab members post papers of general interest in the Slack channel #lab-interesting.
 
-At this stage Slack is all you need. Accounts on the lab's machines, the lab's GitHub organization and the private lab handbook come later, once you are active in research. If you want to write code before then, use [Google Colab](https://colab.research.google.com/): it is free and you cannot break anything there.
+At this stage Slack is all you need. Accounts on the lab's machines, the lab's GitHub organization and the private lab handbook come later, once you are active in research. If you want to write code before then, use [Google Colab](https://colab.research.google.com/), which is free.
 
 ## How to find a project
 
-We like to bring in new collaborators, whether they contribute a new skill or a new pair of hands, and get them involved in the lab's ongoing projects. This is the best way for a new student to start.
+We like to bring in new collaborators, whether they contribute a new skill or a new pair of hands, and get them involved in the lab's ongoing projects. This is the best way for a new student to start. The idea is then to start thinking about your own project in parallel, and to move towards independence as you grow more confident.
 
-- **Projects are open to anyone who wants to join.** Most projects have a Slack channel whose name starts with #proj-. Follow the channels of the projects that interest you, and ask the project lead if you cannot find one.
-- **Go to the project meetings.** You do not need to be invited.
-- **Ask the project lead how you can help.**
-- **Grow from someone else's project into your own.** Start thinking about your own project in parallel, and move towards independence as you become more confident.
+Projects are open to anyone who wants to join. Most have a Slack channel whose name starts with #proj-. Follow the channels of the projects that interest you, go to the project meetings (you do not need an invitation), and ask the project lead how you can help.
 
-If you contribute intellectually to a project, you will be an author on the paper we write. The Authorship section below gives the criteria.
+If you contribute intellectually to a project, you will be an author on the paper we write. The criteria are under Authorship.
 
 ## Lab philosophy
 
@@ -72,8 +70,8 @@ We study this technology, so it would be strange to pretend we do not use it. Yo
 - **Code.** AI is fine for boilerplate, refactors, plotting and debugging. Be much more careful with the part that implements the actual science: that is where a plausible-looking error costs you six months. Write the test before you trust the output.
 - **Writing.** Use AI to sharpen prose you have already written. Do not use it to generate the argument, because the argument is the science. A paper whose structure you did not build is a paper you cannot defend in review.
 - **Reading.** AI is good for triage and for deciding what deserves your attention. It is no substitute for reading the papers that matter to you. The 20% is about developing taste, and you cannot outsource taste.
-- **Reviewing.** Assume the answer is no. Do not put any part of a manuscript you are reviewing into an AI service. Conferences now enforce this, and the penalty can fall on your own submissions.
-- **Never put hidden text in a submission.** Instructions buried in a PDF to steer an AI reviewer are treated as attempted collusion.
+- **Reviewing.** Assume the answer is no. Do not put any part of a manuscript you are reviewing into an AI service. Conferences check for this, and the penalty can fall on your own submissions.
+- **Hidden text.** Never put hidden instructions for an AI reviewer in a submission. Conferences treat it as attempted collusion.
 - **Data.** Do not put unpublished data, participant information or a collaborator's unpublished results into a third-party AI service.
 - **Disclosure.** Tell your co-authors what you used, and follow the venue's policy. You are responsible for every word, figure and reference, regardless of what produced it.
 
@@ -81,15 +79,7 @@ Lab members get the full guidelines in the lab handbook.
 
 ## What we work on
 
-We study the computations that underlie biological vision and use them to build more human-like AI. The [Research page](/research) describes each direction and links to the papers. In short:
-
-- **Human–AI alignment in vision.** Which training data and objectives make vision models agree with human behavior and neural recordings.
-- **Cognitive benchmarks for visual reasoning.** Tasks from cognitive psychology that show where machine vision breaks down.
-- **Cortical feedback and recurrent vision.** What recurrent circuits compute, and how to build models that use them.
-- **Development and embodiment.** How vision can be learned from limited, self-generated, temporally continuous experience.
-- **Explainable AI for scientific discovery.** Methods that explain what deep networks have learned.
-- **Foundation models and multimodal reasoning.** What these models learn, and when they can serve as scientific instruments.
-- **AI for behavioral and clinical science.** Computer vision that automates behavioral measurement.
+We study the computations that underlie biological vision and use them to build more human-like AI. The [Research page](/research) describes the current directions and links to the papers.
 
 ## Recommended Brown courses
 
@@ -97,7 +87,7 @@ Which courses should you take? For undergraduates, and for anyone new to the are
 
 Everything below comes from Courses@Brown for Fall 2026 and Spring 2027. Department codes are now CPSY, not CLPS. Offerings and instructors change every year, so confirm on [cab.brown.edu](https://cab.brown.edu) before you plan a semester.
 
-*Last checked: September 2026. The list is checked again each August.*
+*Last checked: September 2026.*
 
 ### Start here
 
