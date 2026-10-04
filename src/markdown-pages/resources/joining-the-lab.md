@@ -32,7 +32,7 @@ One of the main goals of the lab is to be a place where people grow as researche
 
 **We have far more ideas than hands.** This is a real constraint and it cuts both ways: there is always something interesting to work on, and nothing happens unless someone decides to own it. Taking ownership of a problem is how you become someone the lab builds projects around.
 
-**Reading is part of the job, not what you do when the real work is done.** I expect graduate students and postdocs to spend at least 20% of their time reading and keeping track of the field. If that sounds like a lot, that is the point.
+**Reading is part of the job, not what you do when the real work is done.** I expect graduate students and postdocs to spend at least 20% of their time reading and keeping track of the field. If that sounds like a lot, that is the point. Undergraduates can spend less, but they should still read.
 
 **Ask early and ask often.** The cost of being stuck quietly for two weeks is much higher than the cost of a dumb question. I have never once thought less of someone for asking.
 
@@ -40,7 +40,7 @@ One of the main goals of the lab is to be a place where people grow as researche
 
 ## Reading
 
-If you want to be an active researcher, you have to keep up with the literature. I expect graduate students and postdocs to spend at least 20% of their time reading and keeping track of the field.
+If you want to be an active researcher, you have to keep up with the literature. I expect graduate students and postdocs to spend at least 20% of their time reading and keeping track of the field. For undergraduates less is fine, but reading is still part of the work.
 
 Collectively we post a lot of papers on Slack. Not all of them are relevant to you, and nobody expects you to read everything. Pick a few interests outside your immediate area of research, and read as much as you can within the time you have.
 
