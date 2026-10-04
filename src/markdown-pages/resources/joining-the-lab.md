@@ -9,7 +9,7 @@ Thomas Serre
 ## How to start
 
 - **Ask me for a Slack invitation.** Slack is where the lab talks. Sign up with your Brown email address if you have one.
-- **Come to group meeting.** We meet on Wednesdays at 11:00 Providence time (US Eastern) in the Carney Innovation Zone, 164 Angell St, room 402. Every meeting is hybrid, and the Zoom link is posted on Slack each week. The day and time can change from one semester to the next.
+- **Come to group meeting.** We meet on Wednesdays at 11:00 Providence time (US Eastern) in the Carney Innovation Zone, 164 Angell St, room 402. Every meeting is hybrid, and the Zoom link is posted on Slack each week. Follow the #lab-group-meeting channel on Slack: if a meeting is cancelled or moved, it is announced there.
 - **Read.** Lab members post papers of general interest in the Slack channel #lab-interesting. The Reading section below says how much I expect.
 
 At this stage Slack is all you need. Accounts on the lab's machines, the lab's GitHub organization and the private lab handbook come later, once you are active in research. If you want to write code before then, use [Google Colab](https://colab.research.google.com/): it is free and you cannot break anything there.
