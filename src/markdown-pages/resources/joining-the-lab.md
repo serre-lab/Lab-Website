@@ -85,7 +85,7 @@ We study the computations that underlie biological vision and use them to build 
 
 ## Recommended Brown courses
 
-Which courses should you take? For undergraduates, and for anyone new to the area, the starting point is CPSY 1291 (Fall): a hands-on introduction to NeuroAI in which you learn PyTorch by building models, from MLPs through transformers and generative models. The natural next step is CPSY 2107, NeuroAI: Deep Learning in Brains, Minds, and Machines (Spring): a seminar built around primary literature, meant to get you thinking about the field and about research questions of your own. It is a graduate module, so undergraduates who want to take it should talk to me. CPSY 1950, which used to fill that role, is not offered in 2026-27.
+Which courses should you take? For undergraduates, and for anyone new to the area, the starting point is CPSY 1291 (Fall): a hands-on introduction to NeuroAI in which you learn PyTorch by building models, from MLPs through transformers and generative models. For undergraduates the course to take next is CPSY 1950, which alternates with CPSY 1291 in the fall and is not offered in 2026-27. CPSY 2107, NeuroAI: Deep Learning in Brains, Minds, and Machines (Spring), is a seminar built around primary literature. It is for graduate students.
 
 Everything below comes from Courses@Brown for Fall 2026 and Spring 2027. Department codes are now CPSY, not CLPS. Offerings and instructors change every year, so confirm on [cab.brown.edu](https://cab.brown.edu) before you plan a semester.
 
@@ -94,7 +94,8 @@ Everything below comes from Courses@Brown for Fall 2026 and Spring 2027. Departm
 ### Start here
 
 - **CPSY 1291 Computational Methods for Mind, Brain and Behavior** (Serre). Fall. Hands-on NeuroAI and PyTorch; the prerequisite is any introductory programming course.
-- **CPSY 2107 NeuroAI: Deep Learning in Brains, Minds, and Machines** (Serre). Spring. Graduate seminar on primary literature.
+- **CPSY 1950** (Serre). Fall, alternating with CPSY 1291; not offered in 2026-27. The next course for undergraduates.
+- **CPSY 2107 NeuroAI: Deep Learning in Brains, Minds, and Machines** (Serre). Spring. Seminar on primary literature, for graduate students.
 
 ### Vision, perception and computational cognition (CPSY)
 
