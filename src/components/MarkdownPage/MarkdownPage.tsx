@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { Title, Text, Anchor, List } from "@mantine/core";
+import { Title, Text, Anchor } from "@mantine/core";
 import React from "react";
 import ReactMarkdown from "react-markdown";
 import { Link } from "react-router-dom";
@@ -9,6 +9,19 @@ import { HeroBanner } from "../HeroBanner/HeroBanner";
 interface MarkdownPageProps {
     content: string;
 }
+
+// Optional YAML-style front matter. Only `subtitle:` is read; when present, it
+// replaces the subtitle otherwise inferred from the first paragraph.
+const splitFrontMatter = (content: string): { meta: Record<string, string>; body: string } => {
+    const match = content.match(/^---\n([\s\S]*?)\n---\n?/);
+    if (!match) return { meta: {}, body: content };
+    const meta: Record<string, string> = {};
+    for (const line of match[1].split('\n')) {
+        const i = line.indexOf(':');
+        if (i > 0) meta[line.slice(0, i).trim()] = line.slice(i + 1).trim().replace(/^["']|["']$/g, '');
+    }
+    return { meta, body: content.slice(match[0].length) };
+};
 
 // Extract title from markdown content (first h1)
 const extractTitle = (content: string): string => {
@@ -41,9 +54,10 @@ const extractSubtitle = (content: string): string | null => {
     return null;
 };
 
-const MarkdownPage: React.FC<MarkdownPageProps> = ({ content }) => {
+const MarkdownPage: React.FC<MarkdownPageProps> = ({ content: raw }) => {
+    const { meta, body: content } = splitFrontMatter(raw);
     const title = extractTitle(content);
-    const subtitle = extractSubtitle(content);
+    const subtitle = meta.subtitle || extractSubtitle(content);
     
     // Remove the first h1 from content since it's shown in the hero banner
     const contentWithoutFirstH1 = content.replace(/^#\s+.*$/m, '').trim();
@@ -66,7 +80,6 @@ const MarkdownPage: React.FC<MarkdownPageProps> = ({ content }) => {
                             href?.startsWith("/") && !/\.[a-z0-9]+$/i.test(href)
                                 ? <Anchor component={Link} to={href} {...props} />
                                 : <Anchor href={href} {...props} />,
-                        ul: ({ node, ...props }) => <List {...props} />,
                         // Add more mappings as needed
                     }}
                 >

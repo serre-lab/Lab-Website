@@ -1,18 +1,20 @@
-# Joining the lab
+---
+subtitle: How to start in the Serre Lab and how to find a project.
+---
 
-How to start in the Serre Lab and how to find a project.
+# Joining the lab
 
 The lab has been growing steadily, and I keep being asked the same questions. How do I get the neuroscience background I need? How much Python should I learn? How much should I be reading? I wrote this page for anyone who wants to join the lab, at Brown or at ANITI in Toulouse. An old article, [How to do Research at the MIT AI Lab](https://hdl.handle.net/1721.1/41487), is still worth reading alongside it.
 
-Thomas Serre
+*— Thomas Serre*
 
 ## How to start
 
-- Ask me for a Slack invitation. Slack is where the lab talks. Sign up with your Brown email address if you have one.
-- Come to group meeting. We meet on Wednesdays at 11:00 Providence time (US Eastern) in the Carney Innovation Zone, 164 Angell St, room 402. The first hour is a presentation or discussion, and the second is an informal lunch. Every meeting is hybrid, and the Zoom link is posted on Slack each week.
-- Follow the #lab-group-meeting channel on Slack. If a meeting is cancelled or moved, it is announced there.
-- Join the CCBS Slack too. The Center for Computational Brain Science (CCBS), part of the Carney Institute, has its own Slack workspace, where events, talks and papers on AI and neuroscience from across Brown are posted. Go to [carney-ccbs.slack.com/signup](https://carney-ccbs.slack.com/signup) and sign up with your Brown email address. You do not need an invitation.
-- Read. Lab members post papers of general interest in the Slack channel #lab-interesting.
+- **Ask me for a Slack invitation.** Slack is where the lab talks. Sign up with your Brown email address if you have one.
+- **Come to group meeting.** We meet on Wednesdays at 11:00 Providence time (US Eastern) in the Carney Innovation Zone, 164 Angell St, room 402. The first hour is a presentation or discussion, and the second is an informal lunch. Every meeting is hybrid, and the Zoom link is posted on Slack each week.
+- **Follow the `#lab-group-meeting` channel on Slack.** If a meeting is cancelled or moved, it is announced there.
+- **Join the CCBS Slack too.** The Center for Computational Brain Science (CCBS), part of the Carney Institute, has its own Slack workspace, where events, talks and papers on AI and neuroscience from across Brown are posted. Go to [carney-ccbs.slack.com/signup](https://carney-ccbs.slack.com/signup) and sign up with your Brown email address. You do not need an invitation.
+- **Read.** Lab members post papers of general interest in the Slack channel `#lab-interesting`.
 
 At this stage Slack is all you need. Accounts on the lab's machines, the lab's GitHub organization and the private lab handbook come later, once you are active in research. If you want to write code before then, use [Google Colab](https://colab.research.google.com/), which is free.
 
@@ -20,9 +22,9 @@ At this stage Slack is all you need. Accounts on the lab's machines, the lab's G
 
 We like to bring in new collaborators, whether they contribute a new skill or a new pair of hands, and get them involved in the lab's ongoing projects. This is the best way for a new student to start. The idea is then to start thinking about your own project in parallel, and to move towards independence as you grow more confident.
 
-Projects are open to anyone who wants to join. Most have a Slack channel whose name starts with #proj-. Follow the channels of the projects that interest you, go to the project meetings (you do not need an invitation), and ask the project lead how you can help.
+Projects are open to anyone who wants to join. Most have a Slack channel whose name starts with `#proj-`. Follow the channels of the projects that interest you, go to the project meetings (you do not need an invitation), and ask the project lead how you can help.
 
-If you contribute intellectually to a project, you will be an author on the paper we write. The criteria are under Authorship.
+If you contribute intellectually to a project, you will be an author on the paper we write. The criteria are below, under Authorship.
 
 ## Lab philosophy
 
