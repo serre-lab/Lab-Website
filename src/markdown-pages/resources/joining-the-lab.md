@@ -9,7 +9,7 @@ Thomas Serre
 ## How to start
 
 - **Ask me for a Slack invitation.** Slack is where the lab talks. Sign up with your Brown email address if you have one.
-- **Come to group meeting.** We meet on Wednesdays at 11:00 in the Carney Innovation Zone, 164 Angell St, room 402. Every meeting is hybrid, and the Zoom link is posted on Slack each week. The day and time can change from one semester to the next.
+- **Come to group meeting.** We meet on Wednesdays at 11:00 Providence time (US Eastern) in the Carney Innovation Zone, 164 Angell St, room 402. Every meeting is hybrid, and the Zoom link is posted on Slack each week. The day and time can change from one semester to the next.
 - **Read.** Lab members post papers of general interest in the Slack channel #lab-interesting. The Reading section below says how much I expect.
 
 At this stage Slack is all you need. Accounts on the lab's machines, the lab's GitHub organization and the private lab handbook come later, once you are active in research. If you want to write code before then, use [Google Colab](https://colab.research.google.com/): it is free and you cannot break anything there.
@@ -23,7 +23,7 @@ We like to bring in new collaborators, whether they contribute a new skill or a 
 - **Ask the project lead how you can help.**
 - **Grow from someone else's project into your own.** Start thinking about your own project in parallel, and move towards independence as you become more confident.
 
-If you contribute intellectually to a project, you will be an author on the paper we write.
+If you contribute intellectually to a project, you will be an author on the paper we write. The Authorship section below gives the criteria.
 
 ## Lab philosophy
 
@@ -68,12 +68,13 @@ It is not enough to do good science. You also need to communicate it, which mean
 We study this technology, so it would be strange to pretend we do not use it. You should use these tools. But a few things are not negotiable.
 
 - **You must be able to defend everything that goes out under your name.** If you cannot explain why a line of code is correct or why a claim in your draft is true, it is not ready, regardless of what wrote it.
-- **Code.** AI is fine for boilerplate, refactors, plotting and debugging. Be much more careful with the part that implements the actual science, and write the test before you trust the output.
-- **Writing.** Use AI to sharpen prose you have already written. Do not use it to generate the argument, because the argument is the science.
-- **Reading.** AI is good for triage. It is no substitute for reading the papers that matter to you.
-- **Reviewing.** Assume the answer is no. Do not put any part of a manuscript you are reviewing into an AI service.
+- **Code.** AI is fine for boilerplate, refactors, plotting and debugging. Be much more careful with the part that implements the actual science: that is where a plausible-looking error costs you six months. Write the test before you trust the output.
+- **Writing.** Use AI to sharpen prose you have already written. Do not use it to generate the argument, because the argument is the science. A paper whose structure you did not build is a paper you cannot defend in review.
+- **Reading.** AI is good for triage and for deciding what deserves your attention. It is no substitute for reading the papers that matter to you. The 20% is about developing taste, and you cannot outsource taste.
+- **Reviewing.** Assume the answer is no. Do not put any part of a manuscript you are reviewing into an AI service. Conferences now enforce this, and the penalty can fall on your own submissions.
+- **Never put hidden text in a submission.** Instructions buried in a PDF to steer an AI reviewer are treated as attempted collusion.
 - **Data.** Do not put unpublished data, participant information or a collaborator's unpublished results into a third-party AI service.
-- **Disclosure.** Tell your co-authors what you used, and follow the venue's policy.
+- **Disclosure.** Tell your co-authors what you used, and follow the venue's policy. You are responsible for every word, figure and reference, regardless of what produced it.
 
 Lab members get the full guidelines in the lab handbook.
 
