@@ -16,7 +16,7 @@ The lab has been growing steadily, and I keep being asked the same questions. Ho
 - **Join the CCBS Slack too.** The Center for Computational Brain Science (CCBS), part of the Carney Institute, has its own Slack workspace, where events, talks and papers on AI and neuroscience from across Brown are posted. Go to [carney-ccbs.slack.com/signup](https://carney-ccbs.slack.com/signup) and sign up with your Brown email address. You do not need an invitation.
 - **Read.** Lab members post papers of general interest in the Slack channel \`#lab-interesting\`.
 
-At this stage Slack is all you need. Accounts on the lab's machines, the lab's GitHub organization and the private lab handbook come later, once you are active in research. If you want to write code before then, use [Google Colab](https://colab.research.google.com/), which is free.
+At this stage Slack is all you need. Accounts on the lab's machines and the lab's GitHub organization come later, once you formally join the lab. So does the [private lab handbook](https://psychic-adventure-y8eo2zo.pages.github.io/), which covers accounts, computing and lab rules; it opens once you are in the lab's GitHub organization. If you want to write code before then, use [Google Colab](https://colab.research.google.com/), which is free.
 
 ## How to find a project
 
