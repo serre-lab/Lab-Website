@@ -94,7 +94,7 @@ Everything below comes from Courses@Brown for Fall 2026 and Spring 2027. The dep
 ### Start here
 
 - **CPSY 1291 Computational Methods for Mind, Brain and Behavior** (Serre). Fall. Hands-on NeuroAI and PyTorch; the prerequisite is any introductory programming course.
-- **CPSY 1950** (Serre). Fall, in alternate years with CPSY 1291; not offered in 2026–27. The next course for undergraduates.
+- **CPSY 1950 Deep Learning in Brains, Minds & Machines** (Serre). Fall, alternating with CPSY 1291; not offered in 2026-27. The next course for undergraduates.
 - **CPSY 2107 NeuroAI: Deep Learning in Brains, Minds, and Machines** (Serre). Spring, graduate. Seminar on the primary literature.
 
 ### Vision, perception and computational cognition (CPSY)
