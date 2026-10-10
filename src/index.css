@@ -16,7 +16,7 @@
     --color-text-secondary: #45545d;
     --color-text-tertiary: #5f6c75;
     --color-link: var(--color-primary);
-    --color-link-hover: var(--color-accent);
+    --color-link-hover: var(--color-primary-dark);
 
     /* Background colors */
     --color-bg-light: #f4f8fc;
@@ -54,7 +54,7 @@ h2, h3, h4, h5, h6 {
 
 body {
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1rem;
     /* display: flex; */
     /* place-items: center; */
     min-width: 320px;
@@ -144,4 +144,22 @@ button:focus-visible {
 .mantine-Text-root[data-mantine-color="dimmed"],
 .mantine-Text-root[color="dimmed"] {
   color: var(--color-text-secondary) !important;
+}
+/* Shared content gutters across the public site. */
+@media (max-width: 768px) {
+  .home-container .home-content,
+  .home-container .featured-projects-section,
+  .home-container .recent-papers-section,
+  .home-container .recent-highlights-section,
+  main .research-container,
+  main .resources-container,
+  main .publications-container,
+  main .people-container,
+  main .scicomm-container,
+  main .markdown-container {
+    width: 100%;
+    max-width: 800px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }

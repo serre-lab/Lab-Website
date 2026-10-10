@@ -80,6 +80,10 @@ header {
 }
 
 @media (max-width: 720px) {
+  header {
+    position: static;
+  }
+
   .header-content {
     flex-direction: column;
     align-items: flex-start;

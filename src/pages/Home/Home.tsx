@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 import { PublicationEntry } from "../../components/PublicationEntry/PublicationEntry";
 import { Title, Text } from "@mantine/core";
-import { motion } from "motion/react";
 import { useState } from "react";
 import publicationsData from "../../data/publications_by_year.json";
 import { HeroBanner } from "../../components/HeroBanner/HeroBanner";
@@ -16,26 +15,26 @@ const abbreviateAuthors = (authors: string, maxAuthors: number = 2): string => {
     const lastName = parts[parts.length - 1];
     return `${lastName} et al.`;
   }
-  
+
   // Handle both comma and ampersand separators
   const authorList = authors.split(/,\s*|\s*&\s*/).filter(author => author.trim() !== '');
-  
+
   // Extract last name from author (remove initials)
   const getLastName = (author: string) => {
     const parts = author.trim().split(/\s+/);
     return parts[parts.length - 1]; // Get the last part (last name)
   };
-  
+
   if (authorList.length <= maxAuthors) {
     // For 2 or fewer authors, remove initials but keep all names
     return authorList.map(getLastName).join(' & ');
   }
-  
+
   // Find the first author that contains "Serre" or "T. Serre"
   const serreIndex = authorList.findIndex(author => 
     author.toLowerCase().includes('serre') || author.toLowerCase().includes('t. serre')
   );
-  
+
   if (serreIndex === 0) {
     // Serre is first author
     return `${getLastName(authorList[0])} et al.`;
@@ -105,24 +104,6 @@ const recentPapers = recentPaperUrls
   .map((url) => publicationRecords.find((paper) => paper.url === url))
   .filter((paper) => paper !== undefined);
 
-// Animation variants
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.6, ease: "easeOut" },
-  },
-};
-
-const staggerContainer = {
-  visible: {
-    transition: {
-      staggerChildren: 0.15,
-    },
-  },
-};
-
 export function Home() {
   const [showUndergradDetails, setShowUndergradDetails] = useState(false);
   const [showPhdDetails, setShowPhdDetails] = useState(false);
@@ -143,21 +124,17 @@ export function Home() {
         backgroundImage="/metcalf.webp"
       />
 
-      {/* Featured Talk Section */}
-      <motion.div
+      {/* Featured talk Section */}
+      <div
         className="recent-highlights-section"
-        variants={fadeUp}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
       >
-        <Title order={2} className="section-title">Featured Talk</Title>
+        <Title order={2} className="section-title">Featured talk</Title>
         <div className="highlight-card featured-talk-card">
           <Text className="highlight-journal">CVPR 2026 Keynote</Text>
           <Title order={3} className="highlight-title">
-            <a href="https://www.youtube.com/watch?v=tjn2MW0d8K8&t=7185s" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
+            <a href="https://www.youtube.com/watch?v=tjn2MW0d8K8&t=7185s" target="_blank" rel="noopener noreferrer">
               Scaling laws vs. neural laws: Toward more natural artificial vision
-            </a>
+            <span className="sr-only"> (opens in new tab)</span></a>
           </Title>
           <Text className="featured-talk-text">
             Thomas Serre's keynote at CVPR 2026 gives an overview of the lab's current work: as vision models scale, they match human accuracy while drifting away from human vision, and brain-inspired learning and recurrent architectures offer a path back.
@@ -167,30 +144,26 @@ export function Home() {
             target="_blank"
             rel="noopener noreferrer"
             className="featured-button-small"
-            aria-label="Watch the CVPR 2026 keynote on YouTube (opens in new tab)"
+            aria-label="Watch on YouTube →: CVPR 2026 keynote (opens in new tab)"
           >
             Watch on YouTube →
           </a>
         </div>
-      </motion.div>
+      </div>
 
-      {/* Prospective Students Section */}
-      <motion.div
+      {/* Prospective students Section */}
+      <div
         className="home-content"
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
       >
-        <motion.div variants={fadeUp}>
+        <div>
           <Title order={2} className="section-title">
-            Prospective Students
+            Prospective students
           </Title>
-        </motion.div>
+        </div>
 
-        <motion.div variants={fadeUp} className="student-cards-container">
+        <div className="student-cards-container">
           <div className="student-card">
-            <Title order={3} className="student-card-title"><span aria-hidden="true">🎓</span> Undergraduate & MSc</Title>
+            <Title order={3} className="student-card-title">Undergraduate & MSc</Title>
             <Text className="student-card-text">
               Brown undergraduate and MSc students can begin by joining the lab’s Slack workspace, attending group meetings, and exploring project discussions. Contact Thomas Serre for onboarding information.
             </Text>
@@ -202,7 +175,7 @@ export function Home() {
                 <ul className="student-requirements">
                   <li>CS intro sequence</li>
                   <li>At least one ML, vision, or deep learning course</li>
-                  <li>Strongly encouraged: CPSY 1291 or CPSY 1950 with Prof. Serre</li>
+                  <li>Strongly encouraged: CPSY 1291 or CPSY 1950 with Thomas Serre</li>
                   <li>Familiarity with our research and ability to articulate a specific project interest</li>
                 </ul>
               </div>
@@ -219,7 +192,7 @@ export function Home() {
           </div>
 
           <div className="student-card">
-            <Title order={3} className="student-card-title"><span aria-hidden="true">📚</span> PhD Students</Title>
+            <Title order={3} className="student-card-title">PhD students</Title>
             <Text className="student-card-text">
               PhD applicants can apply through cognitive science, computer science, or neuroscience
               graduate programs.
@@ -235,7 +208,7 @@ export function Home() {
                   <li>Prior experience in brain and cognitive science (a plus but not required)</li>
                 </ul>
                 <Text className="student-card-text" style={{ marginTop: "0.5rem" }}>
-                  Due to the large volume of applicants, Prof. Serre can only meet with applicants after they have been invited for an interview.
+                  Due to the large volume of applicants, Thomas Serre can only meet with applicants after they have been invited for an interview.
                 </Text>
               </div>
             )}
@@ -251,9 +224,9 @@ export function Home() {
           </div>
 
           <div className="student-card">
-            <Title order={3} className="student-card-title"><span aria-hidden="true">🔬</span> Postdocs</Title>
+            <Title order={3} className="student-card-title">Postdocs</Title>
             <Text className="student-card-text">
-              Prospective postdocs should email Prof. Serre directly with their CV, research statement, and references.
+              Prospective postdocs should email Thomas Serre directly with their CV, research statement, and references.
             </Text>
             {showPostdocDetails && (
               <div id="postdoc-requirements">
@@ -276,35 +249,28 @@ export function Home() {
               {showPostdocDetails ? "Show less ▲" : "Show requirements ▼"}
             </button>
           </div>
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
 
       {/* Featured Projects Section */}
-      <motion.div
+      <div
         className="featured-projects-section"
-        variants={fadeUp}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
       >
         <Title order={2} className="section-title">Tools and libraries</Title>
-        <Text className="body-text featured-subtitle">
-          Try our research tools, interactive demos, and open-source software to advance vision science
-        </Text>
-        
+
         <div className="featured-grid">
           {/* ClickMe Card */}
           <div className="featured-card">
             <div className="featured-content">
-              <Title order={3} className="featured-project-title"><span aria-hidden="true">🎮</span> ClickMe</Title>
+              <Title order={3} className="featured-project-title">ClickMe</Title>
               <Text className="featured-description">
-                Play our game, compete for weekly cash prizes, and help AI learn to see like humans. Featured by NSF and NBC 10.
+                Mark the image regions you use to recognize objects. Your annotations help train vision models to use similar visual evidence.
               </Text>
               <a
-                href="https://clickme.clps.brown.edu/tutorial"
+                href="https://clickme.clps.brown.edu/tutorial" aria-label="Play now →: ClickMe (opens in new tab)"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="Opens in new tab"
+
                 className="featured-button-small"
                 onClick={() => {
                   if (typeof window !== 'undefined' && (window as Window & { gtag?: (event: string, action: string, parameters: Record<string, string | number>) => void }).gtag) {
@@ -316,7 +282,7 @@ export function Home() {
                   }
                 }}
               >
-                Play Now →
+                Play now →
               </a>
             </div>
           </div>
@@ -326,16 +292,16 @@ export function Home() {
             <div className="featured-content">
               <Title order={3} className="featured-project-title">Harmonization</Title>
               <Text className="featured-description">
-                Align AI models with human vision. Explore our harmonization techniques that train neural networks to see more like humans do.
+                Training methods that align a model’s visual evidence with human annotations from ClickMe.
               </Text>
               <a
-                href="https://serre-lab.github.io/Harmonization/"
+                href="https://serre-lab.github.io/Harmonization/" aria-label="View demo →: Harmonization (opens in new tab)"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="Opens in new tab"
+
                 className="featured-button-small"
               >
-                View Demo →
+                View demo →
               </a>
             </div>
           </div>
@@ -345,16 +311,16 @@ export function Home() {
             <div className="featured-content">
               <Title order={3} className="featured-project-title">ObjectLENS</Title>
               <Text className="featured-description">
-                Explore what ImageNet models actually see. Interactive explainability tool revealing how AI vision models make object recognition decisions.
+                Explore the visual features and image regions that contribute to an ImageNet model’s predictions.
               </Text>
               <a
-                href="https://serre-lab.github.io/Lens/"
+                href="https://serre-lab.github.io/Lens/" aria-label="Explore tool →: ObjectLENS (opens in new tab)"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="Opens in new tab"
+
                 className="featured-button-small"
               >
-                Explore Tool →
+                Explore tool →
               </a>
             </div>
           </div>
@@ -364,16 +330,16 @@ export function Home() {
             <div className="featured-content">
               <Title order={3} className="featured-project-title">LeafLENS</Title>
               <Text className="featured-description">
-                Discover how AI identifies plant species from cleared leaves. Visualize model attention patterns and decision-making processes.
+                Explore how vision models identify plant families from leaf structure and which features inform their predictions.
               </Text>
               <a
-                href="https://serre-lab.github.io/LeafLens/"
+                href="https://serre-lab.github.io/LeafLens/" aria-label="Explore tool →: LeafLENS (opens in new tab)"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="Opens in new tab"
+
                 className="featured-button-small"
               >
-                Explore Tool →
+                Explore tool →
               </a>
             </div>
           </div>
@@ -383,13 +349,13 @@ export function Home() {
             <div className="featured-content">
               <Title order={3} className="featured-project-title">Xplique</Title>
               <Text className="featured-description">
-                Open-source explainability toolbox for deep learning. Understand and interpret neural network decisions using state-of-the-art attribution methods.
+                An open-source toolbox for explaining deep learning predictions through feature attribution and concept analysis.
               </Text>
               <a
-                href="https://github.com/deel-ai/xplique"
+                href="https://github.com/deel-ai/xplique" aria-label="View on GitHub →: Xplique (opens in new tab)"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="Opens in new tab"
+
                 className="featured-button-small"
               >
                 View on GitHub →
@@ -405,10 +371,10 @@ export function Home() {
                 Python/PyTorch library for feature visualization with MACO, Fourier methods, and feature accentuation.
               </Text>
               <a
-                href="https://github.com/serre-lab/Horama"
+                href="https://github.com/serre-lab/Horama" aria-label="View on GitHub →: Horama (opens in new tab)"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="Opens in new tab"
+
                 className="featured-button-small"
               >
                 View on GitHub →
@@ -416,7 +382,7 @@ export function Home() {
             </div>
           </div>
         </div>
-      </motion.div>
+      </div>
 
       <section className="recent-papers-section" aria-labelledby="recent-papers-heading">
         <Title order={2} id="recent-papers-heading" className="section-title">Recent papers and preprints</Title>
@@ -430,12 +396,8 @@ export function Home() {
       </section>
 
       {/* Selected Publications Section */}
-      <motion.div
+      <div
         className="recent-highlights-section"
-        variants={fadeUp}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
       >
         <Title order={2} className="section-title">Selected publications</Title>
         <ul className="publication-list home-publication-list selected-publications-list">
@@ -447,49 +409,46 @@ export function Home() {
         </ul>
         <div style={{ textAlign: "center", marginTop: "1.5rem" }}>
           <Link to="/publications" className="body-text" style={{ color: "var(--color-primary)", textDecoration: "none", fontWeight: 600 }}>
-            View All Publications →
+            View all publications →
           </Link>
         </div>
-      </motion.div>
+      </div>
 
       {/* Main Content */}
-      <motion.div
+      <div
         className="home-content"
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
       >
-        <motion.div variants={fadeUp}>
+        <div>
           <Text>
             We are based in the{" "}
-            <a href="https://carney.brown.edu/" target="_blank" rel="noopener noreferrer" title="Opens in new tab">Carney Institute for Brain Science</a> and the{" "}
-            <a href="https://ccbs.carney.brown.edu/" target="_blank" rel="noopener noreferrer" title="Opens in new tab">Nancy G. Zimmerman Center for Computational Brain Science</a>{" "}
+            <a href="https://carney.brown.edu/" target="_blank" rel="noopener noreferrer">Carney Institute for Brain Science<span className="sr-only"> (opens in new tab)</span></a> and the{" "}
+            <a href="https://ccbs.carney.brown.edu/" target="_blank" rel="noopener noreferrer">Nancy G. Zimmerman Center for Computational Brain Science<span className="sr-only"> (opens in new tab)</span></a>{" "}
             at Brown University, and collaborate with the{" "}
-            <a href="https://ccv.brown.edu/" target="_blank" rel="noopener noreferrer" title="Opens in new tab">Center for Computation and Visualization</a>.
+            <a href="https://ccv.brown.edu/" target="_blank" rel="noopener noreferrer">Center for Computation and Visualization<span className="sr-only"> (opens in new tab)</span></a>.
           </Text>
-        </motion.div>
+        </div>
 
         {/* Funding Section */}
-        <motion.div variants={fadeUp}>
+        <div>
           <Title order={2} className="section-title" style={{ marginTop: "2rem" }}>
             Funding
           </Title>
-        </motion.div>
-        <motion.div variants={fadeUp}>
+        </div>
+        <div>
           <Text>
             Our work is currently supported by ONR (N00014-24-1-2026, N00014-22-1-2795, and REPRISM MURI N00014-24-1-2603), NSF (IIS-2402875), NIH/NIMH (R01 MH140004, R01 MH143695, and T32 MH126388), DOE (DE-SC0023191), the NSF AI Research Institute on Interaction for AI Assistants (ARIA), supported by the U.S. National Science Foundation (NSF) under Cooperative Agreement 2433429, and the Artificial and Natural Intelligence Toulouse Institute (ANITI), funded by the France 2030 program (ANR-23-IACL-0002).
-            <br /><br />
+            </Text>
+          <Text mt="md">
             Additional support is provided by the Carney Institute for Brain Science and the Center for Computation and Visualization (via NIH S10OD036341). We gratefully acknowledge Cloud TPU hardware resources made available by Google through the TPU Research Cloud (TRC) program.
           </Text>
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
 
       <section className="recent-papers-section" aria-labelledby="lab-members-heading">
         <Title order={2} id="lab-members-heading" className="section-title">For lab members</Title>
         <Text className="body-text">
           The{" "}
-          <a href="https://psychic-adventure-y8eo2zo.pages.github.io/" target="_blank" rel="noopener noreferrer" title="Opens in new tab" aria-label="Lab handbook (opens in new tab)">
+          <a href="https://psychic-adventure-y8eo2zo.pages.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Lab handbook (opens in new tab)">
             lab handbook
           </a>{" "}
           has project information, lab procedures, and shared resources for current members.

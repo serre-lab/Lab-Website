@@ -55,8 +55,8 @@ export function SciComm() {
                     </div>
                 </div>
                 <div className="results-section">
-                <Title order={2} className="section-title">Media Coverage</Title>
-                <p className="results-summary body-text" role="status" aria-live="polite" aria-atomic="true">
+                <Title order={2} className="section-title">Media coverage</Title>
+                <p className={`results-summary body-text${!trimmedQuery && filteredData.length > 0 ? " sr-only" : ""}`} role="status" aria-live="polite" aria-atomic="true">
                     {filteredData.length === 0
                         ? (trimmedQuery
                             ? `No media coverage matches "${trimmedQuery}".`
@@ -75,7 +75,7 @@ export function SciComm() {
                             />
                         )}
                         <div className="media-content">
-                            <Anchor className="media-title-link" href={item.link} target="_blank" rel="noopener noreferrer" title="Opens in new tab" aria-label={`${item.displayTitle ?? item.title} (opens in new tab)`} style={{ textDecoration: "none" }}>
+                            <Anchor className="media-title-link" href={item.link} target="_blank" rel="noopener noreferrer" aria-label={`${item.displayTitle ?? item.title} (opens in new tab)`} style={{ textDecoration: "none" }}>
                                 <Title order={3} className="card-title">{item.displayTitle ?? item.title}</Title>
                             </Anchor>
                             <Text className="secondary-text media-summary">
@@ -85,7 +85,7 @@ export function SciComm() {
                                 href={item.link}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                title="Opens in new tab"
+
                                 aria-label={`Continue reading: ${item.title} (opens in new tab)`}
                                 className="media-read-more body-text"
                             >

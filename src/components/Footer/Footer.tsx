@@ -7,7 +7,7 @@ import { SiZotero } from "react-icons/si";
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
-    
+
     return (
         <footer className="footer-container" role="contentinfo">
             <div className="footer-content">
@@ -40,14 +40,14 @@ export default function Footer() {
                 {/* Right Column: Social & Resources */}
                 <div className="footer-column footer-social-resources">
                     <div className="footer-social-section">
-                        <nav className="footer-social-icons" aria-label="Social links">
+                        <nav className="footer-social-icons" aria-label="Footer social links">
                             <a 
                                 href="https://x.com/tserre" 
                                 target="_blank" 
                                 rel="noopener noreferrer"
                                 className="footer-social-icon"
                                 aria-label="Twitter (opens in new tab)"
-                                title="Opens in new tab"
+
                             >
                                 <FaTwitter size={20} aria-hidden="true" />
                             </a>
@@ -57,7 +57,7 @@ export default function Footer() {
                                 rel="noopener noreferrer"
                                 className="footer-social-icon"
                                 aria-label="GitHub (opens in new tab)"
-                                title="Opens in new tab"
+
                             >
                                 <FaGithub size={20} aria-hidden="true" />
                             </a>
@@ -67,7 +67,7 @@ export default function Footer() {
                                 rel="noopener noreferrer"
                                 className="footer-social-icon"
                                 aria-label="Bluesky (opens in new tab)"
-                                title="Opens in new tab"
+
                             >
                                 <FaBluesky size={20} aria-hidden="true" />
                             </a>
@@ -77,7 +77,7 @@ export default function Footer() {
                                 rel="noopener noreferrer"
                                 className="footer-social-icon"
                                 aria-label="Zotero (opens in new tab)"
-                                title="Opens in new tab"
+
                             >
                                 <SiZotero size={20} aria-hidden="true" />
                             </a>
@@ -91,27 +91,27 @@ export default function Footer() {
                                 target="_blank" 
                                 rel="noopener noreferrer"
                                 className="footer-link"
-                                title="Opens in new tab"
+
                             >
-                                Brown Profile
+                                Brown Profile<span className="sr-only"> (opens in new tab)</span>
                             </a>
                             <a
                                 href="https://digital-accessibility.brown.edu/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="footer-link"
-                                title="Opens in new tab"
+
                             >
-                                Accessibility at Brown
+                                Accessibility at Brown<span className="sr-only"> (opens in new tab)</span>
                             </a>
                             <a
                                 href="https://cm.maxient.com/reportingform.php?BrownUniv=&layout_id=59"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="footer-link"
-                                title="Opens in new tab"
+
                             >
-                                Report an accessibility barrier
+                                Report an accessibility barrier<span className="sr-only"> (opens in new tab)</span>
                             </a>
                         </nav>
                     </div>

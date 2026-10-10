@@ -22,10 +22,10 @@
   .home-content {
     width: 100%;
     max-width: 800px;
-    padding: 1rem 2rem;
+    padding: 0 2rem;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 0;
   }
   
   .student-cards-container {
@@ -109,7 +109,7 @@
   }
 
   .email-icon-button:hover {
-    color: var(--color-accent);
+    color: var(--color-primary-dark);
     transform: scale(1.1);
   }
 
@@ -246,8 +246,8 @@
 
   .featured-description {
     color: var(--color-text-secondary);
-    font-size: 0.85rem;
-    line-height: 1.5;
+    font-size: 0.95rem;
+    line-height: 1.6;
     margin-bottom: 1rem;
     flex-grow: 1;
   }
@@ -675,7 +675,7 @@
   }
 
   .highlight-title a:hover {
-    color: var(--color-accent);
+    color: var(--color-primary-dark);
   }
 
   @media (max-width: 1024px) {
@@ -704,9 +704,7 @@
       font-size: 1.15rem;
     }
     
-    .featured-description {
-      font-size: 0.85rem;
-    }
+
 
   }
   
@@ -810,5 +808,23 @@
 .home-publication-list {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
+}
+
+.selected-publications-list {
   grid-auto-rows: 1fr;
+}
+
+@media (max-width: 768px) {
+  .home-container .home-hero-line {
+    white-space: normal;
+  }
+}
+
+.home-content > div > .section-title {
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.home-container .student-cards-container {
+  margin-top: 0;
 }

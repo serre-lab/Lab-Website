@@ -1,4 +1,4 @@
-import { Outlet, useLocation } from "react-router-dom";
+import { Outlet, ScrollRestoration, useLocation } from "react-router-dom";
 import { useEffect, useRef } from "react";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
@@ -22,7 +22,7 @@ export function Root(props: RootProps) {
     const location = useLocation();
     const mainRef = useRef<HTMLElement>(null);
     const liveRegionRef = useRef<HTMLDivElement>(null);
-    const isFirstRender = useRef(true);
+    const previousPath = useRef(location.pathname);
 
     // SPA route announcement for screen readers
     useEffect(() => {
@@ -40,15 +40,15 @@ export function Root(props: RootProps) {
         }
 
         // Focus main content on route changes (not first load, so the skip link stays first in tab order)
-        if (isFirstRender.current) {
-            isFirstRender.current = false;
-            return;
-        }
+        if (previousPath.current === location.pathname) return;
+        previousPath.current = location.pathname;
         const focusedElement = document.activeElement;
         const timer = setTimeout(() => {
             // Preserve focus if the visitor has already moved to another control.
             if (document.activeElement !== focusedElement) return;
-            mainRef.current?.focus({ preventScroll: true });
+            const heading = mainRef.current?.querySelector<HTMLElement>("h1");
+            if (heading) heading.tabIndex = -1;
+            (heading ?? mainRef.current)?.focus({ preventScroll: true });
         }, 100);
         return () => clearTimeout(timer);
     }, [location.pathname]);
@@ -67,6 +67,7 @@ export function Root(props: RootProps) {
                 <Outlet />
             </main>
             <Footer />
+            <ScrollRestoration />
         </div>
     );
 }

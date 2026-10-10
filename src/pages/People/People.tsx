@@ -61,7 +61,7 @@ export default function People() {
     (person) => person.university !== "Brown" && person.university !== "ANITI"
   );
 
-  // Split Brown people into Senior Personnel and Graduate Students
+  // Split Brown people into Senior personnel and Graduate Students
   const seniorPersonnel = brownPeople.filter(person =>
     person.title === "Professor" ||
     person.title === "Assistant Professor of Research" ||
@@ -86,7 +86,7 @@ export default function People() {
       {principalInvestigators.length > 0 && (
         <>
           <Title order={2} className="section-title">
-            Principal Investigator
+            Principal investigator
           </Title>
           <div className="people-grid">
             {principalInvestigators.map((person, index) => (
@@ -106,13 +106,13 @@ export default function People() {
       {brownPeople.length > 0 && (
         <>
           <Title order={2} className="section-title">
-            Brown Team ({brownPeople.length})
+            Brown team ({brownPeople.length})
           </Title>
 
-          <PeopleGroup title="Senior Personnel" people={seniorPersonnel} />
-          <PeopleGroup title="PhD Students" people={phdStudents} />
-          <PeopleGroup title="MSc Students" people={mscStudents} />
-          <PeopleGroup title="Research Assistants" people={otherBrownPeople} />
+          <PeopleGroup title="Senior personnel" people={seniorPersonnel} />
+          <PeopleGroup title="PhD students" people={phdStudents} />
+          <PeopleGroup title="MSc students" people={mscStudents} />
+          <PeopleGroup title="Research assistants" people={otherBrownPeople} />
         </>
       )}
 
@@ -120,7 +120,7 @@ export default function People() {
       {anitiPeople.length > 0 && (
         <>
           <Title order={2} className="section-title">
-            ANITI Team ({anitiPeople.length})
+            ANITI team ({anitiPeople.length})
           </Title>
           <div className="people-grid">
             {anitiPeople.map((person, index) => (

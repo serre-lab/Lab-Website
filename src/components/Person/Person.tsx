@@ -18,8 +18,8 @@ function renderTextWithLinks(text: string) {
     return parts.map((part, index) => {
         if (part.match(urlRegex)) {
             return (
-                <Anchor key={index} href={part} target="_blank" rel="noopener noreferrer" title="Opens in new tab" style={{ color: 'var(--color-primary)' }}>
-                    {part}
+                <Anchor key={index} href={part} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)' }}>
+                    {part}<span className="sr-only"> (opens in new tab)</span>
                 </Anchor>
             );
         }
@@ -29,6 +29,7 @@ function renderTextWithLinks(text: string) {
 
 export default function Person({ fullName, title, imagePath, description }: PersonProps) {
     const [opened, setOpened] = useState(false);
+    const roleLabel = title === "PostDoc" ? "Postdoctoral researcher" : title;
     const cardRef = useRef<HTMLDivElement>(null);
 
     // Ensure image path starts with /
@@ -38,7 +39,6 @@ export default function Person({ fullName, title, imagePath, description }: Pers
         <>
             <Card
                 ref={cardRef}
-                shadow="md"
                 padding="lg"
                 radius="md"
                 className="person-card"
@@ -47,7 +47,7 @@ export default function Person({ fullName, title, imagePath, description }: Pers
                 role="button"
                 tabIndex={0}
                 aria-haspopup="dialog"
-                aria-label={`View bio for ${fullName}`}
+                aria-label={`View bio for ${fullName} ${roleLabel}`}
                 onKeyDown={(e) => {
                     if (e.key === "Enter" || e.key === " ") {
                         e.preventDefault();
@@ -63,7 +63,7 @@ export default function Person({ fullName, title, imagePath, description }: Pers
                             className="person-image"
                             radius="sm"
                             loading="lazy"
-                            w={280}
+                            w="100%"
                             h={220}
                         />
                     </Card.Section>
@@ -73,7 +73,7 @@ export default function Person({ fullName, title, imagePath, description }: Pers
                     </Card.Section>
                 )}
                 <div className="person-name">{fullName}</div>
-                <Text className="person-title">{title}</Text>
+                <Text className="person-title">{roleLabel}</Text>
                 {/* Removed university from card */}
             </Card>
 
@@ -103,7 +103,7 @@ export default function Person({ fullName, title, imagePath, description }: Pers
                     )}
                     <div className="person-modal-text">
                         <div className="person-name person-name-modal">{fullName}</div>
-                        <Text className="person-title">{title}</Text>
+                        <Text className="person-title">{roleLabel}</Text>
                         <Text className="person-description">
                             {renderTextWithLinks(description || `${fullName} is a student in the Serre Lab at Brown University.`)}
                         </Text>

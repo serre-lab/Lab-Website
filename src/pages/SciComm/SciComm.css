@@ -45,7 +45,7 @@
     font-weight: 600;
 }
 
-.scicomm-container .results-summary {
+.scicomm-container .results-summary:not(.sr-only) {
     width: 100%;
     max-width: 800px;
     margin: 0 0 1rem;

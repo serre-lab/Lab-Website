@@ -84,6 +84,10 @@
     margin-top: 0.5rem;
   }
 
+  .funding-badge + .research-direction-text {
+    margin-top: 1.5rem;
+  }
+
   .research-link {
     color: #1565c0;
     text-decoration: none;
@@ -93,7 +97,7 @@
 
   .research-link:hover,
   .research-link:focus-visible {
-    color: var(--color-accent);
+    color: var(--color-primary-dark);
     text-decoration: underline;
     text-underline-offset: 0.15em;
   }

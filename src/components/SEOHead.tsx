@@ -7,7 +7,7 @@ const BASE_URL = 'https://serre.lab.brown.edu';
 const pageMetadata: Record<string, { title: string; description: string }> = {
     '/': {
         title: 'Serre Lab | Brown University',
-        description: 'The Serre Lab at Brown University conducts cutting-edge research in computational neuroscience and NeuroAI, focusing on visual recognition, deep learning, attention, and brain mechanisms underlying object recognition using behavioral, imaging, and physiological techniques.'
+        description: 'The Serre Lab at Brown University conducts research in computational neuroscience and NeuroAI, focusing on visual recognition, deep learning, attention, and brain mechanisms underlying object recognition using behavioral, imaging, and physiological techniques.'
     },
     '/research': {
         title: 'Research | Serre Lab',
@@ -57,7 +57,7 @@ function getPageDescription(path: string): string {
     if (path.startsWith('/resources/')) {
         return 'Resource page from the Serre Lab at Brown University, providing information and tools for computational neuroscience and NeuroAI research.';
     }
-    return 'The Serre Lab at Brown University conducts cutting-edge research in computational neuroscience and NeuroAI.';
+    return 'The Serre Lab at Brown University conducts research in computational neuroscience and NeuroAI.';
 }
 
 /**

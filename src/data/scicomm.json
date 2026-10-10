@@ -21,18 +21,25 @@
     "displayTitle": "What foundation models could bring to neuroscience"
   },
   {
-    "title": "Brown University offers cash incentive to assist with 'Click Me' AI research",
-    "link": "https://turnto10.com/news/local/brown-university-offers-cash-incentive-to-assist-with-click-me-ai-research-artificial-intelligence-deep-learning-lab-plme-brain-science-game-vision-february-24-2025",
-    "blurb": "NBC 10 features ClickMe, the lab’s online game for collecting information about human vision. Players can earn cash prizes while helping researchers train artificial intelligence to recognize images more like people do.",
-    "image": "https://turnto10.com/resources/media2/16x9/1920/986/center/90/48cfa15b-64cf-481c-bdd1-8366385e822b-6PPKG.transfer_frame_122.jpeg",
-    "displayTitle": "Playing ClickMe to help train visual AI"
-  },
-  {
     "title": "Brown University to lead national institute focused on intuitive, trustworthy AI assistants",
     "link": "https://www.brown.edu/news/2025-07-29/aria-ai-institute-brown",
     "blurb": "Brown leads ARIA, a $20 million NSF research institute developing AI assistants that understand people and their contexts. Thomas Serre joins a team exploring applications that include mental and behavioral health.",
     "image": "https://www.brown.edu/sites/default/files/styles/portrait_full_med/public/quote/20250722_COMM_AIResearch002%20copy.jpg",
     "displayTitle": "Brown to lead institute for trustworthy AI assistants"
+  },
+  {
+    "title": "Training AI to see more like humans",
+    "link": "https://www.nsf.gov/news/training-ai-see-more-humans",
+    "blurb": "The National Science Foundation features ClickMe and the lab’s work on human–AI alignment. Human annotations help train vision models to attend to the image features people use when recognizing what they see.",
+    "image": "https://nsf-gov-resources.nsf.gov/styles/news_hero_tablet_1200x468_/s3/media_hub/Tier%203%20story%20-%20Training%20AI%20to%20See_Hero%20Image_v1.jpg.webp?VersionId=Y6tCZqhFrqq8uhlKvL6.pWLS4OfxjVyA&itok=crZuOcxs",
+    "displayTitle": "Training AI to see more like humans"
+  },
+  {
+    "title": "Brown University offers cash incentive to assist with 'Click Me' AI research",
+    "link": "https://turnto10.com/news/local/brown-university-offers-cash-incentive-to-assist-with-click-me-ai-research-artificial-intelligence-deep-learning-lab-plme-brain-science-game-vision-february-24-2025",
+    "blurb": "NBC 10 features ClickMe, the lab’s online game for collecting information about human vision. Players can earn cash prizes while helping researchers train artificial intelligence to recognize images more like people do.",
+    "image": "https://turnto10.com/resources/media2/16x9/1920/986/center/90/48cfa15b-64cf-481c-bdd1-8366385e822b-6PPKG.transfer_frame_122.jpeg",
+    "displayTitle": "Playing ClickMe to help train visual AI"
   },
   {
     "title": "Inside ClickMe: Professor Thomas Serre and Jay Gopal on advancing explainable AI",
@@ -49,11 +56,18 @@
     "displayTitle": "Opening the black box of visual AI"
   },
   {
-    "title": "Training AI to see more like humans",
-    "link": "https://www.nsf.gov/news/training-ai-see-more-humans",
-    "blurb": "The National Science Foundation features ClickMe and the lab’s work on human–AI alignment. Human annotations help train vision models to attend to the image features people use when recognizing what they see.",
-    "image": "https://nsf-gov-resources.nsf.gov/styles/news_hero_tablet_1200x468_/s3/media_hub/Tier%203%20story%20-%20Training%20AI%20to%20See_Hero%20Image_v1.jpg.webp?VersionId=Y6tCZqhFrqq8uhlKvL6.pWLS4OfxjVyA&itok=crZuOcxs",
-    "displayTitle": "Training AI to see more like humans"
+    "title": "Compositionality in Neural Networks",
+    "link": "https://carney.brown.edu/news/2024-01-08/michael-lepori",
+    "blurb": "Michael Lepori discusses whether neural networks represent concepts compositionally, as theories of human cognition propose. His Carney Institute interview also introduces NeuroSurgeon, a toolkit for finding functional subnetworks within trained models.",
+    "image": "/images/scicomm/light_background_serre_cropped.jpeg",
+    "displayTitle": "Michael Lepori on compositionality in neural networks"
+  },
+  {
+    "title": "Summers are for science: A look at what Brown researchers were up to this summer",
+    "link": "https://www.browndailyherald.com/article/2023/09/summers-are-for-science-a-look-at-what-brown-researchers-were-up-to-this-summer",
+    "blurb": "The Brown Daily Herald surveys summer research at Brown, including the Serre Lab’s CRAFT project. The tool helps researchers examine how visual AI systems recognize images and why they sometimes make mistakes.",
+    "image": "https://snworksceo.imgix.net/bdh/9247581e-6574-4099-a85d-9b28fdb9a0b0.sized-1000x1000.jpg?w=1000",
+    "displayTitle": "A summer of research into how AI sees"
   },
   {
     "title": "New tool explains how AI 'sees' images and why it might mistake an astronaut for a shovel",
@@ -63,11 +77,11 @@
     "displayTitle": "CRAFT reveals the concepts behind visual AI decisions"
   },
   {
-    "title": "Summers are for science: A look at what Brown researchers were up to this summer",
-    "link": "https://www.browndailyherald.com/article/2023/09/summers-are-for-science-a-look-at-what-brown-researchers-were-up-to-this-summer",
-    "blurb": "The Brown Daily Herald surveys summer research at Brown, including the Serre Lab’s CRAFT project. The tool helps researchers examine how visual AI systems recognize images and why they sometimes make mistakes.",
-    "image": "https://snworksceo.imgix.net/bdh/9247581e-6574-4099-a85d-9b28fdb9a0b0.sized-1000x1000.jpg?w=1000",
-    "displayTitle": "A summer of research into how AI sees"
+    "title": "Intel and Brown University researchers embark on two-year project to bridge spinal cord breaks using AI",
+    "link": "https://venturebeat.com/ai/intel-and-brown-university-researchers-embark-on-two-year-project-to-bridge-spinal-cord-breaks-using-ai/",
+    "blurb": "Brown, Rhode Island Hospital, Intel, and Micro-Leads Medical collaborate on an Intelligent Spine Interface. The DARPA-funded project explores how AI and neural interfaces could help restore functions lost after spinal cord injury.",
+    "image": "/images/scicomm/spinal-interface.jpg",
+    "displayTitle": "Brown and Intel develop an intelligent spinal interface"
   },
   {
     "title": "Finding the art in artificial intelligence",
@@ -91,13 +105,6 @@
     "displayTitle": "A new home for the Carney Institute"
   },
   {
-    "title": "Intel and Brown University researchers embark on two-year project to bridge spinal cord breaks using AI",
-    "link": "https://venturebeat.com/ai/intel-and-brown-university-researchers-embark-on-two-year-project-to-bridge-spinal-cord-breaks-using-ai/",
-    "blurb": "Brown, Rhode Island Hospital, Intel, and Micro-Leads Medical collaborate on an Intelligent Spine Interface. The DARPA-funded project explores how AI and neural interfaces could help restore functions lost after spinal cord injury.",
-    "image": "https://venturebeat.com/_next/image?url=https%3A%2F%2Folk2kzr7lpbpdtkx.public.blob.vercel-storage.com%2Fhome%2Fandy%2Fwork%2Fevrone%2Fventure_beat%2Fmedia%2Fwp-content%2Fuploads%2F2019%2F10%2Fspine-intelligence-graphic-explainer-FINAL-B.jpg&w=3840&q=75",
-    "displayTitle": "Brown and Intel develop an intelligent spinal interface"
-  },
-  {
     "title": "Brown researchers teach computers to see optical illusions",
     "link": "https://www.brown.edu/news/2018-09-21/illusions",
     "blurb": "Brown researchers build a neural network that responds to optical illusions in ways similar to people. The model offers a way to investigate visual processing while informing the design of artificial vision.",
@@ -105,18 +112,18 @@
     "displayTitle": "Teaching a computer model to see optical illusions"
   },
   {
-    "title": "Focus on early stage of illness may be key to treating ALS, study suggests",
-    "link": "https://www.brown.edu/news/2018-03-19/als",
-    "blurb": "Researchers find that inhibitory neurons are lost early in the development of ALS. The study highlights changes near the onset of disease that could matter for understanding its progression and possible treatments.",
-    "image": "/images/scicomm/als.jpg",
-    "displayTitle": "Early changes in ALS point to treatment questions"
-  },
-  {
     "title": "Research identifies key weakness in modern computer vision systems",
     "link": "https://www.brown.edu/news/2018-07-30/same-different",
     "blurb": "Brown researchers investigate why computer vision systems struggle to judge whether two things are the same or different. Their findings expose limitations in visual reasoning and point toward questions for future models.",
     "image": "/images/scicomm/samedifferent.jpg",
     "displayTitle": "Why visual AI struggles with same–different judgments"
+  },
+  {
+    "title": "Focus on early stage of illness may be key to treating ALS, study suggests",
+    "link": "https://www.brown.edu/news/2018-03-19/als",
+    "blurb": "Researchers find that inhibitory neurons are lost early in the development of ALS. The study highlights changes near the onset of disease that could matter for understanding its progression and possible treatments.",
+    "image": "/images/scicomm/als.jpg",
+    "displayTitle": "Early changes in ALS point to treatment questions"
   },
   {
     "title": "University conference explores future of artificial intelligence",
@@ -133,32 +140,11 @@
     "displayTitle": "Researchers discuss what comes next after deep learning"
   },
   {
-    "title": "TDP-43 Mouse Model Research Featured",
-    "link": "https://pubmed.ncbi.nlm.nih.gov/29556029/",
-    "blurb": "The lab’s automated behavioral analysis methods help detect early changes in mice carrying a TDP-43 mutation. The Nature Neuroscience study uses machine vision to measure subtle phenotypes relevant to ALS research.",
-    "image": "/images/scicomm/mouse.png",
-    "displayTitle": "Measuring early behavioral changes in an ALS model"
-  },
-  {
     "title": "Artificial intelligence helps scientists map behavior in the fruit fly brain",
     "link": "https://www.sciencemag.org/news/2017/07/artificial-intelligence-helps-scientists-map-behavior-fruit-fly-brain",
     "blurb": "Researchers use automated video analysis to annotate behavior in hundreds of thousands of fruit flies. The resulting maps connect actions such as walking and grooming to regions of the fly brain.",
     "image": "/images/scicomm/fly-behavior.jpg",
     "displayTitle": "Mapping fruit fly behavior with artificial intelligence"
-  },
-  {
-    "title": "Linking two labs a learning opportunity for Ph.D. student",
-    "link": "https://www.brown.edu/news/2016-01-25/alsbar",
-    "blurb": "Graduate student Aaron Held works across two Brown laboratories studying ALS. His research connects their expertise and provides opportunities to learn new experimental skills while investigating the disease from different scientific perspectives.",
-    "image": "/images/scicomm/alsbar.jpg",
-    "displayTitle": "Learning across two labs to study ALS"
-  },
-  {
-    "title": "A computer with a great eye is about to transform botany",
-    "link": "https://www.wired.com/2016/03/computer-great-eye-transform-botany/",
-    "blurb": "WIRED profiles Peter Wilf and Thomas Serre’s collaboration on leaf classification. Their system learns visual patterns from thousands of leaf images, helping researchers identify plant families and investigate relationships among living and fossil plants.",
-    "image": "/images/scicomm/wired.png",
-    "displayTitle": "Computer vision offers a new tool for botany"
   },
   {
     "title": "Meeting of the minds leads to brain science technology venture",
@@ -168,11 +154,25 @@
     "displayTitle": "Turning animal-behavior research into a technology venture"
   },
   {
+    "title": "A computer with a great eye is about to transform botany",
+    "link": "https://www.wired.com/2016/03/computer-great-eye-transform-botany/",
+    "blurb": "WIRED profiles Peter Wilf and Thomas Serre’s collaboration on leaf classification. Their system learns visual patterns from thousands of leaf images, helping researchers identify plant families and investigate relationships among living and fossil plants.",
+    "image": "/images/scicomm/wired.png",
+    "displayTitle": "Computer vision offers a new tool for botany"
+  },
+  {
     "title": "Computer vision can help classify leaves",
     "link": "https://www.brown.edu/news/2016-03-07/leaves",
     "blurb": "Brown researchers use computer vision to classify leaves by their vein patterns. By learning from examples, the system helps assign specimens to plant families and orders, supporting a difficult task in botany.",
     "image": "/images/scicomm/leaves.jpg",
     "displayTitle": "Learning to classify leaves from their vein patterns"
+  },
+  {
+    "title": "Linking two labs a learning opportunity for Ph.D. student",
+    "link": "https://www.brown.edu/news/2016-01-25/alsbar",
+    "blurb": "Graduate student Aaron Held works across two Brown laboratories studying ALS. His research connects their expertise and provides opportunities to learn new experimental skills while investigating the disease from different scientific perspectives.",
+    "image": "/images/scicomm/alsbar.jpg",
+    "displayTitle": "Learning across two labs to study ALS"
   },
   {
     "title": "In analyzing a scene, we make the easiest judgments first",
@@ -182,11 +182,18 @@
     "displayTitle": "When judging a scene, easier distinctions come first"
   },
   {
-    "title": "Future watch: understanding the brain",
-    "link": "http://www.pcmag.com/article2/0,2817,2325885,00.asp",
-    "blurb": "Logan Kugler’s PCMag feature examines the challenge of understanding the brain. It appears in the lab’s archive of early coverage of neuroscience and computing in the technology press.",
-    "image": "/images/scicomm/pc_mag.png",
-    "displayTitle": "Future watch: understanding the brain"
+    "title": "Reducing Myc gene activity extends healthy lifespan in mice",
+    "link": "https://archive2.news.brown.edu/2007-2015/articles/2015/01/myc.html",
+    "blurb": "A Brown-led study finds that mice with one copy of the Myc gene live longer and remain healthier than mice with two copies. The findings connect gene activity with aging and health.",
+    "image": "/images/scicomm/myc.jpg",
+    "displayTitle": "Reduced Myc activity extends healthy lifespan in mice"
+  },
+  {
+    "title": "Computer based video in behavioral studies",
+    "link": "https://archive2.news.brown.edu/2007-2015/articles/2010/09/mice.html",
+    "blurb": "Thomas Serre and colleagues at MIT and Caltech develop software that recognizes mouse behaviors in video. The freely available system automates hours of observation, matching the agreement found between human annotators.",
+    "image": "https://archive2.news.brown.edu/2007-2015/sites/default/files/styles/horizontal/public/article_images/Mice13f3c.jpg?itok=FyFGqzQI",
+    "displayTitle": "Automating the analysis of laboratory mouse behavior"
   },
   {
     "title": "Reverse engineering the brain",
@@ -236,26 +243,5 @@
     "blurb": "MIT Technology Review examines how neuroscience informs artificial intelligence. Thomas Serre and Tomaso Poggio’s vision model matches human performance on a rapid animal-detection task, testing ideas about how the brain processes images.",
     "image": "https://s3.amazonaws.com/files.technologyreview.com/p/pub/legacy/0706brainb2.jpg",
     "displayTitle": "Reverse engineering vision to recognize animals in images"
-  },
-  {
-    "title": "Compositionality in Neural Networks",
-    "link": "https://carney.brown.edu/news/2024-01-08/michael-lepori",
-    "blurb": "Michael Lepori discusses whether neural networks represent concepts compositionally, as theories of human cognition propose. His Carney Institute interview also introduces NeuroSurgeon, a toolkit for finding functional subnetworks within trained models.",
-    "image": "/images/scicomm/light_background_serre_cropped.jpeg",
-    "displayTitle": "Michael Lepori on compositionality in neural networks"
-  },
-  {
-    "title": "Reducing Myc gene activity extends healthy lifespan in mice",
-    "link": "https://archive2.news.brown.edu/2007-2015/articles/2015/01/myc.html",
-    "blurb": "A Brown-led study finds that mice with one copy of the Myc gene live longer and remain healthier than mice with two copies. The findings connect gene activity with aging and health.",
-    "image": "/images/scicomm/myc.jpg",
-    "displayTitle": "Reduced Myc activity extends healthy lifespan in mice"
-  },
-  {
-    "title": "Computer based video in behavioral studies",
-    "link": "https://archive2.news.brown.edu/2007-2015/articles/2010/09/mice.html",
-    "blurb": "Thomas Serre and colleagues at MIT and Caltech develop software that recognizes mouse behaviors in video. The freely available system automates hours of observation, matching the agreement found between human annotators.",
-    "image": "https://archive2.news.brown.edu/2007-2015/sites/default/files/styles/horizontal/public/article_images/Mice13f3c.jpg?itok=FyFGqzQI",
-    "displayTitle": "Automating the analysis of laboratory mouse behavior"
   }
 ]

@@ -4,169 +4,54 @@ import { Text, Title } from "@mantine/core";
 import { Link } from "react-router-dom";
 import { HeroBanner } from "../../components/HeroBanner/HeroBanner";
 
-
-
-// Helper function to get description based on resource type and title
-const getResourceDescription = (title: string): string => {
-    const titleLower = title.toLowerCase();
-    
-    // Dataset descriptions
-    if (titleLower.includes('animal/non-animal')) return "1,200 natural images (animal vs. non-animal) from the rapid categorization task in Serre, Oliva & Poggio (PNAS 2007), re-hosted on Hugging Face";
-    if (titleLower.includes('clickme')) return "Dataset for evaluating the alignment between AI models and humans using ImageNet images";
-    if (titleLower.includes('hmdb')) return "Large video database with 6,849 clips across 51 action categories";
-    if (titleLower.includes('breakfast')) return "Video dataset of breakfast preparation activities: 52 individuals, 18 kitchens, ~77 hours of video, >4 million frames";
-    if (titleLower.includes('multi-cue')) return "Boundary detection dataset with multiple visual cues using color stereo video sequences";
-    if (titleLower.includes('neural harmonizer')) return "Dataset for harmonizing neural network representations with human visual processing";
-    
-    if (titleLower.includes('horama starter')) return "Colab notebook introducing feature visualization with Horama";
-    if (titleLower.includes('compositional visual')) return "Code and dataset generator for the Compositional Visual Relations benchmark";
-
-    // Demo descriptions
-    if (titleLower.includes('objectlens')) return "Interactive tool for exploring what ImageNet models see";
-    if (titleLower.includes('leaflens')) return "Interactive tool for exploring plant species identification from cleared leaves";
-    if (titleLower.includes('hgru')) return "Tutorials for the horizontal gated recurrent unit (hGRU), a model of recurrent visual processing";
-    if (titleLower.includes('panoptic')) return "Colab notebook demonstrating panoptic segmentation with hGRU";
-    
-    // Tool descriptions
-    if (titleLower.includes('harmonization')) return "Techniques for aligning AI models with human vision";
-    if (titleLower.includes('xplique')) return "Open-source explainability toolbox for deep learning";
-    if (titleLower.includes('horama')) return "Python/PyTorch feature-visualization library with MACO, Fourier visualization, and feature accentuation";
-    if (titleLower.includes('neuroscience')) return "PyTorch library for neuroscience-inspired models";
-    
-    // Video descriptions
-    if (titleLower.includes('cvpr 2026')) return "Keynote on why scaling alone won't yield human-like vision, and what brains can teach AI";
-    if (titleLower.includes('vision beyond imagenet')) return "Understanding brain mechanisms underlying visual recognition";
-    if (titleLower.includes('primate vision')) return "Self-supervised learning approaches for visual alignment";
-    if (titleLower.includes('aligning deep networks')) return "Novel neural architectures for human-like vision";
-    if (titleLower.includes('feedforward and feedback')) return "Visual reasoning processes in biological and artificial systems";
-    
-    return "Explore this resource";
+type Resource = {
+    title: string;
+    displayTitle?: string;
+    url: string;
+    description: string;
+    action: string;
 };
 
-// Helper function to get button text based on category
-const getButtonText = (category: string, title: string): string => {
-    const titleLower = title.toLowerCase();
-    
-    switch (category.toLowerCase()) {
-        case 'datasets':
-            return "Download Dataset →";
-        case 'demos and tutorials':
-            if (titleLower.includes('hgru')) return "View Tutorials →";
-            if (titleLower.includes('panoptic')) return "Open Colab →";
-            return "Try Demo →";
-        case 'tools & software':
-            if (titleLower.includes('github')) return "View on GitHub →";
-            return "Use Tool →";
-        case 'cognitive benchmark tests':
-            return "Take Test →";
-        case 'videos & talks':
-            return "Watch Video →";
-        default:
-            return "Access Resource →";
-    }
-};
-
-
-// Component for resource cards (exactly like featured projects)
-const ResourceCard = ({ resource, category }: { resource: { title: string; displayTitle?: string; url: string }, category: string }) => {
-    const isExternal = resource.url.startsWith("http") || resource.url.endsWith(".html");
-    const description = getResourceDescription(resource.title);
-    const buttonText = getButtonText(category, resource.title);
-
-    const cardContent = (
-        <div className="featured-card">
-            <div className="featured-content">
-                <Title order={3} className="featured-project-title">{resource.displayTitle ?? resource.title}</Title>
-                <Text className="featured-description">{description}</Text>
-                {isExternal ? (
-                    <a
-                        href={resource.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        title="Opens in new tab"
-                        aria-label={`${resource.title}: ${buttonText.replace(" →", "")} (opens in new tab)`}
-                        className="featured-button-small"
-                    >
-                        {buttonText}
+function ResourceEntry({ resource }: { resource: Resource }) {
+    const title = resource.displayTitle ?? resource.title;
+    const isExternal = resource.url.startsWith("http");
+    const isStandalone = resource.url.endsWith(".html");
+    return (
+        <li className="resource-entry">
+            <Title order={3} className="resource-title">{title}</Title>
+            <div className="resource-details">
+                <Text className="secondary-text">{resource.description}</Text>
+                {isExternal || isStandalone ? (
+                    <a href={resource.url} className="resource-link"
+                        target={isExternal ? "_blank" : undefined}
+                        rel={isExternal ? "noopener noreferrer" : undefined}
+                        aria-label={`${resource.action}: ${title}${isExternal ? " (opens in new tab)" : ""}`}>
+                        {resource.action} →
                     </a>
                 ) : (
-                    <Link
-                        to={resource.url}
-                        className="featured-button-small"
-                    >
-                        {buttonText}
+                    <Link to={resource.url} className="resource-link" aria-label={`${resource.action}: ${title}`}>
+                        {resource.action} →
                     </Link>
                 )}
             </div>
-        </div>
+        </li>
     );
-
-    return cardContent;
-};
-
-// Component for video preview cards (exactly like featured projects)
-const VideoCard = ({ resource }: { resource: { title: string; displayTitle?: string; url: string } }) => {
-    const description = getResourceDescription(resource.title);
-    const buttonText = getButtonText("Videos & Talks", resource.title);
-    
-    return (
-        <div className="featured-card">
-            <div className="featured-content">
-                <Title order={3} className="featured-project-title">{resource.displayTitle ?? resource.title}</Title>
-                <Text className="featured-description">{description}</Text>
-                <a
-                    href={resource.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title="Opens in new tab"
-                        aria-label={`${resource.title}: ${buttonText.replace(" →", "")} (opens in new tab)`}
-                    className="featured-button-small"
-                >
-                    {buttonText}
-                </a>
-            </div>
-        </div>
-    );
-};
+}
 
 export function Resources() {
     return (
         <>
-            <HeroBanner 
-                title="Resources" 
-                subtitle="Datasets, tools, demos, and tutorials"
-                backgroundImage="/metcalf.webp"
-            />
+            <HeroBanner title="Resources" subtitle="Datasets, tools, demos, and tutorials" backgroundImage="/metcalf.webp" />
             <div className="resources-container">
-                <div className="titleDesc-container">
-                {Object.entries(resourcesData).map(([category, resources]) => (
-                    <div key={category}>
-                        {Object.entries(resources).map(
-                            ([subCategoryName, subCategory]) => (
-                                <div key={subCategoryName} className="resource-section">
-                                    <Title order={2} className="section-title">
-                                        {subCategoryName}
-                                    </Title>
-                                    {subCategoryName === "Videos & Talks" ? (
-                                        <div className="featured-grid">
-                                            {subCategory.map((resource) => (
-                                                <VideoCard key={resource.title} resource={resource} />
-                                            ))}
-                                        </div>
-                                    ) : (
-                                        <div className="featured-grid">
-                                            {subCategory.map((resource) => (
-                                                <ResourceCard key={resource.title} resource={resource} category={subCategoryName} />
-                                            ))}
-                                        </div>
-                                    )}
-                                </div>
-                            )
-                        )}
-                    </div>
+                {Object.entries(resourcesData.Resources).map(([category, resources]) => (
+                    <section key={category} className="resource-section" aria-labelledby={`resources-${category.toLowerCase().replace(/[^a-z]+/g, "-")}`}>
+                        <Title order={2} className="section-title" id={`resources-${category.toLowerCase().replace(/[^a-z]+/g, "-")}`}>{category}</Title>
+                        <ul className="resource-list">
+                            {resources.map(resource => <ResourceEntry key={resource.url} resource={resource} />)}
+                        </ul>
+                    </section>
                 ))}
             </div>
-        </div>
         </>
     );
 }

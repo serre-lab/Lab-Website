@@ -48,7 +48,7 @@ const staticLinks: Links = {
         },
     ],
     social: [
-        { to: "https://twitter.com/serre_lab", label: "Twitter" },
+        { to: "https://x.com/tserre", label: "Twitter" },
         { to: "https://www.linkedin.com/company/serrelab", label: "LinkedIn" },
         { to: "https://bsky.app/profile/thomasserre.bsky.social", label: "Bluesky" },
         { to: "https://www.zotero.org/tserre", label: "Zotero" },

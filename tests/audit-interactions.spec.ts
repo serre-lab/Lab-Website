@@ -16,11 +16,11 @@ for (const viewport of [{width: 1280, height: 900}, {width: 390, height: 844}]) 
       await page.keyboard.press('Space');
       await expect(button).toHaveAttribute('aria-expanded', 'false');
       await page.goto('/#/people');
-      const bio = page.getByRole('button', {name: 'View bio for Madeleine Fenner'});
+      const bio = page.getByRole('button', {name: 'View bio for Sixuan Chen'});
       await bio.focus();
       await page.keyboard.press('Enter');
-      await expect(page.getByRole('dialog', {name: 'Madeleine Fenner'})).toBeVisible();
-      await expect(page.getByRole('dialog')).toContainText('visual perspective taking and robotics');
+      await expect(page.getByRole('dialog', {name: 'Sixuan Chen'})).toBeVisible();
+      await expect(page.getByRole('dialog')).toContainText('mental simulation');
       await page.keyboard.press('Tab');
       await page.keyboard.press('Shift+Tab');
       await page.keyboard.press('Escape');
@@ -99,10 +99,53 @@ for (const viewport of [{width: 1280, height: 900}, {width: 390, height: 844}]) 
         }
       }
     });
+    test('resources use readable single-column entries with accurate link actions', async ({page}) => {
+      await page.goto('/#/resources');
+      const entries = page.locator('.resource-entry');
+      await expect(entries).toHaveCount(20);
+      await expect(entries.filter({has: page.getByRole('heading', {name: 'hGRU segmentation', exact: true})}).getByRole('link')).toHaveText('Open notebook →');
+      await expect(entries.filter({has: page.getByRole('heading', {name: 'Xplique', exact: true})}).getByRole('link')).toHaveText('View code →');
+      const positions = await entries.evaluateAll(items => items.map(item => {
+        const rect = item.getBoundingClientRect();
+        const title = item.querySelector('h3')!.getBoundingClientRect();
+        const details = item.querySelector('.resource-details')!.getBoundingClientRect();
+        return {top: rect.top, bottom: rect.bottom, left: rect.left, titleBottom: title.bottom, titleRight: title.right, detailsTop: details.top, detailsLeft: details.left};
+      }));
+      for (let i = 0; i < positions.length; i++) {
+        const row = positions[i];
+        if (i > 0) expect(row.top).toBeGreaterThanOrEqual(positions[i - 1].bottom - 0.1);
+        expect(Math.abs(row.left - positions[0].left)).toBeLessThan(1);
+        if (viewport.width <= 600) expect(row.detailsTop).toBeGreaterThanOrEqual(row.titleBottom);
+        else expect(row.detailsLeft).toBeGreaterThan(row.titleRight);
+      }
+    });
+    test('navigation starts at the top and Back restores the previous reading position', async ({page}) => {
+      await page.goto('/#/');
+      const link = page.getByRole('link', {name: 'View all publications', exact: false});
+      await link.scrollIntoViewIfNeeded();
+      const previousY = await page.evaluate(() => window.scrollY);
+      expect(previousY).toBeGreaterThan(500);
+      await link.click();
+      await expect(page.getByRole('heading', {level: 1, name: 'Publications', exact: true})).toBeVisible();
+      await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(0);
+      await expect(page.getByRole('heading', {level: 1})).toBeFocused();
+      await page.goBack();
+      await expect(page.getByRole('heading', {level: 1})).toHaveText('Serre Lab');
+      await expect.poll(async () => Math.abs(await page.evaluate(() => window.scrollY) - previousY)).toBeLessThan(3);
+    });
+    test('banner text is not clipped and navigation landmarks have distinct names', async ({page}) => {
+      await page.goto('/#/');
+      await expect(page.locator('.home-hero-line').first()).toBeVisible();
+      const clipped = await page.locator('.home-hero-line').evaluateAll(lines => lines.some(line => line.scrollWidth > line.clientWidth + 1));
+      expect(clipped).toBe(false);
+      const labels = await page.locator('nav').evaluateAll(nav => nav.map(n => n.getAttribute('aria-label')));
+      expect(labels.every(Boolean)).toBe(true);
+      expect(new Set(labels).size).toBe(labels.length);
+    });
     test('main pages fit the viewport and legacy resources resolve', async ({page}) => {
-      for (const route of ['/', '/research', '/people', '/resources', '/publications', '/sci-comm']) {
+      for (const [route, title] of [['/', 'Serre Lab'], ['/research', 'Research'], ['/people', 'People'], ['/resources', 'Resources'], ['/publications', 'Publications'], ['/sci-comm', 'Media']]) {
         await page.goto(`/#${route}`);
-        await expect(page.getByRole('heading', {level: 1})).toBeVisible();
+        await expect(page.getByRole('heading', {level: 1, name: title, exact: true})).toBeVisible();
         const overflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
         expect(overflow, route).toBe(false);
       }

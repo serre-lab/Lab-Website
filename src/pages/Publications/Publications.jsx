@@ -4,7 +4,6 @@ import { PublicationEntry } from "../../components/PublicationEntry/PublicationE
 import { Title, TextInput, Select } from "@mantine/core";
 import publicationsData from "../../data/publications_by_year.json";
 import { resolvePublicationUrl } from "../../data/officialPublicationUrls";
-import { motion } from "motion/react";
 import { HeroBanner } from "../../components/HeroBanner/HeroBanner";
 // import { IconSearch } from "@tabler/icons-react"; // optional icon
 
@@ -78,15 +77,6 @@ export function Publications() {
         0
     );
 
-    const fadeUp = {
-        hidden: { opacity: 0, y: 30 },
-        visible: (i) => ({
-            opacity: 1,
-            y: 0,
-            transition: { delay: i * 0.001, duration: 0.3 },
-        }),
-    };
-
     return (
         <>
             <HeroBanner 
@@ -124,7 +114,7 @@ export function Publications() {
                     </div>
                 </div>
                 <div className="results-section">
-                <p className="results-summary body-text" role="status" aria-live="polite" aria-atomic="true" hidden={!normalizedQuery && selectedYear === "All" && resultCount > 0}>
+                <p className={`results-summary body-text${!normalizedQuery && selectedYear === "All" && resultCount > 0 ? " sr-only" : ""}`} role="status" aria-live="polite" aria-atomic="true">
                     {resultCount === 0
                         ? emptyPublicationsMessage(searchQuery, selectedYear)
                         : `Showing ${resultCount} ${resultCount === 1 ? "publication" : "publications"}.`}
@@ -132,33 +122,25 @@ export function Publications() {
                 {sortedYears.map(
                     (year, i) =>
                         filteredPublications[year] && (
-                            <motion.div
+                            <div
                                 key={year}
                                 className="publication-year-block"
-                                custom={i}
-                                initial="hidden"
-                                animate="visible"
-                                variants={fadeUp}
                             >
-                                <Title order={2} className="year-heading">{year}</Title>
+                                <Title order={2} className="section-title year-heading">{year}</Title>
                                 <ul className="publication-list">
                                     {filteredPublications[year].map((publication, index) => {
                                         const officialUrl = resolvePublicationUrl(publication);
                                         return (
-                                        <motion.li
+                                        <li
                                             key={index}
                                             className="publication-item"
-                                            custom={index}
-                                            initial="hidden"
-                                            animate="visible"
-                                            variants={fadeUp}
                                         >
                                             <PublicationEntry title={publication.title} journal={publication.journal} authors={publication.authors} url={officialUrl} />
-                                        </motion.li>
+                                        </li>
                                         );
                                     })}
                                 </ul>
-                            </motion.div>
+                            </div>
                         )
                 )}
             </div>

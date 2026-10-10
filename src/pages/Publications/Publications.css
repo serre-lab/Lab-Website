@@ -6,7 +6,7 @@
     flex-direction: column;
 }
 
-.filter-section {
+.publications-container .filter-section {
     padding: 1rem 1.25rem;
     border-bottom: 1px solid var(--color-border-dark);
     background-color: var(--color-bg-light);
@@ -14,7 +14,7 @@
     margin-bottom: 1rem;
 }
 
-.search-and-dropdown {
+.publications-container .search-and-dropdown {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -24,36 +24,36 @@
     margin: 0 auto;
 }
 
-.search-bar {
+.publications-container .search-bar {
     flex: 1 1 300px;
     min-width: 250px;
 }
 
-.search-bar input {
+.publications-container .search-bar input {
     border-radius: 8px;
     border: 2px solid var(--color-border-light);
     transition: border-color 0.2s;
 }
 
-.search-bar input:focus {
+.publications-container .search-bar input:focus {
     border-color: var(--color-primary);
 }
 
-.year-dropdown {
+.publications-container .year-dropdown {
     min-width: 150px;
 }
 
-.year-dropdown input {
+.publications-container .year-dropdown input {
     border-radius: 8px;
     border: 2px solid var(--color-border-light);
 }
 
-.filter-section .mantine-InputWrapper-label {
+.publications-container .filter-section .mantine-InputWrapper-label {
     color: var(--color-text-primary);
     font-weight: 600;
 }
 
-.results-summary {
+.publications-container .results-summary:not(.sr-only) {
     width: 100%;
     max-width: 800px;
     margin: 0 auto 1rem;
@@ -61,21 +61,21 @@
 }
 
 @media (max-width: 768px) {
-    .search-and-dropdown {
+    .publications-container .search-and-dropdown {
         flex-direction: column;
         align-items: stretch;
     }
     
-    .search-bar,
-    .year-dropdown {
+    .publications-container .search-bar,
+    .publications-container .year-dropdown {
         min-width: unset;
         width: 100%;
     }
 }
   
 
-.results-section {
-    padding: 1.25rem;
+.publications-container .results-section {
+    padding: 0;
     width: 100%;
     display: flex;
     flex-direction: column;
