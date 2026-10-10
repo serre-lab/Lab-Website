@@ -1,7 +1,6 @@
 import { Title, Anchor, Text, TextInput, Image, Group } from "@mantine/core";
 import { useState } from "react";
 import scicommData from "../../data/scicomm.json";
-import talksData from "../../data/talks.json";
 import "./SciComm.css";
 import { HeroBanner } from "../../components/HeroBanner/HeroBanner";
 
@@ -11,15 +10,6 @@ type SciCommItem = {
     blurb: string;
     link: string;
     image?: string;
-};
-
-type Talk = {
-    title?: string;
-    venue: string;
-    location: string;
-    date: string;
-    link?: string;
-    upcoming?: boolean;
 };
 
 /** Case-insensitive substring match. No regular expressions. */
@@ -47,36 +37,10 @@ export function SciComm() {
         <>
             <HeroBanner 
                 title="Media" 
-                subtitle="News coverage, talks, and science communication from the Serre Lab"
+                subtitle="News coverage and science communication from the Serre Lab"
                 backgroundImage="/metcalf.webp"
             />
             <div className="scicomm-container">
-                <section className="talks-section" aria-labelledby="talks-heading">
-                    <Title order={2} className="section-title" id="talks-heading">Recent &amp; Upcoming Talks</Title>
-                    <ul className="talks-list">
-                        {(talksData as Talk[]).map((talk, idx) => (
-                            <li key={idx} className="talk-item">
-                                <span className="talk-date">{talk.date}{talk.upcoming ? " · upcoming" : ""}</span>
-                                <div>
-                                    {talk.title && (
-                                        <div className="talk-title">
-                                            {talk.link ? (
-                                                <Anchor href={talk.link} target="_blank" rel="noopener noreferrer" title="Opens in new tab">
-                                                    {talk.title}
-                                                </Anchor>
-                                            ) : talk.title}
-                                        </div>
-                                    )}
-                                    <Text size="sm" className="talk-venue">
-                                        {!talk.title && talk.link ? (
-                                            <Anchor href={talk.link} target="_blank" rel="noopener noreferrer" title="Opens in new tab">{talk.venue}</Anchor>
-                                        ) : talk.venue}, {talk.location}
-                                    </Text>
-                                </div>
-                            </li>
-                        ))}
-                    </ul>
-                </section>
                 <div className="filter-section">
                     <div className="search-and-dropdown">
                         <TextInput

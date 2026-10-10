@@ -116,7 +116,6 @@ test.describe("publication and media search", () => {
         await page.goto("/#/sci-comm");
         await expect(page.getByRole("heading", { level: 1 })).toContainText(/media/i);
         await expect(page.getByLabel("Search media")).toBeVisible();
-        await expect(page.getByRole("heading", { name: "Recent & Upcoming Talks" })).toBeVisible();
 
         await page.getByLabel("Search media").fill("  Lepo  ");
         const status = page.getByRole("status");
@@ -125,7 +124,6 @@ test.describe("publication and media search", () => {
         expect(shown).toBeGreaterThan(0);
         await expect(page.locator(".media-card")).toHaveCount(shown);
         await expect(page.locator(".media-grid")).toContainText(/Lepori/);
-        await expect(page.getByRole("heading", { name: "Recent & Upcoming Talks" })).toBeVisible();
 
         await page.getByLabel("Search media").fill("(.*+?");
         await expect(status).toBeVisible();
@@ -134,7 +132,6 @@ test.describe("publication and media search", () => {
         await page.getByLabel("Search media").fill("qqqq-no-such-media");
         await expect(status).toContainText('No media coverage matches "qqqq-no-such-media".');
         await expect(page.locator(".media-card")).toHaveCount(0);
-        await expect(page.getByRole("heading", { name: "Recent & Upcoming Talks" })).toBeVisible();
     });
 });
 
