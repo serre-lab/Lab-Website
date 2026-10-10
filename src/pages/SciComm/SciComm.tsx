@@ -1,4 +1,4 @@
-import { Title, Anchor, Text, TextInput, Image, Group } from "@mantine/core";
+import { Title, Anchor, Text, TextInput, Image } from "@mantine/core";
 import { useState } from "react";
 import scicommData from "../../data/scicomm.json";
 import "./SciComm.css";
@@ -7,6 +7,7 @@ import { HeroBanner } from "../../components/HeroBanner/HeroBanner";
 // Add type for scicommData items to include image
 type SciCommItem = {
     title: string;
+    displayTitle?: string;
     blurb: string;
     link: string;
     image?: string;
@@ -15,7 +16,7 @@ type SciCommItem = {
 /** Case-insensitive substring match. No regular expressions. */
 function matchesMediaSearch(item: SciCommItem, normalizedQuery: string) {
     if (!normalizedQuery) return true;
-    return [item.title, item.blurb].some((field) =>
+    return [item.title, item.displayTitle, item.blurb].some((field) =>
         String(field ?? "").toLowerCase().includes(normalizedQuery)
     );
 }
@@ -63,23 +64,22 @@ export function SciComm() {
                         : `Showing ${filteredData.length} ${filteredData.length === 1 ? "item" : "items"}.`}
                 </p>
                 <div className="media-grid">
-                {filteredData.map((item, idx) => (
-                    <article key={idx} className="media-card">
+                {filteredData.map((item) => (
+                    <article key={item.link} className="media-card">
                         {item.image && (
                             <Image
                                 src={item.image.replace(/-\d+x\d+\.(jpg|png)$/, '.$1')} // try to use original image if possible
                                 alt={item.title}
+                                className="media-image"
                                 height={180}
                                 fit="cover"
                                 style={{ objectFit: "cover", objectPosition: "center top" }}
                             />
                         )}
-                        <Group justify="space-between" mt="md" mb="xs">
-                            <Anchor href={item.link} target="_blank" rel="noopener noreferrer" title="Opens in new tab" aria-label={`${item.title} (opens in new tab)`} style={{ textDecoration: "none" }}>
-                                <Title order={3} className="card-title">{item.title}</Title>
-                            </Anchor>
-                        </Group>
-                        <Text className="secondary-text" lineClamp={4}>
+                        <Anchor className="media-title-link" href={item.link} target="_blank" rel="noopener noreferrer" title="Opens in new tab" aria-label={`${item.displayTitle ?? item.title} (opens in new tab)`} style={{ textDecoration: "none" }}>
+                            <Title order={3} className="card-title">{item.displayTitle ?? item.title}</Title>
+                        </Anchor>
+                        <Text className="secondary-text media-summary">
                             {item.blurb}
                         </Text>
                         <Anchor

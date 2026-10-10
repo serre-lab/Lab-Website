@@ -41,6 +41,36 @@ for (const viewport of [{width: 1280, height: 900}, {width: 390, height: 844}]) 
         expect(Math.abs(size.height - sizes[0].height)).toBeLessThan(1);
       }
     });
+    test('media rows align with readable summaries and compact gaps', async ({page}) => {
+      await page.goto('/#/sci-comm');
+      const cards = page.locator('.media-card');
+      await expect(cards.first()).toBeVisible();
+      const layouts = await cards.evaluateAll((items) => items.map((item) => {
+        const card = item.getBoundingClientRect();
+        const summary = item.querySelector('.media-summary') as HTMLElement;
+        const link = item.querySelector('.media-read-more')!;
+        return {
+          top: card.top, bottom: card.bottom,
+          summaryTop: summary.getBoundingClientRect().top,
+          linkTop: link.getBoundingClientRect().top,
+          clipped: summary.scrollHeight > summary.clientHeight + 1,
+        };
+      }));
+      const columns = viewport.width > 768 ? 2 : 1;
+      for (let i = 0; i < layouts.length; i += columns) {
+        const row = layouts.slice(i, i + columns);
+        for (const card of row) {
+          expect(card.clipped).toBe(false);
+          expect(Math.abs(card.summaryTop - row[0].summaryTop)).toBeLessThan(1);
+          expect(Math.abs(card.linkTop - row[0].linkTop)).toBeLessThan(1);
+        }
+        if (i + columns < layouts.length) {
+          const gap = layouts[i + columns].top - Math.max(...row.map(card => card.bottom));
+          expect(gap).toBeGreaterThan(0);
+          expect(gap).toBeLessThan(40);
+        }
+      }
+    });
     test('main pages fit the viewport and legacy resources resolve', async ({page}) => {
       for (const route of ['/', '/research', '/people', '/resources', '/publications', '/sci-comm']) {
         await page.goto(`/#${route}`);
