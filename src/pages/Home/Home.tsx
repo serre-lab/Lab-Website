@@ -102,15 +102,12 @@ export function Home() {
         title="Serre Lab"
         subtitle={(
           <div className="home-hero-subtitle">
-            <Text className="home-science-question">How does the brain learn to see and reason—and what can that teach us about AI?</Text>
-            <Text>We combine experiments, computational models, and explainability tools to understand biological vision and build more human-like machine vision.</Text>
-            <nav className="home-explore body-text" aria-label="Explore the lab">
-              <Link to="/research">Research</Link><Link to="/people">People</Link><Link to="/resources">Tools &amp; data</Link>
-            </nav>
-            <Text className="home-affiliations">Brown University · Center for Computational Brain Science · Carney Institute</Text>
+            <Text className="home-hero-line">Nancy G. Zimmerman Center for Computational Brain Science</Text>
+            <Text className="home-hero-line">Robert J. and Nancy D. Carney Institute for Brain Science</Text>
+            <Text className="home-hero-line">Cognitive & Psychological Sciences and Computer Science Depts</Text>
+            <Text className="home-hero-line">Brown University</Text>
           </div>
         )}
-        showSocialIcons={false}
         backgroundImage="/metcalf.webp"
       />
 
