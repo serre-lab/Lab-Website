@@ -25,7 +25,7 @@ export function Research() {
         <div className="titleDesc-container">
         <Title order={2} className="section-title" style={{ marginTop: 0 }}>Research Directions</Title>
         <Text className="research-direction-text">
-          Machine vision gives us a way to test theories of how the brain sees. A model can recognize thousands of object categories yet struggle to trace a contour, judge a relation, or imagine a scene from another viewpoint. We study these discrepancies to identify the computations that support biological vision. Our work connects recurrent neural circuits, learning from visual experience, and methods for examining what a model has learned. We also apply computer vision to behavioral and clinical research, where it can make measurements that would be impractical to collect by hand.
+          Machine vision gives us a way to test theories of how the brain sees. A model can recognize thousands of object categories yet struggle to trace a contour, judge a relation, or imagine a scene from another viewpoint. We study these discrepancies to identify the computations that support biological vision. We combine behavioral and neural experiments with computational models to study recurrent visual processing and learning from experience. We also develop machine learning methods to identify the visual features and representations that AI models use to make decisions. We also apply computer vision to behavioral and clinical research, where it can make measurements that would be impractical to collect by hand.
         </Text>
 
         <div className="research-direction-card">
