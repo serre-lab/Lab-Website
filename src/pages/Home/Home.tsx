@@ -245,6 +245,14 @@ export function Home() {
             </button>
           </div>
         </motion.div>
+        <motion.div variants={fadeUp}>
+          <Text className="body-text">
+            <strong>For current lab members:</strong>{" "}
+            <a href="https://psychic-adventure-y8eo2zo.pages.github.io/" target="_blank" rel="noopener noreferrer" title="Opens in new tab" aria-label="Lab handbook (opens in new tab)">
+              Lab handbook
+            </a>
+          </Text>
+        </motion.div>
       </motion.div>
 
       {/* Featured Projects Section */}
