@@ -1,4 +1,10 @@
-const n=`# Computational vision
+const e=`---
+subtitle: Historical course guidance — consult Courses@Brown for current offerings
+---
+# Computational vision
+
+> **Historical course guidance.** The course numbers, instructors, and semester references below describe earlier offerings. For current courses and schedules, consult [Courses@Brown](https://cab.brown.edu/).
+
 
 ## Computational vision (CLPS 1520, Fall, Serre)
 
@@ -13,4 +19,5 @@ This course treats vision as inference from noisy and uncertain data and emphasi
 ## Image Understanding (ENGN 1610, Fall, Kimia)
 
 Image processing is a technology experiencing explosive growth; it is central to medical image analysis and transmission, industrial inspection, image enhancement, indexing into pictorial and video databases, e.g., WWW, and to robotic vision, face recognition, and image compression. This senior-level undergraduate course covers theoretical underpinnings of this field and includes a series of practical MATLAB image processing projects.  
-*Graduate, Undergraduate*`;export{n as default};
+*Graduate, Undergraduate*
+`;export{e as default};

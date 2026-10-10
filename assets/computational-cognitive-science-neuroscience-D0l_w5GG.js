@@ -1,4 +1,10 @@
-const n=`# Computational cognitive science / neuroscience
+const n=`---
+subtitle: Historical course guidance — consult Courses@Brown for current offerings
+---
+# Computational cognitive science / neuroscience
+
+> **Historical course guidance.** The course numbers, instructors, and semester references below describe earlier offerings. For current courses and schedules, consult [Courses@Brown](https://cab.brown.edu/).
+
 
 ## Neural Modeling Laboratory (CLPS 1491, Spring, Anderson)
 
@@ -33,4 +39,5 @@ Considers the factors and mechanisms involved in motivated decision making, as i
 ## Functional Magnetic Resonance Imaging: Theory and Practice (CLPS 1490, Spring, Badre)
 
 This course will train students in the practice and use of functional magnetic resonance imaging (fMRI) as a cognitive neuroscience methodology. Topics covered include MRI physics, the physiological basis of the BOLD signal, experimental design, data collection, statistical analysis, and inference. A practical component of the course includes the opportunity to collect and analyze fMRI data at the Brown MRF.  
-*Graduate, Undergraduate*`;export{n as default};
+*Graduate, Undergraduate*
+`;export{n as default};
