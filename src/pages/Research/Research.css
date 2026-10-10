@@ -167,10 +167,3 @@
 
 .research-question { color: #243746; margin-bottom: .8rem; font-size: 1.1rem; }
 .research-reading { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; padding-left: 1.1rem; margin: 0; }
-.research-methods { margin: 0 0 1rem; }
-.research-methods-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .75rem; }
-.research-methods-grid > div { border-top: 3px solid #1a5a9e; background: #edf3f8; padding: 1rem; border-radius: 4px; }
-.research-methods-grid strong, .research-methods-grid span { display: block; }
-.research-methods-grid span { margin-top: .5rem; line-height: 1.5; }
-.research-methods figcaption { font-size: .9rem; line-height: 1.5; color: #445566; margin-top: .75rem; }
-@media (max-width: 600px) { .research-methods-grid { grid-template-columns: 1fr; } }

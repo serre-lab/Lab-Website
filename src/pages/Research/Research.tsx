@@ -24,15 +24,9 @@ export function Research() {
       <div className="research-container">
         <div className="titleDesc-container">
         <Title order={2} className="section-title" style={{ marginTop: 0 }}>Research directions</Title>
-        <Text className="research-direction-text">We study the computations that underlie biological vision and use them to build more human-like AI. Experiments constrain our models, models generate hypotheses, and new measurement tools let us test those hypotheses in richer settings.</Text>
-        <figure className="research-methods body-text">
-          <div className="research-methods-grid">
-            <div><strong>Experiments</strong><span>Measure perception, behavior, and neural activity.</span></div>
-            <div><strong>Computational models</strong><span>Test mechanisms of learning, recurrence, and reasoning.</span></div>
-            <div><strong>Scientific measurement</strong><span>Use benchmarks and explainability to evaluate what models capture.</span></div>
-          </div>
-          <figcaption>Each method informs the others: observations constrain models, and model predictions guide new experiments.</figcaption>
-        </figure>
+        <Text className="research-direction-text">
+          We study the computations that underlie biological vision and use them to build more human-like AI. Where machine vision fails, we look for the neural mechanisms it is missing; we turn those mechanisms into trainable models; and we apply the models to problems where measurement was previously manual or impossible. The exchange runs both ways: AI once gave neuroscience its best models of vision, and neuroscience is now a source of design principles for AI.
+        </Text>
 
         <section className="research-direction-card" aria-labelledby="theme-0">
           <Title order={3} id="theme-0" className="research-direction-title">Human–AI alignment in vision</Title>
