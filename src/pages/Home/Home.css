@@ -655,6 +655,14 @@
     min-width: 0;
   }
 
+  .highlights-grid .highlight-card {
+    background: none;
+    border: none;
+    border-top: 1px solid var(--color-border-light);
+    border-radius: 0;
+    padding: 1rem 0;
+  }
+
   .recent-papers-list {
     list-style: none;
     margin: 0;
