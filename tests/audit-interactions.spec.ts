@@ -16,7 +16,7 @@ for (const viewport of [{width: 1280, height: 900}, {width: 390, height: 844}]) 
       await page.keyboard.press('Space');
       await expect(button).toHaveAttribute('aria-expanded', 'false');
       await page.goto('/#/people');
-      const bio = page.getByRole('button', {name: 'View bio for Sixuan Chen'});
+      const bio = page.getByRole('button', {name: 'Sixuan Chen PhD student'});
       await bio.focus();
       await page.keyboard.press('Enter');
       await expect(page.getByRole('dialog', {name: 'Sixuan Chen'})).toBeVisible();

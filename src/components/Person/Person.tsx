@@ -1,5 +1,5 @@
 import { Card, Image, Text, Modal, Anchor } from "@mantine/core";
-import { useState, useRef } from "react";
+import { useState, useRef, useId } from "react";
 import "./Person.css";
 
 interface PersonProps {
@@ -31,6 +31,7 @@ export default function Person({ fullName, title, imagePath, description }: Pers
     const [opened, setOpened] = useState(false);
     const roleLabel = title === "PostDoc" ? "Postdoctoral researcher" : title;
     const cardRef = useRef<HTMLDivElement>(null);
+    const profileId = useId();
 
     // Ensure image path starts with /
     const imageUrl = imagePath?.startsWith('/') ? imagePath : `/${imagePath}`;
@@ -47,7 +48,8 @@ export default function Person({ fullName, title, imagePath, description }: Pers
                 role="button"
                 tabIndex={0}
                 aria-haspopup="dialog"
-                aria-label={`View bio for ${fullName} ${roleLabel}`}
+                aria-labelledby={`${profileId}-name ${profileId}-role`}
+                aria-describedby={`${profileId}-action`}
                 onKeyDown={(e) => {
                     if (e.key === "Enter" || e.key === " ") {
                         e.preventDefault();
@@ -72,8 +74,9 @@ export default function Person({ fullName, title, imagePath, description }: Pers
                         {fullName.split(" ").map(part => part[0]).join("")}
                     </Card.Section>
                 )}
-                <div className="person-name">{fullName}</div>
-                <Text className="person-title">{roleLabel}</Text>
+                <div className="person-name" id={`${profileId}-name`}>{fullName}</div>{" "}
+                <Text className="person-title" id={`${profileId}-role`}>{roleLabel}</Text>
+                <span id={`${profileId}-action`} className="sr-only">Open biography</span>
                 {/* Removed university from card */}
             </Card>
 
