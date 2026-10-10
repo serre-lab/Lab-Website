@@ -7,7 +7,7 @@ import researchData from "../../data/research.json";
 // External link styled for research blurbs; opens in a new tab.
 function Ext({ href, children }: { href: string; children: ReactNode }) {
   return (
-    <Anchor href={href} target="_blank" rel="noopener noreferrer" title="Opens in new tab" aria-label={`${children} (opens in new tab)`} className="research-link">
+    <Anchor href={href} target="_blank" rel="noopener noreferrer" title="Opens in new tab" className="research-link">
       {children}
     </Anchor>
   );
@@ -23,73 +23,66 @@ export function Research() {
       />
       <div className="research-container">
         <div className="titleDesc-container">
-        <Title order={2} className="section-title" style={{ marginTop: 0 }}>Research directions</Title>
+        <Title order={2} className="section-title" style={{ marginTop: 0 }}>Research Directions</Title>
         <Text className="research-direction-text">
           We study the computations that underlie biological vision and use them to build more human-like AI. Where machine vision fails, we look for the neural mechanisms it is missing; we turn those mechanisms into trainable models; and we apply the models to problems where measurement was previously manual or impossible. The exchange runs both ways: AI once gave neuroscience its best models of vision, and neuroscience is now a source of design principles for AI.
         </Text>
 
-        <section className="research-direction-card" aria-labelledby="theme-0">
-          <Title order={3} id="theme-0" className="research-direction-title">Human–AI alignment in vision</Title>
-          <Text className="research-question" fw={600}>What makes a model see more like a person?</Text>
-          <Text className="research-direction-text">Across the models we study, gains in recognition accuracy do not reliably translate into better agreement with human behavior and primate neural recordings. Harmonization uses ClickMe human attention data to improve alignment without changing the network architecture. This shows that training data and objectives contribute to the alignment gap; it does not rule out a role for architecture.</Text>
-          <Text className="research-direction-text">We study developmental learning and the balance between discriminative and generative objectives, including joint energy-based models of vision (JEM).</Text>
-          <ul className="research-reading body-text"><li><Ext href="https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(25)00349-3">Alignment review</Ext></li><li><Ext href="https://serre-lab.github.io/Harmonization/">ClickMe and Harmonization</Ext></li><li><Ext href="https://openreview.net/forum?id=XYmvp2YQdC">Generative–discriminative learning</Ext></li></ul>
+        <div className="research-direction-card">
+          <Title order={3} className="research-direction-title">Human-AI Alignment in Vision</Title>
+          <Text className="research-direction-text">
+            As vision models approach and surpass human accuracy, their agreement with human behavior and primate neural recordings levels off and then declines: <Ext href="https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(25)00349-3">scale does not buy alignment</Ext>. Using human data from our <Ext href="https://clickme.clps.brown.edu/tutorial">ClickMe</Ext> game, our harmonization procedure substantially improves alignment without changing network architectures. These results show that training data and objectives contribute to the alignment gap, and motivate our <Ext href="https://openreview.net/forum?id=KeiQNpb7sv">developmental approach</Ext>: which training data and objectives produce human-like vision? For example, we find that <Ext href="https://openreview.net/forum?id=XYmvp2YQdC">alignment peaks between generative and discriminative learning</Ext>. Our joint energy-based models of vision (JEM) work with Victor Boutin, Jorge Chang, and Bastien Le Lan studies this relationship. See the <Ext href="https://www.nsf.gov/news/training-ai-see-more-humans">NSF feature article</Ext> for an overview.
+          </Text>
           <div className="funding-badge">Funded by NSF (IIS-2402875) • <Ext href="https://www.nsf.gov/news/training-ai-see-more-humans">Featured by NSF</Ext></div>
-        </section>
+        </div>
 
-        <section className="research-direction-card" aria-labelledby="theme-1">
-          <Title order={3} id="theme-1" className="research-direction-title">Cognitive benchmarks for visual reasoning</Title>
-          <Text className="research-question" fw={600}>Which computations support flexible visual reasoning?</Text>
-          <Text className="research-direction-text">Pathfinder, Compositional Visual Relations, and 3D-PC test contour integration, compositional reasoning, and visual perspective taking. They reveal gaps between people and the models evaluated under the training and test conditions in each study. Same–different tasks offer a further probe of relational processing and generalization.</Text>
-          <Text className="research-direction-text">We use these gaps to motivate computational mechanisms, rather than treating performance on one benchmark as a universal limit of an architecture.</Text>
-          <ul className="research-reading body-text"><li><Ext href="https://proceedings.neurips.cc/paper/2018/hash/ec8956637a99787bd197eacd77acce5e-Abstract.html">Pathfinder paper</Ext></li><li><Ext href="https://github.com/serre-lab/CVR">CVR code and data</Ext></li><li><Ext href="https://openreview.net/forum?id=UIFAJZ22ZF">3D-PC paper</Ext></li></ul>
+        <div className="research-direction-card">
+          <Title order={3} className="research-direction-title">Cognitive Benchmarks for Visual Reasoning</Title>
+          <Text className="research-direction-text">
+            We borrow tasks from cognitive psychology to find where machine vision breaks down, and treat each failure as a clue to a missing computation. In the <Ext href="https://proceedings.neurips.cc/paper/2018/hash/ec8956637a99787bd197eacd77acce5e-Abstract.html">Pathfinder challenge</Ext>, the tested feedforward networks fail at a contour-integration task that humans find easy; subsequent evaluations also found difficulties for transformers, while our brain-inspired recurrent models succeed. Our <Ext href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/c08ee8fe3d19521f3bfa4102898329fd-Abstract-Datasets_and_Benchmarks.html">compositional reasoning benchmark</Ext> shows that models struggle to combine visual concepts flexibly, and <Ext href="https://openreview.net/forum?id=UIFAJZ22ZF">3D-PC</Ext> reveals visual perspective-taking deficits in the evaluated models. Even simple same–different judgments remain hard for many neural networks under the tested generalization conditions, and they help us identify the brain mechanisms of relational processing.
+          </Text>
           <div className="funding-badge">Funded by ONR (N00014-24-1-2026)</div>
-        </section>
+        </div>
 
-        <section className="research-direction-card" aria-labelledby="theme-2">
-          <Title order={3} id="theme-2" className="research-direction-title">Cortical feedback and recurrent vision</Title>
-          <Text className="research-question" fw={600}>What does the brain compute through recurrent interactions?</Text>
-          <Text className="research-direction-text">Recurrent and feedback connections allow visual representations to evolve over time. Our models investigate contour integration, perceptual grouping, and feature binding. A recent preprint links recurrent network dynamics to the time course of perceptual grouping in natural scenes.</Text>
-          <Text className="research-direction-text">Our mental simulation work involves Sanskriti Manoharan, David Sheinberg, Christopher Cueva, and Alekh Karkada Ashok. We also develop stable recurrent and convolutional state space models to study visual dynamics at larger scales.</Text>
-          <ul className="research-reading body-text"><li><Ext href="https://arxiv.org/abs/2610.05419">Grouping preprint (2026)</Ext></li><li><Ext href="https://www.cell.com/current-biology/fulltext/S0960-9822(24)01380-0">Mental simulation study</Ext></li><li><Ext href="https://proceedings.neurips.cc/paper/2020/hash/766d856ef1a6b02f93d894415e6bfa0e-Abstract.html">Stable recurrent models</Ext></li></ul>
+        <div className="research-direction-card">
+          <Title order={3} className="research-direction-title">Cortical Feedback and Recurrent Vision</Title>
+          <Text className="research-direction-text">
+            The cortex has only a handful of processing stages; it gains depth over time through feedback and horizontal connections rather than by stacking layers. We study what these recurrent circuits compute. In primates, same–different tasks that challenge feedforward networks evoke <Ext href="https://www.eneuro.org/content/8/1/ENEURO.0267-20.2020">distinct neural dynamics</Ext>, and both monkeys and recurrent networks solve hard visual problems through <Ext href="https://www.cell.com/current-biology/fulltext/S0960-9822(24)01380-0">mental simulation</Ext>. This work involves Sanskriti Manoharan, David Sheinberg, Christopher Cueva, and Alekh Karkada Ashok. We also study how <Ext href="https://openreview.net/forum?id=m2gVfgWYDO">neural synchrony</Ext> supports <Ext href="https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(25)00232-3">feature binding</Ext>. To scale these circuits, we developed <Ext href="https://proceedings.neurips.cc/paper/2020/hash/766d856ef1a6b02f93d894415e6bfa0e-Abstract.html">stable recurrent vision models</Ext> and, more recently, convolutional state space models, which make recurrence parallelizable and a compute-efficient alternative to attention.
+          </Text>
           <div className="funding-badge">Funded by ONR (N00014-24-1-2026) and ANITI (France 2030, ANR-23-IACL-0002)</div>
-        </section>
+        </div>
 
-        <section className="research-direction-card" aria-labelledby="theme-3">
-          <Title order={3} id="theme-3" className="research-direction-title">Development and embodiment</Title>
-          <Text className="research-question" fw={600}>How does experience shape the computations of vision?</Text>
-          <Text className="research-direction-text">Animals learn from limited, temporally continuous experience. We investigate how predictive learning and active exploration can support grouping, object recognition, and visual reasoning. Our 3D-PC benchmark documents a gap between human visual perspective taking and the tested machine-vision models.</Text>
-          <Text className="research-direction-text">Current projects include computational mechanisms of depth perception with Fulvio Domini and Jorge Chang, visual perspective taking and robotics with Alekh Karkada Ashok and Madeleine Fenner, and embodiment and motion with Jorge Chang and Bastien Le Lan.</Text>
-          <ul className="research-reading body-text"><li><Ext href="https://openreview.net/forum?id=KeiQNpb7sv">Developmental learning</Ext></li><li><Ext href="https://openreview.net/forum?id=UIFAJZ22ZF">Visual perspective taking</Ext></li></ul>
+        <div className="research-direction-card">
+          <Title order={3} className="research-direction-title">Development and Embodiment</Title>
+          <Text className="research-direction-text">
+            Training data and objectives shape how vision develops. Newborn animals learn to see from limited, self-generated, temporally continuous experience, not from millions of labeled images. We model this process: ongoing work tests whether predictive learning from a newborn chick's first-person visual experience can support perceptual grouping and object recognition without labels. Passive video has limits, however, and the models evaluated in our study perform near chance on <Ext href="https://openreview.net/forum?id=UIFAJZ22ZF">visual perspective taking</Ext>. We are therefore building embodied agents that learn world models by exploring simulated environments, and studying how an agent can re-represent a problem in order to solve it. Current projects include computational mechanisms of depth perception with Fulvio Domini and Jorge Chang, visual perspective taking and robotics with Alekh Karkada Ashok and Madeleine Fenner, and embodiment and motion with Jorge Chang and Bastien Le Lan.
+          </Text>
           <div className="funding-badge">Funded by the REPRISM MURI (ONR N00014-24-1-2603) and ONR (N00014-24-1-2026)</div>
-        </section>
+        </div>
 
-        <section className="research-direction-card" aria-labelledby="theme-4">
-          <Title order={3} id="theme-4" className="research-direction-title">Explainable AI for scientific discovery</Title>
-          <Text className="research-question" fw={600}>How can we identify what a model has learned?</Text>
-          <Text className="research-direction-text">CRAFT identifies concepts used by a model, while MACO supports feature visualization in modern networks. Explanations can reveal both useful features and shortcuts: our histopathology work found spurious correlations in models with strong diagnostic performance.</Text>
-          <Text className="research-direction-text">With ANITI collaborators, we develop open tools and test which representations people can interpret. Applications range from medical images to leaf architecture.</Text>
-          <ul className="research-reading body-text"><li><Ext href="https://github.com/deel-ai/xplique">Xplique toolbox</Ext></li><li><Ext href="https://github.com/serre-lab/Horama">Horama feature visualization</Ext></li><li><Ext href="https://openreview.net/forum?id=vb57jDotru">Human interpretability study</Ext></li></ul>
+        <div className="research-direction-card">
+          <Title order={3} className="research-direction-title">Explainable AI for Scientific Discovery</Title>
+          <Text className="research-direction-text">
+            With the Artificial and Natural Intelligence Toulouse Institute (ANITI), we develop methods that explain what deep networks have learned. <Ext href="https://openaccess.thecvf.com/content/CVPR2023/papers/Fel_CRAFT_Concept_Recursive_Activation_FacTorization_for_Explainability_CVPR_2023_paper.pdf">CRAFT</Ext> identifies the concepts a model relies on and where it finds them in an image, and <Ext href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/76d2f8e328e1081c22a77ca0fa330ca5-Abstract-Conference.html">MACO</Ext> makes feature visualization work for modern architectures; both are available in our open-source <Ext href="https://github.com/deel-ai/xplique">Xplique toolbox</Ext>. These tools can expose shortcuts: in <Ext href="https://onlinelibrary.wiley.com/doi/10.1111/his.15180">histopathology</Ext>, models with apparently superhuman cancer diagnosis turned out to rely on spurious correlations. They can also reveal what a model has learned: in paleobotany, our models <Ext href="https://www.pnas.org/content/113/12/3305">identify plant families from leaf architecture</Ext>, and their explanations point to the leaf features that distinguish those families. We also test explanations with people, finding that <Ext href="https://arxiv.org/abs/2605.20337">more capable vision foundation models are not more interpretable</Ext> and asking <Ext href="https://openreview.net/forum?id=vb57jDotru">which representations humans find easiest to interpret</Ext>. Try <Ext href="https://serre-lab.github.io/Lens/">ObjectLENS</Ext>, which shows what ImageNet models see, and <Ext href="https://serre-lab.github.io/LeafLens/">LeafLENS</Ext>, which shows how models classify plants from cleared leaves.
+          </Text>
           <div className="funding-badge">Funded by ANITI (France 2030, ANR-23-IACL-0002), the NSF AI Research Institute on Interaction for AI Assistants (ARIA; NSF Cooperative Agreement 2433429), and NIH/NIMH (R01 MH140004 and R01 MH143695)</div>
-        </section>
+        </div>
 
-        <section className="research-direction-card" aria-labelledby="theme-5">
-          <Title order={3} id="theme-5" className="research-direction-title">Foundation models and multimodal reasoning</Title>
-          <Text className="research-question" fw={600}>When does prediction become scientific understanding?</Text>
-          <Text className="research-direction-text">We study what foundation models learn and when their representations can explain cognition. Our spectral theory of multimodal losses connects contrastive and predictive objectives to the representations they produce. Other work examines shared multimodal workspaces and visual reasoning.</Text>
-          <Text className="research-direction-text">EpiSelect—Truthful Evidence Selection for Trustworthy AI—is a project by Eunice Yiu, Sixuan Chen, and Joshua Attih that studies evidence selection for AI reasoning.</Text>
-          <ul className="research-reading body-text"><li><Ext href="https://www.cell.com/neuron/abstract/S0896-6273(25)00752-4">Prediction and understanding</Ext></li><li><Ext href="https://openreview.net/forum?id=37eNHfTSDD">Multimodal learning theory</Ext></li><li><Ext href="https://joshattih.github.io/episelect-site/">EpiSelect project</Ext></li></ul>
+        <div className="research-direction-card">
+          <Title order={3} className="research-direction-title">Foundation Models and Multimodal Reasoning</Title>
+          <Text className="research-direction-text">
+            We ask when AI foundation models can serve as scientific instruments, and when a model that predicts brain data also explains it—questions we take up in a <Ext href="https://www.cell.com/neuron/abstract/S0896-6273(25)00752-4">perspective on moving from prediction to understanding</Ext>. Answering them requires knowing what these models learn. We developed a <Ext href="https://openreview.net/forum?id=37eNHfTSDD">unified spectral theory of multimodal losses</Ext> that explains how contrastive and predictive objectives shape learned representations, and we study what shared multimodal workspaces learn and where vision–language models fail at visual reasoning. We also use language models to probe human cognition: their internal representations <Ext href="https://openreview.net/forum?id=Czul60ELOH">track human judgments of event plausibility</Ext>. <Ext href="https://joshattih.github.io/episelect-site/">EpiSelect: Truthful Evidence Selection for Trustworthy AI</Ext>, by Eunice Yiu, Sixuan Chen, and Joshua Attih, studies evidence selection for AI reasoning.
+          </Text>
           <div className="funding-badge">Funded by the NSF AI Research Institute on Interaction for AI Assistants (ARIA; NSF Cooperative Agreement 2433429) and ONR (N00014-24-1-2026)</div>
-        </section>
+        </div>
 
-        <section className="research-direction-card" aria-labelledby="theme-6">
-          <Title order={3} id="theme-6" className="research-direction-title">AI for behavioral and clinical science</Title>
-          <Text className="research-question" fw={600}>How can computer vision improve scientific measurement?</Text>
-          <Text className="research-direction-text">Our automated home-cage phenotyping system established a foundation for measuring behavior from video. Subsequent work studies rodents, worms, zebrafish, and children, including applications to mouse models of ALS–FTD.</Text>
-          <Text className="research-direction-text">A separate collaboration uses clinical images to support research on risk assessment. Other collaborations study histopathology and, with David Borton’s group, spinal circuits for neuromodulation interfaces that restore sensorimotor function after spinal cord injury.</Text>
-          <ul className="research-reading body-text"><li><Ext href="https://www.nature.com/articles/ncomms1064">Behavioral phenotyping</Ext></li><li><Ext href="https://onlinelibrary.wiley.com/doi/10.1111/his.15180">Histopathology study</Ext></li><li><Ext href="https://www.nature.com/articles/s41551-026-01627-5">Spinal circuit modeling</Ext></li></ul>
+        <div className="research-direction-card">
+          <Title order={3} className="research-direction-title">AI for Behavioral and Clinical Science</Title>
+          <Text className="research-direction-text">
+            Computer vision can automate behavioral measurements that are otherwise scored by hand. Building on our <Ext href="https://www.nature.com/articles/ncomms1064">automated home-cage phenotyping system for mice</Ext>, we have developed tools that analyze the behavior of rodents, worms, zebrafish, and children, and we now apply them to mouse models of ALS-FTD. A separate collaboration uses clinical images to support research on risk assessment. Our circuit-modeling approach also extends to neurotechnology: with David Borton's group, we model spinal circuits for neuromodulation interfaces that <Ext href="https://www.nature.com/articles/s41551-026-01627-5">restore sensorimotor function after spinal cord injury</Ext>. Other collaborations apply computer vision to histopathology.
+          </Text>
           <div className="funding-badge">Funded by NIH/NIMH (R01 MH140004, R01 MH143695, and T32 MH126388)</div>
-        </section>
+        </div>
 
         {/* Grants Section */}
         <div className="grants-section" style={{ marginTop: "3rem" }}>
