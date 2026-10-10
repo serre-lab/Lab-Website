@@ -139,7 +139,7 @@ export function Resources() {
                 backgroundImage="/metcalf.webp"
             />
             <div className="resources-container">
-                <section className="reading-list" aria-labelledby="start-here-title">
+                <section className="reading-list body-text" aria-labelledby="start-here-title">
                     <Title order={2} id="start-here-title" className="section-title">Start here</Title>
                     <Text>Three entry points to the lab’s research, from the scientific question to models and measurement.</Text>
                     <ol>

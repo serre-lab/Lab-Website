@@ -104,7 +104,7 @@ export function Home() {
           <div className="home-hero-subtitle">
             <Text className="home-science-question">How does the brain learn to see and reason—and what can that teach us about AI?</Text>
             <Text>We combine experiments, computational models, and explainability tools to understand biological vision and build more human-like machine vision.</Text>
-            <nav className="home-explore" aria-label="Explore the lab">
+            <nav className="home-explore body-text" aria-label="Explore the lab">
               <Link to="/research">Research</Link><Link to="/people">People</Link><Link to="/resources">Tools &amp; data</Link>
             </nav>
             <Text className="home-affiliations">Brown University · Center for Computational Brain Science · Carney Institute</Text>
@@ -116,7 +116,7 @@ export function Home() {
 
       <section className="home-content home-updates" aria-labelledby="updates-title">
         <Title order={2} id="updates-title" className="section-title">Recent milestones</Title>
-        <ul>
+        <ul className="body-text">
           <li><time dateTime="2026-10-04">October 4, 2026</time> — <a href="https://arxiv.org/abs/2610.05419">New preprint: recurrent network dynamics explain the time course of perceptual grouping in natural scenes.</a></li>
           <li><time dateTime="2025-07-29">July 29, 2025</time> — <a href="https://www.brown.edu/news/2025-07-29/aria-ai-institute-brown">Brown announces the ARIA AI institute, with Thomas Serre on the research team.</a></li>
         </ul>
