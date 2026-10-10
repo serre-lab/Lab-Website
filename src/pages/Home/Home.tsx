@@ -3,6 +3,7 @@ import "./Home.css";
 import { Title, Text } from "@mantine/core";
 import { motion } from "motion/react";
 import { useState } from "react";
+import publicationsData from "../../data/publications_by_year.json";
 import { HeroBanner } from "../../components/HeroBanner/HeroBanner";
 
 // Helper function to shorten journal names
@@ -13,6 +14,7 @@ const shortenJournalName = (journal: string): string => {
     'Trends in Cognitive Sciences': 'TICS',
     'International Conference on Learning Representations': 'ICLR',
     'arXiv': 'arXiv',
+    'Neural Information Processing Systems': 'NeurIPS',
     'Nature': 'Nature',
     'Science': 'Science',
     'Cell': 'Cell',
@@ -72,6 +74,22 @@ const abbreviateAuthors = (authors: string, maxAuthors: number = 2): string => {
     return `${getLastName(authorList[0])} et al.`;
   }
 };
+
+// News is maintained separately from the curated selected-publications cards.
+const recentPaperUrls = [
+  "https://arxiv.org/abs/2610.05419",
+  "https://openreview.net/forum?id=XYmvp2YQdC",
+  "https://openreview.net/forum?id=37eNHfTSDD",
+  "https://arxiv.org/abs/2606.25234",
+  "https://arxiv.org/abs/2606.09653",
+  "https://arxiv.org/abs/2605.20337",
+];
+const publicationRecords = Object.entries(publicationsData).flatMap(([year, papers]) =>
+  papers.map((paper) => ({ ...paper, year }))
+);
+const recentPapers = recentPaperUrls
+  .map((url) => publicationRecords.find((paper) => paper.url === url))
+  .filter((paper) => paper !== undefined);
 
 // Animation variants
 const fadeUp = {
@@ -395,7 +413,23 @@ export function Home() {
         </div>
       </motion.div>
 
-      {/* Recent Highlights Section */}
+      <section className="recent-papers-section" aria-labelledby="recent-papers-heading">
+        <Title order={2} id="recent-papers-heading" className="section-title">Recent papers and preprints</Title>
+        <ul className="recent-papers-list">
+          {recentPapers.map((paper) => (
+            <li key={paper.url}>
+              <a className="body-text" href={paper.url} target="_blank" rel="noopener noreferrer" title="Opens in new tab" aria-label={`${paper.title} (opens in new tab)`}>
+                {paper.title}
+              </a>
+              <Text className="secondary-text">
+                {abbreviateAuthors(paper.authors)} · {paper.journal === "arXiv" ? "arXiv preprint (2026)" : `${shortenJournalName(paper.journal)} (${paper.year})`}
+              </Text>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      {/* Selected Publications Section */}
       <motion.div
         className="recent-highlights-section"
         variants={fadeUp}
@@ -403,36 +437,16 @@ export function Home() {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <Title order={2} className="section-title">Selected Recent Publications</Title>
+        <Title order={2} className="section-title">Selected publications</Title>
         <div className="highlights-grid">
           <div className="highlight-card">
-            <Text className="highlight-journal">{shortenJournalName("Nature Biomedical Engineering")} (2026)</Text>
+            <Text className="highlight-journal">Neuron (2025)</Text>
             <Title order={3} className="highlight-title">
-              <a href="https://www.nature.com/articles/s41551-026-01627-5" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
-                Perilesional neuromodulation replaces lost sensorimotor function in persons with spinal cord injury
+              <a href="https://www.sciencedirect.com/science/article/abs/pii/S0896627325007524" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
+                From prediction to understanding: will AI foundation models transform brain science?
               </a>
             </Title>
-            <Text className="highlight-authors">{abbreviateAuthors("J.S. Calvert, S.R. Parker, L.N. Govindarajan, R. Darie, E. Shaaya, R. Solinsky, L.M. Del Valle, P. Miranda, J. Jang, E. Tiwari, S. Syed, R.M. Villalobos, L.M. Aguiar, J.A. Taylor, H. Tang, S. McPherson, W. Xue, A.G. Carayannopoulos, A.A. Oyelese, Z.L. Gokaslan, A.K. Bansal, L.J. Resnik, T. Serre, J.S. Fridley & D.A. Borton")}</Text>
-          </div>
-
-          <div className="highlight-card">
-            <Text className="highlight-journal">NeurIPS (2026)</Text>
-            <Title order={3} className="highlight-title">
-              <a href="https://openreview.net/forum?id=XYmvp2YQdC" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
-                Not too generative, not too discriminative: The human alignment sweet spot
-              </a>
-            </Title>
-            <Text className="highlight-authors">{abbreviateAuthors("J. Chang, B. Le Lan, T. Serre & V. Boutin")}</Text>
-          </div>
-
-          <div className="highlight-card">
-            <Text className="highlight-journal">NeurIPS (2026)</Text>
-            <Title order={3} className="highlight-title">
-              <a href="https://openreview.net/forum?id=37eNHfTSDD" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
-                A unified spectral theory of multimodal losses
-              </a>
-            </Title>
-            <Text className="highlight-authors">{abbreviateAuthors("Y. Cheng, S. Chen, Z. Lu, X. Yu, G. Dhimoïla & T. Serre")}</Text>
+            <Text className="highlight-authors">{abbreviateAuthors("T. Serre & E. Pavlick")}</Text>
           </div>
 
           <div className="highlight-card">
@@ -446,6 +460,16 @@ export function Home() {
           </div>
 
           <div className="highlight-card">
+            <Text className="highlight-journal">ICLR (2025)</Text>
+            <Title order={3} className="highlight-title">
+              <a href="https://openreview.net/forum?id=UIFAJZ22ZF" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
+                The 3D-PC: A benchmark for visual perspective taking in humans and machines
+              </a>
+            </Title>
+            <Text className="highlight-authors">{abbreviateAuthors("D. Linsley et al.")}</Text>
+          </div>
+
+          <div className="highlight-card">
             <Text className="highlight-journal">TICS (2026)</Text>
             <Title order={3} className="highlight-title">
               <a href="https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(25)00232-3" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
@@ -456,13 +480,23 @@ export function Home() {
           </div>
 
           <div className="highlight-card">
-            <Text className="highlight-journal">Neuron (2025)</Text>
+            <Text className="highlight-journal">{shortenJournalName("Current Biology")} (2024)</Text>
             <Title order={3} className="highlight-title">
-              <a href="https://www.sciencedirect.com/science/article/abs/pii/S0896627325007524" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
-                From prediction to understanding: will AI foundation models transform brain science?
+              <a href="https://www.cell.com/current-biology/abstract/S0960-9822(24)01380-0" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
+                Monkeys engage in visual simulation to solve complex problems
               </a>
             </Title>
-            <Text className="highlight-authors">{abbreviateAuthors("T. Serre & E. Pavlick")}</Text>
+            <Text className="highlight-authors">{abbreviateAuthors("A. Ahuja et al.")}</Text>
+          </div>
+
+          <div className="highlight-card">
+            <Text className="highlight-journal">{shortenJournalName("Nature Biomedical Engineering")} (2026)</Text>
+            <Title order={3} className="highlight-title">
+              <a href="https://www.nature.com/articles/s41551-026-01627-5" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
+                Perilesional neuromodulation replaces lost sensorimotor function in persons with spinal cord injury
+              </a>
+            </Title>
+            <Text className="highlight-authors">{abbreviateAuthors("J.S. Calvert, S.R. Parker, L.N. Govindarajan, R. Darie, E. Shaaya, R. Solinsky, L.M. Del Valle, P. Miranda, J. Jang, E. Tiwari, S. Syed, R.M. Villalobos, L.M. Aguiar, J.A. Taylor, H. Tang, S. McPherson, W. Xue, A.G. Carayannopoulos, A.A. Oyelese, Z.L. Gokaslan, A.K. Bansal, L.J. Resnik, T. Serre, J.S. Fridley & D.A. Borton")}</Text>
           </div>
         </div>
         <div style={{ textAlign: "center", marginTop: "1.5rem" }}>

@@ -12,6 +12,8 @@ Use the existing site style for every change. Reuse `src/styles/typography.css` 
 
 Reduce unnecessary boxes: prefer headings, whitespace, and subtle dividers for prose, resource entries, and publication lists. Retain cards where grouping helps, such as people profiles and the featured keynote. Avoid decorative shadows, gradient stripes, and hover lifts on ordinary content. Check the actual desktop and mobile appearance; passing accessibility tests alone does not establish visual consistency.
 
+The homepage “Selected publications” is a curated selection, separate from recent papers and preprints. Preserve its chosen papers and equal-size cards across rows; do not replace selected papers just because newer work appears.
+
 ## Mandatory Checks for Every Change
 
 ### Headings

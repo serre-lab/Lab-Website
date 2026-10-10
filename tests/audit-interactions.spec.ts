@@ -27,6 +27,20 @@ for (const viewport of [{width: 1280, height: 900}, {width: 390, height: 844}]) 
       await expect(page.getByRole('dialog')).toHaveCount(0);
       await expect(bio).toBeFocused();
     });
+    test('selected publications keep equal card sizes', async ({page}) => {
+      await page.goto('/#/');
+      const cards = page.locator('.highlights-grid .highlight-card');
+      await expect(cards).toHaveCount(6);
+      await cards.first().scrollIntoViewIfNeeded();
+      const sizes = await cards.evaluateAll((items) => items.map((item) => {
+        const {width, height} = item.getBoundingClientRect();
+        return {width, height};
+      }));
+      for (const size of sizes) {
+        expect(Math.abs(size.width - sizes[0].width)).toBeLessThan(1);
+        expect(Math.abs(size.height - sizes[0].height)).toBeLessThan(1);
+      }
+    });
     test('main pages fit the viewport and legacy resources resolve', async ({page}) => {
       for (const route of ['/', '/research', '/people', '/resources', '/publications', '/sci-comm']) {
         await page.goto(`/#${route}`);
