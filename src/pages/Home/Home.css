@@ -800,8 +800,3 @@
 .home-explore { display: flex; justify-content: center; flex-wrap: wrap; gap: .75rem; margin: 1.25rem 0; }
 .home-explore a { background: #fff; color: #154b7b; padding: .55rem 1rem; border-radius: 6px; font-weight: 600; }
 .home-explore a:hover, .home-explore a:focus-visible { background: #e6edf5; text-decoration: underline; }
-.home-updates { gap: 0; text-align: left; }
-.home-updates .section-title { margin-top: .25rem; margin-bottom: .5rem; padding-bottom: .4rem; }
-.home-updates ul { margin: 0; padding-left: 1.25rem; }
-.home-updates li { margin: .65rem 0; line-height: 1.6; }
-.home-updates time { font-weight: 600; }

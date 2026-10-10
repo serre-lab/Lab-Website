@@ -114,13 +114,36 @@ export function Home() {
         backgroundImage="/metcalf.webp"
       />
 
-      <section className="home-content home-updates" aria-labelledby="updates-title">
-        <Title order={2} id="updates-title" className="section-title">Recent milestones</Title>
-        <ul className="body-text">
-          <li><time dateTime="2026-10-04">October 4, 2026</time> — <a href="https://arxiv.org/abs/2610.05419">New preprint: recurrent network dynamics explain the time course of perceptual grouping in natural scenes.</a></li>
-          <li><time dateTime="2025-07-29">July 29, 2025</time> — <a href="https://www.brown.edu/news/2025-07-29/aria-ai-institute-brown">Brown announces the ARIA AI institute, with Thomas Serre on the research team.</a></li>
-        </ul>
-      </section>
+      {/* Featured Talk Section */}
+      <motion.div
+        className="recent-highlights-section"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
+        <Title order={2} className="section-title">Featured Talk</Title>
+        <div className="highlight-card featured-talk-card">
+          <Text className="highlight-journal">CVPR 2026 Keynote</Text>
+          <Title order={3} className="highlight-title">
+            <a href="https://www.youtube.com/watch?v=tjn2MW0d8K8&t=7185s" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
+              Scaling laws vs. neural laws: Toward more natural artificial vision
+            </a>
+          </Title>
+          <Text className="featured-talk-text">
+            Thomas Serre's keynote at CVPR 2026 gives an overview of the lab's current work: as vision models scale, they match human accuracy while drifting away from human vision, and brain-inspired learning and recurrent architectures offer a path back.
+          </Text>
+          <a
+            href="https://www.youtube.com/watch?v=tjn2MW0d8K8&t=7185s"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="featured-button-small"
+            aria-label="Watch the CVPR 2026 keynote on YouTube (opens in new tab)"
+          >
+            Watch on YouTube →
+          </a>
+        </div>
+      </motion.div>
 
       {/* Prospective Students Section */}
       <motion.div
@@ -364,37 +387,6 @@ export function Home() {
               </a>
             </div>
           </div>
-        </div>
-      </motion.div>
-
-      {/* Featured Talk Section */}
-      <motion.div
-        className="recent-highlights-section"
-        variants={fadeUp}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-      >
-        <Title order={2} className="section-title">Featured Talk</Title>
-        <div className="highlight-card featured-talk-card">
-          <Text className="highlight-journal">CVPR 2026 Keynote</Text>
-          <Title order={3} className="highlight-title">
-            <a href="https://www.youtube.com/watch?v=tjn2MW0d8K8&t=7185s" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
-              Scaling laws vs. neural laws: Toward more natural artificial vision
-            </a>
-          </Title>
-          <Text className="featured-talk-text">
-            Thomas Serre's keynote at CVPR 2026 gives an overview of the lab's current work: as vision models scale, they match human accuracy while drifting away from human vision, and brain-inspired learning and recurrent architectures offer a path back.
-          </Text>
-          <a
-            href="https://www.youtube.com/watch?v=tjn2MW0d8K8&t=7185s"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="featured-button-small"
-            aria-label="Watch the CVPR 2026 keynote on YouTube (opens in new tab)"
-          >
-            Watch on YouTube →
-          </a>
         </div>
       </motion.div>
 
