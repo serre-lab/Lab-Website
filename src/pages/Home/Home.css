@@ -790,3 +790,94 @@
   background: var(--color-primary-dark);
   color: white;
 }
+
+/* Homepage lists share one reading order, with a compact label column. */
+.home-container .student-cards-container,
+.home-container .featured-grid,
+.home-container .highlights-grid {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.home-container .student-card {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr);
+  gap: 0.5rem 1.5rem;
+  height: auto;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.home-container .student-card-title {
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0;
+}
+
+.home-container .student-card > :not(.student-card-title) {
+  grid-column: 2;
+  margin: 0;
+}
+
+.home-container .student-card > .student-card-text {
+  grid-row: 1;
+}
+
+.home-container .student-card-expand {
+  justify-self: start;
+}
+
+.home-container .featured-content {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr);
+  gap: 0.5rem 1.5rem;
+}
+
+.home-container .featured-project-title {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  margin: 0;
+}
+
+.home-container .featured-description,
+.home-container .featured-content .featured-button-small {
+  grid-column: 2;
+  margin: 0;
+}
+
+.home-container .highlights-grid .highlight-card {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr);
+  gap: 0.25rem 1.5rem;
+  align-content: start;
+}
+
+.home-container .highlights-grid .highlight-journal {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  margin: 0;
+}
+
+.home-container .highlights-grid .highlight-title,
+.home-container .highlights-grid .highlight-authors {
+  grid-column: 2;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .home-container .student-card,
+  .home-container .featured-content,
+  .home-container .highlights-grid .highlight-card {
+    grid-template-columns: 1fr;
+  }
+
+  .home-container .student-card > *,
+  .home-container .student-card > :not(.student-card-title),
+  .home-container .student-card > .student-card-text,
+  .home-container .featured-content > *,
+  .home-container .featured-content .featured-button-small,
+  .home-container .highlights-grid .highlight-card > * {
+    grid-column: 1;
+    grid-row: auto;
+  }
+}

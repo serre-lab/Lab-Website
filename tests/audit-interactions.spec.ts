@@ -27,11 +27,34 @@ for (const viewport of [{width: 1280, height: 900}, {width: 390, height: 844}]) 
       await expect(page.getByRole('dialog')).toHaveCount(0);
       await expect(bio).toBeFocused();
     });
-    test('selected publications keep equal card sizes', async ({page}) => {
+    test('homepage lists follow one column and selected publications keep equal sizes', async ({page}) => {
       await page.goto('/#/');
       const cards = page.locator('.highlights-grid .highlight-card');
       await expect(cards).toHaveCount(6);
       await cards.first().scrollIntoViewIfNeeded();
+      for (const selector of ['.highlights-grid .highlight-card', '.home-container .featured-card', '.student-card']) {
+        const rows = await page.locator(selector).evaluateAll(items => items.map(item => {
+          const {left, top, bottom} = item.getBoundingClientRect();
+          return {left, top, bottom};
+        }));
+        for (let i = 1; i < rows.length; i++) {
+          expect(Math.abs(rows[i].left - rows[0].left)).toBeLessThan(1);
+          expect(rows[i].top).toBeGreaterThanOrEqual(rows[i - 1].bottom - 1);
+        }
+      }
+      if (viewport.width <= 600) {
+        for (const selector of ['.student-card', '.home-container .featured-content']) {
+          const entries = await page.locator(selector).evaluateAll(items => items.map(item => {
+            const heading = item.querySelector('h3')!.getBoundingClientRect();
+            const text = item.querySelector('p')!.getBoundingClientRect();
+            return {headingLeft: heading.left, headingBottom: heading.bottom, textLeft: text.left, textTop: text.top};
+          }));
+          for (const entry of entries) {
+            expect(Math.abs(entry.headingLeft - entry.textLeft)).toBeLessThan(1);
+            expect(entry.textTop).toBeGreaterThanOrEqual(entry.headingBottom);
+          }
+        }
+      }
       const sizes = await cards.evaluateAll((items) => items.map((item) => {
         const {width, height} = item.getBoundingClientRect();
         return {width, height};

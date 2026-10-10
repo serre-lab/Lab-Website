@@ -288,8 +288,7 @@ export function Home() {
         
         <div className="featured-grid">
           {/* ClickMe Card */}
-          <div className="featured-card clickme-grid-card">
-            <span className="featured-badge-small">Featured</span>
+          <div className="featured-card">
             <div className="featured-content">
               <Title order={3} className="featured-project-title"><span aria-hidden="true">🎮</span> ClickMe</Title>
               <Text className="featured-description">
