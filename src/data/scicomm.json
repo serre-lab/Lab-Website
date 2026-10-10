@@ -35,6 +35,13 @@
     "displayTitle": "Training AI to see more like humans"
   },
   {
+    "title": "Brain science tools for tomorrow",
+    "link": "https://carney.brown.edu/news/2025-03-26/tools",
+    "blurb": "Carney highlights research tools developed at Brown and used by scientists worldwide. The feature includes the Serre Lab’s LENS and CRAFT, which help researchers examine the visual concepts and shortcuts behind neural network decisions.",
+    "image": "https://carney.brown.edu/sites/default/files/tools%20story%20banner.jpg",
+    "displayTitle": "LENS and CRAFT in Carney’s research toolbox"
+  },
+  {
     "title": "Brown University offers cash incentive to assist with 'Click Me' AI research",
     "link": "https://turnto10.com/news/local/brown-university-offers-cash-incentive-to-assist-with-click-me-ai-research-artificial-intelligence-deep-learning-lab-plme-brain-science-game-vision-february-24-2025",
     "blurb": "NBC 10 features ClickMe, the lab’s online game for collecting information about human vision. Players can earn cash prizes while helping researchers train artificial intelligence to recognize images more like people do.",
@@ -49,11 +56,32 @@
     "displayTitle": "Inside ClickMe with Thomas Serre and Jay Gopal"
   },
   {
+    "title": "Carney experts shine at the first Rhode Island Neuroscience Symposium",
+    "link": "https://carney.brown.edu/news/2025-01-30/ri-neuroscience-symposium",
+    "blurb": "Carney reports on Drew Linsley’s presentation of Operant BioPharma, co-founded with Thomas Serre. The company combines robotic microscopy, computer vision, and optogenetics to study resilience in patient-derived brain cells and develop approaches to neurodegenerative disease.",
+    "image": "https://carney.brown.edu/sites/default/files/Diane%20candid%20neurotech%20symposium.jpg",
+    "displayTitle": "Operant BioPharma at Rhode Island’s neuroscience symposium"
+  },
+  {
+    "title": "Community Spotlight: Jay Gopal",
+    "link": "https://carney.brown.edu/news/2025-01-21/jay-gopal",
+    "blurb": "In a Carney community profile, Jay Gopal describes his work developing ClickMe and computer vision models that recognize objects more like people do. He discusses how human annotations can improve AI and why he studies the brain.",
+    "image": "https://carney.brown.edu/sites/default/files/Jay%20Gopal%20Formal%202022%20Square%20Compressed.png",
+    "displayTitle": "Jay Gopal on ClickMe and human-aligned vision"
+  },
+  {
     "title": "Explainable AI busts open black boxes",
     "link": "https://carney.brown.edu/news/2024-10-31/explainable-ai",
     "blurb": "The Carney Institute profiles the Serre Lab’s research on explainability. The team develops tools to examine deep learning models and reveal which visual features contribute to the decisions those models make.",
     "image": "https://carney.brown.edu/sites/default/files/2024-11/LENS-BEE_PETAL-EXAMPLE-copy.png",
     "displayTitle": "Opening the black box of visual AI"
+  },
+  {
+    "title": "Thomas Serre wins Midcareer Research Achievement Award",
+    "link": "https://copsy.brown.edu/news/2024-05-02/thomas-serre-award",
+    "blurb": "Brown’s Department of Cognitive and Psychological Sciences announces Thomas Serre’s Midcareer Research Achievement Award. The recognition highlights his contributions to computational vision, connections between AI and neuroscience, and the lab’s work on interpreting deep learning models.",
+    "image": "https://copsy.brown.edu/sites/default/files/2024-08/Thomas_0.jpg",
+    "displayTitle": "Brown recognizes Thomas Serre’s research"
   },
   {
     "title": "Compositionality in Neural Networks",

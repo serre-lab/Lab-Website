@@ -151,21 +151,21 @@ export function Home() {
         </div>
       </div>
 
-      {/* Prospective students Section */}
+      {/* Join the lab section */}
       <div
         className="home-content"
       >
         <div>
           <Title order={2} className="section-title">
-            Prospective students
+            Join the lab
           </Title>
         </div>
 
         <div className="student-cards-container">
           <div className="student-card">
-            <Title order={3} className="student-card-title">Undergraduate & MSc</Title>
+            <Title order={3} className="student-card-title">Brown students</Title>
             <Text className="student-card-text">
-              Brown undergraduate and MSc students can begin by joining the lab’s Slack workspace, attending group meetings, and exploring project discussions. Contact Thomas Serre for onboarding information.
+              Current Brown undergraduate and master’s students: tell us about your coursework, research interests, and availability in the research interest form below. Include your CV, unofficial transcript, and a code sample.
             </Text>
             {showUndergradDetails && (
               <div id="undergrad-requirements">
@@ -192,10 +192,10 @@ export function Home() {
           </div>
 
           <div className="student-card">
-            <Title order={3} className="student-card-title">PhD students</Title>
+            <Title order={3} className="student-card-title">PhD applicants</Title>
             <Text className="student-card-text">
               PhD applicants can apply through cognitive science, computer science, or neuroscience
-              graduate programs.
+              graduate programs. Use the research interest form below to introduce your background and interests; it does not replace the formal application.
             </Text>
             {showPhdDetails && (
               <div id="phd-requirements">
@@ -226,7 +226,7 @@ export function Home() {
           <div className="student-card">
             <Title order={3} className="student-card-title">Postdocs</Title>
             <Text className="student-card-text">
-              Prospective postdocs should email Thomas Serre directly with their CV, research statement, and references.
+              Prospective postdocs: use the research interest form below to share your CV, strongest research contributions, a code sample, and potential start date.
             </Text>
             {showPostdocDetails && (
               <div id="postdoc-requirements">
@@ -250,6 +250,10 @@ export function Home() {
             </button>
           </div>
         </div>
+        <Text className="body-text" mt="lg">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScyuMwWkJRcb2mr-8VzCihIHCeZ3md4p_z6weIAYeWXWqHFng/viewform" target="_blank" rel="noopener noreferrer" aria-label="Research interest form (opens in new tab)">Research interest form →</a>{" "}
+          About 5–10 minutes, with questions tailored to your application.
+        </Text>
       </div>
 
       {/* Featured Projects Section */}
@@ -451,7 +455,7 @@ export function Home() {
           <a href="https://psychic-adventure-y8eo2zo.pages.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Lab handbook (opens in new tab)">
             lab handbook
           </a>{" "}
-          has project information, lab procedures, and shared resources for current members.
+          has project information and lab procedures. Use <Link to="/lab-links">Lab links</Link> for the shared Drive, onboarding, monitoring, and other lab platforms.
         </Text>
       </section>
 

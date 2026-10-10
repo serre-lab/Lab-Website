@@ -10,6 +10,7 @@ const Resources = lazy(() => import("./pages/Resources/Resources").then(m => ({ 
 // @ts-expect-error Publications is a legacy JavaScript component without a declaration file.
 const Publications = lazy(() => import("./pages/Publications/Publications").then(m => ({ default: m.Publications })));
 const People = lazy(() => import("./pages/People/People"));
+const LabLinks = lazy(() => import("./pages/LabLinks/LabLinks").then(m => ({ default: m.LabLinks })));
 const SciComm = lazy(() => import("./pages/SciComm/SciComm").then(m => ({ default: m.SciComm })));
 
 import { Root } from "./components/Root";
@@ -42,6 +43,7 @@ const staticLinks: Links = {
         { to: "/publications", label: "Publications" },
         { to: "/people", label: "People" },
         { to: "/resources", label: "Resources" },
+        { to: "/lab-links", label: "Lab links" },
         {
             to: "/sci-comm",
             label: "Media",
@@ -97,6 +99,8 @@ const App = () => {
                 { path: "/resources", element: <Suspense fallback={null}><Resources /></Suspense> },
                 { path: "/sci-comm", element: <Suspense fallback={null}><SciComm /></Suspense> },
 
+
+                { path: "/lab-links", element: <Suspense fallback={null}><LabLinks /></Suspense> },
 
                 // Dynamic Markdown Routes
                 ...routes.map(({ path, content }) => ({

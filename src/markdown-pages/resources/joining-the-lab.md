@@ -10,6 +10,8 @@ The lab has been growing steadily, and I keep being asked the same questions. Ho
 
 ## How to start
 
+If you are interested in a research position, complete the [research interest form](https://docs.google.com/forms/d/e/1FAIpQLScyuMwWkJRcb2mr-8VzCihIHCeZ3md4p_z6weIAYeWXWqHFng/viewform) instead of sending an initial application by email. It has separate questions for current Brown undergraduate/master’s students, PhD applicants, and postdocs. This is separate from the onboarding form used after you join. PhD applicants must also apply through the appropriate Brown graduate program.
+
 - **Join the lab Slack.** Slack is where the lab talks. With a Brown email address, sign up at [serrelab.slack.com/signup](https://serrelab.slack.com/signup). Without one, ask me or a lab member for an invitation.
 - **Come to group meeting.** We meet on Wednesdays at 11:00 Providence time (US Eastern) in the Carney Innovation Zone, 164 Angell St, room 402. The first hour is a presentation or discussion, and the second is an informal lunch. On Wednesdays when there is a CCBS seminar at noon, the meeting ends by 11:50. Every meeting is hybrid, and the Zoom link is posted on Slack each week.
 - **Follow the `#lab-group-meeting` channel on Slack.** If a meeting is cancelled or moved, it is announced there.

@@ -102,7 +102,7 @@ for (const viewport of [{width: 1280, height: 900}, {width: 390, height: 844}]) 
     test('resources use readable single-column entries with accurate link actions', async ({page}) => {
       await page.goto('/#/resources');
       const entries = page.locator('.resource-entry');
-      await expect(entries).toHaveCount(20);
+      await expect(entries).toHaveCount(21);
       await expect(entries.filter({has: page.getByRole('heading', {name: 'hGRU segmentation', exact: true})}).getByRole('link')).toHaveText('Open notebook →');
       await expect(entries.filter({has: page.getByRole('heading', {name: 'Xplique', exact: true})}).getByRole('link')).toHaveText('View code →');
       const positions = await entries.evaluateAll(items => items.map(item => {
@@ -143,7 +143,7 @@ for (const viewport of [{width: 1280, height: 900}, {width: 390, height: 844}]) 
       expect(new Set(labels).size).toBe(labels.length);
     });
     test('main pages fit the viewport and legacy resources resolve', async ({page}) => {
-      for (const [route, title] of [['/', 'Serre Lab'], ['/research', 'Research'], ['/people', 'People'], ['/resources', 'Resources'], ['/publications', 'Publications'], ['/sci-comm', 'Media']]) {
+      for (const [route, title] of [['/', 'Serre Lab'], ['/research', 'Research'], ['/people', 'People'], ['/resources', 'Resources'], ['/publications', 'Publications'], ['/sci-comm', 'Media'], ['/lab-links', 'Lab links']]) {
         await page.goto(`/#${route}`);
         await expect(page.getByRole('heading', {level: 1, name: title, exact: true})).toBeVisible();
         const overflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);

@@ -27,6 +27,7 @@ const staticRoutes = [
   { path: '/publications', priority: '0.9', changefreq: 'monthly' },
   { path: '/people', priority: '0.8', changefreq: 'monthly' },
   { path: '/resources', priority: '0.7', changefreq: 'monthly' },
+  { path: '/lab-links', priority: '0.5', changefreq: 'monthly' },
   { path: '/sci-comm', priority: '0.7', changefreq: 'monthly' },
 ];
 

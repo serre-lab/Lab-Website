@@ -9,6 +9,10 @@ const pageMetadata: Record<string, { title: string; description: string }> = {
         title: 'Serre Lab | Brown University',
         description: 'The Serre Lab at Brown University conducts research in computational neuroscience and NeuroAI, focusing on visual recognition, deep learning, attention, and brain mechanisms underlying object recognition using behavioral, imaging, and physiological techniques.'
     },
+    '/lab-links': {
+        title: 'Lab links | Serre Lab',
+        description: 'Handbook, onboarding, shared files, computing tools, and lab platforms for Serre Lab members.'
+    },
     '/research': {
         title: 'Research | Serre Lab',
         description: 'Research in computational neuroscience and NeuroAI at the Serre Lab, focusing on visual recognition, deep learning, attention mechanisms, and brain-inspired artificial intelligence.'

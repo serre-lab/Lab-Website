@@ -102,6 +102,12 @@
                 "url": "https://github.com/serre-lab/CVR",
                 "description": "Code and dataset generators for the Compositional Visual Relations benchmark, which tests how models combine visual concepts.",
                 "action": "View code"
+            },
+            {
+                "title": "Hugging Face",
+                "url": "https://huggingface.co/Serrelab",
+                "description": "Explore the lab’s models, datasets, and interactive demos on Hugging Face.",
+                "action": "Visit lab profile"
             }
         ],
         "Videos and talks": [

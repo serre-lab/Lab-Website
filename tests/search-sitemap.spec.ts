@@ -3,7 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const BASE = "https://serre.lab.brown.edu";
-const STATIC_ROUTES = ["/", "/research", "/publications", "/people", "/resources", "/sci-comm"];
+const STATIC_ROUTES = ["/", "/research", "/publications", "/people", "/resources", "/lab-links", "/sci-comm"];
 const UNLISTED = new Set(["/resources/joining-the-lab"]);
 const STANDALONE_PAGES = ["/hmdb51.html", "/breakfast-actions-dataset.html"];
 const STALE_LOCS = [
