@@ -458,7 +458,7 @@ export function Home() {
           </div>
         </div>
         <div style={{ textAlign: "center", marginTop: "1.5rem" }}>
-          <Link to="/publications" style={{ color: "var(--color-primary)", textDecoration: "none", fontWeight: 600 }}>
+          <Link to="/publications" className="body-text" style={{ color: "var(--color-primary)", textDecoration: "none", fontWeight: 600 }}>
             View All Publications →
           </Link>
         </div>

@@ -44,7 +44,10 @@ export function Root(props: RootProps) {
             isFirstRender.current = false;
             return;
         }
+        const focusedElement = document.activeElement;
         const timer = setTimeout(() => {
+            // Preserve focus if the visitor has already moved to another control.
+            if (document.activeElement !== focusedElement) return;
             mainRef.current?.focus({ preventScroll: true });
         }, 100);
         return () => clearTimeout(timer);

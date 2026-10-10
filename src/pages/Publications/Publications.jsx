@@ -123,7 +123,7 @@ export function Publications() {
                     </div>
                 </div>
                 <div className="results-section">
-                <p className="results-summary" role="status" aria-live="polite" aria-atomic="true">
+                <p className="results-summary body-text" role="status" aria-live="polite" aria-atomic="true">
                     {resultCount === 0
                         ? emptyPublicationsMessage(searchQuery, selectedYear)
                         : `Showing ${resultCount} ${resultCount === 1 ? "publication" : "publications"}.`}

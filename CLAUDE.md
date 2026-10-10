@@ -6,6 +6,12 @@ All HTML output from this project must comply with WCAG 2.1 AA.
 Brown University requires full digital accessibility compliance by May 2026.
 Reference: https://digital-accessibility.brown.edu/
 
+## Visual style (Thomas, October 10, 2026)
+
+Use the existing site style for every change. Reuse `src/styles/typography.css` and established component sizes: body text 1rem, secondary text 0.95rem, section headings 1.75rem. Native lists and status text must use an explicit shared text class rather than inheriting the oversized body default. Keep the original homepage banner.
+
+Reduce unnecessary boxes: prefer headings, whitespace, and subtle dividers for prose, resource entries, and publication lists. Retain cards where grouping helps, such as people profiles and the featured keynote. Avoid decorative shadows, gradient stripes, and hover lifts on ordinary content. Check the actual desktop and mobile appearance; passing accessibility tests alone does not establish visual consistency.
+
 ## Mandatory Checks for Every Change
 
 ### Headings

@@ -13,7 +13,7 @@
     margin-top: 0.5rem;
   }
 
-  .titleDesc-container {
+  .research-container .titleDesc-container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -52,34 +52,13 @@
   }
 
   .research-direction-card {
-    background: #ffffff;
-    border: 1px solid #e1e8ed;
-    border-radius: 12px;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    padding: 0;
   }
 
-  .research-direction-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 4px;
-    height: 100%;
-    background: var(--color-primary);
-  }
-
-  .research-direction-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-    border-color: var(--color-primary);
+  .research-direction-card + .research-direction-card {
+    border-top: 1px solid var(--color-border-light);
+    padding-top: 2rem;
   }
 
   .research-direction-title {
@@ -99,15 +78,10 @@
   }
 
   .funding-badge {
-    display: inline-block;
-    background: #1a5a9e;
-    color: white;
-    padding: 0.3rem 0.8rem;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 500;
-    margin-top: 1rem;
-    box-shadow: 0 2px 10px rgba(31, 128, 211, 0.25);
+    color: var(--color-text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-top: 0.5rem;
   }
 
   .research-link {
@@ -120,17 +94,6 @@
   .research-link:hover,
   .research-link:focus-visible {
     color: var(--color-accent);
-    text-decoration: underline;
-    text-underline-offset: 0.15em;
-  }
-
-  /* Links inside funding badge: keep white on blue background */
-  .funding-badge .research-link {
-    color: white;
-  }
-  .funding-badge .research-link:hover,
-  .funding-badge .research-link:focus-visible {
-    color: rgba(255, 255, 255, 0.9);
     text-decoration: underline;
     text-underline-offset: 0.15em;
   }
@@ -154,10 +117,6 @@
     .research-description {
       font-size: 1.1rem;
       text-align: left;
-    }
-
-    .research-direction-card {
-      padding: 1.5rem;
     }
 
     .research-direction-title {
