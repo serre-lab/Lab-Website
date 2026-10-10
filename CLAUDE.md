@@ -18,6 +18,8 @@ The homepage “Selected publications” is a curated selection, separate from r
 
 Explain the scientific question, the data or task, and what the method measures before naming projects or technical terms. Brevity must not remove the information a reader needs to understand the work. Use concrete examples, expand unfamiliar acronyms, and distinguish ongoing research aims from demonstrated results. Clinical descriptions should identify the actual research question and modality using public sources.
 
+Public research highlights should reflect the maturity and significance of the work. Do not promote early exploratory projects to major research directions or public resources merely because they have an internal channel or project website. EpiSelect is early-stage and should not currently be featured on the public site (Thomas, October 10, 2026).
+
 ## Mandatory Checks for Every Change
 
 ### Headings

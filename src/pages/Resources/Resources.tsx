@@ -19,7 +19,6 @@ const getResourceDescription = (title: string): string => {
     if (titleLower.includes('neural harmonizer')) return "Dataset for harmonizing neural network representations with human visual processing";
     
     if (titleLower.includes('horama starter')) return "Colab notebook introducing feature visualization with Horama";
-    if (titleLower.includes('episelect')) return "Truthful Evidence Selection for Trustworthy AI — a project by Eunice Yiu, Sixuan Chen, and Joshua Attih";
     if (titleLower.includes('compositional visual')) return "Code and dataset generator for the Compositional Visual Relations benchmark";
 
     // Demo descriptions
