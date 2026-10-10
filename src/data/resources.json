@@ -3,6 +3,7 @@
         "Datasets": [
             {
                 "title": "Animal/Non-Animal Stimuli (PNAS 2007)",
+                "displayTitle": "Animal categorization",
                 "url": "https://huggingface.co/datasets/Serrelab/SerreOlivaPoggio-PNAS07"
             },
             {
@@ -11,14 +12,17 @@
             },
             {
                 "title": "HMDB51: Human Motion Database",
+                "displayTitle": "HMDB51",
                 "url": "/hmdb51.html"
             },
             {
                 "title": "The Breakfast Actions Dataset",
+                "displayTitle": "Breakfast actions",
                 "url": "/breakfast-actions-dataset.html"
             },
             {
                 "title": "Multi-Cue Boundary Detection Dataset",
+                "displayTitle": "Multi-cue boundaries",
                 "url": "/resources/the-multi-cue-boundary-detection-dataset"
             }
         ],
@@ -37,10 +41,12 @@
             },
             {
                 "title": "Panoptic segmentation with hGRU",
+                "displayTitle": "hGRU segmentation",
                 "url": "https://colab.research.google.com/drive/13q2pWR-32q6QfBRcz3fyihxGomZ3P4Ys?usp=sharing"
             },
             {
                 "title": "Horama starter notebook",
+                "displayTitle": "Horama notebook",
                 "url": "https://colab.research.google.com/drive/1TFYbmAgx-gbkLA4eY3lQbbZ-iPSBLiA2?usp=sharing"
             }
         ],
@@ -59,16 +65,19 @@
             },
             {
                 "title": "Neuroscience feedback models (PyTorch)",
+                "displayTitle": "Neural feedback models",
                 "url": "https://github.com/serre-lab/serrelabmodels"
             },
             {
                 "title": "Compositional Visual Relations (CVR)",
+                "displayTitle": "Visual relations (CVR)",
                 "url": "https://github.com/serre-lab/CVR"
             }
         ],
         "Videos & Talks": [
             {
                 "title": "CVPR 2026 Keynote: Scaling laws vs. neural laws",
+                "displayTitle": "CVPR 2026 keynote",
                 "url": "https://www.youtube.com/watch?v=tjn2MW0d8K8&t=7185s"
             },
             {
@@ -77,14 +86,17 @@
             },
             {
                 "title": "Aligning deep networks with human vision",
+                "displayTitle": "Aligning AI with human vision",
                 "url": "https://cbmm.mit.edu/video/aligning-deep-networks-human-vision-will-require-novel-neural-architectures-data-diets-and"
             },
             {
                 "title": "Aligning deep networks with primate vision",
+                "displayTitle": "Aligning AI with primate vision",
                 "url": "https://www.youtube.com/watch?v=qDz-nZnioeg&pp=ygUMdGhvbWFzIHNlcnJl"
             },
             {
                 "title": "Feedforward and feedback processes in visual reasoning",
+                "displayTitle": "Feedforward and feedback vision",
                 "url": "https://www.youtube.com/watch?v=85fdDvpaHGE&pp=ygUMdGhvbWFzIHNlcnJl"
             }
         ]

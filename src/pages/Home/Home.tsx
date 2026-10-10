@@ -176,7 +176,7 @@ export function Home() {
 
         <motion.div variants={fadeUp} className="student-cards-container">
           <div className="student-card">
-            <Title order={3} className="student-card-title"><span aria-hidden="true">🎓</span> Undergraduate & MSc Students</Title>
+            <Title order={3} className="student-card-title"><span aria-hidden="true">🎓</span> Undergraduate & MSc</Title>
             <Text className="student-card-text">
               Brown undergraduate and MSc students can begin by joining the lab’s Slack workspace, attending group meetings, and exploring project discussions. Contact Thomas Serre for onboarding information.
             </Text>
@@ -237,7 +237,7 @@ export function Home() {
           </div>
 
           <div className="student-card">
-            <Title order={3} className="student-card-title"><span aria-hidden="true">🔬</span> Postdoctoral Researchers</Title>
+            <Title order={3} className="student-card-title"><span aria-hidden="true">🔬</span> Postdocs</Title>
             <Text className="student-card-text">
               Prospective postdocs should email Prof. Serre directly with their CV, research statement, and references.
             </Text>
@@ -281,7 +281,7 @@ export function Home() {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <Title order={2} className="section-title">Explore Interactive Tools and XAI Libraries</Title>
+        <Title order={2} className="section-title">Tools and libraries</Title>
         <Text className="body-text featured-subtitle">
           Try our research tools, interactive demos, and open-source software to advance vision science
         </Text>

@@ -68,7 +68,7 @@ const getButtonText = (category: string, title: string): string => {
 
 
 // Component for resource cards (exactly like featured projects)
-const ResourceCard = ({ resource, category }: { resource: { title: string; url: string }, category: string }) => {
+const ResourceCard = ({ resource, category }: { resource: { title: string; displayTitle?: string; url: string }, category: string }) => {
     const isExternal = resource.url.startsWith("http") || resource.url.endsWith(".html");
     const description = getResourceDescription(resource.title);
     const buttonText = getButtonText(category, resource.title);
@@ -76,7 +76,7 @@ const ResourceCard = ({ resource, category }: { resource: { title: string; url: 
     const cardContent = (
         <div className="featured-card">
             <div className="featured-content">
-                <Title order={3} className="featured-project-title">{resource.title}</Title>
+                <Title order={3} className="featured-project-title">{resource.displayTitle ?? resource.title}</Title>
                 <Text className="featured-description">{description}</Text>
                 {isExternal ? (
                     <a
@@ -105,14 +105,14 @@ const ResourceCard = ({ resource, category }: { resource: { title: string; url: 
 };
 
 // Component for video preview cards (exactly like featured projects)
-const VideoCard = ({ resource }: { resource: { title: string; url: string } }) => {
+const VideoCard = ({ resource }: { resource: { title: string; displayTitle?: string; url: string } }) => {
     const description = getResourceDescription(resource.title);
     const buttonText = getButtonText("Videos & Talks", resource.title);
     
     return (
         <div className="featured-card">
             <div className="featured-content">
-                <Title order={3} className="featured-project-title">{resource.title}</Title>
+                <Title order={3} className="featured-project-title">{resource.displayTitle ?? resource.title}</Title>
                 <Text className="featured-description">{description}</Text>
                 <a
                     href={resource.url}
