@@ -69,7 +69,7 @@
             "grantNumber": "R01 MH140004",
             "years": "2026 – 2030",
             "role": "co-I (PI: Burke)",
-            "description": "This project applies computer vision and machine learning to improve the detection of suicide risk. Building on prior work, we develop algorithms that analyze behavioral cues to identify signals associated with elevated risk, with the goal of augmenting clinical assessment and supporting timely intervention by mental health professionals."
+            "description": "This collaboration develops computer-vision methods for clinical image analysis to support suicide-risk assessment. The work evaluates whether information extracted from images can complement clinical assessment and help improve risk detection."
         },
         {
             "title": "A mechanistic analysis of the transition from nonsuicidal to suicidal self-injury in adolescents",
@@ -126,7 +126,7 @@
             "years": "2021 – 2023",
             "role": "co-PI",
             "amount": "$275,000",
-            "description": "This project applied computer vision and machine learning methods to clinical assessment of suicide risk. We developed algorithms to analyze behavioral cues and patterns that might indicate elevated risk, with the goal of augmenting traditional clinical assessment methods. The work explored how AI can support mental health professionals in identifying individuals who may benefit from intervention."
+            "description": "This project explored how computer vision could augment clinical assessment of suicide risk, in collaboration with clinical researchers."
         },
         {
             "title": "Oscillatory processes for visual reasoning in deep neural networks",

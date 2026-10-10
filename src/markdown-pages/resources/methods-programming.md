@@ -1,4 +1,10 @@
+---
+subtitle: Historical course guidance — consult Courses@Brown for current offerings
+---
 # Methods & programming
+
+> **Historical course guidance.** The course numbers, instructors, and semester references below describe earlier offerings. For current courses and schedules, consult [Courses@Brown](https://cab.brown.edu/).
+
 
 - CCV summer tutorials
 - Introduction to matlab (CSCI 1430)

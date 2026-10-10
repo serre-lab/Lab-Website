@@ -794,3 +794,12 @@
     line-height: 1.6;
     color: var(--color-text-secondary);
   }
+
+.home-hero-subtitle .home-science-question { font-size: clamp(1.3rem, 2.6vw, 1.8rem); font-weight: 600; line-height: 1.35; }
+.home-hero-subtitle .home-affiliations { font-size: .9rem; margin-top: 1rem; }
+.home-explore { display: flex; justify-content: center; flex-wrap: wrap; gap: .75rem; margin: 1.25rem 0; }
+.home-explore a { background: #fff; color: #154b7b; padding: .55rem 1rem; border-radius: 6px; font-weight: 600; }
+.home-explore a:hover, .home-explore a:focus-visible { background: #e6edf5; text-decoration: underline; }
+.home-updates ul { padding-left: 1.25rem; }
+.home-updates li { margin: .65rem 0; line-height: 1.6; }
+.home-updates time { font-weight: 600; }

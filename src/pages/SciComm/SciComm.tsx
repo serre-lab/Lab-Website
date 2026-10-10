@@ -22,29 +22,26 @@ type Talk = {
     upcoming?: boolean;
 };
 
+/** Case-insensitive substring match. No regular expressions. */
+function matchesMediaSearch(item: SciCommItem, normalizedQuery: string) {
+    if (!normalizedQuery) return true;
+    return [item.title, item.blurb].some((field) =>
+        String(field ?? "").toLowerCase().includes(normalizedQuery)
+    );
+}
+
 export function SciComm() {
     const [searchQuery, setSearchQuery] = useState("");
 
     const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setSearchQuery(e.target.value.toLowerCase());
+        setSearchQuery(e.target.value);
     };
 
-    const filterMedia = () => {
-        if (!searchQuery.trim()) {
-            return scicommData as SciCommItem[];
-        }
-
-        // Create word boundary regex for exact word matching
-        const searchRegex = new RegExp(`\\b${searchQuery.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i');
-        
-        return (scicommData as SciCommItem[]).filter(
-            (item) =>
-                searchRegex.test(item.title) ||
-                searchRegex.test(item.blurb)
-        );
-    };
-
-    const filteredData = filterMedia();
+    const normalizedQuery = searchQuery.trim().toLowerCase();
+    const filteredData = (scicommData as SciCommItem[]).filter((item) =>
+        matchesMediaSearch(item, normalizedQuery)
+    );
+    const trimmedQuery = searchQuery.trim();
 
     return (
         <>
@@ -83,6 +80,7 @@ export function SciComm() {
                 <div className="filter-section">
                     <div className="search-and-dropdown">
                         <TextInput
+                            label="Search media"
                             placeholder="Search by title or content..."
                             value={searchQuery}
                             onChange={handleSearchChange}
@@ -93,6 +91,13 @@ export function SciComm() {
                 </div>
                 <div className="results-section">
                 <Title order={2} className="section-title">Media Coverage</Title>
+                <p className="results-summary" role="status" aria-live="polite" aria-atomic="true">
+                    {filteredData.length === 0
+                        ? (trimmedQuery
+                            ? `No media coverage matches "${trimmedQuery}".`
+                            : "No media coverage to show.")
+                        : `Showing ${filteredData.length} ${filteredData.length === 1 ? "item" : "items"}.`}
+                </p>
                 <div className="media-grid">
                 {filteredData.map((item, idx) => (
                     <Card

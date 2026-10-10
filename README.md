@@ -18,7 +18,7 @@ For future editors of the code:
 - **UI Library**: Mantine UI
 - **Routing**: React Router (Hash Router)
 - **Styling**: CSS Modules + Global CSS
-- **Animation**: Framer Motion
+- **Animation**: Motion for React
 - **Icons**: React Icons (Font Awesome)
 - **Data Source**: JSON files
 - **Markdown**: React Markdown (for dynamic pages)
@@ -31,17 +31,18 @@ src/
 ├── components/
 │   ├── Person/Person.tsx        # Person card + modal
 │   ├── ResearchProject/        # Research project component
-│   ├── LearnMoreAbout/Learn.tsx
+│   ├── HeroBanner/HeroBanner.tsx
 │   ├── Header/Header.tsx       # Navigation header
 │   ├── Footer/Footer.tsx       # Site footer
 │   └── MarkdownPage/           # Dynamic markdown pages
 ├── data/
 │   ├── people.json              # List of lab members
 │   ├── alumni.json              # List of alumni
-│   ├── research.json            # Research projects
+│   ├── research.json            # Grant descriptions and funding
 │   ├── resources.json           # Resources and tools
-│   ├── scicomm.json             # Media and talks
-│   ├── publications_by_year.json  # Publications grouped by year
+│   ├── scicomm.json             # Media coverage
+│   ├── talks.json               # Talks list (not filtered by media search)
+│   ├── publications_by_year.json  # Generated from the CV central file
 │   └── officialPublicationUrls.js  # Publication URL mappings
 ├── pages/
 │   ├── Home/Home.tsx            # Homepage
@@ -49,13 +50,16 @@ src/
 │   ├── Research/Research.tsx    # Research page
 │   ├── Resources/Resources.tsx  # Resources page
 │   ├── Publications/Publications.jsx  # Publications page
-│   ├── SciComm/SciComm.tsx      # Media page
-│   └── Datasets/                # Dataset pages (HMDB51, Breakfast)
+│   └── SciComm/SciComm.tsx      # Media page
 ├── markdown-pages/
 │   └── resources/               # Dynamic markdown content
 └── styles/
     ├── typography.css           # Global typography
     └── index.css                # Global styles
+public/
+├── hmdb51.html                  # Standalone HMDB page (real path, not a hash route)
+├── breakfast-actions-dataset.html
+└── datasets/                    # No dataset archives are committed; see public/datasets/README.md
 ```
 
 ---
@@ -168,121 +172,71 @@ src/
 ```
 
 - **Categories**: Datasets, Demos and Tutorials, Tools & Software, Videos & Talks, Cognitive Benchmark Tests
-- **Internal links**: Use paths like `/hmdb51` for internal pages
+- **Hash routes**: in-app pages such as `/resources/the-multi-cue-boundary-detection-dataset` (the site uses hash routing, so the browser URL is `/#/resources/...`)
+- **Standalone HTML**: `/hmdb51.html` and `/breakfast-actions-dataset.html` are real document paths, not hash routes
 - **External links**: Use full URLs for external resources
 
 ---
 
-## 📄 Editing Publications (Publications Page)
-- **File**: `src/data/publications_by_year.json` (generated—do not edit by hand)
-- **Sync**: Publications come from the central repo. Run `python3 scripts/sync_from_central_publications.py` after updating the central `publications_structured.json`
-- **Structure**: Grouped by year with special categories
-- **Format**:
-```json
-{
-  "2024": [
-    {
-      "title": "Paper Title",
-      "authors": "Author1, Author2 & LastAuthor",
-      "journal": "Journal Name",
-      "url": "https://doi.org/...",
-      "pdfPath": "/papers/paper-title-2024.pdf"
-    }
-  ],
-  "Work in progress": [
-    {
-      "title": "Preprint Title",
-      "authors": "Author1 & Author2", 
-      "journal": "arXiv",
-      "url": "https://arxiv.org/abs/...",
-      "pdfPath": "/papers/preprint-2024.pdf"
-    }
-  ],
-  "In press": [
-    {
-      "title": "Accepted Paper",
-      "authors": "Author1 & Author2",
-      "journal": "Journal Name",
-      "url": "https://journal.com/..."
-    }
-  ],
-  "Before 2010": [
-    {
-      "title": "Old Paper",
-      "authors": "Author1 & Author2",
-      "journal": "Journal Name",
-      "url": "https://doi.org/..."
-    }
-  ]
-}
+## Editing publications
+
+Do not edit `src/data/publications_by_year.json` or `~/Work/personal/cv/data/publications_structured.json` by hand. `publications_structured.json` is generated.
+
+1. Edit only `~/Work/personal/cv/data/publications_central.json`.
+2. Follow `~/Work/personal/cv/memory/procedures/publication-style.md` (sentence-case titles, author lines; never arXiv title case).
+3. From the configured Python environment (`source ~/Work/agents/claude/scripts/activate-env.sh`):
+
+```bash
+cd ~/Work/personal/cv && python scripts/sync_from_central.py
+cd ~/Work/research/lab-website && python scripts/sync_from_central_publications.py
 ```
 
-- **Author formatting**: Use "&" before the last author (e.g., "Author1, Author2 & LastAuthor")
-- **PDF icons**: Add `pdfPath` field to show PDF download icon
-- **Special categories**: 
-  - `"Work in progress"`: Preprints and work in progress
-  - `"In press"`: Accepted papers not yet published
-  - `"Before 2010"`: All papers from 2009 and earlier
-- **Search**: Publications are searchable by title, author, or journal
-- **Filtering**: Can filter by year or special category
+The CV script regenerates `publications_structured.json` from central and also rewrites the lab JSON, copying `pdf_path` when central has one. The lab script then rebuilds `src/data/publications_by_year.json` from that generated file. It keeps a local `pdfPath` only when the lab file it reads still has one.
+
+Home-page publication cards in `src/pages/Home/Home.tsx` are manual.
+
+Search matches title, authors, and journal as a trimmed, case-insensitive substring. Year groups stay in the existing order: Work in progress, In press, then years descending. A usable `url` on the record is the public link. `src/data/officialPublicationUrls.js` applies only when that URL is missing, blank, a PDF, or a `/papers/` path. Prefer the publisher or DOI link. Do not add an untagged local PDF as the publication link.
 
 ---
 
-## 📺 Editing Media (Media Page)
-- **File**: `src/data/scicomm.json`
-- **Structure**: Similar to resources, organized by category
-- **Format**:
-```json
-{
-  "Media": {
-    "Videos & Talks": [
-      {
-        "title": "Talk Title",
-        "url": "https://youtube.com/watch?v=..."
-      }
-    ],
-    "Podcasts": [
-      {
-        "title": "Podcast Episode",
-        "url": "https://podcast.com/episode"
-      }
-    ]
-  }
-}
-```
+## Editing media
+
+- **Coverage**: `src/data/scicomm.json` is an array of `{ "title", "link", "blurb", "image" }`.
+- **Talks**: `src/data/talks.json` is a separate array (`venue`, `location`, `date`, optional `title`, `link`, `upcoming`). The media search filters coverage only; talks stay listed.
+- Search matches title and blurb as a trimmed, case-insensitive substring.
 
 ---
 
-## 📊 Adding Dataset Pages
-- **Location**: `src/pages/Datasets/`
-- **Current pages**: 
-  - `HMDB51.tsx` - HMDB51 dataset page
-  - `BreakfastDataset.tsx` - Breakfast Actions dataset page
-- **Styling**: Use `DatasetPage.css` for consistent styling
-- **Routing**: Add routes in `src/App.tsx`
+## Dataset pages
+
+HMDB and Breakfast are standalone HTML files, not React routes:
+
+- `public/hmdb51.html`
+- `public/breakfast-actions-dataset.html`
+
+Resources links them with a normal `<a href>` because the URL ends in `.html`. Other resource write-ups are markdown files under `src/markdown-pages/`. `src/utils/loadMarkdownFiles.ts` registers every `.md` file there as a hash route. They are not added to the main navigation. `src/markdown-pages/resources/joining-the-lab.md` is reachable and is omitted from the sitemap.
+
+The site uses hash routing. Do not add server rewrites to imitate path routing. See `public/datasets/README.md` for which dataset files are actually in the repo.
 
 ---
 
 ## Adding dynamic markdown pages
 - **Location**: `src/markdown-pages/resources/`
-- **Format**: Create `.md` files for new pages
-- **Routing**: Automatically added to navigation
-- **Styling**: Uses `MarkdownPage.css` for consistent formatting
+- **Format**: Create `.md` files
+- **Routing**: Loaded as hash routes by `loadMarkdownFiles`. Included in `public/sitemap.xml` on the next `npm run build`, except `joining-the-lab`
+- **Styling**: `MarkdownPage.css`
 
 ---
 
 ## Adding new content
 
 ### Adding People:
-1. Add headshot to `public/people/`
+1. Add a supplied headshot to `public/people/`, or use an empty `imagePath` for an initials placeholder
 2. Edit `src/data/people.json` or `src/data/alumni.json`
 3. Follow the JSON format above
 
-### Adding Publications:
-1. Download PDF to `public/papers/` (optional)
-2. Edit `src/data/publications_by_year.json`
-3. Add `pdfPath` field if you have a local PDF
-4. Use correct author formatting with "&"
+### Adding publications:
+Edit `~/Work/personal/cv/data/publications_central.json` only, then run the two sync commands in [Editing publications](#editing-publications). Do not hand-edit the generated JSON and do not add an untagged local PDF as the publication link.
 
 ### Adding Resources:
 1. Edit `src/data/resources.json`
@@ -300,26 +254,25 @@ src/
 
 ## Development workflow
 
-### Local Development:
+### Local development
 ```bash
-npm install          # Install dependencies
-npm run dev          # Start development server
-# Visit http://localhost:5173
+npm install
+npm run dev          # http://localhost:5173
+npm run lint
+npm test             # Playwright. Builds the site, then previews it on port 4173
+npm run build        # Regenerates public/sitemap.xml, then typechecks and builds
+npm run deploy       # predeploy runs the build; publishes dist/ with gh-pages
 ```
 
-### Deployment:
-```bash
-git add -A
-git commit -m "meaningful commit message"
-git push
-npm run deploy       # Deploy to production
-```
+Before each deploy, run a Lighthouse accessibility audit and check keyboard navigation (Tab, Shift+Tab, Enter, Escape).
 
-### File Management:
-- **Images**: Save in `public/` directory
-- **PDFs**: Save in `public/papers/` directory  
-- **Data**: Edit JSON files in `src/data/`
-- **Styling**: Edit CSS files in respective page directories
+### Hash routing and the sitemap
+`src/App.tsx` uses `createHashRouter`. App pages are fragments such as `https://serre.lab.brown.edu/#/publications`. `scripts/generate-sitemap.cjs` writes those hash URLs plus the two standalone dataset HTML files. It omits `lastmod` and leaves `joining-the-lab` unlisted. Many crawlers do not index fragments. The sitemap documents the routes that exist; it does not create server paths for them.
+
+### File management
+- **Images**: `public/`
+- **Page content**: JSON under `src/data/`, except publications (see above)
+- **Styling**: CSS next to each page
 
 ---
 

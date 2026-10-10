@@ -7,7 +7,7 @@ import { MotionConfig } from "motion/react";
 import { Home } from "./pages/Home/Home";
 const Research = lazy(() => import("./pages/Research/Research").then(m => ({ default: m.Research })));
 const Resources = lazy(() => import("./pages/Resources/Resources").then(m => ({ default: m.Resources })));
-//@ts-ignore
+// @ts-expect-error Publications is a legacy JavaScript component without a declaration file.
 const Publications = lazy(() => import("./pages/Publications/Publications").then(m => ({ default: m.Publications })));
 const People = lazy(() => import("./pages/People/People"));
 const SciComm = lazy(() => import("./pages/SciComm/SciComm").then(m => ({ default: m.SciComm })));

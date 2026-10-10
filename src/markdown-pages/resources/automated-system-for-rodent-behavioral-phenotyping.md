@@ -1,8 +1,7 @@
 # Automated system for rodent behavioral phenotyping
 
-Download the source code for the system [here.](http://cbcl.mit.edu/software-datasets/mouse/)
+This historical resource accompanies our [2010 Nature Communications paper on automated home-cage behavioral phenotyping](https://www.nature.com/articles/ncomms1064).
 
-Download the annotated mouse databases:
+## Dataset availability
 
-- [The clipped database](/datasets/rodent/clipped_database.zip)
-- [The full database](/datasets/rodent/full_database.zip)
+The clipped and full annotated rodent-video archives are currently unavailable from this website. The former download links no longer resolve. For questions about obtaining the data or source code, [contact Thomas Serre](mailto:thomas_serre@brown.edu).

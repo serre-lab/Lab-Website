@@ -5,13 +5,9 @@ import { Link } from "react-router-dom";
 import { HeroBanner } from "../../components/HeroBanner/HeroBanner";
 
 
-// Helper function to check if URL is a video
-const isVideoUrl = (url: string): boolean => {
-    return url.includes('youtube.com') || url.includes('youtu.be') || url.includes('cbmm.mit.edu/video');
-};
 
 // Helper function to get description based on resource type and title
-const getResourceDescription = (title: string, url: string): string => {
+const getResourceDescription = (title: string): string => {
     const titleLower = title.toLowerCase();
     
     // Dataset descriptions
@@ -22,16 +18,20 @@ const getResourceDescription = (title: string, url: string): string => {
     if (titleLower.includes('multi-cue')) return "Boundary detection dataset with multiple visual cues using color stereo video sequences";
     if (titleLower.includes('neural harmonizer')) return "Dataset for harmonizing neural network representations with human visual processing";
     
+    if (titleLower.includes('horama starter')) return "Colab notebook introducing feature visualization with Horama";
+    if (titleLower.includes('episelect')) return "Truthful Evidence Selection for Trustworthy AI — a project by Eunice Yiu, Sixuan Chen, and Joshua Attih";
+    if (titleLower.includes('compositional visual')) return "Code and dataset generator for the Compositional Visual Relations benchmark";
+
     // Demo descriptions
     if (titleLower.includes('objectlens')) return "Interactive tool for exploring what ImageNet models see";
     if (titleLower.includes('leaflens')) return "Interactive tool for exploring plant species identification from cleared leaves";
-    if (titleLower.includes('hgru')) return "Tutorials and demos for hierarchical Gated Recurrent Units";
+    if (titleLower.includes('hgru')) return "Tutorials for the horizontal gated recurrent unit (hGRU), a model of recurrent visual processing";
     if (titleLower.includes('panoptic')) return "Colab notebook demonstrating panoptic segmentation with hGRU";
     
     // Tool descriptions
     if (titleLower.includes('harmonization')) return "Techniques for aligning AI models with human vision";
     if (titleLower.includes('xplique')) return "Open-source explainability toolbox for deep learning";
-    if (titleLower.includes('horama')) return "Interactive visualization tool for neural network representations";
+    if (titleLower.includes('horama')) return "Python/PyTorch feature-visualization library with MACO, Fourier visualization, and feature accentuation";
     if (titleLower.includes('neuroscience')) return "PyTorch library for neuroscience-inspired models";
     
     // Video descriptions
@@ -71,7 +71,7 @@ const getButtonText = (category: string, title: string): string => {
 // Component for resource cards (exactly like featured projects)
 const ResourceCard = ({ resource, category }: { resource: { title: string; url: string }, category: string }) => {
     const isExternal = resource.url.startsWith("http") || resource.url.endsWith(".html");
-    const description = getResourceDescription(resource.title, resource.url);
+    const description = getResourceDescription(resource.title);
     const buttonText = getButtonText(category, resource.title);
 
     const cardContent = (
@@ -85,6 +85,7 @@ const ResourceCard = ({ resource, category }: { resource: { title: string; url: 
                         target="_blank"
                         rel="noopener noreferrer"
                         title="Opens in new tab"
+                        aria-label={`${resource.title}: ${buttonText.replace(" →", "")} (opens in new tab)`}
                         className="featured-button-small"
                     >
                         {buttonText}
@@ -106,7 +107,7 @@ const ResourceCard = ({ resource, category }: { resource: { title: string; url: 
 
 // Component for video preview cards (exactly like featured projects)
 const VideoCard = ({ resource }: { resource: { title: string; url: string } }) => {
-    const description = getResourceDescription(resource.title, resource.url);
+    const description = getResourceDescription(resource.title);
     const buttonText = getButtonText("Videos & Talks", resource.title);
     
     return (
@@ -119,6 +120,7 @@ const VideoCard = ({ resource }: { resource: { title: string; url: string } }) =
                     target="_blank"
                     rel="noopener noreferrer"
                     title="Opens in new tab"
+                        aria-label={`${resource.title}: ${buttonText.replace(" →", "")} (opens in new tab)`}
                     className="featured-button-small"
                 >
                     {buttonText}
@@ -137,6 +139,17 @@ export function Resources() {
                 backgroundImage="/metcalf.webp"
             />
             <div className="resources-container">
+                <section className="reading-list" aria-labelledby="start-here-title">
+                    <Title order={2} id="start-here-title" className="section-title">Start here</Title>
+                    <Text>Three entry points to the lab’s research, from the scientific question to models and measurement.</Text>
+                    <ol>
+                        <li><a href="https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(25)00349-3">Human–AI alignment in vision</a> — why recognition accuracy and human-like processing can diverge.</li>
+                        <li><a href="https://proceedings.neurips.cc/paper/2018/hash/ec8956637a99787bd197eacd77acce5e-Abstract.html">Learning long-range spatial dependencies with horizontal gated recurrent units</a> — recurrent circuits and the Pathfinder challenge.</li>
+                        <li><a href="https://www.cell.com/neuron/abstract/S0896-6273(25)00752-4">From prediction to understanding</a> — when foundation models can help explain the brain.</li>
+                    </ol>
+                    <Text>For reproducible experiments, start with <a href="https://github.com/serre-lab/CVR">CVR code and data generation</a> or <a href="https://serre-lab.github.io/Harmonization/evaluation/">ClickMe alignment data and evaluation</a>.</Text>
+                </section>
+
                 <div className="titleDesc-container">
                 {Object.entries(resourcesData).map(([category, resources]) => (
                     <div key={category}>

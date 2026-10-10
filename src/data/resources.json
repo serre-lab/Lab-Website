@@ -38,6 +38,10 @@
             {
                 "title": "Panoptic segmentation with hGRU",
                 "url": "https://colab.research.google.com/drive/13q2pWR-32q6QfBRcz3fyihxGomZ3P4Ys?usp=sharing"
+            },
+            {
+                "title": "Horama starter notebook",
+                "url": "https://colab.research.google.com/drive/1TFYbmAgx-gbkLA4eY3lQbbZ-iPSBLiA2?usp=sharing"
             }
         ],
         "Tools & Software": [
@@ -56,6 +60,14 @@
             {
                 "title": "Neuroscience feedback models (PyTorch)",
                 "url": "https://github.com/serre-lab/serrelabmodels"
+            },
+            {
+                "title": "Compositional Visual Relations (CVR)",
+                "url": "https://github.com/serre-lab/CVR"
+            },
+            {
+                "title": "EpiSelect: Truthful Evidence Selection for Trustworthy AI",
+                "url": "https://joshattih.github.io/episelect-site/"
             }
         ],
         "Videos & Talks": [
@@ -76,10 +88,9 @@
                 "url": "https://www.youtube.com/watch?v=qDz-nZnioeg&pp=ygUMdGhvbWFzIHNlcnJl"
             },
             {
-                "title": "Feedforward and feedback processes in visual reasoning", 
+                "title": "Feedforward and feedback processes in visual reasoning",
                 "url": "https://www.youtube.com/watch?v=85fdDvpaHGE&pp=ygUMdGhvbWFzIHNlcnJl"
             }
         ]
     }
 }
-

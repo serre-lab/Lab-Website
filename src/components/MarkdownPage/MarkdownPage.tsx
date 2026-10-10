@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { Title, Text, Anchor } from "@mantine/core";
 import React from "react";
 import ReactMarkdown from "react-markdown";
@@ -72,14 +71,14 @@ const MarkdownPage: React.FC<MarkdownPageProps> = ({ content: raw }) => {
             <div className="markdown-container">
                 <ReactMarkdown
                     components={{
-                        h1: ({ node, ...props }) => <Title order={1} {...props} />,
-                        h2: ({ node, ...props }) => <Title order={2} {...props} />,
-                        p: ({ node, ...props }) => <Text {...props} />,
+                        h1: ({ children, id }) => <Title order={2} id={id}>{children}</Title>,
+                        h2: ({ children, id }) => <Title order={2} id={id}>{children}</Title>,
+                        p: ({ children }) => <Text>{children}</Text>,
                         // Site-internal page paths go through the hash router; static files and external URLs stay plain links.
-                        a: ({ node, href, ...props }) =>
+                        a: ({ href, children, title }) =>
                             href?.startsWith("/") && !/\.[a-z0-9]+$/i.test(href)
-                                ? <Anchor component={Link} to={href} {...props} />
-                                : <Anchor href={href} {...props} />,
+                                ? <Anchor component={Link} to={href} title={title}>{children}</Anchor>
+                                : <Anchor href={href} title={title}>{children}</Anchor>,
                         // Add more mappings as needed
                     }}
                 >

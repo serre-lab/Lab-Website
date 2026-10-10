@@ -5,14 +5,7 @@ import { FaTwitter, FaGithub, FaBluesky } from "react-icons/fa6";
 import { FaEnvelope } from "react-icons/fa";
 import { SiZotero } from "react-icons/si";
 
-interface FooterProps {
-    links: {
-        social: { to: string; label: string }[];
-        internal: { to: string; label: string }[];
-    };
-}
-
-export default function Footer(props: FooterProps) {
+export default function Footer() {
     const currentYear = new Date().getFullYear();
     
     return (
@@ -36,9 +29,9 @@ export default function Footer(props: FooterProps) {
                             Providence, RI 02912
                         </Text>
                         <Text size="sm" className="footer-contact-item">
-                            <a href="mailto:serre-lab@brown.edu" className="footer-email-link" style={{ color: '#2c3e50' }}>
+                            <a href="mailto:thomas_serre@brown.edu" className="footer-email-link" style={{ color: '#2c3e50' }}>
                                 <FaEnvelope size={14} style={{ marginRight: '6px', verticalAlign: 'middle' }} aria-hidden="true" />
-                                Contact Us
+                                Contact Thomas Serre
                             </a>
                         </Text>
                     </div>

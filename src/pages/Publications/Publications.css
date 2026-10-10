@@ -19,7 +19,7 @@
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -46,6 +46,18 @@
 .year-dropdown input {
     border-radius: 8px;
     border: 2px solid var(--color-border-light);
+}
+
+.filter-section .mantine-InputWrapper-label {
+    color: var(--color-text-primary);
+    font-weight: 600;
+}
+
+.results-summary {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 1rem;
+    color: var(--color-text-primary);
 }
 
 @media (max-width: 768px) {

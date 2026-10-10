@@ -6,21 +6,6 @@ All HTML output from this project must comply with WCAG 2.1 AA.
 Brown University requires full digital accessibility compliance by May 2026.
 Reference: https://digital-accessibility.brown.edu/
 
-## Known Issues to Fix
-
-### CRITICAL: Publications page heading hierarchy
-Every publication title is rendered as <h1>. There must be exactly ONE <h1> per page
-("Publications"). Year headings should be <h2>. Paper titles should be <h3>.
-
-### Research page heading skip
-Page jumps from <h1>Research</h1> directly to <h3> for research themes.
-Add <h2> section headers (e.g., "Research Themes") or change themes to <h2>.
-
-### Footer heading levels
-Footer uses <h3> then <h4> which may not follow the page's heading flow.
-Consider using styled <div> or <span> elements instead of heading tags in the
-footer, since the <nav aria-label="..."> landmarks already convey structure.
-
 ## Mandatory Checks for Every Change
 
 ### Headings
@@ -64,12 +49,25 @@ footer, since the <nav aria-label="..."> landmarks already convey structure.
 - Any locally hosted PDF must have title, author, and lang metadata
 
 ## Testing
-- Run Lighthouse accessibility audit before each deploy
+- `npm run dev` — local preview at http://localhost:5173
+- `npm run lint`
+- `npm test` — Playwright (`tests/`). The config builds the site and previews it; do not start that build while other edits are in progress.
+- `npm run build` — regenerates `public/sitemap.xml`, then typechecks and builds
+- Run a Lighthouse accessibility audit before each deploy
 - Test keyboard navigation (Tab, Shift+Tab, Enter, Escape)
+
+## Routing and sitemap
+
+The app uses hash routing (`createHashRouter` in `src/App.tsx`). In-app pages live at `https://serre.lab.brown.edu/#/research` and similar fragments. Crawlers often ignore URL fragments. The sitemap records those hash routes and does not add server rewrites or path-routing fallbacks. Standalone dataset HTML (`/hmdb51.html`, `/breakfast-actions-dataset.html`) is listed as a real path. `lastmod` is omitted. `/resources/joining-the-lab` stays unlisted. Markdown files are included only when `src/utils/loadMarkdownFiles.ts` registers them.
 
 ## Publications data
 
-- **Source of truth:** `~/Work/personal/cv/data/publications_structured.json` (not this repo’s JSON by hand).
+- **Edit only:** `~/Work/personal/cv/data/publications_central.json`.
+- **Generated:** `~/Work/personal/cv/data/publications_structured.json` is written by the CV sync. Do not edit it.
+- **Lab copy:** `src/data/publications_by_year.json` is generated. Do not edit it by hand.
 - **Style:** `~/Work/personal/cv/memory/procedures/publication-style.md` — sentence-case titles, author lines; never arXiv title case.
-- **Sync:** `python3 scripts/sync_from_central_publications.py` after central file edits.
+- **Sync** with the configured Python environment (the uv env at `~/Work/agents/claude/.venv/`, via `source ~/Work/agents/claude/scripts/activate-env.sh`):
+  1. `cd ~/Work/personal/cv && python scripts/sync_from_central.py` — regenerates `publications_structured.json` from central. This script also overwrites the lab JSON from central, copying `pdf_path` when central has one.
+  2. `cd ~/Work/research/lab-website && python scripts/sync_from_central_publications.py` — rebuilds `src/data/publications_by_year.json` from the generated structured file. It keeps a local `pdfPath` only when that path is still on the lab file it reads. A path that existed only in the previous lab file, and not in central, is already gone after step 1.
+- **Links:** a usable `url` on the publication record is the public link. `src/data/officialPublicationUrls.js` is only a fallback when that URL is missing, blank, a PDF, or a `/papers/` path.
 - **Home highlights:** `src/pages/Home/Home.tsx` cards are manual; update journal/year labels when featuring a paper.

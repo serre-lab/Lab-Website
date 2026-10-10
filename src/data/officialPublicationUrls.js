@@ -1,5 +1,6 @@
-// Official publication URLs mapping
-// Maps publication titles to their official journal/conference/OpenReview URLs
+// Fallback URLs for publication titles whose record has no usable canonical url.
+// A usable publication.url (publisher, DOI, or OpenReview) takes precedence.
+// These mappings apply only when that field is missing, blank, a local PDF, or a /papers/ path.
 
 export const officialPublicationUrls = {
     // 2026
@@ -14,7 +15,6 @@ export const officialPublicationUrls = {
     "Beyond adversarial robustness: Breaking the robustness-alignment trade-off in object recognition": "https://openreview.net/forum?id=oe1TzWGFjs",
     "Tracking objects that change in appearance with phase synchrony": "https://openreview.net/forum?id=m2gVfgWYDO",
     "The 3D-PC: A benchmark for visual perspective taking in humans and machines": "https://openreview.net/forum?id=UIFAJZ22ZF",
-    "Choosing the right basis for interpretability: Psychophysical comparison between neuron-based and dictionary-based representations": "https://arxiv.org/abs/2411.03993v2",
 
     // 2023
     "Learning sparse prototypes for crowd perception": "https://ieeexplore.ieee.org/document/10096000",
@@ -34,4 +34,26 @@ const _titleToUrlLower = Object.fromEntries(
 
 export const getOfficialPublicationUrl = (title) => {
     return officialPublicationUrls[title] ?? _titleToUrlLower[title?.toLowerCase()] ?? null;
+};
+
+/** True when publication.url can be used as the public link. */
+export const isUsableCanonicalUrl = (url) => {
+    if (typeof url !== "string") return false;
+    const trimmed = url.trim();
+    if (!trimmed) return false;
+    if (trimmed.toLowerCase().endsWith(".pdf")) return false;
+    if (trimmed.includes("/papers/")) return false;
+    if (trimmed === "/publications") return false;
+    return true;
+};
+
+/**
+ * Prefer the record's canonical url. Fall back to the title map only when
+ * that url is missing or not usable.
+ */
+export const resolvePublicationUrl = (publication) => {
+    if (isUsableCanonicalUrl(publication?.url)) {
+        return publication.url.trim();
+    }
+    return getOfficialPublicationUrl(publication?.title);
 };

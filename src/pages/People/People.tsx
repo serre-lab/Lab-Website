@@ -123,7 +123,7 @@ export default function People() {
             ANITI Team ({anitiPeople.length})
           </Title>
           <div className="people-grid">
-            {anitiPeople.map((person: any, index: number) => (
+            {anitiPeople.map((person, index) => (
               <Person
                 key={`aniti-${index}`}
                 fullName={person.fullName}
@@ -144,7 +144,7 @@ export default function People() {
             Collaborators ({generalPeople.length})
           </Title>
           <div className="people-grid">
-            {generalPeople.map((person: any, index: number) => (
+            {generalPeople.map((person, index) => (
               <Person
                 key={`general-${index}`}
                 fullName={person.fullName}
@@ -165,7 +165,7 @@ export default function People() {
             Alumni ({alumniData.alumni.length})
           </Title>
           <List size="md" spacing="xs" className="alumni-list">
-            {alumniData.alumni.map((alumn: any, idx: number) => (
+            {alumniData.alumni.map((alumn, idx) => (
               <List.Item key={idx}>
                 {alumn.fullName} {alumn.role ? `(${alumn.role})` : ""}
               </List.Item>

@@ -1,5 +1,5 @@
 import { Card, Image, Text, Modal, Anchor } from "@mantine/core";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import "./Person.css";
 
 interface PersonProps {
@@ -27,8 +27,9 @@ function renderTextWithLinks(text: string) {
     });
 }
 
-export default function Person({ fullName, title, university, imagePath, description }: PersonProps) {
+export default function Person({ fullName, title, imagePath, description }: PersonProps) {
     const [opened, setOpened] = useState(false);
+    const cardRef = useRef<HTMLDivElement>(null);
 
     // Ensure image path starts with /
     const imageUrl = imagePath?.startsWith('/') ? imagePath : `/${imagePath}`;
@@ -36,6 +37,7 @@ export default function Person({ fullName, title, university, imagePath, descrip
     return (
         <>
             <Card
+                ref={cardRef}
                 shadow="md"
                 padding="lg"
                 radius="md"
@@ -53,7 +55,7 @@ export default function Person({ fullName, title, university, imagePath, descrip
                     }
                 }}
             >
-                {imagePath && (
+                {imagePath ? (
                     <Card.Section>
                         <Image
                             src={imageUrl}
@@ -65,6 +67,10 @@ export default function Person({ fullName, title, university, imagePath, descrip
                             h={220}
                         />
                     </Card.Section>
+                ) : (
+                    <Card.Section className="person-portrait-placeholder" aria-hidden="true">
+                        {fullName.split(" ").map(part => part[0]).join("")}
+                    </Card.Section>
                 )}
                 <div className="person-name">{fullName}</div>
                 <Text className="person-title">{title}</Text>
@@ -74,6 +80,8 @@ export default function Person({ fullName, title, university, imagePath, descrip
             <Modal
                 opened={opened}
                 onClose={() => setOpened(false)}
+                returnFocus={false}
+                transitionProps={{ onExited: () => cardRef.current?.focus() }}
                 overlayProps={{
                     backgroundOpacity: 0.55,
                     blur: 4,

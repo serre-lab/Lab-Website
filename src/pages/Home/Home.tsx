@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Learn from "../../components/LearnMoreAbout/Learn";
 import "./Home.css";
 import { Title, Text } from "@mantine/core";
 import { motion } from "motion/react";
@@ -103,24 +102,25 @@ export function Home() {
         title="Serre Lab"
         subtitle={(
           <div className="home-hero-subtitle">
-            <Text className="home-hero-line">Nancy G. Zimmerman Center for Computational Brain Science</Text>
-            <Text className="home-hero-line">Robert J. and Nancy D. Carney Institute for Brain Science</Text>
-            <Text className="home-hero-line">Cognitive & Psychological Sciences and Computer Science Depts</Text>
-            <Text className="home-hero-line">Brown University</Text>
+            <Text className="home-science-question">How does the brain learn to see and reason—and what can that teach us about AI?</Text>
+            <Text>We combine experiments, computational models, and explainability tools to understand biological vision and build more human-like machine vision.</Text>
+            <nav className="home-explore" aria-label="Explore the lab">
+              <Link to="/research">Research</Link><Link to="/people">People</Link><Link to="/resources">Tools &amp; data</Link>
+            </nav>
+            <Text className="home-affiliations">Brown University · Center for Computational Brain Science · Carney Institute</Text>
           </div>
         )}
+        showSocialIcons={false}
         backgroundImage="/metcalf.webp"
       />
 
-      {/* Learn More Section */}
-      <motion.div
-        variants={fadeUp}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-      >
-        <Learn />
-      </motion.div>
+      <section className="home-content home-updates" aria-labelledby="updates-title">
+        <Title order={2} id="updates-title" className="section-title">Recent milestones</Title>
+        <ul>
+          <li><time dateTime="2026-10-04">October 4, 2026</time> — <a href="https://arxiv.org/abs/2610.05419">New preprint: recurrent network dynamics explain the time course of perceptual grouping in natural scenes.</a></li>
+          <li><time dateTime="2025-07-29">July 29, 2025</time> — <a href="https://www.brown.edu/news/2025-07-29/aria-ai-institute-brown">Brown announces the ARIA AI institute, with Thomas Serre on the research team.</a></li>
+        </ul>
+      </section>
 
       {/* Prospective Students Section */}
       <motion.div
@@ -137,11 +137,10 @@ export function Home() {
         </motion.div>
 
         <motion.div variants={fadeUp} className="student-cards-container">
-          <div className="student-card" onClick={() => setShowUndergradDetails(!showUndergradDetails)} style={{ cursor: "pointer" }}>
+          <div className="student-card">
             <Title order={3} className="student-card-title"><span aria-hidden="true">🎓</span> Undergraduate & MSc Students</Title>
             <Text className="student-card-text">
-              Brown undergrad and MSc students interested in research
-              should email Prof. Serre with a transcript and resume/CV.
+              Brown undergraduate and MSc students can begin by joining the lab’s Slack workspace, attending group meetings, and exploring project discussions. Contact Thomas Serre for onboarding information.
             </Text>
             {showUndergradDetails && (
               <div id="undergrad-requirements">
@@ -167,7 +166,7 @@ export function Home() {
             </button>
           </div>
 
-          <div className="student-card" onClick={() => setShowPhdDetails(!showPhdDetails)} style={{ cursor: "pointer" }}>
+          <div className="student-card">
             <Title order={3} className="student-card-title"><span aria-hidden="true">📚</span> PhD Students</Title>
             <Text className="student-card-text">
               PhD applicants can apply through cognitive science, computer science, or neuroscience
@@ -199,7 +198,7 @@ export function Home() {
             </button>
           </div>
 
-          <div className="student-card" onClick={() => setShowPostdocDetails(!showPostdocDetails)} style={{ cursor: "pointer" }}>
+          <div className="student-card">
             <Title order={3} className="student-card-title"><span aria-hidden="true">🔬</span> Postdoctoral Researchers</Title>
             <Text className="student-card-text">
               Prospective postdocs should email Prof. Serre directly with their CV, research statement, and references.
@@ -257,8 +256,8 @@ export function Home() {
                 title="Opens in new tab"
                 className="featured-button-small"
                 onClick={() => {
-                  if (typeof window !== 'undefined' && (window as any).gtag) {
-                    (window as any).gtag('event', 'click', {
+                  if (typeof window !== 'undefined' && (window as Window & { gtag?: (event: string, action: string, parameters: Record<string, string | number>) => void }).gtag) {
+                    (window as Window & { gtag?: (event: string, action: string, parameters: Record<string, string | number>) => void }).gtag?.('event', 'click', {
                       'event_category': 'engagement',
                       'event_label': 'clickme_play_now_grid',
                       'value': 1
@@ -271,10 +270,10 @@ export function Home() {
             </div>
           </div>
 
-          {/* Neural Harmonizer Card */}
+          {/* Harmonization Card */}
           <div className="featured-card">
             <div className="featured-content">
-              <Title order={3} className="featured-project-title">Neural Harmonizer</Title>
+              <Title order={3} className="featured-project-title">Harmonization</Title>
               <Text className="featured-description">
                 Align AI models with human vision. Explore our harmonization techniques that train neural networks to see more like humans do.
               </Text>
@@ -352,7 +351,7 @@ export function Home() {
             <div className="featured-content">
               <Title order={3} className="featured-project-title">Horama</Title>
               <Text className="featured-description">
-                Interactive visualization tool for exploring neural network representations and understanding feature hierarchies in deep learning models.
+                Python/PyTorch library for feature visualization with MACO, Fourier methods, and feature accentuation.
               </Text>
               <a
                 href="https://github.com/serre-lab/Horama"
@@ -486,16 +485,10 @@ export function Home() {
       >
         <motion.div variants={fadeUp}>
           <Text>
-            Our research investigates the computational principles of biological vision—both to understand how the brain works and to build more human-like AI systems. Working at the intersection of neuroscience, cognitive science, and artificial intelligence, we tackle a fundamental question: How can we bridge the gap between biological and artificial vision to advance both brain science and AI?
-          </Text>
-        </motion.div>
-
-        <motion.div variants={fadeUp}>
-          <Text>
-            We are proud members of the{" "}
+            We are based in the{" "}
             <a href="https://carney.brown.edu/" target="_blank" rel="noopener noreferrer" title="Opens in new tab">Carney Institute for Brain Science</a> and the{" "}
             <a href="https://ccbs.carney.brown.edu/" target="_blank" rel="noopener noreferrer" title="Opens in new tab">Nancy G. Zimmerman Center for Computational Brain Science</a>{" "}
-            at Brown! We also work in close collaboration with and leverage resources from the{" "}
+            at Brown University, and collaborate with the{" "}
             <a href="https://ccv.brown.edu/" target="_blank" rel="noopener noreferrer" title="Opens in new tab">Center for Computation and Visualization</a>.
           </Text>
         </motion.div>

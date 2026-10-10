@@ -63,7 +63,7 @@ export function Root(props: RootProps) {
             <main id="main-content" ref={mainRef} tabIndex={-1} role="main">
                 <Outlet />
             </main>
-            <Footer links={props.links} />
+            <Footer />
         </div>
     );
 }

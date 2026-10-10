@@ -2,29 +2,32 @@ import React, { useState } from "react";
 import "./Publications.css";
 import { Anchor, Text, Title, TextInput, Select, Group } from "@mantine/core";
 import publicationsData from "../../data/publications_by_year.json";
-import { getOfficialPublicationUrl } from "../../data/officialPublicationUrls";
+import { resolvePublicationUrl } from "../../data/officialPublicationUrls";
 import { motion } from "motion/react";
 import { HeroBanner } from "../../components/HeroBanner/HeroBanner";
 // import { IconSearch } from "@tabler/icons-react"; // optional icon
 
+/** Case-insensitive substring match. No regular expressions. */
+function matchesSearch(publication, normalizedQuery) {
+    if (!normalizedQuery) return true;
+    return [publication.title, publication.authors, publication.journal].some((field) =>
+        String(field ?? "").toLowerCase().includes(normalizedQuery)
+    );
+}
+
+function emptyPublicationsMessage(query, year) {
+    const trimmed = query.trim();
+    if (trimmed && year !== "All") {
+        return `No publications match "${trimmed}" in ${year}.`;
+    }
+    if (trimmed) return `No publications match "${trimmed}".`;
+    if (year !== "All") return `No publications for ${year}.`;
+    return "No publications to show.";
+}
+
 export function Publications() {
     const [searchQuery, setSearchQuery] = useState("");
     const [selectedYear, setSelectedYear] = useState("All");
-
-    // Function to get the official publication URL (journal/conference/OpenReview)
-    const getOfficialUrl = (publication) => {
-        const mappedUrl = getOfficialPublicationUrl(publication.title);
-        if (mappedUrl) {
-            return mappedUrl;
-        }
-        if (publication.url && 
-            !publication.url.endsWith('.pdf') && 
-            !publication.url.includes('/papers/') &&
-            publication.url !== '/publications') {
-            return publication.url;
-        }
-        return null;
-    };
 
     // Function to get the local PDF path (preserved for future use; pdfPath in publications_by_year.json)
     const getPdfPath = (publication) => {
@@ -34,29 +37,22 @@ export function Publications() {
     };
 
     const handleSearchChange = (e) => {
-        setSearchQuery(e.target.value.toLowerCase());
+        setSearchQuery(e.target.value);
     };
 
     const handleYearChange = (value) => {
         setSelectedYear(value || "All");
     };
 
+    const normalizedQuery = searchQuery.trim().toLowerCase();
+
     const filterPublications = () => {
         const filteredData = {};
         Object.entries(publicationsData).forEach(([year, publications]) => {
             if (selectedYear !== "All" && year !== selectedYear) return;
 
-            const filteredPublications = publications.filter(
-                (publication) => {
-                    // Create word boundary regex for exact word matching
-                    const searchRegex = new RegExp(`\\b${searchQuery.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i');
-                    
-                    return (
-                        searchRegex.test(publication.title) ||
-                        searchRegex.test(publication.authors) ||
-                        (publication.journal && searchRegex.test(publication.journal))
-                    );
-                }
+            const filteredPublications = publications.filter((publication) =>
+                matchesSearch(publication, normalizedQuery)
             );
 
             if (filteredPublications.length > 0) {
@@ -75,6 +71,11 @@ export function Publications() {
         if (b === "In press") return 1;
         return parseInt(b) - parseInt(a);
     });
+
+    const resultCount = sortedYears.reduce(
+        (count, year) => count + filteredPublications[year].length,
+        0
+    );
 
     const fadeUp = {
         hidden: { opacity: 0, y: 30 },
@@ -96,6 +97,7 @@ export function Publications() {
                 <div className="filter-section">
                     <div className="search-and-dropdown">
                         <TextInput
+                            label="Search publications"
                             placeholder="Search by title, author, or journal..."
                             value={searchQuery}
                             onChange={handleSearchChange}
@@ -103,6 +105,7 @@ export function Publications() {
                             size="md"
                         />
                         <Select
+                            label="Filter by year"
                             className="year-dropdown"
                             data={["All", ...Object.keys(publicationsData).sort((a, b) => {
                                 if (a === "Work in progress") return -1;
@@ -115,10 +118,16 @@ export function Publications() {
                             onChange={handleYearChange}
                             placeholder="Filter by year"
                             size="md"
+                            allowDeselect={false}
                         />
                     </div>
                 </div>
                 <div className="results-section">
+                <p className="results-summary" role="status" aria-live="polite" aria-atomic="true">
+                    {resultCount === 0
+                        ? emptyPublicationsMessage(searchQuery, selectedYear)
+                        : `Showing ${resultCount} ${resultCount === 1 ? "publication" : "publications"}.`}
+                </p>
                 {sortedYears.map(
                     (year, i) =>
                         filteredPublications[year] && (
@@ -132,7 +141,9 @@ export function Publications() {
                             >
                                 <Title order={2} className="year-heading">{year}</Title>
                                 <ul style={{ listStyle: "none", padding: 0 }}>
-                                    {filteredPublications[year].map((publication, index) => (
+                                    {filteredPublications[year].map((publication, index) => {
+                                        const officialUrl = resolvePublicationUrl(publication);
+                                        return (
                                         <motion.li
                                             key={index}
                                             className="publication-item"
@@ -144,9 +155,9 @@ export function Publications() {
                                             <Group align="flex-start" gap="sm">
                                                 <div style={{ flex: 1 }}>
                                                     <h3 className="publication-title">
-                                                        {getOfficialUrl(publication) ? (
+                                                        {officialUrl ? (
                                                             <Anchor
-                                                                href={getOfficialUrl(publication)}
+                                                                href={officialUrl}
                                                                 target="_blank"
                                                                 rel="noopener noreferrer"
                                                                 className="publication-link"
@@ -172,7 +183,8 @@ export function Publications() {
                                                 {/* PDF icons removed; pdfPath preserved in data for future use */}
                                             </Group>
                                         </motion.li>
-                                    ))}
+                                        );
+                                    })}
                                 </ul>
                             </motion.div>
                         )

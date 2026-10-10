@@ -20,7 +20,7 @@
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -38,6 +38,18 @@
 
 .search-bar input:focus {
     border-color: var(--color-primary);
+}
+
+.filter-section .mantine-InputWrapper-label {
+    color: var(--color-text-primary);
+    font-weight: 600;
+}
+
+.results-summary {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 0 1rem;
+    color: var(--color-text-primary);
 }
 
 .results-section {
