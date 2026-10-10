@@ -14,6 +14,10 @@ Reduce unnecessary boxes: prefer headings, whitespace, and subtle dividers for p
 
 The homepage “Selected publications” is a curated selection, separate from recent papers and preprints. Preserve its chosen papers and equal-size cards across rows; do not replace selected papers just because newer work appears.
 
+## Research writing
+
+Explain the scientific question, the data or task, and what the method measures before naming projects or technical terms. Brevity must not remove the information a reader needs to understand the work. Use concrete examples, expand unfamiliar acronyms, and distinguish ongoing research aims from demonstrated results. Clinical descriptions should identify the actual research question and modality using public sources.
+
 ## Mandatory Checks for Every Change
 
 ### Headings
