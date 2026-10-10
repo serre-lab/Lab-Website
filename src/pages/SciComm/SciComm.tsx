@@ -71,27 +71,27 @@ export function SciComm() {
                                 src={item.image.replace(/-\d+x\d+\.(jpg|png)$/, '.$1')} // try to use original image if possible
                                 alt={item.title}
                                 className="media-image"
-                                height={180}
                                 fit="cover"
-                                style={{ objectFit: "cover", objectPosition: "center top" }}
                             />
                         )}
-                        <Anchor className="media-title-link" href={item.link} target="_blank" rel="noopener noreferrer" title="Opens in new tab" aria-label={`${item.displayTitle ?? item.title} (opens in new tab)`} style={{ textDecoration: "none" }}>
-                            <Title order={3} className="card-title">{item.displayTitle ?? item.title}</Title>
-                        </Anchor>
-                        <Text className="secondary-text media-summary">
-                            {item.blurb}
-                        </Text>
-                        <Anchor
-                            href={item.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            title="Opens in new tab"
-                            aria-label={`Continue reading: ${item.title} (opens in new tab)`}
-                            className="media-read-more body-text"
-                        >
-                            Continue reading →
-                        </Anchor>
+                        <div className="media-content">
+                            <Anchor className="media-title-link" href={item.link} target="_blank" rel="noopener noreferrer" title="Opens in new tab" aria-label={`${item.displayTitle ?? item.title} (opens in new tab)`} style={{ textDecoration: "none" }}>
+                                <Title order={3} className="card-title">{item.displayTitle ?? item.title}</Title>
+                            </Anchor>
+                            <Text className="secondary-text media-summary">
+                                {item.blurb}
+                            </Text>
+                            <Anchor
+                                href={item.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="Opens in new tab"
+                                aria-label={`Continue reading: ${item.title} (opens in new tab)`}
+                                className="media-read-more body-text"
+                            >
+                                Continue reading →
+                            </Anchor>
+                        </div>
                     </article>
                 ))}
                 </div>
