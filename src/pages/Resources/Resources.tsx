@@ -139,17 +139,6 @@ export function Resources() {
                 backgroundImage="/metcalf.webp"
             />
             <div className="resources-container">
-                <section className="reading-list body-text" aria-labelledby="start-here-title">
-                    <Title order={2} id="start-here-title" className="section-title">Start here</Title>
-                    <Text>Three entry points to the lab’s research, from the scientific question to models and measurement.</Text>
-                    <ol>
-                        <li><a href="https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(25)00349-3">Human–AI alignment in vision</a> — why recognition accuracy and human-like processing can diverge.</li>
-                        <li><a href="https://proceedings.neurips.cc/paper/2018/hash/ec8956637a99787bd197eacd77acce5e-Abstract.html">Learning long-range spatial dependencies with horizontal gated recurrent units</a> — recurrent circuits and the Pathfinder challenge.</li>
-                        <li><a href="https://www.cell.com/neuron/abstract/S0896-6273(25)00752-4">From prediction to understanding</a> — when foundation models can help explain the brain.</li>
-                    </ol>
-                    <Text>For reproducible experiments, start with <a href="https://github.com/serre-lab/CVR">CVR code and data generation</a> or <a href="https://serre-lab.github.io/Harmonization/evaluation/">ClickMe alignment data and evaluation</a>.</Text>
-                </section>
-
                 <div className="titleDesc-container">
                 {Object.entries(resourcesData).map(([category, resources]) => (
                     <div key={category}>
