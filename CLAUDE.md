@@ -12,7 +12,7 @@ Use the existing site style for every change. Reuse `src/styles/typography.css` 
 
 Reduce unnecessary boxes: prefer headings, whitespace, and subtle dividers for prose, resource entries, and publication lists. Retain cards where grouping helps, such as people profiles and the featured keynote. Avoid decorative shadows, gradient stripes, and hover lifts on ordinary content. Check the actual desktop and mobile appearance; passing accessibility tests alone does not establish visual consistency.
 
-The homepage “Selected publications” is a curated selection, separate from recent papers and preprints. Use open publication entries with subtle dividers instead of enclosed boxes. The homepage tools, student information, and selected publications use single-column lists, with labels beside details on wider screens. Preserve its chosen papers and equal-size entries across rows; do not replace selected papers just because newer work appears.
+The homepage “Selected publications” is a curated selection, separate from recent papers and preprints. Use the shared PublicationEntry component and Publications-page styling for both homepage publication lists, with title, venue, and authors in the same order. Avoid separate card styles. The homepage uses single-column lists. Tools and student information place labels beside details on wider screens; publication entries follow the Publications page. Preserve its chosen papers and equal-size entries across rows; do not replace selected papers just because newer work appears.
 
 Keep homepage information grouped by audience and purpose. The lab handbook belongs in a separate “For lab members” section, never under prospective-student or recruitment information.
 

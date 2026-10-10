@@ -29,10 +29,10 @@ for (const viewport of [{width: 1280, height: 900}, {width: 390, height: 844}]) 
     });
     test('homepage lists follow one column and selected publications keep equal sizes', async ({page}) => {
       await page.goto('/#/');
-      const cards = page.locator('.highlights-grid .highlight-card');
+      const cards = page.locator('.selected-publications-list .publication-item');
       await expect(cards).toHaveCount(6);
       await cards.first().scrollIntoViewIfNeeded();
-      for (const selector of ['.highlights-grid .highlight-card', '.home-container .featured-card', '.student-card']) {
+      for (const selector of ['.selected-publications-list .publication-item', '.home-container .featured-card', '.student-card']) {
         const rows = await page.locator(selector).evaluateAll(items => items.map(item => {
           const {left, top, bottom} = item.getBoundingClientRect();
           return {left, top, bottom};

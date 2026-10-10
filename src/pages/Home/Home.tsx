@@ -1,41 +1,11 @@
 import { Link } from "react-router-dom";
 import "./Home.css";
+import { PublicationEntry } from "../../components/PublicationEntry/PublicationEntry";
 import { Title, Text } from "@mantine/core";
 import { motion } from "motion/react";
 import { useState } from "react";
 import publicationsData from "../../data/publications_by_year.json";
 import { HeroBanner } from "../../components/HeroBanner/HeroBanner";
-
-// Helper function to shorten journal names
-const shortenJournalName = (journal: string): string => {
-  const journalMap: { [key: string]: string } = {
-    'Current Biology': 'Curr Biol',
-    'Histopathology': 'Histopath',
-    'Trends in Cognitive Sciences': 'TICS',
-    'International Conference on Learning Representations': 'ICLR',
-    'arXiv': 'arXiv',
-    'Neural Information Processing Systems': 'NeurIPS',
-    'Nature': 'Nature',
-    'Science': 'Science',
-    'Cell': 'Cell',
-    'Neuron': 'Neuron',
-    'Proceedings of the National Academy of Sciences': 'PNAS',
-    'Journal of Neuroscience': 'J Neurosci',
-    'Cerebral Cortex': 'Cereb Cortex',
-    'PLOS Computational Biology': 'PLOS Comput Biol',
-    'Journal of Vision': 'J Vis',
-    'Vision Research': 'Vis Res',
-    'Perception': 'Perception',
-    'Psychological Science': 'Psychol Sci',
-    'Journal of Experimental Psychology': 'J Exp Psychol',
-    'Cognitive Psychology': 'Cogn Psychol',
-    'Memory & Cognition': 'Mem Cogn',
-    'Attention, Perception, & Psychophysics': 'Atten Percept Psychophys',
-    'Nature Biomedical Engineering': 'Nature BME'
-  };
-  
-  return journalMap[journal] || journal;
-};
 
 // Helper function to abbreviate author lists
 const abbreviateAuthors = (authors: string, maxAuthors: number = 2): string => {
@@ -75,7 +45,51 @@ const abbreviateAuthors = (authors: string, maxAuthors: number = 2): string => {
   }
 };
 
-// News is maintained separately from the curated selected-publications cards.
+// Recent papers and the curated selection are maintained separately.
+const selectedPapers = [
+  {
+    "title": "From prediction to understanding: will AI foundation models transform brain science?",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0896627325007524",
+    "journal": "Neuron",
+    "year": "2025",
+    "authors": "T. Serre & E. Pavlick"
+  },
+  {
+    "title": "Better artificial intelligence does not mean better models of biology",
+    "url": "https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(25)00349-3",
+    "journal": "Trends in Cognitive Sciences",
+    "year": "2026",
+    "authors": "D. Linsley, P. Feng & T. Serre"
+  },
+  {
+    "title": "The 3D-PC: A benchmark for visual perspective taking in humans and machines",
+    "url": "https://openreview.net/forum?id=UIFAJZ22ZF",
+    "journal": "International Conference on Learning Representations",
+    "year": "2025",
+    "authors": "D. Linsley et al."
+  },
+  {
+    "title": "Feature binding in biological and artificial vision",
+    "url": "https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(25)00232-3",
+    "journal": "Trends in Cognitive Sciences",
+    "year": "2026",
+    "authors": "P. Roelfsema & T. Serre"
+  },
+  {
+    "title": "Monkeys engage in visual simulation to solve complex problems",
+    "url": "https://www.cell.com/current-biology/abstract/S0960-9822(24)01380-0",
+    "journal": "Current Biology",
+    "year": "2024",
+    "authors": "A. Ahuja et al."
+  },
+  {
+    "title": "Perilesional neuromodulation replaces lost sensorimotor function in persons with spinal cord injury",
+    "url": "https://www.nature.com/articles/s41551-026-01627-5",
+    "journal": "Nature Biomedical Engineering",
+    "year": "2026",
+    "authors": "J.S. Calvert, S.R. Parker, L.N. Govindarajan, R. Darie, E. Shaaya, R. Solinsky, L.M. Del Valle, P. Miranda, J. Jang, E. Tiwari, S. Syed, R.M. Villalobos, L.M. Aguiar, J.A. Taylor, H. Tang, S. McPherson, W. Xue, A.G. Carayannopoulos, A.A. Oyelese, Z.L. Gokaslan, A.K. Bansal, L.J. Resnik, T. Serre, J.S. Fridley & D.A. Borton"
+  }
+];
 const recentPaperUrls = [
   "https://arxiv.org/abs/2610.05419",
   "https://openreview.net/forum?id=XYmvp2YQdC",
@@ -406,15 +420,10 @@ export function Home() {
 
       <section className="recent-papers-section" aria-labelledby="recent-papers-heading">
         <Title order={2} id="recent-papers-heading" className="section-title">Recent papers and preprints</Title>
-        <ul className="recent-papers-list">
+        <ul className="publication-list home-publication-list">
           {recentPapers.map((paper) => (
-            <li key={paper.url}>
-              <a className="body-text" href={paper.url} target="_blank" rel="noopener noreferrer" title="Opens in new tab" aria-label={`${paper.title} (opens in new tab)`}>
-                {paper.title}
-              </a>
-              <Text className="secondary-text">
-                {abbreviateAuthors(paper.authors)} · {paper.journal === "arXiv" ? "arXiv preprint (2026)" : `${shortenJournalName(paper.journal)} (${paper.year})`}
-              </Text>
+            <li key={paper.url} className="publication-item">
+              <PublicationEntry {...paper} authors={abbreviateAuthors(paper.authors)} journal={paper.journal === "arXiv" ? "arXiv preprint" : paper.journal} year={paper.journal === "arXiv" ? "2026" : paper.year} />
             </li>
           ))}
         </ul>
@@ -429,67 +438,13 @@ export function Home() {
         viewport={{ once: true }}
       >
         <Title order={2} className="section-title">Selected publications</Title>
-        <div className="highlights-grid">
-          <div className="highlight-card">
-            <Text className="highlight-journal">Neuron (2025)</Text>
-            <Title order={3} className="highlight-title">
-              <a href="https://www.sciencedirect.com/science/article/abs/pii/S0896627325007524" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
-                From prediction to understanding: will AI foundation models transform brain science?
-              </a>
-            </Title>
-            <Text className="highlight-authors">{abbreviateAuthors("T. Serre & E. Pavlick")}</Text>
-          </div>
-
-          <div className="highlight-card">
-            <Text className="highlight-journal">TICS (2026)</Text>
-            <Title order={3} className="highlight-title">
-              <a href="https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(25)00349-3" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
-                Better artificial intelligence does not mean better models of biology
-              </a>
-            </Title>
-            <Text className="highlight-authors">{abbreviateAuthors("D. Linsley, P. Feng & T. Serre")}</Text>
-          </div>
-
-          <div className="highlight-card">
-            <Text className="highlight-journal">ICLR (2025)</Text>
-            <Title order={3} className="highlight-title">
-              <a href="https://openreview.net/forum?id=UIFAJZ22ZF" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
-                The 3D-PC: A benchmark for visual perspective taking in humans and machines
-              </a>
-            </Title>
-            <Text className="highlight-authors">{abbreviateAuthors("D. Linsley et al.")}</Text>
-          </div>
-
-          <div className="highlight-card">
-            <Text className="highlight-journal">TICS (2026)</Text>
-            <Title order={3} className="highlight-title">
-              <a href="https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(25)00232-3" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
-                Feature binding in biological and artificial vision
-              </a>
-            </Title>
-            <Text className="highlight-authors">{abbreviateAuthors("P. Roelfsema & T. Serre")}</Text>
-          </div>
-
-          <div className="highlight-card">
-            <Text className="highlight-journal">{shortenJournalName("Current Biology")} (2024)</Text>
-            <Title order={3} className="highlight-title">
-              <a href="https://www.cell.com/current-biology/abstract/S0960-9822(24)01380-0" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
-                Monkeys engage in visual simulation to solve complex problems
-              </a>
-            </Title>
-            <Text className="highlight-authors">{abbreviateAuthors("A. Ahuja et al.")}</Text>
-          </div>
-
-          <div className="highlight-card">
-            <Text className="highlight-journal">{shortenJournalName("Nature Biomedical Engineering")} (2026)</Text>
-            <Title order={3} className="highlight-title">
-              <a href="https://www.nature.com/articles/s41551-026-01627-5" target="_blank" rel="noopener noreferrer" title="Opens in new tab">
-                Perilesional neuromodulation replaces lost sensorimotor function in persons with spinal cord injury
-              </a>
-            </Title>
-            <Text className="highlight-authors">{abbreviateAuthors("J.S. Calvert, S.R. Parker, L.N. Govindarajan, R. Darie, E. Shaaya, R. Solinsky, L.M. Del Valle, P. Miranda, J. Jang, E. Tiwari, S. Syed, R.M. Villalobos, L.M. Aguiar, J.A. Taylor, H. Tang, S. McPherson, W. Xue, A.G. Carayannopoulos, A.A. Oyelese, Z.L. Gokaslan, A.K. Bansal, L.J. Resnik, T. Serre, J.S. Fridley & D.A. Borton")}</Text>
-          </div>
-        </div>
+        <ul className="publication-list home-publication-list selected-publications-list">
+          {selectedPapers.map((paper) => (
+            <li key={paper.url} className="publication-item">
+              <PublicationEntry {...paper} authors={abbreviateAuthors(paper.authors)} />
+            </li>
+          ))}
+        </ul>
         <div style={{ textAlign: "center", marginTop: "1.5rem" }}>
           <Link to="/publications" className="body-text" style={{ color: "var(--color-primary)", textDecoration: "none", fontWeight: 600 }}>
             View All Publications →

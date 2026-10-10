@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Publications.css";
-import { Anchor, Text, Title, TextInput, Select, Group } from "@mantine/core";
+import { PublicationEntry } from "../../components/PublicationEntry/PublicationEntry";
+import { Title, TextInput, Select } from "@mantine/core";
 import publicationsData from "../../data/publications_by_year.json";
 import { resolvePublicationUrl } from "../../data/officialPublicationUrls";
 import { motion } from "motion/react";
@@ -140,7 +141,7 @@ export function Publications() {
                                 variants={fadeUp}
                             >
                                 <Title order={2} className="year-heading">{year}</Title>
-                                <ul style={{ listStyle: "none", padding: 0 }}>
+                                <ul className="publication-list">
                                     {filteredPublications[year].map((publication, index) => {
                                         const officialUrl = resolvePublicationUrl(publication);
                                         return (
@@ -152,36 +153,7 @@ export function Publications() {
                                             animate="visible"
                                             variants={fadeUp}
                                         >
-                                            <Group align="flex-start" gap="sm">
-                                                <div style={{ flex: 1 }}>
-                                                    <h3 className="publication-title">
-                                                        {officialUrl ? (
-                                                            <Anchor
-                                                                href={officialUrl}
-                                                                target="_blank"
-                                                                rel="noopener noreferrer"
-                                                                className="publication-link"
-                                                                aria-label={`${publication.title} (opens in new tab)`}
-                                                            >
-                                                                {publication.title}
-                                                            </Anchor>
-                                                        ) : (
-                                                            <span className="publication-title-text">
-                                                                {publication.title}
-                                                            </span>
-                                                        )}
-                                                    </h3>
-                                                    {publication.journal && (
-                                                        <Text className="publication-journal">
-                                                            {publication.journal}
-                                                        </Text>
-                                                    )}
-                                                    <Text className="publication-authors">
-                                                        {publication.authors}
-                                                    </Text>
-                                                </div>
-                                                {/* PDF icons removed; pdfPath preserved in data for future use */}
-                                            </Group>
+                                            <PublicationEntry title={publication.title} journal={publication.journal} authors={publication.authors} url={officialUrl} />
                                         </motion.li>
                                         );
                                     })}

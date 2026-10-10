@@ -636,13 +636,6 @@
     padding-bottom: 0.4rem;
   }
 
-  .highlights-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-auto-rows: 1fr;
-    gap: 1.25rem; /* match featured-grid */
-  }
-
   .highlight-card {
     background: var(--color-bg-white);
     border: 1px solid var(--color-border-light);
@@ -653,31 +646,6 @@
     box-sizing: border-box;
     height: 100%;
     min-width: 0;
-  }
-
-  .highlights-grid .highlight-card {
-    background: none;
-    border: none;
-    border-top: 1px solid var(--color-border-light);
-    border-radius: 0;
-    padding: 1rem 0;
-  }
-
-  .recent-papers-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: left;
-  }
-
-  .recent-papers-list li {
-    padding: 0.75rem 0;
-    border-bottom: 1px solid var(--color-border-light);
-  }
-
-  .recent-papers-list a {
-    color: var(--color-primary-dark);
-    font-weight: 600;
   }
 
   .highlight-journal {
@@ -691,17 +659,6 @@
     margin-bottom: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-  }
-
-  .highlights-grid .highlight-journal {
-    align-self: flex-start;
-    background: none;
-    color: var(--color-text-secondary);
-    padding: 0;
-    border-radius: 0;
-    font-size: 0.9rem;
-    text-transform: none;
-    letter-spacing: normal;
   }
 
   .highlight-title {
@@ -719,13 +676,6 @@
 
   .highlight-title a:hover {
     color: var(--color-accent);
-  }
-
-  .highlight-authors {
-    font-size: 0.9rem;
-    color: var(--color-text-secondary);
-    line-height: 1.5;
-    margin-top: auto;
   }
 
   @media (max-width: 1024px) {
@@ -758,9 +708,6 @@
       font-size: 0.85rem;
     }
 
-    .highlights-grid {
-      grid-template-columns: 1fr;
-    }
   }
   
   .featured-talk-card {
@@ -793,8 +740,7 @@
 
 /* Homepage lists share one reading order, with a compact label column. */
 .home-container .student-cards-container,
-.home-container .featured-grid,
-.home-container .highlights-grid {
+.home-container .featured-grid {
   grid-template-columns: 1fr;
   gap: 0;
 }
@@ -845,29 +791,9 @@
   margin: 0;
 }
 
-.home-container .highlights-grid .highlight-card {
-  display: grid;
-  grid-template-columns: 160px minmax(0, 1fr);
-  gap: 0.25rem 1.5rem;
-  align-content: start;
-}
-
-.home-container .highlights-grid .highlight-journal {
-  grid-column: 1;
-  grid-row: 1 / span 2;
-  margin: 0;
-}
-
-.home-container .highlights-grid .highlight-title,
-.home-container .highlights-grid .highlight-authors {
-  grid-column: 2;
-  margin: 0;
-}
-
 @media (max-width: 600px) {
   .home-container .student-card,
-  .home-container .featured-content,
-  .home-container .highlights-grid .highlight-card {
+  .home-container .featured-content {
     grid-template-columns: 1fr;
   }
 
@@ -875,9 +801,14 @@
   .home-container .student-card > :not(.student-card-title),
   .home-container .student-card > .student-card-text,
   .home-container .featured-content > *,
-  .home-container .featured-content .featured-button-small,
-  .home-container .highlights-grid .highlight-card > * {
+  .home-container .featured-content .featured-button-small {
     grid-column: 1;
     grid-row: auto;
   }
+}
+
+.home-publication-list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-auto-rows: 1fr;
 }
