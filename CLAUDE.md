@@ -14,6 +14,8 @@ Reduce unnecessary boxes: prefer headings, whitespace, and subtle dividers for p
 
 The homepage “Selected publications” is a curated selection, separate from recent papers and preprints. Use open publication entries with subtle dividers instead of enclosed boxes. The homepage tools, student information, and selected publications use single-column lists, with labels beside details on wider screens. Preserve its chosen papers and equal-size entries across rows; do not replace selected papers just because newer work appears.
 
+Keep homepage information grouped by audience and purpose. The lab handbook belongs in a separate “For lab members” section, never under prospective-student or recruitment information.
+
 ## Research writing
 
 Write the public Research page for an external audience: explain scientific questions, methods, and findings. Project rosters, individual assignments, Slack channels, and participation instructions belong in the internal lab handbook. Name people only when identifying a significant scientific collaboration or a grant PI, not to enumerate who works on a project. Do not turn the handbook project inventory into the public research narrative.

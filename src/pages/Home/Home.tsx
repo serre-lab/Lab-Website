@@ -263,14 +263,6 @@ export function Home() {
             </button>
           </div>
         </motion.div>
-        <motion.div variants={fadeUp}>
-          <Text className="body-text">
-            <strong>For current lab members:</strong>{" "}
-            <a href="https://psychic-adventure-y8eo2zo.pages.github.io/" target="_blank" rel="noopener noreferrer" title="Opens in new tab" aria-label="Lab handbook (opens in new tab)">
-              Lab handbook
-            </a>
-          </Text>
-        </motion.div>
       </motion.div>
 
       {/* Featured Projects Section */}
@@ -537,6 +529,18 @@ export function Home() {
           </Text>
         </motion.div>
       </motion.div>
+
+      <section className="recent-papers-section" aria-labelledby="lab-members-heading">
+        <Title order={2} id="lab-members-heading" className="section-title">For lab members</Title>
+        <Text className="body-text">
+          The{" "}
+          <a href="https://psychic-adventure-y8eo2zo.pages.github.io/" target="_blank" rel="noopener noreferrer" title="Opens in new tab" aria-label="Lab handbook (opens in new tab)">
+            lab handbook
+          </a>{" "}
+          has project information, lab procedures, and shared resources for current members.
+        </Text>
+      </section>
+
     </div>
   );
 }
