@@ -3,7 +3,6 @@ import "./Home.css";
 import { PublicationEntry } from "../../components/PublicationEntry/PublicationEntry";
 import { Title, Text } from "@mantine/core";
 import { useState } from "react";
-import publicationsData from "../../data/publications_by_year.json";
 import { HeroBanner } from "../../components/HeroBanner/HeroBanner";
 
 // Helper function to abbreviate author lists
@@ -44,15 +43,8 @@ const abbreviateAuthors = (authors: string, maxAuthors: number = 2): string => {
   }
 };
 
-// Recent papers and the curated selection are maintained separately.
+// Curated research selected by Thomas; independent of publication date.
 const selectedPapers = [
-  {
-    "title": "From prediction to understanding: Will AI foundation models transform brain science?",
-    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0896627325007524",
-    "journal": "Neuron",
-    "year": "2025",
-    "authors": "T. Serre & E. Pavlick"
-  },
   {
     "title": "Better artificial intelligence does not mean better models of biology",
     "url": "https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(25)00349-3",
@@ -61,11 +53,11 @@ const selectedPapers = [
     "authors": "D. Linsley, P. Feng & T. Serre"
   },
   {
-    "title": "The 3D-PC: A benchmark for visual perspective taking in humans and machines",
-    "url": "https://openreview.net/forum?id=UIFAJZ22ZF",
-    "journal": "International Conference on Learning Representations",
+    "title": "From prediction to understanding: Will AI foundation models transform brain science?",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0896627325007524",
+    "journal": "Neuron",
     "year": "2025",
-    "authors": "D. Linsley et al."
+    "authors": "T. Serre & E. Pavlick"
   },
   {
     "title": "Feature binding in biological and artificial vision",
@@ -75,34 +67,13 @@ const selectedPapers = [
     "authors": "P. Roelfsema & T. Serre"
   },
   {
-    "title": "Monkeys engage in visual simulation to solve complex problems",
-    "url": "https://www.cell.com/current-biology/abstract/S0960-9822(24)01380-0",
-    "journal": "Current Biology",
-    "year": "2024",
-    "authors": "A. Ahuja et al."
-  },
-  {
-    "title": "Perilesional neuromodulation replaces lost sensorimotor function in persons with spinal cord injury",
-    "url": "https://www.nature.com/articles/s41551-026-01627-5",
-    "journal": "Nature Biomedical Engineering",
-    "year": "2026",
-    "authors": "J.S. Calvert, S.R. Parker, L.N. Govindarajan, R. Darie, E. Shaaya, R. Solinsky, L.M. Del Valle, P. Miranda, J. Jang, E. Tiwari, S. Syed, R.M. Villalobos, L.M. Aguiar, J.A. Taylor, H. Tang, S. McPherson, W. Xue, A.G. Carayannopoulos, A.A. Oyelese, Z.L. Gokaslan, A.K. Bansal, L.J. Resnik, T. Serre, J.S. Fridley & D.A. Borton"
+    "title": "The 3D-PC: A benchmark for visual perspective taking in humans and machines",
+    "url": "https://openreview.net/forum?id=UIFAJZ22ZF",
+    "journal": "International Conference on Learning Representations",
+    "year": "2025",
+    "authors": "D. Linsley et al."
   }
 ];
-const recentPaperUrls = [
-  "https://arxiv.org/abs/2610.05419",
-  "https://openreview.net/forum?id=XYmvp2YQdC",
-  "https://openreview.net/forum?id=37eNHfTSDD",
-  "https://arxiv.org/abs/2606.25234",
-  "https://arxiv.org/abs/2606.09653",
-  "https://arxiv.org/abs/2605.20337",
-];
-const publicationRecords = Object.entries(publicationsData).flatMap(([year, papers]) =>
-  papers.map((paper) => ({ ...paper, year }))
-);
-const recentPapers = recentPaperUrls
-  .map((url) => publicationRecords.find((paper) => paper.url === url))
-  .filter((paper) => paper !== undefined);
 
 export function Home() {
   const [showUndergradDetails, setShowUndergradDetails] = useState(false);
@@ -256,149 +227,6 @@ export function Home() {
           About 5–10 minutes, with questions tailored to your application.
         </Text>
       </div>
-
-      {/* Featured Projects Section */}
-      <div
-        className="featured-projects-section"
-      >
-        <Title order={2} className="section-title">Tools and libraries</Title>
-
-        <div className="featured-grid">
-          {/* ClickMe Card */}
-          <div className="featured-card">
-            <div className="featured-content">
-              <Title order={3} className="featured-project-title">ClickMe</Title>
-              <Text className="featured-description">
-                Mark the image regions you use to recognize objects. Your annotations help train vision models to use similar visual evidence.
-              </Text>
-              <a
-                href="https://clickme.clps.brown.edu/tutorial" aria-label="Play now →: ClickMe (opens in new tab)"
-                target="_blank"
-                rel="noopener noreferrer"
-
-                className="featured-button-small"
-                onClick={() => {
-                  if (typeof window !== 'undefined' && (window as Window & { gtag?: (event: string, action: string, parameters: Record<string, string | number>) => void }).gtag) {
-                    (window as Window & { gtag?: (event: string, action: string, parameters: Record<string, string | number>) => void }).gtag?.('event', 'click', {
-                      'event_category': 'engagement',
-                      'event_label': 'clickme_play_now_grid',
-                      'value': 1
-                    });
-                  }
-                }}
-              >
-                Play now →
-              </a>
-            </div>
-          </div>
-
-          {/* Harmonization Card */}
-          <div className="featured-card">
-            <div className="featured-content">
-              <Title order={3} className="featured-project-title">Harmonization</Title>
-              <Text className="featured-description">
-                Training methods that align a model’s visual evidence with human annotations from ClickMe.
-              </Text>
-              <a
-                href="https://serre-lab.github.io/Harmonization/" aria-label="View demo →: Harmonization (opens in new tab)"
-                target="_blank"
-                rel="noopener noreferrer"
-
-                className="featured-button-small"
-              >
-                View demo →
-              </a>
-            </div>
-          </div>
-
-          {/* ObjectLENS Card */}
-          <div className="featured-card">
-            <div className="featured-content">
-              <Title order={3} className="featured-project-title">ObjectLENS</Title>
-              <Text className="featured-description">
-                Explore the visual features and image regions that contribute to an ImageNet model’s predictions.
-              </Text>
-              <a
-                href="https://serre-lab.github.io/Lens/" aria-label="Explore tool →: ObjectLENS (opens in new tab)"
-                target="_blank"
-                rel="noopener noreferrer"
-
-                className="featured-button-small"
-              >
-                Explore tool →
-              </a>
-            </div>
-          </div>
-
-          {/* LeafLENS Card */}
-          <div className="featured-card">
-            <div className="featured-content">
-              <Title order={3} className="featured-project-title">LeafLENS</Title>
-              <Text className="featured-description">
-                Explore how vision models identify plant families from leaf structure and which features inform their predictions.
-              </Text>
-              <a
-                href="https://serre-lab.github.io/LeafLens/" aria-label="Explore tool →: LeafLENS (opens in new tab)"
-                target="_blank"
-                rel="noopener noreferrer"
-
-                className="featured-button-small"
-              >
-                Explore tool →
-              </a>
-            </div>
-          </div>
-
-          {/* Xplique Card */}
-          <div className="featured-card">
-            <div className="featured-content">
-              <Title order={3} className="featured-project-title">Xplique</Title>
-              <Text className="featured-description">
-                An open-source toolbox for explaining deep learning predictions through feature attribution and concept analysis.
-              </Text>
-              <a
-                href="https://github.com/deel-ai/xplique" aria-label="View on GitHub →: Xplique (opens in new tab)"
-                target="_blank"
-                rel="noopener noreferrer"
-
-                className="featured-button-small"
-              >
-                View on GitHub →
-              </a>
-            </div>
-          </div>
-
-          {/* Horama Card */}
-          <div className="featured-card">
-            <div className="featured-content">
-              <Title order={3} className="featured-project-title">Horama</Title>
-              <Text className="featured-description">
-                Python/PyTorch library for feature visualization with MACO, Fourier methods, and feature accentuation.
-              </Text>
-              <a
-                href="https://github.com/serre-lab/Horama" aria-label="View on GitHub →: Horama (opens in new tab)"
-                target="_blank"
-                rel="noopener noreferrer"
-
-                className="featured-button-small"
-              >
-                View on GitHub →
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <section className="recent-papers-section" aria-labelledby="recent-papers-heading">
-        <Title order={2} id="recent-papers-heading" className="section-title">Recent papers and preprints</Title>
-        <ul className="publication-list home-publication-list">
-          {recentPapers.map((paper) => (
-            <li key={paper.url} className="publication-item">
-              <PublicationEntry {...paper} authors={abbreviateAuthors(paper.authors)} journal={paper.journal === "arXiv" ? "arXiv preprint" : paper.journal} year={paper.journal === "arXiv" ? "2026" : paper.year} />
-            </li>
-          ))}
-        </ul>
-      </section>
 
       {/* Selected Publications Section */}
       <div
