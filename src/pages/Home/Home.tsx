@@ -165,18 +165,18 @@ export function Home() {
           <div className="student-card">
             <Title order={3} className="student-card-title">Brown students</Title>
             <Text className="student-card-text">
-              Current Brown undergraduate and master’s students: tell us about your coursework, research interests, and availability in the research interest form below. Include your CV, unofficial transcript, and a code sample.
+              Current Brown undergraduate and master’s students: we encourage you to take CPSY 1291 and/or CPSY 1950. Most Brown students in the lab have taken at least one of these courses, if not both. Tell us about your relevant coursework, prior projects, research interests, and availability in the research interest form below. Include your CV, unofficial transcript, and a code sample.
             </Text>
             {showUndergradDetails && (
               <div id="undergrad-requirements">
                 <Text className="student-card-text" style={{ marginTop: "0.5rem" }}>
-                  <strong>Requirements:</strong>
+                  <strong>Recommended preparation:</strong>
                 </Text>
                 <ul className="student-requirements">
-                  <li>CS intro sequence</li>
-                  <li>At least one ML, vision, or deep learning course</li>
-                  <li>Strongly encouraged: CPSY 1291 or CPSY 1950 with Thomas Serre</li>
-                  <li>Familiarity with our research and ability to articulate a specific project interest</li>
+                  <li>If you have not taken CPSY 1291 or CPSY 1950, you should have rigorous quantitative coursework, including mathematics and at least some machine learning and/or deep learning.</li>
+                  <li>Ideally, you will also have coursework in neuroscience, cognitive science, and/or vision.</li>
+                  <li>List relevant courses and briefly describe prior course, independent, or research projects, including your own contribution and the methods or tools you used.</li>
+                  <li>Tell us which research questions or projects in the lab interest you.</li>
                 </ul>
               </div>
             )}
@@ -187,7 +187,7 @@ export function Home() {
               aria-controls="undergrad-requirements"
               onClick={(e) => { e.stopPropagation(); setShowUndergradDetails(!showUndergradDetails); }}
             >
-              {showUndergradDetails ? "Show less ▲" : "Show requirements ▼"}
+              {showUndergradDetails ? "Show less ▲" : "Show recommended preparation ▼"}
             </button>
           </div>
 

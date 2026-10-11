@@ -20,6 +20,12 @@ If you are interested in a research position, complete the [research interest fo
 
 At this stage Slack is all you need. Accounts on the lab's machines and the lab's GitHub organization come later, once you formally join the lab. So does the [private lab handbook](https://psychic-adventure-y8eo2zo.pages.github.io/), which covers accounts, computing and lab rules; it opens once you are in the lab's GitHub organization. If you want to write code before then, use [Google Colab](https://colab.research.google.com/), which is free.
 
+## Preparation for Brown students
+
+We encourage current Brown undergraduate and master’s students interested in joining the lab to take CPSY 1291 and/or CPSY 1950. Most Brown students in the lab have taken at least one of these courses, if not both. If you have not taken either course, you should have rigorous quantitative coursework, including mathematics and at least some machine learning and/or deep learning. Ideally, you will also have coursework in neuroscience, cognitive science, and/or vision.
+
+In the research interest form, list relevant courses (completed or in progress) and briefly describe prior course, independent, or research projects. Explain your own contribution and the methods or tools you used. Your unofficial transcript provides context, but your description helps us understand your preparation and interests.
+
 ## How to find a project
 
 We like to bring in new collaborators, whether they contribute a new skill or a new pair of hands, and get them involved in the lab's ongoing projects. This is the best way for a new student to begin. In parallel, start thinking about a project of your own, and move toward independence as you grow more confident.
