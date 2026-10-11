@@ -204,8 +204,8 @@ export function Home() {
                 </Text>
                 <ul className="student-requirements">
                   <li>Strong quantitative skills including math and programming</li>
-                  <li>Prior work in computational neuroscience and/or vision (required)</li>
-                  <li>Prior experience in brain and cognitive science (a plus but not required)</li>
+                  <li>Research experience in NeuroAI, computational neuroscience, vision, or a closely related area</li>
+                  <li>An interest in connecting computation with brain function or cognition; prior vision experience is not required</li>
                 </ul>
                 <Text className="student-card-text" style={{ marginTop: "0.5rem" }}>
                   Due to the large volume of applicants, Thomas Serre can only meet with applicants after they have been invited for an interview.
@@ -226,7 +226,7 @@ export function Home() {
           <div className="student-card">
             <Title order={3} className="student-card-title">Postdocs</Title>
             <Text className="student-card-text">
-              Prospective postdocs: use the research interest form below to share your CV, strongest research contributions, a code sample, and potential start date.
+              We welcome prospective postdocs with backgrounds in NeuroAI, computational neuroscience, AI, or related fields. Prior vision experience is not required. Use the research interest form below to share your CV, strongest research contributions, a code sample, and potential start date.
             </Text>
             {showPostdocDetails && (
               <div id="postdoc-requirements">
@@ -234,8 +234,9 @@ export function Home() {
                   <strong>Requirements:</strong>
                 </Text>
                 <ul className="student-requirements">
-                  <li>Graduate training in computational neuroscience or AI</li>
-                  <li>Strong track record publishing at top venues including NeurIPS, ICML, ICLR, and/or CVPR</li>
+                  <li>Graduate training in NeuroAI, computational neuroscience, AI, or a related field</li>
+                  <li>A strong research record, assessed through the substance of your contributions and publications in your field</li>
+                  <li>Expertise relevant to our research, including neural dynamics, recurrent networks, learning, cognition, or vision</li>
                 </ul>
               </div>
             )}
