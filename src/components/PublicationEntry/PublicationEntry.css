@@ -53,3 +53,14 @@
     margin-top: 0.25rem;
 }
 
+
+/* Publication titles are standalone heading links, not inline prose links. */
+main .publication-title .publication-link {
+    text-decoration: none !important;
+}
+
+main .publication-title .publication-link:hover,
+main .publication-title .publication-link:focus-visible {
+    text-decoration: underline !important;
+    text-underline-offset: 0.15em;
+}
