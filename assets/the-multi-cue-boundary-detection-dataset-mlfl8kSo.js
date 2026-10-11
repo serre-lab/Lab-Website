@@ -1,4 +1,4 @@
-const e=`# Multi-Cue Boundary Detection Dataset
+const e=`# Multi-cue boundary detection dataset
 
 A dataset of stereo video sequences for studying the interaction of multiple early visual cues (luminance, color, stereo, motion) during boundary detection in natural scenes.
 
@@ -6,7 +6,7 @@ A dataset of stereo video sequences for studying the interaction of multiple ear
 
 This dataset was created to study how different visual cues interact during boundary detection in challenging natural scenes. It consists of short binocular video sequences captured using a consumer-grade Fujifilm stereo camera, featuring diverse locations and seasonal conditions to minimize biases.
 
-## Dataset Specifications
+## Dataset specifications
 
 - **Scenes**: 100 natural scenes
 - **Format**: Binocular video sequences (left and right views)
@@ -16,7 +16,7 @@ This dataset was created to study how different visual cues interact during boun
 - **Locations**: University campuses, street scenes, and parks
 - **Conditions**: Multiple seasons and appearances
 
-## Visual Cues Included
+## Visual cues included
 
 The dataset enables study of four early visual cues:
 
@@ -25,7 +25,7 @@ The dataset enables study of four early visual cues:
 - **Stereo** (depth from binocular disparity)
 - **Motion** (temporal changes across frames)
 
-## Ground Truth Annotations
+## Ground-truth annotations
 
 Two sets of hand-annotations were collected for the last video frame of the left image for every scene:
 
@@ -51,4 +51,5 @@ Mély, D.A., Kim, J., McGill, M., Guo, Y., & Serre, T. (2016). A systematic comp
 
 ## License
 
-This dataset is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).`;export{e as default};
+This dataset is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+`;export{e as default};

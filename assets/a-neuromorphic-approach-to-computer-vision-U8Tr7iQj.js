@@ -22,7 +22,7 @@ In the model of Figure 1, simple units are selective for specific conjunctions o
 
 ---
 
-## Supplementary Note: Computational models of the visual cortex
+## Supplementary note: Computational models of the visual cortex
 
 Feedforward hierarchical models have a long history starting with Marko & Giebel’s homogeneous multi-layered architecture [1] in the 70’s and later Fukushima’s Neocognitron [2]. One of the key computational mechanisms in these, and other hierarchical models of visual processing, originates from the pioneering physiological studies and models of Hubel and Wiesel.
 
@@ -46,4 +46,5 @@ The basic idea in these models is to build an increasingly complex and invariant
 14. LeCun, Y., Bottou, L., Bengio, Y. and Haffner, P. Gradient-Based Learning Applied to Document Recognition. Proc. of the IEEE, 86, 11 (1998), 2278–2324.
 15. Serre, T., Kouh, M., Cadieu, C., Knoblich, U., Kreiman, G. and Poggio, T. A theory of object recognition: computations and circuits in the feedforward path of the ventral stream in primate visual cortex. MIT AI Memo 2005-036 / CBCL Memo 259, AI Memo 2005-036 / CBCL Memo 259 (2005).
 16. Mutch, J. and Lowe, D. Multiclass Object Recognition Using Sparse, Localized Features. In Proceedings of the CVPR (2006).
-17. Masquelier, T., Serre, T., Thorpe, S. and Poggio, T. Learning complex cell invariance from natural videos: a plausibility proof. CBCL Paper #269/MIT-CSAIL-TR #2007-060(2007).`;export{e as default};
+17. Masquelier, T., Serre, T., Thorpe, S. and Poggio, T. Learning complex cell invariance from natural videos: a plausibility proof. CBCL Paper #269/MIT-CSAIL-TR #2007-060(2007).
+`;export{e as default};

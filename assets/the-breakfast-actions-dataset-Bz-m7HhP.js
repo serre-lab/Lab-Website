@@ -1,4 +1,4 @@
-const a=`# The Breakfast Actions Dataset
+const a=`# The Breakfast actions dataset
 
 Breakfast records 52 people preparing breakfast in 18 kitchens, with approximately 77 hours of video. Introduced at CVPR 2014, it supports activity recognition and temporal segmentation.
 
