@@ -204,7 +204,7 @@ export function Home() {
                 </Text>
                 <ul className="student-requirements">
                   <li>Strong quantitative skills including math and programming</li>
-                  <li>Prior work in vision (required)</li>
+                  <li>Prior work in computational neuroscience and/or vision (required)</li>
                   <li>Prior experience in brain and cognitive science (a plus but not required)</li>
                 </ul>
                 <Text className="student-card-text" style={{ marginTop: "0.5rem" }}>
