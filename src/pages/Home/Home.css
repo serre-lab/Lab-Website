@@ -850,3 +850,27 @@
   .featured-talk { grid-template-columns: minmax(0, 1fr); gap: 0.8rem; }
   .featured-talk-meta { padding-top: 0; }
 }
+
+/* All homepage prose follows the same left edge at every viewport width. */
+.home-container .student-card {
+  grid-template-columns: minmax(0, 1fr);
+}
+.home-container .student-card > *,
+.home-container .student-card > :not(.student-card-title),
+.home-container .student-card > .student-card-text {
+  grid-column: 1;
+  grid-row: auto;
+}
+.featured-talk {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.75rem;
+}
+.featured-talk-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 1rem;
+  padding-top: 0;
+}
+.featured-talk-speaker { margin-top: 0; }
+.featured-talk-body { max-width: none; }

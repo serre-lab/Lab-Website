@@ -100,7 +100,7 @@ export function Home() {
         <div className="featured-talk">
           <div className="featured-talk-meta">
             <Text className="featured-talk-event">CVPR 2026 keynote</Text>
-            <Text className="featured-talk-speaker">Thomas Serre<br />June 2026</Text>
+            <Text className="featured-talk-speaker">Thomas Serre · June 2026</Text>
           </div>
           <div className="featured-talk-body">
             <Title order={3} className="featured-talk-title">
