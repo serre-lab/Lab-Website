@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Breakfast Actions Dataset - Serre Lab</title>
     <style>
+        .skip-link { position: absolute; left: 1rem; top: -5rem; background: white; padding: 0.5rem; z-index: 10; }
+        .skip-link:focus { top: 1rem; }
+        a:focus-visible, button:focus-visible { outline: 3px solid #2563eb; outline-offset: 3px; }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, sans-serif;
             line-height: 1.6;
@@ -186,55 +190,21 @@
     </style>
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header>
+        <nav aria-label="Dataset navigation"><a href="/#/resources">Serre Lab resources</a></nav>
+    </header>
+    <main id="main-content" tabindex="-1">
     <h1>The Breakfast Actions Dataset <span class="pill">Official</span></h1>
     
     <p>A comprehensive dataset of breakfast preparation activities performed by <strong>52 different individuals</strong> in <strong>18 different kitchens</strong>, designed to reflect real-world recognition scenarios.</p>
-    <p>This dataset comprises 10 actions related to breakfast preparation. The dataset is to-date one of the largest fully annotated datasets available, designed to reflect real-world conditions for monitoring and analysis of daily activities.</p>
+    <p>Introduced at CVPR 2014, this dataset comprises 10 breakfast preparation activities and supports activity recognition and temporal segmentation in everyday settings.</p>
     <p><strong>Dataset specifications:</strong> ~77 hours of video (&gt;4 million frames), 320×240 pixels resolution (down-sampled), 15 fps frame rate, 3-5 uncalibrated cameras per location.</p>
 
     <h2>Downloads</h2>
-    <div class="cards">
-        <div class="card">
-            <div class="card-content">
-                <h3>Videos</h3>
-                <ul>
-                    <li><a href="https://drive.google.com/open?id=1jgSoof1AatiDRpGY091qd4TEKF-BUt6I">Main file</a> — 3.6 GB</li>
-                </ul>
-            </div>
-            <p class="muted">License: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
-        </div>
-
-        <div class="card">
-            <h3>Pre-computed Features</h3>
-            <ul>
-                <li><a href="https://www.dropbox.com/s/mfz8pe7jerlj54g/dense_traj_all_s1.tar.gz?dl=1">dense_traj_all_s1.tar.gz</a> — ~37GB</li>
-                <li><a href="https://www.dropbox.com/s/l25u0jbmi62jwjp/dense_traj_all_s2.tar.gz?dl=1">dense_traj_all_s2.tar.gz</a> — ~57GB</li>
-                <li><a href="https://www.dropbox.com/s/0j7enp6cjq2r8jd/dense_traj_all_s3.tar.gz?dl=1">dense_traj_all_s3.tar.gz</a> — ~42GB</li>
-                <li><a href="https://www.dropbox.com/s/0ynhovye29ygha7/dense_traj_all_s4.tar.gz?dl=1">dense_traj_all_s4.tar.gz</a> — ~75GB</li>
-                <li><a href="https://drive.google.com/file/d/1I70VymcaQypIcJ8TXhb2_AlSmoo6MUm4/view">bf_kinetics_feat.tar.gz</a> — 27.7 GB I3D features (RGB and flow)</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h3>Segmentation Data</h3>
-            <ul>
-                <li><a href="https://drive.google.com/open?id=1R3z_CkO1uIOhu4y2Nh0pCHjQQ2l-Ab9E">Coarse segmentation</a></li>
-                <li><a href="https://drive.google.com/open?id=1Alg_xjefEFOOpO_6_RnelWiNqbJlKhVF">Fine segmentation</a></li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h3>Code and Documentation</h3>
-            <ul>
-                <li><a href="https://github.com/hildekuehne/HTK_actionRecognition">HTK-based model by Kuehne et al. (2016)</a> — Available on GitHub</li>
-                <li><a href="https://huggingface.co/datasets/Serrelab/breakfast-actions/resolve/main/demo_bundle.rar">MATLAB demo</a> — Previous demo bundle for action recognition</li>
-            </ul>
-        </div>
-    </div>
-
-    <p class="muted">
-        <strong>Note:</strong> Large files are hosted externally on Dropbox or other services. Please contact the lab for access to external files.
-    </p>
+    <p><a href="https://huggingface.co/datasets/Serrelab/breakfast-actions">Download Breakfast data and annotations on Hugging Face</a>. The dataset page lists the available archives, their contents, checksums, and links to additional features.</p>
+    <p>The reduced Fisher-vector features and coarse and fine segmentation annotations are available there. The raw video mirror is incomplete: the original Google Drive download exceeded its quota when checked on October 11, 2026. See the dataset page for video availability.</p>
+    <p><a href="https://github.com/hildekuehne/HTK_actionRecognition">HTK action-recognition code and evaluation instructions</a> describe the feature format and training protocol.</p>
 
     <h2>Action Classes (10)</h2>
     <ul>
@@ -286,17 +256,18 @@
     <p><strong>Follow-up work:</strong><br />
     H. Kuehne, J. Gall and T. Serre. An end-to-end generative framework for video segmentation and recognition. <em>WACV</em>, 2016.</p>
 
+    </main>
     <footer>
         <p><strong>Contact:</strong> For questions about the dataset and benchmarks, please contact:</p>
         <p>
-            <button onclick="showContact()" class="contact-button">Show Contact Email</button>
+            <button onclick="showContact()" class="contact-button" aria-expanded="false" aria-controls="contact-info">Show Contact Email</button>
         </p>
         <div id="contact-info" style="display: none;">
             <p><strong>Hilde Kuehne</strong><br />
             <a href="mailto:h.kuehne@uni-tuebingen.de">h.kuehne@uni-tuebingen.de</a><br />
             University of Tübingen, Germany</p>
         </div>
-        <p class="muted">© 2025 Serre Lab. All rights reserved.</p>
+        <p class="muted">© 2026 Serre Lab. All rights reserved.</p>
     </footer>
 
     <script>
@@ -308,9 +279,11 @@
                 if (contactInfo.style.display === 'none' || contactInfo.style.display === '') {
                     contactInfo.style.display = 'block';
                     button.textContent = 'Hide Contact Email';
+                    button.setAttribute('aria-expanded', 'true');
                 } else {
                     contactInfo.style.display = 'none';
                     button.textContent = 'Show Contact Email';
+                    button.setAttribute('aria-expanded', 'false');
                 }
             }
         }
