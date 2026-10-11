@@ -3,7 +3,7 @@
 # Accessibility: WCAG 2.1 AA Compliance (Brown University Policy)
 
 All HTML output from this project must comply with WCAG 2.1 AA.
-Brown University requires full digital accessibility compliance by May 2026.
+Brown’s ongoing web policy requires WCAG 2.1 AA. The [current FAQ](https://digital-accessibility.brown.edu/digital-accessibility-faqs) lists May 11, 2027 as the extended federal deadline (checked October 11, 2026). Do not confuse automated checks with full conformance certification.
 Reference: https://digital-accessibility.brown.edu/
 
 ## Visual style (Thomas, October 10, 2026)

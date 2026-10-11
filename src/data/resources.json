@@ -56,7 +56,7 @@
                 "action": "Explore demo"
             },
             {
-                "title": "hGRU Tutorials",
+                "title": "hGRU tutorials",
                 "url": "https://colab.research.google.com/drive/1nahqqz1xjVTgrhtPv6myE1xvi4eRvMge",
                 "description": "Notebooks introducing the horizontal gated recurrent unit (hGRU), a model of recurrent visual processing.",
                 "action": "Open notebook"

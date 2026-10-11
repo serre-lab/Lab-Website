@@ -130,7 +130,7 @@ export function Home() {
       >
         <Title order={2} className="section-title">Featured talk</Title>
         <div className="highlight-card featured-talk-card">
-          <Text className="highlight-journal">CVPR 2026 Keynote</Text>
+          <Text className="highlight-journal">CVPR 2026 keynote</Text>
           <Title order={3} className="highlight-title">
             <a href="https://www.youtube.com/watch?v=tjn2MW0d8K8&t=7185s" target="_blank" rel="noopener noreferrer">
               Scaling laws vs. neural laws: Toward more natural artificial vision

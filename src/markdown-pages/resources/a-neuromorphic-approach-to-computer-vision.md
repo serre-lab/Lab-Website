@@ -22,7 +22,7 @@ In the model of Figure 1, simple units are selective for specific conjunctions o
 
 ---
 
-## Supplementary Note: Computational models of the visual cortex
+## Supplementary note: Computational models of the visual cortex
 
 Feedforward hierarchical models have a long history starting with Marko & Giebel’s homogeneous multi-layered architecture [1] in the 70’s and later Fukushima’s Neocognitron [2]. One of the key computational mechanisms in these, and other hierarchical models of visual processing, originates from the pioneering physiological studies and models of Hubel and Wiesel.
 

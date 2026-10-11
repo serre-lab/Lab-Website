@@ -828,3 +828,6 @@
 .home-container .student-cards-container {
   margin-top: 0;
 }
+
+/* Entry titles share the same scale as publications and resource entries. */
+.student-card-title, .featured-project-title, .highlight-title { font-size: 1.25rem; }

@@ -16,7 +16,7 @@ const pageTitles: Record<string, string> = {
     "/people": "People",
     "/resources": "Resources",
     "/lab-links": "Lab links",
-    "/sci-comm": "Media & Science Communication",
+    "/sci-comm": "Media and science communication",
 };
 
 export function Root(props: RootProps) {

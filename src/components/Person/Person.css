@@ -23,7 +23,7 @@
   .person-name {
     text-align: center;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     margin-top: 1rem;
     margin-bottom: 0.25rem;
   }
@@ -47,8 +47,7 @@
     line-height: 1.6;
     text-align: left;
     margin-top: 1rem;
-    max-height: 250px;
-    overflow-y: auto;
+
   }
 
   /* Modal Styles */

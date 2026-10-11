@@ -12,15 +12,15 @@
 - [ClickMe](/resources/clickme)
 - [The multi-cue boundary detection dataset](/resources/the-multi-cue-boundary-detection-dataset)
 - [HMDB: a large human motion database](/hmdb51.html)
-- [The Breakfast Actions Dataset](/resources/the-breakfast-actions-dataset)
+- [The Breakfast actions dataset](/resources/the-breakfast-actions-dataset)
 
 ## Software
 
-- [hGRU Tutorials](/resources/hgru-tutorials)
+- [hGRU tutorials](/resources/hgru-tutorials)
 - [Lab GitHub repository](https://github.com/serre-lab)
 - [Automated system for rodent behavioral phenotyping](/resources/automated-system-for-rodent-behavioral-phenotyping)
 
-## Supplementary Information
+## Supplementary information
 
 - [Learning sparse prototypes for crowd perception](/resources/learning-sparse-prototypes-for-crowd-perception)
 - [Computational mechanisms of color processing](/resources/computational-mechanisms-of-color-processing)

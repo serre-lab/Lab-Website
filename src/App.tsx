@@ -21,7 +21,7 @@ import { loadMarkdownFiles } from "./utils/loadMarkdownFiles";
 
 const theme = createTheme({
     // fontFamily: "futura-pt",
-    fontFamily: "-apple-system, BlinkMacSystemFont, sans-serif",
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Inter, system-ui, sans-serif',
     components: {
         // Text: {
         //     defaultProps: {

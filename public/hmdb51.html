@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
             padding: 2rem;
             background: #fff;
         }
-        
+
         h1 {
             text-align: center;
             margin-bottom: 1rem;
@@ -22,7 +22,7 @@
             font-weight: 600;
             color: #2c3e50;
         }
-        
+
         .pill {
             display: inline-block;
             padding: 0.15rem 0.55rem;
@@ -33,7 +33,7 @@
             margin-left: 0.4rem;
             font-weight: 500;
         }
-        
+
         h2 {
             font-size: 1.75rem;
             font-weight: 600;
@@ -43,7 +43,7 @@
             padding-bottom: 0.5rem;
             border-bottom: 1px solid #e2e8f0;
         }
-        
+
         h3 {
             font-size: 1.25rem;
             font-weight: 600;
@@ -51,41 +51,41 @@
             margin-top: 1rem;
             margin-bottom: 0.5rem;
         }
-        
+
         p {
             margin-bottom: 1rem;
             line-height: 1.6;
             color: #4b5563;
         }
-        
+
         ul {
             margin-top: 0.5rem;
             padding-left: 1.25rem;
             margin-bottom: 1rem;
         }
-        
+
         li {
             margin-bottom: 0.5rem;
             line-height: 1.5;
             color: #4b5563;
         }
-        
+
         a {
             color: #2563eb;
             text-decoration: none;
             font-weight: 500;
         }
-        
+
         a:hover {
             color: #1d4ed8;
             text-decoration: underline;
         }
-        
+
         strong {
             color: #111827;
             font-weight: 600;
         }
-        
+
         code {
             background: #f3f4f6;
             padding: 0.1rem 0.35rem;
@@ -93,7 +93,7 @@
             font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
             font-size: 0.85rem;
         }
-        
+
         .cards {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -101,7 +101,7 @@
             margin-top: 1rem;
             margin-bottom: 1.5rem;
         }
-        
+
         .card {
             border: 1px solid #e2e8f0;
             border-radius: 12px;
@@ -110,18 +110,18 @@
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
             transition: all 0.3s ease;
         }
-        
+
         .card:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
         }
-        
+
         .muted {
             color: #6b7280;
             font-size: 0.9rem;
             margin-top: 1rem;
         }
-        
+
         footer {
             margin-top: 3rem;
             font-size: 0.9rem;
@@ -130,40 +130,56 @@
             border-top: 1px solid #e2e8f0;
             text-align: center;
         }
-        
+
         footer p {
             margin-bottom: 0.5rem;
         }
-        
+
         @media (max-width: 768px) {
             body {
                 padding: 1rem;
             }
-            
+
             h1 {
                 font-size: 1.75rem;
             }
-            
+
             .cards {
                 grid-template-columns: 1fr;
                 gap: 1rem;
             }
-            
+
             .card {
                 padding: 1rem;
             }
         }
+
+        * { box-sizing: border-box; }
+        body { width: 100%; font-size: 1rem; overflow-wrap: anywhere; }
+        h1 { font-size: 2.5rem; }
+        h2 { font-size: 1.75rem; }
+        h3 { font-size: 1.25rem; }
+        a { text-decoration: underline; text-underline-offset: .15em; }
+        :focus-visible { outline: 2px solid #1f5fa2; outline-offset: 3px; }
+        pre { max-width: 100%; white-space: pre-wrap; overflow-wrap: anywhere; }
+        .cards { grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); }
+        .skip-link { position: absolute; left: -10000px; }
+        .skip-link:focus { position: static; }
+        @media (max-width: 768px) { h1 { font-size: 2rem; } }
     </style>
 </head>
 <body>
-    <h1>HMDB51: A Large Video Database for Human Motion Recognition <span class="pill">Official</span></h1>
-    
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header><nav aria-label="Dataset navigation"><a href="/#/resources">Serre Lab resources</a></nav></header>
+    <main id="main-content" tabindex="-1">
+    <h1>HMDB51: A large video database for human motion recognition <span class="pill">Official</span></h1>
+
     <p>HMDB51 contains <strong>6,849</strong> short video clips across <strong>51 action categories</strong>, compiled from movies and web videos to capture diverse viewpoints, camera motion, and visual conditions.</p>
 
     <h2>Downloads</h2>
     <div class="cards">
         <div class="card">
-            <h3>Video Database</h3>
+            <h3>Video database</h3>
             <ul>
                 <li><a href="https://drive.google.com/uc?export=download&id=17anw5Oxp7lmp9cMwXPOyOpL5olDLmPpj">HMDB51 (official release, unstabilized)</a> — about 2 GB; 51 classes, 6,849 clips.</li>
                 <li><a href="https://drive.google.com/uc?export=download&id=1TyCwgNSzms7VU6-Mc64RTgwd8Zd9ynxy">HMDB51 (stabilized)</a> — same clips and labels, with geometric frame alignment; each clip includes a mask file <code>[video_name].form</code> readable in MATLAB.</li>
@@ -173,7 +189,7 @@
         </div>
 
         <div class="card">
-            <h3>Community Mirrors and Tools</h3>
+            <h3>Community mirrors and tools</h3>
             <ul>
                 <li><a href="https://docs.pytorch.org/vision/main/generated/torchvision.datasets.HMDB51.html">Torchvision: <code>datasets.HMDB51</code></a></li>
                 <li><a href="https://mmaction2.readthedocs.io/en/latest/user_guides/prepare_dataset.html">MMAction2: dataset preparation</a></li>
@@ -185,7 +201,7 @@
         </div>
     </div>
 
-    <h2>Action Classes (51)</h2>
+    <h2>Action classes (51)</h2>
 
     <h3>General facial actions</h3>
     <ul><li>smile, laugh, chew, talk</li></ul>
@@ -202,7 +218,7 @@
     <h3>Human–human interaction</h3>
     <ul><li>fencing, hug, kick someone, kiss, punch, shake hands, sword fight</li></ul>
 
-    <h2>Meta-Labels</h2>
+    <h2>Meta-labels</h2>
     <p>Each video clip is annotated with meta-labels describing various attributes:</p>
     <div class="cards">
         <div class="card">
@@ -234,7 +250,7 @@
         </div>
     </div>
 
-    <h2>Video Stabilization</h2>
+    <h2>Video stabilization</h2>
     <p>The original HMDB51 dataset contains unstabilized videos. A stabilized version is also available, where geometric frame alignment has been applied to reduce camera motion. The unstabilized version is the official release.</p>
 
     <h2>Citation</h2>
@@ -242,7 +258,9 @@
     <p>Please cite the following paper when using this dataset:</p>
     <p>H. Kuehne, H. Jhuang, E. Garrote, T. Serre and T. Poggio. HMDB: A large video database for human motion recognition. <em>ICCV</em>, 2011.</p>
 
+    </main>
     <footer>
+        <p><a href="https://digital-accessibility.brown.edu/">Accessibility at Brown</a> · <a href="https://cm.maxient.com/reportingform.php?BrownUniv=&amp;layout_id=59">Report an accessibility barrier</a></p>
         <p>© 2025 Serre Lab. All rights reserved.</p>
     </footer>
 </body>

@@ -82,7 +82,7 @@ button {
     transition: border-color 0.25s;
 }
 button:hover {
-    border-color: #008abf;
+    border-color: var(--color-primary-dark);
 }
 button:focus,
 button:focus-visible {
@@ -95,7 +95,7 @@ button:focus-visible {
         background-color: #ffffff;
     }
     a:hover {
-        color: #008abf;
+        color: var(--color-primary-dark);
     }
     button {
         background-color: #f9f9f9;
@@ -103,7 +103,7 @@ button:focus-visible {
 }
 
 .alt-blue {
-  color: #008abf;
+  color: var(--color-primary-dark);
 }
 
 /* WCAG 2.1 AA: Visually hidden (screen reader only) */
@@ -161,5 +161,29 @@ button:focus-visible {
     max-width: 800px;
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+}
+
+/* Reflow, text resizing, and visible links apply to legacy and current content. */
+main, header, footer { overflow-wrap: anywhere; }
+.header-content > *, .footer-content > *, .footer-logo-text, .lab-info { min-width: 0; }
+main img { max-width: 100%; }
+main p a, main li a, .markdown-container a, .research-link, .publication-link {
+  text-decoration: underline !important;
+  text-underline-offset: .15em;
+}
+@media (max-width: 768px) {
+  .header-content, .footer-content { padding-left: 1rem; padding-right: 1rem; }
+  .hero-banner-wrapper { padding-left: 1rem; padding-right: 1rem; }
+  .hero-banner-social-icons { flex-wrap: wrap; }
+  .hero-banner-social { min-width: 0; }
+  .left, .footer-logo-section { flex-wrap: wrap; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
   }
 }

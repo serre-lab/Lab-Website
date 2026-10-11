@@ -10,7 +10,7 @@ The goal of this project is to study the computational mechanisms underlying col
 
 **Double-Opponent (DO) neurons** lack “ON” and “OFF” subfields. They are selective for both color and orientation (as well as spatial frequency), and thought to influence the perception of form.
 
-[![Fig. 1](/images/resources/color/image003-1024x583.jpg)](/images/resources/color/image003-1024x583.jpg)  
+[![Receptive fields of luminance, single-opponent and double-opponent neurons](/images/resources/color/image003-1024x583.jpg)](/images/resources/color/image003-1024x583.jpg)\
 **Fig. 1.** Receptive fields (RFs) for luminance (A), single-opponent (color-preferring, B), and double-opponent (color-luminance, C) neurons.
 
 ## Insights from neuroscience
@@ -20,29 +20,29 @@ The goal of this project is to study the computational mechanisms underlying col
 
 ## Approach
 
-[![Fig. 2](/images/resources/color/image004-1024x289.jpg)](/images/resources/color/image004-1024x289.jpg)  
+[![Two-stage model from RGB center-surround filtering to single-opponent and double-opponent channels; stages described below](/images/resources/color/image004-1024x289.jpg)](/images/resources/color/image004-1024x289.jpg)\
 **Fig. 2.** Proposed spatio-chromatic opponent image descriptors. Top: Individual R, G, B color channels are first convolved with a center and a surround filter at orientation, phase, and scale *s*. The corresponding color channels are further combined and rectified by half-squaring followed by divisive normalization **(I)**. This yields eight chromatic SO channels organized in four pairs (e.g., R+G- shown here and R-G+). In stage **II**, an oriented filter (with both excitatory and inhibitory subunits) is further applied on each SO channel, followed by half-squaring rectification and summation over phases and opponent pairs to yield four spatio-chromatic DO channels that are invariant to figure-ground reversal (e.g., RG).
 
-**(1) Spatio-chromatic sensitivity function**
+### Spatio-chromatic sensitivity function
 
 The response of an SO (S1) unit is obtained by considering the dot-product between an image patch and the spatio-chromatic sensitivity function.
 
-[![Fig. 3](/images/resources/color/image009.jpg)](/images/resources/color/image009.jpg)  
+[![Excitatory and inhibitory spatial sensitivity distributions for each color component](/images/resources/color/image009.jpg)](/images/resources/color/image009.jpg)\
 **Fig. 3.** Spatial sensitivity distributions for each individual color component. These are obtained by isolating the positive/negative subunits from linear oriented filters to form excitatory/inhibitory center or surround structures.
 
-**(2) From Single-Opponent to Double-Opponent units**
+### From single-opponent to double-opponent units
 
 DO (S1) model unit responses are obtained by filtering SO channels with the spatial sensitivity function:
 
 Note: unlike the SO stage, the convolution here is only 2D and contains both center and surround (excitatory/inhibitory) subunits (in the SO computation excitatory and inhibitory subunits are applied on separate color components). With this difference in mind, the spatial sensitivity function used at the DO stage is the same as the one used at the SO stage but in the general case any filter with excitatory and inhibitory components could be used.
 
-**(3) Non-linear operations**
+### Non-linear operations
 
-[![Fig. 4](/images/resources/color/image012.jpg)](/images/resources/color/image012.jpg)
+[![Half-squaring and divisive normalization of responses, pooling opponent colors for SO units and orientations for DO units](/images/resources/color/image012.jpg)](/images/resources/color/image012.jpg)
 
 **Example:**
 
-[![Fig. 5](/images/resources/color/image013-1024x310.jpg)](/images/resources/color/image013-1024x310.jpg)  
+[![Original image compared with single-opponent and double-opponent color-channel maps](/images/resources/color/image013-1024x310.jpg)](/images/resources/color/image013-1024x310.jpg)\
 **Fig. 4.** Processing by the SO and DO color channels. A. Original image. B. SO maps. C. DO maps (after max over all dimensions for display).
 
 ## Sample results
@@ -54,13 +54,12 @@ We have evaluated our approach on four systems:
 - GIST algorithm for natural scene categorization
 - BSDS500 for contour detection
 
-**Object recognition**
+### Object recognition
 
 **Table 1.** Recognition performance on the soccer team and 17-category flower datasets. Classification accuracy is reported for each feature type (data in parenthesis correspond to the original performance reported in [3, 4] using the same features as in a bag-of-words scheme.)
 
-| Method           | Color      | Shape      | Both      | Color      | Shape      | Both      |
+| Method | Soccer: color | Soccer: shape | Soccer: both | Flower: color | Flower: shape | Flower: both |
 |------------------|------------|------------|-----------|------------|------------|-----------|
-|                  | **Soccer team** |            |           | **Flower** |            |           |
 | Hue/SIFT         | 69 (67)    | 43 (43)    | 73 (73)   | 58 (40)    | 65 (65)    | 77 (79)   |
 | Opp/SIFT         | 69 (65)    | 43 (43)    | 74 (72)   | 57 (39)    | 65 (65)    | 74 (79)   |
 | **SOSIFT/DOSIFT**| **82**     | **66**     | **83**    | **68**     | **69**     | **79**    |
@@ -95,21 +94,20 @@ We have evaluated our approach on four systems:
 |-------------|-------|---------|--------|--------|----------|
 | Accuracy    | 83.5  | 84.1    | 70.5   | 85.9   | **87.1** |
 
-[![Fig. 6](/images/resources/color/image015.jpg)](/images/resources/color/image015.jpg)  
-**Fig. 6.** Classification performance of SO/DO/gray-GIST on 8-category scenes dataset broken down by category.
+The scene-recognition experiment averages performance over ten random train/test splits. The combined SODOGIST descriptor reaches 87.1% accuracy, compared with 83.5% for grayscale GIST (Table 5). The paper interprets the stronger double-opponent results as evidence that color-defined edges and boundaries help more than surface color alone in this task.
 
 ## Contour detection
 
-[![Fig. 7](/images/resources/color/image016-1024x382.jpg)](/images/resources/color/image016-1024x382.jpg)  
+[![BSDS500 contour maps and precision-recall curves comparing grayscale texture, color texture and the full Berkeley system](/images/resources/color/image016-1024x382.jpg)](/images/resources/color/image016-1024x382.jpg)\
 **Fig. 7.** Contour detection on BSDS500. (A) Representative examples obtained using the original texton maps and our proposed color extensions. From left to right: original images, color-texton map (SOTG) and texton map (TG). (B) Precision-recall curves on BSDS500, comparing the original grayscale texture channel with the full Berkeley system [7] which combines brightness, color, and texture cues against our color-texture cue.
 
 ## Source code
 
-Sample code is available on the lab [github](https://github.com/serre-lab/color_hmax) repository.
+Sample code is available on the lab [GitHub](https://github.com/serre-lab/color_hmax) repository.
 
 ## Relevant publication
 
-[ECCV’12] Zhang, J., Barhomi, Y., Serre, T. A new biologically inspired color image descriptor. In: Proceedings of the IEEE Conference on European Conference on Computer Vision (ECCV), Florence, Italy, 2012. [pdf](/papers/proof-eccv2012-color.pdf) [slides](/papers/eccv_poster_color_v2.pdf)
+[ECCV’12] Zhang, J., Barhomi, Y., Serre, T. A new biologically inspired color image descriptor. In: Proceedings of the IEEE Conference on European Conference on Computer Vision (ECCV), Florence, Italy, 2012. [Color image descriptor paper (PDF)](/papers/proof-eccv2012-color.pdf) · [ECCV 2012 color-processing poster (PDF)](/papers/eccv_poster_color_v2.pdf)
 
 ## Additional references
 

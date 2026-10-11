@@ -29,7 +29,7 @@
 .subsection-title {
   margin-top: 1.5rem;
   margin-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 600;
   color: var(--color-text-primary);
 }
@@ -58,14 +58,14 @@
 
 /* Link colors */
 .link-primary {
-  color: #3498db;
+  color: var(--color-link);
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .link-primary:hover,
 .link-primary:focus-visible {
-  color: #2980b9;
+  color: var(--color-link-hover);
   text-decoration: underline;
   text-underline-offset: 0.15em;
 }
@@ -81,11 +81,11 @@
   }
 
   .subsection-title {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
   }
 
   .card-title {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
   }
 }
 

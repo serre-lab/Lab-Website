@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Breakfast Actions Dataset - Serre Lab</title>
+    <title>The Breakfast actions dataset - Serre Lab</title>
     <style>
         .skip-link { position: absolute; left: 1rem; top: -5rem; background: white; padding: 0.5rem; z-index: 10; }
         .skip-link:focus { top: 1rem; }
@@ -18,7 +18,7 @@
             padding: 2rem;
             background: #fff;
         }
-        
+
         h1 {
             text-align: center;
             margin-bottom: 1rem;
@@ -26,7 +26,7 @@
             font-weight: 600;
             color: #2c3e50;
         }
-        
+
         .pill {
             display: inline-block;
             padding: 0.15rem 0.55rem;
@@ -37,7 +37,7 @@
             margin-left: 0.4rem;
             font-weight: 500;
         }
-        
+
         h2 {
             font-size: 1.75rem;
             font-weight: 600;
@@ -47,7 +47,7 @@
             padding-bottom: 0.5rem;
             border-bottom: 1px solid #e2e8f0;
         }
-        
+
         h3 {
             font-size: 1.25rem;
             font-weight: 600;
@@ -55,41 +55,41 @@
             margin-top: 1rem;
             margin-bottom: 0.5rem;
         }
-        
+
         p {
             margin-bottom: 1rem;
             line-height: 1.6;
             color: #4b5563;
         }
-        
+
         ul {
             margin-top: 0.5rem;
             padding-left: 1.25rem;
             margin-bottom: 1rem;
         }
-        
+
         li {
             margin-bottom: 0.5rem;
             line-height: 1.5;
             color: #4b5563;
         }
-        
+
         a {
             color: #2563eb;
             text-decoration: none;
             font-weight: 500;
         }
-        
+
         a:hover {
             color: #1d4ed8;
             text-decoration: underline;
         }
-        
+
         strong {
             color: #111827;
             font-weight: 600;
         }
-        
+
         code {
             background: #f3f4f6;
             padding: 0.1rem 0.35rem;
@@ -97,7 +97,7 @@
             font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
             font-size: 0.85rem;
         }
-        
+
         .cards {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -105,7 +105,7 @@
             margin-top: 1rem;
             margin-bottom: 1.5rem;
         }
-        
+
         .card {
             border: 1px solid #e2e8f0;
             border-radius: 12px;
@@ -116,22 +116,22 @@
             display: flex;
             flex-direction: column;
         }
-        
+
         .card-content {
             flex-grow: 1;
         }
-        
+
         .card:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
         }
-        
+
         .muted {
             color: #6b7280;
             font-size: 0.9rem;
             margin-top: 1rem;
         }
-        
+
         .contact-button {
             background: #2563eb;
             color: white;
@@ -142,11 +142,11 @@
             font-weight: 500;
             transition: background-color 0.2s;
         }
-        
+
         .contact-button:hover {
             background: #1d4ed8;
         }
-        
+
         #contact-info {
             margin-top: 1rem;
             padding: 1rem;
@@ -155,7 +155,7 @@
             border-left: 4px solid #2563eb;
             text-align: left;
         }
-        
+
         footer {
             margin-top: 3rem;
             font-size: 0.9rem;
@@ -164,29 +164,42 @@
             border-top: 1px solid #e2e8f0;
             text-align: center;
         }
-        
+
         footer p {
             margin-bottom: 0.5rem;
         }
-        
+
         @media (max-width: 768px) {
             body {
                 padding: 1rem;
             }
-            
+
             h1 {
                 font-size: 1.75rem;
             }
-            
+
             .cards {
                 grid-template-columns: 1fr;
                 gap: 1rem;
             }
-            
+
             .card {
                 padding: 1rem;
             }
         }
+
+        * { box-sizing: border-box; }
+        body { width: 100%; font-size: 1rem; overflow-wrap: anywhere; }
+        h1 { font-size: 2.5rem; }
+        h2 { font-size: 1.75rem; }
+        h3 { font-size: 1.25rem; }
+        a { text-decoration: underline; text-underline-offset: .15em; }
+        :focus-visible { outline: 2px solid #1f5fa2; outline-offset: 3px; }
+        pre { max-width: 100%; white-space: pre-wrap; overflow-wrap: anywhere; }
+        .cards { grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); }
+        .skip-link { position: absolute; left: -10000px; }
+        .skip-link:focus { position: static; }
+        @media (max-width: 768px) { h1 { font-size: 2rem; } }
     </style>
 </head>
 <body>
@@ -195,8 +208,8 @@
         <nav aria-label="Dataset navigation"><a href="/#/resources">Serre Lab resources</a></nav>
     </header>
     <main id="main-content" tabindex="-1">
-    <h1>The Breakfast Actions Dataset <span class="pill">Official</span></h1>
-    
+    <h1>The Breakfast actions dataset <span class="pill">Official</span></h1>
+
     <p>A comprehensive dataset of breakfast preparation activities performed by <strong>52 different individuals</strong> in <strong>18 different kitchens</strong>, designed to reflect real-world recognition scenarios.</p>
     <p>Introduced at CVPR 2014, this dataset comprises 10 breakfast preparation activities and supports activity recognition and temporal segmentation in everyday settings.</p>
     <p><strong>Dataset specifications:</strong> ~77 hours of video (&gt;4 million frames), 320×240 pixels resolution (down-sampled), 15 fps frame rate, 3-5 uncalibrated cameras per location.</p>
@@ -206,7 +219,7 @@
     <p>The reduced Fisher-vector features and coarse and fine segmentation annotations are available there. The raw video mirror is incomplete: the original Google Drive download exceeded its quota when checked on October 11, 2026. See the dataset page for video availability.</p>
     <p><a href="https://github.com/hildekuehne/HTK_actionRecognition">HTK action-recognition code and evaluation instructions</a> describe the feature format and training protocol.</p>
 
-    <h2>Action Classes (10)</h2>
+    <h2>Action classes (10)</h2>
     <ul>
         <li>Coffee (n=200)</li>
         <li>Orange juice (n=187)</li>
@@ -220,17 +233,17 @@
         <li>Scrambled eggs (n=188)</li>
     </ul>
 
-    <h2>Current Benchmarks</h2>
+    <h2>Current benchmarks</h2>
     <div class="cards">
         <div class="card">
-            <h3>Fully Supervised Learning</h3>
+            <h3>Fully supervised learning</h3>
             <ul>
                 <li><strong>Activity Classification</strong>: Classify full videos according to the 10 activity classes</li>
                 <li><strong>Temporal Segmentation</strong>: Detect and classify the 48 action units within the videos</li>
             </ul>
         </div>
         <div class="card">
-            <h3>Weakly Supervised Learning</h3>
+            <h3>Weakly supervised learning</h3>
             <ul>
                 <li><strong>Temporal Alignment</strong>: Detect actions given transcripts at test time</li>
                 <li><strong>Temporal Segmentation</strong>: Detect and classify 48 action units without transcripts</li>
@@ -238,7 +251,7 @@
         </div>
     </div>
 
-    <h2>Train/Test Splits</h2>
+    <h2>Train/test splits</h2>
     <p>The dataset includes predefined splits for evaluation:</p>
     <ul>
         <li><strong>s1</strong>: P03 – P15</li>
@@ -258,6 +271,7 @@
 
     </main>
     <footer>
+        <p><a href="https://digital-accessibility.brown.edu/">Accessibility at Brown</a> · <a href="https://cm.maxient.com/reportingform.php?BrownUniv=&amp;layout_id=59">Report an accessibility barrier</a></p>
         <p><strong>Contact:</strong> For questions about the dataset and benchmarks, please contact:</p>
         <p>
             <button onclick="showContact()" class="contact-button" aria-expanded="false" aria-controls="contact-info">Show Contact Email</button>
@@ -274,7 +288,7 @@
         function showContact() {
             const contactInfo = document.getElementById('contact-info');
             const button = document.querySelector('.contact-button');
-            
+
             if (contactInfo && button) {
                 if (contactInfo.style.display === 'none' || contactInfo.style.display === '') {
                     contactInfo.style.display = 'block';

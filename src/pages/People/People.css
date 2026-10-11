@@ -14,7 +14,7 @@
   /* Section titles use global .section-title class from typography.css */
 
   .people-container .subsection-title {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     font-weight: 600;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
@@ -28,7 +28,7 @@
 
   .people-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr));
     gap: 1.5rem;
     justify-items: center;
     width: 100%;
@@ -66,3 +66,6 @@
     column-count: 1;
   }
 }
+
+.alumni-list .mantine-List-itemWrapper { display: flex; max-width: 100%; }
+.alumni-list .mantine-List-itemLabel { min-width: 0; }

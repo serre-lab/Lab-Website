@@ -93,7 +93,7 @@ export default function Footer() {
                                 className="footer-link"
 
                             >
-                                Brown Profile<span className="sr-only"> (opens in new tab)</span>
+                                Brown profile<span className="sr-only"> (opens in new tab)</span>
                             </a>
                             <a
                                 href="https://digital-accessibility.brown.edu/"
