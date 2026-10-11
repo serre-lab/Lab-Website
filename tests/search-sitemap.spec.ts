@@ -106,7 +106,11 @@ test.describe("publication and media search", () => {
 
         await page.getByLabel("Search publications").fill("NeuroSurgeon");
         await expect(page.getByRole("heading", { level: 3, name: /NeuroSurgeon/ })).toBeVisible();
-        await expect(page.getByRole("link", { name: /NeuroSurgeon/ })).toHaveCount(0);
+        await expect(page.getByRole("link", { name: /NeuroSurgeon/ })).toHaveAttribute("href", "https://arxiv.org/abs/2309.00244");
+
+        await page.getByLabel("Search publications").fill("Recurrent vision in parallel");
+        await expect(page.getByRole("heading", { level: 3, name: /Recurrent vision in parallel/ })).toBeVisible();
+        await expect(page.getByRole("link", { name: /Recurrent vision in parallel/ })).toHaveCount(0);
     });
 
     test("media search matches substrings and announces an empty state", async ({ page }) => {

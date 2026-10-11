@@ -47,7 +47,7 @@ const abbreviateAuthors = (authors: string, maxAuthors: number = 2): string => {
 // Recent papers and the curated selection are maintained separately.
 const selectedPapers = [
   {
-    "title": "From prediction to understanding: will AI foundation models transform brain science?",
+    "title": "From prediction to understanding: Will AI foundation models transform brain science?",
     "url": "https://www.sciencedirect.com/science/article/abs/pii/S0896627325007524",
     "journal": "Neuron",
     "year": "2025",
@@ -443,7 +443,9 @@ export function Home() {
             Our work is currently supported by ONR (N00014-24-1-2026, N00014-22-1-2795, and REPRISM MURI N00014-24-1-2603), NSF (IIS-2402875), NIH/NIMH (R01 MH140004, R01 MH143695, and T32 MH126388), DOE (DE-SC0023191), the NSF AI Research Institute on Interaction for AI Assistants (ARIA), supported by the U.S. National Science Foundation (NSF) under Cooperative Agreement 2433429, and the Artificial and Natural Intelligence Toulouse Institute (ANITI), funded by the France 2030 program (ANR-23-IACL-0002).
             </Text>
           <Text mt="md">
-            Additional support is provided by the Carney Institute for Brain Science and the Center for Computation and Visualization (via NIH S10OD036341). We gratefully acknowledge Cloud TPU hardware resources made available by Google through the TPU Research Cloud (TRC) program.
+            Additional support is provided by the Carney Institute for Brain Science. The Center for Computation and Visualization runs the{" "}
+            <a href="https://carney.brown.edu/carney-condo" target="_blank" rel="noopener noreferrer">Carney Condo<span className="sr-only"> (opens in new tab)</span></a>
+            {" "}(RRID:SCR_029056), a shared GPU and CPU cluster for brain science research funded by NIH S10OD036341. We gratefully acknowledge Cloud TPU hardware resources made available by Google through the TPU Research Cloud (TRC) program.
           </Text>
         </div>
       </div>

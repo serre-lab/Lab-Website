@@ -4,6 +4,7 @@ Update lab website publications_by_year.json from central publications_structure
 Preserves existing PDF paths from the lab website file
 """
 
+import argparse
 import json
 import subprocess
 import sys
@@ -151,6 +152,9 @@ def convert_to_lab_website_format(central_data, existing_pdf_paths):
 
 def main():
     """Main function to sync lab website from central file"""
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--fetch-pdfs", action="store_true", help="Download missing PDFs; inspect content and accessibility before publishing")
+    args = parser.parse_args()
     print("🔄 Syncing lab website publications from central file...\n")
     
     # Load central file
@@ -198,11 +202,9 @@ def main():
     
     print(f"\n✅ Lab website publications synced successfully!")
 
-    # Automatically fetch local PDFs for any new publications that expose a
-    # downloadable source (arXiv / OpenReview). This keeps public/papers/ in
-    # step with the metadata so we always retain local copies — see the
-    # 2026-07 audit, when metadata sync had drifted ahead of the PDF archive.
-    fetch_missing_pdfs()
+    # Metadata sync must not silently publish unreviewed or untagged downloads.
+    if args.fetch_pdfs:
+        fetch_missing_pdfs()
 
     print(f"\nNext steps:")
     print(f"  1. Review the updated file: {lab_file}")

@@ -15,6 +15,12 @@
                 "action": "View dataset"
             },
             {
+                "title": "3D-PC",
+                "url": "https://huggingface.co/datasets/3D-PC/3D-PC",
+                "description": "Natural-scene images for three 3D-PC tasks: object depth order, basic visual perspective taking, and a harder perspective-taking task that limits shortcut strategies.",
+                "action": "View dataset"
+            },
+            {
                 "title": "HMDB51: Human Motion Database",
                 "displayTitle": "HMDB51",
                 "url": "/hmdb51.html",
@@ -24,8 +30,8 @@
             {
                 "title": "The Breakfast Actions Dataset",
                 "displayTitle": "Breakfast actions",
-                "url": "/breakfast-actions-dataset.html",
-                "description": "Videos of breakfast preparation by 52 people in 18 kitchens, with about 77 hours of footage and more than four million frames.",
+                "url": "https://huggingface.co/datasets/Serrelab/breakfast-actions",
+                "description": "Features and temporal annotations for breakfast preparation by 52 people in 18 kitchens. The dataset page lists downloads and raw-video availability.",
                 "action": "View dataset"
             },
             {
@@ -104,9 +110,15 @@
                 "action": "View code"
             },
             {
+                "title": "3D-PC code",
+                "url": "https://github.com/serre-lab/VPT",
+                "description": "Code for evaluating vision models on the 3D-PC benchmark, including linear probes and fine-tuning on perspective-taking and depth-order tasks.",
+                "action": "View code"
+            },
+            {
                 "title": "Hugging Face",
                 "url": "https://huggingface.co/Serrelab",
-                "description": "Explore the lab’s models, datasets, and interactive demos on Hugging Face.",
+                "description": "Explore the lab’s datasets and interactive demos on Hugging Face.",
                 "action": "Visit lab profile"
             }
         ],

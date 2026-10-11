@@ -102,7 +102,7 @@ for (const viewport of [{width: 1280, height: 900}, {width: 390, height: 844}]) 
     test('resources use readable single-column entries with accurate link actions', async ({page}) => {
       await page.goto('/#/resources');
       const entries = page.locator('.resource-entry');
-      await expect(entries).toHaveCount(21);
+      await expect(entries).toHaveCount(23);
       await expect(entries.filter({has: page.getByRole('heading', {name: 'hGRU segmentation', exact: true})}).getByRole('link')).toHaveText('Open notebook →');
       await expect(entries.filter({has: page.getByRole('heading', {name: 'Xplique', exact: true})}).getByRole('link')).toHaveText('View code →');
       const positions = await entries.evaluateAll(items => items.map(item => {

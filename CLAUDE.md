@@ -87,5 +87,6 @@ The app uses hash routing (`createHashRouter` in `src/App.tsx`). In-app pages li
 - **Sync** with the configured Python environment (the uv env at `~/Work/agents/claude/.venv/`, via `source ~/Work/agents/claude/scripts/activate-env.sh`):
   1. `cd ~/Work/personal/cv && python scripts/sync_from_central.py` — regenerates `publications_structured.json` from central. This script also overwrites the lab JSON from central, copying `pdf_path` when central has one.
   2. `cd ~/Work/research/lab-website && python scripts/sync_from_central_publications.py` — rebuilds `src/data/publications_by_year.json` from the generated structured file. It keeps a local `pdfPath` only when that path is still on the lab file it reads. A path that existed only in the previous lab file, and not in central, is already gone after step 1.
+- PDF downloads are opt-in with `--fetch-pdfs`; inspect file contents and accessibility before publishing. Metadata synchronization alone must not add unreviewed PDFs.
 - **Links:** a usable `url` on the publication record is the public link. `src/data/officialPublicationUrls.js` is only a fallback when that URL is missing, blank, a PDF, or a `/papers/` path.
 - **Home highlights:** `src/pages/Home/Home.tsx` cards are manual; update journal/year labels when featuring a paper.

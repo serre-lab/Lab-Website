@@ -9,7 +9,7 @@ const links = [
     { title: "Lab monitor", url: "https://github.com/serre-lab/lab-monitor", description: "Code and documentation for the lab’s compute monitor. Sign in with a GitHub account that has access to this private repository." },
     { title: "Slack", url: "https://serrelab.slack.com/", description: "Lab announcements, questions, and project discussions. Sign in with your lab workspace account." },
     { title: "GitHub", url: "https://github.com/serre-lab", description: "Lab code and shared software. Public repositories are open to everyone; private repositories require organization and repository access." },
-    { title: "Hugging Face", url: "https://huggingface.co/Serrelab", description: "The lab’s models, datasets, and interactive demos. Public resources are open to everyone; contributing requires the appropriate organization access." },
+    { title: "Hugging Face", url: "https://huggingface.co/Serrelab", description: "The lab’s datasets and interactive demos. Public resources are open to everyone; contributing requires the appropriate organization access." },
 ];
 
 export function LabLinks() {
