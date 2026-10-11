@@ -96,14 +96,14 @@
       "title": "PhD student",
       "university": "ANITI",
       "imagePath": "people/julien-colin.jpg",
-      "description": "Julien Colin is a PhD student at ELLIS Alicante, co-supervised by Nuria Oliver and Thomas Serre. He studies what makes representations interpretable to humans, how aligning models with human perception reshapes their representations, and how we can leverage this to steer models toward more interpretable representations. Website: https://julien-co.github.io/"
+      "description": "Julien Colin is a PhD student at ELLIS Alicante, co-supervised by Nuria Oliver and Thomas Serre. He studies what makes representations interpretable to humans, how aligning models with human perception reshapes their representations, and how these changes can make models more interpretable. Website: https://julien-co.github.io/"
     },
     {
       "fullName": "Bastien Le Lan",
       "title": "PhD student",
       "university": "ANITI",
       "imagePath": "people/bastien-lelan.jpg",
-      "description": "Bastien Le Lan is a PhD student at the University of Toulouse and a member of the ELLIS program. He holds a Master's degree in Data Science and Computational Neuroscience from EPFL. His research interests lie at the intersection of machine learning, deep learning, and neuroscience. Currently, his work focuses on leveraging energy-based models to simulate mental processes and traditional psychophysical experiments. His current projects include joint energy-based models of vision and embodiment and motion."
+      "description": "Bastien Le Lan is a PhD student at the University of Toulouse and a member of the ELLIS program. He holds a Master's degree in Data Science and Computational Neuroscience from EPFL. He studies machine learning and neuroscience, using energy-based models to simulate mental processes and psychophysical experiments. His current projects include joint energy-based models of vision and embodiment and motion."
     },
     {
       "fullName": "Grégoire Dhimoïla",
