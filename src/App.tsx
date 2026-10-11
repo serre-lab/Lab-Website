@@ -43,11 +43,11 @@ const staticLinks: Links = {
         { to: "/publications", label: "Publications" },
         { to: "/people", label: "People" },
         { to: "/resources", label: "Resources" },
-        { to: "/lab-links", label: "Lab links" },
         {
             to: "/sci-comm",
             label: "Media",
         },
+        { to: "/lab-links", label: "Lab links" },
     ],
     social: [
         { to: "https://x.com/tserre", label: "Twitter" },

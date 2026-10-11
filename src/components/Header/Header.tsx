@@ -25,7 +25,7 @@ const Header = (props: HeaderProps) => {
 
                 <nav className="links" aria-label="Primary navigation">
                     {props.links.map((link, index) => (
-                        <Link key={index} to={link.to}>
+                        <Link key={index} to={link.to} className={link.to === "/lab-links" ? "internal-nav-link" : undefined}>
                             {link.label}
                         </Link>
                     ))}
