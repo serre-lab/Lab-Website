@@ -831,3 +831,22 @@
 
 /* Entry titles share the same scale as publications and resource entries. */
 .student-card-title, .featured-project-title, .highlight-title { font-size: 1.25rem; }
+
+/* Featured talk uses the same quiet label-and-content layout as the homepage. */
+.featured-talk {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr);
+  gap: 1rem 1.5rem;
+  padding: 1rem 0 0.5rem;
+}
+.featured-talk-meta { padding-top: 0.15rem; }
+.featured-talk-event { font-size: 0.95rem; font-weight: 600; color: var(--color-text-primary); }
+.featured-talk-speaker { margin-top: 0.35rem; font-size: 0.9rem; color: var(--color-text-secondary); }
+.featured-talk-body { max-width: 65ch; }
+.featured-talk-title { margin: 0 0 0.65rem; font-size: 1.25rem; line-height: 1.4; color: var(--color-text-primary); }
+.featured-talk .featured-talk-text { margin: 0 0 1rem; font-size: 1rem; line-height: 1.6; }
+.featured-talk-watch { display: inline-block; font-size: 0.95rem; font-weight: 600; color: var(--color-primary-dark); text-decoration: underline; text-underline-offset: 0.2em; }
+@media (max-width: 600px) {
+  .featured-talk { grid-template-columns: minmax(0, 1fr); gap: 0.8rem; }
+  .featured-talk-meta { padding-top: 0; }
+}

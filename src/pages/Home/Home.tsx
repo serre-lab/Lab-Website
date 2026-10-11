@@ -95,32 +95,32 @@ export function Home() {
         backgroundImage="/metcalf.webp"
       />
 
-      {/* Featured talk Section */}
-      <div
-        className="recent-highlights-section"
-      >
-        <Title order={2} className="section-title">Featured talk</Title>
-        <div className="highlight-card featured-talk-card">
-          <Text className="highlight-journal">CVPR 2026 keynote</Text>
-          <Title order={3} className="highlight-title">
-            <a href="https://www.youtube.com/watch?v=tjn2MW0d8K8&t=7185s" target="_blank" rel="noopener noreferrer">
+      <section className="recent-highlights-section" aria-labelledby="featured-talk-heading">
+        <Title order={2} id="featured-talk-heading" className="section-title">Featured talk</Title>
+        <div className="featured-talk">
+          <div className="featured-talk-meta">
+            <Text className="featured-talk-event">CVPR 2026 keynote</Text>
+            <Text className="featured-talk-speaker">Thomas Serre<br />June 2026</Text>
+          </div>
+          <div className="featured-talk-body">
+            <Title order={3} className="featured-talk-title">
               Scaling laws vs. neural laws: Toward more natural artificial vision
-            <span className="sr-only"> (opens in new tab)</span></a>
-          </Title>
-          <Text className="featured-talk-text">
-            Thomas Serre's keynote at CVPR 2026 gives an overview of the lab's current work: as vision models scale, they match human accuracy while drifting away from human vision, and brain-inspired learning and recurrent architectures offer a path back.
-          </Text>
-          <a
-            href="https://www.youtube.com/watch?v=tjn2MW0d8K8&t=7185s"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="featured-button-small"
-            aria-label="Watch on YouTube →: CVPR 2026 keynote (opens in new tab)"
-          >
-            Watch on YouTube →
-          </a>
+            </Title>
+            <Text className="featured-talk-text">
+              How vision models differ from human vision, and what learning and recurrent processing in the brain can teach us about building better models.
+            </Text>
+            <a
+              href="https://www.youtube.com/watch?v=tjn2MW0d8K8&t=7185s"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="featured-talk-watch"
+            >
+              Watch the keynote <span aria-hidden="true">↗</span>
+              <span className="sr-only"> on YouTube (opens in new tab)</span>
+            </a>
+          </div>
         </div>
-      </div>
+      </section>
 
       {/* Join the lab section */}
       <div
