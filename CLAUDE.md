@@ -16,6 +16,8 @@ The homepage “Selected publications” is a curated selection, separate from r
 
 Keep homepage information grouped by audience and purpose. Internal resources and the lab handbook are available through the quieter Lab links menu; do not add a separate “For lab members” section to the homepage.
 
+Links have no underlines, including hover and focus states (Thomas, October 12, 2026). Keep inline links distinguishable with semibold text and retain visible keyboard focus outlines.
+
 ## Research writing
 
 Write the public Research page for an external audience: explain scientific questions, methods, and findings. Project rosters, individual assignments, Slack channels, and participation instructions belong in the internal lab handbook. Name people only when identifying a significant scientific collaboration or a grant PI, not to enumerate who works on a project. Do not turn the handbook project inventory into the public research narrative.

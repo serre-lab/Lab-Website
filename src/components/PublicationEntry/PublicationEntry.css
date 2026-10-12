@@ -61,6 +61,5 @@ main .publication-title .publication-link {
 
 main .publication-title .publication-link:hover,
 main .publication-title .publication-link:focus-visible {
-    text-decoration: underline !important;
-    text-underline-offset: 0.15em;
+    text-decoration: none !important;
 }

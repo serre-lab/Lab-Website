@@ -264,8 +264,7 @@
 
   .featured-button-small:hover {
     color: var(--color-primary-dark);
-    text-decoration: underline;
-    text-underline-offset: 0.15em;
+    text-decoration: none;
   }
 
   /* PhD Recruitment Section */
@@ -850,7 +849,7 @@
 .featured-talk-body { max-width: 65ch; }
 .featured-talk-title { margin: 0 0 0.65rem; font-size: 1.25rem; line-height: 1.4; color: var(--color-text-primary); }
 .featured-talk .featured-talk-text { margin: 0 0 1rem; font-size: 1rem; line-height: 1.6; }
-.featured-talk-watch { display: inline-block; font-size: 0.95rem; font-weight: 600; color: var(--color-primary-dark); text-decoration: underline; text-underline-offset: 0.2em; }
+.featured-talk-watch { display: inline-block; font-size: 0.95rem; font-weight: 600; color: var(--color-primary-dark); text-decoration: none; }
 @media (max-width: 600px) {
   .featured-talk { grid-template-columns: minmax(0, 1fr); gap: 0.8rem; }
   .featured-talk-meta { padding-top: 0; }

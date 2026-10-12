@@ -83,8 +83,7 @@ header {
 .links a:hover,
 .links a:focus-visible {
   color: var(--color-primary);
-  text-decoration: underline;
-  text-underline-offset: 0.15em;
+  text-decoration: none;
 }
 
 @media (max-width: 720px) {

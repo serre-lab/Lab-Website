@@ -41,8 +41,7 @@
   
   .icon-card a:hover .icon-label,
   .icon-card a:focus-visible .icon-label {
-    text-decoration: underline;
-    text-underline-offset: 0.15em;
+    text-decoration: none;
   }
   
   .icon-label {

@@ -86,8 +86,7 @@
 .footer-email-link:hover,
 .footer-email-link:focus-visible {
     color: var(--color-primary);
-    text-decoration: underline;
-    text-underline-offset: 0.15em;
+    text-decoration: none;
 }
 
 /* Links Column */
@@ -138,8 +137,7 @@
 .footer-link:hover,
 .footer-link:focus-visible {
     color: var(--color-link);
-    text-decoration: underline;
-    text-underline-offset: 0.15em;
+    text-decoration: none;
 }
 
 /* Social Icons */
@@ -210,8 +208,7 @@
 .footer-legal-link:hover,
 .footer-legal-link:focus-visible {
     color: var(--color-link);
-    text-decoration: underline;
-    text-underline-offset: 0.15em;
+    text-decoration: none;
 }
 
 .footer-separator {

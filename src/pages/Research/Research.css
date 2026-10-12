@@ -98,8 +98,7 @@
   .research-link:hover,
   .research-link:focus-visible {
     color: var(--color-primary-dark);
-    text-decoration: underline;
-    text-underline-offset: 0.15em;
+    text-decoration: none;
   }
 
   /* Accordion grant labels: override Mantine dimmed for WCAG 4.5:1 contrast */

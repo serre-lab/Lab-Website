@@ -39,13 +39,12 @@
 a {
     font-weight: 500;
     color: var(--color-link);
-    text-decoration: none;
+    text-decoration: none !important;
 }
 a:hover,
 a:focus-visible {
     color: var(--color-link-hover);
-    text-decoration: underline;
-    text-underline-offset: 0.15em;
+    text-decoration: none;
 }
 
 h2, h3, h4, h5, h6 {
@@ -169,8 +168,8 @@ main, header, footer { overflow-wrap: anywhere; }
 .header-content > *, .footer-content > *, .footer-logo-text, .lab-info { min-width: 0; }
 main img { max-width: 100%; }
 main p a, main li a, .markdown-container a, .research-link, .publication-link {
-  text-decoration: underline !important;
-  text-underline-offset: .15em;
+  text-decoration: none !important;
+  font-weight: 600;
 }
 @media (max-width: 768px) {
   .header-content, .footer-content { padding-left: 1rem; padding-right: 1rem; }

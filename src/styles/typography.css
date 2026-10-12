@@ -66,8 +66,7 @@
 .link-primary:hover,
 .link-primary:focus-visible {
   color: var(--color-link-hover);
-  text-decoration: underline;
-  text-underline-offset: 0.15em;
+  text-decoration: none;
 }
 
 /* Responsive typography */
