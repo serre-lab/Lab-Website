@@ -1,4 +1,4 @@
-import { Title, List } from "@mantine/core";
+import { Title } from "@mantine/core";
 import Person from "../../components/Person/Person";
 import peopleData from "../../data/people.json";
 import alumniData from "../../data/alumni.json";
@@ -164,13 +164,13 @@ export default function People() {
           <Title order={2} className="section-title">
             Alumni ({alumniData.alumni.length})
           </Title>
-          <List size="md" spacing="xs" className="alumni-list">
+          <ul className="alumni-list body-text">
             {alumniData.alumni.map((alumn, idx) => (
-              <List.Item key={idx}>
+              <li key={idx}>
                 {alumn.fullName} {alumn.role ? `(${alumn.role})` : ""}
-              </List.Item>
+              </li>
             ))}
-          </List>
+          </ul>
         </>
       )}
     </div>

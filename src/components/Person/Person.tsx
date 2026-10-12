@@ -48,7 +48,7 @@ export default function Person({ fullName, title, imagePath, description }: Pers
                 role="button"
                 tabIndex={0}
                 aria-haspopup="dialog"
-                aria-labelledby={`${profileId}-name ${profileId}-role`}
+                aria-labelledby={`${imagePath ? "" : `${profileId}-initials `}${profileId}-name ${profileId}-role`}
                 aria-describedby={`${profileId}-action`}
                 onKeyDown={(e) => {
                     if (e.key === "Enter" || e.key === " ") {
@@ -70,10 +70,10 @@ export default function Person({ fullName, title, imagePath, description }: Pers
                         />
                     </Card.Section>
                 ) : (
-                    <Card.Section className="person-portrait-placeholder" aria-hidden="true">
+                    <Card.Section className="person-portrait-placeholder" id={`${profileId}-initials`}>
                         {fullName.split(" ").map(part => part[0]).join("")}
                     </Card.Section>
-                )}
+                )}{" "}
                 <div className="person-name" id={`${profileId}-name`}>{fullName}</div>{" "}
                 <Text className="person-title" id={`${profileId}-role`}>{roleLabel}</Text>
                 <span id={`${profileId}-action`} className="sr-only">Open biography</span>

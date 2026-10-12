@@ -47,11 +47,15 @@
   column-gap: 2rem;
   max-width: 800px;
   margin: 0 auto;
+  padding-left: 1.25rem;
+  list-style: disc outside;
 }
 
 .alumni-list li {
   break-inside: avoid;
   page-break-inside: avoid;
+  margin-bottom: 0.5rem;
+  padding: 0;
 }
 
 /* Responsive columns */
@@ -66,6 +70,3 @@
     column-count: 1;
   }
 }
-
-.alumni-list .mantine-List-itemWrapper { display: flex; max-width: 100%; }
-.alumni-list .mantine-List-itemLabel { min-width: 0; }
