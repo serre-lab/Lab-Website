@@ -5,16 +5,22 @@ import alumniData from "../../data/alumni.json";
 import "./People.css";
 import { HeroBanner } from "../../components/HeroBanner/HeroBanner";
 
-// Define the desired role order
-const ROLE_ORDER = [
-  "Professor",
-  "Assistant Professor of Research",
-  "PostDoc",
-  "PhD student",
-  "MSc student",
-  "Research Assistant",
-  "Undergraduate student",
-];
+const nameCollator = new Intl.Collator("en", { sensitivity: "base" });
+
+// Preserve compound surnames when ordering profiles and alumni.
+const compoundSurnames: Record<string, string> = {
+  "Bastien Le Lan": "Le Lan",
+  "Amor Ben Tanfous": "Ben Tanfous",
+};
+
+function surname(fullName: string) {
+  return compoundSurnames[fullName] ?? fullName.trim().split(/\s+/).pop()!;
+}
+
+function compareNames(a: { fullName: string }, b: { fullName: string }) {
+  return nameCollator.compare(surname(a.fullName), surname(b.fullName)) ||
+    nameCollator.compare(a.fullName, b.fullName);
+}
 
 type PersonEntry = (typeof peopleData.people)[number];
 
@@ -43,11 +49,9 @@ function PeopleGroup({ title, people }: { title: string; people: PersonEntry[] }
 }
 
 export default function People() {
-  // Sort people by the custom role order
-  const sortedPeople = [...peopleData.people].sort(
-    (a, b) =>
-      ROLE_ORDER.indexOf(a.title) - ROLE_ORDER.indexOf(b.title)
-  );
+  // Filtering into categories below preserves alphabetical surname order.
+  const sortedPeople = [...peopleData.people].sort(compareNames);
+  const sortedAlumni = [...alumniData.alumni].sort(compareNames);
 
   // The PI leads both the Brown and ANITI teams, so is shown on their own and counted in neither
   const principalInvestigators = sortedPeople.filter((person) => person.title === "Professor");
@@ -165,7 +169,7 @@ export default function People() {
             Alumni ({alumniData.alumni.length})
           </Title>
           <ul className="alumni-list body-text">
-            {alumniData.alumni.map((alumn, idx) => (
+            {sortedAlumni.map((alumn, idx) => (
               <li key={idx}>
                 {alumn.fullName} {alumn.role ? `(${alumn.role})` : ""}
               </li>
