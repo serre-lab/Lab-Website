@@ -279,17 +279,6 @@ export function Home() {
         </div>
       </div>
 
-      <section className="recent-papers-section" aria-labelledby="lab-members-heading">
-        <Title order={2} id="lab-members-heading" className="section-title">For lab members</Title>
-        <Text className="body-text">
-          The{" "}
-          <a href="https://psychic-adventure-y8eo2zo.pages.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Lab handbook (opens in new tab)">
-            lab handbook
-          </a>{" "}
-          has project information and lab procedures. Use <Link to="/lab-links">Lab links</Link> for the shared Drive, onboarding, monitoring, and other lab platforms.
-        </Text>
-      </section>
-
     </div>
   );
 }

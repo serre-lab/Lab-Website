@@ -14,7 +14,7 @@ Reduce unnecessary boxes: prefer headings, whitespace, and subtle dividers for p
 
 The homepage “Selected publications” is a curated selection, separate from recent papers and preprints. Use the shared PublicationEntry component and Publications-page styling for both homepage publication lists, with title, venue, and authors in the same order. Avoid separate card styles. The homepage uses single-column lists. Tools and student information place labels beside details on wider screens; publication entries follow the Publications page. Preserve its chosen papers and shared typography. Selected publication rows use natural content heights with a consistent gap; do not force equal-height rows, which leave uneven visible whitespace when titles wrap. Do not replace selected papers just because newer work appears.
 
-Keep homepage information grouped by audience and purpose. The lab handbook belongs in a separate “For lab members” section, never under prospective-student or recruitment information.
+Keep homepage information grouped by audience and purpose. Internal resources and the lab handbook are available through the quieter Lab links menu; do not add a separate “For lab members” section to the homepage.
 
 ## Research writing
 
