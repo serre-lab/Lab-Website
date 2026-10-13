@@ -84,7 +84,7 @@ export function Research() {
           We collaborate with developmental cognitive scientists to identify the learning principles that support perceptual development, including how intrinsic rewards guide exploration. Ongoing work uses a newborn chick's first-person visual experience to test whether predictive learning can support grouping and object recognition without labels.
           </Text>
           <Text className="research-direction-text">
-          Our <Ext href="https://openreview.net/forum?id=UIFAJZ22ZF">visual perspective-taking experiments</Ext> expose limitations of the tested models, motivating work on agents that learn through exploration. In collaboration with Fulvio Domini, we also study the computational mechanisms of depth perception.
+          The failures of current models on the 3D-PC perspective-taking benchmark motivate work on agents that learn through exploration. In collaboration with Fulvio Domini, we also study the computational mechanisms of depth perception.
           </Text>
           <div className="funding-badge">Funded by the REPRISM MURI (ONR N00014-24-1-2603), ONR (N00014-24-1-2026), and the NSF AI Research Institute on Interaction for AI Assistants (ARIA; NSF Cooperative Agreement 2433429)</div>
         </div>
