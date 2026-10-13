@@ -78,7 +78,7 @@ export function Research() {
         <div className="research-direction-card">
           <Title order={3} className="research-direction-title">Development and embodiment</Title>
           <Text className="research-direction-text">
-          Animals learn to see through experience that unfolds continuously as they move through the world. We study what models can learn from that temporal structure, and what additional information comes from acting.
+          Harmonization imposes human-like visual strategies through direct supervision. A complementary question is whether alignment can emerge without that supervision, from the way a system learns. Animals learn to see without labels, through experience that unfolds continuously as they move through the world. We study what models can learn from that temporal structure and from acting, and how <Ext href="https://openreview.net/forum?id=KeiQNpb7sv">visual experience and learning objectives</Ext> determine whether a model comes to see the world as we do.
           </Text>
           <Text className="research-direction-text">
           We collaborate with developmental cognitive scientists to identify the learning principles that support perceptual development, including how intrinsic rewards guide exploration. Ongoing work uses a newborn chick's first-person visual experience to test whether predictive learning can support grouping and object recognition without labels.
