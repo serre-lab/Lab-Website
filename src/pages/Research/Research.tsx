@@ -29,7 +29,7 @@ export function Research() {
           Machine vision gives us a way to test theories of how the brain sees. A model can recognize thousands of object categories yet struggle to trace a contour, judge a relation, or imagine a scene from another viewpoint. We study these discrepancies to identify the computations that support biological vision.
         </Text>
         <Text className="research-direction-text" style={{ marginBottom: 0 }}>
-          We combine behavioral and neural experiments with computational models to study recurrent visual processing and learning from experience. We also develop machine learning methods to identify the visual features and representations that AI models use to make decisions. We apply computer vision to behavioral and clinical research, where it can make measurements that would be impractical to collect by hand.
+          We combine behavioral and neural experiments with computational models to study recurrent visual processing and learning from experience. We also develop machine learning methods to identify the visual features and representations that AI models use to make decisions. We apply computer vision to behavioral and clinical research, where it can quantify behaviors at a scale and level of detail that would be impractical by hand.
         </Text>
         </div>
 
