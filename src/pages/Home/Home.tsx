@@ -132,11 +132,16 @@ export function Home() {
           </Title>
         </div>
 
+        <Text className="body-text" mb="xl">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScyuMwWkJRcb2mr-8VzCihIHCeZ3md4p_z6weIAYeWXWqHFng/viewform" target="_blank" rel="noopener noreferrer" aria-label="Research interest form (opens in new tab)">Research interest form →</a>{" "}
+          About 5–10 minutes, with questions tailored to your application.
+        </Text>
+
         <div className="student-cards-container">
           <div className="student-card">
             <Title order={3} className="student-card-title">Brown students</Title>
             <Text className="student-card-text">
-              Current Brown undergraduate and master’s students: we encourage you to take CPSY 1291 and/or CPSY 1950. Most Brown students in the lab have taken at least one of these courses, if not both. Tell us about your relevant coursework, prior projects, research interests, and availability in the research interest form below. Include your CV, unofficial transcript, and a code sample.
+              Current Brown undergraduate and master’s students: we encourage you to take CPSY 1291 and/or CPSY 1950. Most Brown students in the lab have taken at least one of these courses, if not both. Tell us about your relevant coursework, prior projects, research interests, and availability in the research interest form above. Include your CV, unofficial transcript, and a code sample.
             </Text>
             {showUndergradDetails && (
               <div id="undergrad-requirements">
@@ -166,7 +171,7 @@ export function Home() {
             <Title order={3} className="student-card-title">PhD applicants</Title>
             <Text className="student-card-text">
               PhD applicants can apply through cognitive science, computer science, or neuroscience
-              graduate programs. Use the research interest form below to introduce your background and interests; it does not replace the formal application.
+              graduate programs. Use the research interest form above to introduce your background and interests; it does not replace the formal application.
             </Text>
             {showPhdDetails && (
               <div id="phd-requirements">
@@ -197,7 +202,7 @@ export function Home() {
           <div className="student-card">
             <Title order={3} className="student-card-title">Postdocs</Title>
             <Text className="student-card-text">
-              We welcome prospective postdocs with backgrounds in NeuroAI, computational neuroscience, AI, or related fields. Prior vision experience is not required. Use the research interest form below to share your CV, strongest research contributions, a code sample, and potential start date.
+              We welcome prospective postdocs with backgrounds in NeuroAI, computational neuroscience, AI, or related fields. Prior vision experience is not required. Use the research interest form above to share your CV, strongest research contributions, a code sample, and potential start date.
             </Text>
             {showPostdocDetails && (
               <div id="postdoc-requirements">
@@ -222,10 +227,6 @@ export function Home() {
             </button>
           </div>
         </div>
-        <Text className="body-text" mt="lg">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScyuMwWkJRcb2mr-8VzCihIHCeZ3md4p_z6weIAYeWXWqHFng/viewform" target="_blank" rel="noopener noreferrer" aria-label="Research interest form (opens in new tab)">Research interest form →</a>{" "}
-          About 5–10 minutes, with questions tailored to your application.
-        </Text>
       </div>
 
       {/* Selected Publications Section */}
