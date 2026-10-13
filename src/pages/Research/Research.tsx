@@ -61,7 +61,7 @@ export function Research() {
         <div className="research-direction-card">
           <Title order={3} className="research-direction-title">Feedback and recurrent vision</Title>
           <Text className="research-direction-text">
-          Visual cortex repeatedly exchanges signals through horizontal and feedback connections. We study how these interactions change a representation over time and what they contribute to perception.
+          Beyond the initial feedforward sweep, visual cortex is richly recurrent: horizontal and feedback connections continually propagate signals within and between areas. We study how these interactions reshape a representation over time and what they contribute to perception.
           </Text>
           <Text className="research-direction-text">
           Our <Ext href="https://arxiv.org/abs/2610.05419">perceptual-grouping paper</Ext> links recurrent network dynamics to the time course of grouping in natural scenes. Experiments on same–different judgments reveal <Ext href="https://www.eneuro.org/content/8/1/ENEURO.0267-20.2020">neural dynamics associated with relational processing</Ext>.
