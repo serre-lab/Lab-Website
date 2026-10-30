@@ -20,8 +20,8 @@ import MarkdownPage from "./components/MarkdownPage/MarkdownPage";
 import { loadMarkdownFiles } from "./utils/loadMarkdownFiles";
 
 const theme = createTheme({
-    // fontFamily: "futura-pt",
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Inter, system-ui, sans-serif',
+    // Futura PT is served by the Adobe Typekit kit linked in index.html (weights 400 and 700).
+    fontFamily: 'futura-pt, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif',
     components: {
         // Text: {
         //     defaultProps: {
