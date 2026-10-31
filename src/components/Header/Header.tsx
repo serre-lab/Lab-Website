@@ -15,12 +15,9 @@ const Header = (props: HeaderProps) => {
         <header role="banner">
             <div className="header-content">
                 <Link to="/" className="left">
-                    <img src="/brand/serre-lab-mark-transparent-for-light-bg.svg" alt="Serre Lab mark" className="lab-mark" width={52} height={52} />
+                    <img src="/brown-logo-small.webp" alt="Brown University crest" className="brown-logo" width={40} height={46} />
                     <span className="brand-divider" aria-hidden="true" />
-                    <div className="lab-info">
-                        <b className="lab-name">Serre Lab</b>
-                        <span className="lab-tagline">Vision, Neuroscience & AI</span>
-                    </div>
+                    <img src="/brand/serre-lab-logo-transparent-for-light-bg.svg" alt="Serre Lab: Vision, Neuroscience & AI" className="lab-logo" height={56} />
                 </Link>
 
                 <nav className="links" aria-label="Primary navigation">
