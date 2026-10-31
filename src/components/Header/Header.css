@@ -26,9 +26,15 @@ header {
   text-decoration: none;
 }
 
-.lab-mark {
-  width: 52px;
-  height: 52px;
+.brown-logo {
+  width: 40px;
+  height: auto;
+  display: block;
+}
+
+.lab-logo {
+  height: 56px;
+  width: auto;
   display: block;
 }
 
@@ -99,6 +105,10 @@ header {
 
   .brand-divider {
     height: 36px;
+  }
+
+  .lab-logo {
+    height: 46px;
   }
 
   .links {
