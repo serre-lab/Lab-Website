@@ -999,11 +999,13 @@
       "authors": "D. Linsley†, G. Dhimoïla†, A.K. Ashok, B. Kim & T. Serre",
       "journal": "",
       "url": ""
-    },
+    }
+  ],
+  "In press": [
     {
       "title": "GASPnet: Global agreement to synchronize phases",
       "authors": "A. Alamia, S. Muzellec, T. Serre & R. VanRullen",
-      "journal": "arXiv",
+      "journal": "Neural Computation",
       "url": "https://arxiv.org/abs/2507.16674",
       "pdfPath": "/papers/gaspnet-global-agreement-synchronize-phases-2025.pdf"
     }
