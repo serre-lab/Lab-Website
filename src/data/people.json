@@ -99,13 +99,6 @@
       "description": "Jorge Chang is a PhD student at ANITI, where he began his doctoral studies in January 2026. He completed his Master of Science degree at Brown University, where he conducted research in the Serre Lab, gaining experience in computational approaches to understanding visual perception and neural mechanisms. His work focuses on bridging neuroscience and artificial intelligence to develop better models of biological vision. His current projects investigate the computational mechanisms of depth perception with Fulvio Domini, joint energy-based models of vision, and embodiment and motion."
     },
     {
-      "fullName": "Julien Colin",
-      "title": "PhD student",
-      "university": "ANITI",
-      "imagePath": "people/julien-colin.jpg",
-      "description": "Julien Colin is a PhD student at ELLIS Alicante, co-supervised by Nuria Oliver and Thomas Serre. He studies what makes representations interpretable to humans, how aligning models with human perception reshapes their representations, and how these changes can make models more interpretable. Website: https://julien-co.github.io/"
-    },
-    {
       "fullName": "Bastien Le Lan",
       "title": "PhD student",
       "university": "ANITI",
